@@ -1,290 +1,472 @@
-import { useLanguage } from '../context/LanguageContext';
-import { Calendar, MapPin, Users, Mountain } from 'lucide-react';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Parallax } from 'react-scroll-parallax';
+import {
+    Calendar,
+    MapPin,
+    ArrowRight,
+    ChevronDown,
+    Compass,
+    Footprints,
+    TrendingUp
+} from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import ScrollReveal from '../components/effects/ScrollReveal';
+import InteractiveMap from '../components/map/InteractiveMap';
+import StatCounter from '../components/ui/StatCounter';
+import SectionDivider from '../components/ui/SectionDivider';
+import { destinationRegions, routeCoordinates, tripStats } from '../data/destinationRegions';
 
 const Home = () => {
     const { language } = useLanguage();
 
     const content = {
         en: {
-            hero: {
-                title: 'China Hiking Adventure 2026',
-                subtitle: 'Join the Ealing Outdoor Club on an Unforgettable Journey',
-                dates: 'May 8 - May 23, 2026 (14 Days)',
-                cta: 'View Itinerary',
-                ctaSecondary: 'Express Interest'
-            },
-            intro: {
-                title: 'Discover Ancient China Through Epic Hikes',
-                description: 'Join us for an incredible 14-day adventure through China\'s most breathtaking landscapes and historic sites. From the legendary Terracotta Warriors to the majestic Great Wall, from serene mountain trails to vibrant cultural experiences - this journey combines the best of hiking, history, and hospitality.',
-                dates: 'May 8 - May 23, 2026'
-            },
-            highlights: [
-                {
-                    icon: '🏛️',
-                    title: 'Terracotta Warriors',
-                    description: 'Marvel at one of the world\'s greatest archaeological discoveries in Xi\'an'
-                },
-                {
-                    icon: '🏔️',
-                    title: 'Great Wall Hiking',
-                    description: 'Trek along the ancient Ming Dynasty fortifications with stunning mountain views'
-                },
-                {
-                    icon: '⛰️',
-                    title: 'Mount Tai',
-                    description: 'Climb one of China\'s Five Sacred Mountains, a UNESCO World Heritage Site'
-                },
-                {
-                    icon: '🏞️',
-                    title: 'Lushan National Park',
-                    description: 'Explore dramatic peaks, waterfalls, and ancient Buddhist temples'
-                },
-                {
-                    icon: '🏘️',
-                    title: 'Ancient Villages',
-                    description: 'Wander through centuries-old villages in the stunning Wuyuan countryside'
-                },
-                {
-                    icon: '🌊',
-                    title: 'Qingdao Beaches',
-                    description: 'Relax by the Yellow Sea in this charming coastal city with German heritage'
-                }
-            ]
+            heroTitle: "China Hiking Tour 2026",
+            heroSubtitle: "15 days of adventure through ancient wonders and majestic mountains",
+            heroDate: "May 8-22, 2026",
+            heroCta: "View Itinerary",
+            heroCtaSecondary: "Learn More",
+            introTitle: "A Journey Like No Other",
+            introText: "Join the Ealing Outdoor Club on an unforgettable hiking adventure through China's most spectacular landscapes. From the ancient Terracotta Warriors to the sacred peaks of Mount Tai, experience the perfect blend of culture, nature, and adventure.",
+            mapTitle: "Your Journey",
+            mapSubtitle: "Explore the route through five incredible destinations",
+            destinationsTitle: "Destinations",
+            statsTitle: "Trip Highlights",
+            statDays: "Days",
+            statDestinations: "Destinations",
+            statHikingKm: "km Hiking",
+            statElevation: "m Elevation",
+            ctaTitle: "Ready for Adventure?",
+            ctaText: "Join fellow hiking enthusiasts from the Ealing Outdoor Club on this once-in-a-lifetime journey through China.",
+            ctaButton: "View Full Itinerary"
         },
         cn: {
-            hero: {
-                title: '2026中国徒步探险之旅',
-                subtitle: '与伊灵户外俱乐部一起踏上难忘的旅程',
-                dates: '2026年5月8日 - 5月23日（14天）',
-                cta: '查看行程',
-                ctaSecondary: '表达兴趣'
-            },
-            intro: {
-                title: '通过史诗般的徒步探索古老的中国',
-                description: '加入我们为期14天的中国之旅，探索最令人叹为观止的风景和历史遗迹。从传奇的兵马俑到雄伟的长城，从宁静的山间小径到充满活力的文化体验——这次旅程将徒步、历史和热情好客完美结合。',
-                dates: '2026年5月8日 - 5月23日'
-            },
-            highlights: [
-                {
-                    icon: '🏛️',
-                    title: '兵马俑',
-                    description: '在西安欣赏世界上最伟大的考古发现之一'
-                },
-                {
-                    icon: '🏔️',
-                    title: '长城徒步',
-                    description: '沿着古老的明代长城徒步，欣赏壮丽的山景'
-                },
-                {
-                    icon: '⛰️',
-                    title: '泰山',
-                    description: '攀登中国五岳之一，联合国教科文组织世界遗产'
-                },
-                {
-                    icon: '🏞️',
-                    title: '庐山国家公园',
-                    description: '探索险峻的山峰、瀑布和古老的佛教寺庙'
-                },
-                {
-                    icon: '🏘️',
-                    title: '古村落',
-                    description: '漫步婺源乡村数百年历史的村庄'
-                },
-                {
-                    icon: '🌊',
-                    title: '青岛海滩',
-                    description: '在这个拥有德国遗产的迷人海滨城市，享受黄海的宁静'
-                }
-            ]
+            heroTitle: "2026中国徒步之旅",
+            heroSubtitle: "15天穿越古老奇迹与雄伟山脉的冒险之旅",
+            heroDate: "2026年5月8日-22日",
+            heroCta: "查看行程",
+            heroCtaSecondary: "了解更多",
+            introTitle: "独一无二的旅程",
+            introText: "加入伊灵户外俱乐部，开启一段穿越中国最壮观景观的难忘徒步冒险。从古老的兵马俑到神圣的泰山之巅，体验文化、自然与冒险的完美融合。",
+            mapTitle: "您的旅程",
+            mapSubtitle: "探索穿越五个精彩目的地的路线",
+            destinationsTitle: "目的地",
+            statsTitle: "行程亮点",
+            statDays: "天",
+            statDestinations: "个目的地",
+            statHikingKm: "公里徒步",
+            statElevation: "米海拔",
+            ctaTitle: "准备好冒险了吗？",
+            ctaText: "与伊灵户外俱乐部的徒步爱好者们一起，开启这段一生一次的中国之旅。",
+            ctaButton: "查看完整行程"
         }
     };
 
-    const t = content[language] || content.en;
+    const t = content[language];
 
     return (
-        <div className="home">
-            {/* Hero Section */}
+        <div style={{ marginTop: '-80px' }}>
+            {/* ===== HERO SECTION ===== */}
             <section
-                className="hero-section"
                 style={{
-                    background: 'linear-gradient(135deg, rgba(216, 67, 21, 0.9) 0%, rgba(25, 118, 210, 0.85) 100%), url(https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=1600) center/cover',
-                    minHeight: '60vh',
+                    position: 'relative',
+                    height: '100vh',
+                    minHeight: '700px',
+                    overflow: 'hidden',
                     display: 'flex',
                     alignItems: 'center',
-                    color: 'white',
-                    position: 'relative'
+                    justifyContent: 'center'
                 }}
             >
-                <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-                    <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-                        <h1 style={{
-                            color: 'white',
-                            fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-                            marginBottom: '1rem',
-                            textShadow: '0 2px 10px rgba(0,0,0,0.3)'
-                        }}>
-                            {t.hero.title}
-                        </h1>
-                        <p style={{
-                            fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
-                            marginBottom: '1.5rem',
-                            color: 'rgba(255,255,255,0.95)',
-                            fontWeight: 300
-                        }}>
-                            {t.hero.subtitle}
-                        </p>
-                        <div style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '0.75rem',
-                            marginBottom: '2rem',
-                            fontSize: '1.1rem',
-                            fontWeight: 600
-                        }}>
-                            <Calendar size={20} />
-                            <span>{t.hero.dates}</span>
-                        </div>
-                        <div style={{
-                            display: 'flex',
-                            gap: '1rem',
-                            justifyContent: 'center',
-                            flexWrap: 'wrap'
-                        }}>
-                            <Link to="/itinerary" className="btn btn-primary" style={{ fontSize: '1.1rem' }}>
-                                {t.hero.cta}
-                            </Link>
-                            <Link to="/itinerary#interest-form" className="btn btn-outline" style={{
-                                fontSize: '1.1rem',
-                                borderColor: 'white',
-                                color: 'white'
-                            }}>
-                                {t.hero.ctaSecondary}
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                {/* Parallax Background */}
+                <Parallax
+                    speed={-30}
+                    style={{
+                        position: 'absolute',
+                        top: '-20%',
+                        left: 0,
+                        right: 0,
+                        bottom: '-20%',
+                        zIndex: 0
+                    }}
+                >
+                    <div
+                        style={{
+                            width: '100%',
+                            height: '140%',
+                            backgroundImage: 'url(https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop)',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center'
+                        }}
+                    />
+                </Parallax>
 
-            {/* Intro Section */}
-            <section className="section-lg" style={{ background: 'var(--surface-white)' }}>
-                <div className="container">
-                    <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-                        <h2 style={{ marginBottom: '1.5rem' }}>{t.intro.title}</h2>
-                        <p style={{
-                            fontSize: '1.125rem',
-                            lineHeight: '1.9',
-                            color: 'var(--text-medium)',
-                            marginBottom: '2rem'
-                        }}>
-                            {t.intro.description}
-                        </p>
-                        <div style={{
+                {/* Overlay */}
+                <div
+                    style={{
+                        position: 'absolute',
+                        inset: 0,
+                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.7) 100%)',
+                        zIndex: 1
+                    }}
+                />
+
+                {/* Hero Content */}
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
+                    style={{
+                        position: 'relative',
+                        zIndex: 2,
+                        textAlign: 'center',
+                        color: 'white',
+                        padding: '0 1.5rem',
+                        maxWidth: '900px'
+                    }}
+                >
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5, duration: 0.6 }}
+                        style={{
                             display: 'inline-flex',
                             alignItems: 'center',
-                            gap: '0.75rem',
-                            padding: '1rem 2rem',
-                            background: 'var(--off-white)',
+                            gap: '0.5rem',
+                            backgroundColor: 'rgba(216, 67, 21, 0.9)',
+                            padding: '0.5rem 1rem',
                             borderRadius: 'var(--radius-md)',
-                            fontSize: '1.125rem',
-                            fontWeight: 600,
-                            color: 'var(--primary-red)'
-                        }}>
-                            <Calendar size={24} strokeWidth={2.5} />
-                            <span>{t.intro.dates}</span>
-                        </div>
+                            marginBottom: '1.5rem',
+                            fontSize: '0.9rem',
+                            fontWeight: 600
+                        }}
+                    >
+                        <Calendar size={16} />
+                        {t.heroDate}
+                    </motion.div>
+
+                    <h1
+                        style={{
+                            fontSize: 'clamp(2.5rem, 6vw, 4.5rem)',
+                            fontWeight: 800,
+                            marginBottom: '1rem',
+                            textShadow: '0 4px 12px rgba(0,0,0,0.4)',
+                            lineHeight: 1.1
+                        }}
+                    >
+                        {t.heroTitle}
+                    </h1>
+
+                    <p
+                        style={{
+                            fontSize: 'clamp(1.1rem, 2.5vw, 1.5rem)',
+                            opacity: 0.9,
+                            marginBottom: '2.5rem',
+                            maxWidth: '700px',
+                            margin: '0 auto 2.5rem',
+                            lineHeight: 1.5
+                        }}
+                    >
+                        {t.heroSubtitle}
+                    </p>
+
+                    <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+                        <Link
+                            to="/itinerary"
+                            className="btn btn-primary"
+                            style={{ fontSize: '1.1rem', padding: '1rem 2rem' }}
+                        >
+                            {t.heroCta}
+                            <ArrowRight size={20} />
+                        </Link>
+                        <Link
+                            to="/info"
+                            className="btn btn-outline-light"
+                            style={{ fontSize: '1.1rem', padding: '1rem 2rem' }}
+                        >
+                            {t.heroCtaSecondary}
+                        </Link>
+                    </div>
+                </motion.div>
+
+                {/* Scroll Indicator */}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1.5, duration: 0.5 }}
+                    style={{
+                        position: 'absolute',
+                        bottom: '2rem',
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        zIndex: 2,
+                        color: 'white'
+                    }}
+                >
+                    <motion.div
+                        animate={{ y: [0, 8, 0] }}
+                        transition={{ duration: 1.5, repeat: Infinity, ease: 'easeInOut' }}
+                    >
+                        <ChevronDown size={36} strokeWidth={1.5} />
+                    </motion.div>
+                </motion.div>
+            </section>
+
+            {/* ===== INTRODUCTION SECTION ===== */}
+            <section style={{ padding: 'var(--spacing-2xl) 0', backgroundColor: 'var(--warm-white)' }}>
+                <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
+                    <ScrollReveal>
+                        <h2 style={{ marginBottom: '1.5rem' }}>{t.introTitle}</h2>
+                    </ScrollReveal>
+                    <ScrollReveal delay={0.2}>
+                        <p style={{ fontSize: '1.15rem', lineHeight: 1.8 }}>
+                            {t.introText}
+                        </p>
+                    </ScrollReveal>
+                </div>
+            </section>
+
+            {/* ===== STATS SECTION ===== */}
+            <section style={{ backgroundColor: 'var(--primary-dark)', padding: 'var(--spacing-xl) 0' }}>
+                <div className="container">
+                    <div
+                        style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+                            gap: '1rem'
+                        }}
+                    >
+                        <StatCounter
+                            end={tripStats.days}
+                            suffix=""
+                            label={t.statDays}
+                            icon={Calendar}
+                            color="white"
+                        />
+                        <StatCounter
+                            end={tripStats.destinations}
+                            suffix=""
+                            label={t.statDestinations}
+                            icon={MapPin}
+                            color="white"
+                        />
+                        <StatCounter
+                            end={tripStats.hikingKm}
+                            suffix="+"
+                            label={t.statHikingKm}
+                            icon={Footprints}
+                            color="white"
+                        />
+                        <StatCounter
+                            end={tripStats.elevation}
+                            suffix="+"
+                            label={t.statElevation}
+                            icon={TrendingUp}
+                            color="white"
+                        />
                     </div>
                 </div>
             </section>
 
-            {/* Highlights Section */}
-            <section className="section-lg section-alt">
+            {/* ===== MAP SECTION ===== */}
+            <section style={{ padding: 'var(--spacing-2xl) 0', backgroundColor: 'var(--off-white)' }}>
                 <div className="container">
-                    <h2 style={{
-                        textAlign: 'center',
-                        marginBottom: '3rem',
-                        fontSize: '2.5rem'
-                    }}>
-                        {language === 'en' ? 'Trip Highlights' : '行程亮点'}
-                    </h2>
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-                        gap: '2rem'
-                    }}>
-                        {t.highlights.map((highlight, index) => (
-                            <div
-                                key={index}
-                                className="card"
-                                style={{
-                                    padding: '2rem',
-                                    textAlign: 'center',
-                                    background: 'var(--surface-white)'
-                                }}
-                            >
-                                <div style={{
-                                    fontSize: '3rem',
-                                    marginBottom: '1rem',
-                                    height: '80px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center'
-                                }}>
-                                    {highlight.icon}
-                                </div>
-                                <h3 style={{
-                                    fontSize: '1.5rem',
-                                    marginBottom: '1rem',
-                                    color: 'var(--text-dark)'
-                                }}>
-                                    {highlight.title}
-                                </h3>
-                                <p style={{
-                                    color: 'var(--text-medium)',
-                                    lineHeight: '1.7',
-                                    marginBottom: 0
-                                }}>
-                                    {highlight.description}
-                                </p>
-                            </div>
+                    <ScrollReveal>
+                        <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
+                            <h2>{t.mapTitle}</h2>
+                            <p style={{ maxWidth: '600px', margin: '0 auto' }}>{t.mapSubtitle}</p>
+                        </div>
+                    </ScrollReveal>
+
+                    <ScrollReveal delay={0.2}>
+                        <InteractiveMap
+                            destinations={destinationRegions}
+                            routeCoordinates={routeCoordinates}
+                            height="500px"
+                            animateRoute={false}
+                            showRoute={true}
+                        />
+                    </ScrollReveal>
+                </div>
+            </section>
+
+            <SectionDivider type="wave" color="var(--warm-white)" backgroundColor="var(--off-white)" />
+
+            {/* ===== DESTINATIONS SECTION ===== */}
+            <section style={{ padding: 'var(--spacing-2xl) 0', backgroundColor: 'var(--warm-white)' }}>
+                <div className="container">
+                    <ScrollReveal>
+                        <h2 style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
+                            {t.destinationsTitle}
+                        </h2>
+                    </ScrollReveal>
+
+                    <div
+                        style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                            gap: '1.5rem'
+                        }}
+                    >
+                        {destinationRegions.map((destination, index) => (
+                            <ScrollReveal key={destination.id} delay={index * 0.1}>
+                                <Link to="/itinerary" style={{ textDecoration: 'none' }}>
+                                    <div
+                                        className="image-zoom"
+                                        style={{
+                                            position: 'relative',
+                                            borderRadius: 'var(--radius-xl)',
+                                            overflow: 'hidden',
+                                            aspectRatio: '4/3',
+                                            boxShadow: 'var(--shadow-lg)',
+                                            cursor: 'pointer'
+                                        }}
+                                    >
+                                        <img
+                                            src={destination.heroImage}
+                                            alt={destination.name[language]}
+                                            loading="lazy"
+                                            style={{
+                                                width: '100%',
+                                                height: '100%',
+                                                objectFit: 'cover'
+                                            }}
+                                        />
+                                        <div
+                                            style={{
+                                                position: 'absolute',
+                                                inset: 0,
+                                                background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)'
+                                            }}
+                                        />
+                                        <div
+                                            style={{
+                                                position: 'absolute',
+                                                bottom: 0,
+                                                left: 0,
+                                                right: 0,
+                                                padding: '1.5rem',
+                                                color: 'white'
+                                            }}
+                                        >
+                                            <div
+                                                style={{
+                                                    display: 'inline-block',
+                                                    backgroundColor: destination.color,
+                                                    padding: '0.25rem 0.75rem',
+                                                    borderRadius: 'var(--radius-sm)',
+                                                    fontSize: '0.75rem',
+                                                    fontWeight: 600,
+                                                    marginBottom: '0.5rem'
+                                                }}
+                                            >
+                                                {language === 'en' ? `Days ${destination.days.join('-')}` : `第${destination.days[0]}-${destination.days[destination.days.length - 1]}天`}
+                                            </div>
+                                            <h3
+                                                style={{
+                                                    fontSize: '1.5rem',
+                                                    marginBottom: '0.5rem',
+                                                    color: 'white'
+                                                }}
+                                            >
+                                                {destination.name[language]}
+                                            </h3>
+                                            <p
+                                                style={{
+                                                    fontSize: '0.9rem',
+                                                    opacity: 0.9,
+                                                    margin: 0,
+                                                    lineHeight: 1.4
+                                                }}
+                                            >
+                                                {destination.description[language]}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </ScrollReveal>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Call to Action Section */}
-            <section className="section-lg" style={{ background: 'var(--primary-blue)', color: 'white', textAlign: 'center' }}>
-                <div className="container">
-                    <div style={{ maxWidth: '700px', margin: '0 auto' }}>
-                        <h2 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '2.5rem' }}>
-                            {language === 'en' ? 'Ready for an Adventure?' : '准备好冒险了吗？'}
+            {/* ===== CTA SECTION ===== */}
+            <section
+                style={{
+                    position: 'relative',
+                    padding: 'var(--spacing-2xl) 0',
+                    overflow: 'hidden'
+                }}
+            >
+                <Parallax
+                    speed={-15}
+                    style={{
+                        position: 'absolute',
+                        top: '-20%',
+                        left: 0,
+                        right: 0,
+                        bottom: '-20%',
+                        zIndex: 0
+                    }}
+                >
+                    <div
+                        style={{
+                            width: '100%',
+                            height: '140%',
+                            backgroundImage: 'url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop)',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center'
+                        }}
+                    />
+                </Parallax>
+                <div
+                    style={{
+                        position: 'absolute',
+                        inset: 0,
+                        background: 'linear-gradient(135deg, rgba(216, 67, 21, 0.85) 0%, rgba(25, 118, 210, 0.85) 100%)',
+                        zIndex: 1
+                    }}
+                />
+                <div
+                    className="container"
+                    style={{
+                        position: 'relative',
+                        zIndex: 2,
+                        textAlign: 'center',
+                        color: 'white'
+                    }}
+                >
+                    <ScrollReveal>
+                        <Compass size={48} style={{ marginBottom: '1rem', opacity: 0.9 }} />
+                        <h2 style={{ color: 'white', fontSize: 'clamp(2rem, 4vw, 2.75rem)' }}>
+                            {t.ctaTitle}
                         </h2>
-                        <p style={{
-                            fontSize: '1.25rem',
-                            marginBottom: '2.5rem',
-                            color: 'rgba(255,255,255,0.9)',
-                            lineHeight: '1.8'
-                        }}>
-                            {language === 'en'
-                                ? 'Join fellow Ealing Outdoor Club members on this incredible journey through China\'s most spectacular landscapes.'
-                                : '与伊灵户外俱乐部成员一起，踏上这段穿越中国最壮观风景的难忘旅程。'
-                            }
+                    </ScrollReveal>
+                    <ScrollReveal delay={0.2}>
+                        <p
+                            style={{
+                                fontSize: '1.15rem',
+                                maxWidth: '600px',
+                                margin: '0 auto 2rem',
+                                opacity: 0.95,
+                                color: 'white'
+                            }}
+                        >
+                            {t.ctaText}
                         </p>
-                        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-                            <Link to="/itinerary" className="btn btn-primary" style={{ fontSize: '1.125rem' }}>
-                                {language === 'en' ? 'View Full Itinerary' : '查看完整行程'}
-                            </Link>
-                            <Link to="/info" className="btn" style={{
-                                fontSize: '1.125rem',
-                                background: 'white',
-                                color: 'var(--primary-blue)',
-                                borderColor: 'white'
-                            }}>
-                                {language === 'en' ? 'Trip Information' : '行程信息'}
-                            </Link>
-                        </div>
-                    </div>
+                    </ScrollReveal>
+                    <ScrollReveal delay={0.4}>
+                        <Link
+                            to="/itinerary"
+                            className="btn btn-light"
+                            style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}
+                        >
+                            {t.ctaButton}
+                            <ArrowRight size={20} />
+                        </Link>
+                    </ScrollReveal>
                 </div>
             </section>
         </div>

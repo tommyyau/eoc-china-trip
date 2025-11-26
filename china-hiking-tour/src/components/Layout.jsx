@@ -1,19 +1,31 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X, Globe, Mountain } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const Layout = ({ children }) => {
     const { language, toggleLanguage } = useLanguage();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [scrollProgress, setScrollProgress] = useState(0);
     const location = useLocation();
+
+    // Pages with full-height hero sections that need transparent header
+    const hasHero = ['/', '/itinerary', '/info'].includes(location.pathname);
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
+            const scrollY = window.scrollY;
+            setScrolled(scrollY > 80);
+
+            // Calculate scroll progress
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
+            setScrollProgress(progress);
         };
         window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Call once on mount
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
@@ -33,71 +45,101 @@ const Layout = ({ children }) => {
             { to: '/info', label: '信息' }
         ];
 
-    const footerText = language === 'en'
-        ? 'Ealing Outdoor Club - China Hiking Adventure 2026'
-        : '伊灵户外俱乐部 - 2026中国徒步探险之旅';
+    const isTransparent = hasHero && !scrolled;
 
     return (
         <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+            {/* Scroll Progress Bar */}
+            <div
+                style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: '3px',
+                    zIndex: 1001,
+                    backgroundColor: 'transparent'
+                }}
+            >
+                <motion.div
+                    style={{
+                        height: '100%',
+                        backgroundColor: 'var(--primary-red)',
+                        transformOrigin: 'left'
+                    }}
+                    animate={{ scaleX: scrollProgress / 100 }}
+                    transition={{ duration: 0.1 }}
+                />
+            </div>
+
             {/* Header */}
             <header
                 style={{
-                    position: 'sticky',
+                    position: 'fixed',
                     top: 0,
+                    left: 0,
+                    right: 0,
                     zIndex: 1000,
-                    background: scrolled ? 'white' : 'var(--surface-white)',
-                    boxShadow: scrolled ? 'var(--shadow-md)' : 'var(--shadow-sm)',
-                    transition: 'all 0.3s ease',
-                    borderBottom: `1px solid ${scrolled ? 'transparent' : 'var(--border-color)'}`
+                    background: isTransparent ? 'transparent' : 'rgba(255, 255, 255, 0.98)',
+                    backdropFilter: isTransparent ? 'none' : 'blur(10px)',
+                    boxShadow: scrolled ? 'var(--shadow-md)' : 'none',
+                    transition: 'all 0.3s ease'
                 }}
             >
                 <nav className="container" style={{
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    padding: '1.25rem var(--spacing-md)',
-                    maxWidth: '1400px'
+                    padding: scrolled ? '0.75rem var(--spacing-md)' : '1.25rem var(--spacing-md)',
+                    maxWidth: '1400px',
+                    transition: 'padding 0.3s ease'
                 }}>
                     {/* Logo/Brand */}
                     <Link
                         to="/"
                         style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '0.5rem',
                             fontSize: '1.5rem',
                             fontWeight: 800,
-                            color: 'var(--primary-red)',
+                            color: isTransparent ? 'white' : 'var(--primary-red)',
                             fontFamily: 'var(--font-heading)',
                             textDecoration: 'none',
-                            letterSpacing: '-0.02em'
+                            letterSpacing: '-0.02em',
+                            textShadow: isTransparent ? '0 2px 4px rgba(0,0,0,0.3)' : 'none',
+                            transition: 'color 0.3s ease'
                         }}
                     >
+                        <Mountain size={28} strokeWidth={2.5} />
                         {language === 'en' ? 'China 2026' : '中国 2026'}
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '2.5rem' }}>
-                        <div style={{ display: 'none', gap: '2rem' }} className="desktop-nav">
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+                        <div style={{ display: 'none', gap: '1.5rem' }} className="desktop-nav">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.to}
                                     to={link.to}
                                     style={{
-                                        fontSize: '1.0625rem',
+                                        fontSize: '0.95rem',
                                         fontWeight: 600,
-                                        color: location.pathname === link.to ? 'var(--primary-red)' : 'var(--text-dark)',
+                                        color: isTransparent
+                                            ? 'white'
+                                            : location.pathname === link.to
+                                                ? 'var(--primary-red)'
+                                                : 'var(--text-dark)',
                                         textDecoration: 'none',
-                                        transition: 'color 0.2s ease',
-                                        padding: '0.5rem 0',
-                                        borderBottom: location.pathname === link.to ? '2px solid var(--primary-red)' : '2px solid transparent'
-                                    }}
-                                    onMouseEnter={(e) => {
-                                        if (location.pathname !== link.to) {
-                                            e.target.style.color = 'var(--primary-blue)';
-                                        }
-                                    }}
-                                    onMouseLeave={(e) => {
-                                        if (location.pathname !== link.to) {
-                                            e.target.style.color = 'var(--text-dark)';
-                                        }
+                                        transition: 'all 0.2s ease',
+                                        padding: '0.5rem 0.75rem',
+                                        borderRadius: 'var(--radius-md)',
+                                        backgroundColor: location.pathname === link.to
+                                            ? isTransparent
+                                                ? 'rgba(255,255,255,0.2)'
+                                                : 'rgba(216, 67, 21, 0.1)'
+                                            : 'transparent',
+                                        textShadow: isTransparent ? '0 1px 2px rgba(0,0,0,0.3)' : 'none'
                                     }}
                                 >
                                     {link.label}
@@ -108,19 +150,24 @@ const Layout = ({ children }) => {
                         {/* Language Toggle */}
                         <button
                             onClick={toggleLanguage}
-                            className="btn-outline"
                             style={{
-                                padding: '0.625rem 1.25rem',
-                                fontSize: '0.9375rem',
+                                padding: '0.5rem 1rem',
+                                fontSize: '0.875rem',
                                 display: 'flex',
                                 alignItems: 'center',
-                                gap: '0.5rem',
-                                background: 'var(--surface-white)'
+                                gap: '0.4rem',
+                                background: isTransparent ? 'rgba(255,255,255,0.2)' : 'var(--surface-white)',
+                                border: isTransparent ? '1px solid rgba(255,255,255,0.3)' : '1px solid var(--border-color)',
+                                borderRadius: 'var(--radius-md)',
+                                color: isTransparent ? 'white' : 'var(--text-dark)',
+                                cursor: 'pointer',
+                                fontWeight: 600,
+                                transition: 'all 0.2s ease'
                             }}
                             aria-label="Toggle language"
                         >
-                            <Globe size={18} />
-                            <span style={{ fontWeight: 600 }}>{language === 'en' ? 'CN' : 'EN'}</span>
+                            <Globe size={16} />
+                            <span>{language === 'en' ? '中文' : 'EN'}</span>
                         </button>
 
                         {/* Mobile Menu Button */}
@@ -132,7 +179,7 @@ const Layout = ({ children }) => {
                                 border: 'none',
                                 cursor: 'pointer',
                                 padding: '0.5rem',
-                                color: 'var(--text-dark)'
+                                color: isTransparent ? 'white' : 'var(--text-dark)'
                             }}
                             className="mobile-menu-btn"
                             aria-label="Toggle menu"
@@ -144,25 +191,31 @@ const Layout = ({ children }) => {
 
                 {/* Mobile Navigation */}
                 {mobileMenuOpen && (
-                    <div style={{
-                        background: 'var(--surface-white)',
-                        borderTop: '1px solid var(--border-color)',
-                        padding: '1.5rem',
-                        boxShadow: 'var(--shadow-lg)'
-                    }} className="mobile-nav">
+                    <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        style={{
+                            background: 'var(--surface-white)',
+                            borderTop: '1px solid var(--border-color)',
+                            padding: '1rem',
+                            boxShadow: 'var(--shadow-lg)'
+                        }}
+                        className="mobile-nav"
+                    >
                         {navLinks.map((link) => (
                             <Link
                                 key={link.to}
                                 to={link.to}
                                 style={{
                                     display: 'block',
-                                    padding: '1rem',
-                                    fontSize: '1.125rem',
+                                    padding: '1rem 1.25rem',
+                                    fontSize: '1.1rem',
                                     fontWeight: 600,
                                     color: location.pathname === link.to ? 'var(--primary-red)' : 'var(--text-dark)',
                                     textDecoration: 'none',
-                                    borderLeft: location.pathname === link.to ? '4px solid var(--primary-red)' : '4px solid transparent',
-                                    paddingLeft: '1rem',
+                                    borderRadius: 'var(--radius-md)',
+                                    backgroundColor: location.pathname === link.to ? 'rgba(216, 67, 21, 0.1)' : 'transparent',
                                     marginBottom: '0.5rem',
                                     transition: 'all 0.2s ease'
                                 }}
@@ -170,56 +223,60 @@ const Layout = ({ children }) => {
                                 {link.label}
                             </Link>
                         ))}
-                    </div>
+                    </motion.div>
                 )}
             </header>
 
             <style>{`
-        /* Show desktop nav on larger screens */
-        @media (min-width: 768px) {
-          .desktop-nav {
-            display: flex !important;
-          }
-          .mobile-menu-btn {
-            display: none !important;
-          }
-        }
+                @media (min-width: 768px) {
+                    .desktop-nav {
+                        display: flex !important;
+                    }
+                    .mobile-menu-btn {
+                        display: none !important;
+                    }
+                }
 
-        /* Show mobile menu button on smaller screens */
-        @media (max-width: 767px) {
-          .mobile-menu-btn {
-            display: block !important;
-          }
-        }
-      `}</style>
+                @media (max-width: 767px) {
+                    .mobile-menu-btn {
+                        display: block !important;
+                    }
+                }
+            `}</style>
 
-            {/* Main Content */}
-            <main style={{ flex: 1 }}>
+            {/* Main Content - add padding for fixed header */}
+            <main style={{ flex: 1, paddingTop: '80px' }}>
                 {children}
             </main>
 
             {/* Footer */}
             <footer style={{
-                background: 'var(--text-dark)',
+                background: 'linear-gradient(180deg, var(--primary-dark) 0%, #1a1a2e 100%)',
                 color: 'white',
-                padding: '3rem 0',
+                padding: '4rem 0 2rem',
                 marginTop: 'auto'
             }}>
-                <div className="container" style={{
-                    textAlign: 'center'
-                }}>
-                    <div style={{ marginBottom: '1.5rem' }}>
-                        <h3 style={{
-                            color: 'white',
-                            fontSize: '1.5rem',
-                            marginBottom: '0.5rem',
-                            fontWeight: 700
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <div style={{ marginBottom: '2rem' }}>
+                        <div style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.5rem',
+                            marginBottom: '1rem'
                         }}>
-                            {language === 'en' ? 'Ealing Outdoor Club' : '伊灵户外俱乐部'}
-                        </h3>
+                            <Mountain size={32} color="var(--primary-red)" />
+                            <h3 style={{
+                                color: 'white',
+                                fontSize: '1.75rem',
+                                margin: 0,
+                                fontWeight: 800
+                            }}>
+                                {language === 'en' ? 'Ealing Outdoor Club' : '伊灵户外俱乐部'}
+                            </h3>
+                        </div>
                         <p style={{
                             color: 'rgba(255,255,255,0.7)',
-                            fontSize: '1rem',
+                            fontSize: '1.1rem',
                             marginBottom: 0
                         }}>
                             {language === 'en' ? 'China Hiking Adventure 2026' : '2026中国徒步探险之旅'}
@@ -227,10 +284,35 @@ const Layout = ({ children }) => {
                     </div>
 
                     <div style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        gap: '2rem',
+                        marginBottom: '2rem',
+                        flexWrap: 'wrap'
+                    }}>
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.to}
+                                to={link.to}
+                                style={{
+                                    color: 'rgba(255,255,255,0.8)',
+                                    textDecoration: 'none',
+                                    fontWeight: 500,
+                                    transition: 'color 0.2s ease'
+                                }}
+                                onMouseEnter={(e) => e.target.style.color = 'white'}
+                                onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.8)'}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
+                    </div>
+
+                    <div style={{
                         paddingTop: '2rem',
-                        borderTop: '1px solid rgba(255,255,255,0.2)',
-                        color: 'rgba(255,255,255,0.6)',
-                        fontSize: '0.9375rem'
+                        borderTop: '1px solid rgba(255,255,255,0.15)',
+                        color: 'rgba(255,255,255,0.5)',
+                        fontSize: '0.875rem'
                     }}>
                         <p style={{ marginBottom: 0 }}>
                             © 2025 Ealing Outdoor Club. {language === 'en' ? 'All rights reserved.' : '版权所有。'}
