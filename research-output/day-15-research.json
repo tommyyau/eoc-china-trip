@@ -1,257 +1,608 @@
 {
   "day": 15,
   "title": {
-    "en": "Departure",
-    "cn": "返程"
+    "en": "Travel to Qingdao and Departure",
+    "cn": "Travel to Qingdao and Departure"
   },
   "location": {
-    "en": "Qingdao -> London",
-    "cn": "青岛 -> 伦敦"
+    "en": "Qingdao",
+    "cn": "Qingdao"
   },
+  "generatedAt": "2025-11-29T22:02:55.979Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
   "activities": [
     {
-      "activity": "Airport Transfer in Qingdao -> London",
-      "searchQueries": [
+      "name": "Transfer to Qingdao",
+      "activity": "Transfer to Qingdao",
+      "searchTerm": "Transfer to Qingdao Qufu to Qingdao China",
+      "images": [
         {
-          "type": "unsplash",
-          "query": "Airport Transfer Qingdao -> London site:unsplash.com",
-          "description": "Airport Transfer in Qingdao -> London"
-        }
-      ],
-      "searchResults": [
+          "id": "unsplash-4TQOo5sRVRk",
+          "url": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "body of water near city buildings during daytime",
+          "photographer": "Yu Gui",
+          "photographerUrl": "https://unsplash.com/@jasonyg",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/4TQOo5sRVRk",
+          "width": 7952,
+          "height": 4472
+        },
         {
-          "url": "https://unsplash.com/s/photos/Airport%20Transfer%20Qingdao%20-%3E%20London",
-          "title": "Search \"Airport Transfer in Qingdao -> London\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Airport Transfer in Qingdao -> London in Qingdao -> London, China",
-        "Travel photography of Airport Transfer in Qingdao -> London in Qingdao -> London",
-        "Airport Transfer in Qingdao -> London tourist attraction in Qingdao -> London"
-      ]
-    },
-    {
-      "activity": "Airport Transfer in Qingdao -> London",
-      "searchQueries": [
+          "id": "unsplash-V2bCMeEJguM",
+          "url": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people standing on a pier next to the ocean",
+          "photographer": "XUE LIU",
+          "photographerUrl": "https://unsplash.com/@calvy_1990",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/V2bCMeEJguM",
+          "width": 7008,
+          "height": 3504
+        },
         {
-          "type": "pexels",
-          "query": "Airport Transfer Qingdao -> London site:pexels.com",
-          "description": "Airport Transfer in Qingdao -> London"
-        }
-      ],
-      "searchResults": [
+          "id": "pexels-2225891",
+          "url": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg",
+          "alt": "A serene view of a traditional pier extending into the calm sea in Qingdao, China, under a pastel sky.",
+          "photographer": "Ammar  Ahmed",
+          "photographerUrl": "https://www.pexels.com/@ammarahmed",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/lighthouse-at-body-of-water-2225891/",
+          "width": 4656,
+          "height": 3492
+        },
         {
-          "url": "https://www.pexels.com/search/Airport%20Transfer%20Qingdao%20-%3E%20London/",
-          "title": "Search \"Airport Transfer in Qingdao -> London\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Airport Transfer in Qingdao -> London in Qingdao -> London, China",
-        "Travel photography of Airport Transfer in Qingdao -> London in Qingdao -> London",
-        "Airport Transfer in Qingdao -> London tourist attraction in Qingdao -> London"
-      ]
-    },
-    {
-      "activity": "机场送机 in 青岛 -> 伦敦",
-      "searchQueries": [
+          "id": "pexels-33657959",
+          "url": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg",
+          "alt": "Black and white minimalist photo of a beach in Qingdao with two figures by the sea.",
+          "photographer": "Sujal Rijal",
+          "photographerUrl": "https://www.pexels.com/@sujal-rijal-822160551",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/minimalist-beach-scene-in-qingdao-china-33657959/",
+          "width": 4944,
+          "height": 2781
+        },
         {
-          "type": "unsplash",
-          "query": "机场送机 青岛 -> 伦敦 site:unsplash.com",
-          "description": "机场送机 in 青岛 -> 伦敦"
-        }
-      ],
-      "searchResults": [
+          "id": "pixabay-7764111",
+          "url": "https://pixabay.com/get/g9c093508d700cd40826bc84248a3d784495aa10981495399aadd6a2daf17d3c695ebeef117f7a38370cccef1202b06d731b608e17183cc43b5db0f6a366fd6ee_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/02/03/04/35/sea-7764111_150.jpg",
+          "full": "https://pixabay.com/get/gac4711beef8d740e3e1e25d59d404004fd217d342d2533cd90721f74a4bfa7e473356f74d47208c7ceeb50babff70132a3a001d15662c1db77effe68b1e4d242_1280.jpg",
+          "alt": "sea, ocean, beach, nature, sunset, china, qingdao",
+          "photographer": "we-o_rd35igufu0g6u4jaq",
+          "photographerUrl": "https://pixabay.com/users/we-o_rd35igufu0g6u4jaq-33334487/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/sea-ocean-beach-sunset-china-7764111/",
+          "width": 7360,
+          "height": 4140
+        },
         {
-          "url": "https://unsplash.com/s/photos/%E6%9C%BA%E5%9C%BA%E9%80%81%E6%9C%BA%20%E9%9D%92%E5%B2%9B%20-%3E%20%E4%BC%A6%E6%95%A6",
-          "title": "Search \"机场送机 in 青岛 -> 伦敦\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "机场送机 in 青岛 -> 伦敦 in Qingdao -> London, China",
-        "Travel photography of 机场送机 in 青岛 -> 伦敦 in Qingdao -> London",
-        "机场送机 in 青岛 -> 伦敦 tourist attraction in Qingdao -> London"
-      ]
-    },
-    {
-      "activity": "Departure in Qingdao -> London",
-      "searchQueries": [
+          "id": "pixabay-1571521",
+          "url": "https://pixabay.com/get/g2a1772d7d09efb079f58c58318f83dc89ed3845de3bfcdfcaf10efbab2efa9aa8e493ea5fb036f083ba0e3e1bdcd25e445f2c572e49421270d4231b3f7655549_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2016/08/05/03/30/qingdao-1571521_150.jpg",
+          "full": "https://pixabay.com/get/g8de3f4e5a60fe0961aaca975ecdff9046644db80dc321b943667906504d1d50a87287c75d841ebf6641f1d6f64615c3b7fe33f452517fd27b56a0c4a663ea73d_1280.jpg",
+          "alt": "qingdao, nature, china, beach, film",
+          "photographer": "sylarsilent",
+          "photographerUrl": "https://pixabay.com/users/sylarsilent-3036233/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/qingdao-china-beach-film-1571521/",
+          "width": 5710,
+          "height": 3807
+        },
         {
-          "type": "unsplash",
-          "query": "Departure Qingdao -> London site:unsplash.com",
-          "description": "Departure in Qingdao -> London"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Departure%20Qingdao%20-%3E%20London",
-          "title": "Search \"Departure in Qingdao -> London\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Departure in Qingdao -> London in Qingdao -> London, China",
-        "Travel photography of Departure in Qingdao -> London in Qingdao -> London",
-        "Departure in Qingdao -> London tourist attraction in Qingdao -> London"
-      ]
-    },
-    {
-      "activity": "Departure in Qingdao -> London",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Departure Qingdao -> London site:pexels.com",
-          "description": "Departure in Qingdao -> London"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Departure%20Qingdao%20-%3E%20London/",
-          "title": "Search \"Departure in Qingdao -> London\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Departure in Qingdao -> London in Qingdao -> London, China",
-        "Travel photography of Departure in Qingdao -> London in Qingdao -> London",
-        "Departure in Qingdao -> London tourist attraction in Qingdao -> London"
-      ]
-    },
-    {
-      "activity": "返程 in 青岛 -> 伦敦",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "返程 青岛 -> 伦敦 site:unsplash.com",
-          "description": "返程 in 青岛 -> 伦敦"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E8%BF%94%E7%A8%8B%20%E9%9D%92%E5%B2%9B%20-%3E%20%E4%BC%A6%E6%95%A6",
-          "title": "Search \"返程 in 青岛 -> 伦敦\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "返程 in 青岛 -> 伦敦 in Qingdao -> London, China",
-        "Travel photography of 返程 in 青岛 -> 伦敦 in Qingdao -> London",
-        "返程 in 青岛 -> 伦敦 tourist attraction in Qingdao -> London"
-      ]
-    }
-  ],
-  "hotels": [
-    {
-      "accommodation": "N/A",
-      "searchQueries": [
-        {
-          "type": "tripadvisor",
-          "query": "N/A Qingdao -> London site:tripadvisor.com",
-          "description": "N/A in Qingdao -> London on TripAdvisor"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.tripadvisor.com/Search?q=N%2FA%20Qingdao%20-%3E%20London",
-          "title": "Find \"N/A in Qingdao -> London on TripAdvisor\" on TripAdvisor",
-          "description": "Hotel reviews, ratings, and booking information",
-          "type": "search-link"
+          "id": "pixabay-2774696",
+          "url": "https://pixabay.com/get/g6633f7bc0d087fe7e0ad19594ba1d263024511ac99f5a283848e7f43bfbb6591c738a27385de8f3dad4e60391cfe8a03af7261adfaa9f894fd3b7f9560f6d4b4_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/09/22/07/55/qingdao-2774696_150.jpg",
+          "full": "https://pixabay.com/get/g6dba056da9393373f1d5d1cad465d37fe7726d63d7bb07125947a6f7e9c5cd56b39452099e4168f57f6789a1f75c0ea5d36b8a41b459e6e72d1f39a273b28180_1280.jpg",
+          "alt": "qingdao, the sea, blue sky, red house, china, nature, marine, beach",
+          "photographer": "Gwen24",
+          "photographerUrl": "https://pixabay.com/users/Gwen24-1810638/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/qingdao-the-sea-blue-sky-red-house-2774696/",
+          "width": 3136,
+          "height": 1764
         }
       ]
     },
     {
-      "accommodation": "N/A",
-      "searchQueries": [
+      "name": "Arrival at Qingdao International Airport",
+      "activity": "Arrival at Qingdao International Airport",
+      "searchTerm": "Arrival at Qingdao International Airport China",
+      "images": [
         {
-          "type": "booking",
-          "query": "N/A Qingdao -> London site:booking.com",
-          "description": "N/A in Qingdao -> London on Booking.com"
-        }
-      ],
-      "searchResults": []
-    },
-    {
-      "accommodation": "N/A",
-      "searchQueries": [
+          "id": "pexels-33652462",
+          "url": "https://images.pexels.com/photos/33652462/pexels-photo-33652462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/33652462/pexels-photo-33652462.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/33652462/pexels-photo-33652462.jpeg",
+          "alt": "Air China Boeing 747-8 at airport terminal with cargo loading.",
+          "photographer": "Linjie Zhang",
+          "photographerUrl": "https://www.pexels.com/@linjie-zhang-198850011",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/air-china-boeing-747-parked-at-airport-terminal-33652462/",
+          "width": 3208,
+          "height": 1806
+        },
         {
-          "type": "general",
-          "query": "N/A Qingdao -> London hotel reviews",
-          "description": "Reviews for N/A in Qingdao -> London"
+          "id": "pexels-31519541",
+          "url": "https://images.pexels.com/photos/31519541/pexels-photo-31519541.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31519541/pexels-photo-31519541.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31519541/pexels-photo-31519541.jpeg",
+          "alt": "Silhouetted figures move through a sunlit Shanghai airport terminal, capturing travel's essence.",
+          "photographer": "Gu Ko",
+          "photographerUrl": "https://www.pexels.com/@gu-ko-2150570603",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/silhouetted-travelers-at-shanghai-airport-terminal-31519541/",
+          "width": 4977,
+          "height": 3119
+        },
+        {
+          "id": "pixabay-2373727",
+          "url": "https://pixabay.com/get/g97eacd072974d2f49e474b4d313e3e59f003677481effaca5da215ef12461be8b438c350b4dc9faec5713a9270456bca1da854e6d911348a9d300462a5de84e6_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_150.jpg",
+          "full": "https://pixabay.com/get/g4f421c1a831587bc71f1215a3992089825de9c92efd8e30f285aae631288afe3b5b291f455c8007925be3da1bb9404c1aac41d641a5219cfb37232b6e3f461a8_1280.jpg",
+          "alt": "airport, woman, flight, boarding, traveling, tourist, trip, departure, arrival, terminal, airport, airport, airport, airport, airport, flight, traveling",
+          "photographer": "JESHOOTS-com",
+          "photographerUrl": "https://pixabay.com/users/JESHOOTS-com-264599/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/airport-woman-flight-boarding-2373727/",
+          "width": 5460,
+          "height": 3640
+        },
+        {
+          "id": "pixabay-5219496",
+          "url": "https://pixabay.com/get/gb0277ab38d0b6c3e360ae761b285c3ddfbda073e3e173cbeb0a6cb8576c214ed48aa648a3f4b789a02a1943bec3e59bafec6a02bb993948a9370718738675952_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/05/25/17/03/merry-christmas-5219496_150.jpg",
+          "full": "https://pixabay.com/get/gaa96a39187152920a129c46a907e1286c16cf33904acc4db80b2a4cb4885d7df3c559e2c960a8bd41372ca7050736a6b645708283c85e5f88242885910acb1ce_1280.jpg",
+          "alt": "merry christmas, boarding pass, travel, airport, luggage, flight, plane, tourism, suitcase, departure, aircraft, trip, journey, passport, transport, flying, vacation, business, arrival",
+          "photographer": "JoshuaWoroniecki",
+          "photographerUrl": "https://pixabay.com/users/JoshuaWoroniecki-12734309/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/",
+          "width": 5782,
+          "height": 3707
+        },
+        {
+          "id": "pixabay-719798",
+          "url": "https://pixabay.com/get/ge7e6661f8844d4fd2da5e09f57aac563ff2c8f4506cf393d319be6c826806deea92ce714f9e92aaace007eced42848a4_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/04/13/00/05/airport-719798_150.jpg",
+          "full": "https://pixabay.com/get/ga4b9a8022d9ddfafa353d69ba88f7cb740f182af752e2cf009ad03076b5b5a1160824c2d12d971c541ce862ce16448b8622d9cdac3321b993510eb8fea16d36c_1280.jpg",
+          "alt": "airport, terminal, flight, travel, departure, luggage, vacation, arrival, gate, international, airline, airport, airport, airport, airport, airport, terminal, luggage",
+          "photographer": "Atrueleo",
+          "photographerUrl": "https://pixabay.com/users/Atrueleo-931471/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/airport-terminal-flight-travel-719798/",
+          "width": 3264,
+          "height": 2448
+        },
+        {
+          "id": "wikimedia-136503689",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/View_of_Qingdao_Jiaodong_International_Airport_from_the_arrival_corridor.jpg/800px-View of Qingdao Jiaodong International Airport from the arrival corridor.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/View_of_Qingdao_Jiaodong_International_Airport_from_the_arrival_corridor.jpg/300px-View of Qingdao Jiaodong International Airport from the arrival corridor.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/b/b0/View_of_Qingdao_Jiaodong_International_Airport_from_the_arrival_corridor.jpg",
+          "alt": "View of Qingdao Jiaodong International Airport from the domestic arrival corridor",
+          "photographer": "Timothytyy",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AView%20of%20Qingdao%20Jiaodong%20International%20Airport%20from%20the%20arrival%20corridor.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AView%20of%20Qingdao%20Jiaodong%20International%20Airport%20from%20the%20arrival%20corridor.jpg",
+          "width": 4080,
+          "height": 3060,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "id": "wikimedia-136503688",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Baggage_claim_area_at_Qingdao_Jiaodong_International_Airport.jpg/800px-Baggage claim area at Qingdao Jiaodong International Airport.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Baggage_claim_area_at_Qingdao_Jiaodong_International_Airport.jpg/300px-Baggage claim area at Qingdao Jiaodong International Airport.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/9/90/Baggage_claim_area_at_Qingdao_Jiaodong_International_Airport.jpg",
+          "alt": "Baggage claim area for domestic arrivals at Qingdao Jiaodong International Airport",
+          "photographer": "Timothytyy",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ABaggage%20claim%20area%20at%20Qingdao%20Jiaodong%20International%20Airport.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABaggage%20claim%20area%20at%20Qingdao%20Jiaodong%20International%20Airport.jpg",
+          "width": 4080,
+          "height": 3060,
+          "license": "CC BY-SA 4.0"
         }
-      ],
-      "searchResults": []
-    }
-  ],
-  "recommendedSearches": [
-    {
-      "query": "Qingdao -> London China tourism site:unsplash.com",
-      "description": "General Qingdao -> London tourism photos",
-      "reason": "Good for establishing shots and context"
+      ]
     },
     {
-      "query": "Qingdao -> London China landscape site:pexels.com",
-      "description": "Qingdao -> London landscapes and scenery",
-      "reason": "Perfect for background and establishing scenes"
-    },
-    {
-      "query": "Airport Transfer China travel site:unsplash.com",
-      "description": "Airport Transfer travel photography",
-      "reason": "Specific activity focus"
-    },
-    {
-      "query": "Departure China travel site:unsplash.com",
-      "description": "Departure travel photography",
-      "reason": "Specific activity focus"
+      "name": "Departure from Qingdao",
+      "activity": "Departure from Qingdao",
+      "searchTerm": "Departure from Qingdao Qingdao to Heathrow China",
+      "images": [
+        {
+          "id": "unsplash-V2bCMeEJguM",
+          "url": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people standing on a pier next to the ocean",
+          "photographer": "XUE LIU",
+          "photographerUrl": "https://unsplash.com/@calvy_1990",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/V2bCMeEJguM",
+          "width": 7008,
+          "height": 3504
+        },
+        {
+          "id": "unsplash-4TQOo5sRVRk",
+          "url": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=85",
+          "alt": "body of water near city buildings during daytime",
+          "photographer": "Yu Gui",
+          "photographerUrl": "https://unsplash.com/@jasonyg",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/4TQOo5sRVRk",
+          "width": 7952,
+          "height": 4472
+        },
+        {
+          "id": "pexels-2225891",
+          "url": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg",
+          "alt": "A serene view of a traditional pier extending into the calm sea in Qingdao, China, under a pastel sky.",
+          "photographer": "Ammar  Ahmed",
+          "photographerUrl": "https://www.pexels.com/@ammarahmed",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/lighthouse-at-body-of-water-2225891/",
+          "width": 4656,
+          "height": 3492
+        },
+        {
+          "id": "pexels-33657959",
+          "url": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg",
+          "alt": "Black and white minimalist photo of a beach in Qingdao with two figures by the sea.",
+          "photographer": "Sujal Rijal",
+          "photographerUrl": "https://www.pexels.com/@sujal-rijal-822160551",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/minimalist-beach-scene-in-qingdao-china-33657959/",
+          "width": 4944,
+          "height": 2781
+        },
+        {
+          "id": "pixabay-7764111",
+          "url": "https://pixabay.com/get/g5857fa9d4a8578b0901fd062f4a8cd03638e59561bb1b796075f543ccf91acc887d2d13054db25dfe64cfb01067d7a71f28243cc6ae49dd73a0952add7fcbfef_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/02/03/04/35/sea-7764111_150.jpg",
+          "full": "https://pixabay.com/get/g7028b0eeeba62696b494e414143f176ebac27b2b5a9aa12f295fb16d55a52f0355994fd3260ef3aa7a97498795f341c8a484a8be36b69c5c6eebb195f50fb174_1280.jpg",
+          "alt": "sea, ocean, beach, nature, sunset, china, qingdao",
+          "photographer": "we-o_rd35igufu0g6u4jaq",
+          "photographerUrl": "https://pixabay.com/users/we-o_rd35igufu0g6u4jaq-33334487/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/sea-ocean-beach-sunset-china-7764111/",
+          "width": 7360,
+          "height": 4140
+        },
+        {
+          "id": "pixabay-1571521",
+          "url": "https://pixabay.com/get/g701952d614409739bcd4a0dc0d71857ca6dd172da0dbfba9732e6020d8138cefde40294792bd48c92d5e6e1271164bbacba30db44b4f0627565d8fa107289e48_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2016/08/05/03/30/qingdao-1571521_150.jpg",
+          "full": "https://pixabay.com/get/g32143f337def9c073711970e2afb4bff7254c2c6c8cc370f8f9b72078563f1e59c6dcfafd84a5855999886e7800ccaf66d3adf4da0e05794375cbb842272a855_1280.jpg",
+          "alt": "qingdao, nature, china, beach, film",
+          "photographer": "sylarsilent",
+          "photographerUrl": "https://pixabay.com/users/sylarsilent-3036233/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/qingdao-china-beach-film-1571521/",
+          "width": 5710,
+          "height": 3807
+        },
+        {
+          "id": "pixabay-2470212",
+          "url": "https://pixabay.com/get/g6d3a98a7008f2358519ca5cd69df953a876e342926b02191ecd3790a30c5c9c36b29c69170388d8b2780edf3e2226c58a866313c4d3c9796d179cbe24a46f6de_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/07/04/07/29/miyazaki-2470212_150.jpg",
+          "full": "https://pixabay.com/get/g23b6b481ea5c7736c7e8bd2a4bd68c823daa1dcbff528949101739ca0ed3e19a95d79747833a59c59c844441cfa27776a4f8eb217f1730f5474a186e7e3de596_1280.jpg",
+          "alt": "miyazaki, qingdao, dragon, miyazaki, qingdao, qingdao, dragon, dragon, dragon, dragon, dragon",
+          "photographer": "kokorocare",
+          "photographerUrl": "https://pixabay.com/users/kokorocare-5806932/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/miyazaki-qingdao-dragon-2470212/",
+          "width": 6000,
+          "height": 4000
+        }
+      ]
     }
   ],
   "sampleImages": [
     {
-      "activity": "Airport Transfer",
+      "activity": "Transfer to Qingdao",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Airport%20Transfer%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "unsplash-4TQOo5sRVRk",
+          "url": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "body of water near city buildings during daytime",
+          "photographer": "Yu Gui",
+          "photographerUrl": "https://unsplash.com/@jasonyg",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Airport%20Transfer%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Airport%20Transfer%20china%20tourism",
-          "query": "Airport Transfer",
-          "alt": "Airport Transfer china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Airport%20Transfer%20china%20tourism&w=1200",
-          "description": "Real photo of Airport Transfer china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/4TQOo5sRVRk",
+          "width": 7952,
+          "height": 4472
+        },
+        {
+          "id": "unsplash-V2bCMeEJguM",
+          "url": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUWluZ2RhbyUyMFF1ZnUlMjB0byUyMFFpbmdkYW8lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzcwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people standing on a pier next to the ocean",
+          "photographer": "XUE LIU",
+          "photographerUrl": "https://unsplash.com/@calvy_1990",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/V2bCMeEJguM",
+          "width": 7008,
+          "height": 3504
+        },
+        {
+          "id": "pexels-2225891",
+          "url": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg",
+          "alt": "A serene view of a traditional pier extending into the calm sea in Qingdao, China, under a pastel sky.",
+          "photographer": "Ammar  Ahmed",
+          "photographerUrl": "https://www.pexels.com/@ammarahmed",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/lighthouse-at-body-of-water-2225891/",
+          "width": 4656,
+          "height": 3492
+        },
+        {
+          "id": "pexels-33657959",
+          "url": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg",
+          "alt": "Black and white minimalist photo of a beach in Qingdao with two figures by the sea.",
+          "photographer": "Sujal Rijal",
+          "photographerUrl": "https://www.pexels.com/@sujal-rijal-822160551",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/minimalist-beach-scene-in-qingdao-china-33657959/",
+          "width": 4944,
+          "height": 2781
+        },
+        {
+          "id": "pixabay-7764111",
+          "url": "https://pixabay.com/get/g9c093508d700cd40826bc84248a3d784495aa10981495399aadd6a2daf17d3c695ebeef117f7a38370cccef1202b06d731b608e17183cc43b5db0f6a366fd6ee_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/02/03/04/35/sea-7764111_150.jpg",
+          "full": "https://pixabay.com/get/gac4711beef8d740e3e1e25d59d404004fd217d342d2533cd90721f74a4bfa7e473356f74d47208c7ceeb50babff70132a3a001d15662c1db77effe68b1e4d242_1280.jpg",
+          "alt": "sea, ocean, beach, nature, sunset, china, qingdao",
+          "photographer": "we-o_rd35igufu0g6u4jaq",
+          "photographerUrl": "https://pixabay.com/users/we-o_rd35igufu0g6u4jaq-33334487/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/sea-ocean-beach-sunset-china-7764111/",
+          "width": 7360,
+          "height": 4140
+        },
+        {
+          "id": "pixabay-1571521",
+          "url": "https://pixabay.com/get/g2a1772d7d09efb079f58c58318f83dc89ed3845de3bfcdfcaf10efbab2efa9aa8e493ea5fb036f083ba0e3e1bdcd25e445f2c572e49421270d4231b3f7655549_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2016/08/05/03/30/qingdao-1571521_150.jpg",
+          "full": "https://pixabay.com/get/g8de3f4e5a60fe0961aaca975ecdff9046644db80dc321b943667906504d1d50a87287c75d841ebf6641f1d6f64615c3b7fe33f452517fd27b56a0c4a663ea73d_1280.jpg",
+          "alt": "qingdao, nature, china, beach, film",
+          "photographer": "sylarsilent",
+          "photographerUrl": "https://pixabay.com/users/sylarsilent-3036233/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/qingdao-china-beach-film-1571521/",
+          "width": 5710,
+          "height": 3807
+        },
+        {
+          "id": "pixabay-2774696",
+          "url": "https://pixabay.com/get/g6633f7bc0d087fe7e0ad19594ba1d263024511ac99f5a283848e7f43bfbb6591c738a27385de8f3dad4e60391cfe8a03af7261adfaa9f894fd3b7f9560f6d4b4_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/09/22/07/55/qingdao-2774696_150.jpg",
+          "full": "https://pixabay.com/get/g6dba056da9393373f1d5d1cad465d37fe7726d63d7bb07125947a6f7e9c5cd56b39452099e4168f57f6789a1f75c0ea5d36b8a41b459e6e72d1f39a273b28180_1280.jpg",
+          "alt": "qingdao, the sea, blue sky, red house, china, nature, marine, beach",
+          "photographer": "Gwen24",
+          "photographerUrl": "https://pixabay.com/users/Gwen24-1810638/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/qingdao-the-sea-blue-sky-red-house-2774696/",
+          "width": 3136,
+          "height": 1764
         }
       ]
     },
     {
-      "activity": "Departure",
+      "activity": "Arrival at Qingdao International Airport",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Departure%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "pexels-33652462",
+          "url": "https://images.pexels.com/photos/33652462/pexels-photo-33652462.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/33652462/pexels-photo-33652462.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/33652462/pexels-photo-33652462.jpeg",
+          "alt": "Air China Boeing 747-8 at airport terminal with cargo loading.",
+          "photographer": "Linjie Zhang",
+          "photographerUrl": "https://www.pexels.com/@linjie-zhang-198850011",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/air-china-boeing-747-parked-at-airport-terminal-33652462/",
+          "width": 3208,
+          "height": 1806
+        },
+        {
+          "id": "pexels-31519541",
+          "url": "https://images.pexels.com/photos/31519541/pexels-photo-31519541.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31519541/pexels-photo-31519541.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31519541/pexels-photo-31519541.jpeg",
+          "alt": "Silhouetted figures move through a sunlit Shanghai airport terminal, capturing travel's essence.",
+          "photographer": "Gu Ko",
+          "photographerUrl": "https://www.pexels.com/@gu-ko-2150570603",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/silhouetted-travelers-at-shanghai-airport-terminal-31519541/",
+          "width": 4977,
+          "height": 3119
+        },
+        {
+          "id": "pixabay-2373727",
+          "url": "https://pixabay.com/get/g97eacd072974d2f49e474b4d313e3e59f003677481effaca5da215ef12461be8b438c350b4dc9faec5713a9270456bca1da854e6d911348a9d300462a5de84e6_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/06/05/11/01/airport-2373727_150.jpg",
+          "full": "https://pixabay.com/get/g4f421c1a831587bc71f1215a3992089825de9c92efd8e30f285aae631288afe3b5b291f455c8007925be3da1bb9404c1aac41d641a5219cfb37232b6e3f461a8_1280.jpg",
+          "alt": "airport, woman, flight, boarding, traveling, tourist, trip, departure, arrival, terminal, airport, airport, airport, airport, airport, flight, traveling",
+          "photographer": "JESHOOTS-com",
+          "photographerUrl": "https://pixabay.com/users/JESHOOTS-com-264599/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/airport-woman-flight-boarding-2373727/",
+          "width": 5460,
+          "height": 3640
+        },
+        {
+          "id": "pixabay-5219496",
+          "url": "https://pixabay.com/get/gb0277ab38d0b6c3e360ae761b285c3ddfbda073e3e173cbeb0a6cb8576c214ed48aa648a3f4b789a02a1943bec3e59bafec6a02bb993948a9370718738675952_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/05/25/17/03/merry-christmas-5219496_150.jpg",
+          "full": "https://pixabay.com/get/gaa96a39187152920a129c46a907e1286c16cf33904acc4db80b2a4cb4885d7df3c559e2c960a8bd41372ca7050736a6b645708283c85e5f88242885910acb1ce_1280.jpg",
+          "alt": "merry christmas, boarding pass, travel, airport, luggage, flight, plane, tourism, suitcase, departure, aircraft, trip, journey, passport, transport, flying, vacation, business, arrival",
+          "photographer": "JoshuaWoroniecki",
+          "photographerUrl": "https://pixabay.com/users/JoshuaWoroniecki-12734309/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/merry-christmas-boarding-pass-travel-5219496/",
+          "width": 5782,
+          "height": 3707
+        },
+        {
+          "id": "pixabay-719798",
+          "url": "https://pixabay.com/get/ge7e6661f8844d4fd2da5e09f57aac563ff2c8f4506cf393d319be6c826806deea92ce714f9e92aaace007eced42848a4_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/04/13/00/05/airport-719798_150.jpg",
+          "full": "https://pixabay.com/get/ga4b9a8022d9ddfafa353d69ba88f7cb740f182af752e2cf009ad03076b5b5a1160824c2d12d971c541ce862ce16448b8622d9cdac3321b993510eb8fea16d36c_1280.jpg",
+          "alt": "airport, terminal, flight, travel, departure, luggage, vacation, arrival, gate, international, airline, airport, airport, airport, airport, airport, terminal, luggage",
+          "photographer": "Atrueleo",
+          "photographerUrl": "https://pixabay.com/users/Atrueleo-931471/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/airport-terminal-flight-travel-719798/",
+          "width": 3264,
+          "height": 2448
+        },
+        {
+          "id": "wikimedia-136503689",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/View_of_Qingdao_Jiaodong_International_Airport_from_the_arrival_corridor.jpg/800px-View of Qingdao Jiaodong International Airport from the arrival corridor.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/View_of_Qingdao_Jiaodong_International_Airport_from_the_arrival_corridor.jpg/300px-View of Qingdao Jiaodong International Airport from the arrival corridor.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/b/b0/View_of_Qingdao_Jiaodong_International_Airport_from_the_arrival_corridor.jpg",
+          "alt": "View of Qingdao Jiaodong International Airport from the domestic arrival corridor",
+          "photographer": "Timothytyy",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AView%20of%20Qingdao%20Jiaodong%20International%20Airport%20from%20the%20arrival%20corridor.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AView%20of%20Qingdao%20Jiaodong%20International%20Airport%20from%20the%20arrival%20corridor.jpg",
+          "width": 4080,
+          "height": 3060,
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "id": "wikimedia-136503688",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Baggage_claim_area_at_Qingdao_Jiaodong_International_Airport.jpg/800px-Baggage claim area at Qingdao Jiaodong International Airport.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Baggage_claim_area_at_Qingdao_Jiaodong_International_Airport.jpg/300px-Baggage claim area at Qingdao Jiaodong International Airport.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/9/90/Baggage_claim_area_at_Qingdao_Jiaodong_International_Airport.jpg",
+          "alt": "Baggage claim area for domestic arrivals at Qingdao Jiaodong International Airport",
+          "photographer": "Timothytyy",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ABaggage%20claim%20area%20at%20Qingdao%20Jiaodong%20International%20Airport.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABaggage%20claim%20area%20at%20Qingdao%20Jiaodong%20International%20Airport.jpg",
+          "width": 4080,
+          "height": 3060,
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "activity": "Departure from Qingdao",
+      "images": [
+        {
+          "id": "unsplash-V2bCMeEJguM",
+          "url": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1718442759033-8ea95377e6ef?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people standing on a pier next to the ocean",
+          "photographer": "XUE LIU",
+          "photographerUrl": "https://unsplash.com/@calvy_1990",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Departure%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Departure%20china%20tourism",
-          "query": "Departure",
-          "alt": "Departure china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Departure%20china%20tourism&w=1200",
-          "description": "Real photo of Departure china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/V2bCMeEJguM",
+          "width": 7008,
+          "height": 3504
+        },
+        {
+          "id": "unsplash-4TQOo5sRVRk",
+          "url": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1625213201619-51c6445c4e1e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxEZXBhcnR1cmUlMjBmcm9tJTIwUWluZ2RhbyUyMFFpbmdkYW8lMjB0byUyMEhlYXRocm93JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc3NHww&ixlib=rb-4.1.0&q=85",
+          "alt": "body of water near city buildings during daytime",
+          "photographer": "Yu Gui",
+          "photographerUrl": "https://unsplash.com/@jasonyg",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/4TQOo5sRVRk",
+          "width": 7952,
+          "height": 4472
+        },
+        {
+          "id": "pexels-2225891",
+          "url": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2225891/pexels-photo-2225891.jpeg",
+          "alt": "A serene view of a traditional pier extending into the calm sea in Qingdao, China, under a pastel sky.",
+          "photographer": "Ammar  Ahmed",
+          "photographerUrl": "https://www.pexels.com/@ammarahmed",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/lighthouse-at-body-of-water-2225891/",
+          "width": 4656,
+          "height": 3492
+        },
+        {
+          "id": "pexels-33657959",
+          "url": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/33657959/pexels-photo-33657959.jpeg",
+          "alt": "Black and white minimalist photo of a beach in Qingdao with two figures by the sea.",
+          "photographer": "Sujal Rijal",
+          "photographerUrl": "https://www.pexels.com/@sujal-rijal-822160551",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/minimalist-beach-scene-in-qingdao-china-33657959/",
+          "width": 4944,
+          "height": 2781
+        },
+        {
+          "id": "pixabay-7764111",
+          "url": "https://pixabay.com/get/g5857fa9d4a8578b0901fd062f4a8cd03638e59561bb1b796075f543ccf91acc887d2d13054db25dfe64cfb01067d7a71f28243cc6ae49dd73a0952add7fcbfef_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/02/03/04/35/sea-7764111_150.jpg",
+          "full": "https://pixabay.com/get/g7028b0eeeba62696b494e414143f176ebac27b2b5a9aa12f295fb16d55a52f0355994fd3260ef3aa7a97498795f341c8a484a8be36b69c5c6eebb195f50fb174_1280.jpg",
+          "alt": "sea, ocean, beach, nature, sunset, china, qingdao",
+          "photographer": "we-o_rd35igufu0g6u4jaq",
+          "photographerUrl": "https://pixabay.com/users/we-o_rd35igufu0g6u4jaq-33334487/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/sea-ocean-beach-sunset-china-7764111/",
+          "width": 7360,
+          "height": 4140
+        },
+        {
+          "id": "pixabay-1571521",
+          "url": "https://pixabay.com/get/g701952d614409739bcd4a0dc0d71857ca6dd172da0dbfba9732e6020d8138cefde40294792bd48c92d5e6e1271164bbacba30db44b4f0627565d8fa107289e48_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2016/08/05/03/30/qingdao-1571521_150.jpg",
+          "full": "https://pixabay.com/get/g32143f337def9c073711970e2afb4bff7254c2c6c8cc370f8f9b72078563f1e59c6dcfafd84a5855999886e7800ccaf66d3adf4da0e05794375cbb842272a855_1280.jpg",
+          "alt": "qingdao, nature, china, beach, film",
+          "photographer": "sylarsilent",
+          "photographerUrl": "https://pixabay.com/users/sylarsilent-3036233/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/qingdao-china-beach-film-1571521/",
+          "width": 5710,
+          "height": 3807
+        },
+        {
+          "id": "pixabay-2470212",
+          "url": "https://pixabay.com/get/g6d3a98a7008f2358519ca5cd69df953a876e342926b02191ecd3790a30c5c9c36b29c69170388d8b2780edf3e2226c58a866313c4d3c9796d179cbe24a46f6de_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/07/04/07/29/miyazaki-2470212_150.jpg",
+          "full": "https://pixabay.com/get/g23b6b481ea5c7736c7e8bd2a4bd68c823daa1dcbff528949101739ca0ed3e19a95d79747833a59c59c844441cfa27776a4f8eb217f1730f5474a186e7e3de596_1280.jpg",
+          "alt": "miyazaki, qingdao, dragon, miyazaki, qingdao, qingdao, dragon, dragon, dragon, dragon, dragon",
+          "photographer": "kokorocare",
+          "photographerUrl": "https://pixabay.com/users/kokorocare-5806932/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/miyazaki-qingdao-dragon-2470212/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     }
-  ],
-  "researchDate": "2025-11-29T00:47:53.223Z",
-  "instructions": {
-    "howToUse": "Open the HTML file to preview and select images",
-    "altText": "Use the suggested alt text for accessibility",
-    "hotels": "Check hotel links for reviews and booking information"
-  }
+  ]
 }

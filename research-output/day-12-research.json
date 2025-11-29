@@ -1,257 +1,410 @@
 {
   "day": 12,
   "title": {
-    "en": "Journey to Mount Tai",
-    "cn": "前往泰山"
+    "en": "High-Speed Rail to Shandong, Preview of Tai’An",
+    "cn": "High-Speed Rail to Shandong, Preview of Tai’An"
   },
   "location": {
-    "en": "Shangrao -> Tai'an",
-    "cn": "上饶 -> 泰安"
+    "en": "Tai'An",
+    "cn": "Tai'An"
   },
+  "generatedAt": "2025-11-29T22:02:42.929Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
   "activities": [
     {
-      "activity": "High-speed Rail in Shangrao -> Tai'an",
-      "searchQueries": [
+      "name": "High-Speed Rail to Tai'An",
+      "activity": "High-Speed Rail to Tai'An",
+      "searchTerm": "High-Speed Rail to Tai'An Shangrao to Tai'An China",
+      "images": [
         {
-          "type": "unsplash",
-          "query": "High-speed Rail Shangrao -> Tai'an site:unsplash.com",
-          "description": "High-speed Rail in Shangrao -> Tai'an"
-        }
-      ],
-      "searchResults": [
+          "id": "unsplash-Fc7GsSieVWo",
+          "url": "https://images.unsplash.com/photo-1706275032060-cb01b1fae473?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1706275032060-cb01b1fae473?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1706275032060-cb01b1fae473?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a high speed train traveling through a train station",
+          "photographer": "KUA YUE",
+          "photographerUrl": "https://unsplash.com/@df11g",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/Fc7GsSieVWo",
+          "width": 4288,
+          "height": 2848
+        },
         {
-          "url": "https://unsplash.com/s/photos/High-speed%20Rail%20Shangrao%20-%3E%20Tai'an",
-          "title": "Search \"High-speed Rail in Shangrao -> Tai'an\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
-        "Travel photography of High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an",
-        "High-speed Rail in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
-      ]
-    },
-    {
-      "activity": "High-speed Rail in Shangrao -> Tai'an",
-      "searchQueries": [
+          "id": "unsplash-QhO7RqnzOQk",
+          "url": "https://images.unsplash.com/photo-1695566520095-7608def3109f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1695566520095-7608def3109f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1695566520095-7608def3109f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a silver train traveling down train tracks next to tall buildings",
+          "photographer": "KUA YUE",
+          "photographerUrl": "https://unsplash.com/@df11g",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/QhO7RqnzOQk",
+          "width": 6960,
+          "height": 4640
+        },
         {
-          "type": "pexels",
-          "query": "High-speed Rail Shangrao -> Tai'an site:pexels.com",
-          "description": "High-speed Rail in Shangrao -> Tai'an"
-        }
-      ],
-      "searchResults": [
+          "id": "pexels-5765823",
+          "url": "https://images.pexels.com/photos/5765823/pexels-photo-5765823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/5765823/pexels-photo-5765823.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/5765823/pexels-photo-5765823.jpeg",
+          "alt": "Majestic traditional Chinese temples on Mount Tai, showcasing intricate architectural design and mountain scenery.",
+          "photographer": "cao haiyun",
+          "photographerUrl": "https://www.pexels.com/@cmj58895",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/temple-on-mountain-5765823/",
+          "width": 6240,
+          "height": 3512
+        },
         {
-          "url": "https://www.pexels.com/search/High-speed%20Rail%20Shangrao%20-%3E%20Tai'an/",
-          "title": "Search \"High-speed Rail in Shangrao -> Tai'an\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
-        "Travel photography of High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an",
-        "High-speed Rail in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
-      ]
-    },
-    {
-      "activity": "高铁体验 in 上饶 -> 泰安",
-      "searchQueries": [
+          "id": "pexels-31090636",
+          "url": "https://images.pexels.com/photos/31090636/pexels-photo-31090636.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31090636/pexels-photo-31090636.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31090636/pexels-photo-31090636.jpeg",
+          "alt": "Scenic aerial view of ancient temple rooftops nestled in mountain landscape under clear blue sky.",
+          "photographer": "jin dan",
+          "photographerUrl": "https://www.pexels.com/@jin-dan-2150346366",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-ancient-temple-on-mountain-31090636/",
+          "width": 6000,
+          "height": 4000
+        },
         {
-          "type": "unsplash",
-          "query": "高铁体验 上饶 -> 泰安 site:unsplash.com",
-          "description": "高铁体验 in 上饶 -> 泰安"
-        }
-      ],
-      "searchResults": [
+          "id": "pixabay-5309184",
+          "url": "https://pixabay.com/get/g3495df0740006c432acaa582bb3c3387957d8595a787ca74d4cd63e2eef2afd463074b4bdd155c38072191c3cb6a620c1e2e5fa2a9833cb61e99adb0eab5494a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/06/17/11/39/taian-5309184_150.jpg",
+          "full": "https://pixabay.com/get/g61420d3f0eee9cbafe9bf0c16e06d5f55664ee83ad69b743b40abfa964d13bf6d4ad981ae31442a494dd613585b241bcc0c1c1643785647b9eda675a49a3c055_1280.jpg",
+          "alt": "tai'an, lily festival, landscape, travel, republic of korea, nature, day off",
+          "photographer": "YHBae",
+          "photographerUrl": "https://pixabay.com/users/YHBae-4048436/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/taian-lily-festival-landscape-5309184/",
+          "width": 3888,
+          "height": 2592
+        },
         {
-          "url": "https://unsplash.com/s/photos/%E9%AB%98%E9%93%81%E4%BD%93%E9%AA%8C%20%E4%B8%8A%E9%A5%B6%20-%3E%20%E6%B3%B0%E5%AE%89",
-          "title": "Search \"高铁体验 in 上饶 -> 泰安\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "高铁体验 in 上饶 -> 泰安 in Shangrao -> Tai'an, China",
-        "Travel photography of 高铁体验 in 上饶 -> 泰安 in Shangrao -> Tai'an",
-        "高铁体验 in 上饶 -> 泰安 tourist attraction in Shangrao -> Tai'an"
-      ]
-    },
-    {
-      "activity": "Dai Temple in Shangrao -> Tai'an",
-      "searchQueries": [
+          "id": "pixabay-2829984",
+          "url": "https://pixabay.com/get/g360cc91fe42d52866e49883f5f3e05db5c7695eac7390bacdcba2337f333be3a2387f92f69e2bce6d67fa3c0d340ed28d26c3d55a2a90f32a5a665dea5d7ecd6_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/10/08/14/05/taian-2829984_150.jpg",
+          "full": "https://pixabay.com/get/g52dcbc73b75c30f03e8b94c225a40641c8442042b80de480e19099fb12e64b65dfb0f7ac10721797371dbe4324aa20757f1d2748d489734867255ff0cdb1b4ff_1280.jpg",
+          "alt": "tai'an, nature, bathing beach, that song, summer night, sky, ocean",
+          "photographer": "ksmat1711",
+          "photographerUrl": "https://pixabay.com/users/ksmat1711-6517831/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/taian-bathing-beach-that-song-2829984/",
+          "width": 4032,
+          "height": 2268
+        },
         {
-          "type": "unsplash",
-          "query": "Dai Temple Shangrao -> Tai'an site:unsplash.com",
-          "description": "Dai Temple in Shangrao -> Tai'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Dai%20Temple%20Shangrao%20-%3E%20Tai'an",
-          "title": "Search \"Dai Temple in Shangrao -> Tai'an\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
-        "Travel photography of Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an",
-        "Dai Temple in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
-      ]
-    },
-    {
-      "activity": "Dai Temple in Shangrao -> Tai'an",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Dai Temple Shangrao -> Tai'an site:pexels.com",
-          "description": "Dai Temple in Shangrao -> Tai'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Dai%20Temple%20Shangrao%20-%3E%20Tai'an/",
-          "title": "Search \"Dai Temple in Shangrao -> Tai'an\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
-        "Travel photography of Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an",
-        "Dai Temple in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
-      ]
-    },
-    {
-      "activity": "岱庙 in 上饶 -> 泰安",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "岱庙 上饶 -> 泰安 site:unsplash.com",
-          "description": "岱庙 in 上饶 -> 泰安"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%B2%B1%E5%BA%99%20%E4%B8%8A%E9%A5%B6%20-%3E%20%E6%B3%B0%E5%AE%89",
-          "title": "Search \"岱庙 in 上饶 -> 泰安\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "岱庙 in 上饶 -> 泰安 in Shangrao -> Tai'an, China",
-        "Travel photography of 岱庙 in 上饶 -> 泰安 in Shangrao -> Tai'an",
-        "岱庙 in 上饶 -> 泰安 tourist attraction in Shangrao -> Tai'an"
-      ]
-    }
-  ],
-  "hotels": [
-    {
-      "accommodation": "Hotel in Tai'an",
-      "searchQueries": [
-        {
-          "type": "tripadvisor",
-          "query": "Hotel in Tai'an Shangrao -> Tai'an site:tripadvisor.com",
-          "description": "Hotel in Tai'an in Shangrao -> Tai'an on TripAdvisor"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.tripadvisor.com/Search?q=Hotel%20in%20Tai'an%20Shangrao%20-%3E%20Tai'an",
-          "title": "Find \"Hotel in Tai'an in Shangrao -> Tai'an on TripAdvisor\" on TripAdvisor",
-          "description": "Hotel reviews, ratings, and booking information",
-          "type": "search-link"
+          "id": "pixabay-7106779",
+          "url": "https://pixabay.com/get/g9568ee5eac10504e5a3977c58ad2aa12283e73fd11bfcdc190cc9549a532175ce585ed2e29b95d679fadd5e54fbeabc79e8b7138f01170d07a521c54761237af_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/04/02/11/22/taian-7106779_150.jpg",
+          "full": "https://pixabay.com/get/g6c599da57b15e30727c0f29f571ff76371d6da76b4b06270432dfbf5ab265337348a38e7e44774cbb9e85f8690c2586837484e9424c5796c3fe1b12f876a215d_1280.jpg",
+          "alt": "taian, ocean, sunrise, china, early morning, beach, nature, overwater boardwalk, landscape, dawn",
+          "photographer": "강춘성",
+          "photographerUrl": "https://pixabay.com/users/강춘성-15738132/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/taian-ocean-sunrise-china-7106779/",
+          "width": 6473,
+          "height": 4121
         }
       ]
     },
     {
-      "accommodation": "Hotel in Tai'an",
-      "searchQueries": [
+      "name": "Visit Dai Temple",
+      "activity": "Visit Dai Temple",
+      "searchTerm": "Visit Dai Temple Dai Temple China",
+      "images": [
         {
-          "type": "booking",
-          "query": "Hotel in Tai'an Shangrao -> Tai'an site:booking.com",
-          "description": "Hotel in Tai'an in Shangrao -> Tai'an on Booking.com"
-        }
-      ],
-      "searchResults": []
-    },
-    {
-      "accommodation": "Hotel in Tai'an",
-      "searchQueries": [
+          "id": "unsplash-YIs_RDNGsVY",
+          "url": "https://images.unsplash.com/photo-1753956787098-ec659ab3414d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1753956787098-ec659ab3414d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1753956787098-ec659ab3414d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "A colorful chinese building with ornate architecture.",
+          "photographer": "Terence Zheng",
+          "photographerUrl": "https://unsplash.com/@terrycarnivoroua",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/YIs_RDNGsVY",
+          "width": 7728,
+          "height": 5152
+        },
         {
-          "type": "general",
-          "query": "Hotel in Tai'an Shangrao -> Tai'an hotel reviews",
-          "description": "Reviews for Hotel in Tai'an in Shangrao -> Tai'an"
+          "id": "unsplash-dCTj6IkDtS4",
+          "url": "https://images.unsplash.com/photo-1719881971717-f8ae58fdc8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1719881971717-f8ae58fdc8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1719881971717-f8ae58fdc8c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "A large building with stairs leading up to it",
+          "photographer": "Aleksei Dmitriev",
+          "photographerUrl": "https://unsplash.com/@alekseidmitrievpro",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/dCTj6IkDtS4",
+          "width": 4208,
+          "height": 2630
+        },
+        {
+          "id": "pexels-7887763",
+          "url": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg",
+          "alt": "Sunny day at famous temple in Beijing with clear blue skies and tourists walking along the pathway.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/people-walking-on-a-pathway-near-temple-7887763/",
+          "width": 9504,
+          "height": 6336
+        },
+        {
+          "id": "pexels-32329517",
+          "url": "https://images.pexels.com/photos/32329517/pexels-photo-32329517.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/32329517/pexels-photo-32329517.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/32329517/pexels-photo-32329517.jpeg",
+          "alt": "A young woman in traditional red dress poses gracefully at the historic Temple of Literature in Hanoi, Vietnam.",
+          "photographer": "Felix Young",
+          "photographerUrl": "https://www.pexels.com/@felix-young-449360607",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/young-woman-in-red-dress-at-temple-of-literature-32329517/",
+          "width": 3008,
+          "height": 2008
+        },
+        {
+          "id": "pixabay-7627473",
+          "url": "https://pixabay.com/get/g654753e4dbb44c57a17e48b0b8d07d9d35c32d8c87645bdee3522a57da723745575192c411ad1770a870e51c65d9f380070619cff3fa8d6f4c017fa801994ced_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/11/30/19/21/zizhu-temple-7627473_150.jpg",
+          "full": "https://pixabay.com/get/g6a04256ad75f16d5eaf24424ae9439a41f7f8803cf4883c58baaac49af7d79db9f067863a7f0cbc1b1f35bbbdc976891e1a4da6dd4e82558928f6ce7845eee06_1280.jpg",
+          "alt": "zizhu temple, temple, building, lamp, night view, temple, temple, temple, temple, temple, night view, night view, night view",
+          "photographer": "青枫161118",
+          "photographerUrl": "https://pixabay.com/users/青枫161118-27563897/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/zizhu-temple-temple-building-lamp-7627473/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-6146373",
+          "url": "https://pixabay.com/get/gd7efcc1ca4f6ae558e28487296007092c7adc801ce1df980bc4f06a43c17f13fbc733c6b50ed43825733823e6eb2213b4ae3d047a2310593f9708290e6531da1_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/04/03/02/57/temple-6146373_150.jpg",
+          "full": "https://pixabay.com/get/g51a311ad24f0e4dc0663a7859c83ce03f28caa5b9bf8f34e66b463435babe8b9d40fdb39b6496f12a87e24995a906c6d348c69fc72d376705f56e018c932a0bd_1280.jpg",
+          "alt": "temple, incense, woman, praying, ao dai, vietnamese, red ao dai, vietnam national dress, traditional, culture, dress, beautiful, pretty, lady, girl, asian, portrait, incense, incense, incense, incense, incense",
+          "photographer": "TieuBaoTruong",
+          "photographerUrl": "https://pixabay.com/users/TieuBaoTruong-9985330/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/temple-incense-woman-praying-6146373/",
+          "width": 4928,
+          "height": 3280
+        },
+        {
+          "id": "pixabay-6963458",
+          "url": "https://pixabay.com/get/g352703ae4e63c68e0c50cbbd14c4148ff9b3beaf1c1390e1f8b19286892eb2f604dc28c865f731ceab4e36062783261d70ebc297994a5b16ef10e31e6c4484c4_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/01/24/13/51/temple-6963458_150.jpg",
+          "full": "https://pixabay.com/get/g154ea46b922a0e3680592f704a4231aef562e8099ea3b9619084961064a361f519f2d743f603d2818054a4c266a57851d70124f6b59fae1c26f32d15697be431_1280.jpg",
+          "alt": "temple, night view, yakushiji temple, world cultural heritage, nara, seasonal event, wakakusa yamayaki, japan, temple, night view, nara, japan, japan, japan, japan, japan",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/temple-night-view-yakushiji-temple-6963458/",
+          "width": 3300,
+          "height": 2200
         }
-      ],
-      "searchResults": []
-    }
-  ],
-  "recommendedSearches": [
-    {
-      "query": "Shangrao -> Tai'an China tourism site:unsplash.com",
-      "description": "General Shangrao -> Tai'an tourism photos",
-      "reason": "Good for establishing shots and context"
-    },
-    {
-      "query": "Shangrao -> Tai'an China landscape site:pexels.com",
-      "description": "Shangrao -> Tai'an landscapes and scenery",
-      "reason": "Perfect for background and establishing scenes"
-    },
-    {
-      "query": "High-speed Rail China travel site:unsplash.com",
-      "description": "High-speed Rail travel photography",
-      "reason": "Specific activity focus"
-    },
-    {
-      "query": "Dai Temple China travel site:unsplash.com",
-      "description": "Dai Temple travel photography",
-      "reason": "Specific activity focus"
+      ]
     }
   ],
   "sampleImages": [
     {
-      "activity": "High-speed Rail",
+      "activity": "High-Speed Rail to Tai'An",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?High-speed%20Rail%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "unsplash-Fc7GsSieVWo",
+          "url": "https://images.unsplash.com/photo-1706275032060-cb01b1fae473?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1706275032060-cb01b1fae473?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1706275032060-cb01b1fae473?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a high speed train traveling through a train station",
+          "photographer": "KUA YUE",
+          "photographerUrl": "https://unsplash.com/@df11g",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/High-speed%20Rail%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/High-speed%20Rail%20china%20tourism",
-          "query": "High-speed Rail",
-          "alt": "High-speed Rail china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?High-speed%20Rail%20china%20tourism&w=1200",
-          "description": "Real photo of High-speed Rail china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/Fc7GsSieVWo",
+          "width": 4288,
+          "height": 2848
+        },
+        {
+          "id": "unsplash-QhO7RqnzOQk",
+          "url": "https://images.unsplash.com/photo-1695566520095-7608def3109f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1695566520095-7608def3109f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1695566520095-7608def3109f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWdoLVNwZWVkJTIwUmFpbCUyMHRvJTIwVGFpJTI3QW4lMjBTaGFuZ3JhbyUyMHRvJTIwVGFpJTI3QW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzU5fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a silver train traveling down train tracks next to tall buildings",
+          "photographer": "KUA YUE",
+          "photographerUrl": "https://unsplash.com/@df11g",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/QhO7RqnzOQk",
+          "width": 6960,
+          "height": 4640
+        },
+        {
+          "id": "pexels-5765823",
+          "url": "https://images.pexels.com/photos/5765823/pexels-photo-5765823.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/5765823/pexels-photo-5765823.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/5765823/pexels-photo-5765823.jpeg",
+          "alt": "Majestic traditional Chinese temples on Mount Tai, showcasing intricate architectural design and mountain scenery.",
+          "photographer": "cao haiyun",
+          "photographerUrl": "https://www.pexels.com/@cmj58895",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/temple-on-mountain-5765823/",
+          "width": 6240,
+          "height": 3512
+        },
+        {
+          "id": "pexels-31090636",
+          "url": "https://images.pexels.com/photos/31090636/pexels-photo-31090636.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31090636/pexels-photo-31090636.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31090636/pexels-photo-31090636.jpeg",
+          "alt": "Scenic aerial view of ancient temple rooftops nestled in mountain landscape under clear blue sky.",
+          "photographer": "jin dan",
+          "photographerUrl": "https://www.pexels.com/@jin-dan-2150346366",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-ancient-temple-on-mountain-31090636/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-5309184",
+          "url": "https://pixabay.com/get/g3495df0740006c432acaa582bb3c3387957d8595a787ca74d4cd63e2eef2afd463074b4bdd155c38072191c3cb6a620c1e2e5fa2a9833cb61e99adb0eab5494a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/06/17/11/39/taian-5309184_150.jpg",
+          "full": "https://pixabay.com/get/g61420d3f0eee9cbafe9bf0c16e06d5f55664ee83ad69b743b40abfa964d13bf6d4ad981ae31442a494dd613585b241bcc0c1c1643785647b9eda675a49a3c055_1280.jpg",
+          "alt": "tai'an, lily festival, landscape, travel, republic of korea, nature, day off",
+          "photographer": "YHBae",
+          "photographerUrl": "https://pixabay.com/users/YHBae-4048436/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/taian-lily-festival-landscape-5309184/",
+          "width": 3888,
+          "height": 2592
+        },
+        {
+          "id": "pixabay-2829984",
+          "url": "https://pixabay.com/get/g360cc91fe42d52866e49883f5f3e05db5c7695eac7390bacdcba2337f333be3a2387f92f69e2bce6d67fa3c0d340ed28d26c3d55a2a90f32a5a665dea5d7ecd6_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/10/08/14/05/taian-2829984_150.jpg",
+          "full": "https://pixabay.com/get/g52dcbc73b75c30f03e8b94c225a40641c8442042b80de480e19099fb12e64b65dfb0f7ac10721797371dbe4324aa20757f1d2748d489734867255ff0cdb1b4ff_1280.jpg",
+          "alt": "tai'an, nature, bathing beach, that song, summer night, sky, ocean",
+          "photographer": "ksmat1711",
+          "photographerUrl": "https://pixabay.com/users/ksmat1711-6517831/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/taian-bathing-beach-that-song-2829984/",
+          "width": 4032,
+          "height": 2268
+        },
+        {
+          "id": "pixabay-7106779",
+          "url": "https://pixabay.com/get/g9568ee5eac10504e5a3977c58ad2aa12283e73fd11bfcdc190cc9549a532175ce585ed2e29b95d679fadd5e54fbeabc79e8b7138f01170d07a521c54761237af_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/04/02/11/22/taian-7106779_150.jpg",
+          "full": "https://pixabay.com/get/g6c599da57b15e30727c0f29f571ff76371d6da76b4b06270432dfbf5ab265337348a38e7e44774cbb9e85f8690c2586837484e9424c5796c3fe1b12f876a215d_1280.jpg",
+          "alt": "taian, ocean, sunrise, china, early morning, beach, nature, overwater boardwalk, landscape, dawn",
+          "photographer": "강춘성",
+          "photographerUrl": "https://pixabay.com/users/강춘성-15738132/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/taian-ocean-sunrise-china-7106779/",
+          "width": 6473,
+          "height": 4121
         }
       ]
     },
     {
-      "activity": "Dai Temple",
+      "activity": "Visit Dai Temple",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Dai%20Temple%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "unsplash-YIs_RDNGsVY",
+          "url": "https://images.unsplash.com/photo-1753956787098-ec659ab3414d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1753956787098-ec659ab3414d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1753956787098-ec659ab3414d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "A colorful chinese building with ornate architecture.",
+          "photographer": "Terence Zheng",
+          "photographerUrl": "https://unsplash.com/@terrycarnivoroua",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Dai%20Temple%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Dai%20Temple%20china%20tourism",
-          "query": "Dai Temple",
-          "alt": "Dai Temple china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Dai%20Temple%20china%20tourism&w=1200",
-          "description": "Real photo of Dai Temple china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/YIs_RDNGsVY",
+          "width": 7728,
+          "height": 5152
+        },
+        {
+          "id": "unsplash-dCTj6IkDtS4",
+          "url": "https://images.unsplash.com/photo-1719881971717-f8ae58fdc8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1719881971717-f8ae58fdc8c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1719881971717-f8ae58fdc8c0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMERhaSUyMFRlbXBsZSUyMERhaSUyMFRlbXBsZSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NjF8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "A large building with stairs leading up to it",
+          "photographer": "Aleksei Dmitriev",
+          "photographerUrl": "https://unsplash.com/@alekseidmitrievpro",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/dCTj6IkDtS4",
+          "width": 4208,
+          "height": 2630
+        },
+        {
+          "id": "pexels-7887763",
+          "url": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg",
+          "alt": "Sunny day at famous temple in Beijing with clear blue skies and tourists walking along the pathway.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/people-walking-on-a-pathway-near-temple-7887763/",
+          "width": 9504,
+          "height": 6336
+        },
+        {
+          "id": "pexels-32329517",
+          "url": "https://images.pexels.com/photos/32329517/pexels-photo-32329517.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/32329517/pexels-photo-32329517.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/32329517/pexels-photo-32329517.jpeg",
+          "alt": "A young woman in traditional red dress poses gracefully at the historic Temple of Literature in Hanoi, Vietnam.",
+          "photographer": "Felix Young",
+          "photographerUrl": "https://www.pexels.com/@felix-young-449360607",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/young-woman-in-red-dress-at-temple-of-literature-32329517/",
+          "width": 3008,
+          "height": 2008
+        },
+        {
+          "id": "pixabay-7627473",
+          "url": "https://pixabay.com/get/g654753e4dbb44c57a17e48b0b8d07d9d35c32d8c87645bdee3522a57da723745575192c411ad1770a870e51c65d9f380070619cff3fa8d6f4c017fa801994ced_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/11/30/19/21/zizhu-temple-7627473_150.jpg",
+          "full": "https://pixabay.com/get/g6a04256ad75f16d5eaf24424ae9439a41f7f8803cf4883c58baaac49af7d79db9f067863a7f0cbc1b1f35bbbdc976891e1a4da6dd4e82558928f6ce7845eee06_1280.jpg",
+          "alt": "zizhu temple, temple, building, lamp, night view, temple, temple, temple, temple, temple, night view, night view, night view",
+          "photographer": "青枫161118",
+          "photographerUrl": "https://pixabay.com/users/青枫161118-27563897/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/zizhu-temple-temple-building-lamp-7627473/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-6146373",
+          "url": "https://pixabay.com/get/gd7efcc1ca4f6ae558e28487296007092c7adc801ce1df980bc4f06a43c17f13fbc733c6b50ed43825733823e6eb2213b4ae3d047a2310593f9708290e6531da1_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/04/03/02/57/temple-6146373_150.jpg",
+          "full": "https://pixabay.com/get/g51a311ad24f0e4dc0663a7859c83ce03f28caa5b9bf8f34e66b463435babe8b9d40fdb39b6496f12a87e24995a906c6d348c69fc72d376705f56e018c932a0bd_1280.jpg",
+          "alt": "temple, incense, woman, praying, ao dai, vietnamese, red ao dai, vietnam national dress, traditional, culture, dress, beautiful, pretty, lady, girl, asian, portrait, incense, incense, incense, incense, incense",
+          "photographer": "TieuBaoTruong",
+          "photographerUrl": "https://pixabay.com/users/TieuBaoTruong-9985330/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/temple-incense-woman-praying-6146373/",
+          "width": 4928,
+          "height": 3280
+        },
+        {
+          "id": "pixabay-6963458",
+          "url": "https://pixabay.com/get/g352703ae4e63c68e0c50cbbd14c4148ff9b3beaf1c1390e1f8b19286892eb2f604dc28c865f731ceab4e36062783261d70ebc297994a5b16ef10e31e6c4484c4_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/01/24/13/51/temple-6963458_150.jpg",
+          "full": "https://pixabay.com/get/g154ea46b922a0e3680592f704a4231aef562e8099ea3b9619084961064a361f519f2d743f603d2818054a4c266a57851d70124f6b59fae1c26f32d15697be431_1280.jpg",
+          "alt": "temple, night view, yakushiji temple, world cultural heritage, nara, seasonal event, wakakusa yamayaki, japan, temple, night view, nara, japan, japan, japan, japan, japan",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/temple-night-view-yakushiji-temple-6963458/",
+          "width": 3300,
+          "height": 2200
         }
       ]
     }
-  ],
-  "researchDate": "2025-11-29T00:47:45.848Z",
-  "instructions": {
-    "howToUse": "Open the HTML file to preview and select images",
-    "altText": "Use the suggested alt text for accessibility",
-    "hotels": "Check hotel links for reviews and booking information"
-  }
+  ]
 }

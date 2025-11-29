@@ -1,0 +1,38 @@
+{
+  "day": 5,
+  "lastModified": "2025-11-29T22:04:12.198Z",
+  "pois": [
+    {
+      "id": "forbidden-city",
+      "name": "Forbidden City",
+      "day": 5,
+      "location": "Beijing",
+      "status": "pending",
+      "summary": "Step into the enchanting world of the Forbidden City, a majestic palace complex that has stood as a symbol of imperial power in China for over 500 years. Nestled in the heart of Beijing, this UNESCO World Heritage Site invites you to explore its incredible architecture, vibrant history, and fascinating artifacts. With a staggering 8,886 rooms spread over 178 acres, the Forbidden City is not just the largest preserved royal palace in the world; it is a breathtaking testament to the grandeur of Chinese dynasties. Feel the weight of history as you stroll through its ornate halls and tranquil courtyards, where the whispers of emperors and empresses linger in the air, waiting to share their stories with you.",
+      "historicalContext": "Constructed between 1406 and 1420, the Forbidden City served as the imperial palace for 24 emperors of the Ming and Qing dynasties until 1924. It was the political and ceremonial heart of Chinese governance and was declared a World Heritage Site by UNESCO in 1987, renowned for its rich collection of ancient wooden structures and cultural artifacts.",
+      "practicalTips": "Purchase tickets in advance online to avoid long queues. Visit early in the morning or later in the afternoon to enjoy fewer crowds. Wear comfortable shoes, as you will be exploring vast grounds. Consider hiring a knowledgeable guide for deeper insights into the palace's history and architecture. Check for any temporary exhibits or events at the Palace Museum to enhance your visit.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Forbidden_City",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:04:04.279Z"
+    },
+    {
+      "id": "fragrant-hills-hiking-12km",
+      "name": "Fragrant Hills Hiking (12km)",
+      "day": 5,
+      "location": "Beijing",
+      "status": "pending",
+      "summary": "Embark on an unforgettable 12km journey through the breathtaking Fragrant Hills in Beijing, where nature's beauty and cultural richness intertwine. This stunning hiking trail winds through lush forests, vibrant wildflowers, and picturesque landscapes, offering a refreshing escape from the city's hustle and bustle. As you climb, you'll be rewarded with panoramic views of the Beijing skyline and the majestic mountains beyond, making every step worthwhile. Whether you're a seasoned hiker or a casual walker, the tranquil surroundings and invigorating air will leave you rejuvenated and inspired. Don't miss the chance to explore this natural gem and immerse yourself in the serene beauty of Fragrant Hills, a perfect destination for nature lovers and adventure seekers alike.",
+      "historicalContext": "Fragrant Hills, or Xiangshan, has been a revered retreat since the Ming Dynasty, serving as a favorite getaway for emperors and aristocrats. The area is home to the famous Biyun Temple, which dates back to the 18th century, and is known for its stunning autumn foliage that attracts visitors each year.",
+      "practicalTips": "Wear comfortable hiking shoes with good grip. Bring plenty of water and snacks to stay energized. Visit during autumn for the most spectacular foliage. Arrive early to avoid crowds and enjoy a peaceful hike. Consider hiring a local guide for insights into the area's history and flora.",
+      "confidence": 0.7,
+      "links": [],
+      "researchedAt": "2025-11-29T22:04:11.698Z"
+    }
+  ]
+}

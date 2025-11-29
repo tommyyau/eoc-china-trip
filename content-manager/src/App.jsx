@@ -1,12 +1,20 @@
+import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import DayEditor from './pages/DayEditor'
 import ImportPage from './pages/ImportPage'
 import ExportPage from './pages/ExportPage'
 import TripInfoPage from './pages/TripInfoPage'
+import { syncFromServer, syncSavedTripsFromServer } from './utils/storage'
 import './App.css'
 
 function App() {
+  // Sync data from server files on startup
+  useEffect(() => {
+    syncFromServer()
+    syncSavedTripsFromServer()
+  }, [])
+
   return (
     <BrowserRouter>
       <div className="app">

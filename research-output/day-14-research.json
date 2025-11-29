@@ -1,343 +1,358 @@
 {
   "day": 14,
   "title": {
-    "en": "Confucian Culture in Qufu",
-    "cn": "曲阜儒家文化"
+    "en": "Pilgrimage to Confucian Cultural Sites in Qufu",
+    "cn": "Pilgrimage to Confucian Cultural Sites in Qufu"
   },
   "location": {
-    "en": "Tai'an -> Qufu",
-    "cn": "泰安 -> 曲阜"
+    "en": "Qufu",
+    "cn": "Qufu"
   },
+  "generatedAt": "2025-11-29T22:02:49.819Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
   "activities": [
     {
-      "activity": "Confucius Temple in Tai'an -> Qufu",
-      "searchQueries": [
+      "name": "Transfer to Qufu",
+      "activity": "Transfer to Qufu",
+      "searchTerm": "Transfer to Qufu Mount Tai to Qufu China",
+      "images": [
         {
-          "type": "unsplash",
-          "query": "Confucius Temple Tai'an -> Qufu site:unsplash.com",
-          "description": "Confucius Temple in Tai'an -> Qufu"
-        }
-      ],
-      "searchResults": [
+          "id": "unsplash-44ciXqi4nG8",
+          "url": "https://images.unsplash.com/photo-1711500644162-ac56fc254629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1711500644162-ac56fc254629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1711500644162-ac56fc254629?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=85",
+          "alt": "a scenic view of a mountain with a winding road",
+          "photographer": "Avina Qin",
+          "photographerUrl": "https://unsplash.com/@solovled_avina",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/44ciXqi4nG8",
+          "width": 3840,
+          "height": 2592
+        },
         {
-          "url": "https://unsplash.com/s/photos/Confucius%20Temple%20Tai'an%20-%3E%20Qufu",
-          "title": "Search \"Confucius Temple in Tai'an -> Qufu\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu, China",
-        "Travel photography of Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu",
-        "Confucius Temple in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "Confucius Temple in Tai'an -> Qufu",
-      "searchQueries": [
+          "id": "unsplash-o5hMrsR4SuU",
+          "url": "https://images.unsplash.com/photo-1612192422324-551b76c2985d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1612192422324-551b76c2985d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1612192422324-551b76c2985d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=85",
+          "alt": "black and white tower on top of the mountain",
+          "photographer": "VENUS MAJOR",
+          "photographerUrl": "https://unsplash.com/@venusmajor",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/o5hMrsR4SuU",
+          "width": 2592,
+          "height": 1944
+        },
         {
-          "type": "pexels",
-          "query": "Confucius Temple Tai'an -> Qufu site:pexels.com",
-          "description": "Confucius Temple in Tai'an -> Qufu"
-        }
-      ],
-      "searchResults": [
+          "id": "pexels-34525982",
+          "url": "https://images.pexels.com/photos/34525982/pexels-photo-34525982.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/34525982/pexels-photo-34525982.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/34525982/pexels-photo-34525982.jpeg",
+          "alt": "A vibrant and intricately designed Chinese temple facade with red lanterns under a clear blue sky.",
+          "photographer": "大 董",
+          "photographerUrl": "https://www.pexels.com/@724211268",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/traditional-chinese-temple-with-red-lanterns-34525982/",
+          "width": 3840,
+          "height": 2160
+        },
         {
-          "url": "https://www.pexels.com/search/Confucius%20Temple%20Tai'an%20-%3E%20Qufu/",
-          "title": "Search \"Confucius Temple in Tai'an -> Qufu\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu, China",
-        "Travel photography of Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu",
-        "Confucius Temple in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "孔庙 in 泰安 -> 曲阜",
-      "searchQueries": [
+          "id": "pexels-31506012",
+          "url": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg",
+          "alt": "Golden temple atop Mount Tai with scenic views and crowds walking uphill.",
+          "photographer": "zhiqiang pan",
+          "photographerUrl": "https://www.pexels.com/@zhiqiang-pan-2151104065",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/majestic-view-of-golden-temple-on-mount-tai-31506012/",
+          "width": 4096,
+          "height": 2304
+        },
         {
-          "type": "unsplash",
-          "query": "孔庙 泰安 -> 曲阜 site:unsplash.com",
-          "description": "孔庙 in 泰安 -> 曲阜"
-        }
-      ],
-      "searchResults": [
+          "id": "pixabay-777463",
+          "url": "https://pixabay.com/get/g7d7c1c11c19bb852e1e5fbec8a9a1bd90b1779598c3afa65df511c395d4c78f1261a71108787f0bbcb87cd0b4d2fbf1f_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/21/16/51/shandong-777463_150.jpg",
+          "full": "https://pixabay.com/get/gafea2907d6eeee985dcd2af291b3526ef09f5b8646b08cc181ec0b9dfce07eb5f89fab4e94cf8199945c868a5a13039700dba8eab9c2f07585cdda9d344c500f_1280.jpg",
+          "alt": "shandong, qufu, culture, historic site, city wall, stone carving, tile, blessing, shandong, shandong, shandong, shandong, shandong, qufu, qufu",
+          "photographer": "girlliuxia",
+          "photographerUrl": "https://pixabay.com/users/girlliuxia-102093/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/shandong-qufu-culture-historic-site-777463/",
+          "width": 5184,
+          "height": 3456
+        },
         {
-          "url": "https://unsplash.com/s/photos/%E5%AD%94%E5%BA%99%20%E6%B3%B0%E5%AE%89%20-%3E%20%E6%9B%B2%E9%98%9C",
-          "title": "Search \"孔庙 in 泰安 -> 曲阜\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "孔庙 in 泰安 -> 曲阜 in Tai'an -> Qufu, China",
-        "Travel photography of 孔庙 in 泰安 -> 曲阜 in Tai'an -> Qufu",
-        "孔庙 in 泰安 -> 曲阜 tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "Confucius Mansion in Tai'an -> Qufu",
-      "searchQueries": [
+          "id": "pixabay-777460",
+          "url": "https://pixabay.com/get/gc5f22b27909b5473b8719069281f7a62012f8aefa30de9ba367bc02b37fe935fc0e2a9cef59cb7a2236f0b4b8f6c1f0b_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/21/16/51/shandong-777460_150.jpg",
+          "full": "https://pixabay.com/get/ge0b404f36a357bc553d8c840db07ce69d928252d2edccce772045cf974c4c4b99cd0e4794d29072c34cb1620b2c36681dbcee3babd3191703eb87b4884475d27_1280.jpg",
+          "alt": "shandong, qufu, culture, historic site, city wall, stone carving, tile, faucet, shandong, shandong, shandong, shandong, shandong",
+          "photographer": "girlliuxia",
+          "photographerUrl": "https://pixabay.com/users/girlliuxia-102093/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/shandong-qufu-culture-historic-site-777460/",
+          "width": 5184,
+          "height": 3456
+        },
         {
-          "type": "unsplash",
-          "query": "Confucius Mansion Tai'an -> Qufu site:unsplash.com",
-          "description": "Confucius Mansion in Tai'an -> Qufu"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Confucius%20Mansion%20Tai'an%20-%3E%20Qufu",
-          "title": "Search \"Confucius Mansion in Tai'an -> Qufu\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu, China",
-        "Travel photography of Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu",
-        "Confucius Mansion in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "Confucius Mansion in Tai'an -> Qufu",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Confucius Mansion Tai'an -> Qufu site:pexels.com",
-          "description": "Confucius Mansion in Tai'an -> Qufu"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Confucius%20Mansion%20Tai'an%20-%3E%20Qufu/",
-          "title": "Search \"Confucius Mansion in Tai'an -> Qufu\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu, China",
-        "Travel photography of Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu",
-        "Confucius Mansion in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "孔府 in 泰安 -> 曲阜",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "孔府 泰安 -> 曲阜 site:unsplash.com",
-          "description": "孔府 in 泰安 -> 曲阜"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%AD%94%E5%BA%9C%20%E6%B3%B0%E5%AE%89%20-%3E%20%E6%9B%B2%E9%98%9C",
-          "title": "Search \"孔府 in 泰安 -> 曲阜\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "孔府 in 泰安 -> 曲阜 in Tai'an -> Qufu, China",
-        "Travel photography of 孔府 in 泰安 -> 曲阜 in Tai'an -> Qufu",
-        "孔府 in 泰安 -> 曲阜 tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "Confucius Forest in Tai'an -> Qufu",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "Confucius Forest Tai'an -> Qufu site:unsplash.com",
-          "description": "Confucius Forest in Tai'an -> Qufu"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Confucius%20Forest%20Tai'an%20-%3E%20Qufu",
-          "title": "Search \"Confucius Forest in Tai'an -> Qufu\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu, China",
-        "Travel photography of Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu",
-        "Confucius Forest in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "Confucius Forest in Tai'an -> Qufu",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Confucius Forest Tai'an -> Qufu site:pexels.com",
-          "description": "Confucius Forest in Tai'an -> Qufu"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Confucius%20Forest%20Tai'an%20-%3E%20Qufu/",
-          "title": "Search \"Confucius Forest in Tai'an -> Qufu\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu, China",
-        "Travel photography of Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu",
-        "Confucius Forest in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
-      ]
-    },
-    {
-      "activity": "孔林 in 泰安 -> 曲阜",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "孔林 泰安 -> 曲阜 site:unsplash.com",
-          "description": "孔林 in 泰安 -> 曲阜"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%AD%94%E6%9E%97%20%E6%B3%B0%E5%AE%89%20-%3E%20%E6%9B%B2%E9%98%9C",
-          "title": "Search \"孔林 in 泰安 -> 曲阜\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "孔林 in 泰安 -> 曲阜 in Tai'an -> Qufu, China",
-        "Travel photography of 孔林 in 泰安 -> 曲阜 in Tai'an -> Qufu",
-        "孔林 in 泰安 -> 曲阜 tourist attraction in Tai'an -> Qufu"
-      ]
-    }
-  ],
-  "hotels": [
-    {
-      "accommodation": "Hotel in Qufu",
-      "searchQueries": [
-        {
-          "type": "tripadvisor",
-          "query": "Hotel in Qufu Tai'an -> Qufu site:tripadvisor.com",
-          "description": "Hotel in Qufu in Tai'an -> Qufu on TripAdvisor"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.tripadvisor.com/Search?q=Hotel%20in%20Qufu%20Tai'an%20-%3E%20Qufu",
-          "title": "Find \"Hotel in Qufu in Tai'an -> Qufu on TripAdvisor\" on TripAdvisor",
-          "description": "Hotel reviews, ratings, and booking information",
-          "type": "search-link"
+          "id": "pixabay-3779159",
+          "url": "https://pixabay.com/get/g55c2f00d096d4ca65746b87fefc4781e2880de9bae3b59789f869ba4633bdee3bcde74df518a0c6266f672132d51fd5fc0ce433073d214499b56bff1a7ca63f5_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/10/28/16/11/volcano-3779159_150.jpg",
+          "full": "https://pixabay.com/get/g835808e4ac58de591af38c85b6440a22059cc90171ae49e6302baa2702ec9b9028df416e82080cbb7e6d8fe5fdbd334473c95976ded9ac0edc4cff467c76a13c_1280.jpg",
+          "alt": "volcano, natural, cloud, landscape, sightseeing, mount sindro, mount sumbing, java island, indonesia, volcano, volcano, cloud, indonesia, indonesia, indonesia, indonesia, indonesia",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/volcano-natural-cloud-landscape-3779159/",
+          "width": 4500,
+          "height": 3000
         }
       ]
     },
     {
-      "accommodation": "Hotel in Qufu",
-      "searchQueries": [
+      "name": "Visit Confucian Cultural Sites",
+      "activity": "Visit Confucian Cultural Sites",
+      "searchTerm": "Visit Confucian Cultural Sites Qufu China",
+      "images": [
         {
-          "type": "booking",
-          "query": "Hotel in Qufu Tai'an -> Qufu site:booking.com",
-          "description": "Hotel in Qufu in Tai'an -> Qufu on Booking.com"
-        }
-      ],
-      "searchResults": []
-    },
-    {
-      "accommodation": "Hotel in Qufu",
-      "searchQueries": [
+          "id": "pexels-6952102",
+          "url": "https://images.pexels.com/photos/6952102/pexels-photo-6952102.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/6952102/pexels-photo-6952102.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/6952102/pexels-photo-6952102.jpeg",
+          "alt": "A picturesque view of a traditional Chinese temple with a prominent statue in Beijing, China.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/statue-in-front-of-a-temple-6952102/",
+          "width": 9504,
+          "height": 6336
+        },
         {
-          "type": "general",
-          "query": "Hotel in Qufu Tai'an -> Qufu hotel reviews",
-          "description": "Reviews for Hotel in Qufu in Tai'an -> Qufu"
+          "id": "pexels-7887763",
+          "url": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg",
+          "alt": "Sunny day at famous temple in Beijing with clear blue skies and tourists walking along the pathway.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/people-walking-on-a-pathway-near-temple-7887763/",
+          "width": 9504,
+          "height": 6336
+        },
+        {
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/gf355081c4f4b05e0c0e86d47508e5f2094e29eef3056ff3e216df2443be6776e9436089ad99cc5294ff4a0a117e3bd9a7987579a93a01627387615b9187dfd85_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/g0c712875ae33382bdde5ac5ece1fe332159993a9219216c20d4b234e411c4df8a9ad626b345a4fb980f2dc5f967d93ea5ba115a3871da98f08b262fc1997b29d_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-777463",
+          "url": "https://pixabay.com/get/g4e57295aaacbe87f39827f5157776a00b0aeaac5c78862a9327d090de82cf473efe4927e47c9faf68d55b1af2539c51a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/21/16/51/shandong-777463_150.jpg",
+          "full": "https://pixabay.com/get/ga1c0c1c1721d9fa99b66f01d3c46cb6c49975f768350e7d42c3087ef5770c0971bf68bbdab7ccf49fa5c2313026a001733903ed358ed0de2805794e349fe1ad5_1280.jpg",
+          "alt": "shandong, qufu, culture, historic site, city wall, stone carving, tile, blessing, shandong, shandong, shandong, shandong, shandong, qufu, qufu",
+          "photographer": "girlliuxia",
+          "photographerUrl": "https://pixabay.com/users/girlliuxia-102093/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/shandong-qufu-culture-historic-site-777463/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-7427144",
+          "url": "https://pixabay.com/get/gd18546c98e7fd975eb040664c149e3fad3c8d006bfc75017153e2e15e2d4a62d6f7e0751f85738ed3ffe88d36c6bebecb7c85b3fee92067a2926ef2aebadaae0_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/09/02/09/54/masada-national-park-7427144_150.jpg",
+          "full": "https://pixabay.com/get/ge0c98a65ea46bf760042aae1a18720eef71978e56717e4519664bbfc4bb57e2738c5a05c6cf1ed841edee28ea4116cac4a7a1b8960e709657ce8537d08090269_1280.jpg",
+          "alt": "masada national park, masada, the great revolt, roman siege ramp, cliff, desert, unesco heritage site, tourism, nature, israel, palaces of king herod the great, aerial view",
+          "photographer": "samirsmier",
+          "photographerUrl": "https://pixabay.com/users/samirsmier-17442339/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/masada-national-park-masada-7427144/",
+          "width": 4000,
+          "height": 2250
         }
-      ],
-      "searchResults": []
-    }
-  ],
-  "recommendedSearches": [
-    {
-      "query": "Tai'an -> Qufu China tourism site:unsplash.com",
-      "description": "General Tai'an -> Qufu tourism photos",
-      "reason": "Good for establishing shots and context"
-    },
-    {
-      "query": "Tai'an -> Qufu China landscape site:pexels.com",
-      "description": "Tai'an -> Qufu landscapes and scenery",
-      "reason": "Perfect for background and establishing scenes"
-    },
-    {
-      "query": "Confucius Temple China travel site:unsplash.com",
-      "description": "Confucius Temple travel photography",
-      "reason": "Specific activity focus"
-    },
-    {
-      "query": "Confucius Mansion China travel site:unsplash.com",
-      "description": "Confucius Mansion travel photography",
-      "reason": "Specific activity focus"
+      ]
     }
   ],
   "sampleImages": [
     {
-      "activity": "Confucius Temple",
+      "activity": "Transfer to Qufu",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?confucius%20temple%20qufu%20china&w=800&h=600&fit=crop",
+          "id": "unsplash-44ciXqi4nG8",
+          "url": "https://images.unsplash.com/photo-1711500644162-ac56fc254629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1711500644162-ac56fc254629?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1711500644162-ac56fc254629?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=85",
+          "alt": "a scenic view of a mountain with a winding road",
+          "photographer": "Avina Qin",
+          "photographerUrl": "https://unsplash.com/@solovled_avina",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/confucius%20temple%20qufu%20china",
-          "sourceUrl": "https://unsplash.com/s/photos/confucius%20temple%20qufu%20china",
-          "query": "Confucius Temple",
-          "alt": "confucius temple qufu china",
-          "downloadUrl": "https://source.unsplash.com/featured/?confucius%20temple%20qufu%20china&w=1200",
-          "description": "Real photo of confucius temple qufu china",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/44ciXqi4nG8",
+          "width": 3840,
+          "height": 2592
+        },
+        {
+          "id": "unsplash-o5hMrsR4SuU",
+          "url": "https://images.unsplash.com/photo-1612192422324-551b76c2985d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1612192422324-551b76c2985d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1612192422324-551b76c2985d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUcmFuc2ZlciUyMHRvJTIwUXVmdSUyME1vdW50JTIwVGFpJTIwdG8lMjBRdWZ1JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2Nnww&ixlib=rb-4.1.0&q=85",
+          "alt": "black and white tower on top of the mountain",
+          "photographer": "VENUS MAJOR",
+          "photographerUrl": "https://unsplash.com/@venusmajor",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/o5hMrsR4SuU",
+          "width": 2592,
+          "height": 1944
+        },
+        {
+          "id": "pexels-34525982",
+          "url": "https://images.pexels.com/photos/34525982/pexels-photo-34525982.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/34525982/pexels-photo-34525982.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/34525982/pexels-photo-34525982.jpeg",
+          "alt": "A vibrant and intricately designed Chinese temple facade with red lanterns under a clear blue sky.",
+          "photographer": "大 董",
+          "photographerUrl": "https://www.pexels.com/@724211268",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/traditional-chinese-temple-with-red-lanterns-34525982/",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "id": "pexels-31506012",
+          "url": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg",
+          "alt": "Golden temple atop Mount Tai with scenic views and crowds walking uphill.",
+          "photographer": "zhiqiang pan",
+          "photographerUrl": "https://www.pexels.com/@zhiqiang-pan-2151104065",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/majestic-view-of-golden-temple-on-mount-tai-31506012/",
+          "width": 4096,
+          "height": 2304
+        },
+        {
+          "id": "pixabay-777463",
+          "url": "https://pixabay.com/get/g7d7c1c11c19bb852e1e5fbec8a9a1bd90b1779598c3afa65df511c395d4c78f1261a71108787f0bbcb87cd0b4d2fbf1f_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/21/16/51/shandong-777463_150.jpg",
+          "full": "https://pixabay.com/get/gafea2907d6eeee985dcd2af291b3526ef09f5b8646b08cc181ec0b9dfce07eb5f89fab4e94cf8199945c868a5a13039700dba8eab9c2f07585cdda9d344c500f_1280.jpg",
+          "alt": "shandong, qufu, culture, historic site, city wall, stone carving, tile, blessing, shandong, shandong, shandong, shandong, shandong, qufu, qufu",
+          "photographer": "girlliuxia",
+          "photographerUrl": "https://pixabay.com/users/girlliuxia-102093/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/shandong-qufu-culture-historic-site-777463/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-777460",
+          "url": "https://pixabay.com/get/gc5f22b27909b5473b8719069281f7a62012f8aefa30de9ba367bc02b37fe935fc0e2a9cef59cb7a2236f0b4b8f6c1f0b_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/21/16/51/shandong-777460_150.jpg",
+          "full": "https://pixabay.com/get/ge0b404f36a357bc553d8c840db07ce69d928252d2edccce772045cf974c4c4b99cd0e4794d29072c34cb1620b2c36681dbcee3babd3191703eb87b4884475d27_1280.jpg",
+          "alt": "shandong, qufu, culture, historic site, city wall, stone carving, tile, faucet, shandong, shandong, shandong, shandong, shandong",
+          "photographer": "girlliuxia",
+          "photographerUrl": "https://pixabay.com/users/girlliuxia-102093/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/shandong-qufu-culture-historic-site-777460/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-3779159",
+          "url": "https://pixabay.com/get/g55c2f00d096d4ca65746b87fefc4781e2880de9bae3b59789f869ba4633bdee3bcde74df518a0c6266f672132d51fd5fc0ce433073d214499b56bff1a7ca63f5_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/10/28/16/11/volcano-3779159_150.jpg",
+          "full": "https://pixabay.com/get/g835808e4ac58de591af38c85b6440a22059cc90171ae49e6302baa2702ec9b9028df416e82080cbb7e6d8fe5fdbd334473c95976ded9ac0edc4cff467c76a13c_1280.jpg",
+          "alt": "volcano, natural, cloud, landscape, sightseeing, mount sindro, mount sumbing, java island, indonesia, volcano, volcano, cloud, indonesia, indonesia, indonesia, indonesia, indonesia",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/volcano-natural-cloud-landscape-3779159/",
+          "width": 4500,
+          "height": 3000
         }
       ]
     },
     {
-      "activity": "Confucius Mansion",
+      "activity": "Visit Confucian Cultural Sites",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Confucius%20Mansion%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Confucius%20Mansion%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Confucius%20Mansion%20china%20tourism",
-          "query": "Confucius Mansion",
-          "alt": "Confucius Mansion china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Confucius%20Mansion%20china%20tourism&w=1200",
-          "description": "Real photo of Confucius Mansion china tourism",
-          "isUnsplashFeatured": true
-        }
-      ]
-    },
-    {
-      "activity": "Confucius Forest",
-      "images": [
+          "id": "pexels-6952102",
+          "url": "https://images.pexels.com/photos/6952102/pexels-photo-6952102.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/6952102/pexels-photo-6952102.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/6952102/pexels-photo-6952102.jpeg",
+          "alt": "A picturesque view of a traditional Chinese temple with a prominent statue in Beijing, China.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/statue-in-front-of-a-temple-6952102/",
+          "width": 9504,
+          "height": 6336
+        },
         {
-          "url": "https://source.unsplash.com/featured/?Confucius%20Forest%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Confucius%20Forest%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Confucius%20Forest%20china%20tourism",
-          "query": "Confucius Forest",
-          "alt": "Confucius Forest china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Confucius%20Forest%20china%20tourism&w=1200",
-          "description": "Real photo of Confucius Forest china tourism",
-          "isUnsplashFeatured": true
+          "id": "pexels-7887763",
+          "url": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7887763/pexels-photo-7887763.jpeg",
+          "alt": "Sunny day at famous temple in Beijing with clear blue skies and tourists walking along the pathway.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/people-walking-on-a-pathway-near-temple-7887763/",
+          "width": 9504,
+          "height": 6336
+        },
+        {
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/gf355081c4f4b05e0c0e86d47508e5f2094e29eef3056ff3e216df2443be6776e9436089ad99cc5294ff4a0a117e3bd9a7987579a93a01627387615b9187dfd85_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/g0c712875ae33382bdde5ac5ece1fe332159993a9219216c20d4b234e411c4df8a9ad626b345a4fb980f2dc5f967d93ea5ba115a3871da98f08b262fc1997b29d_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-777463",
+          "url": "https://pixabay.com/get/g4e57295aaacbe87f39827f5157776a00b0aeaac5c78862a9327d090de82cf473efe4927e47c9faf68d55b1af2539c51a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/21/16/51/shandong-777463_150.jpg",
+          "full": "https://pixabay.com/get/ga1c0c1c1721d9fa99b66f01d3c46cb6c49975f768350e7d42c3087ef5770c0971bf68bbdab7ccf49fa5c2313026a001733903ed358ed0de2805794e349fe1ad5_1280.jpg",
+          "alt": "shandong, qufu, culture, historic site, city wall, stone carving, tile, blessing, shandong, shandong, shandong, shandong, shandong, qufu, qufu",
+          "photographer": "girlliuxia",
+          "photographerUrl": "https://pixabay.com/users/girlliuxia-102093/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/shandong-qufu-culture-historic-site-777463/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-7427144",
+          "url": "https://pixabay.com/get/gd18546c98e7fd975eb040664c149e3fad3c8d006bfc75017153e2e15e2d4a62d6f7e0751f85738ed3ffe88d36c6bebecb7c85b3fee92067a2926ef2aebadaae0_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2022/09/02/09/54/masada-national-park-7427144_150.jpg",
+          "full": "https://pixabay.com/get/ge0c98a65ea46bf760042aae1a18720eef71978e56717e4519664bbfc4bb57e2738c5a05c6cf1ed841edee28ea4116cac4a7a1b8960e709657ce8537d08090269_1280.jpg",
+          "alt": "masada national park, masada, the great revolt, roman siege ramp, cliff, desert, unesco heritage site, tourism, nature, israel, palaces of king herod the great, aerial view",
+          "photographer": "samirsmier",
+          "photographerUrl": "https://pixabay.com/users/samirsmier-17442339/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/masada-national-park-masada-7427144/",
+          "width": 4000,
+          "height": 2250
         }
       ]
     }
-  ],
-  "researchDate": "2025-11-29T00:47:50.992Z",
-  "instructions": {
-    "howToUse": "Open the HTML file to preview and select images",
-    "altText": "Use the suggested alt text for accessibility",
-    "hotels": "Check hotel links for reviews and booking information"
-  }
+  ]
 }

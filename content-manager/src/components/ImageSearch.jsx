@@ -1,12 +1,21 @@
-// Search component for Pexels/Unsplash images
+// Search component for multiple image providers
 
 import { useState } from 'react'
 import { searchImages } from '../utils/imageApi'
 import ImageGrid from './ImageGrid'
 
+// Provider configuration with colors for UI
+const PROVIDERS = [
+  { value: 'all', label: 'All', color: '#1a5f7a' },
+  { value: 'unsplash', label: 'Unsplash', color: '#111' },
+  { value: 'pexels', label: 'Pexels', color: '#05a081' },
+  { value: 'pixabay', label: 'Pixabay', color: '#00ab6c' },
+  { value: 'wikimedia', label: 'Wikimedia', color: '#006699' }
+]
+
 function ImageSearch({ onAddImage, onPreview, initialQuery = '' }) {
   const [query, setQuery] = useState(initialQuery)
-  const [provider, setProvider] = useState('both')
+  const [provider, setProvider] = useState('all')
   const [results, setResults] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
@@ -18,7 +27,9 @@ function ImageSearch({ onAddImage, onPreview, initialQuery = '' }) {
     setError(null)
 
     try {
-      const images = await searchImages(query, provider, 8)
+      // Request more images when searching all providers
+      const count = provider === 'all' ? 12 : 8
+      const images = await searchImages(query, provider, count)
       setResults(images)
     } catch (e) {
       setError(e.message)
@@ -68,24 +79,20 @@ function ImageSearch({ onAddImage, onPreview, initialQuery = '' }) {
           <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', fontSize: '0.9rem', color: '#333' }}>
             Source
           </label>
-          <div style={{ display: 'flex', gap: '4px' }}>
-            {[
-              { value: 'both', label: 'Both', color: '#1a5f7a' },
-              { value: 'unsplash', label: 'Unsplash', color: '#111' },
-              { value: 'pexels', label: 'Pexels', color: '#05a081' }
-            ].map(opt => (
+          <div style={{ display: 'flex', gap: '4px', flexWrap: 'wrap' }}>
+            {PROVIDERS.map(opt => (
               <button
                 key={opt.value}
                 onClick={() => setProvider(opt.value)}
                 style={{
-                  padding: '8px 12px',
+                  padding: '8px 10px',
                   background: provider === opt.value ? opt.color : 'white',
                   color: provider === opt.value ? 'white' : '#666',
                   border: `1px solid ${provider === opt.value ? opt.color : '#ccc'}`,
                   borderRadius: '4px',
                   cursor: 'pointer',
                   fontWeight: provider === opt.value ? 'bold' : 'normal',
-                  fontSize: '0.85rem',
+                  fontSize: '0.8rem',
                   transition: 'all 0.15s'
                 }}
               >
@@ -126,7 +133,7 @@ function ImageSearch({ onAddImage, onPreview, initialQuery = '' }) {
       {results.length > 0 && (
         <div>
           <div style={{ marginBottom: '15px', padding: '10px 15px', background: '#f0f0f0', borderRadius: '6px' }}>
-            Found <strong>{results.length}</strong> images for "<strong>{query}</strong>" from <strong>{provider === 'both' ? 'Unsplash + Pexels' : provider}</strong>
+            Found <strong>{results.length}</strong> images for "<strong>{query}</strong>" from <strong>{provider === 'all' ? 'All Sources' : PROVIDERS.find(p => p.value === provider)?.label || provider}</strong>
           </div>
           <ImageGrid
             images={results}

@@ -97,6 +97,9 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [lightboxImage, deleteConfirm])
 
+  // Helper to get activity name from different data formats
+  const getActivityName = (a) => a.name || a.activity || ''
+
   // Find the matching activity from research data
   const getMatchingActivity = () => {
     if (!research || !research.activities) return null
@@ -107,7 +110,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
     // Try to find matching activity by segment title
     if (segmentTitle) {
       const matchingActivity = research.activities.find(a => {
-        const activityName = a.name.toLowerCase()
+        const activityName = getActivityName(a).toLowerCase()
         const title = segmentTitle.toLowerCase()
         return activityName.includes(title) ||
                title.includes(activityName) ||
@@ -126,20 +129,68 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
 
     const matchingActivity = getMatchingActivity()
 
+    // Filter out deprecated source.unsplash.com URLs (service shut down in 2022)
+    const filterBrokenUrls = (images) => {
+      return images.filter(img => {
+        const url = img.url || ''
+        return !url.includes('source.unsplash.com')
+      })
+    }
+
+    // Ensure all images have IDs
+    const ensureImageIds = (images) => {
+      return filterBrokenUrls(images).map((img, idx) => ({
+        ...img,
+        id: img.id || `img-${idx}-${(img.url || '').slice(-15)}`
+      }))
+    }
+
+    // Helper to get images from activity (handles both formats)
+    const getActivityImages = (activity) => {
+      // Format 1: images directly on activity
+      if (activity.images && activity.images.length > 0) {
+        return ensureImageIds(activity.images)
+      }
+      // Format 2: images in sampleImages array by activity name
+      if (research.sampleImages) {
+        const activityName = getActivityName(activity)
+        const sampleEntry = research.sampleImages.find(s =>
+          activityName.toLowerCase().includes(s.activity?.toLowerCase()) ||
+          s.activity?.toLowerCase().includes(activityName.toLowerCase())
+        )
+        if (sampleEntry && sampleEntry.images) {
+          return ensureImageIds(sampleEntry.images)
+        }
+      }
+      return []
+    }
+
     // If we found a matching activity, return only its images
     if (matchingActivity) {
-      return matchingActivity.images || []
+      return getActivityImages(matchingActivity)
     }
 
     // For day-overview or no match, return all images from all activities
-    return research.activities.flatMap(a => a.images || [])
+    // First try direct images, then try sampleImages
+    const directImages = research.activities.flatMap(a => a.images || [])
+    if (directImages.length > 0) {
+      return ensureImageIds(directImages)
+    }
+    // Fallback to sampleImages
+    if (research.sampleImages) {
+      return ensureImageIds(research.sampleImages.flatMap(s => s.images || []))
+    }
+    return []
   }
 
   // Get the search term used for this activity
   const getSearchTerm = () => {
     const matchingActivity = getMatchingActivity()
     if (matchingActivity) {
-      return matchingActivity.searchTerm
+      // Handle both formats: searchTerm or searchQueries[0].query
+      return matchingActivity.searchTerm ||
+             matchingActivity.searchQueries?.[0]?.query ||
+             getActivityName(matchingActivity)
     }
     // Default search term based on segment title and day location
     if (segmentTitle && research?.location?.en) {
@@ -152,8 +203,8 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
   const getAllSearchTerms = () => {
     if (!research || !research.activities) return []
     return research.activities.map(a => ({
-      name: a.name,
-      searchTerm: a.searchTerm
+      name: getActivityName(a),
+      searchTerm: a.searchTerm || a.searchQueries?.[0]?.query || getActivityName(a)
     }))
   }
 

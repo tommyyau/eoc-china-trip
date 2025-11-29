@@ -1,0 +1,25 @@
+{
+  "day": 4,
+  "lastModified": "2025-11-29T22:03:57.176Z",
+  "pois": [
+    {
+      "id": "beilin-museum",
+      "name": "Beilin Museum",
+      "day": 4,
+      "location": "Xi'an -> Beijing",
+      "status": "pending",
+      "summary": "Embark on a journey through time at the Beilin Museum in Xi'an, home to the remarkable Xi'an Stele, or Nestorian Stele. This captivating site reveals the extraordinary tale of early Christianity in China, dating back to the Tang dynasty. As you stroll through the serene Stele Forest, marvel at the intricate carvings and inscriptions that speak of a rich spiritual heritage and the remarkable interactions between cultures. The museum not only offers a glimpse into the past but also invites you to reflect on the enduring legacy of faith and exploration. Don't miss the chance to connect with history in one of China's most significant cultural landmarks.",
+      "historicalContext": "The Xi'an Stele was erected in 781 to document 150 years of early Christian presence in China, showcasing the impact of missionaries like Alopen during the Tang dynasty. This limestone monument, buried during the Huichang persecution, remained hidden until its rediscovery in 1625, offering invaluable insight into the historical interactions between Christianity and Chinese culture.",
+      "practicalTips": "Plan your visit during weekdays to avoid crowds. Allocate at least 2 hours to explore the museum and surrounding gardens. Consider hiring a guide for deeper insights into the stele's history. Wear comfortable shoes for walking, as the area is expansive. Check museum hours and any special exhibits before your visit.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Xi'an_Stele",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:03:56.675Z"
+    }
+  ]
+}

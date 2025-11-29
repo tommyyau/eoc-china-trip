@@ -1,0 +1,44 @@
+{
+  "day": 7,
+  "lastModified": "2025-11-29T22:04:36.026Z",
+  "pois": [
+    {
+      "id": "lushan-cable-car",
+      "name": "Lushan Cable Car",
+      "day": 7,
+      "location": "Lushan",
+      "status": "pending",
+      "summary": "Experience the breathtaking beauty of Lushan, China, from the sky with a ride on the Lushan Cable Car. Ascend to majestic heights as you glide above lush green valleys and stunning mountain peaks. This thrilling journey not only offers panoramic views of natural wonders but also allows you to witness unique rock formations and vibrant flora that make Lushan a UNESCO World Heritage site. Whether you're an avid hiker or simply seeking a serene escape, the cable car ride is the perfect introduction to the enchanting landscapes that await you at the summit.",
+      "historicalContext": "The Lushan Cable Car was inaugurated to enhance access to the renowned Lushan Mountain, which has been a favorite retreat for scholars and poets for centuries. The area has a rich history, once serving as a summer resort for government officials during the late Qing Dynasty, and today it attracts visitors from around the globe eager to explore its cultural and natural heritage.",
+      "practicalTips": "Arrive early to avoid long lines at the cable car station. Bring a light jacket, as temperatures can drop at higher elevations. Consider visiting during weekdays for a more peaceful experience. Don't forget your camera; the views are spectacular and perfect for capturing memories. Check the weather forecast before your visit to ensure clear skies.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/China_Railway_NZJ",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:04:29.869Z"
+    },
+    {
+      "id": "mountain-top-architecture",
+      "name": "Mountain-top Architecture",
+      "day": 7,
+      "location": "Lushan",
+      "status": "pending",
+      "summary": "Embark on an unforgettable journey to the breathtaking Mountain-top Architecture of Lushan, China, where majestic peaks meet awe-inspiring structures that echo the rich spiritual heritage of the region. As you hike through lush forests and ascend to stunning vantage points, you will discover the harmonious blend of nature and ancient architecture, creating a serene environment perfect for reflection and adventure. Whether you're a seasoned hiker or a casual explorer, the sacred allure of these mountains will inspire you to connect with the divine and embrace the beauty of the world around you.",
+      "historicalContext": "Lushan is part of the revered Sacred Mountains of China, known for their significance in both Buddhism and Taoism. Historically, these mountains have been pilgrimage sites for emperors and spiritual seekers alike, reflecting centuries of reverence and cultural importance in Chinese history.",
+      "practicalTips": "Wear sturdy hiking boots for rugged terrain. Bring plenty of water and snacks to keep your energy up. Respect local customs and refrain from loud noises to maintain the serene atmosphere. Consider hiring a local guide for deeper insights into the history and architecture. Plan your visit during the spring or autumn for the most pleasant weather.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sacred_Mountains_of_China",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:04:35.526Z"
+    }
+  ]
+}

@@ -1,257 +1,410 @@
 {
   "day": 8,
   "title": {
-    "en": "Conquering Hero Slope",
-    "cn": "征服好汉坡"
+    "en": "Conquering Lushan’s Hero Slope",
+    "cn": "Conquering Lushan’s Hero Slope"
   },
   "location": {
     "en": "Lushan",
-    "cn": "庐山"
+    "cn": "Lushan"
   },
+  "generatedAt": "2025-11-29T22:02:24.212Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
   "activities": [
     {
-      "activity": "Hero Slope Hike in Lushan",
-      "searchQueries": [
+      "name": "Summit Hike on Lushan",
+      "activity": "Summit Hike on Lushan",
+      "searchTerm": "Summit Hike on Lushan China",
+      "images": [
         {
-          "type": "unsplash",
-          "query": "Hero Slope Hike Lushan site:unsplash.com",
-          "description": "Hero Slope Hike in Lushan"
-        }
-      ],
-      "searchResults": [
+          "id": "unsplash-A2QmTwz6qEQ",
+          "url": "https://images.unsplash.com/photo-1511420799984-17155d567c2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1511420799984-17155d567c2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1511420799984-17155d567c2a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "woman sitting on wooden fence overlooking building background of mountain at daytime",
+          "photographer": "Eric Han",
+          "photographerUrl": "https://unsplash.com/@madeyes",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/A2QmTwz6qEQ",
+          "width": 6720,
+          "height": 3780
+        },
         {
-          "url": "https://unsplash.com/s/photos/Hero%20Slope%20Hike%20Lushan",
-          "title": "Search \"Hero Slope Hike in Lushan\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Hero Slope Hike in Lushan in Lushan, China",
-        "Travel photography of Hero Slope Hike in Lushan in Lushan",
-        "Hero Slope Hike in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Hero Slope Hike in Lushan",
-      "searchQueries": [
+          "id": "unsplash-uwW_42eWT7w",
+          "url": "https://images.unsplash.com/photo-1734606773559-750ad2937a8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1734606773559-750ad2937a8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1734606773559-750ad2937a8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "A view of a winding road in the mountains",
+          "photographer": "Ekaterina Zlotnikova",
+          "photographerUrl": "https://unsplash.com/@katja_zlotnikova",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/uwW_42eWT7w",
+          "width": 5472,
+          "height": 3648
+        },
         {
-          "type": "pexels",
-          "query": "Hero Slope Hike Lushan site:pexels.com",
-          "description": "Hero Slope Hike in Lushan"
-        }
-      ],
-      "searchResults": [
+          "id": "pexels-177502",
+          "url": "https://images.pexels.com/photos/177502/pexels-photo-177502.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/177502/pexels-photo-177502.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/177502/pexels-photo-177502.jpeg",
+          "alt": "Scenic view of rocky mountains covered with lush greenery and mist under a clear blue sky.",
+          "photographer": "Shun Chen",
+          "photographerUrl": "https://www.pexels.com/@shun-chen-49430",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/mountain-under-clear-blue-sky-177502/",
+          "width": 6016,
+          "height": 4000
+        },
         {
-          "url": "https://www.pexels.com/search/Hero%20Slope%20Hike%20Lushan/",
-          "title": "Search \"Hero Slope Hike in Lushan\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Hero Slope Hike in Lushan in Lushan, China",
-        "Travel photography of Hero Slope Hike in Lushan in Lushan",
-        "Hero Slope Hike in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "好汉坡徒步 in 庐山",
-      "searchQueries": [
+          "id": "pexels-708953",
+          "url": "https://images.pexels.com/photos/708953/pexels-photo-708953.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/708953/pexels-photo-708953.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/708953/pexels-photo-708953.jpeg",
+          "alt": "High angle view of misty mountains and valleys with a stunning sky.",
+          "photographer": "Carrie Yang",
+          "photographerUrl": "https://www.pexels.com/@carrie-yang-223798",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-photography-of-mountain-708953/",
+          "width": 5184,
+          "height": 3456
+        },
         {
-          "type": "unsplash",
-          "query": "好汉坡徒步 庐山 site:unsplash.com",
-          "description": "好汉坡徒步 in 庐山"
-        }
-      ],
-      "searchResults": [
+          "id": "pixabay-3131411",
+          "url": "https://pixabay.com/get/ge56c443f22d1a883bab8d55ae0ad7c3c750b663a36469b68dd7ae7d005d356e2c87a3b49bf375fc2e0cf4f626b8bfa6d4d7f73615d2c7bfb019fef05cf6c85de_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/02/05/05/19/tourism-3131411_150.jpg",
+          "full": "https://pixabay.com/get/gff91b7ad9b246ddccc1e4711448b23df2d385dcf4b6f529069f2f0067d5309fca4e10b48018f33a511a89b2c018a06e8dc3f44152652d72e92f6acb3f2824913_1280.jpg",
+          "alt": "travel, lake, lushan, clouds, nature, pavilion, china, landscape, such as the piano lake",
+          "photographer": "chuxiyue",
+          "photographerUrl": "https://pixabay.com/users/chuxiyue-7935367/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/travel-lake-lushan-clouds-pavilion-3131411/",
+          "width": 4288,
+          "height": 2848
+        },
         {
-          "url": "https://unsplash.com/s/photos/%E5%A5%BD%E6%B1%89%E5%9D%A1%E5%BE%92%E6%AD%A5%20%E5%BA%90%E5%B1%B1",
-          "title": "Search \"好汉坡徒步 in 庐山\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "好汉坡徒步 in 庐山 in Lushan, China",
-        "Travel photography of 好汉坡徒步 in 庐山 in Lushan",
-        "好汉坡徒步 in 庐山 tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Lushan Summit in Lushan",
-      "searchQueries": [
+          "id": "pixabay-6564997",
+          "url": "https://pixabay.com/get/g4b01f1bbea03e3a8e0382ac65a3d7aeaab50ea8e3c365848e4e78803bdd18636a3177fcfbb3989d3b95de8ad6752d3f3bddd2e7acc59bc9aca1ab1332a883018_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/08/22/12/24/mountains-6564997_150.jpg",
+          "full": "https://pixabay.com/get/g5e7cd250a478081a2387647d236f9dbd210c4ca8f2dc330cfe10ea1242b22ddd3c3164d621d616707eed7607886d3f914da6fee78dd61460aa5222f06578d630_1280.jpg",
+          "alt": "mountains, summit, hike, trail, landscape, nature, alpine, hiking, trekking, man, alps, rocks, mountainous, peak, sky, clouds, scenic, long exposure, bernina, engadin, switzerland, trail, hiking, hiking, hiking, trekking, trekking, trekking, trekking, trekking, man, sky, sky, sky, sky, switzerland",
+          "photographer": "scratsmacker",
+          "photographerUrl": "https://pixabay.com/users/scratsmacker-16310259/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountains-summit-hike-trail-6564997/",
+          "width": 5472,
+          "height": 3648
+        },
         {
-          "type": "unsplash",
-          "query": "Lushan Summit Lushan site:unsplash.com",
-          "description": "Lushan Summit in Lushan"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Lushan%20Summit%20Lushan",
-          "title": "Search \"Lushan Summit in Lushan\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Lushan Summit in Lushan in Lushan, China",
-        "Travel photography of Lushan Summit in Lushan in Lushan",
-        "Lushan Summit in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Lushan Summit in Lushan",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Lushan Summit Lushan site:pexels.com",
-          "description": "Lushan Summit in Lushan"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Lushan%20Summit%20Lushan/",
-          "title": "Search \"Lushan Summit in Lushan\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Lushan Summit in Lushan in Lushan, China",
-        "Travel photography of Lushan Summit in Lushan in Lushan",
-        "Lushan Summit in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "庐山顶峰 in 庐山",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "庐山顶峰 庐山 site:unsplash.com",
-          "description": "庐山顶峰 in 庐山"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%BA%90%E5%B1%B1%E9%A1%B6%E5%B3%B0%20%E5%BA%90%E5%B1%B1",
-          "title": "Search \"庐山顶峰 in 庐山\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "庐山顶峰 in 庐山 in Lushan, China",
-        "Travel photography of 庐山顶峰 in 庐山 in Lushan",
-        "庐山顶峰 in 庐山 tourist attraction in Lushan"
-      ]
-    }
-  ],
-  "hotels": [
-    {
-      "accommodation": "Lushan Mountain-top Hotel",
-      "searchQueries": [
-        {
-          "type": "tripadvisor",
-          "query": "top Hotel Lushan site:tripadvisor.com",
-          "description": "top Hotel in Lushan on TripAdvisor"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.tripadvisor.com/Search?q=top%20Hotel%20Lushan",
-          "title": "Find \"top Hotel in Lushan on TripAdvisor\" on TripAdvisor",
-          "description": "Hotel reviews, ratings, and booking information",
-          "type": "search-link"
+          "id": "pixabay-5318548",
+          "url": "https://pixabay.com/get/gc170c86f0c91b713447055ff51a82681acb29dab9a1883af6d9f5f6ad29da9ef235f290557823a11ae3089a59321b9bc06637679b83d854f2619708f261dc32f_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/06/19/19/09/switzerland-5318548_150.jpg",
+          "full": "https://pixabay.com/get/g01ce22dd5534d67f8734982522131e4faffd6fef5fec8fd1e9ed7cb6f1ee57788dc85021b6bd0469efa139d12f8384336a1b9486f86b3496cc9598691fa073b8_1280.jpg",
+          "alt": "switzerland, hike, the gastern valley, mountains, landscape, clouds, alps, nature, mountain, rock, waterfall, alpine, forest, summit, outlook, heaven, switzerland, mountain, waterfall, waterfall, waterfall, waterfall, waterfall, heaven",
+          "photographer": "scoob_switzerland",
+          "photographerUrl": "https://pixabay.com/users/scoob_switzerland-13571605/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/switzerland-hike-the-gastern-valley-5318548/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     },
     {
-      "accommodation": "Lushan Mountain-top Hotel",
-      "searchQueries": [
+      "name": "Rest and Share Experiences",
+      "activity": "Rest and Share Experiences",
+      "searchTerm": "Rest and Share Experiences Mountain China",
+      "images": [
         {
-          "type": "booking",
-          "query": "top Hotel Lushan site:booking.com",
-          "description": "top Hotel in Lushan on Booking.com"
-        }
-      ],
-      "searchResults": []
-    },
-    {
-      "accommodation": "Lushan Mountain-top Hotel",
-      "searchQueries": [
+          "id": "unsplash-6-KkqgqLYhE",
+          "url": "https://images.unsplash.com/photo-1511924909854-28e2adf871de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1511924909854-28e2adf871de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1511924909854-28e2adf871de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=85",
+          "alt": "assorted-color textile near pagoda at daytime",
+          "photographer": "Chiahsin Huang",
+          "photographerUrl": "https://unsplash.com/@chiagato",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/6-KkqgqLYhE",
+          "width": 3264,
+          "height": 2448
+        },
         {
-          "type": "general",
-          "query": "top Hotel Lushan hotel reviews",
-          "description": "Reviews for top Hotel in Lushan"
+          "id": "unsplash-pVQdTKcMJ_I",
+          "url": "https://images.unsplash.com/photo-1645803751095-ef018b6c7455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1645803751095-ef018b6c7455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1645803751095-ef018b6c7455?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=85",
+          "alt": "a couple of people standing on top of a snow covered mountain",
+          "photographer": "keshb3",
+          "photographerUrl": "https://unsplash.com/@keshb3",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/pVQdTKcMJ_I",
+          "width": 5809,
+          "height": 3267
+        },
+        {
+          "id": "pexels-7170941",
+          "url": "https://images.pexels.com/photos/7170941/pexels-photo-7170941.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7170941/pexels-photo-7170941.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7170941/pexels-photo-7170941.jpeg",
+          "alt": "Reflective lake with a scenic pavilion and mountain backdrop, capturing a serene landscape.",
+          "photographer": "David Yu",
+          "photographerUrl": "https://www.pexels.com/@pppsdavid",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/landscape-reflecting-in-a-lake-7170941/",
+          "width": 7360,
+          "height": 4912
+        },
+        {
+          "id": "pexels-4555536",
+          "url": "https://images.pexels.com/photos/4555536/pexels-photo-4555536.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/4555536/pexels-photo-4555536.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/4555536/pexels-photo-4555536.jpeg",
+          "alt": "Full body of man sitting on folding chair and drinking tea with high mountains covered with snow on background",
+          "photographer": "ROMAN ODINTSOV",
+          "photographerUrl": "https://www.pexels.com/@roman-odintsov",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/young-male-explorer-sitting-on-chair-and-looking-away-4555536/",
+          "width": 5760,
+          "height": 3840
+        },
+        {
+          "id": "pixabay-8251186",
+          "url": "https://pixabay.com/get/g09ff73af9916e9bf199838935baed59e338f1520e8f04e9c99228c936aec040268d7631fdc1f5d882c5d9e11bb2433828c6c8044415b4a7a9065be87a2d0fa33_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/09/13/15/41/mountain-8251186_150.jpg",
+          "full": "https://pixabay.com/get/gf53320e1f9805834e3dfeafea59be40298d087e06bd5b28eb4039d36dbb2a40e1d006c325bf83dd9c6f4a22d71310e0747bc41c8fdbd82fd99c7e5cbd34aac0e_1280.jpg",
+          "alt": "mountain, sunrise, nature, outdoors, huangshan, china",
+          "photographer": "sfkjrgk",
+          "photographerUrl": "https://pixabay.com/users/sfkjrgk-36819490/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountain-sunrise-nature-outdoors-8251186/",
+          "width": 8256,
+          "height": 5504
+        },
+        {
+          "id": "pixabay-8568913",
+          "url": "https://pixabay.com/get/g40f521881d033a52ddc0a183c95d0e962c827fb86d44cd8ff821e0230e3a8d90d552dec9c9735fb70a2b55249f6fb15d7b1251453ea6e12a358dd1ee331dadfb_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2024/02/12/16/05/siguniang-mountain-8568913_150.jpg",
+          "full": "https://pixabay.com/get/g8cd9d57f266bb5656d8cc7a7a428adeab7453c7542cf5816ade30b90b89ba0d2f4fbe1c255aa23346de451cd6a367e17a029172c79ae4f022a4f66a38b9ec231_1280.jpg",
+          "alt": "siguniang mountain, yaomeifeng, mountain, china, sichuan, asia, snow mountain, mountain range, mountain peak, nature, aba prefecture",
+          "photographer": "lin2015",
+          "photographerUrl": "https://pixabay.com/users/lin2015-1447903/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/siguniang-mountain-yaomeifeng-8568913/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-8568915",
+          "url": "https://pixabay.com/get/g669e135a54e0aa46f09e4c7b7481e6ee96ebc2738516937575469855b45ba7ace502793343c7fafa0a4d16896f157a18b7818752ceb06ea45137f9ae9a40b162_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2024/02/12/16/05/hunter-peak-8568915_150.jpg",
+          "full": "https://pixabay.com/get/g3f8eb5caf0ee2dfb81134982d5d182b1e7faf8e92714123bc7cb10400e1bd2606b554113249e742ff8f58c63e49dd3b9d5c31ed5e305c23a4b1ce563d0f92eab_1280.jpg",
+          "alt": "hunter peak, siguniangshan town, sichuan, nature, aba prefecture, sichuan, china, asia, mountain, snow mountain, natural, mountain range, mountain peak",
+          "photographer": "lin2015",
+          "photographerUrl": "https://pixabay.com/users/lin2015-1447903/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/hunter-peak-siguniangshan-town-8568915/",
+          "width": 6000,
+          "height": 4000
         }
-      ],
-      "searchResults": []
-    }
-  ],
-  "recommendedSearches": [
-    {
-      "query": "Lushan China tourism site:unsplash.com",
-      "description": "General Lushan tourism photos",
-      "reason": "Good for establishing shots and context"
-    },
-    {
-      "query": "Lushan China landscape site:pexels.com",
-      "description": "Lushan landscapes and scenery",
-      "reason": "Perfect for background and establishing scenes"
-    },
-    {
-      "query": "Hero Slope Hike China travel site:unsplash.com",
-      "description": "Hero Slope Hike travel photography",
-      "reason": "Specific activity focus"
-    },
-    {
-      "query": "Lushan Summit China travel site:unsplash.com",
-      "description": "Lushan Summit travel photography",
-      "reason": "Specific activity focus"
+      ]
     }
   ],
   "sampleImages": [
     {
-      "activity": "Hero Slope Hike",
+      "activity": "Summit Hike on Lushan",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Hero%20Slope%20Hike%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "unsplash-A2QmTwz6qEQ",
+          "url": "https://images.unsplash.com/photo-1511420799984-17155d567c2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1511420799984-17155d567c2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1511420799984-17155d567c2a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "woman sitting on wooden fence overlooking building background of mountain at daytime",
+          "photographer": "Eric Han",
+          "photographerUrl": "https://unsplash.com/@madeyes",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Hero%20Slope%20Hike%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Hero%20Slope%20Hike%20china%20tourism",
-          "query": "Hero Slope Hike",
-          "alt": "Hero Slope Hike china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Hero%20Slope%20Hike%20china%20tourism&w=1200",
-          "description": "Real photo of Hero Slope Hike china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/A2QmTwz6qEQ",
+          "width": 6720,
+          "height": 3780
+        },
+        {
+          "id": "unsplash-uwW_42eWT7w",
+          "url": "https://images.unsplash.com/photo-1734606773559-750ad2937a8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1734606773559-750ad2937a8f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1734606773559-750ad2937a8f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxTdW1taXQlMjBIaWtlJTIwb24lMjBMdXNoYW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzQwfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "A view of a winding road in the mountains",
+          "photographer": "Ekaterina Zlotnikova",
+          "photographerUrl": "https://unsplash.com/@katja_zlotnikova",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/uwW_42eWT7w",
+          "width": 5472,
+          "height": 3648
+        },
+        {
+          "id": "pexels-177502",
+          "url": "https://images.pexels.com/photos/177502/pexels-photo-177502.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/177502/pexels-photo-177502.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/177502/pexels-photo-177502.jpeg",
+          "alt": "Scenic view of rocky mountains covered with lush greenery and mist under a clear blue sky.",
+          "photographer": "Shun Chen",
+          "photographerUrl": "https://www.pexels.com/@shun-chen-49430",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/mountain-under-clear-blue-sky-177502/",
+          "width": 6016,
+          "height": 4000
+        },
+        {
+          "id": "pexels-708953",
+          "url": "https://images.pexels.com/photos/708953/pexels-photo-708953.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/708953/pexels-photo-708953.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/708953/pexels-photo-708953.jpeg",
+          "alt": "High angle view of misty mountains and valleys with a stunning sky.",
+          "photographer": "Carrie Yang",
+          "photographerUrl": "https://www.pexels.com/@carrie-yang-223798",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-photography-of-mountain-708953/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-3131411",
+          "url": "https://pixabay.com/get/ge56c443f22d1a883bab8d55ae0ad7c3c750b663a36469b68dd7ae7d005d356e2c87a3b49bf375fc2e0cf4f626b8bfa6d4d7f73615d2c7bfb019fef05cf6c85de_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/02/05/05/19/tourism-3131411_150.jpg",
+          "full": "https://pixabay.com/get/gff91b7ad9b246ddccc1e4711448b23df2d385dcf4b6f529069f2f0067d5309fca4e10b48018f33a511a89b2c018a06e8dc3f44152652d72e92f6acb3f2824913_1280.jpg",
+          "alt": "travel, lake, lushan, clouds, nature, pavilion, china, landscape, such as the piano lake",
+          "photographer": "chuxiyue",
+          "photographerUrl": "https://pixabay.com/users/chuxiyue-7935367/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/travel-lake-lushan-clouds-pavilion-3131411/",
+          "width": 4288,
+          "height": 2848
+        },
+        {
+          "id": "pixabay-6564997",
+          "url": "https://pixabay.com/get/g4b01f1bbea03e3a8e0382ac65a3d7aeaab50ea8e3c365848e4e78803bdd18636a3177fcfbb3989d3b95de8ad6752d3f3bddd2e7acc59bc9aca1ab1332a883018_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/08/22/12/24/mountains-6564997_150.jpg",
+          "full": "https://pixabay.com/get/g5e7cd250a478081a2387647d236f9dbd210c4ca8f2dc330cfe10ea1242b22ddd3c3164d621d616707eed7607886d3f914da6fee78dd61460aa5222f06578d630_1280.jpg",
+          "alt": "mountains, summit, hike, trail, landscape, nature, alpine, hiking, trekking, man, alps, rocks, mountainous, peak, sky, clouds, scenic, long exposure, bernina, engadin, switzerland, trail, hiking, hiking, hiking, trekking, trekking, trekking, trekking, trekking, man, sky, sky, sky, sky, switzerland",
+          "photographer": "scratsmacker",
+          "photographerUrl": "https://pixabay.com/users/scratsmacker-16310259/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountains-summit-hike-trail-6564997/",
+          "width": 5472,
+          "height": 3648
+        },
+        {
+          "id": "pixabay-5318548",
+          "url": "https://pixabay.com/get/gc170c86f0c91b713447055ff51a82681acb29dab9a1883af6d9f5f6ad29da9ef235f290557823a11ae3089a59321b9bc06637679b83d854f2619708f261dc32f_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/06/19/19/09/switzerland-5318548_150.jpg",
+          "full": "https://pixabay.com/get/g01ce22dd5534d67f8734982522131e4faffd6fef5fec8fd1e9ed7cb6f1ee57788dc85021b6bd0469efa139d12f8384336a1b9486f86b3496cc9598691fa073b8_1280.jpg",
+          "alt": "switzerland, hike, the gastern valley, mountains, landscape, clouds, alps, nature, mountain, rock, waterfall, alpine, forest, summit, outlook, heaven, switzerland, mountain, waterfall, waterfall, waterfall, waterfall, waterfall, heaven",
+          "photographer": "scoob_switzerland",
+          "photographerUrl": "https://pixabay.com/users/scoob_switzerland-13571605/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/switzerland-hike-the-gastern-valley-5318548/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     },
     {
-      "activity": "Lushan Summit",
+      "activity": "Rest and Share Experiences",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Lushan%20Summit%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "unsplash-6-KkqgqLYhE",
+          "url": "https://images.unsplash.com/photo-1511924909854-28e2adf871de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1511924909854-28e2adf871de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1511924909854-28e2adf871de?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=85",
+          "alt": "assorted-color textile near pagoda at daytime",
+          "photographer": "Chiahsin Huang",
+          "photographerUrl": "https://unsplash.com/@chiagato",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Lushan%20Summit%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Lushan%20Summit%20china%20tourism",
-          "query": "Lushan Summit",
-          "alt": "Lushan Summit china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Lushan%20Summit%20china%20tourism&w=1200",
-          "description": "Real photo of Lushan Summit china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/6-KkqgqLYhE",
+          "width": 3264,
+          "height": 2448
+        },
+        {
+          "id": "unsplash-pVQdTKcMJ_I",
+          "url": "https://images.unsplash.com/photo-1645803751095-ef018b6c7455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1645803751095-ef018b6c7455?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1645803751095-ef018b6c7455?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxSZXN0JTIwYW5kJTIwU2hhcmUlMjBFeHBlcmllbmNlcyUyME1vdW50YWluJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc0Mnww&ixlib=rb-4.1.0&q=85",
+          "alt": "a couple of people standing on top of a snow covered mountain",
+          "photographer": "keshb3",
+          "photographerUrl": "https://unsplash.com/@keshb3",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/pVQdTKcMJ_I",
+          "width": 5809,
+          "height": 3267
+        },
+        {
+          "id": "pexels-7170941",
+          "url": "https://images.pexels.com/photos/7170941/pexels-photo-7170941.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7170941/pexels-photo-7170941.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7170941/pexels-photo-7170941.jpeg",
+          "alt": "Reflective lake with a scenic pavilion and mountain backdrop, capturing a serene landscape.",
+          "photographer": "David Yu",
+          "photographerUrl": "https://www.pexels.com/@pppsdavid",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/landscape-reflecting-in-a-lake-7170941/",
+          "width": 7360,
+          "height": 4912
+        },
+        {
+          "id": "pexels-4555536",
+          "url": "https://images.pexels.com/photos/4555536/pexels-photo-4555536.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/4555536/pexels-photo-4555536.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/4555536/pexels-photo-4555536.jpeg",
+          "alt": "Full body of man sitting on folding chair and drinking tea with high mountains covered with snow on background",
+          "photographer": "ROMAN ODINTSOV",
+          "photographerUrl": "https://www.pexels.com/@roman-odintsov",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/young-male-explorer-sitting-on-chair-and-looking-away-4555536/",
+          "width": 5760,
+          "height": 3840
+        },
+        {
+          "id": "pixabay-8251186",
+          "url": "https://pixabay.com/get/g09ff73af9916e9bf199838935baed59e338f1520e8f04e9c99228c936aec040268d7631fdc1f5d882c5d9e11bb2433828c6c8044415b4a7a9065be87a2d0fa33_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/09/13/15/41/mountain-8251186_150.jpg",
+          "full": "https://pixabay.com/get/gf53320e1f9805834e3dfeafea59be40298d087e06bd5b28eb4039d36dbb2a40e1d006c325bf83dd9c6f4a22d71310e0747bc41c8fdbd82fd99c7e5cbd34aac0e_1280.jpg",
+          "alt": "mountain, sunrise, nature, outdoors, huangshan, china",
+          "photographer": "sfkjrgk",
+          "photographerUrl": "https://pixabay.com/users/sfkjrgk-36819490/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountain-sunrise-nature-outdoors-8251186/",
+          "width": 8256,
+          "height": 5504
+        },
+        {
+          "id": "pixabay-8568913",
+          "url": "https://pixabay.com/get/g40f521881d033a52ddc0a183c95d0e962c827fb86d44cd8ff821e0230e3a8d90d552dec9c9735fb70a2b55249f6fb15d7b1251453ea6e12a358dd1ee331dadfb_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2024/02/12/16/05/siguniang-mountain-8568913_150.jpg",
+          "full": "https://pixabay.com/get/g8cd9d57f266bb5656d8cc7a7a428adeab7453c7542cf5816ade30b90b89ba0d2f4fbe1c255aa23346de451cd6a367e17a029172c79ae4f022a4f66a38b9ec231_1280.jpg",
+          "alt": "siguniang mountain, yaomeifeng, mountain, china, sichuan, asia, snow mountain, mountain range, mountain peak, nature, aba prefecture",
+          "photographer": "lin2015",
+          "photographerUrl": "https://pixabay.com/users/lin2015-1447903/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/siguniang-mountain-yaomeifeng-8568913/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-8568915",
+          "url": "https://pixabay.com/get/g669e135a54e0aa46f09e4c7b7481e6ee96ebc2738516937575469855b45ba7ace502793343c7fafa0a4d16896f157a18b7818752ceb06ea45137f9ae9a40b162_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2024/02/12/16/05/hunter-peak-8568915_150.jpg",
+          "full": "https://pixabay.com/get/g3f8eb5caf0ee2dfb81134982d5d182b1e7faf8e92714123bc7cb10400e1bd2606b554113249e742ff8f58c63e49dd3b9d5c31ed5e305c23a4b1ce563d0f92eab_1280.jpg",
+          "alt": "hunter peak, siguniangshan town, sichuan, nature, aba prefecture, sichuan, china, asia, mountain, snow mountain, natural, mountain range, mountain peak",
+          "photographer": "lin2015",
+          "photographerUrl": "https://pixabay.com/users/lin2015-1447903/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/hunter-peak-siguniangshan-town-8568915/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     }
-  ],
-  "researchDate": "2025-11-29T00:47:35.924Z",
-  "instructions": {
-    "howToUse": "Open the HTML file to preview and select images",
-    "altText": "Use the suggested alt text for accessibility",
-    "hotels": "Check hotel links for reviews and booking information"
-  }
+  ]
 }

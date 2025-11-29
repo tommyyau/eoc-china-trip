@@ -1,0 +1,25 @@
+{
+  "day": 12,
+  "lastModified": "2025-11-29T22:06:07.328Z",
+  "pois": [
+    {
+      "id": "dai-temple",
+      "name": "Dai Temple",
+      "day": 12,
+      "location": "Shangrao -> Tai'an",
+      "status": "pending",
+      "summary": "Nestled at the foot of the majestic Mount Tai, Dai Temple is a captivating destination that offers a glimpse into China's rich cultural and spiritual heritage. As one of the most significant Taoist temples in the country, it is surrounded by breathtaking landscapes and ancient architecture that will leave you in awe. Wander through the serene courtyards, admire intricate carvings, and soak in the tranquil atmosphere that has attracted pilgrims and travelers for centuries. Whether you're a history buff, a nature lover, or simply seeking a peaceful escape, Dai Temple promises an unforgettable experience that combines the beauty of nature with the depth of Chinese spirituality.",
+      "historicalContext": "Dai Temple, also known as Dai Miao, is a historical complex that dates back to the Han Dynasty, making it over 2,000 years old. It has been a site of worship for emperors and a center for Taoist culture, reflecting the spiritual significance of Mount Tai, which has been revered since ancient times as a sacred mountain.",
+      "practicalTips": "Wear comfortable shoes for walking and hiking. Visit early in the morning to avoid crowds and enjoy the serene atmosphere. Bring a bottle of water and snacks, as the temple grounds can be extensive. Respect local customs and traditions while exploring the temple. Consider hiring a local guide for a richer understanding of the temple's history and significance.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Tai'an",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:06:06.828Z"
+    }
+  ]
+}

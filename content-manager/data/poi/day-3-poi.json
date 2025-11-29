@@ -1,0 +1,44 @@
+{
+  "day": 3,
+  "lastModified": "2025-11-29T22:03:47.145Z",
+  "pois": [
+    {
+      "id": "terracotta-warriors-museum",
+      "name": "Terracotta Warriors Museum",
+      "day": 3,
+      "location": "Xi'an",
+      "status": "pending",
+      "summary": "Step into the ancient world of China at the Terracotta Warriors Museum in Xi'an, where history comes alive through the remarkable artistry of the Terracotta Army. Discovered in 1974 by local farmers, this breathtaking collection showcases over 8,000 life-sized sculptures, each intricately crafted to depict the soldiers, chariots, and horses of China's first emperor, Qin Shi Huang. As you wander through the expansive pits, marvel at the varied heights and unique features of these warriors, designed to protect the emperor in the afterlife. A visit here is not just a journey into the past; it's an unforgettable adventure that connects you with the rich tapestry of Chinese heritage and artistry.",
+      "historicalContext": "The Terracotta Army was created during the late 200s BCE as a funerary art for Qin Shi Huang, the first emperor of China. This vast underground army was buried with the emperor to safeguard him in the afterlife, showcasing the sophistication and craftsmanship of ancient Chinese civilization.",
+      "practicalTips": "Plan to spend at least half a day at the museum to fully explore all three pits. Arrive early to avoid crowds and enjoy a more intimate experience. Wear comfortable shoes, as there is a lot of walking involved. Consider hiring a local guide to gain deeper insights into the history and significance of the site. Don’t forget your camera to capture the awe-inspiring sculptures!",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:03:39.696Z"
+    },
+    {
+      "id": "daming-palace-heritage-park",
+      "name": "Daming Palace Heritage Park",
+      "day": 3,
+      "location": "Xi'an",
+      "status": "pending",
+      "summary": "Step into the grandeur of the Tang dynasty at Daming Palace Heritage Park, where history whispers through the ancient stones and sprawling gardens. This once-great imperial palace, which served as the residence for over 220 years, beckons travelers to explore its majestic ruins and lush landscapes. As part of the UNESCO World Heritage Site that celebrates the Silk Roads, Daming Palace offers a unique glimpse into China's rich imperial past, making it a must-visit destination for history enthusiasts and nature lovers alike. Wander the pathways, breathe in the serene atmosphere, and imagine the opulence of a bygone era as you marvel at the remnants of this royal complex nestled in the heart of Xi'an.",
+      "historicalContext": "Daming Palace was the imperial palace complex of the Tang dynasty, situated in the capital city of Chang'an. It was home to numerous emperors and played a significant role in China's political and cultural history for over two centuries, significantly influencing the development of art and architecture.",
+      "practicalTips": "Wear comfortable walking shoes to explore the extensive grounds. Visit early in the morning to avoid crowds and enjoy a peaceful atmosphere. Don’t forget your camera to capture the stunning landscapes and historical remnants. Check the weather before your visit, as the park is best enjoyed in mild conditions. Consider joining a guided tour to gain deeper insights into the history and significance of the site.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Daming_Palace",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:03:46.645Z"
+    }
+  ]
+}

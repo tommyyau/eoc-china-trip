@@ -1,412 +1,554 @@
 {
   "day": 2,
   "title": {
-    "en": "Xi'an City Walk & Ancient Wall",
-    "cn": "西安城市漫步与古城墙"
+    "en": "Exploring Xi'an",
+    "cn": "Exploring Xi'an"
   },
   "location": {
     "en": "Xi'an",
-    "cn": "西安"
+    "cn": "Xi'an"
   },
+  "generatedAt": "2025-11-29T22:01:56.866Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
   "activities": [
     {
-      "activity": "Bell & Drum Towers in Xi'an",
-      "searchQueries": [
+      "name": "City Walk in Old Town Center",
+      "activity": "City Walk in Old Town Center",
+      "searchTerm": "City Walk in Old Town Center Xi'an Old Town China",
+      "images": [
         {
-          "type": "unsplash",
-          "query": "Bell & Drum Towers Xi'an site:unsplash.com",
-          "description": "Bell & Drum Towers in Xi'an"
-        }
-      ],
-      "searchResults": [
+          "id": "unsplash-pcazZR0xJVA",
+          "url": "https://images.unsplash.com/photo-1732057030148-b5206e7bc428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1732057030148-b5206e7bc428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1732057030148-b5206e7bc428?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=85",
+          "alt": "A group of people walking down a sidewalk",
+          "photographer": "Dominic Kurniawan Suryaputra",
+          "photographerUrl": "https://unsplash.com/@d_ks11",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/pcazZR0xJVA",
+          "width": 4240,
+          "height": 2832
+        },
         {
-          "url": "https://unsplash.com/s/photos/Bell%20%26%20Drum%20Towers%20Xi'an",
-          "title": "Search \"Bell & Drum Towers in Xi'an\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Bell & Drum Towers in Xi'an in Xi'an, China",
-        "Travel photography of Bell & Drum Towers in Xi'an in Xi'an",
-        "Bell & Drum Towers in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "Bell & Drum Towers in Xi'an",
-      "searchQueries": [
+          "id": "unsplash-hu75gHr5P9w",
+          "url": "https://images.unsplash.com/photo-1642787962696-2ee1ba7a0f00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1642787962696-2ee1ba7a0f00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1642787962696-2ee1ba7a0f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people walking down a street next to tall buildings",
+          "photographer": "Serg Balak",
+          "photographerUrl": "https://unsplash.com/@sergbalak",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/hu75gHr5P9w",
+          "width": 4896,
+          "height": 3264
+        },
         {
-          "type": "pexels",
-          "query": "Bell & Drum Towers Xi'an site:pexels.com",
-          "description": "Bell & Drum Towers in Xi'an"
-        }
-      ],
-      "searchResults": [
+          "id": "pexels-5746227",
+          "url": "https://images.pexels.com/photos/5746227/pexels-photo-5746227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/5746227/pexels-photo-5746227.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/5746227/pexels-photo-5746227.jpeg",
+          "alt": "Authentic scene of a peaceful, traditional street in Kyoto's historic Gion district with wooden facades.",
+          "photographer": "Ryutaro Tsukata",
+          "photographerUrl": "https://www.pexels.com/@ryutaro",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/unrecognizable-woman-walking-near-traditional-houses-in-japan-5746227/",
+          "width": 5472,
+          "height": 3648
+        },
         {
-          "url": "https://www.pexels.com/search/Bell%20%26%20Drum%20Towers%20Xi'an/",
-          "title": "Search \"Bell & Drum Towers in Xi'an\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Bell & Drum Towers in Xi'an in Xi'an, China",
-        "Travel photography of Bell & Drum Towers in Xi'an in Xi'an",
-        "Bell & Drum Towers in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "钟鼓楼 in 西安",
-      "searchQueries": [
+          "id": "pexels-5967800",
+          "url": "https://images.pexels.com/photos/5967800/pexels-photo-5967800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/5967800/pexels-photo-5967800.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/5967800/pexels-photo-5967800.jpeg",
+          "alt": "Buildings in classic style on narrow street in downtown of city under clear sky",
+          "photographer": "Lachlan  Ross",
+          "photographerUrl": "https://www.pexels.com/@lachlan-ross",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/narrow-city-street-decorated-with-dragon-5967800/",
+          "width": 4701,
+          "height": 3191
+        },
         {
-          "type": "unsplash",
-          "query": "钟鼓楼 西安 site:unsplash.com",
-          "description": "钟鼓楼 in 西安"
-        }
-      ],
-      "searchResults": [
+          "id": "pixabay-4456833",
+          "url": "https://pixabay.com/get/gd0ba39e156927b5c1a6052b6ea9ebde386274bbb84d4f769bfa64179d0e8e6ea01bc48339bf402fe9e7f47c79647837d1506d6a6b04ed9f027ce0d370c9da27a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2019/09/06/17/02/roof-4456833_150.jpg",
+          "full": "https://pixabay.com/get/g78a4bc806ca47b298d7ce8e33157ddb18eacc21c7659a8b127c9db19d04504ef754cd00e62232196bc4d9fc058d8ffd89f8c24019794b7b09a4cc1ce6e39f6e4_1280.jpg",
+          "alt": "roof, houses, old, china, asia, city, town, china, china, china, china, china",
+          "photographer": "qgadrian",
+          "photographerUrl": "https://pixabay.com/users/qgadrian-317687/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/roof-houses-old-china-asia-city-4456833/",
+          "width": 5184,
+          "height": 3456
+        },
         {
-          "url": "https://unsplash.com/s/photos/%E9%92%9F%E9%BC%93%E6%A5%BC%20%E8%A5%BF%E5%AE%89",
-          "title": "Search \"钟鼓楼 in 西安\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "钟鼓楼 in 西安 in Xi'an, China",
-        "Travel photography of 钟鼓楼 in 西安 in Xi'an",
-        "钟鼓楼 in 西安 tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "Muslim Quarter in Xi'an",
-      "searchQueries": [
+          "id": "pixabay-2432997",
+          "url": "https://pixabay.com/get/ga1ea26c5119d9d6c0ed08a9d6b6c998e6bddd8c927736ce630de0c7d995d6fbfde53352dee5431ab4822000f3fcf3add6147b75f53bbc2a29681c7548e91034e_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/06/22/23/58/xian-2432997_150.jpg",
+          "full": "https://pixabay.com/get/ge97dc40c809ccba52c87d7d186d0fa0b0e8a9cc8024a5799b222fd5036f71faf5135d08c8ab38dec54ef31307f04da78e8aa6365eb798aacd134c2298c5dcdb4_1280.jpg",
+          "alt": "xi'an, xian, china, red, lantern, city wall, city, wall, chinese, travel, tourism, tourist, xi'an, xian, xian, xian, xian, xian, china, chinese",
+          "photographer": "rachelf2",
+          "photographerUrl": "https://pixabay.com/users/rachelf2-5710082/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/xian-xian-china-red-lantern-2432997/",
+          "width": 3888,
+          "height": 2592
+        },
         {
-          "type": "unsplash",
-          "query": "Muslim Quarter Xi'an site:unsplash.com",
-          "description": "Muslim Quarter in Xi'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Muslim%20Quarter%20Xi'an",
-          "title": "Search \"Muslim Quarter in Xi'an\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Muslim Quarter in Xi'an in Xi'an, China",
-        "Travel photography of Muslim Quarter in Xi'an in Xi'an",
-        "Muslim Quarter in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "Muslim Quarter in Xi'an",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Muslim Quarter Xi'an site:pexels.com",
-          "description": "Muslim Quarter in Xi'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Muslim%20Quarter%20Xi'an/",
-          "title": "Search \"Muslim Quarter in Xi'an\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Muslim Quarter in Xi'an in Xi'an, China",
-        "Travel photography of Muslim Quarter in Xi'an in Xi'an",
-        "Muslim Quarter in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "回民街 in 西安",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "回民街 西安 site:unsplash.com",
-          "description": "回民街 in 西安"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%9B%9E%E6%B0%91%E8%A1%97%20%E8%A5%BF%E5%AE%89",
-          "title": "Search \"回民街 in 西安\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "回民街 in 西安 in Xi'an, China",
-        "Travel photography of 回民街 in 西安 in Xi'an",
-        "回民街 in 西安 tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "City Wall Hiking in Xi'an",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "City Wall Hiking Xi'an site:unsplash.com",
-          "description": "City Wall Hiking in Xi'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/City%20Wall%20Hiking%20Xi'an",
-          "title": "Search \"City Wall Hiking in Xi'an\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "City Wall Hiking in Xi'an in Xi'an, China",
-        "Travel photography of City Wall Hiking in Xi'an in Xi'an",
-        "City Wall Hiking in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "City Wall Hiking in Xi'an",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "City Wall Hiking Xi'an site:pexels.com",
-          "description": "City Wall Hiking in Xi'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/City%20Wall%20Hiking%20Xi'an/",
-          "title": "Search \"City Wall Hiking in Xi'an\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "City Wall Hiking in Xi'an in Xi'an, China",
-        "Travel photography of City Wall Hiking in Xi'an in Xi'an",
-        "City Wall Hiking in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "古城墙徒步（13.7公里） in 西安",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "古城墙徒步（13.7公里） 西安 site:unsplash.com",
-          "description": "古城墙徒步（13.7公里） in 西安"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%8F%A4%E5%9F%8E%E5%A2%99%E5%BE%92%E6%AD%A5%EF%BC%8813.7%E5%85%AC%E9%87%8C%EF%BC%89%20%E8%A5%BF%E5%AE%89",
-          "title": "Search \"古城墙徒步（13.7公里） in 西安\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "古城墙徒步（13.7公里） in 西安 in Xi'an, China",
-        "Travel photography of 古城墙徒步（13.7公里） in 西安 in Xi'an",
-        "古城墙徒步（13.7公里） in 西安 tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "Dumpling Banquet in Xi'an",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "Dumpling Banquet Xi'an site:unsplash.com",
-          "description": "Dumpling Banquet in Xi'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Dumpling%20Banquet%20Xi'an",
-          "title": "Search \"Dumpling Banquet in Xi'an\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Dumpling Banquet in Xi'an in Xi'an, China",
-        "Travel photography of Dumpling Banquet in Xi'an in Xi'an",
-        "Dumpling Banquet in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "Dumpling Banquet in Xi'an",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Dumpling Banquet Xi'an site:pexels.com",
-          "description": "Dumpling Banquet in Xi'an"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Dumpling%20Banquet%20Xi'an/",
-          "title": "Search \"Dumpling Banquet in Xi'an\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Dumpling Banquet in Xi'an in Xi'an, China",
-        "Travel photography of Dumpling Banquet in Xi'an in Xi'an",
-        "Dumpling Banquet in Xi'an tourist attraction in Xi'an"
-      ]
-    },
-    {
-      "activity": "饺子宴 in 西安",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "饺子宴 西安 site:unsplash.com",
-          "description": "饺子宴 in 西安"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E9%A5%BA%E5%AD%90%E5%AE%B4%20%E8%A5%BF%E5%AE%89",
-          "title": "Search \"饺子宴 in 西安\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "饺子宴 in 西安 in Xi'an, China",
-        "Travel photography of 饺子宴 in 西安 in Xi'an",
-        "饺子宴 in 西安 tourist attraction in Xi'an"
-      ]
-    }
-  ],
-  "hotels": [
-    {
-      "accommodation": "Eastern House Xi'an",
-      "searchQueries": [
-        {
-          "type": "tripadvisor",
-          "query": "Eastern House Xi'an site:tripadvisor.com",
-          "description": "Eastern House in Xi'an on TripAdvisor"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.tripadvisor.com/Search?q=Eastern%20House%20Xi'an",
-          "title": "Find \"Eastern House in Xi'an on TripAdvisor\" on TripAdvisor",
-          "description": "Hotel reviews, ratings, and booking information",
-          "type": "search-link"
+          "id": "pixabay-3732269",
+          "url": "https://pixabay.com/get/g606a8405297095d7215987b5b22b8095787f57f03bd1ffe330c8d84ddc21a4969b05d85e1fb9922945b12998f4b952c8370b107b056e4fa40215e424f4500ade_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/10/08/08/46/china-3732269_150.jpg",
+          "full": "https://pixabay.com/get/gc9b1823a54a161a570d909a1a6e85ae47c424a0751b0d2d49d640fe93765435587811612295559c0272ad998272f1258cd8988d006aaedfdb4cdb93a79877932_1280.jpg",
+          "alt": "china, xian, xi'an, nature, sunset, wall, city wall, bicycle, ruins, historic site, ancient",
+          "photographer": "hyungname",
+          "photographerUrl": "https://pixabay.com/users/hyungname-9864966/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/china-xian-xian-sunset-wall-3732269/",
+          "width": 3922,
+          "height": 2421
         }
       ]
     },
     {
-      "accommodation": "Eastern House Xi'an",
-      "searchQueries": [
+      "name": "Visit Muslim Quarter and Great Mosque",
+      "activity": "Visit Muslim Quarter and Great Mosque",
+      "searchTerm": "Visit Muslim Quarter and Great Mosque Muslim Quarter China",
+      "images": [
         {
-          "type": "booking",
-          "query": "Eastern House Xi'an site:booking.com",
-          "description": "Eastern House in Xi'an on Booking.com"
-        }
-      ],
-      "searchResults": []
-    },
-    {
-      "accommodation": "Eastern House Xi'an",
-      "searchQueries": [
+          "id": "pexels-13517208",
+          "url": "https://images.pexels.com/photos/13517208/pexels-photo-13517208.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/13517208/pexels-photo-13517208.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/13517208/pexels-photo-13517208.jpeg",
+          "alt": "Two men in traditional attire visiting a mosque in a black and white setting.",
+          "photographer": "The Humantra",
+          "photographerUrl": "https://www.pexels.com/@thehumantra",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/men-standing-in-front-of-mosque-13517208/",
+          "width": 6546,
+          "height": 4056
+        },
         {
-          "type": "general",
-          "query": "Eastern House Xi'an hotel reviews",
-          "description": "Reviews for Eastern House in Xi'an"
+          "id": "pexels-18041961",
+          "url": "https://images.pexels.com/photos/18041961/pexels-photo-18041961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/18041961/pexels-photo-18041961.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/18041961/pexels-photo-18041961.jpeg",
+          "alt": "Close-up of Sultan Ahmed Mosque's domes and minaret in Istanbul, showcasing Ottoman architecture.",
+          "photographer": "ze k",
+          "photographerUrl": "https://www.pexels.com/@ze-k-258394460",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/domes-of-sultan-ahmed-mosque-18041961/",
+          "width": 6728,
+          "height": 4485
+        },
+        {
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/gb33a487b2b9e70ef7005240a658bcc80e4fad8dacd3b72066e531288dc17d6abc5a8609f68b35fc1d43d031b835aaf08c9caad63fd481ef108eaa6b4e32893ba_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/ge7e2b19451601a0f8985b6a60bf9f4f6f2005990fe6d819492ac5ad6f1613b600b139f73baaefab817ad97434415194f9daaa2e41d8a8b66d3790fde77d3a1e7_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-5963726",
+          "url": "https://pixabay.com/get/g996aebf2db2846d0e29aec89f0547f0b3c2e0bfb4644bc2484ce3a2ab4b3b4a2ab52592b199eccaffd5dc9daca64ea50d540972c17611317c492b5fe8934327e_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/01/30/12/31/sultan-qaboos-grand-mosque-5963726_150.jpg",
+          "full": "https://pixabay.com/get/gfa2676d4af2c45331d469e869ebedbbfbbf8410f5fa5343fae8dd07c929153498c3873155b93b60e14e11ef522c90d6bb255f376c9007d3acec0f3413440604f_1280.jpg",
+          "alt": "sultan qaboos grand mosque, oman, nutmeg, main mosque, mosque, building, minaret, dome, architecture, religion, islam, muslim, culture, sightseeing, tourism, oman, oman, oman, mosque, mosque, mosque, mosque, mosque, islam, muslim",
+          "photographer": "Makalu",
+          "photographerUrl": "https://pixabay.com/users/Makalu-680451/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/sultan-qaboos-grand-mosque-oman-5963726/",
+          "width": 4096,
+          "height": 2712
+        },
+        {
+          "id": "pixabay-1077793",
+          "url": "https://pixabay.com/get/ga4b427169ae2d3ab0f261d799342985c2e7f3ff62f9e961807b2f694fbe7b751e7dd8687add66321ac2f1040ed918ab473873e58ce5907c42fdeb783ffc45489_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/12/05/06/20/kid-1077793_150.jpg",
+          "full": "https://pixabay.com/get/g928a1938908cf3898f8ad8f038f013a900bc593c77130005d9d40d2af1ba6112d01666081269fa40e965cc9fa3122c3b8652080e8abe2afc9fe20aef97bf40d8_1280.jpg",
+          "alt": "kid, praying, muslim, islam, faith, religious, prayer, spiritual, mosque, religion, arabic, islamic, child, young, childhood, culture, tradition, muslim, islam, prayer, mosque, islamic, islamic, islamic, islamic, islamic",
+          "photographer": "chidioc",
+          "photographerUrl": "https://pixabay.com/users/chidioc-1734570/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/kid-praying-muslim-islam-faith-1077793/",
+          "width": 5760,
+          "height": 3840
         }
-      ],
-      "searchResults": []
-    }
-  ],
-  "recommendedSearches": [
-    {
-      "query": "Xi'an China tourism site:unsplash.com",
-      "description": "General Xi'an tourism photos",
-      "reason": "Good for establishing shots and context"
+      ]
     },
     {
-      "query": "Xi'an China landscape site:pexels.com",
-      "description": "Xi'an landscapes and scenery",
-      "reason": "Perfect for background and establishing scenes"
-    },
-    {
-      "query": "Bell & Drum Towers China travel site:unsplash.com",
-      "description": "Bell & Drum Towers travel photography",
-      "reason": "Specific activity focus"
-    },
-    {
-      "query": "Muslim Quarter China travel site:unsplash.com",
-      "description": "Muslim Quarter travel photography",
-      "reason": "Specific activity focus"
+      "name": "Hiking on City Wall",
+      "activity": "Hiking on City Wall",
+      "searchTerm": "Hiking on City Wall City Wall China",
+      "images": [
+        {
+          "id": "unsplash-4wjQZdsb_fY",
+          "url": "https://images.unsplash.com/photo-1685283400603-174d8dd8ce9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtpbmclMjBvbiUyMENpdHklMjBXYWxsJTIwQ2l0eSUyMFdhbGwlMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1685283400603-174d8dd8ce9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtpbmclMjBvbiUyMENpdHklMjBXYWxsJTIwQ2l0eSUyMFdhbGwlMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE1fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1685283400603-174d8dd8ce9b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtpbmclMjBvbiUyMENpdHklMjBXYWxsJTIwQ2l0eSUyMFdhbGwlMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE1fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a tall brick building with red flags on top of it",
+          "photographer": "li xiang",
+          "photographerUrl": "https://unsplash.com/@lxngacn",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/4wjQZdsb_fY",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pexels-1749721",
+          "url": "https://images.pexels.com/photos/1749721/pexels-photo-1749721.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/1749721/pexels-photo-1749721.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/1749721/pexels-photo-1749721.jpeg",
+          "alt": "Blending ancient architecture with a modern skyline in Xi'an, China.",
+          "photographer": "David Yu",
+          "photographerUrl": "https://www.pexels.com/@pppsdavid",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/vehicle-on-curve-road-1749721/",
+          "width": 7360,
+          "height": 4912
+        },
+        {
+          "id": "pexels-15506724",
+          "url": "https://images.pexels.com/photos/15506724/pexels-photo-15506724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/15506724/pexels-photo-15506724.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/15506724/pexels-photo-15506724.jpeg",
+          "alt": "Black and white photo of a bulldog on a leash outdoors, showcasing its cute and curious expression.",
+          "photographer": "Frank Lv",
+          "photographerUrl": "https://www.pexels.com/@frank-lv-2324471",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/a-bulldog-puppy-on-a-leash-15506724/",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/g86232422cf66c186f052721519c77af29a763b3f990ffffb9d508489344b3083e3ac2422ad3135fdfacbd322acd2b81ccf60597ddcde5f61c4a66598faecdc14_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/gf0e3ffff03a923391a0dc57b87f03babc14a29645b210e3147515090d6931c2063b8dac32de56d186643bd59e9951348a6c910fb75cf2da2f41d016542ef215c_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-2794258",
+          "url": "https://pixabay.com/get/g8d3aa65be4a6553e8dff95d0438c28ae9e419ae9072a7fd79098d5bf7afec6c0d8f08d6ad953015f40a4fe4312d46798b12beda0986806a25c6f0b55757af567_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/09/28/04/04/nanjing-2794258_150.jpg",
+          "full": "https://pixabay.com/get/g89a0bfc54f46885b7941ed442f4bdd4c6c0fc6390eeeb0f8521c19ed7351503e71ec7a5d63cd7c9da552b33ec7752535c2198396a0e8ab6be0b0e95b6681f4b0_1280.jpg",
+          "alt": "nanjing, city wall, china, nanjing, nanjing, nanjing, nanjing, nanjing",
+          "photographer": "Gwen24",
+          "photographerUrl": "https://pixabay.com/users/Gwen24-1810638/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/nanjing-city-wall-china-2794258/",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "id": "pixabay-2787946",
+          "url": "https://pixabay.com/get/gd2b1b0ff6c5e96ca53d0d5001f0d45cb313b7cc429a61da8b7deba9a8a2fb4ca25894bf62804f5d327946e5bf1edb49e6257da5aab8eb3c39a8a6aade2429ff8_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/09/26/07/54/nanjing-2787946_150.jpg",
+          "full": "https://pixabay.com/get/g9af21f0b223823e12ab06fb8fca11531ff6b852538cf8bb36ecd6dfbe358c1ea9a332a8f1ffb8abb8d28dacefb93f5939602afa812e07c74b259250f711b8d53_1280.jpg",
+          "alt": "nanjing, temple, city wall, china, tower, nanjing, nanjing, nanjing, nanjing, nanjing",
+          "photographer": "Gwen24",
+          "photographerUrl": "https://pixabay.com/users/Gwen24-1810638/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/nanjing-temple-city-wall-china-2787946/",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "id": "wikimedia-96705749",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Hiking_the_City_Wall_%2848696667948%29.jpg/800px-Hiking the City Wall (48696667948).jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Hiking_the_City_Wall_%2848696667948%29.jpg/300px-Hiking the City Wall (48696667948).jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Hiking_the_City_Wall_%2848696667948%29.jpg",
+          "alt": "Hiking and bicycling are popular activities along the 14-kilometer city wall (1370) around Xi'an, Shaanxi, China.",
+          "photographer": "David Stanley from Nanaimo, Canada",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AHiking%20the%20City%20Wall%20(48696667948).jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHiking%20the%20City%20Wall%20(48696667948).jpg",
+          "width": 1024,
+          "height": 768,
+          "license": "CC BY 2.0"
+        }
+      ]
     }
   ],
   "sampleImages": [
     {
-      "activity": "Bell & Drum Towers",
+      "activity": "City Walk in Old Town Center",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Bell%20%26%20Drum%20Towers%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "unsplash-pcazZR0xJVA",
+          "url": "https://images.unsplash.com/photo-1732057030148-b5206e7bc428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1732057030148-b5206e7bc428?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1732057030148-b5206e7bc428?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=85",
+          "alt": "A group of people walking down a sidewalk",
+          "photographer": "Dominic Kurniawan Suryaputra",
+          "photographerUrl": "https://unsplash.com/@d_ks11",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Bell%20%26%20Drum%20Towers%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Bell%20%26%20Drum%20Towers%20china%20tourism",
-          "query": "Bell & Drum Towers",
-          "alt": "Bell & Drum Towers china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Bell%20%26%20Drum%20Towers%20china%20tourism&w=1200",
-          "description": "Real photo of Bell & Drum Towers china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/pcazZR0xJVA",
+          "width": 4240,
+          "height": 2832
+        },
+        {
+          "id": "unsplash-hu75gHr5P9w",
+          "url": "https://images.unsplash.com/photo-1642787962696-2ee1ba7a0f00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1642787962696-2ee1ba7a0f00?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1642787962696-2ee1ba7a0f00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDaXR5JTIwV2FsayUyMGluJTIwT2xkJTIwVG93biUyMENlbnRlciUyMFhpJTI3YW4lMjBPbGQlMjBUb3duJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1MzcxMHww&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people walking down a street next to tall buildings",
+          "photographer": "Serg Balak",
+          "photographerUrl": "https://unsplash.com/@sergbalak",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/hu75gHr5P9w",
+          "width": 4896,
+          "height": 3264
+        },
+        {
+          "id": "pexels-5746227",
+          "url": "https://images.pexels.com/photos/5746227/pexels-photo-5746227.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/5746227/pexels-photo-5746227.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/5746227/pexels-photo-5746227.jpeg",
+          "alt": "Authentic scene of a peaceful, traditional street in Kyoto's historic Gion district with wooden facades.",
+          "photographer": "Ryutaro Tsukata",
+          "photographerUrl": "https://www.pexels.com/@ryutaro",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/unrecognizable-woman-walking-near-traditional-houses-in-japan-5746227/",
+          "width": 5472,
+          "height": 3648
+        },
+        {
+          "id": "pexels-5967800",
+          "url": "https://images.pexels.com/photos/5967800/pexels-photo-5967800.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/5967800/pexels-photo-5967800.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/5967800/pexels-photo-5967800.jpeg",
+          "alt": "Buildings in classic style on narrow street in downtown of city under clear sky",
+          "photographer": "Lachlan  Ross",
+          "photographerUrl": "https://www.pexels.com/@lachlan-ross",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/narrow-city-street-decorated-with-dragon-5967800/",
+          "width": 4701,
+          "height": 3191
+        },
+        {
+          "id": "pixabay-4456833",
+          "url": "https://pixabay.com/get/gd0ba39e156927b5c1a6052b6ea9ebde386274bbb84d4f769bfa64179d0e8e6ea01bc48339bf402fe9e7f47c79647837d1506d6a6b04ed9f027ce0d370c9da27a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2019/09/06/17/02/roof-4456833_150.jpg",
+          "full": "https://pixabay.com/get/g78a4bc806ca47b298d7ce8e33157ddb18eacc21c7659a8b127c9db19d04504ef754cd00e62232196bc4d9fc058d8ffd89f8c24019794b7b09a4cc1ce6e39f6e4_1280.jpg",
+          "alt": "roof, houses, old, china, asia, city, town, china, china, china, china, china",
+          "photographer": "qgadrian",
+          "photographerUrl": "https://pixabay.com/users/qgadrian-317687/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/roof-houses-old-china-asia-city-4456833/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-2432997",
+          "url": "https://pixabay.com/get/ga1ea26c5119d9d6c0ed08a9d6b6c998e6bddd8c927736ce630de0c7d995d6fbfde53352dee5431ab4822000f3fcf3add6147b75f53bbc2a29681c7548e91034e_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/06/22/23/58/xian-2432997_150.jpg",
+          "full": "https://pixabay.com/get/ge97dc40c809ccba52c87d7d186d0fa0b0e8a9cc8024a5799b222fd5036f71faf5135d08c8ab38dec54ef31307f04da78e8aa6365eb798aacd134c2298c5dcdb4_1280.jpg",
+          "alt": "xi'an, xian, china, red, lantern, city wall, city, wall, chinese, travel, tourism, tourist, xi'an, xian, xian, xian, xian, xian, china, chinese",
+          "photographer": "rachelf2",
+          "photographerUrl": "https://pixabay.com/users/rachelf2-5710082/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/xian-xian-china-red-lantern-2432997/",
+          "width": 3888,
+          "height": 2592
+        },
+        {
+          "id": "pixabay-3732269",
+          "url": "https://pixabay.com/get/g606a8405297095d7215987b5b22b8095787f57f03bd1ffe330c8d84ddc21a4969b05d85e1fb9922945b12998f4b952c8370b107b056e4fa40215e424f4500ade_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/10/08/08/46/china-3732269_150.jpg",
+          "full": "https://pixabay.com/get/gc9b1823a54a161a570d909a1a6e85ae47c424a0751b0d2d49d640fe93765435587811612295559c0272ad998272f1258cd8988d006aaedfdb4cdb93a79877932_1280.jpg",
+          "alt": "china, xian, xi'an, nature, sunset, wall, city wall, bicycle, ruins, historic site, ancient",
+          "photographer": "hyungname",
+          "photographerUrl": "https://pixabay.com/users/hyungname-9864966/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/china-xian-xian-sunset-wall-3732269/",
+          "width": 3922,
+          "height": 2421
         }
       ]
     },
     {
-      "activity": "Muslim Quarter",
+      "activity": "Visit Muslim Quarter and Great Mosque",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Muslim%20Quarter%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Muslim%20Quarter%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Muslim%20Quarter%20china%20tourism",
-          "query": "Muslim Quarter",
-          "alt": "Muslim Quarter china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Muslim%20Quarter%20china%20tourism&w=1200",
-          "description": "Real photo of Muslim Quarter china tourism",
-          "isUnsplashFeatured": true
+          "id": "pexels-13517208",
+          "url": "https://images.pexels.com/photos/13517208/pexels-photo-13517208.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/13517208/pexels-photo-13517208.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/13517208/pexels-photo-13517208.jpeg",
+          "alt": "Two men in traditional attire visiting a mosque in a black and white setting.",
+          "photographer": "The Humantra",
+          "photographerUrl": "https://www.pexels.com/@thehumantra",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/men-standing-in-front-of-mosque-13517208/",
+          "width": 6546,
+          "height": 4056
+        },
+        {
+          "id": "pexels-18041961",
+          "url": "https://images.pexels.com/photos/18041961/pexels-photo-18041961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/18041961/pexels-photo-18041961.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/18041961/pexels-photo-18041961.jpeg",
+          "alt": "Close-up of Sultan Ahmed Mosque's domes and minaret in Istanbul, showcasing Ottoman architecture.",
+          "photographer": "ze k",
+          "photographerUrl": "https://www.pexels.com/@ze-k-258394460",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/domes-of-sultan-ahmed-mosque-18041961/",
+          "width": 6728,
+          "height": 4485
+        },
+        {
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/gb33a487b2b9e70ef7005240a658bcc80e4fad8dacd3b72066e531288dc17d6abc5a8609f68b35fc1d43d031b835aaf08c9caad63fd481ef108eaa6b4e32893ba_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/ge7e2b19451601a0f8985b6a60bf9f4f6f2005990fe6d819492ac5ad6f1613b600b139f73baaefab817ad97434415194f9daaa2e41d8a8b66d3790fde77d3a1e7_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-5963726",
+          "url": "https://pixabay.com/get/g996aebf2db2846d0e29aec89f0547f0b3c2e0bfb4644bc2484ce3a2ab4b3b4a2ab52592b199eccaffd5dc9daca64ea50d540972c17611317c492b5fe8934327e_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/01/30/12/31/sultan-qaboos-grand-mosque-5963726_150.jpg",
+          "full": "https://pixabay.com/get/gfa2676d4af2c45331d469e869ebedbbfbbf8410f5fa5343fae8dd07c929153498c3873155b93b60e14e11ef522c90d6bb255f376c9007d3acec0f3413440604f_1280.jpg",
+          "alt": "sultan qaboos grand mosque, oman, nutmeg, main mosque, mosque, building, minaret, dome, architecture, religion, islam, muslim, culture, sightseeing, tourism, oman, oman, oman, mosque, mosque, mosque, mosque, mosque, islam, muslim",
+          "photographer": "Makalu",
+          "photographerUrl": "https://pixabay.com/users/Makalu-680451/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/sultan-qaboos-grand-mosque-oman-5963726/",
+          "width": 4096,
+          "height": 2712
+        },
+        {
+          "id": "pixabay-1077793",
+          "url": "https://pixabay.com/get/ga4b427169ae2d3ab0f261d799342985c2e7f3ff62f9e961807b2f694fbe7b751e7dd8687add66321ac2f1040ed918ab473873e58ce5907c42fdeb783ffc45489_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/12/05/06/20/kid-1077793_150.jpg",
+          "full": "https://pixabay.com/get/g928a1938908cf3898f8ad8f038f013a900bc593c77130005d9d40d2af1ba6112d01666081269fa40e965cc9fa3122c3b8652080e8abe2afc9fe20aef97bf40d8_1280.jpg",
+          "alt": "kid, praying, muslim, islam, faith, religious, prayer, spiritual, mosque, religion, arabic, islamic, child, young, childhood, culture, tradition, muslim, islam, prayer, mosque, islamic, islamic, islamic, islamic, islamic",
+          "photographer": "chidioc",
+          "photographerUrl": "https://pixabay.com/users/chidioc-1734570/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/kid-praying-muslim-islam-faith-1077793/",
+          "width": 5760,
+          "height": 3840
         }
       ]
     },
     {
-      "activity": "City Wall Hiking (13.7km)",
+      "activity": "Hiking on City Wall",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?ancient%20city%20wall%20xian&w=800&h=600&fit=crop",
+          "id": "unsplash-4wjQZdsb_fY",
+          "url": "https://images.unsplash.com/photo-1685283400603-174d8dd8ce9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtpbmclMjBvbiUyMENpdHklMjBXYWxsJTIwQ2l0eSUyMFdhbGwlMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1685283400603-174d8dd8ce9b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtpbmclMjBvbiUyMENpdHklMjBXYWxsJTIwQ2l0eSUyMFdhbGwlMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE1fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1685283400603-174d8dd8ce9b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtpbmclMjBvbiUyMENpdHklMjBXYWxsJTIwQ2l0eSUyMFdhbGwlMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE1fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a tall brick building with red flags on top of it",
+          "photographer": "li xiang",
+          "photographerUrl": "https://unsplash.com/@lxngacn",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/ancient%20city%20wall%20xian",
-          "sourceUrl": "https://unsplash.com/s/photos/ancient%20city%20wall%20xian",
-          "query": "City Wall Hiking (13.7km)",
-          "alt": "ancient city wall xian",
-          "downloadUrl": "https://source.unsplash.com/featured/?ancient%20city%20wall%20xian&w=1200",
-          "description": "Real photo of ancient city wall xian",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/4wjQZdsb_fY",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pexels-1749721",
+          "url": "https://images.pexels.com/photos/1749721/pexels-photo-1749721.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/1749721/pexels-photo-1749721.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/1749721/pexels-photo-1749721.jpeg",
+          "alt": "Blending ancient architecture with a modern skyline in Xi'an, China.",
+          "photographer": "David Yu",
+          "photographerUrl": "https://www.pexels.com/@pppsdavid",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/vehicle-on-curve-road-1749721/",
+          "width": 7360,
+          "height": 4912
+        },
+        {
+          "id": "pexels-15506724",
+          "url": "https://images.pexels.com/photos/15506724/pexels-photo-15506724.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/15506724/pexels-photo-15506724.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/15506724/pexels-photo-15506724.jpeg",
+          "alt": "Black and white photo of a bulldog on a leash outdoors, showcasing its cute and curious expression.",
+          "photographer": "Frank Lv",
+          "photographerUrl": "https://www.pexels.com/@frank-lv-2324471",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/a-bulldog-puppy-on-a-leash-15506724/",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/g86232422cf66c186f052721519c77af29a763b3f990ffffb9d508489344b3083e3ac2422ad3135fdfacbd322acd2b81ccf60597ddcde5f61c4a66598faecdc14_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/gf0e3ffff03a923391a0dc57b87f03babc14a29645b210e3147515090d6931c2063b8dac32de56d186643bd59e9951348a6c910fb75cf2da2f41d016542ef215c_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-2794258",
+          "url": "https://pixabay.com/get/g8d3aa65be4a6553e8dff95d0438c28ae9e419ae9072a7fd79098d5bf7afec6c0d8f08d6ad953015f40a4fe4312d46798b12beda0986806a25c6f0b55757af567_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/09/28/04/04/nanjing-2794258_150.jpg",
+          "full": "https://pixabay.com/get/g89a0bfc54f46885b7941ed442f4bdd4c6c0fc6390eeeb0f8521c19ed7351503e71ec7a5d63cd7c9da552b33ec7752535c2198396a0e8ab6be0b0e95b6681f4b0_1280.jpg",
+          "alt": "nanjing, city wall, china, nanjing, nanjing, nanjing, nanjing, nanjing",
+          "photographer": "Gwen24",
+          "photographerUrl": "https://pixabay.com/users/Gwen24-1810638/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/nanjing-city-wall-china-2794258/",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "id": "pixabay-2787946",
+          "url": "https://pixabay.com/get/gd2b1b0ff6c5e96ca53d0d5001f0d45cb313b7cc429a61da8b7deba9a8a2fb4ca25894bf62804f5d327946e5bf1edb49e6257da5aab8eb3c39a8a6aade2429ff8_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/09/26/07/54/nanjing-2787946_150.jpg",
+          "full": "https://pixabay.com/get/g9af21f0b223823e12ab06fb8fca11531ff6b852538cf8bb36ecd6dfbe358c1ea9a332a8f1ffb8abb8d28dacefb93f5939602afa812e07c74b259250f711b8d53_1280.jpg",
+          "alt": "nanjing, temple, city wall, china, tower, nanjing, nanjing, nanjing, nanjing, nanjing",
+          "photographer": "Gwen24",
+          "photographerUrl": "https://pixabay.com/users/Gwen24-1810638/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/nanjing-temple-city-wall-china-2787946/",
+          "width": 2048,
+          "height": 1152
+        },
+        {
+          "id": "wikimedia-96705749",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Hiking_the_City_Wall_%2848696667948%29.jpg/800px-Hiking the City Wall (48696667948).jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Hiking_the_City_Wall_%2848696667948%29.jpg/300px-Hiking the City Wall (48696667948).jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Hiking_the_City_Wall_%2848696667948%29.jpg",
+          "alt": "Hiking and bicycling are popular activities along the 14-kilometer city wall (1370) around Xi'an, Shaanxi, China.",
+          "photographer": "David Stanley from Nanaimo, Canada",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AHiking%20the%20City%20Wall%20(48696667948).jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AHiking%20the%20City%20Wall%20(48696667948).jpg",
+          "width": 1024,
+          "height": 768,
+          "license": "CC BY 2.0"
         }
       ]
     }
-  ],
-  "researchDate": "2025-11-29T00:47:22.073Z",
-  "instructions": {
-    "howToUse": "Open the HTML file to preview and select images",
-    "altText": "Use the suggested alt text for accessibility",
-    "hotels": "Check hotel links for reviews and booking information"
-  }
+  ]
 }

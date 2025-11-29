@@ -1,24 +1,26 @@
-# Task: Multi-Trip Management Feature
+# Task: Sync Website Itinerary Data to Content Manager
 
-## Goal
-Add the ability to save, load, and manage multiple trip ideas/plans in the content manager.
+## Problem
+- The website has titles and descriptions for each day in `itineraryData.js`
+- The content manager's `itinerary.json` needs to be updated with this data
 
 ## Plan
+- [x] Create a sync script to read from website's itineraryData.js
+- [x] Update content manager's itinerary.json with titles and descriptions
+- [x] Run the sync and verify the data
 
-### Todo Items
-- [ ] Update storage.js to support multiple saved trips
-  - Add functions: `getSavedTrips()`, `saveCurrentAs(name)`, `loadTrip(id)`, `deleteTrip(id)`, `renameTrip(id, name)`
-  - Each saved trip has: id, name, createdAt, lastModified, data (the full itinerary)
-  - Keep existing storage key for backwards compatibility
+## Changes Made
+Created: `sync-website-to-cms.js` - A sync script that:
+- Reads titles and descriptions from `china-hiking-tour/src/data/itineraryData.js`
+- Updates `content-manager/data/itinerary.json` with the English versions
 
-- [ ] Add a "Saved Trips" card section to Dashboard
-  - Show list of saved trips with name, date modified
-  - Buttons: Load, Rename, Delete
-  - "Save Current As..." button to save current work
-  - "Clear Current" button to reset current trip
+## Review
+**Summary:**
+- Synced 15 days (Day 1-15) from the website to the content manager
+- Day 0 (Departure from Heathrow) was not updated as it doesn't exist in the website data
+- Titles and descriptions are now synchronized
 
-- [ ] Add visual indicator showing which trip is currently loaded (if any)
-
-## Notes
-- Keep it simple - just localStorage based
-- No complex UI - just a card section on Dashboard
+**Example updates:**
+- Day 2: "Exploring Xi'an" → "Xi'an City Walk & Ancient Wall"
+- Day 5: "Cultural Exploration and Warm-up Hike in Beijing" → "Forbidden City & Fragrant Hills Warm-up"
+- Day 9: "Natural Wonders and the Porcelain Capital" → "Mount Shizhong & Jingdezhen"

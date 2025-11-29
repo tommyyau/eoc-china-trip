@@ -1,0 +1,63 @@
+{
+  "day": 13,
+  "lastModified": "2025-11-29T22:06:28.931Z",
+  "pois": [
+    {
+      "id": "mount-tai-climb",
+      "name": "Mount Tai Climb",
+      "day": 13,
+      "location": "Mount Tai",
+      "status": "pending",
+      "summary": "Embark on an unforgettable journey to the majestic Mount Tai, a treasured jewel in China's cultural landscape. As the highest point in Shandong province, standing at 1,545 meters, this sacred mountain beckons adventurers and spiritual seekers alike. Experience the breathtaking sunrise from the revered Jade Emperor Peak, where ancient rituals and stunning vistas converge. With over 3,000 years of history and a UNESCO World Heritage designation, Mount Tai offers not just a hike, but a pilgrimage through time, enveloped in natural beauty and rich traditions. Whether you seek tranquility or a challenge, the trails of Mount Tai promise an exhilarating escape that will leave you in awe of its grandeur.",
+      "historicalContext": "Mount Tai has been a significant place of worship for over 3,000 years, serving as a ceremonial center in ancient China. It was inscribed as a UNESCO World Heritage Site in 1987 for its cultural importance and stunning landscapes. The earliest recorded earthquake in Chinese history, known as the Mount Tai earthquake, occurred around 1831 BC.",
+      "practicalTips": "Wear sturdy hiking boots for a comfortable trek. Bring plenty of water to stay hydrated on your journey. Start your hike early to catch the breathtaking sunrise. Consider hiring a local guide to enrich your experience with historical insights. Check the weather conditions before your visit for optimal hiking.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mount_Tai",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:06:14.644Z"
+    },
+    {
+      "id": "jade-emperor-peak",
+      "name": "Jade Emperor Peak",
+      "day": 13,
+      "location": "Mount Tai",
+      "status": "pending",
+      "summary": "Embark on an unforgettable adventure to Jade Emperor Peak, the majestic crown of Mount Tai, where nature's breathtaking beauty meets rich cultural heritage. Standing tall at 1,545 meters, this iconic peak invites hikers to experience a journey through ancient pathways lined with temples and sculptures, all while soaking in the awe-inspiring vistas that stretch across Shandong province. As you ascend, revel in the spiritual ambiance that has drawn pilgrims and travelers for over 3,000 years, making every step a connection to history and renewal. Whether you're an avid hiker or a curious explorer, Jade Emperor Peak promises a transformative experience that will leave you with memories to cherish for a lifetime.",
+      "historicalContext": "Mount Tai has served as a sacred site for worship and ceremonies for over 3,000 years, making it one of the most significant cultural landmarks in China. Recognized as a UNESCO World Heritage Site in 1987, it meets seven of the ten evaluation standards for World Heritage sites, highlighting its historical and spiritual importance.",
+      "practicalTips": "Wear sturdy hiking boots for the rocky terrain. Start your hike early to catch the sunrise and avoid crowds. Bring plenty of water and snacks to keep your energy up. Consider hiring a local guide to enrich your experience with historical insights. Don't forget your camera to capture the stunning landscapes!",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mount_Tai",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:06:23.663Z"
+    },
+    {
+      "id": "eighteen-bends",
+      "name": "Eighteen Bends",
+      "day": 13,
+      "location": "Mount Tai",
+      "status": "pending",
+      "summary": "Embark on an unforgettable journey to Eighteen Bends, a breathtaking trail nestled within the majestic Mount Tai in China. Renowned for its stunning landscapes and challenging terrain, this iconic hiking path features a series of dramatic twists and turns that will leave adventurers in awe. As you navigate the 18 exhilarating bends, you'll be treated to panoramic views of lush valleys, ancient temples, and the ethereal beauty of the surrounding peaks, making every step a memory to cherish. Whether you're a seasoned hiker or a casual explorer, Eighteen Bends offers a unique blend of natural wonder and cultural richness that beckons travelers from around the globe.",
+      "historicalContext": "Mount Tai has been a place of worship and pilgrimage for over 3,000 years, symbolizing the heart of Chinese culture and spirituality. Eighteen Bends is not only a marvel of nature but also a historical path that has been traversed by emperors and scholars alike, reflecting the profound reverence held for this sacred mountain.",
+      "practicalTips": "Wear sturdy hiking shoes for comfort and safety. Bring plenty of water to stay hydrated throughout your trek. Start your hike early in the morning to avoid crowds and enjoy the serenity of nature. Don’t forget your camera to capture the breathtaking views at each bend. Respect local customs and the natural environment by staying on marked paths.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Carina_Lau",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:06:28.430Z"
+    }
+  ]
+}

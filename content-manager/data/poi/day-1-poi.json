@@ -1,0 +1,19 @@
+{
+  "day": 1,
+  "lastModified": "2025-11-29T22:03:00.961Z",
+  "pois": [
+    {
+      "id": "big-wild-goose-pagoda-optional",
+      "name": "Big Wild Goose Pagoda (optional)",
+      "day": 1,
+      "location": "Xi'an",
+      "status": "pending",
+      "summary": "Nestled in the heart of Xi'an, the Big Wild Goose Pagoda stands as a magnificent testament to ancient China's architectural brilliance and spiritual heritage. As you approach this iconic structure, you'll be captivated by its towering seven stories, each adorned with intricate carvings and rich symbolism. The pagoda, originally built in 652 AD during the Tang Dynasty, was constructed to house sacred Buddhist scriptures brought back from India by the renowned monk Xuanzang. Whether you're an avid historian, a spiritual seeker, or simply a traveler in search of stunning vistas, the serene ambiance and lush gardens surrounding the pagoda provide the perfect backdrop for reflection and exploration. Don’t miss the chance to witness the breathtaking sunset as it casts a golden hue over this ancient wonder, making for an unforgettable experience.\n\nExploring the Big Wild Goose Pagoda offers not just a glimpse into the past, but also a chance to immerse yourself in the vibrant culture of Xi'an. With various cultural performances and exhibitions held nearby, this site serves as a bridge between history and modern-day life, making it a must-visit destination for anyone traversing this historic city.",
+      "historicalContext": "The Big Wild Goose Pagoda was constructed in 652 AD during the Tang Dynasty under the reign of Emperor Gaozong. It was built to store Buddhist texts collected by the monk Xuanzang, who famously journeyed to India to obtain these sacred scriptures. The pagoda has since become a symbol of Chinese Buddhism and a vital part of Xi'an’s cultural heritage.",
+      "practicalTips": "Visit early in the morning to avoid crowds. Wear comfortable shoes for exploring the extensive grounds. Don’t forget your camera for stunning photos, especially at sunset. Check the schedule for cultural performances happening nearby. Respect the local customs and maintain a quiet atmosphere while inside.",
+      "confidence": 0.7,
+      "links": [],
+      "researchedAt": "2025-11-29T22:03:00.460Z"
+    }
+  ]
+}

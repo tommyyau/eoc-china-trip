@@ -14,6 +14,8 @@ function DayEditor() {
   const [imageSelections, setImageSelections] = useState({})
   const [showImageSelector, setShowImageSelector] = useState(null) // { segmentId, segmentTitle }
   const [isRawTextExpanded, setIsRawTextExpanded] = useState(false)
+  const [researchingPOIs, setResearchingPOIs] = useState(false)
+  const [poiResearchStatus, setPoiResearchStatus] = useState('')
 
   const loadDay = () => {
     const data = getDay(parseInt(dayNumber))
@@ -70,12 +72,64 @@ function DayEditor() {
 
   const handleSave = () => {
     updateDay(day.day, {
+      title: day.title,
+      enhanced: day.enhanced,
       walkDetails: day.walkDetails,
       pointsOfInterest: day.pointsOfInterest,
       practicalInfo: day.practicalInfo,
       status: day.status === 'draft' ? 'in-progress' : day.status
     })
     alert('Saved!')
+  }
+
+  const handleResearchPOIs = async () => {
+    setResearchingPOIs(true)
+    setPoiResearchStatus('Researching POIs from highlights...')
+
+    try {
+      const response = await fetch(`http://localhost:3001/api/poi/research/${day.day}`, {
+        method: 'POST'
+      })
+
+      if (!response.ok) {
+        const error = await response.json()
+        throw new Error(error.error || 'Research failed')
+      }
+
+      const data = await response.json()
+
+      if (data.pois && data.pois.length > 0) {
+        // Merge with existing POIs or replace
+        setDay({
+          ...day,
+          pointsOfInterest: data.pois.map(poi => ({
+            name: poi.name,
+            summary: poi.summary,
+            history: poi.historicalContext,
+            tips: poi.practicalTips,
+            links: poi.links || [],
+            status: poi.status || 'pending',
+            confidence: poi.confidence,
+            images: []
+          }))
+        })
+        setPoiResearchStatus(`✓ Found ${data.pois.length} POIs`)
+      } else {
+        setPoiResearchStatus('No POIs found for this day')
+      }
+    } catch (error) {
+      console.error('POI research error:', error)
+      setPoiResearchStatus(`✗ Error: ${error.message}`)
+    }
+
+    setResearchingPOIs(false)
+    setTimeout(() => setPoiResearchStatus(''), 5000)
+  }
+
+  const handlePOIStatusChange = (idx, newStatus) => {
+    const updated = [...day.pointsOfInterest]
+    updated[idx].status = newStatus
+    setDay({ ...day, pointsOfInterest: updated })
   }
 
   const handleStatusChange = (newStatus) => {
@@ -231,6 +285,35 @@ function DayEditor() {
                 </div>
               </div>
             )}
+          </div>
+
+          {/* Day Title & Description */}
+          <div style={{
+            marginBottom: '16px',
+            padding: '16px',
+            background: '#ffffff',
+            borderRadius: '8px',
+            border: '1px solid #e5e7eb'
+          }}>
+            <div style={{ marginBottom: '12px' }}>
+              <label style={{ fontSize: '0.75rem', fontWeight: 600, color: '#6b7280', display: 'block', marginBottom: '6px' }}>DAY TITLE</label>
+              <input
+                type="text"
+                value={day.title || ''}
+                onChange={e => setDay({ ...day, title: e.target.value })}
+                placeholder="Enter day title..."
+                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '1rem', fontWeight: 500, color: '#1f2937', background: '#ffffff' }}
+              />
+            </div>
+            <div>
+              <label style={{ fontSize: '0.75rem', fontWeight: 600, color: '#6b7280', display: 'block', marginBottom: '6px' }}>SHORT DESCRIPTION</label>
+              <textarea
+                value={day.enhanced?.description || ''}
+                onChange={e => setDay({ ...day, enhanced: { ...day.enhanced, description: e.target.value } })}
+                placeholder="Brief overview of the day's activities..."
+                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', resize: 'vertical' }}
+              />
+            </div>
           </div>
 
           {/* Day Overview Images Strip */}
@@ -708,14 +791,55 @@ function DayEditor() {
 
       {/* POI Tab */}
       {activeTab === 'poi' && (
-        <div style={{ maxWidth: '800px', margin: '0 auto', background: '#ffffff', padding: '24px', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
-          <h2 style={{ margin: '0 0 8px 0', fontSize: '1.25rem', color: '#1f2937' }}>Points of Interest</h2>
-          <p style={{ color: '#6b7280', marginBottom: '20px', fontSize: '0.875rem' }}>
-            Add detailed information about places mentioned in this day's itinerary.
-          </p>
+        <div style={{ maxWidth: '900px', margin: '0 auto', background: '#ffffff', padding: '24px', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '16px' }}>
+            <div>
+              <h2 style={{ margin: '0 0 8px 0', fontSize: '1.25rem', color: '#1f2937' }}>Points of Interest</h2>
+              <p style={{ color: '#6b7280', fontSize: '0.875rem', margin: 0 }}>
+                Research and review POIs from this day's highlights.
+              </p>
+            </div>
+            <button
+              onClick={handleResearchPOIs}
+              disabled={researchingPOIs}
+              style={{
+                padding: '10px 16px',
+                fontSize: '0.875rem',
+                background: researchingPOIs ? '#e5e7eb' : '#6366f1',
+                color: researchingPOIs ? '#6b7280' : '#ffffff',
+                border: 'none',
+                borderRadius: '6px',
+                cursor: researchingPOIs ? 'not-allowed' : 'pointer',
+                fontWeight: 500
+              }}
+            >
+              {researchingPOIs ? '⏳ Researching...' : '🔍 Research POIs'}
+            </button>
+          </div>
+
+          {poiResearchStatus && (
+            <div style={{
+              padding: '12px 16px',
+              borderRadius: '6px',
+              marginBottom: '16px',
+              fontSize: '0.875rem',
+              background: poiResearchStatus.startsWith('✓') ? '#d1fae5' : poiResearchStatus.startsWith('✗') ? '#fee2e2' : '#dbeafe',
+              color: poiResearchStatus.startsWith('✓') ? '#065f46' : poiResearchStatus.startsWith('✗') ? '#991b1b' : '#1e40af'
+            }}>
+              {poiResearchStatus}
+            </div>
+          )}
 
           {day.pointsOfInterest?.map((poi, idx) => (
-            <div key={idx} style={{ background: '#f9fafb', padding: '16px', borderRadius: '8px', marginBottom: '12px', border: '1px solid #e5e7eb' }}>
+            <div key={idx} style={{
+              background: '#f9fafb',
+              padding: '16px',
+              borderRadius: '8px',
+              marginBottom: '16px',
+              border: '1px solid #e5e7eb',
+              borderLeft: `4px solid ${poi.status === 'approved' ? '#10b981' : poi.status === 'rejected' ? '#ef4444' : '#f59e0b'}`
+            }}>
+              {/* Header with name and status */}
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', gap: '12px' }}>
                 <input
                   type="text"
@@ -726,44 +850,135 @@ function DayEditor() {
                     setDay({ ...day, pointsOfInterest: updated })
                   }}
                   placeholder="POI Name"
-                  style={{ flex: 1, padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.95rem', fontWeight: 500, color: '#1f2937', background: '#ffffff' }}
+                  style={{ flex: 1, padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '1rem', fontWeight: 600, color: '#1f2937', background: '#ffffff' }}
                 />
+                <div style={{ display: 'flex', gap: '4px' }}>
+                  <button
+                    onClick={() => handlePOIStatusChange(idx, 'approved')}
+                    style={{
+                      padding: '6px 12px', fontSize: '0.75rem', borderRadius: '4px', cursor: 'pointer', fontWeight: 500,
+                      background: poi.status === 'approved' ? '#10b981' : '#ffffff',
+                      color: poi.status === 'approved' ? '#ffffff' : '#10b981',
+                      border: `1px solid ${poi.status === 'approved' ? '#10b981' : '#d1fae5'}`
+                    }}
+                  >✓ Approve</button>
+                  <button
+                    onClick={() => handlePOIStatusChange(idx, 'pending')}
+                    style={{
+                      padding: '6px 12px', fontSize: '0.75rem', borderRadius: '4px', cursor: 'pointer', fontWeight: 500,
+                      background: poi.status === 'pending' ? '#f59e0b' : '#ffffff',
+                      color: poi.status === 'pending' ? '#ffffff' : '#f59e0b',
+                      border: `1px solid ${poi.status === 'pending' ? '#f59e0b' : '#fef3c7'}`
+                    }}
+                  >⏳ Pending</button>
+                  <button
+                    onClick={() => handlePOIStatusChange(idx, 'rejected')}
+                    style={{
+                      padding: '6px 12px', fontSize: '0.75rem', borderRadius: '4px', cursor: 'pointer', fontWeight: 500,
+                      background: poi.status === 'rejected' ? '#ef4444' : '#ffffff',
+                      color: poi.status === 'rejected' ? '#ffffff' : '#ef4444',
+                      border: `1px solid ${poi.status === 'rejected' ? '#ef4444' : '#fecaca'}`
+                    }}
+                  >✗ Reject</button>
+                </div>
+              </div>
+
+              {/* Summary */}
+              {poi.summary && (
+                <div style={{ marginBottom: '12px' }}>
+                  <label style={{ fontSize: '0.75rem', fontWeight: 600, color: '#6b7280', display: 'block', marginBottom: '4px' }}>SUMMARY</label>
+                  <textarea
+                    value={poi.summary || ''}
+                    onChange={e => {
+                      const updated = [...day.pointsOfInterest]
+                      updated[idx].summary = e.target.value
+                      setDay({ ...day, pointsOfInterest: updated })
+                    }}
+                    style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '100px', resize: 'vertical' }}
+                  />
+                </div>
+              )}
+
+              {/* History */}
+              <div style={{ marginBottom: '12px' }}>
+                <label style={{ fontSize: '0.75rem', fontWeight: 600, color: '#6b7280', display: 'block', marginBottom: '4px' }}>HISTORICAL CONTEXT</label>
+                <textarea
+                  value={poi.history || ''}
+                  onChange={e => {
+                    const updated = [...day.pointsOfInterest]
+                    updated[idx].history = e.target.value
+                    setDay({ ...day, pointsOfInterest: updated })
+                  }}
+                  placeholder="History and background..."
+                  style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', resize: 'vertical' }}
+                />
+              </div>
+
+              {/* Tips */}
+              <div style={{ marginBottom: '12px' }}>
+                <label style={{ fontSize: '0.75rem', fontWeight: 600, color: '#6b7280', display: 'block', marginBottom: '4px' }}>PRACTICAL TIPS</label>
+                <textarea
+                  value={poi.tips || ''}
+                  onChange={e => {
+                    const updated = [...day.pointsOfInterest]
+                    updated[idx].tips = e.target.value
+                    setDay({ ...day, pointsOfInterest: updated })
+                  }}
+                  placeholder="Visitor tips..."
+                  style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', resize: 'vertical' }}
+                />
+              </div>
+
+              {/* Links */}
+              {poi.links && poi.links.length > 0 && (
+                <div style={{ marginBottom: '12px' }}>
+                  <label style={{ fontSize: '0.75rem', fontWeight: 600, color: '#6b7280', display: 'block', marginBottom: '4px' }}>LINKS</label>
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                    {poi.links.map((link, linkIdx) => (
+                      <a
+                        key={linkIdx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          padding: '4px 10px',
+                          fontSize: '0.75rem',
+                          background: '#e0e7ff',
+                          color: '#4338ca',
+                          borderRadius: '4px',
+                          textDecoration: 'none'
+                        }}
+                      >
+                        🔗 {link.type || 'Link'}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Confidence & Remove */}
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '12px', paddingTop: '12px', borderTop: '1px solid #e5e7eb' }}>
+                {poi.confidence && (
+                  <span style={{ fontSize: '0.75rem', color: '#6b7280' }}>
+                    Confidence: {Math.round(poi.confidence * 100)}%
+                  </span>
+                )}
                 <button
                   onClick={() => {
                     const updated = day.pointsOfInterest.filter((_, i) => i !== idx)
                     setDay({ ...day, pointsOfInterest: updated })
                   }}
-                  style={{ padding: '8px 14px', fontSize: '0.8rem', background: '#ffffff', color: '#dc2626', border: '1px solid #fecaca', borderRadius: '6px', cursor: 'pointer', fontWeight: 500 }}
+                  style={{ padding: '6px 12px', fontSize: '0.75rem', background: '#ffffff', color: '#dc2626', border: '1px solid #fecaca', borderRadius: '4px', cursor: 'pointer', fontWeight: 500 }}
                 >
                   Remove
                 </button>
               </div>
-              <textarea
-                value={poi.history || ''}
-                onChange={e => {
-                  const updated = [...day.pointsOfInterest]
-                  updated[idx].history = e.target.value
-                  setDay({ ...day, pointsOfInterest: updated })
-                }}
-                placeholder="History and background..."
-                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', marginBottom: '10px', resize: 'vertical' }}
-              />
-              <textarea
-                value={poi.tips || ''}
-                onChange={e => {
-                  const updated = [...day.pointsOfInterest]
-                  updated[idx].tips = e.target.value
-                  setDay({ ...day, pointsOfInterest: updated })
-                }}
-                placeholder="Visitor tips..."
-                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', resize: 'vertical' }}
-              />
             </div>
           ))}
 
           <button
             onClick={() => {
-              const updated = [...(day.pointsOfInterest || []), { name: '', history: '', tips: '', images: [] }]
+              const updated = [...(day.pointsOfInterest || []), { name: '', history: '', tips: '', summary: '', links: [], status: 'pending', images: [] }]
               setDay({ ...day, pointsOfInterest: updated })
             }}
             style={{ padding: '10px 16px', fontSize: '0.875rem', background: '#ffffff', color: '#6366f1', border: '1px solid #c7d2fe', borderRadius: '6px', cursor: 'pointer', fontWeight: 500 }}

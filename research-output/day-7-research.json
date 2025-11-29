@@ -1,343 +1,306 @@
 {
   "day": 7,
   "title": {
-    "en": "Arrival in Lushan",
-    "cn": "抵达庐山"
+    "en": "Arrival in Jiangxi, First Glimpse of Lushan",
+    "cn": "Arrival in Jiangxi, First Glimpse of Lushan"
   },
   "location": {
     "en": "Lushan",
-    "cn": "庐山"
+    "cn": "Lushan"
   },
+  "generatedAt": "2025-11-29T22:02:19.542Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
   "activities": [
     {
-      "activity": "Lushan Cable Car in Lushan",
-      "searchQueries": [
+      "name": "Transfer from Jiujiang Station",
+      "activity": "Transfer from Jiujiang Station",
+      "searchTerm": "Transfer from Jiujiang Station Jiujiang Station to Lushan China",
+      "images": [
         {
-          "type": "unsplash",
-          "query": "Lushan Cable Car Lushan site:unsplash.com",
-          "description": "Lushan Cable Car in Lushan"
-        }
-      ],
-      "searchResults": [
+          "id": "pexels-21773961",
+          "url": "https://images.pexels.com/photos/21773961/pexels-photo-21773961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/21773961/pexels-photo-21773961.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/21773961/pexels-photo-21773961.jpeg",
+          "alt": "Aerial shot of a nuclear power plant in Jiangxi, China, with cooling towers and surrounding landscape.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/drone-shot-of-nuclear-power-plant-21773961/",
+          "width": 5464,
+          "height": 3640
+        },
         {
-          "url": "https://unsplash.com/s/photos/Lushan%20Cable%20Car%20Lushan",
-          "title": "Search \"Lushan Cable Car in Lushan\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Lushan Cable Car in Lushan in Lushan, China",
-        "Travel photography of Lushan Cable Car in Lushan in Lushan",
-        "Lushan Cable Car in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Lushan Cable Car in Lushan",
-      "searchQueries": [
+          "id": "pexels-27382543",
+          "url": "https://images.pexels.com/photos/27382543/pexels-photo-27382543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/27382543/pexels-photo-27382543.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/27382543/pexels-photo-27382543.jpeg",
+          "alt": "Aerial view of an industrial power plant near Jiujiang, showcasing infrastructure and landscape.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/27382543/",
+          "width": 4848,
+          "height": 2597
+        },
         {
-          "type": "pexels",
-          "query": "Lushan Cable Car Lushan site:pexels.com",
-          "description": "Lushan Cable Car in Lushan"
-        }
-      ],
-      "searchResults": [
+          "id": "pixabay-67718",
+          "url": "https://pixabay.com/get/g496fef517581d170aec7a76e922f7536da7ad74d67a072b427b31eba248518d7c9078c5c2889424b3186ce7f78c80133_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2012/11/28/11/25/satellite-67718_150.jpg",
+          "full": "https://pixabay.com/get/g6c0bbbfa8e6124c426a79ee5ea919343b9d8cc22e47cdff607ee2c8324e24835040440d57146993778938bfb9942c1fb_1280.jpg",
+          "alt": "satellite, spacecraft, space, outer space, soyuz, spaceship, space station, orbital station, orbital space station, satellite, satellite, satellite, satellite, satellite, space, spaceship",
+          "photographer": "WikiImages",
+          "photographerUrl": "https://pixabay.com/users/WikiImages-1897/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/satellite-spacecraft-space-67718/",
+          "width": 2274,
+          "height": 1506
+        },
         {
-          "url": "https://www.pexels.com/search/Lushan%20Cable%20Car%20Lushan/",
-          "title": "Search \"Lushan Cable Car in Lushan\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Lushan Cable Car in Lushan in Lushan, China",
-        "Travel photography of Lushan Cable Car in Lushan in Lushan",
-        "Lushan Cable Car in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "庐山缆车 in 庐山",
-      "searchQueries": [
+          "id": "pixabay-1940691",
+          "url": "https://pixabay.com/get/g1450c73dbdff377ed9fca725bea8bc2e53c9ce81b1f3c13f1c4494d225f86ca257da4bb9bf5c3db2d0ea7f37073b2a34d9a28d934ac4d4638e03685a279cccbf_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2016/12/30/14/44/city-1940691_150.jpg",
+          "full": "https://pixabay.com/get/g66033bf8a7ab80f9a016833de43a5b7a551939a4bfc0a303be101b11ce9f5f88534b2e3eaa5b8b93c9223b5b863e9d387a4effd5fa8fb6b5f6390deb46d05955_1280.jpg",
+          "alt": "city, people, underground, metro, transport, transfer, traffic, transportation, prague, czech, business, man, motion, lights, station, train, stop, architecture, metro, metro, transportation, business, train, train, train, train, train",
+          "photographer": "JESHOOTS-com",
+          "photographerUrl": "https://pixabay.com/users/JESHOOTS-com-264599/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/city-people-underground-metro-1940691/",
+          "width": 4200,
+          "height": 2800
+        },
         {
-          "type": "unsplash",
-          "query": "庐山缆车 庐山 site:unsplash.com",
-          "description": "庐山缆车 in 庐山"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%BA%90%E5%B1%B1%E7%BC%86%E8%BD%A6%20%E5%BA%90%E5%B1%B1",
-          "title": "Search \"庐山缆车 in 庐山\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "庐山缆车 in 庐山 in Lushan, China",
-        "Travel photography of 庐山缆车 in 庐山 in Lushan",
-        "庐山缆车 in 庐山 tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Mountain-top Architecture in Lushan",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "Mountain-top Architecture Lushan site:unsplash.com",
-          "description": "Mountain-top Architecture in Lushan"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Mountain-top%20Architecture%20Lushan",
-          "title": "Search \"Mountain-top Architecture in Lushan\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Mountain-top Architecture in Lushan in Lushan, China",
-        "Travel photography of Mountain-top Architecture in Lushan in Lushan",
-        "Mountain-top Architecture in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Mountain-top Architecture in Lushan",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Mountain-top Architecture Lushan site:pexels.com",
-          "description": "Mountain-top Architecture in Lushan"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Mountain-top%20Architecture%20Lushan/",
-          "title": "Search \"Mountain-top Architecture in Lushan\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Mountain-top Architecture in Lushan in Lushan, China",
-        "Travel photography of Mountain-top Architecture in Lushan in Lushan",
-        "Mountain-top Architecture in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "山顶建筑 in 庐山",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "山顶建筑 庐山 site:unsplash.com",
-          "description": "山顶建筑 in 庐山"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%B1%B1%E9%A1%B6%E5%BB%BA%E7%AD%91%20%E5%BA%90%E5%B1%B1",
-          "title": "Search \"山顶建筑 in 庐山\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "山顶建筑 in 庐山 in Lushan, China",
-        "Travel photography of 山顶建筑 in 庐山 in Lushan",
-        "山顶建筑 in 庐山 tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Acclimatization Hike in Lushan",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "Acclimatization Hike Lushan site:unsplash.com",
-          "description": "Acclimatization Hike in Lushan"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Acclimatization%20Hike%20Lushan",
-          "title": "Search \"Acclimatization Hike in Lushan\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Acclimatization Hike in Lushan in Lushan, China",
-        "Travel photography of Acclimatization Hike in Lushan in Lushan",
-        "Acclimatization Hike in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "Acclimatization Hike in Lushan",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Acclimatization Hike Lushan site:pexels.com",
-          "description": "Acclimatization Hike in Lushan"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Acclimatization%20Hike%20Lushan/",
-          "title": "Search \"Acclimatization Hike in Lushan\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Acclimatization Hike in Lushan in Lushan, China",
-        "Travel photography of Acclimatization Hike in Lushan in Lushan",
-        "Acclimatization Hike in Lushan tourist attraction in Lushan"
-      ]
-    },
-    {
-      "activity": "适应性徒步（8公里） in 庐山",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "适应性徒步（8公里） 庐山 site:unsplash.com",
-          "description": "适应性徒步（8公里） in 庐山"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E9%80%82%E5%BA%94%E6%80%A7%E5%BE%92%E6%AD%A5%EF%BC%888%E5%85%AC%E9%87%8C%EF%BC%89%20%E5%BA%90%E5%B1%B1",
-          "title": "Search \"适应性徒步（8公里） in 庐山\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "适应性徒步（8公里） in 庐山 in Lushan, China",
-        "Travel photography of 适应性徒步（8公里） in 庐山 in Lushan",
-        "适应性徒步（8公里） in 庐山 tourist attraction in Lushan"
-      ]
-    }
-  ],
-  "hotels": [
-    {
-      "accommodation": "Lushan Mountain-top Hotel",
-      "searchQueries": [
-        {
-          "type": "tripadvisor",
-          "query": "top Hotel Lushan site:tripadvisor.com",
-          "description": "top Hotel in Lushan on TripAdvisor"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.tripadvisor.com/Search?q=top%20Hotel%20Lushan",
-          "title": "Find \"top Hotel in Lushan on TripAdvisor\" on TripAdvisor",
-          "description": "Hotel reviews, ratings, and booking information",
-          "type": "search-link"
+          "id": "pixabay-5010635",
+          "url": "https://pixabay.com/get/g6e208c3ed7ee60971ff4f97dc160c58218d3f10f0a3aaa491bcf4a67cdaf8e55a9f8369ca9a1a47db8a8b7443301c978a816c43deac01ac6601f379784d699b3_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/04/06/17/56/berlin-5010635_150.jpg",
+          "full": "https://pixabay.com/get/g5277634ae8e347487bffb19bdb84e403d9ec572ae0d72246dc5920ef872209346f77b7a97b7c401e0a3d0a3839f04e8a72cc4b5957a6365dab2a5e9e25cb2eea_1280.jpg",
+          "alt": "berlin, central station, berlin central station, station, abandoned, empty, corona, coronavirus, railroad, germany, architecture, glass roof, railroad tracks, covid-19, platform, to travel, nobody, berlin, berlin, berlin, berlin, berlin, station, corona, coronavirus, coronavirus, coronavirus, germany, covid-19, platform",
+          "photographer": "Morgengry",
+          "photographerUrl": "https://pixabay.com/users/Morgengry-9461268/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/berlin-central-station-5010635/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     },
     {
-      "accommodation": "Lushan Mountain-top Hotel",
-      "searchQueries": [
+      "name": "Leisurely Hike along Lushan’s Trails",
+      "activity": "Leisurely Hike along Lushan’s Trails",
+      "searchTerm": "Leisurely Hike along Lushan’s Trails Lushan Trails China",
+      "images": [
         {
-          "type": "booking",
-          "query": "top Hotel Lushan site:booking.com",
-          "description": "top Hotel in Lushan on Booking.com"
-        }
-      ],
-      "searchResults": []
-    },
-    {
-      "accommodation": "Lushan Mountain-top Hotel",
-      "searchQueries": [
+          "id": "pexels-11827281",
+          "url": "https://images.pexels.com/photos/11827281/pexels-photo-11827281.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/11827281/pexels-photo-11827281.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/11827281/pexels-photo-11827281.jpeg",
+          "alt": "Explore the breathtaking Namtso Lake and its stunning rock formations under a clear blue sky.",
+          "photographer": "Zekai Zhu",
+          "photographerUrl": "https://www.pexels.com/@zekai-zhu-214984943",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/cliff-on-seashore-near-water-11827281/",
+          "width": 5416,
+          "height": 3167
+        },
         {
-          "type": "general",
-          "query": "top Hotel Lushan hotel reviews",
-          "description": "Reviews for top Hotel in Lushan"
+          "id": "pexels-29279017",
+          "url": "https://images.pexels.com/photos/29279017/pexels-photo-29279017.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29279017/pexels-photo-29279017.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29279017/pexels-photo-29279017.jpeg",
+          "alt": "Stunning view of snow-covered mountains and reflections in a serene lake in Garzê, Sichuan, China.",
+          "photographer": "Lxxxxx L",
+          "photographerUrl": "https://www.pexels.com/@lxxxxx-l-716694404",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/majestic-snow-capped-mountains-reflecting-in-lake-29279017/",
+          "width": 4096,
+          "height": 2304
+        },
+        {
+          "id": "pixabay-3092026",
+          "url": "https://pixabay.com/get/gee0954e5b13e40d3e0cb9d7fb9f493ec9382631cf8ae155b1a1a4ed80ec43c9f25288864e6027268607dd1aeef2fcaf6c9115566ba55b4383041af344e1e66a7_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/01/19/09/17/tree-3092026_150.jpg",
+          "full": "https://pixabay.com/get/g652b822d51cadaf4fc3ecfd4c8890e56ac0691e9b84c09cea862c5c92f3dd91e950a18834d496559e11b34b58a1cfd38c54a78d66cbc809e537a4dc502e330a4_1280.jpg",
+          "alt": "tree, avenue, path, nature, hike, forest, hiking trail, mood, path, path, path, path, path, nature, forest",
+          "photographer": "jplenio",
+          "photographerUrl": "https://pixabay.com/users/jplenio-7645255/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/tree-avenue-path-nature-hike-3092026/",
+          "width": 5613,
+          "height": 3157
+        },
+        {
+          "id": "pixabay-3131411",
+          "url": "https://pixabay.com/get/g01fa3b1b9e74eb02d9eaf17c8aef7fc917c2471d836102882040f79177458551306b086c041fe65ff7def7b9fc830a88555f91961f3ee7dfc793fcdaaf4eb77a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/02/05/05/19/tourism-3131411_150.jpg",
+          "full": "https://pixabay.com/get/g621ad9ea83857d1535dd5edfe6a38627fd4d748f7b7b88ae41ebd37e95bf22a45506e2bb5e351a4d1291575a06448a28f21a993be75d9f5275a9972400a7a8c6_1280.jpg",
+          "alt": "travel, lake, lushan, clouds, nature, pavilion, china, landscape, such as the piano lake",
+          "photographer": "chuxiyue",
+          "photographerUrl": "https://pixabay.com/users/chuxiyue-7935367/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/travel-lake-lushan-clouds-pavilion-3131411/",
+          "width": 4288,
+          "height": 2848
+        },
+        {
+          "id": "pixabay-682003",
+          "url": "https://pixabay.com/get/g249c29fdf4bf9f84753a1df88960249fb03b8325e5f5cac54abe24bbc6db0e93f974188df1978f476c6998ae03070452_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/03/20/09/59/forest-682003_150.jpg",
+          "full": "https://pixabay.com/get/ga241fb836072d118775ba9971fec432ad77f5b4ae6455cf483caa64823aac0402c02ec12f2bb100e704b2863218573a4980255172848631001abd8cd52f9a720_1280.jpg",
+          "alt": "forest, hiking, trees, path, trail, mossy, forest trail, nature path, nature trail, woods, woodlands, forest path, away, moss, nature, outdoors, forest, forest, forest, hiking, hiking, hiking, hiking, hiking, path, path, trail",
+          "photographer": "thomashendele",
+          "photographerUrl": "https://pixabay.com/users/thomashendele-88943/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/forest-hiking-trees-path-trail-682003/",
+          "width": 2000,
+          "height": 1335
         }
-      ],
-      "searchResults": []
-    }
-  ],
-  "recommendedSearches": [
-    {
-      "query": "Lushan China tourism site:unsplash.com",
-      "description": "General Lushan tourism photos",
-      "reason": "Good for establishing shots and context"
-    },
-    {
-      "query": "Lushan China landscape site:pexels.com",
-      "description": "Lushan landscapes and scenery",
-      "reason": "Perfect for background and establishing scenes"
-    },
-    {
-      "query": "Lushan Cable Car China travel site:unsplash.com",
-      "description": "Lushan Cable Car travel photography",
-      "reason": "Specific activity focus"
-    },
-    {
-      "query": "Mountain-top Architecture China travel site:unsplash.com",
-      "description": "Mountain-top Architecture travel photography",
-      "reason": "Specific activity focus"
+      ]
     }
   ],
   "sampleImages": [
     {
-      "activity": "Lushan Cable Car",
+      "activity": "Transfer from Jiujiang Station",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Lushan%20Cable%20Car%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Lushan%20Cable%20Car%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Lushan%20Cable%20Car%20china%20tourism",
-          "query": "Lushan Cable Car",
-          "alt": "Lushan Cable Car china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Lushan%20Cable%20Car%20china%20tourism&w=1200",
-          "description": "Real photo of Lushan Cable Car china tourism",
-          "isUnsplashFeatured": true
+          "id": "pexels-21773961",
+          "url": "https://images.pexels.com/photos/21773961/pexels-photo-21773961.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/21773961/pexels-photo-21773961.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/21773961/pexels-photo-21773961.jpeg",
+          "alt": "Aerial shot of a nuclear power plant in Jiangxi, China, with cooling towers and surrounding landscape.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/drone-shot-of-nuclear-power-plant-21773961/",
+          "width": 5464,
+          "height": 3640
+        },
+        {
+          "id": "pexels-27382543",
+          "url": "https://images.pexels.com/photos/27382543/pexels-photo-27382543.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/27382543/pexels-photo-27382543.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/27382543/pexels-photo-27382543.jpeg",
+          "alt": "Aerial view of an industrial power plant near Jiujiang, showcasing infrastructure and landscape.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/27382543/",
+          "width": 4848,
+          "height": 2597
+        },
+        {
+          "id": "pixabay-67718",
+          "url": "https://pixabay.com/get/g496fef517581d170aec7a76e922f7536da7ad74d67a072b427b31eba248518d7c9078c5c2889424b3186ce7f78c80133_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2012/11/28/11/25/satellite-67718_150.jpg",
+          "full": "https://pixabay.com/get/g6c0bbbfa8e6124c426a79ee5ea919343b9d8cc22e47cdff607ee2c8324e24835040440d57146993778938bfb9942c1fb_1280.jpg",
+          "alt": "satellite, spacecraft, space, outer space, soyuz, spaceship, space station, orbital station, orbital space station, satellite, satellite, satellite, satellite, satellite, space, spaceship",
+          "photographer": "WikiImages",
+          "photographerUrl": "https://pixabay.com/users/WikiImages-1897/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/satellite-spacecraft-space-67718/",
+          "width": 2274,
+          "height": 1506
+        },
+        {
+          "id": "pixabay-1940691",
+          "url": "https://pixabay.com/get/g1450c73dbdff377ed9fca725bea8bc2e53c9ce81b1f3c13f1c4494d225f86ca257da4bb9bf5c3db2d0ea7f37073b2a34d9a28d934ac4d4638e03685a279cccbf_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2016/12/30/14/44/city-1940691_150.jpg",
+          "full": "https://pixabay.com/get/g66033bf8a7ab80f9a016833de43a5b7a551939a4bfc0a303be101b11ce9f5f88534b2e3eaa5b8b93c9223b5b863e9d387a4effd5fa8fb6b5f6390deb46d05955_1280.jpg",
+          "alt": "city, people, underground, metro, transport, transfer, traffic, transportation, prague, czech, business, man, motion, lights, station, train, stop, architecture, metro, metro, transportation, business, train, train, train, train, train",
+          "photographer": "JESHOOTS-com",
+          "photographerUrl": "https://pixabay.com/users/JESHOOTS-com-264599/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/city-people-underground-metro-1940691/",
+          "width": 4200,
+          "height": 2800
+        },
+        {
+          "id": "pixabay-5010635",
+          "url": "https://pixabay.com/get/g6e208c3ed7ee60971ff4f97dc160c58218d3f10f0a3aaa491bcf4a67cdaf8e55a9f8369ca9a1a47db8a8b7443301c978a816c43deac01ac6601f379784d699b3_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/04/06/17/56/berlin-5010635_150.jpg",
+          "full": "https://pixabay.com/get/g5277634ae8e347487bffb19bdb84e403d9ec572ae0d72246dc5920ef872209346f77b7a97b7c401e0a3d0a3839f04e8a72cc4b5957a6365dab2a5e9e25cb2eea_1280.jpg",
+          "alt": "berlin, central station, berlin central station, station, abandoned, empty, corona, coronavirus, railroad, germany, architecture, glass roof, railroad tracks, covid-19, platform, to travel, nobody, berlin, berlin, berlin, berlin, berlin, station, corona, coronavirus, coronavirus, coronavirus, germany, covid-19, platform",
+          "photographer": "Morgengry",
+          "photographerUrl": "https://pixabay.com/users/Morgengry-9461268/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/berlin-central-station-5010635/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     },
     {
-      "activity": "Mountain-top Architecture",
+      "activity": "Leisurely Hike along Lushan’s Trails",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Mountain-top%20Architecture%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Mountain-top%20Architecture%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Mountain-top%20Architecture%20china%20tourism",
-          "query": "Mountain-top Architecture",
-          "alt": "Mountain-top Architecture china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Mountain-top%20Architecture%20china%20tourism&w=1200",
-          "description": "Real photo of Mountain-top Architecture china tourism",
-          "isUnsplashFeatured": true
-        }
-      ]
-    },
-    {
-      "activity": "Acclimatization Hike (8km)",
-      "images": [
+          "id": "pexels-11827281",
+          "url": "https://images.pexels.com/photos/11827281/pexels-photo-11827281.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/11827281/pexels-photo-11827281.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/11827281/pexels-photo-11827281.jpeg",
+          "alt": "Explore the breathtaking Namtso Lake and its stunning rock formations under a clear blue sky.",
+          "photographer": "Zekai Zhu",
+          "photographerUrl": "https://www.pexels.com/@zekai-zhu-214984943",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/cliff-on-seashore-near-water-11827281/",
+          "width": 5416,
+          "height": 3167
+        },
         {
-          "url": "https://source.unsplash.com/featured/?Acclimatization%20Hike%20(8km)%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Acclimatization%20Hike%20(8km)%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Acclimatization%20Hike%20(8km)%20china%20tourism",
-          "query": "Acclimatization Hike (8km)",
-          "alt": "Acclimatization Hike (8km) china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Acclimatization%20Hike%20(8km)%20china%20tourism&w=1200",
-          "description": "Real photo of Acclimatization Hike (8km) china tourism",
-          "isUnsplashFeatured": true
+          "id": "pexels-29279017",
+          "url": "https://images.pexels.com/photos/29279017/pexels-photo-29279017.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29279017/pexels-photo-29279017.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29279017/pexels-photo-29279017.jpeg",
+          "alt": "Stunning view of snow-covered mountains and reflections in a serene lake in Garzê, Sichuan, China.",
+          "photographer": "Lxxxxx L",
+          "photographerUrl": "https://www.pexels.com/@lxxxxx-l-716694404",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/majestic-snow-capped-mountains-reflecting-in-lake-29279017/",
+          "width": 4096,
+          "height": 2304
+        },
+        {
+          "id": "pixabay-3092026",
+          "url": "https://pixabay.com/get/gee0954e5b13e40d3e0cb9d7fb9f493ec9382631cf8ae155b1a1a4ed80ec43c9f25288864e6027268607dd1aeef2fcaf6c9115566ba55b4383041af344e1e66a7_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/01/19/09/17/tree-3092026_150.jpg",
+          "full": "https://pixabay.com/get/g652b822d51cadaf4fc3ecfd4c8890e56ac0691e9b84c09cea862c5c92f3dd91e950a18834d496559e11b34b58a1cfd38c54a78d66cbc809e537a4dc502e330a4_1280.jpg",
+          "alt": "tree, avenue, path, nature, hike, forest, hiking trail, mood, path, path, path, path, path, nature, forest",
+          "photographer": "jplenio",
+          "photographerUrl": "https://pixabay.com/users/jplenio-7645255/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/tree-avenue-path-nature-hike-3092026/",
+          "width": 5613,
+          "height": 3157
+        },
+        {
+          "id": "pixabay-3131411",
+          "url": "https://pixabay.com/get/g01fa3b1b9e74eb02d9eaf17c8aef7fc917c2471d836102882040f79177458551306b086c041fe65ff7def7b9fc830a88555f91961f3ee7dfc793fcdaaf4eb77a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/02/05/05/19/tourism-3131411_150.jpg",
+          "full": "https://pixabay.com/get/g621ad9ea83857d1535dd5edfe6a38627fd4d748f7b7b88ae41ebd37e95bf22a45506e2bb5e351a4d1291575a06448a28f21a993be75d9f5275a9972400a7a8c6_1280.jpg",
+          "alt": "travel, lake, lushan, clouds, nature, pavilion, china, landscape, such as the piano lake",
+          "photographer": "chuxiyue",
+          "photographerUrl": "https://pixabay.com/users/chuxiyue-7935367/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/travel-lake-lushan-clouds-pavilion-3131411/",
+          "width": 4288,
+          "height": 2848
+        },
+        {
+          "id": "pixabay-682003",
+          "url": "https://pixabay.com/get/g249c29fdf4bf9f84753a1df88960249fb03b8325e5f5cac54abe24bbc6db0e93f974188df1978f476c6998ae03070452_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/03/20/09/59/forest-682003_150.jpg",
+          "full": "https://pixabay.com/get/ga241fb836072d118775ba9971fec432ad77f5b4ae6455cf483caa64823aac0402c02ec12f2bb100e704b2863218573a4980255172848631001abd8cd52f9a720_1280.jpg",
+          "alt": "forest, hiking, trees, path, trail, mossy, forest trail, nature path, nature trail, woods, woodlands, forest path, away, moss, nature, outdoors, forest, forest, forest, hiking, hiking, hiking, hiking, hiking, path, path, trail",
+          "photographer": "thomashendele",
+          "photographerUrl": "https://pixabay.com/users/thomashendele-88943/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/forest-hiking-trees-path-trail-682003/",
+          "width": 2000,
+          "height": 1335
         }
       ]
     }
-  ],
-  "researchDate": "2025-11-29T00:47:33.686Z",
-  "instructions": {
-    "howToUse": "Open the HTML file to preview and select images",
-    "altText": "Use the suggested alt text for accessibility",
-    "hotels": "Check hotel links for reviews and booking information"
-  }
+  ]
 }

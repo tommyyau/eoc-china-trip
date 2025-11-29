@@ -1,343 +1,500 @@
 {
   "day": 11,
   "title": {
-    "en": "Huangling & Wangxian Valley",
-    "cn": "篁岭与望仙谷"
+    "en": "Huangling Terraces and Immortal Valley Night Views",
+    "cn": "Huangling Terraces and Immortal Valley Night Views"
   },
   "location": {
-    "en": "Wuyuan -> Shangrao",
-    "cn": "婺源 -> 上饶"
+    "en": "Wuyuan to Wangxian Valley",
+    "cn": "Wuyuan to Wangxian Valley"
   },
+  "generatedAt": "2025-11-29T22:02:38.292Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
   "activities": [
     {
-      "activity": "Huangling Terraces in Wuyuan -> Shangrao",
-      "searchQueries": [
+      "name": "Visit Huangling",
+      "activity": "Visit Huangling",
+      "searchTerm": "Visit Huangling Huangling China",
+      "images": [
         {
-          "type": "unsplash",
-          "query": "Huangling Terraces Wuyuan -> Shangrao site:unsplash.com",
-          "description": "Huangling Terraces in Wuyuan -> Shangrao"
-        }
-      ],
-      "searchResults": [
+          "id": "pexels-29611974",
+          "url": "https://images.pexels.com/photos/29611974/pexels-photo-29611974.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29611974/pexels-photo-29611974.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29611974/pexels-photo-29611974.jpeg",
+          "alt": "A beautiful aerial view of a traditional Chinese village with distinct tiled roofs surrounded by lush greenery.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/charming-aerial-view-of-chinese-village-29611974/",
+          "width": 5464,
+          "height": 3640
+        },
         {
-          "url": "https://unsplash.com/s/photos/Huangling%20Terraces%20Wuyuan%20-%3E%20Shangrao",
-          "title": "Search \"Huangling Terraces in Wuyuan -> Shangrao\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
-        "Travel photography of Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
-        "Huangling Terraces in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "Huangling Terraces in Wuyuan -> Shangrao",
-      "searchQueries": [
+          "id": "pexels-29611977",
+          "url": "https://images.pexels.com/photos/29611977/pexels-photo-29611977.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29611977/pexels-photo-29611977.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29611977/pexels-photo-29611977.jpeg",
+          "alt": "Aerial view of Huangling Village in China showcasing traditional rooftops and vibrant autumn colors.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-traditional-chinese-village-rooftops-29611977/",
+          "width": 5464,
+          "height": 3640
+        },
         {
-          "type": "pexels",
-          "query": "Huangling Terraces Wuyuan -> Shangrao site:pexels.com",
-          "description": "Huangling Terraces in Wuyuan -> Shangrao"
-        }
-      ],
-      "searchResults": [
+          "id": "pixabay-6603320",
+          "url": "https://pixabay.com/get/gc78d0b080a7ef13f57e11edc8d855dba6f7991ad7b725d0377f7bf101cccc878bfbe336605683e7599aa9ebf1b50936994f62730295794c6dba7eeaeb3b924e2_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/38/building-6603320_150.jpg",
+          "full": "https://pixabay.com/get/g3eb9332f219adb5ffc7e5dca1161ab760483dcc751293ea6f3745418865191e617fb58f4cf397d2168f827b20bdea2e484753e81a36a68ad91276df27446307d_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603320/",
+          "width": 6240,
+          "height": 4160
+        },
         {
-          "url": "https://www.pexels.com/search/Huangling%20Terraces%20Wuyuan%20-%3E%20Shangrao/",
-          "title": "Search \"Huangling Terraces in Wuyuan -> Shangrao\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
-        "Travel photography of Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
-        "Huangling Terraces in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "篁岭梯田 in 婺源 -> 上饶",
-      "searchQueries": [
+          "id": "pixabay-6603307",
+          "url": "https://pixabay.com/get/gb5a8cbb7c01c37487119823315462ec2a0bdc3464a4a812253be35764ccd784d5bf8a87fbd4d3a56c09e2f28d4eedf7a2df3e37f85d81f1470cb9bb1c14bff4a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/37/building-6603307_150.jpg",
+          "full": "https://pixabay.com/get/gbed8b5441e94a65c93153a07680798b88003a5b4907ec76f45fccd9eca771f147cdc64595e3d337bf16c009271af0c669f66b96a0f721aac35c9bf23b0870a8f_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, huizhou architecture, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603307/",
+          "width": 5739,
+          "height": 3826
+        },
         {
-          "type": "unsplash",
-          "query": "篁岭梯田 婺源 -> 上饶 site:unsplash.com",
-          "description": "篁岭梯田 in 婺源 -> 上饶"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E7%AF%81%E5%B2%AD%E6%A2%AF%E7%94%B0%20%E5%A9%BA%E6%BA%90%20-%3E%20%E4%B8%8A%E9%A5%B6",
-          "title": "Search \"篁岭梯田 in 婺源 -> 上饶\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "篁岭梯田 in 婺源 -> 上饶 in Wuyuan -> Shangrao, China",
-        "Travel photography of 篁岭梯田 in 婺源 -> 上饶 in Wuyuan -> Shangrao",
-        "篁岭梯田 in 婺源 -> 上饶 tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "Wangxian Valley Hike in Wuyuan -> Shangrao",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "Wangxian Valley Hike Wuyuan -> Shangrao site:unsplash.com",
-          "description": "Wangxian Valley Hike in Wuyuan -> Shangrao"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Wangxian%20Valley%20Hike%20Wuyuan%20-%3E%20Shangrao",
-          "title": "Search \"Wangxian Valley Hike in Wuyuan -> Shangrao\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
-        "Travel photography of Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
-        "Wangxian Valley Hike in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "Wangxian Valley Hike in Wuyuan -> Shangrao",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Wangxian Valley Hike Wuyuan -> Shangrao site:pexels.com",
-          "description": "Wangxian Valley Hike in Wuyuan -> Shangrao"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Wangxian%20Valley%20Hike%20Wuyuan%20-%3E%20Shangrao/",
-          "title": "Search \"Wangxian Valley Hike in Wuyuan -> Shangrao\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
-        "Travel photography of Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
-        "Wangxian Valley Hike in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "望仙谷徒步 in 婺源 -> 上饶",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "望仙谷徒步 婺源 -> 上饶 site:unsplash.com",
-          "description": "望仙谷徒步 in 婺源 -> 上饶"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E6%9C%9B%E4%BB%99%E8%B0%B7%E5%BE%92%E6%AD%A5%20%E5%A9%BA%E6%BA%90%20-%3E%20%E4%B8%8A%E9%A5%B6",
-          "title": "Search \"望仙谷徒步 in 婺源 -> 上饶\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "望仙谷徒步 in 婺源 -> 上饶 in Wuyuan -> Shangrao, China",
-        "Travel photography of 望仙谷徒步 in 婺源 -> 上饶 in Wuyuan -> Shangrao",
-        "望仙谷徒步 in 婺源 -> 上饶 tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "Night Views in Wuyuan -> Shangrao",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "Night Views Wuyuan -> Shangrao site:unsplash.com",
-          "description": "Night Views in Wuyuan -> Shangrao"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/Night%20Views%20Wuyuan%20-%3E%20Shangrao",
-          "title": "Search \"Night Views in Wuyuan -> Shangrao\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
-        "Travel photography of Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
-        "Night Views in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "Night Views in Wuyuan -> Shangrao",
-      "searchQueries": [
-        {
-          "type": "pexels",
-          "query": "Night Views Wuyuan -> Shangrao site:pexels.com",
-          "description": "Night Views in Wuyuan -> Shangrao"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.pexels.com/search/Night%20Views%20Wuyuan%20-%3E%20Shangrao/",
-          "title": "Search \"Night Views in Wuyuan -> Shangrao\" on Pexels",
-          "description": "Free stock photos for travel and activities",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
-        "Travel photography of Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
-        "Night Views in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
-      ]
-    },
-    {
-      "activity": "夜景 in 婺源 -> 上饶",
-      "searchQueries": [
-        {
-          "type": "unsplash",
-          "query": "夜景 婺源 -> 上饶 site:unsplash.com",
-          "description": "夜景 in 婺源 -> 上饶"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://unsplash.com/s/photos/%E5%A4%9C%E6%99%AF%20%E5%A9%BA%E6%BA%90%20-%3E%20%E4%B8%8A%E9%A5%B6",
-          "title": "Search \"夜景 in 婺源 -> 上饶\" on Unsplash",
-          "description": "High-quality travel and landscape photography",
-          "type": "search-link"
-        }
-      ],
-      "suggestedAltText": [
-        "夜景 in 婺源 -> 上饶 in Wuyuan -> Shangrao, China",
-        "Travel photography of 夜景 in 婺源 -> 上饶 in Wuyuan -> Shangrao",
-        "夜景 in 婺源 -> 上饶 tourist attraction in Wuyuan -> Shangrao"
-      ]
-    }
-  ],
-  "hotels": [
-    {
-      "accommodation": "Homestay in Wangxian Valley",
-      "searchQueries": [
-        {
-          "type": "tripadvisor",
-          "query": "Homestay in Wangxian Valley Wuyuan -> Shangrao site:tripadvisor.com",
-          "description": "Homestay in Wangxian Valley in Wuyuan -> Shangrao on TripAdvisor"
-        }
-      ],
-      "searchResults": [
-        {
-          "url": "https://www.tripadvisor.com/Search?q=Homestay%20in%20Wangxian%20Valley%20Wuyuan%20-%3E%20Shangrao",
-          "title": "Find \"Homestay in Wangxian Valley in Wuyuan -> Shangrao on TripAdvisor\" on TripAdvisor",
-          "description": "Hotel reviews, ratings, and booking information",
-          "type": "search-link"
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/gb391f9147e0e7cf5eeeaf0113c6109e41863df10eba65da445a3d48ab9ee1471d96ddb78b4f532a2d9518d1dc3717ff45753e27e675f93059d7fc283dbda3475_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/g2555fe8cafdd14e11e512f5cd3d7cb4bff6277a930e32eb6ca9fc71d7e5d37411b16c6dab28e2ceaa3196bff4bdedac51aae540aefc4a14295a3b13ca710eefc_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     },
     {
-      "accommodation": "Homestay in Wangxian Valley",
-      "searchQueries": [
+      "name": "Transfer to Wangxian Valley",
+      "activity": "Transfer to Wangxian Valley",
+      "searchTerm": "Transfer to Wangxian Valley Wuyuan to Wangxian Valley China",
+      "images": [
         {
-          "type": "booking",
-          "query": "Homestay in Wangxian Valley Wuyuan -> Shangrao site:booking.com",
-          "description": "Homestay in Wangxian Valley in Wuyuan -> Shangrao on Booking.com"
-        }
-      ],
-      "searchResults": []
-    },
-    {
-      "accommodation": "Homestay in Wangxian Valley",
-      "searchQueries": [
+          "id": "pexels-22043310",
+          "url": "https://images.pexels.com/photos/22043310/pexels-photo-22043310.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/22043310/pexels-photo-22043310.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/22043310/pexels-photo-22043310.jpeg",
+          "alt": "Aerial view of a picturesque village nestled in a lush valley in Jiangxi, China, surrounded by greenery.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-houses-in-the-wangxian-valley-china-22043310/",
+          "width": 3840,
+          "height": 2160
+        },
         {
-          "type": "general",
-          "query": "Homestay in Wangxian Valley Wuyuan -> Shangrao hotel reviews",
-          "description": "Reviews for Homestay in Wangxian Valley in Wuyuan -> Shangrao"
+          "id": "pexels-29461083",
+          "url": "https://images.pexels.com/photos/29461083/pexels-photo-29461083.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29461083/pexels-photo-29461083.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29461083/pexels-photo-29461083.jpeg",
+          "alt": "Scenic aerial view of a red brick campus nestled in a green valley with mountains.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-red-brick-campus-in-lush-valley-29461083/",
+          "width": 5464,
+          "height": 3640
+        },
+        {
+          "id": "pixabay-4941701",
+          "url": "https://pixabay.com/get/g73ed6cee12039c93df6af8abf5cbfb73e7c20a5c3422a67d348d0408da746c97d31f09d1290c79cc8f49e39dae1ed17cda415fe6c8161f9b10b1cdde25047044_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/03/17/20/00/landscape-4941701_150.jpg",
+          "full": "https://pixabay.com/get/g1088eae64d03fcaf62e53cf13533e99fc560d88e682279c63a2e2ac55eee648784c0e408b098d2dc0170d94f12cf45441f6336444cc338767b2d8c37452f322d_1280.jpg",
+          "alt": "landscape, death valley, california, nature, adventure, death valley, death valley, death valley, death valley, death valley, california",
+          "photographer": "peterperhac",
+          "photographerUrl": "https://pixabay.com/users/peterperhac-14658406/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/landscape-death-valley-california-4941701/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-772991",
+          "url": "https://pixabay.com/get/gc9960c3d28b82f5a8f7e3fdcca2e031c6f7948826169b9341fdbeb15ae0e96319fd8a4af51a7737a84919134458b5c5b_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/18/23/53/backpacker-772991_150.jpg",
+          "full": "https://pixabay.com/get/g8b277929f5dbaf8b1a9a57b39c80eca39b5b281e8bc73b65dfb6701a5ac3fbc2f76917b9ebc16d275ccad1846700aa61d38f16031733b928830fb6dbb86f543f_1280.jpg",
+          "alt": "backpacker, mountains, panorama, viewpoint, backpacking, hiker, hiking, mountain ranges, valley, mountain valley, lake, mountain lake, landscape, nature, norway, outdoors, bessegen, man, hiking, hiking, hiking, hiking, hiking, norway, norway, norway, man, man",
+          "photographer": "Sorbyphoto",
+          "photographerUrl": "https://pixabay.com/users/Sorbyphoto-725076/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/backpacker-mountains-panorama-772991/",
+          "width": 5184,
+          "height": 2665
+        },
+        {
+          "id": "pixabay-4589831",
+          "url": "https://pixabay.com/get/g891f8817c7f34a02ced1d6adfa5b25cfdc509061271c4e536b62f43524d07795e0321f86bb8138f8816b3fdeaa3d1ac68173623a7544172d8332827a573da129_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2019/10/30/15/33/tajikistan-4589831_150.jpg",
+          "full": "https://pixabay.com/get/ga0070b8b40dd8b0f2b8ed980335354e1a10fed057b6c7836a5032001c77e9910911ea5a0beeebc287bee9148110aa2b70f5f9bd73f29cdc7861a98b14221e63d_1280.jpg",
+          "alt": "tajikistan, abe-e-panj river valley, pamir, valley, flow, water, the pamir highway, landscape, mountains, heaven, clouds, nature, province of chalton",
+          "photographer": "Makalu",
+          "photographerUrl": "https://pixabay.com/users/Makalu-680451/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/tajikistan-abe-e-panj-river-valley-4589831/",
+          "width": 5303,
+          "height": 3535
         }
-      ],
-      "searchResults": []
-    }
-  ],
-  "recommendedSearches": [
-    {
-      "query": "Wuyuan -> Shangrao China tourism site:unsplash.com",
-      "description": "General Wuyuan -> Shangrao tourism photos",
-      "reason": "Good for establishing shots and context"
+      ]
     },
     {
-      "query": "Wuyuan -> Shangrao China landscape site:pexels.com",
-      "description": "Wuyuan -> Shangrao landscapes and scenery",
-      "reason": "Perfect for background and establishing scenes"
-    },
-    {
-      "query": "Huangling Terraces China travel site:unsplash.com",
-      "description": "Huangling Terraces travel photography",
-      "reason": "Specific activity focus"
-    },
-    {
-      "query": "Wangxian Valley Hike China travel site:unsplash.com",
-      "description": "Wangxian Valley Hike travel photography",
-      "reason": "Specific activity focus"
+      "name": "Hike in Wangxian Valley",
+      "activity": "Hike in Wangxian Valley",
+      "searchTerm": "Hike in Wangxian Valley China",
+      "images": [
+        {
+          "id": "unsplash-vQ6RpiBUpuw",
+          "url": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "a view of the mountains from a trail",
+          "photographer": "vincent huang",
+          "photographerUrl": "https://unsplash.com/@qingchen191",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/vQ6RpiBUpuw",
+          "width": 4000,
+          "height": 2250
+        },
+        {
+          "id": "unsplash-ih4OoDisqVE",
+          "url": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "photography of green plant on mountain at foggy time",
+          "photographer": "Reed Xia",
+          "photographerUrl": "https://unsplash.com/@python012",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/ih4OoDisqVE",
+          "width": 3264,
+          "height": 2448
+        },
+        {
+          "id": "pexels-1531660",
+          "url": "https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg",
+          "alt": "Picturesque village nestled in the Himalayas with lush greenery and towering mountains.",
+          "photographer": "James Wheeler",
+          "photographerUrl": "https://www.pexels.com/@souvenirpixels",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/white-concrete-houses-1531660/",
+          "width": 3000,
+          "height": 2000
+        },
+        {
+          "id": "pexels-17213280",
+          "url": "https://images.pexels.com/photos/17213280/pexels-photo-17213280.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/17213280/pexels-photo-17213280.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/17213280/pexels-photo-17213280.jpeg",
+          "alt": "Scenic view of Batang's snowcapped mountains and lakes in Sichuan, showcasing natural beauty.",
+          "photographer": "鱼 于",
+          "photographerUrl": "https://www.pexels.com/@576895267",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/twin-lakes-in-batang-sichuan-china-17213280/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-768333",
+          "url": "https://pixabay.com/get/gca5902d2cd8fa2e1db9a1049ee01933b7b68ec53e92e43384ca22f189e4b9f5ece3f63f57c69a96eb3dc43c09c72ba42_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/15/13/24/mountain-768333_150.jpg",
+          "full": "https://pixabay.com/get/g00eb5f69261ac82decc730295c8c50578ab66ee0598ec4279d1c86d1df55db5b0a75dcce4da1984b6a64a2bc388d987ec2c8551f72822101e4174fa9eb36db75_1280.jpg",
+          "alt": "mountain, hike, adventure, outdoors, andes, valley, landscape, canyon, man, nature, traveler",
+          "photographer": "Poswiecie",
+          "photographerUrl": "https://pixabay.com/users/Poswiecie-461975/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountain-hike-adventure-outdoors-768333/",
+          "width": 4752,
+          "height": 3168
+        },
+        {
+          "id": "pixabay-2534484",
+          "url": "https://pixabay.com/get/g457bd913d90c6136d95be95e305feba7ca5d4d79e58135130c643b3266143d01f6f79229f0ff74fc646fc39a3b7c00f658e114613a000d0dd16db4ca2ca0b8a8_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/07/24/12/43/schrecksee-2534484_150.jpg",
+          "full": "https://pixabay.com/get/g70292b264f1d41058672cf118393d2fc228d8361c3079d2900d2b03ba07182b0cec517637c7fc5a1815808e9682a51e78d04359d45c61ffada3f1076a9e14e8e_1280.jpg",
+          "alt": "schrecksee, mountain lake, allgäu, alps, lake, water, allgäu alps, nature, hike, heaven, outdoor, freedom, meadow, summer, high valley, island, lake, nature, nature, nature, nature, nature",
+          "photographer": "PIRO4D",
+          "photographerUrl": "https://pixabay.com/users/PIRO4D-2707530/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/schrecksee-mountain-lake-allg%C3%A4u-2534484/",
+          "width": 6750,
+          "height": 1800
+        },
+        {
+          "id": "pixabay-6486093",
+          "url": "https://pixabay.com/get/g84e50997ad8c4ba7471ee8dd9097bb104a9116d562a7faca61f2973aa107b4e1604d4bda82b6758f178ccfc137a13d467b4c6aac8bad70e1d4a9e8e701f4ec1c_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/07/22/21/55/mountains-6486093_150.jpg",
+          "full": "https://pixabay.com/get/ge4c8164642f52cbb16d85d050d5ad15d79d72bc3c62361aa50ad6ff48ca5e60f53c99203329aa0aad7b1597715c8a095a8722aa4845578c2fe5b1fb60ac70624_1280.jpg",
+          "alt": "mountains, nature, tourism, hike, alpine, in the free, goal, switzerland, gantric, summer, alps, mountains, goal, goal, goal, goal, switzerland, switzerland, switzerland, switzerland, switzerland, alps, alps, alps, alps",
+          "photographer": "Arsinoe63",
+          "photographerUrl": "https://pixabay.com/users/Arsinoe63-12474343/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountains-nature-tourism-hike-6486093/",
+          "width": 7360,
+          "height": 4912
+        }
+      ]
     }
   ],
   "sampleImages": [
     {
-      "activity": "Huangling Terraces",
+      "activity": "Visit Huangling",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Huangling%20Terraces%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Huangling%20Terraces%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Huangling%20Terraces%20china%20tourism",
-          "query": "Huangling Terraces",
-          "alt": "Huangling Terraces china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Huangling%20Terraces%20china%20tourism&w=1200",
-          "description": "Real photo of Huangling Terraces china tourism",
-          "isUnsplashFeatured": true
+          "id": "pexels-29611974",
+          "url": "https://images.pexels.com/photos/29611974/pexels-photo-29611974.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29611974/pexels-photo-29611974.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29611974/pexels-photo-29611974.jpeg",
+          "alt": "A beautiful aerial view of a traditional Chinese village with distinct tiled roofs surrounded by lush greenery.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/charming-aerial-view-of-chinese-village-29611974/",
+          "width": 5464,
+          "height": 3640
+        },
+        {
+          "id": "pexels-29611977",
+          "url": "https://images.pexels.com/photos/29611977/pexels-photo-29611977.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29611977/pexels-photo-29611977.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29611977/pexels-photo-29611977.jpeg",
+          "alt": "Aerial view of Huangling Village in China showcasing traditional rooftops and vibrant autumn colors.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-traditional-chinese-village-rooftops-29611977/",
+          "width": 5464,
+          "height": 3640
+        },
+        {
+          "id": "pixabay-6603320",
+          "url": "https://pixabay.com/get/gc78d0b080a7ef13f57e11edc8d855dba6f7991ad7b725d0377f7bf101cccc878bfbe336605683e7599aa9ebf1b50936994f62730295794c6dba7eeaeb3b924e2_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/38/building-6603320_150.jpg",
+          "full": "https://pixabay.com/get/g3eb9332f219adb5ffc7e5dca1161ab760483dcc751293ea6f3745418865191e617fb58f4cf397d2168f827b20bdea2e484753e81a36a68ad91276df27446307d_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603320/",
+          "width": 6240,
+          "height": 4160
+        },
+        {
+          "id": "pixabay-6603307",
+          "url": "https://pixabay.com/get/gb5a8cbb7c01c37487119823315462ec2a0bdc3464a4a812253be35764ccd784d5bf8a87fbd4d3a56c09e2f28d4eedf7a2df3e37f85d81f1470cb9bb1c14bff4a_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/37/building-6603307_150.jpg",
+          "full": "https://pixabay.com/get/gbed8b5441e94a65c93153a07680798b88003a5b4907ec76f45fccd9eca771f147cdc64595e3d337bf16c009271af0c669f66b96a0f721aac35c9bf23b0870a8f_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, huizhou architecture, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603307/",
+          "width": 5739,
+          "height": 3826
+        },
+        {
+          "id": "pixabay-5483516",
+          "url": "https://pixabay.com/get/gb391f9147e0e7cf5eeeaf0113c6109e41863df10eba65da445a3d48ab9ee1471d96ddb78b4f532a2d9518d1dc3717ff45753e27e675f93059d7fc283dbda3475_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/08/12/19/28/great-wall-of-china-5483516_150.jpg",
+          "full": "https://pixabay.com/get/g2555fe8cafdd14e11e512f5cd3d7cb4bff6277a930e32eb6ca9fc71d7e5d37411b16c6dab28e2ceaa3196bff4bdedac51aae540aefc4a14295a3b13ca710eefc_1280.jpg",
+          "alt": "great wall of china, beijing, china, asia, chinese, travel, adventure, visit, destination, family, great wall, architecture, historical, landmark, tourist attraction, history, places of interest, stone wall, china, china, china, china, china",
+          "photographer": "viarami",
+          "photographerUrl": "https://pixabay.com/users/viarami-13458823/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/great-wall-of-china-beijing-china-5483516/",
+          "width": 6000,
+          "height": 4000
         }
       ]
     },
     {
-      "activity": "Wangxian Valley Hike",
+      "activity": "Transfer to Wangxian Valley",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Wangxian%20Valley%20Hike%20china%20tourism&w=800&h=600&fit=crop",
-          "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Wangxian%20Valley%20Hike%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Wangxian%20Valley%20Hike%20china%20tourism",
-          "query": "Wangxian Valley Hike",
-          "alt": "Wangxian Valley Hike china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Wangxian%20Valley%20Hike%20china%20tourism&w=1200",
-          "description": "Real photo of Wangxian Valley Hike china tourism",
-          "isUnsplashFeatured": true
+          "id": "pexels-22043310",
+          "url": "https://images.pexels.com/photos/22043310/pexels-photo-22043310.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/22043310/pexels-photo-22043310.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/22043310/pexels-photo-22043310.jpeg",
+          "alt": "Aerial view of a picturesque village nestled in a lush valley in Jiangxi, China, surrounded by greenery.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-houses-in-the-wangxian-valley-china-22043310/",
+          "width": 3840,
+          "height": 2160
+        },
+        {
+          "id": "pexels-29461083",
+          "url": "https://images.pexels.com/photos/29461083/pexels-photo-29461083.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/29461083/pexels-photo-29461083.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/29461083/pexels-photo-29461083.jpeg",
+          "alt": "Scenic aerial view of a red brick campus nestled in a green valley with mountains.",
+          "photographer": "jason hu",
+          "photographerUrl": "https://www.pexels.com/@hujason",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-view-of-red-brick-campus-in-lush-valley-29461083/",
+          "width": 5464,
+          "height": 3640
+        },
+        {
+          "id": "pixabay-4941701",
+          "url": "https://pixabay.com/get/g73ed6cee12039c93df6af8abf5cbfb73e7c20a5c3422a67d348d0408da746c97d31f09d1290c79cc8f49e39dae1ed17cda415fe6c8161f9b10b1cdde25047044_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2020/03/17/20/00/landscape-4941701_150.jpg",
+          "full": "https://pixabay.com/get/g1088eae64d03fcaf62e53cf13533e99fc560d88e682279c63a2e2ac55eee648784c0e408b098d2dc0170d94f12cf45441f6336444cc338767b2d8c37452f322d_1280.jpg",
+          "alt": "landscape, death valley, california, nature, adventure, death valley, death valley, death valley, death valley, death valley, california",
+          "photographer": "peterperhac",
+          "photographerUrl": "https://pixabay.com/users/peterperhac-14658406/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/landscape-death-valley-california-4941701/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-772991",
+          "url": "https://pixabay.com/get/gc9960c3d28b82f5a8f7e3fdcca2e031c6f7948826169b9341fdbeb15ae0e96319fd8a4af51a7737a84919134458b5c5b_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/18/23/53/backpacker-772991_150.jpg",
+          "full": "https://pixabay.com/get/g8b277929f5dbaf8b1a9a57b39c80eca39b5b281e8bc73b65dfb6701a5ac3fbc2f76917b9ebc16d275ccad1846700aa61d38f16031733b928830fb6dbb86f543f_1280.jpg",
+          "alt": "backpacker, mountains, panorama, viewpoint, backpacking, hiker, hiking, mountain ranges, valley, mountain valley, lake, mountain lake, landscape, nature, norway, outdoors, bessegen, man, hiking, hiking, hiking, hiking, hiking, norway, norway, norway, man, man",
+          "photographer": "Sorbyphoto",
+          "photographerUrl": "https://pixabay.com/users/Sorbyphoto-725076/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/backpacker-mountains-panorama-772991/",
+          "width": 5184,
+          "height": 2665
+        },
+        {
+          "id": "pixabay-4589831",
+          "url": "https://pixabay.com/get/g891f8817c7f34a02ced1d6adfa5b25cfdc509061271c4e536b62f43524d07795e0321f86bb8138f8816b3fdeaa3d1ac68173623a7544172d8332827a573da129_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2019/10/30/15/33/tajikistan-4589831_150.jpg",
+          "full": "https://pixabay.com/get/ga0070b8b40dd8b0f2b8ed980335354e1a10fed057b6c7836a5032001c77e9910911ea5a0beeebc287bee9148110aa2b70f5f9bd73f29cdc7861a98b14221e63d_1280.jpg",
+          "alt": "tajikistan, abe-e-panj river valley, pamir, valley, flow, water, the pamir highway, landscape, mountains, heaven, clouds, nature, province of chalton",
+          "photographer": "Makalu",
+          "photographerUrl": "https://pixabay.com/users/Makalu-680451/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/tajikistan-abe-e-panj-river-valley-4589831/",
+          "width": 5303,
+          "height": 3535
         }
       ]
     },
     {
-      "activity": "Night Views",
+      "activity": "Hike in Wangxian Valley",
       "images": [
         {
-          "url": "https://source.unsplash.com/featured/?Night%20Views%20china%20tourism&w=800&h=600&fit=crop",
+          "id": "unsplash-vQ6RpiBUpuw",
+          "url": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "a view of the mountains from a trail",
+          "photographer": "vincent huang",
+          "photographerUrl": "https://unsplash.com/@qingchen191",
           "source": "unsplash",
-          "photographer": "Unsplash Photographer",
-          "photographerUrl": "https://unsplash.com/s/photos/Night%20Views%20china%20tourism",
-          "sourceUrl": "https://unsplash.com/s/photos/Night%20Views%20china%20tourism",
-          "query": "Night Views",
-          "alt": "Night Views china tourism",
-          "downloadUrl": "https://source.unsplash.com/featured/?Night%20Views%20china%20tourism&w=1200",
-          "description": "Real photo of Night Views china tourism",
-          "isUnsplashFeatured": true
+          "sourceUrl": "https://unsplash.com/photos/vQ6RpiBUpuw",
+          "width": 4000,
+          "height": 2250
+        },
+        {
+          "id": "unsplash-ih4OoDisqVE",
+          "url": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXYW5neGlhbiUyMFZhbGxleSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0NTM3NTd8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "photography of green plant on mountain at foggy time",
+          "photographer": "Reed Xia",
+          "photographerUrl": "https://unsplash.com/@python012",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/ih4OoDisqVE",
+          "width": 3264,
+          "height": 2448
+        },
+        {
+          "id": "pexels-1531660",
+          "url": "https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/1531660/pexels-photo-1531660.jpeg",
+          "alt": "Picturesque village nestled in the Himalayas with lush greenery and towering mountains.",
+          "photographer": "James Wheeler",
+          "photographerUrl": "https://www.pexels.com/@souvenirpixels",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/white-concrete-houses-1531660/",
+          "width": 3000,
+          "height": 2000
+        },
+        {
+          "id": "pexels-17213280",
+          "url": "https://images.pexels.com/photos/17213280/pexels-photo-17213280.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/17213280/pexels-photo-17213280.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/17213280/pexels-photo-17213280.jpeg",
+          "alt": "Scenic view of Batang's snowcapped mountains and lakes in Sichuan, showcasing natural beauty.",
+          "photographer": "鱼 于",
+          "photographerUrl": "https://www.pexels.com/@576895267",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/twin-lakes-in-batang-sichuan-china-17213280/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-768333",
+          "url": "https://pixabay.com/get/gca5902d2cd8fa2e1db9a1049ee01933b7b68ec53e92e43384ca22f189e4b9f5ece3f63f57c69a96eb3dc43c09c72ba42_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/05/15/13/24/mountain-768333_150.jpg",
+          "full": "https://pixabay.com/get/g00eb5f69261ac82decc730295c8c50578ab66ee0598ec4279d1c86d1df55db5b0a75dcce4da1984b6a64a2bc388d987ec2c8551f72822101e4174fa9eb36db75_1280.jpg",
+          "alt": "mountain, hike, adventure, outdoors, andes, valley, landscape, canyon, man, nature, traveler",
+          "photographer": "Poswiecie",
+          "photographerUrl": "https://pixabay.com/users/Poswiecie-461975/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountain-hike-adventure-outdoors-768333/",
+          "width": 4752,
+          "height": 3168
+        },
+        {
+          "id": "pixabay-2534484",
+          "url": "https://pixabay.com/get/g457bd913d90c6136d95be95e305feba7ca5d4d79e58135130c643b3266143d01f6f79229f0ff74fc646fc39a3b7c00f658e114613a000d0dd16db4ca2ca0b8a8_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/07/24/12/43/schrecksee-2534484_150.jpg",
+          "full": "https://pixabay.com/get/g70292b264f1d41058672cf118393d2fc228d8361c3079d2900d2b03ba07182b0cec517637c7fc5a1815808e9682a51e78d04359d45c61ffada3f1076a9e14e8e_1280.jpg",
+          "alt": "schrecksee, mountain lake, allgäu, alps, lake, water, allgäu alps, nature, hike, heaven, outdoor, freedom, meadow, summer, high valley, island, lake, nature, nature, nature, nature, nature",
+          "photographer": "PIRO4D",
+          "photographerUrl": "https://pixabay.com/users/PIRO4D-2707530/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/schrecksee-mountain-lake-allg%C3%A4u-2534484/",
+          "width": 6750,
+          "height": 1800
+        },
+        {
+          "id": "pixabay-6486093",
+          "url": "https://pixabay.com/get/g84e50997ad8c4ba7471ee8dd9097bb104a9116d562a7faca61f2973aa107b4e1604d4bda82b6758f178ccfc137a13d467b4c6aac8bad70e1d4a9e8e701f4ec1c_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/07/22/21/55/mountains-6486093_150.jpg",
+          "full": "https://pixabay.com/get/ge4c8164642f52cbb16d85d050d5ad15d79d72bc3c62361aa50ad6ff48ca5e60f53c99203329aa0aad7b1597715c8a095a8722aa4845578c2fe5b1fb60ac70624_1280.jpg",
+          "alt": "mountains, nature, tourism, hike, alpine, in the free, goal, switzerland, gantric, summer, alps, mountains, goal, goal, goal, goal, switzerland, switzerland, switzerland, switzerland, switzerland, alps, alps, alps, alps",
+          "photographer": "Arsinoe63",
+          "photographerUrl": "https://pixabay.com/users/Arsinoe63-12474343/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountains-nature-tourism-hike-6486093/",
+          "width": 7360,
+          "height": 4912
         }
       ]
     }
-  ],
-  "researchDate": "2025-11-29T00:47:43.624Z",
-  "instructions": {
-    "howToUse": "Open the HTML file to preview and select images",
-    "altText": "Use the suggested alt text for accessibility",
-    "hotels": "Check hotel links for reviews and booking information"
-  }
+  ]
 }

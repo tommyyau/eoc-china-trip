@@ -1,0 +1,38 @@
+{
+  "day": 8,
+  "lastModified": "2025-11-29T22:04:51.714Z",
+  "pois": [
+    {
+      "id": "hero-slope-hike",
+      "name": "Hero Slope Hike",
+      "day": 8,
+      "location": "Lushan",
+      "status": "pending",
+      "summary": "Embark on an unforgettable adventure at Hero Slope Hike in Lushan, China, where breathtaking landscapes and invigorating trails await. This scenic hike offers more than just stunning views; it immerses you in the rich natural beauty of the region, with lush forests, vibrant flora, and awe-inspiring rock formations that make every step feel like a step into a painting. As you ascend, the panoramic vistas will leave you speechless, making it a perfect destination for nature lovers and photography enthusiasts alike. Whether you're a seasoned hiker or simply seeking a peaceful escape, Hero Slope promises an experience that rejuvenates the spirit and challenges the body in the heart of China's stunning mountainous terrain.",
+      "historicalContext": "Lushan, known as one of China's most famous mountain ranges, has been a retreat for scholars and poets since ancient times. The area is recognized for its historical significance, having served as a summer resort for various political figures during the Republic of China era. Today, it stands as a UNESCO World Heritage Site, celebrated for both its natural beauty and cultural heritage.",
+      "practicalTips": "Wear sturdy hiking boots for uneven terrain. Bring plenty of water to stay hydrated during your hike. Start early in the morning to avoid crowds and capture the best views. Don't forget your camera to capture the stunning scenery. Check the weather forecast beforehand to ensure a safe and enjoyable experience.",
+      "confidence": 0.7,
+      "links": [],
+      "researchedAt": "2025-11-29T22:04:44.333Z"
+    },
+    {
+      "id": "lushan-summit",
+      "name": "Lushan Summit",
+      "day": 8,
+      "location": "Lushan",
+      "status": "pending",
+      "summary": "Embark on an unforgettable adventure at Lushan Summit, where nature's breathtaking beauty meets rich cultural heritage. Nestled in the stunning Lushan Geopark, this majestic mountain range offers soaring views and a diverse landscape that spans from the mighty Yangtze River to the tranquil Poyang Lake basin. As you hike through lush forests and rugged trails, prepare to be mesmerized by cascading waterfalls, ancient temples, and vibrant flora that make every step a new discovery. Whether you're a seasoned hiker or a casual explorer, Lushan Summit promises an invigorating experience that will leave you inspired and rejuvenated.",
+      "historicalContext": "Lushan has long been a retreat for scholars, poets, and statesmen, dating back to the Tang Dynasty (618-907 AD). The area was designated as a national park in 1982, preserving its unique geological features and cultural significance, and it was recognized as a UNESCO World Heritage Site in 2013 for its stunning natural landscapes and historical sites.",
+      "practicalTips": "Wear sturdy hiking boots for the rugged terrain. Bring plenty of water and snacks to stay energized. Consider visiting during spring or autumn for the best weather and stunning foliage. Don’t forget your camera to capture the breathtaking views. Respect the local wildlife and follow marked trails for safety.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lushan_Geopark",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:04:51.215Z"
+    }
+  ]
+}

@@ -109,7 +109,13 @@ function ImageCard({ image, selected, onToggle, onSave, onPreview, showSaveButto
           position: 'absolute',
           bottom: '8px',
           left: '8px',
-          background: image.source === 'pexels' ? '#05a081' : image.source === 'unsplash' ? '#111' : '#666',
+          background: {
+            pexels: '#05a081',
+            unsplash: '#111',
+            pixabay: '#00ab6c',
+            wikimedia: '#006699',
+            custom: '#666'
+          }[image.source] || '#666',
           color: 'white',
           padding: '2px 8px',
           borderRadius: '4px',

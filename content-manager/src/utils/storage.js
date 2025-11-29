@@ -1,7 +1,9 @@
-// Storage utility using localStorage (for browser-based persistence)
-// Data is also saved to data/itinerary.json via API when available
+// Storage utility - saves to both localStorage (cache) and server file (persistent)
+// Primary storage: data/itinerary.json via API
+// Fallback/cache: localStorage
 
 const STORAGE_KEY = 'itinerary-data'
+const API_BASE = 'http://localhost:3001'
 
 // Segment types
 export const SEGMENT_TYPES = ['activity', 'transfer', 'check-in', 'check-out', 'meal', 'free-time']
@@ -145,7 +147,7 @@ export function createEmptyTripInfo() {
   }
 }
 
-// Load all days from localStorage
+// Load all days from localStorage (sync - for immediate use)
 export function loadItinerary() {
   try {
     const data = localStorage.getItem(STORAGE_KEY)
@@ -160,6 +162,36 @@ export function loadItinerary() {
     tripInfo: createEmptyTripInfo(),
     metadata: { lastModified: null, version: 2 },
     settings: { startDate: null }
+  }
+}
+
+// Load from server file and sync to localStorage (async - call on app startup)
+export async function syncFromServer() {
+  try {
+    const response = await fetch(`${API_BASE}/api/itinerary`)
+    const { itinerary } = await response.json()
+
+    if (itinerary) {
+      // Server has data - update localStorage
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(itinerary))
+      console.log('Synced itinerary from server file')
+      return itinerary
+    } else {
+      // No server data - push localStorage to server if we have any
+      const local = loadItinerary()
+      if (local.days?.length > 0) {
+        await fetch(`${API_BASE}/api/itinerary`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ itinerary: local })
+        })
+        console.log('Pushed localStorage to server file')
+      }
+      return local
+    }
+  } catch (e) {
+    console.warn('Could not sync with server:', e.message)
+    return loadItinerary()
   }
 }
 
@@ -258,14 +290,23 @@ export function renumberDays(startFrom = 1) {
   return itinerary
 }
 
-// Save all days to localStorage
+// Save all days to localStorage and server file
 export function saveItinerary(itinerary) {
   try {
     itinerary.metadata = {
       ...itinerary.metadata,
       lastModified: new Date().toISOString()
     }
+    // Save to localStorage (cache)
     localStorage.setItem(STORAGE_KEY, JSON.stringify(itinerary))
+
+    // Save to server file (persistent) - fire and forget
+    fetch(`${API_BASE}/api/itinerary`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ itinerary })
+    }).catch(e => console.warn('Could not save to server:', e.message))
+
     return true
   } catch (e) {
     console.error('Error saving itinerary:', e)
@@ -519,6 +560,17 @@ export function clearItinerary() {
 const SAVED_TRIPS_KEY = 'saved-trips'
 const CURRENT_TRIP_KEY = 'current-trip-id'
 
+// Helper to persist saved trips to server file
+function persistSavedTrips(trips) {
+  localStorage.setItem(SAVED_TRIPS_KEY, JSON.stringify(trips))
+  // Also save to server file
+  fetch(`${API_BASE}/api/saved-trips`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ trips })
+  }).catch(e => console.warn('Could not save trips to server:', e.message))
+}
+
 // Get list of all saved trips (metadata only)
 export function getSavedTrips() {
   try {
@@ -527,6 +579,35 @@ export function getSavedTrips() {
   } catch (e) {
     console.error('Error loading saved trips:', e)
     return []
+  }
+}
+
+// Sync saved trips from server (call on app startup)
+export async function syncSavedTripsFromServer() {
+  try {
+    const response = await fetch(`${API_BASE}/api/saved-trips`)
+    const { trips } = await response.json()
+
+    if (trips && trips.length > 0) {
+      localStorage.setItem(SAVED_TRIPS_KEY, JSON.stringify(trips))
+      console.log('Synced saved trips from server file')
+      return trips
+    } else {
+      // No server data - push localStorage to server if we have any
+      const local = getSavedTrips()
+      if (local.length > 0) {
+        await fetch(`${API_BASE}/api/saved-trips`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ trips: local })
+        })
+        console.log('Pushed saved trips to server file')
+      }
+      return local
+    }
+  } catch (e) {
+    console.warn('Could not sync saved trips with server:', e.message)
+    return getSavedTrips()
   }
 }
 
@@ -545,7 +626,7 @@ export function saveCurrentAs(name) {
   }
 
   trips.push(newTrip)
-  localStorage.setItem(SAVED_TRIPS_KEY, JSON.stringify(trips))
+  persistSavedTrips(trips)
   localStorage.setItem(CURRENT_TRIP_KEY, id)
 
   return newTrip
@@ -576,7 +657,7 @@ export function updateSavedTrip(id) {
   trips[index].data = current
   trips[index].lastModified = new Date().toISOString()
 
-  localStorage.setItem(SAVED_TRIPS_KEY, JSON.stringify(trips))
+  persistSavedTrips(trips)
   return trips[index]
 }
 
@@ -584,7 +665,7 @@ export function updateSavedTrip(id) {
 export function deleteSavedTrip(id) {
   const trips = getSavedTrips()
   const filtered = trips.filter(t => t.id !== id)
-  localStorage.setItem(SAVED_TRIPS_KEY, JSON.stringify(filtered))
+  persistSavedTrips(filtered)
 
   // Clear current trip ID if it was the deleted one
   if (getCurrentTripId() === id) {
@@ -601,7 +682,7 @@ export function renameSavedTrip(id, newName) {
 
   trip.name = newName
   trip.lastModified = new Date().toISOString()
-  localStorage.setItem(SAVED_TRIPS_KEY, JSON.stringify(trips))
+  persistSavedTrips(trips)
 
   return trip
 }

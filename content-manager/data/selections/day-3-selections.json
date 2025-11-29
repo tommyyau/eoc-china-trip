@@ -1,0 +1,67 @@
+{
+  "day": 3,
+  "lastModified": "2025-11-29T20:48:56.103Z",
+  "segments": {
+    "3-0-1764446850029": {
+      "name": "Visit Terracotta Warrior Museum",
+      "images": [
+        {
+          "id": "zj_o9jdYk_4",
+          "url": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people wearing white hats with Terracotta Army in the background",
+          "photographer": "Kevin Engelke",
+          "photographerUrl": "https://unsplash.com/@twopixelsdesign",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/a-group-of-people-wearing-white-hats-with-terracotta-army-in-the-background-zj_o9jdYk_4",
+          "downloadUrl": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "BOM5u4_VWlI",
+          "url": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "Terracotta army soldiers standing in formation.",
+          "photographer": "David An",
+          "photographerUrl": "https://unsplash.com/@david_an",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/terracotta-army-soldiers-standing-in-formation-BOM5u4_VWlI",
+          "downloadUrl": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "width": 6960,
+          "height": 3504
+        },
+        {
+          "id": 18338672,
+          "url": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
+          "alt": "A captivating view of the ancient Terracotta Army in Xi'an, highlighting historical artistry.",
+          "photographer": "TonyNojmanSK",
+          "photographerUrl": "https://www.pexels.com/@tonynojmansk-186688133",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/view-of-the-terracotta-army-18338672/",
+          "downloadUrl": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
+          "width": 4887,
+          "height": 2751
+        },
+        {
+          "id": 30584842,
+          "url": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
+          "alt": "Close-up of terracotta warriors in Xi'an, capturing historical artistry and detail.",
+          "photographer": "Ala J Graczyk",
+          "photographerUrl": "https://www.pexels.com/@alice1",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/terracotta-warriors-in-xi-an-china-30584842/",
+          "downloadUrl": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
+          "width": 5467,
+          "height": 3545
+        }
+      ]
+    }
+  }
+}

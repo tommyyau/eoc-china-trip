@@ -430,7 +430,7 @@ function Dashboard() {
                 {/* Day content - clickable */}
                 <Link to={`/day/${day.day}`} style={{ flex: 1, display: 'flex', justifyContent: 'space-between', alignItems: 'center', textDecoration: 'none', color: 'inherit' }}>
                   <div className="day-info">
-                    <h3>{getDayLabel(day.day)}: {day.enhanced?.title || day.original?.title || 'Untitled'}</h3>
+                    <h3>{getDayLabel(day.day)}: {day.title || day.enhanced?.title || day.original?.title || 'Untitled'}</h3>
                     <p>{getDisplayDate(day)} • {day.enhanced?.location || day.original?.location || 'Location TBD'}</p>
                   </div>
                   <span className={`status ${day.status}`}>
