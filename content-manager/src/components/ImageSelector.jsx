@@ -13,7 +13,6 @@ function SelectedImageThumb({ image, onPreview, onDelete }) {
     <div
       style={{
         position: 'relative',
-        flexShrink: 0,
         cursor: 'pointer'
       }}
       onMouseEnter={() => setIsHovered(true)}
@@ -24,11 +23,11 @@ function SelectedImageThumb({ image, onPreview, onDelete }) {
         alt={image.alt}
         onClick={onPreview}
         style={{
-          width: '100px',
-          height: '70px',
+          width: '100%',
+          height: '75px',
           objectFit: 'cover',
           borderRadius: '6px',
-          border: '3px solid #27ae60',
+          border: '2px solid #27ae60',
           transition: 'opacity 0.2s',
           opacity: isHovered ? 0.7 : 1
         }}
@@ -47,13 +46,10 @@ function SelectedImageThumb({ image, onPreview, onDelete }) {
             borderRadius: '6px',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            gap: '2px'
+            justifyContent: 'center'
           }}
         >
-          <span style={{ fontSize: '1.5rem' }}>🗑️</span>
-          <span style={{ color: 'white', fontSize: '0.7rem', fontWeight: 'bold' }}>Remove</span>
+          <span style={{ fontSize: '1.2rem' }}>🗑️</span>
         </div>
       )}
     </div>
@@ -318,156 +314,130 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
           ))}
         </div>
 
-        {/* Content */}
-        <div style={{ flex: 1, overflow: 'auto', padding: '20px' }}>
-          {/* Research Tab */}
-          {activeTab === 'research' && (
-            <div>
-              {loading ? (
-                <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
-                  Loading research data...
-                </div>
-              ) : researchImages.length === 0 ? (
-                <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
-                  <p>No research images found for this segment.</p>
-                  <p style={{ marginTop: '10px' }}>Try the <strong>Search New</strong> tab with suggested term: <code style={{ background: '#f0f0f0', padding: '4px 8px', borderRadius: '4px' }}>{searchTerm}</code></p>
-                </div>
-              ) : (
-                <>
-                  {/* Show search terms info - prominently displayed */}
-                  <div style={{ marginBottom: '20px', padding: '15px', background: '#1a5f7a', borderRadius: '8px', color: 'white' }}>
-                    <div style={{ fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '10px' }}>
-                      🔍 Search Terms Used
-                    </div>
-                    {matchingActivity ? (
-                      <div style={{ background: 'rgba(255,255,255,0.15)', padding: '10px', borderRadius: '6px' }}>
-                        <div style={{ fontWeight: 'bold', marginBottom: '5px' }}>
-                          ✓ {matchingActivity.name}
-                        </div>
-                        <div style={{ fontFamily: 'monospace', fontSize: '0.95rem', background: 'rgba(255,255,255,0.2)', padding: '6px 10px', borderRadius: '4px' }}>
-                          {matchingActivity.searchTerm}
-                        </div>
-                      </div>
-                    ) : (
-                      <div>
-                        <div style={{ marginBottom: '8px', opacity: 0.9 }}>
-                          All {allSearchTerms.length} activities for Day {dayNumber}:
-                        </div>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                          {allSearchTerms.map((item, idx) => (
-                            <div key={idx} style={{ background: 'rgba(255,255,255,0.15)', padding: '8px 10px', borderRadius: '6px' }}>
-                              <div style={{ fontWeight: 'bold', fontSize: '0.9rem' }}>{item.name}</div>
-                              <div style={{ fontFamily: 'monospace', fontSize: '0.85rem', opacity: 0.9 }}>{item.searchTerm}</div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
+        {/* Main Content Area with Sidebar */}
+        <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
+          {/* Left: Tab Content */}
+          <div style={{ flex: 1, overflow: 'auto', padding: '20px' }}>
+            {/* Research Tab */}
+            {activeTab === 'research' && (
+              <div>
+                {loading ? (
+                  <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
+                    Loading research data...
                   </div>
-
-                  <p style={{ marginBottom: '15px', color: '#666' }}>
-                    Click an image to view full-screen, or click the checkbox to select/deselect.
-                  </p>
-                  <ImageGrid
-                    images={researchImages}
-                    selectedIds={selectedIds}
-                    onToggle={handleToggleImage}
-                    onPreview={openLightbox}
-                  />
-                </>
-              )}
-            </div>
-          )}
-
-          {/* Search Tab */}
-          {activeTab === 'search' && (
-            <div>
-              {/* Prominent search term suggestion */}
-              <div style={{ marginBottom: '20px', padding: '15px', background: '#2e7d32', borderRadius: '8px', color: 'white' }}>
-                <div style={{ fontWeight: 'bold', fontSize: '1.1rem', marginBottom: '8px' }}>
-                  💡 Suggested Search Term
-                </div>
-                <div style={{ fontFamily: 'monospace', fontSize: '1rem', background: 'rgba(255,255,255,0.2)', padding: '8px 12px', borderRadius: '6px' }}>
-                  {searchTerm || 'No suggestion available'}
-                </div>
+                ) : researchImages.length === 0 ? (
+                  <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
+                    <p>No research images found for this segment.</p>
+                    <p style={{ marginTop: '10px' }}>Try the <strong>Search New</strong> tab with suggested term: <code style={{ background: '#f0f0f0', padding: '4px 8px', borderRadius: '4px' }}>{searchTerm}</code></p>
+                  </div>
+                ) : (
+                  <>
+                    <p style={{ marginBottom: '15px', color: '#666', fontSize: '0.9rem' }}>
+                      Click image to preview full-screen, or use checkbox to select.
+                      <span style={{
+                        display: 'inline-block',
+                        marginLeft: '10px',
+                        padding: '2px 8px',
+                        background: '#1a5f7a',
+                        color: 'white',
+                        borderRadius: '4px',
+                        fontSize: '0.85rem'
+                      }}>
+                        🔍 {searchTerm ? `"${searchTerm.substring(0, 30)}${searchTerm.length > 30 ? '...' : ''}"` : 'all activities'}
+                      </span>
+                    </p>
+                    <ImageGrid
+                      images={researchImages}
+                      selectedIds={selectedIds}
+                      onToggle={handleToggleImage}
+                      onPreview={openLightbox}
+                    />
+                  </>
+                )}
               </div>
-              <ImageSearch
-                onAddImage={handleAddFromSearch}
-                onPreview={openLightbox}
-                initialQuery={searchTerm}
-              />
-            </div>
-          )}
+            )}
 
-          {/* Custom URL Tab */}
-          {activeTab === 'custom' && (
-            <div>
-              <p style={{ marginBottom: '15px', color: '#666' }}>
-                Add any image by pasting its URL. Use this for images not available on Pexels/Unsplash.
-              </p>
-              <div style={{ maxWidth: '600px' }}>
-                <div style={{ marginBottom: '15px' }}>
-                  <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
-                    Image URL
-                  </label>
-                  <input
-                    type="url"
-                    value={customUrl}
-                    onChange={(e) => setCustomUrl(e.target.value)}
-                    placeholder="https://example.com/image.jpg"
+            {/* Search Tab */}
+            {activeTab === 'search' && (
+              <div>
+                <ImageSearch
+                  onAddImage={handleAddFromSearch}
+                  onPreview={openLightbox}
+                  initialQuery={searchTerm}
+                />
+              </div>
+            )}
+
+            {/* Custom URL Tab */}
+            {activeTab === 'custom' && (
+              <div>
+                <p style={{ marginBottom: '15px', color: '#666', fontSize: '0.9rem' }}>
+                  Paste any image URL to add it to your selection.
+                </p>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-end', flexWrap: 'wrap' }}>
+                  <div style={{ flex: 1, minWidth: '250px' }}>
+                    <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', fontSize: '0.9rem' }}>
+                      Image URL
+                    </label>
+                    <input
+                      type="url"
+                      value={customUrl}
+                      onChange={(e) => setCustomUrl(e.target.value)}
+                      placeholder="https://example.com/image.jpg"
+                      style={{
+                        width: '100%',
+                        padding: '10px',
+                        border: '2px solid #e0e0e0',
+                        borderRadius: '6px',
+                        fontSize: '1rem'
+                      }}
+                    />
+                  </div>
+                  <div style={{ width: '200px' }}>
+                    <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', fontSize: '0.9rem' }}>
+                      Alt Text <span style={{ fontWeight: 'normal', color: '#999' }}>(optional)</span>
+                    </label>
+                    <input
+                      type="text"
+                      value={customAlt}
+                      onChange={(e) => setCustomAlt(e.target.value)}
+                      placeholder="Description"
+                      style={{
+                        width: '100%',
+                        padding: '10px',
+                        border: '2px solid #e0e0e0',
+                        borderRadius: '6px',
+                        fontSize: '1rem'
+                      }}
+                    />
+                  </div>
+                  <button
+                    onClick={handleAddCustomUrl}
+                    disabled={!customUrl.trim()}
                     style={{
-                      width: '100%',
-                      padding: '10px',
-                      border: '2px solid #e0e0e0',
+                      padding: '10px 20px',
+                      background: customUrl.trim() ? '#27ae60' : '#ccc',
+                      color: 'white',
+                      border: 'none',
                       borderRadius: '6px',
-                      fontSize: '1rem'
+                      cursor: customUrl.trim() ? 'pointer' : 'not-allowed',
+                      fontWeight: 'bold',
+                      height: '44px'
                     }}
-                  />
+                  >
+                    + Add
+                  </button>
                 </div>
-                <div style={{ marginBottom: '15px' }}>
-                  <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}>
-                    Alt Text (optional)
-                  </label>
-                  <input
-                    type="text"
-                    value={customAlt}
-                    onChange={(e) => setCustomAlt(e.target.value)}
-                    placeholder="Description of the image"
-                    style={{
-                      width: '100%',
-                      padding: '10px',
-                      border: '2px solid #e0e0e0',
-                      borderRadius: '6px',
-                      fontSize: '1rem'
-                    }}
-                  />
-                </div>
-                <button
-                  onClick={handleAddCustomUrl}
-                  disabled={!customUrl.trim()}
-                  style={{
-                    padding: '10px 25px',
-                    background: customUrl.trim() ? '#27ae60' : '#ccc',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '6px',
-                    cursor: customUrl.trim() ? 'pointer' : 'not-allowed',
-                    fontWeight: 'bold'
-                  }}
-                >
-                  Add Image
-                </button>
 
                 {/* Preview */}
                 {customUrl && (
                   <div style={{ marginTop: '20px' }}>
-                    <h4>Preview:</h4>
                     <img
                       src={customUrl}
                       alt="Preview"
                       style={{
                         maxWidth: '100%',
-                        maxHeight: '200px',
+                        maxHeight: '300px',
                         borderRadius: '8px',
                         border: '2px solid #e0e0e0'
                       }}
@@ -476,32 +446,57 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
                   </div>
                 )}
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
 
-        {/* Selected Images Section */}
-        {selectedImages.length > 0 && (
+          {/* Right Sidebar: Selected Images */}
           <div style={{
-            padding: '15px 20px',
-            borderTop: '1px solid #e0e0e0',
-            background: '#f9f9f9'
+            width: '140px',
+            borderLeft: '1px solid #e0e0e0',
+            background: '#f9f9f9',
+            display: 'flex',
+            flexDirection: 'column',
+            flexShrink: 0
           }}>
-            <h4 style={{ margin: '0 0 10px' }}>
-              Selected Images ({selectedImages.length})
-            </h4>
-            <div style={{ display: 'flex', gap: '15px', overflowX: 'auto', paddingBottom: '10px', paddingTop: '5px' }}>
-              {selectedImages.map(img => (
-                <SelectedImageThumb
-                  key={img.id}
-                  image={img}
-                  onPreview={() => openLightbox(img)}
-                  onDelete={() => setDeleteConfirm(img.id)}
-                />
-              ))}
+            <div style={{
+              padding: '12px 10px',
+              borderBottom: '1px solid #e0e0e0',
+              fontWeight: 'bold',
+              fontSize: '0.85rem',
+              color: '#333'
+            }}>
+              Selected ({selectedImages.length})
+            </div>
+            <div style={{
+              flex: 1,
+              overflow: 'auto',
+              padding: '10px',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '10px'
+            }}>
+              {selectedImages.length === 0 ? (
+                <div style={{
+                  color: '#999',
+                  fontSize: '0.8rem',
+                  textAlign: 'center',
+                  padding: '20px 5px'
+                }}>
+                  No images selected yet
+                </div>
+              ) : (
+                selectedImages.map(img => (
+                  <SelectedImageThumb
+                    key={img.id}
+                    image={img}
+                    onPreview={() => openLightbox(img)}
+                    onDelete={() => setDeleteConfirm(img.id)}
+                  />
+                ))
+              )}
             </div>
           </div>
-        )}
+        </div>
 
         {/* Footer */}
         <div style={{

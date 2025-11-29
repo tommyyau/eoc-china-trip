@@ -13,6 +13,7 @@ function DayEditor() {
   const [activeTab, setActiveTab] = useState('overview')
   const [imageSelections, setImageSelections] = useState({})
   const [showImageSelector, setShowImageSelector] = useState(null) // { segmentId, segmentTitle }
+  const [isRawTextExpanded, setIsRawTextExpanded] = useState(false)
 
   const loadDay = () => {
     const data = getDay(parseInt(dayNumber))
@@ -116,19 +117,26 @@ function DayEditor() {
   }
 
   const getTotalImageCount = () => {
-    return Object.values(imageSelections).reduce((sum, seg) => sum + (seg.images?.length || 0), 0)
+    // Only count images for segments that exist in current day data
+    const validSegmentIds = new Set([
+      'day-overview',
+      ...(day?.segments?.map(s => s.id) || [])
+    ])
+    return Object.entries(imageSelections)
+      .filter(([segmentId]) => validSegmentIds.has(segmentId))
+      .reduce((sum, [, seg]) => sum + (seg.images?.length || 0), 0)
   }
 
-  // Get segment type color
-  const getSegmentColor = (type) => {
+  // Get segment type border color (subtle left accent)
+  const getSegmentBorderColor = (type) => {
     switch (type) {
-      case 'transfer': return '#fef3c7'
-      case 'activity': return '#dbeafe'
-      case 'meal': return '#dcfce7'
+      case 'transfer': return '#f59e0b' // amber
+      case 'activity': return '#6366f1' // indigo
+      case 'meal': return '#10b981' // emerald
       case 'check-in':
-      case 'check-out': return '#f3e8ff'
-      case 'free-time': return '#fce7f3'
-      default: return '#f3f4f6'
+      case 'check-out': return '#8b5cf6' // violet
+      case 'free-time': return '#ec4899' // pink
+      default: return '#9ca3af' // gray
     }
   }
 
@@ -146,7 +154,7 @@ function DayEditor() {
           <select
             value={day.status}
             onChange={e => handleStatusChange(e.target.value)}
-            style={{ padding: '8px', borderRadius: '6px', border: '1px solid #ddd' }}
+            style={{ padding: '8px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', background: '#ffffff', color: '#374151', fontSize: '0.875rem' }}
           >
             <option value="draft">Draft</option>
             <option value="in-progress">In Progress</option>
@@ -170,50 +178,150 @@ function DayEditor() {
         ))}
       </div>
 
-      {/* Overview Tab - Side by side: Original + Segments */}
+      {/* Overview Tab - Single column with collapsible raw text */}
       {activeTab === 'overview' && (
-        <div className="comparison">
-          {/* Original Raw Text */}
-          <div className="comparison-panel original">
-            <h3>Original (Raw Text)</h3>
-            <div style={{ background: 'white', padding: '12px', borderRadius: '6px', whiteSpace: 'pre-wrap', maxHeight: 'calc(100vh - 250px)', overflow: 'auto', fontSize: '0.85rem', lineHeight: '1.6' }}>
-              {day.original?.rawText || <em style={{ color: '#999' }}>No raw text available. Re-import your itinerary to capture the original text for each day.</em>}
-            </div>
+        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+          {/* Collapsible Raw Text Panel */}
+          <div style={{
+            marginBottom: '16px',
+            border: '1px solid #e5e7eb',
+            borderRadius: '8px',
+            background: '#ffffff'
+          }}>
+            <button
+              onClick={() => setIsRawTextExpanded(!isRawTextExpanded)}
+              style={{
+                width: '100%',
+                padding: '12px 16px',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
+                fontSize: '0.875rem',
+                fontWeight: 500,
+                color: '#6b7280'
+              }}
+            >
+              <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '0.7rem', color: '#9ca3af' }}>{isRawTextExpanded ? '▼' : '▶'}</span>
+                Original Text
+              </span>
+              <span style={{ fontSize: '0.75rem', color: '#9ca3af' }}>
+                {day.original?.rawText ? (isRawTextExpanded ? 'Click to collapse' : 'Click to expand') : 'No text available'}
+              </span>
+            </button>
+            {isRawTextExpanded && (
+              <div style={{
+                padding: '0 16px 16px 16px',
+                maxHeight: '250px',
+                overflow: 'auto'
+              }}>
+                <div style={{
+                  background: '#f9fafb',
+                  padding: '12px',
+                  borderRadius: '6px',
+                  whiteSpace: 'pre-wrap',
+                  fontSize: '0.85rem',
+                  lineHeight: '1.6',
+                  color: '#374151'
+                }}>
+                  {day.original?.rawText || <em style={{ color: '#9ca3af' }}>No raw text available. Re-import your itinerary to capture the original text for each day.</em>}
+                </div>
+              </div>
+            )}
           </div>
 
-          {/* Segments Editor */}
-          <div className="comparison-panel enhanced">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '15px' }}>
-              <h3 style={{ margin: 0 }}>Segments ({day.segments?.length || 0})</h3>
-              <button className="primary" onClick={handleAddSegment} style={{ padding: '6px 12px', fontSize: '0.85rem' }}>
-                + Add Segment
+          {/* Day Overview Images Strip */}
+          <div style={{
+            marginBottom: '16px',
+            padding: '12px 16px',
+            background: '#ffffff',
+            borderRadius: '8px',
+            border: '1px solid #e5e7eb'
+          }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: imageSelections['day-overview']?.images?.length > 0 ? '12px' : '0' }}>
+              <span style={{ fontSize: '0.875rem', fontWeight: 500, color: '#6b7280' }}>Day Images</span>
+              <button
+                onClick={() => handleOpenImageSelector('day-overview', day.title || `Day ${day.day}`)}
+                style={{
+                  padding: '6px 12px',
+                  fontSize: '0.8rem',
+                  background: '#6366f1',
+                  color: 'white',
+                  border: 'none',
+                  borderRadius: '6px',
+                  cursor: 'pointer',
+                  fontWeight: 500
+                }}
+              >
+                {imageSelections['day-overview']?.images?.length > 0 ? `Edit (${imageSelections['day-overview'].images.length})` : '+ Add'}
               </button>
             </div>
-
-            {(!day.segments || day.segments.length === 0) ? (
-              <div style={{ padding: '30px', textAlign: 'center', color: '#666', background: '#f9f9f9', borderRadius: '8px' }}>
-                <p>No segments yet.</p>
-                <p style={{ fontSize: '0.85rem' }}>Segments are the structured activities, transfers, and events for this day.</p>
+            {imageSelections['day-overview']?.images?.length > 0 && (
+              <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                {imageSelections['day-overview'].images.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img.thumb || img.url}
+                    alt={img.alt}
+                    style={{ width: '100px', height: '70px', objectFit: 'cover', borderRadius: '6px', cursor: 'pointer' }}
+                    onClick={() => handleOpenImageSelector('day-overview', day.title || `Day ${day.day}`)}
+                  />
+                ))}
               </div>
-            ) : (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', maxHeight: 'calc(100vh - 300px)', overflow: 'auto' }}>
-                {day.segments.map((segment, idx) => (
+            )}
+          </div>
+
+          {/* Segments Header */}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+            <h3 style={{ margin: 0, fontSize: '0.875rem', fontWeight: 600, color: '#374151' }}>Segments ({day.segments?.length || 0})</h3>
+            <button
+              onClick={handleAddSegment}
+              style={{
+                padding: '6px 12px',
+                fontSize: '0.8rem',
+                background: '#6366f1',
+                color: 'white',
+                border: 'none',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontWeight: 500
+              }}
+            >
+              + Add Segment
+            </button>
+          </div>
+
+          {/* Segments List */}
+          {(!day.segments || day.segments.length === 0) ? (
+            <div style={{ padding: '40px 30px', textAlign: 'center', color: '#6b7280', background: '#f9fafb', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+              <p style={{ margin: '0 0 8px 0', fontWeight: 500 }}>No segments yet</p>
+              <p style={{ fontSize: '0.85rem', margin: 0, color: '#9ca3af' }}>Segments are the structured activities, transfers, and events for this day.</p>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {day.segments.map((segment, idx) => {
+                const segmentImages = imageSelections[segment.id]?.images || []
+                return (
                   <div
                     key={segment.id}
                     style={{
-                      background: getSegmentColor(segment.type),
-                      padding: '12px',
+                      background: '#ffffff',
+                      padding: '16px',
                       borderRadius: '8px',
-                      border: '1px solid rgba(0,0,0,0.1)'
+                      border: '1px solid #e5e7eb',
+                      borderLeft: `4px solid ${getSegmentBorderColor(segment.type)}`
                     }}
                   >
                     {/* Segment Header */}
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                       <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                         <select
                           value={segment.time || ''}
                           onChange={e => handleSegmentChange(segment.id, 'time', e.target.value)}
-                          style={{ padding: '4px 8px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '6px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.8rem', color: '#374151', background: '#ffffff' }}
                         >
                           <option value="">Time</option>
                           {TIME_OPTIONS.map(t => <option key={t} value={t}>{t}</option>)}
@@ -221,14 +329,14 @@ function DayEditor() {
                         <select
                           value={segment.type || 'activity'}
                           onChange={e => handleSegmentChange(segment.id, 'type', e.target.value)}
-                          style={{ padding: '4px 8px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '6px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.8rem', color: '#374151', background: '#ffffff' }}
                         >
                           {SEGMENT_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
                         </select>
                       </div>
                       <button
                         onClick={() => handleDeleteSegment(segment.id)}
-                        style={{ padding: '4px 8px', fontSize: '0.75rem', background: '#fee2e2', color: '#dc2626', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
+                        style={{ padding: '6px 12px', fontSize: '0.75rem', background: '#ffffff', color: '#dc2626', border: '1px solid #fecaca', borderRadius: '6px', cursor: 'pointer', fontWeight: 500 }}
                       >
                         Delete
                       </button>
@@ -240,30 +348,30 @@ function DayEditor() {
                       value={segment.title || ''}
                       onChange={e => handleSegmentChange(segment.id, 'title', e.target.value)}
                       placeholder="Segment title"
-                      style={{ width: '100%', padding: '8px', marginBottom: '8px', borderRadius: '4px', border: '1px solid #ddd', fontWeight: 500 }}
+                      style={{ width: '100%', padding: '10px 12px', marginBottom: '10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontWeight: 500, fontSize: '0.95rem', color: '#1f2937', background: '#ffffff' }}
                     />
 
                     {/* Type-specific fields */}
                     {segment.type === 'transfer' && (
-                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '8px' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '10px' }}>
                         <input
                           type="text"
                           value={segment.from || ''}
                           onChange={e => handleSegmentChange(segment.id, 'from', e.target.value)}
                           placeholder="From"
-                          style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                         />
                         <input
                           type="text"
                           value={segment.to || ''}
                           onChange={e => handleSegmentChange(segment.id, 'to', e.target.value)}
                           placeholder="To"
-                          style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                         />
                         <select
                           value={segment.mode || ''}
                           onChange={e => handleSegmentChange(segment.id, 'mode', e.target.value)}
-                          style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                         >
                           <option value="">Transport mode</option>
                           {TRANSFER_MODES.map(m => <option key={m} value={m}>{m}</option>)}
@@ -273,50 +381,50 @@ function DayEditor() {
                           value={segment.duration || ''}
                           onChange={e => handleSegmentChange(segment.id, 'duration', e.target.value)}
                           placeholder="Duration"
-                          style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                         />
                       </div>
                     )}
 
                     {segment.type === 'activity' && (
                       <>
-                        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '8px', marginBottom: '8px' }}>
+                        <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '8px', marginBottom: '10px' }}>
                           <input
                             type="text"
                             value={segment.location || ''}
                             onChange={e => handleSegmentChange(segment.id, 'location', e.target.value)}
                             placeholder="Location"
-                            style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                            style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                           />
                           <input
                             type="text"
                             value={segment.duration || ''}
                             onChange={e => handleSegmentChange(segment.id, 'duration', e.target.value)}
                             placeholder="Duration"
-                            style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                            style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                           />
                         </div>
                         {/* Walk Details for activities */}
                         {segment.walkDetails && (
-                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '8px', marginBottom: '8px', background: 'rgba(255,255,255,0.5)', padding: '8px', borderRadius: '4px' }}>
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '8px', marginBottom: '10px', background: '#f3f4f6', padding: '10px', borderRadius: '6px' }}>
                             <input
                               type="text"
                               value={segment.walkDetails.distance || ''}
                               onChange={e => handleSegmentChange(segment.id, 'walkDetails', { ...segment.walkDetails, distance: e.target.value })}
                               placeholder="Distance"
-                              style={{ padding: '4px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.8rem' }}
+                              style={{ padding: '6px 8px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.8rem', color: '#374151', background: '#ffffff' }}
                             />
                             <input
                               type="text"
                               value={segment.walkDetails.elevation || ''}
                               onChange={e => handleSegmentChange(segment.id, 'walkDetails', { ...segment.walkDetails, elevation: e.target.value })}
                               placeholder="Elevation"
-                              style={{ padding: '4px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.8rem' }}
+                              style={{ padding: '6px 8px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.8rem', color: '#374151', background: '#ffffff' }}
                             />
                             <select
                               value={segment.walkDetails.difficulty || ''}
                               onChange={e => handleSegmentChange(segment.id, 'walkDetails', { ...segment.walkDetails, difficulty: e.target.value })}
-                              style={{ padding: '4px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.8rem' }}
+                              style={{ padding: '6px 8px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.8rem', color: '#374151', background: '#ffffff' }}
                             >
                               <option value="">Difficulty</option>
                               <option value="easy">Easy</option>
@@ -329,20 +437,20 @@ function DayEditor() {
                     )}
 
                     {(segment.type === 'meal' || segment.type === 'check-in' || segment.type === 'check-out') && (
-                      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '8px', marginBottom: '8px' }}>
+                      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '8px', marginBottom: '10px' }}>
                         <input
                           type="text"
                           value={segment.location || ''}
                           onChange={e => handleSegmentChange(segment.id, 'location', e.target.value)}
                           placeholder="Location"
-                          style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                         />
                         <input
                           type="text"
                           value={segment.duration || ''}
                           onChange={e => handleSegmentChange(segment.id, 'duration', e.target.value)}
                           placeholder="Duration"
-                          style={{ padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem' }}
+                          style={{ padding: '8px 10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', color: '#374151', background: '#ffffff' }}
                         />
                       </div>
                     )}
@@ -352,26 +460,90 @@ function DayEditor() {
                       value={segment.description || ''}
                       onChange={e => handleSegmentChange(segment.id, 'description', e.target.value)}
                       placeholder="Description"
-                      style={{ width: '100%', padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.85rem', minHeight: '60px', resize: 'vertical' }}
+                      style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', minHeight: '70px', resize: 'vertical', color: '#374151', background: '#ffffff' }}
                     />
 
                     {/* Highlights for activities */}
                     {segment.type === 'activity' && (
-                      <div style={{ marginTop: '8px' }}>
-                        <label style={{ fontSize: '0.75rem', color: '#666', display: 'block', marginBottom: '4px' }}>Highlights (one per line)</label>
+                      <div style={{ marginTop: '10px' }}>
+                        <label style={{ fontSize: '0.75rem', color: '#6b7280', display: 'block', marginBottom: '6px', fontWeight: 500 }}>Highlights (one per line)</label>
                         <textarea
                           value={segment.highlights?.join('\n') || ''}
                           onChange={e => handleSegmentChange(segment.id, 'highlights', e.target.value.split('\n').filter(h => h.trim()))}
                           placeholder="Key points..."
-                          style={{ width: '100%', padding: '6px', borderRadius: '4px', border: '1px solid #ddd', fontSize: '0.8rem', minHeight: '50px', resize: 'vertical' }}
+                          style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.85rem', minHeight: '60px', resize: 'vertical', color: '#374151', background: '#ffffff' }}
                         />
                       </div>
                     )}
+
+                    {/* Inline Segment Images */}
+                    <div style={{
+                      marginTop: '12px',
+                      paddingTop: '12px',
+                      borderTop: '1px solid #e5e7eb',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      flexWrap: 'wrap'
+                    }}>
+                      {segmentImages.length > 0 ? (
+                        <>
+                          {segmentImages.map((img, imgIdx) => (
+                            <img
+                              key={imgIdx}
+                              src={img.thumb || img.url}
+                              alt={img.alt}
+                              style={{
+                                width: '100px',
+                                height: '70px',
+                                objectFit: 'cover',
+                                borderRadius: '6px',
+                                cursor: 'pointer'
+                              }}
+                              onClick={() => handleOpenImageSelector(segment.id, segment.title || segment.type)}
+                            />
+                          ))}
+                          <button
+                            onClick={() => handleOpenImageSelector(segment.id, segment.title || segment.type)}
+                            style={{
+                              width: '100px',
+                              height: '70px',
+                              border: '1px dashed #d1d5db',
+                              borderRadius: '6px',
+                              background: '#f9fafb',
+                              cursor: 'pointer',
+                              fontSize: '0.75rem',
+                              color: '#6b7280'
+                            }}
+                          >
+                            + Add more
+                          </button>
+                        </>
+                      ) : (
+                        <button
+                          onClick={() => handleOpenImageSelector(segment.id, segment.title || segment.type)}
+                          style={{
+                            padding: '8px 14px',
+                            border: '1px dashed #d1d5db',
+                            borderRadius: '6px',
+                            background: '#f9fafb',
+                            cursor: 'pointer',
+                            fontSize: '0.8rem',
+                            color: '#6b7280',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '6px'
+                          }}
+                        >
+                          <span>📷</span> Add images
+                        </button>
+                      )}
+                    </div>
                   </div>
-                ))}
-              </div>
-            )}
-          </div>
+                )
+              })}
+            </div>
+          )}
         </div>
       )}
 
@@ -473,11 +645,11 @@ function DayEditor() {
 
       {/* Walk Details Tab */}
       {activeTab === 'walk' && (
-        <div className="card">
-          <h2>Walk Details</h2>
-          <div className="grid-2">
+        <div style={{ maxWidth: '800px', margin: '0 auto', background: '#ffffff', padding: '24px', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+          <h2 style={{ margin: '0 0 20px 0', fontSize: '1.25rem', color: '#1f2937' }}>Walk Details</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '16px' }}>
             <div>
-              <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>Distance</label>
+              <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>Distance</label>
               <input
                 type="text"
                 value={day.walkDetails?.distance || ''}
@@ -486,10 +658,11 @@ function DayEditor() {
                   walkDetails: { ...day.walkDetails, distance: e.target.value }
                 })}
                 placeholder="e.g., 13.7km"
+                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff' }}
               />
             </div>
             <div>
-              <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>Elevation</label>
+              <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>Elevation</label>
               <input
                 type="text"
                 value={day.walkDetails?.elevation || ''}
@@ -498,27 +671,28 @@ function DayEditor() {
                   walkDetails: { ...day.walkDetails, elevation: e.target.value }
                 })}
                 placeholder="e.g., 500m gain"
+                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff' }}
               />
             </div>
-            <div>
-              <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>Difficulty</label>
-              <select
-                value={day.walkDetails?.difficulty || ''}
-                onChange={e => setDay({
-                  ...day,
-                  walkDetails: { ...day.walkDetails, difficulty: e.target.value }
-                })}
-                style={{ width: '100%', padding: '10px', borderRadius: '6px', border: '1px solid #ddd' }}
-              >
-                <option value="">Select difficulty</option>
-                <option value="easy">Easy</option>
-                <option value="moderate">Moderate</option>
-                <option value="challenging">Challenging</option>
-              </select>
-            </div>
           </div>
-          <div style={{ marginTop: '15px' }}>
-            <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>Route Description</label>
+          <div style={{ marginBottom: '16px' }}>
+            <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>Difficulty</label>
+            <select
+              value={day.walkDetails?.difficulty || ''}
+              onChange={e => setDay({
+                ...day,
+                walkDetails: { ...day.walkDetails, difficulty: e.target.value }
+              })}
+              style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff' }}
+            >
+              <option value="">Select difficulty</option>
+              <option value="easy">Easy</option>
+              <option value="moderate">Moderate</option>
+              <option value="challenging">Challenging</option>
+            </select>
+          </div>
+          <div>
+            <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>Route Description</label>
             <textarea
               value={day.walkDetails?.route || ''}
               onChange={e => setDay({
@@ -526,6 +700,7 @@ function DayEditor() {
                 walkDetails: { ...day.walkDetails, route: e.target.value }
               })}
               placeholder="Describe the route, starting point, key landmarks..."
+              style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '120px', resize: 'vertical' }}
             />
           </div>
         </div>
@@ -533,15 +708,15 @@ function DayEditor() {
 
       {/* POI Tab */}
       {activeTab === 'poi' && (
-        <div className="card">
-          <h2>Points of Interest</h2>
-          <p style={{ color: '#666', marginBottom: '15px' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', background: '#ffffff', padding: '24px', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+          <h2 style={{ margin: '0 0 8px 0', fontSize: '1.25rem', color: '#1f2937' }}>Points of Interest</h2>
+          <p style={{ color: '#6b7280', marginBottom: '20px', fontSize: '0.875rem' }}>
             Add detailed information about places mentioned in this day's itinerary.
           </p>
 
           {day.pointsOfInterest?.map((poi, idx) => (
-            <div key={idx} style={{ background: '#f9f9f9', padding: '15px', borderRadius: '8px', marginBottom: '15px' }}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px' }}>
+            <div key={idx} style={{ background: '#f9fafb', padding: '16px', borderRadius: '8px', marginBottom: '12px', border: '1px solid #e5e7eb' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', gap: '12px' }}>
                 <input
                   type="text"
                   value={poi.name}
@@ -551,14 +726,14 @@ function DayEditor() {
                     setDay({ ...day, pointsOfInterest: updated })
                   }}
                   placeholder="POI Name"
-                  style={{ fontWeight: 'bold', flex: 1, marginRight: '10px' }}
+                  style={{ flex: 1, padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.95rem', fontWeight: 500, color: '#1f2937', background: '#ffffff' }}
                 />
                 <button
-                  className="secondary"
                   onClick={() => {
                     const updated = day.pointsOfInterest.filter((_, i) => i !== idx)
                     setDay({ ...day, pointsOfInterest: updated })
                   }}
+                  style={{ padding: '8px 14px', fontSize: '0.8rem', background: '#ffffff', color: '#dc2626', border: '1px solid #fecaca', borderRadius: '6px', cursor: 'pointer', fontWeight: 500 }}
                 >
                   Remove
                 </button>
@@ -571,7 +746,7 @@ function DayEditor() {
                   setDay({ ...day, pointsOfInterest: updated })
                 }}
                 placeholder="History and background..."
-                style={{ marginBottom: '10px' }}
+                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', marginBottom: '10px', resize: 'vertical' }}
               />
               <textarea
                 value={poi.tips || ''}
@@ -581,17 +756,17 @@ function DayEditor() {
                   setDay({ ...day, pointsOfInterest: updated })
                 }}
                 placeholder="Visitor tips..."
-                style={{ minHeight: '80px' }}
+                style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', resize: 'vertical' }}
               />
             </div>
           ))}
 
           <button
-            className="secondary"
             onClick={() => {
               const updated = [...(day.pointsOfInterest || []), { name: '', history: '', tips: '', images: [] }]
               setDay({ ...day, pointsOfInterest: updated })
             }}
+            style={{ padding: '10px 16px', fontSize: '0.875rem', background: '#ffffff', color: '#6366f1', border: '1px solid #c7d2fe', borderRadius: '6px', cursor: 'pointer', fontWeight: 500 }}
           >
             + Add Point of Interest
           </button>
@@ -600,10 +775,10 @@ function DayEditor() {
 
       {/* Practical Info Tab */}
       {activeTab === 'practical' && (
-        <div className="card">
-          <h2>Practical Information</h2>
-          <div style={{ marginBottom: '15px' }}>
-            <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>Expected Weather (for May)</label>
+        <div style={{ maxWidth: '800px', margin: '0 auto', background: '#ffffff', padding: '24px', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+          <h2 style={{ margin: '0 0 20px 0', fontSize: '1.25rem', color: '#1f2937' }}>Practical Information</h2>
+          <div style={{ marginBottom: '16px' }}>
+            <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>Expected Weather (for May)</label>
             <input
               type="text"
               value={day.practicalInfo?.weather || ''}
@@ -612,10 +787,11 @@ function DayEditor() {
                 practicalInfo: { ...day.practicalInfo, weather: e.target.value }
               })}
               placeholder="e.g., Warm, 20-25°C, possible rain"
+              style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff' }}
             />
           </div>
-          <div style={{ marginBottom: '15px' }}>
-            <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>What to Pack (one item per line)</label>
+          <div style={{ marginBottom: '16px' }}>
+            <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>What to Pack (one item per line)</label>
             <textarea
               value={day.practicalInfo?.whatToPack?.join('\n') || ''}
               onChange={e => setDay({
@@ -626,11 +802,11 @@ function DayEditor() {
                 }
               })}
               placeholder="Comfortable walking shoes&#10;Sun hat&#10;Water bottle"
-              style={{ minHeight: '100px' }}
+              style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '100px', resize: 'vertical' }}
             />
           </div>
-          <div style={{ marginBottom: '15px' }}>
-            <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>Timing Recommendations</label>
+          <div style={{ marginBottom: '16px' }}>
+            <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>Timing Recommendations</label>
             <textarea
               value={day.practicalInfo?.timing || ''}
               onChange={e => setDay({
@@ -638,10 +814,11 @@ function DayEditor() {
                 practicalInfo: { ...day.practicalInfo, timing: e.target.value }
               })}
               placeholder="Best times to visit, crowd levels, recommended duration..."
+              style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', resize: 'vertical' }}
             />
           </div>
           <div>
-            <label style={{ fontWeight: 500, display: 'block', marginBottom: '5px' }}>Additional Notes</label>
+            <label style={{ fontWeight: 500, display: 'block', marginBottom: '6px', fontSize: '0.875rem', color: '#374151' }}>Additional Notes</label>
             <textarea
               value={day.practicalInfo?.notes || ''}
               onChange={e => setDay({
@@ -649,6 +826,7 @@ function DayEditor() {
                 practicalInfo: { ...day.practicalInfo, notes: e.target.value }
               })}
               placeholder="Any other helpful information..."
+              style={{ width: '100%', padding: '10px 12px', borderRadius: '6px', border: '1px solid #e5e7eb', fontSize: '0.875rem', color: '#374151', background: '#ffffff', minHeight: '80px', resize: 'vertical' }}
             />
           </div>
         </div>

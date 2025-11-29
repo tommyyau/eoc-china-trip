@@ -40,31 +40,53 @@ function ImageSearch({ onAddImage, onPreview, initialQuery = '' }) {
 
   return (
     <div>
-      {/* Search controls - stacked layout for better visibility */}
-      <div style={{ marginBottom: '20px' }}>
-        {/* Provider selection - prominent row */}
-        <div style={{ marginBottom: '15px' }}>
-          <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold', fontSize: '1rem', color: '#333' }}>
-            Image Provider
+      {/* Compact search controls */}
+      <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-end', flexWrap: 'wrap', marginBottom: '15px' }}>
+        {/* Search input */}
+        <div style={{ flex: 1, minWidth: '200px' }}>
+          <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', fontSize: '0.9rem', color: '#333' }}>
+            Search Query
           </label>
-          <div style={{ display: 'flex', gap: '10px' }}>
+          <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onKeyPress={handleKeyPress}
+            placeholder="e.g., 'great wall china sunset'"
+            style={{
+              width: '100%',
+              padding: '10px 12px',
+              border: '2px solid #e0e0e0',
+              borderRadius: '6px',
+              fontSize: '1rem'
+            }}
+          />
+        </div>
+
+        {/* Provider selection - compact */}
+        <div>
+          <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', fontSize: '0.9rem', color: '#333' }}>
+            Source
+          </label>
+          <div style={{ display: 'flex', gap: '4px' }}>
             {[
-              { value: 'both', label: 'Both (Unsplash + Pexels)', color: '#1a5f7a' },
-              { value: 'unsplash', label: 'Unsplash Only', color: '#111' },
-              { value: 'pexels', label: 'Pexels Only', color: '#05a081' }
+              { value: 'both', label: 'Both', color: '#1a5f7a' },
+              { value: 'unsplash', label: 'Unsplash', color: '#111' },
+              { value: 'pexels', label: 'Pexels', color: '#05a081' }
             ].map(opt => (
               <button
                 key={opt.value}
                 onClick={() => setProvider(opt.value)}
                 style={{
-                  padding: '10px 20px',
+                  padding: '8px 12px',
                   background: provider === opt.value ? opt.color : 'white',
-                  color: provider === opt.value ? 'white' : '#333',
-                  border: `2px solid ${opt.color}`,
-                  borderRadius: '6px',
+                  color: provider === opt.value ? 'white' : '#666',
+                  border: `1px solid ${provider === opt.value ? opt.color : '#ccc'}`,
+                  borderRadius: '4px',
                   cursor: 'pointer',
                   fontWeight: provider === opt.value ? 'bold' : 'normal',
-                  transition: 'all 0.2s'
+                  fontSize: '0.85rem',
+                  transition: 'all 0.15s'
                 }}
               >
                 {opt.label}
@@ -73,47 +95,24 @@ function ImageSearch({ onAddImage, onPreview, initialQuery = '' }) {
           </div>
         </div>
 
-        {/* Search input row */}
-        <div style={{ display: 'flex', gap: '10px' }}>
-          <div style={{ flex: 1 }}>
-            <label style={{ display: 'block', marginBottom: '8px', fontWeight: 'bold', fontSize: '1rem', color: '#333' }}>
-              Search Query
-            </label>
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              onKeyPress={handleKeyPress}
-              placeholder="e.g., 'great wall china sunset'"
-              style={{
-                width: '100%',
-                padding: '12px 15px',
-                border: '2px solid #e0e0e0',
-                borderRadius: '6px',
-                fontSize: '1rem'
-              }}
-            />
-          </div>
-          <div style={{ display: 'flex', alignItems: 'flex-end' }}>
-            <button
-              onClick={handleSearch}
-              disabled={loading || !query.trim()}
-              style={{
-                padding: '12px 30px',
-                background: loading ? '#ccc' : '#1a5f7a',
-                color: 'white',
-                border: 'none',
-                borderRadius: '6px',
-                cursor: loading ? 'not-allowed' : 'pointer',
-                fontWeight: 'bold',
-                fontSize: '1rem',
-                height: '48px'
-              }}
-            >
-              {loading ? 'Searching...' : '🔍 Search'}
-            </button>
-          </div>
-        </div>
+        {/* Search button */}
+        <button
+          onClick={handleSearch}
+          disabled={loading || !query.trim()}
+          style={{
+            padding: '10px 20px',
+            background: loading ? '#ccc' : '#1a5f7a',
+            color: 'white',
+            border: 'none',
+            borderRadius: '6px',
+            cursor: loading ? 'not-allowed' : 'pointer',
+            fontWeight: 'bold',
+            fontSize: '0.95rem',
+            height: '42px'
+          }}
+        >
+          {loading ? '...' : '🔍 Search'}
+        </button>
       </div>
 
       {/* Error */}

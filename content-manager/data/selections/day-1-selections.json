@@ -1,6 +1,6 @@
 {
   "day": 1,
-  "lastModified": "2025-11-29T18:03:33.514Z",
+  "lastModified": "2025-11-29T18:31:25.933Z",
   "segments": {
     "1-1-1764432757578": {
       "name": "Visit Big Wild Goose Pagoda",
@@ -49,6 +49,58 @@
     },
     "1-2-1764432757578": {
       "name": "Check-in at Easter House Xi'an",
+      "images": [
+        {
+          "id": "Yg8S0pACCoU",
+          "url": "https://images.unsplash.com/photo-1755742319537-449f661a3190?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmFucXVldCUyMGRpbm5lcnxlbnwwfDB8fHwxNzY0NDEwMTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1755742319537-449f661a3190?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmFucXVldCUyMGRpbm5lcnxlbnwwfDB8fHwxNzY0NDEwMTk0fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1755742319537-449f661a3190?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmFucXVldCUyMGRpbm5lcnxlbnwwfDB8fHwxNzY0NDEwMTk0fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Table laden with diverse asian dishes and roasted pig.",
+          "photographer": "Junliang Deng",
+          "photographerUrl": "https://unsplash.com/@billycat",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/table-laden-with-diverse-asian-dishes-and-roasted-pig-Yg8S0pACCoU",
+          "downloadUrl": "https://images.unsplash.com/photo-1755742319537-449f661a3190?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmFucXVldCUyMGRpbm5lcnxlbnwwfDB8fHwxNzY0NDEwMTk0fDA&ixlib=rb-4.1.0&q=85",
+          "width": 6000,
+          "height": 4000
+        }
+      ]
+    },
+    "1-1-1764440953795": {
+      "name": "Visit Big Wild Goose Pagoda",
+      "images": [
+        {
+          "id": 13998387,
+          "url": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg",
+          "alt": "Serene view of the Giant Wild Goose Pagoda in Xi'an with lush greenery and a clear evening sky.",
+          "photographer": "TAO WANG",
+          "photographerUrl": "https://www.pexels.com/@tao-wang-335496284",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/ancient-gazebo-near-the-pagoda-tower-13998387/",
+          "downloadUrl": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg",
+          "width": 6134,
+          "height": 3777
+        },
+        {
+          "id": 13998391,
+          "url": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg",
+          "alt": "A stunning sunset over the Giant Wild Goose Pagoda, showcasing the ancient architectural beauty in Xi'an, China.",
+          "photographer": "TAO WANG",
+          "photographerUrl": "https://www.pexels.com/@tao-wang-335496284",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/the-giant-wild-goose-pagoda-in-xian-china-13998391/",
+          "downloadUrl": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg",
+          "width": 6240,
+          "height": 3836
+        }
+      ]
+    },
+    "1-2-1764440953795": {
+      "name": "Check-in at Hotel",
       "images": [
         {
           "id": "Yg8S0pACCoU",
