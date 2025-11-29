@@ -1,0 +1,343 @@
+{
+  "day": 10,
+  "title": {
+    "en": "Wuyuan Rural Landscapes",
+    "cn": "婺源田园风光"
+  },
+  "location": {
+    "en": "Wuyuan",
+    "cn": "婺源"
+  },
+  "activities": [
+    {
+      "activity": "Rural Hiking in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Rural Hiking Wuyuan site:unsplash.com",
+          "description": "Rural Hiking in Wuyuan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Rural%20Hiking%20Wuyuan",
+          "title": "Search \"Rural Hiking in Wuyuan\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Rural Hiking in Wuyuan in Wuyuan, China",
+        "Travel photography of Rural Hiking in Wuyuan in Wuyuan",
+        "Rural Hiking in Wuyuan tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "Rural Hiking in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Rural Hiking Wuyuan site:pexels.com",
+          "description": "Rural Hiking in Wuyuan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Rural%20Hiking%20Wuyuan/",
+          "title": "Search \"Rural Hiking in Wuyuan\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Rural Hiking in Wuyuan in Wuyuan, China",
+        "Travel photography of Rural Hiking in Wuyuan in Wuyuan",
+        "Rural Hiking in Wuyuan tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "乡村徒步 in 婺源",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "乡村徒步 婺源 site:unsplash.com",
+          "description": "乡村徒步 in 婺源"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E4%B9%A1%E6%9D%91%E5%BE%92%E6%AD%A5%20%E5%A9%BA%E6%BA%90",
+          "title": "Search \"乡村徒步 in 婺源\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "乡村徒步 in 婺源 in Wuyuan, China",
+        "Travel photography of 乡村徒步 in 婺源 in Wuyuan",
+        "乡村徒步 in 婺源 tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "Hui-style Architecture in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Hui-style Architecture Wuyuan site:unsplash.com",
+          "description": "Hui-style Architecture in Wuyuan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Hui-style%20Architecture%20Wuyuan",
+          "title": "Search \"Hui-style Architecture in Wuyuan\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Hui-style Architecture in Wuyuan in Wuyuan, China",
+        "Travel photography of Hui-style Architecture in Wuyuan in Wuyuan",
+        "Hui-style Architecture in Wuyuan tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "Hui-style Architecture in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Hui-style Architecture Wuyuan site:pexels.com",
+          "description": "Hui-style Architecture in Wuyuan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Hui-style%20Architecture%20Wuyuan/",
+          "title": "Search \"Hui-style Architecture in Wuyuan\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Hui-style Architecture in Wuyuan in Wuyuan, China",
+        "Travel photography of Hui-style Architecture in Wuyuan in Wuyuan",
+        "Hui-style Architecture in Wuyuan tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "徽派建筑 in 婺源",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "徽派建筑 婺源 site:unsplash.com",
+          "description": "徽派建筑 in 婺源"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%BE%BD%E6%B4%BE%E5%BB%BA%E7%AD%91%20%E5%A9%BA%E6%BA%90",
+          "title": "Search \"徽派建筑 in 婺源\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "徽派建筑 in 婺源 in Wuyuan, China",
+        "Travel photography of 徽派建筑 in 婺源 in Wuyuan",
+        "徽派建筑 in 婺源 tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "Moon Bay in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Moon Bay Wuyuan site:unsplash.com",
+          "description": "Moon Bay in Wuyuan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Moon%20Bay%20Wuyuan",
+          "title": "Search \"Moon Bay in Wuyuan\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Moon Bay in Wuyuan in Wuyuan, China",
+        "Travel photography of Moon Bay in Wuyuan in Wuyuan",
+        "Moon Bay in Wuyuan tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "Moon Bay in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Moon Bay Wuyuan site:pexels.com",
+          "description": "Moon Bay in Wuyuan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Moon%20Bay%20Wuyuan/",
+          "title": "Search \"Moon Bay in Wuyuan\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Moon Bay in Wuyuan in Wuyuan, China",
+        "Travel photography of Moon Bay in Wuyuan in Wuyuan",
+        "Moon Bay in Wuyuan tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "月亮湾 in 婺源",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "月亮湾 婺源 site:unsplash.com",
+          "description": "月亮湾 in 婺源"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E6%9C%88%E4%BA%AE%E6%B9%BE%20%E5%A9%BA%E6%BA%90",
+          "title": "Search \"月亮湾 in 婺源\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "月亮湾 in 婺源 in Wuyuan, China",
+        "Travel photography of 月亮湾 in 婺源 in Wuyuan",
+        "月亮湾 in 婺源 tourist attraction in Wuyuan"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Homestay in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Homestay in Wuyuan Wuyuan site:tripadvisor.com",
+          "description": "Homestay in Wuyuan in Wuyuan on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Homestay%20in%20Wuyuan%20Wuyuan",
+          "title": "Find \"Homestay in Wuyuan in Wuyuan on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Homestay in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Homestay in Wuyuan Wuyuan site:booking.com",
+          "description": "Homestay in Wuyuan in Wuyuan on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Homestay in Wuyuan",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Homestay in Wuyuan Wuyuan hotel reviews",
+          "description": "Reviews for Homestay in Wuyuan in Wuyuan"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Wuyuan China tourism site:unsplash.com",
+      "description": "General Wuyuan tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Wuyuan China landscape site:pexels.com",
+      "description": "Wuyuan landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Rural Hiking China travel site:unsplash.com",
+      "description": "Rural Hiking travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Hui-style Architecture China travel site:unsplash.com",
+      "description": "Hui-style Architecture travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Rural Hiking",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Rural%20Hiking%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Rural%20Hiking%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Rural%20Hiking%20china%20tourism",
+          "query": "Rural Hiking",
+          "alt": "Rural Hiking china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Rural%20Hiking%20china%20tourism&w=1200",
+          "description": "Real photo of Rural Hiking china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Hui-style Architecture",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Hui-style%20Architecture%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Hui-style%20Architecture%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Hui-style%20Architecture%20china%20tourism",
+          "query": "Hui-style Architecture",
+          "alt": "Hui-style Architecture china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Hui-style%20Architecture%20china%20tourism&w=1200",
+          "description": "Real photo of Hui-style Architecture china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Moon Bay",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Moon%20Bay%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Moon%20Bay%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Moon%20Bay%20china%20tourism",
+          "query": "Moon Bay",
+          "alt": "Moon Bay china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Moon%20Bay%20china%20tourism&w=1200",
+          "description": "Real photo of Moon Bay china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:40.977Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

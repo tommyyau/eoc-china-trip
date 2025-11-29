@@ -1,0 +1,109 @@
+{
+  "day": 7,
+  "title": {
+    "en": "Arrival in Lushan",
+    "cn": "抵达庐山"
+  },
+  "location": {
+    "en": "Lushan",
+    "cn": "庐山"
+  },
+  "activities": [
+    {
+      "activity": "Lushan Cable Car",
+      "imageLinks": {
+        "highlight": "Lushan Cable Car",
+        "searchTerm": "lushan cable car",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/lushan%20cable%20car?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?lushan%20cable%20car&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/lushan%20cable%20car/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "lushan cable car professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Lushan Cable Car in Lushan, China",
+        "Travel photography of Lushan Cable Car in Lushan",
+        "Lushan Cable Car tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "Mountain-top Architecture",
+      "imageLinks": {
+        "highlight": "Mountain-top Architecture",
+        "searchTerm": "mountain-top architecture",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/mountain-top%20architecture?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?mountain-top%20architecture&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/mountain-top%20architecture/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "mountain-top architecture professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Mountain-top Architecture in Lushan, China",
+        "Travel photography of Mountain-top Architecture in Lushan",
+        "Mountain-top Architecture tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "Acclimatization Hike (8km)",
+      "imageLinks": {
+        "highlight": "Acclimatization Hike",
+        "searchTerm": "acclimatization hike",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/acclimatization%20hike?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?acclimatization%20hike&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/acclimatization%20hike/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "acclimatization hike professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Acclimatization Hike (8km) in Lushan, China",
+        "Travel photography of Acclimatization Hike (8km) in Lushan",
+        "Acclimatization Hike (8km) tourist attraction in Lushan"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "top Hotel",
+    "location": "Lushan",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=top%20Hotel%20Lushan",
+      "https://www.booking.com/searchresults.html?ss=top%20Hotel%20Lushan",
+      "https://www.google.com/search?q=top%20Hotel%20Lushan%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:33.221Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

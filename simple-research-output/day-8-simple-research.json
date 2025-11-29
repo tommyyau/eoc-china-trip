@@ -1,0 +1,82 @@
+{
+  "day": 8,
+  "title": {
+    "en": "Conquering Hero Slope",
+    "cn": "征服好汉坡"
+  },
+  "location": {
+    "en": "Lushan",
+    "cn": "庐山"
+  },
+  "activities": [
+    {
+      "activity": "Hero Slope Hike",
+      "imageLinks": {
+        "highlight": "Hero Slope Hike",
+        "searchTerm": "hero slope hike",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/hero%20slope%20hike?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?hero%20slope%20hike&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/hero%20slope%20hike/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "hero slope hike professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Hero Slope Hike in Lushan, China",
+        "Travel photography of Hero Slope Hike in Lushan",
+        "Hero Slope Hike tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "Lushan Summit",
+      "imageLinks": {
+        "highlight": "Lushan Summit",
+        "searchTerm": "lushan summit",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/lushan%20summit?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?lushan%20summit&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/lushan%20summit/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "lushan summit professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Lushan Summit in Lushan, China",
+        "Travel photography of Lushan Summit in Lushan",
+        "Lushan Summit tourist attraction in Lushan"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "top Hotel",
+    "location": "Lushan",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=top%20Hotel%20Lushan",
+      "https://www.booking.com/searchresults.html?ss=top%20Hotel%20Lushan",
+      "https://www.google.com/search?q=top%20Hotel%20Lushan%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:34.296Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

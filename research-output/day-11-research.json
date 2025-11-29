@@ -1,0 +1,343 @@
+{
+  "day": 11,
+  "title": {
+    "en": "Huangling & Wangxian Valley",
+    "cn": "篁岭与望仙谷"
+  },
+  "location": {
+    "en": "Wuyuan -> Shangrao",
+    "cn": "婺源 -> 上饶"
+  },
+  "activities": [
+    {
+      "activity": "Huangling Terraces in Wuyuan -> Shangrao",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Huangling Terraces Wuyuan -> Shangrao site:unsplash.com",
+          "description": "Huangling Terraces in Wuyuan -> Shangrao"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Huangling%20Terraces%20Wuyuan%20-%3E%20Shangrao",
+          "title": "Search \"Huangling Terraces in Wuyuan -> Shangrao\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
+        "Travel photography of Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
+        "Huangling Terraces in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "Huangling Terraces in Wuyuan -> Shangrao",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Huangling Terraces Wuyuan -> Shangrao site:pexels.com",
+          "description": "Huangling Terraces in Wuyuan -> Shangrao"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Huangling%20Terraces%20Wuyuan%20-%3E%20Shangrao/",
+          "title": "Search \"Huangling Terraces in Wuyuan -> Shangrao\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
+        "Travel photography of Huangling Terraces in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
+        "Huangling Terraces in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "篁岭梯田 in 婺源 -> 上饶",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "篁岭梯田 婺源 -> 上饶 site:unsplash.com",
+          "description": "篁岭梯田 in 婺源 -> 上饶"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E7%AF%81%E5%B2%AD%E6%A2%AF%E7%94%B0%20%E5%A9%BA%E6%BA%90%20-%3E%20%E4%B8%8A%E9%A5%B6",
+          "title": "Search \"篁岭梯田 in 婺源 -> 上饶\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "篁岭梯田 in 婺源 -> 上饶 in Wuyuan -> Shangrao, China",
+        "Travel photography of 篁岭梯田 in 婺源 -> 上饶 in Wuyuan -> Shangrao",
+        "篁岭梯田 in 婺源 -> 上饶 tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "Wangxian Valley Hike in Wuyuan -> Shangrao",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Wangxian Valley Hike Wuyuan -> Shangrao site:unsplash.com",
+          "description": "Wangxian Valley Hike in Wuyuan -> Shangrao"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Wangxian%20Valley%20Hike%20Wuyuan%20-%3E%20Shangrao",
+          "title": "Search \"Wangxian Valley Hike in Wuyuan -> Shangrao\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
+        "Travel photography of Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
+        "Wangxian Valley Hike in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "Wangxian Valley Hike in Wuyuan -> Shangrao",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Wangxian Valley Hike Wuyuan -> Shangrao site:pexels.com",
+          "description": "Wangxian Valley Hike in Wuyuan -> Shangrao"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Wangxian%20Valley%20Hike%20Wuyuan%20-%3E%20Shangrao/",
+          "title": "Search \"Wangxian Valley Hike in Wuyuan -> Shangrao\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
+        "Travel photography of Wangxian Valley Hike in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
+        "Wangxian Valley Hike in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "望仙谷徒步 in 婺源 -> 上饶",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "望仙谷徒步 婺源 -> 上饶 site:unsplash.com",
+          "description": "望仙谷徒步 in 婺源 -> 上饶"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E6%9C%9B%E4%BB%99%E8%B0%B7%E5%BE%92%E6%AD%A5%20%E5%A9%BA%E6%BA%90%20-%3E%20%E4%B8%8A%E9%A5%B6",
+          "title": "Search \"望仙谷徒步 in 婺源 -> 上饶\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "望仙谷徒步 in 婺源 -> 上饶 in Wuyuan -> Shangrao, China",
+        "Travel photography of 望仙谷徒步 in 婺源 -> 上饶 in Wuyuan -> Shangrao",
+        "望仙谷徒步 in 婺源 -> 上饶 tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "Night Views in Wuyuan -> Shangrao",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Night Views Wuyuan -> Shangrao site:unsplash.com",
+          "description": "Night Views in Wuyuan -> Shangrao"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Night%20Views%20Wuyuan%20-%3E%20Shangrao",
+          "title": "Search \"Night Views in Wuyuan -> Shangrao\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
+        "Travel photography of Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
+        "Night Views in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "Night Views in Wuyuan -> Shangrao",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Night Views Wuyuan -> Shangrao site:pexels.com",
+          "description": "Night Views in Wuyuan -> Shangrao"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Night%20Views%20Wuyuan%20-%3E%20Shangrao/",
+          "title": "Search \"Night Views in Wuyuan -> Shangrao\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao, China",
+        "Travel photography of Night Views in Wuyuan -> Shangrao in Wuyuan -> Shangrao",
+        "Night Views in Wuyuan -> Shangrao tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "夜景 in 婺源 -> 上饶",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "夜景 婺源 -> 上饶 site:unsplash.com",
+          "description": "夜景 in 婺源 -> 上饶"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%A4%9C%E6%99%AF%20%E5%A9%BA%E6%BA%90%20-%3E%20%E4%B8%8A%E9%A5%B6",
+          "title": "Search \"夜景 in 婺源 -> 上饶\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "夜景 in 婺源 -> 上饶 in Wuyuan -> Shangrao, China",
+        "Travel photography of 夜景 in 婺源 -> 上饶 in Wuyuan -> Shangrao",
+        "夜景 in 婺源 -> 上饶 tourist attraction in Wuyuan -> Shangrao"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Homestay in Wangxian Valley",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Homestay in Wangxian Valley Wuyuan -> Shangrao site:tripadvisor.com",
+          "description": "Homestay in Wangxian Valley in Wuyuan -> Shangrao on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Homestay%20in%20Wangxian%20Valley%20Wuyuan%20-%3E%20Shangrao",
+          "title": "Find \"Homestay in Wangxian Valley in Wuyuan -> Shangrao on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Homestay in Wangxian Valley",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Homestay in Wangxian Valley Wuyuan -> Shangrao site:booking.com",
+          "description": "Homestay in Wangxian Valley in Wuyuan -> Shangrao on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Homestay in Wangxian Valley",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Homestay in Wangxian Valley Wuyuan -> Shangrao hotel reviews",
+          "description": "Reviews for Homestay in Wangxian Valley in Wuyuan -> Shangrao"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Wuyuan -> Shangrao China tourism site:unsplash.com",
+      "description": "General Wuyuan -> Shangrao tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Wuyuan -> Shangrao China landscape site:pexels.com",
+      "description": "Wuyuan -> Shangrao landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Huangling Terraces China travel site:unsplash.com",
+      "description": "Huangling Terraces travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Wangxian Valley Hike China travel site:unsplash.com",
+      "description": "Wangxian Valley Hike travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Huangling Terraces",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Huangling%20Terraces%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Huangling%20Terraces%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Huangling%20Terraces%20china%20tourism",
+          "query": "Huangling Terraces",
+          "alt": "Huangling Terraces china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Huangling%20Terraces%20china%20tourism&w=1200",
+          "description": "Real photo of Huangling Terraces china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Wangxian Valley Hike",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Wangxian%20Valley%20Hike%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Wangxian%20Valley%20Hike%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Wangxian%20Valley%20Hike%20china%20tourism",
+          "query": "Wangxian Valley Hike",
+          "alt": "Wangxian Valley Hike china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Wangxian%20Valley%20Hike%20china%20tourism&w=1200",
+          "description": "Real photo of Wangxian Valley Hike china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Night Views",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Night%20Views%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Night%20Views%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Night%20Views%20china%20tourism",
+          "query": "Night Views",
+          "alt": "Night Views china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Night%20Views%20china%20tourism&w=1200",
+          "description": "Real photo of Night Views china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:43.624Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

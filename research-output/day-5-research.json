@@ -1,0 +1,283 @@
+{
+  "day": 5,
+  "date": "May 12",
+  "title": {
+    "en": "Forbidden City & Fragrant Hills Warm-up",
+    "cn": "故宫与香山热身徒步"
+  },
+  "location": {
+    "en": "Beijing",
+    "cn": "北京"
+  },
+  "description": {
+    "en": "Morning visit to the Forbidden City, exploring the imperial history of the Ming and Qing dynasties. Afternoon warm-up hike from the National Botanical Garden to Happy Forest in Fragrant Hills (12km, 670m elevation). Local outdoor experts will accompany the group.",
+    "cn": "上午参观故宫，探索明清两代的皇家历史。下午从国家植物园徒步至香山快活林（12公里，海拔670米）。当地户外专家将陪同。"
+  },
+  "highlights": {
+    "en": [
+      "Forbidden City",
+      "Fragrant Hills Hiking (12km)"
+    ],
+    "cn": [
+      "故宫博物院",
+      "香山徒步（12公里）"
+    ]
+  },
+  "meals": {
+    "en": "Breakfast, Lunch, Dinner (Peking Duck)",
+    "cn": "早、中、晚餐（北京烤鸭）"
+  },
+  "accommodation": {
+    "en": "Beijing Hotel",
+    "cn": "北京酒店"
+  },
+  "activities": [
+    {
+      "name": "Forbidden City",
+      "searchTerm": "forbidden city beijing china palace",
+      "images": [
+        {
+          "id": "jKmmDNDCB-A",
+          "url": "https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "two metal knobs on a red surface",
+          "photographer": "Bernd 📷 Dittrich",
+          "photographerUrl": "https://unsplash.com/@hdbernd",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/two-metal-knobs-on-a-red-surface-jKmmDNDCB-A",
+          "downloadUrl": "https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "width": 4861,
+          "height": 3377
+        },
+        {
+          "id": "sYncZH0wSBE",
+          "url": "https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "brown temple building taken under clear sky",
+          "photographer": "Vincent Guth",
+          "photographerUrl": "https://unsplash.com/@vingtcent",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/brown-temple-building-taken-under-clear-sky-sYncZH0wSBE",
+          "downloadUrl": "https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "width": 5888,
+          "height": 3930
+        },
+        {
+          "id": "-84KbLVxJMc",
+          "url": "https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "a red and green building with a red door",
+          "photographer": "Stephen Wiggins",
+          "photographerUrl": "https://unsplash.com/@swiggz",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/a-red-and-green-building-with-a-red-door--84KbLVxJMc",
+          "downloadUrl": "https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "width": 5312,
+          "height": 2988
+        },
+        {
+          "id": "2TTQiZoKjbA",
+          "url": "https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "yellow and black sedan running on the road",
+          "photographer": "csqxiv",
+          "photographerUrl": "https://unsplash.com/@csqxiv",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/yellow-and-black-sedan-running-on-the-road-2TTQiZoKjbA",
+          "downloadUrl": "https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85",
+          "width": 4365,
+          "height": 2754
+        },
+        {
+          "id": 9373300,
+          "url": "https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg",
+          "alt": "Stunning view of a traditional Chinese temple facade in Beijing, capturing architectural beauty.",
+          "photographer": "Lin Amd",
+          "photographerUrl": "https://www.pexels.com/@lin-amd-100705057",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/the-gugong-theater-in-forbidden-city-china-9373300/",
+          "downloadUrl": "https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg",
+          "width": 5760,
+          "height": 3840
+        },
+        {
+          "id": 5102101,
+          "url": "https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg",
+          "alt": "Classic architectural detail of a traditional building in Beijing's Forbidden City.",
+          "photographer": "Markus Winkler",
+          "photographerUrl": "https://www.pexels.com/@markus-winkler-1430818",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/brown-and-white-wooden-house-5102101/",
+          "downloadUrl": "https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg",
+          "width": 5850,
+          "height": 3900
+        },
+        {
+          "id": 6820064,
+          "url": "https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg",
+          "alt": "Traditional architecture and vibrant colors of the Forbidden City in Beijing, showcasing historical Chinese design.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/traditional-asian-houses-on-blue-sky-6820064/",
+          "downloadUrl": "https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg",
+          "width": 9504,
+          "height": 6336
+        },
+        {
+          "id": 18549556,
+          "url": "https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg",
+          "alt": "View of the Forbidden City in Beijing showcasing classic ancient Chinese architecture and historical significance.",
+          "photographer": "Yan Zhang",
+          "photographerUrl": "https://www.pexels.com/@yan-zhang-210144339",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/hall-of-supreme-harmony-in-forbidden-city-18549556/",
+          "downloadUrl": "https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg",
+          "width": 6000,
+          "height": 4000
+        }
+      ],
+      "suggestedAlt": [
+        "Forbidden City in Beijing, China",
+        "Forbidden City - travel photography",
+        "Forbidden City tourist attraction"
+      ]
+    },
+    {
+      "name": "Fragrant Hills Hiking (12km)",
+      "searchTerm": "fragrant hills beijing autumn",
+      "images": [
+        {
+          "id": "eM8_ukFzCUI",
+          "url": "https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of trees",
+          "photographer": "Young Tian",
+          "photographerUrl": "https://unsplash.com/@young_tian",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/a-group-of-trees-eM8_ukFzCUI",
+          "downloadUrl": "https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "width": 6240,
+          "height": 4160
+        },
+        {
+          "id": "3i3xe_UPiYU",
+          "url": "https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "cabin in forest on hill",
+          "photographer": "zhenzhong liu",
+          "photographerUrl": "https://unsplash.com/@lzzbest",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/cabin-in-forest-on-hill-3i3xe_UPiYU",
+          "downloadUrl": "https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "wW6o90ghe5E",
+          "url": "https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "An aerial view of a wooded area in autumn",
+          "photographer": "Wolfgang Hasselmann",
+          "photographerUrl": "https://unsplash.com/@wolfgang_hasselmann",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/an-aerial-view-of-a-wooded-area-in-autumn-wW6o90ghe5E",
+          "downloadUrl": "https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "width": 7008,
+          "height": 4672
+        },
+        {
+          "id": "86zcOiUw81w",
+          "url": "https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "green and yellow trees on mountain",
+          "photographer": "Robert Seidel",
+          "photographerUrl": "https://unsplash.com/@kaffetasse",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/green-and-yellow-trees-on-mountain-86zcOiUw81w",
+          "downloadUrl": "https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": 31477803,
+          "url": "https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg",
+          "alt": "A breathtaking view of the Great Wall of China at sunset, showcasing its ancient architecture and historic significance.",
+          "photographer": "Eclipse Chasers",
+          "photographerUrl": "https://www.pexels.com/@eclipse-chasers-716719984",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/scenic-sunset-over-the-great-wall-of-china-31477803/",
+          "downloadUrl": "https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg",
+          "width": 5280,
+          "height": 3956
+        },
+        {
+          "id": 17615498,
+          "url": "https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg",
+          "alt": "Majestic view of the Great Wall of China winding through verdant hills under a bright blue sky.",
+          "photographer": "Mehmet Yasin Kabaklı",
+          "photographerUrl": "https://www.pexels.com/@mykon",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/great-wall-of-china-17615498/",
+          "downloadUrl": "https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg",
+          "width": 5472,
+          "height": 3648
+        },
+        {
+          "id": 4445240,
+          "url": "https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg",
+          "alt": "Picturesque landscape of Great Wall of China on hill with green trees and mountains on background on sunny day",
+          "photographer": "Diana",
+          "photographerUrl": "https://www.pexels.com/@diana-2910042",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/ancient-stone-wall-going-through-green-hills-4445240/",
+          "downloadUrl": "https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "id": 14554767,
+          "url": "https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg",
+          "alt": "Captivating view of a tower on a hill with scenic mountains in Beijing, China.",
+          "photographer": "zhang kaiyv",
+          "photographerUrl": "https://www.pexels.com/@zhangkaiyv",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/lighthouse-on-a-hill-14554767/",
+          "downloadUrl": "https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg",
+          "width": 9504,
+          "height": 6336
+        }
+      ],
+      "suggestedAlt": [
+        "Fragrant Hills Hiking (12km) in Beijing, China",
+        "Fragrant Hills Hiking (12km) - travel photography",
+        "Fragrant Hills Hiking (12km) tourist attraction"
+      ]
+    }
+  ],
+  "hotelSearch": "https://www.tripadvisor.com/Search?q=Beijing%20Hotel%20Beijing"
+}

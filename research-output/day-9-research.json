@@ -1,0 +1,343 @@
+{
+  "day": 9,
+  "title": {
+    "en": "Mount Shizhong & Jingdezhen",
+    "cn": "石钟山与景德镇"
+  },
+  "location": {
+    "en": "Lushan -> Jingdezhen",
+    "cn": "庐山 -> 景德镇"
+  },
+  "activities": [
+    {
+      "activity": "Mount Shizhong Hike in Lushan -> Jingdezhen",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Mount Shizhong Hike Lushan -> Jingdezhen site:unsplash.com",
+          "description": "Mount Shizhong Hike in Lushan -> Jingdezhen"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Mount%20Shizhong%20Hike%20Lushan%20-%3E%20Jingdezhen",
+          "title": "Search \"Mount Shizhong Hike in Lushan -> Jingdezhen\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Mount Shizhong Hike in Lushan -> Jingdezhen in Lushan -> Jingdezhen, China",
+        "Travel photography of Mount Shizhong Hike in Lushan -> Jingdezhen in Lushan -> Jingdezhen",
+        "Mount Shizhong Hike in Lushan -> Jingdezhen tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "Mount Shizhong Hike in Lushan -> Jingdezhen",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Mount Shizhong Hike Lushan -> Jingdezhen site:pexels.com",
+          "description": "Mount Shizhong Hike in Lushan -> Jingdezhen"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Mount%20Shizhong%20Hike%20Lushan%20-%3E%20Jingdezhen/",
+          "title": "Search \"Mount Shizhong Hike in Lushan -> Jingdezhen\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Mount Shizhong Hike in Lushan -> Jingdezhen in Lushan -> Jingdezhen, China",
+        "Travel photography of Mount Shizhong Hike in Lushan -> Jingdezhen in Lushan -> Jingdezhen",
+        "Mount Shizhong Hike in Lushan -> Jingdezhen tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "石钟山徒步 in 庐山 -> 景德镇",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "石钟山徒步 庐山 -> 景德镇 site:unsplash.com",
+          "description": "石钟山徒步 in 庐山 -> 景德镇"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E7%9F%B3%E9%92%9F%E5%B1%B1%E5%BE%92%E6%AD%A5%20%E5%BA%90%E5%B1%B1%20-%3E%20%E6%99%AF%E5%BE%B7%E9%95%87",
+          "title": "Search \"石钟山徒步 in 庐山 -> 景德镇\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "石钟山徒步 in 庐山 -> 景德镇 in Lushan -> Jingdezhen, China",
+        "Travel photography of 石钟山徒步 in 庐山 -> 景德镇 in Lushan -> Jingdezhen",
+        "石钟山徒步 in 庐山 -> 景德镇 tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "Yangtze & Poyang Lake View in Lushan -> Jingdezhen",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Yangtze & Poyang Lake View Lushan -> Jingdezhen site:unsplash.com",
+          "description": "Yangtze & Poyang Lake View in Lushan -> Jingdezhen"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Yangtze%20%26%20Poyang%20Lake%20View%20Lushan%20-%3E%20Jingdezhen",
+          "title": "Search \"Yangtze & Poyang Lake View in Lushan -> Jingdezhen\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Yangtze & Poyang Lake View in Lushan -> Jingdezhen in Lushan -> Jingdezhen, China",
+        "Travel photography of Yangtze & Poyang Lake View in Lushan -> Jingdezhen in Lushan -> Jingdezhen",
+        "Yangtze & Poyang Lake View in Lushan -> Jingdezhen tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "Yangtze & Poyang Lake View in Lushan -> Jingdezhen",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Yangtze & Poyang Lake View Lushan -> Jingdezhen site:pexels.com",
+          "description": "Yangtze & Poyang Lake View in Lushan -> Jingdezhen"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Yangtze%20%26%20Poyang%20Lake%20View%20Lushan%20-%3E%20Jingdezhen/",
+          "title": "Search \"Yangtze & Poyang Lake View in Lushan -> Jingdezhen\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Yangtze & Poyang Lake View in Lushan -> Jingdezhen in Lushan -> Jingdezhen, China",
+        "Travel photography of Yangtze & Poyang Lake View in Lushan -> Jingdezhen in Lushan -> Jingdezhen",
+        "Yangtze & Poyang Lake View in Lushan -> Jingdezhen tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "长江鄱阳湖景观 in 庐山 -> 景德镇",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "长江鄱阳湖景观 庐山 -> 景德镇 site:unsplash.com",
+          "description": "长江鄱阳湖景观 in 庐山 -> 景德镇"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E9%95%BF%E6%B1%9F%E9%84%B1%E9%98%B3%E6%B9%96%E6%99%AF%E8%A7%82%20%E5%BA%90%E5%B1%B1%20-%3E%20%E6%99%AF%E5%BE%B7%E9%95%87",
+          "title": "Search \"长江鄱阳湖景观 in 庐山 -> 景德镇\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "长江鄱阳湖景观 in 庐山 -> 景德镇 in Lushan -> Jingdezhen, China",
+        "Travel photography of 长江鄱阳湖景观 in 庐山 -> 景德镇 in Lushan -> Jingdezhen",
+        "长江鄱阳湖景观 in 庐山 -> 景德镇 tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "Jingdezhen Ceramics in Lushan -> Jingdezhen",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Jingdezhen Ceramics Lushan -> Jingdezhen site:unsplash.com",
+          "description": "Jingdezhen Ceramics in Lushan -> Jingdezhen"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Jingdezhen%20Ceramics%20Lushan%20-%3E%20Jingdezhen",
+          "title": "Search \"Jingdezhen Ceramics in Lushan -> Jingdezhen\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Jingdezhen Ceramics in Lushan -> Jingdezhen in Lushan -> Jingdezhen, China",
+        "Travel photography of Jingdezhen Ceramics in Lushan -> Jingdezhen in Lushan -> Jingdezhen",
+        "Jingdezhen Ceramics in Lushan -> Jingdezhen tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "Jingdezhen Ceramics in Lushan -> Jingdezhen",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Jingdezhen Ceramics Lushan -> Jingdezhen site:pexels.com",
+          "description": "Jingdezhen Ceramics in Lushan -> Jingdezhen"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Jingdezhen%20Ceramics%20Lushan%20-%3E%20Jingdezhen/",
+          "title": "Search \"Jingdezhen Ceramics in Lushan -> Jingdezhen\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Jingdezhen Ceramics in Lushan -> Jingdezhen in Lushan -> Jingdezhen, China",
+        "Travel photography of Jingdezhen Ceramics in Lushan -> Jingdezhen in Lushan -> Jingdezhen",
+        "Jingdezhen Ceramics in Lushan -> Jingdezhen tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "景德镇陶瓷 in 庐山 -> 景德镇",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "景德镇陶瓷 庐山 -> 景德镇 site:unsplash.com",
+          "description": "景德镇陶瓷 in 庐山 -> 景德镇"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E6%99%AF%E5%BE%B7%E9%95%87%E9%99%B6%E7%93%B7%20%E5%BA%90%E5%B1%B1%20-%3E%20%E6%99%AF%E5%BE%B7%E9%95%87",
+          "title": "Search \"景德镇陶瓷 in 庐山 -> 景德镇\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "景德镇陶瓷 in 庐山 -> 景德镇 in Lushan -> Jingdezhen, China",
+        "Travel photography of 景德镇陶瓷 in 庐山 -> 景德镇 in Lushan -> Jingdezhen",
+        "景德镇陶瓷 in 庐山 -> 景德镇 tourist attraction in Lushan -> Jingdezhen"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Hotel in Jingdezhen or Wuyuan",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Hotel in Jingdezhen or Wuyuan Lushan -> Jingdezhen site:tripadvisor.com",
+          "description": "Hotel in Jingdezhen or Wuyuan in Lushan -> Jingdezhen on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Hotel%20in%20Jingdezhen%20or%20Wuyuan%20Lushan%20-%3E%20Jingdezhen",
+          "title": "Find \"Hotel in Jingdezhen or Wuyuan in Lushan -> Jingdezhen on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Hotel in Jingdezhen or Wuyuan",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Hotel in Jingdezhen or Wuyuan Lushan -> Jingdezhen site:booking.com",
+          "description": "Hotel in Jingdezhen or Wuyuan in Lushan -> Jingdezhen on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Hotel in Jingdezhen or Wuyuan",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Hotel in Jingdezhen or Wuyuan Lushan -> Jingdezhen hotel reviews",
+          "description": "Reviews for Hotel in Jingdezhen or Wuyuan in Lushan -> Jingdezhen"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Lushan -> Jingdezhen China tourism site:unsplash.com",
+      "description": "General Lushan -> Jingdezhen tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Lushan -> Jingdezhen China landscape site:pexels.com",
+      "description": "Lushan -> Jingdezhen landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Mount Shizhong Hike China travel site:unsplash.com",
+      "description": "Mount Shizhong Hike travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Yangtze & Poyang Lake View China travel site:unsplash.com",
+      "description": "Yangtze & Poyang Lake View travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Mount Shizhong Hike",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Mount%20Shizhong%20Hike%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Mount%20Shizhong%20Hike%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Mount%20Shizhong%20Hike%20china%20tourism",
+          "query": "Mount Shizhong Hike",
+          "alt": "Mount Shizhong Hike china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Mount%20Shizhong%20Hike%20china%20tourism&w=1200",
+          "description": "Real photo of Mount Shizhong Hike china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Yangtze & Poyang Lake View",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Yangtze%20%26%20Poyang%20Lake%20View%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Yangtze%20%26%20Poyang%20Lake%20View%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Yangtze%20%26%20Poyang%20Lake%20View%20china%20tourism",
+          "query": "Yangtze & Poyang Lake View",
+          "alt": "Yangtze & Poyang Lake View china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Yangtze%20%26%20Poyang%20Lake%20View%20china%20tourism&w=1200",
+          "description": "Real photo of Yangtze & Poyang Lake View china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Jingdezhen Ceramics",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Jingdezhen%20Ceramics%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Jingdezhen%20Ceramics%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Jingdezhen%20Ceramics%20china%20tourism",
+          "query": "Jingdezhen Ceramics",
+          "alt": "Jingdezhen Ceramics china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Jingdezhen%20Ceramics%20china%20tourism&w=1200",
+          "description": "Real photo of Jingdezhen Ceramics china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:38.480Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

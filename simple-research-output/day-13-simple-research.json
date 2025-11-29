@@ -1,0 +1,109 @@
+{
+  "day": 13,
+  "title": {
+    "en": "Ascending Mount Tai",
+    "cn": "登顶泰山"
+  },
+  "location": {
+    "en": "Mount Tai",
+    "cn": "泰山"
+  },
+  "activities": [
+    {
+      "activity": "Mount Tai Climb",
+      "imageLinks": {
+        "highlight": "Mount Tai Climb",
+        "searchTerm": "mount tai shandong climbing",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/mount%20tai%20shandong%20climbing?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?mount%20tai%20shandong%20climbing&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/mount%20tai%20shandong%20climbing/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "mount tai shandong climbing professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Mount Tai Climb in Mount Tai, China",
+        "Travel photography of Mount Tai Climb in Mount Tai",
+        "Mount Tai Climb tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "Jade Emperor Peak",
+      "imageLinks": {
+        "highlight": "Jade Emperor Peak",
+        "searchTerm": "jade emperor peak",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/jade%20emperor%20peak?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?jade%20emperor%20peak&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/jade%20emperor%20peak/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "jade emperor peak professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Jade Emperor Peak in Mount Tai, China",
+        "Travel photography of Jade Emperor Peak in Mount Tai",
+        "Jade Emperor Peak tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "Eighteen Bends",
+      "imageLinks": {
+        "highlight": "Eighteen Bends",
+        "searchTerm": "eighteen bends",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/eighteen%20bends?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?eighteen%20bends&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/eighteen%20bends/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "eighteen bends professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Eighteen Bends in Mount Tai, China",
+        "Travel photography of Eighteen Bends in Mount Tai",
+        "Eighteen Bends tourist attraction in Mount Tai"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Hotel near Mount Tai",
+    "location": "Mount Tai",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Hotel%20near%20Mount%20Tai%20Mount%20Tai",
+      "https://www.booking.com/searchresults.html?ss=Hotel%20near%20Mount%20Tai%20Mount%20Tai",
+      "https://www.google.com/search?q=Hotel%20near%20Mount%20Tai%20Mount%20Tai%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:39.653Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

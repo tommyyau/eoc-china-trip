@@ -1,0 +1,82 @@
+{
+  "day": 6,
+  "title": {
+    "en": "Great Wall Challenge",
+    "cn": "长城挑战"
+  },
+  "location": {
+    "en": "Beijing -> Lushan",
+    "cn": "北京 -> 庐山"
+  },
+  "activities": [
+    {
+      "activity": "Badaling Great Wall Hiking",
+      "imageLinks": {
+        "highlight": "Badaling Great Wall Hiking",
+        "searchTerm": "great wall of china badaling",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/great%20wall%20of%20china%20badaling?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?great%20wall%20of%20china%20badaling&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/great%20wall%20of%20china%20badaling/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "great wall of china badaling professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Badaling Great Wall Hiking in Beijing -> Lushan, China",
+        "Travel photography of Badaling Great Wall Hiking in Beijing -> Lushan",
+        "Badaling Great Wall Hiking tourist attraction in Beijing -> Lushan"
+      ]
+    },
+    {
+      "activity": "Overnight Sleeper Train",
+      "imageLinks": {
+        "highlight": "Overnight Sleeper Train",
+        "searchTerm": "overnight sleeper train",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/overnight%20sleeper%20train?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?overnight%20sleeper%20train&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/overnight%20sleeper%20train/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "overnight sleeper train professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Overnight Sleeper Train in Beijing -> Lushan, China",
+        "Travel photography of Overnight Sleeper Train in Beijing -> Lushan",
+        "Overnight Sleeper Train tourist attraction in Beijing -> Lushan"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Overnight Train (Soft Sleeper)",
+    "location": "Beijing -> Lushan",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Overnight%20Train%20(Soft%20Sleeper)%20Beijing%20-%3E%20Lushan",
+      "https://www.booking.com/searchresults.html?ss=Overnight%20Train%20(Soft%20Sleeper)%20Beijing%20-%3E%20Lushan",
+      "https://www.google.com/search?q=Overnight%20Train%20(Soft%20Sleeper)%20Beijing%20-%3E%20Lushan%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:32.146Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

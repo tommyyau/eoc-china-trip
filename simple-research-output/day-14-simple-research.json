@@ -1,0 +1,109 @@
+{
+  "day": 14,
+  "title": {
+    "en": "Confucian Culture in Qufu",
+    "cn": "曲阜儒家文化"
+  },
+  "location": {
+    "en": "Tai'an -> Qufu",
+    "cn": "泰安 -> 曲阜"
+  },
+  "activities": [
+    {
+      "activity": "Confucius Temple",
+      "imageLinks": {
+        "highlight": "Confucius Temple",
+        "searchTerm": "confucius temple qufu china",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/confucius%20temple%20qufu%20china?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?confucius%20temple%20qufu%20china&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/confucius%20temple%20qufu%20china/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "confucius temple qufu china professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Confucius Temple in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Temple in Tai'an -> Qufu",
+        "Confucius Temple tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "Confucius Mansion",
+      "imageLinks": {
+        "highlight": "Confucius Mansion",
+        "searchTerm": "confucius mansion",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/confucius%20mansion?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?confucius%20mansion&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/confucius%20mansion/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "confucius mansion professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Confucius Mansion in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Mansion in Tai'an -> Qufu",
+        "Confucius Mansion tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "Confucius Forest",
+      "imageLinks": {
+        "highlight": "Confucius Forest",
+        "searchTerm": "confucius forest",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/confucius%20forest?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?confucius%20forest&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/confucius%20forest/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "confucius forest professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Confucius Forest in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Forest in Tai'an -> Qufu",
+        "Confucius Forest tourist attraction in Tai'an -> Qufu"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Hotel in Qufu",
+    "location": "Tai'an -> Qufu",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Hotel%20in%20Qufu%20Tai'an%20-%3E%20Qufu",
+      "https://www.booking.com/searchresults.html?ss=Hotel%20in%20Qufu%20Tai'an%20-%3E%20Qufu",
+      "https://www.google.com/search?q=Hotel%20in%20Qufu%20Tai'an%20-%3E%20Qufu%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:40.723Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

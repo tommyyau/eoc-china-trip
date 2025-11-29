@@ -1,0 +1,343 @@
+{
+  "day": 13,
+  "title": {
+    "en": "Ascending Mount Tai",
+    "cn": "登顶泰山"
+  },
+  "location": {
+    "en": "Mount Tai",
+    "cn": "泰山"
+  },
+  "activities": [
+    {
+      "activity": "Mount Tai Climb in Mount Tai",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Mount Tai Climb Mount Tai site:unsplash.com",
+          "description": "Mount Tai Climb in Mount Tai"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Mount%20Tai%20Climb%20Mount%20Tai",
+          "title": "Search \"Mount Tai Climb in Mount Tai\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Mount Tai Climb in Mount Tai in Mount Tai, China",
+        "Travel photography of Mount Tai Climb in Mount Tai in Mount Tai",
+        "Mount Tai Climb in Mount Tai tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "Mount Tai Climb in Mount Tai",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Mount Tai Climb Mount Tai site:pexels.com",
+          "description": "Mount Tai Climb in Mount Tai"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Mount%20Tai%20Climb%20Mount%20Tai/",
+          "title": "Search \"Mount Tai Climb in Mount Tai\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Mount Tai Climb in Mount Tai in Mount Tai, China",
+        "Travel photography of Mount Tai Climb in Mount Tai in Mount Tai",
+        "Mount Tai Climb in Mount Tai tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "攀登泰山 in 泰山",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "攀登泰山 泰山 site:unsplash.com",
+          "description": "攀登泰山 in 泰山"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E6%94%80%E7%99%BB%E6%B3%B0%E5%B1%B1%20%E6%B3%B0%E5%B1%B1",
+          "title": "Search \"攀登泰山 in 泰山\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "攀登泰山 in 泰山 in Mount Tai, China",
+        "Travel photography of 攀登泰山 in 泰山 in Mount Tai",
+        "攀登泰山 in 泰山 tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "Jade Emperor Peak in Mount Tai",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Jade Emperor Peak Mount Tai site:unsplash.com",
+          "description": "Jade Emperor Peak in Mount Tai"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Jade%20Emperor%20Peak%20Mount%20Tai",
+          "title": "Search \"Jade Emperor Peak in Mount Tai\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Jade Emperor Peak in Mount Tai in Mount Tai, China",
+        "Travel photography of Jade Emperor Peak in Mount Tai in Mount Tai",
+        "Jade Emperor Peak in Mount Tai tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "Jade Emperor Peak in Mount Tai",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Jade Emperor Peak Mount Tai site:pexels.com",
+          "description": "Jade Emperor Peak in Mount Tai"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Jade%20Emperor%20Peak%20Mount%20Tai/",
+          "title": "Search \"Jade Emperor Peak in Mount Tai\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Jade Emperor Peak in Mount Tai in Mount Tai, China",
+        "Travel photography of Jade Emperor Peak in Mount Tai in Mount Tai",
+        "Jade Emperor Peak in Mount Tai tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "玉皇顶 in 泰山",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "玉皇顶 泰山 site:unsplash.com",
+          "description": "玉皇顶 in 泰山"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E7%8E%89%E7%9A%87%E9%A1%B6%20%E6%B3%B0%E5%B1%B1",
+          "title": "Search \"玉皇顶 in 泰山\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "玉皇顶 in 泰山 in Mount Tai, China",
+        "Travel photography of 玉皇顶 in 泰山 in Mount Tai",
+        "玉皇顶 in 泰山 tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "Eighteen Bends in Mount Tai",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Eighteen Bends Mount Tai site:unsplash.com",
+          "description": "Eighteen Bends in Mount Tai"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Eighteen%20Bends%20Mount%20Tai",
+          "title": "Search \"Eighteen Bends in Mount Tai\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Eighteen Bends in Mount Tai in Mount Tai, China",
+        "Travel photography of Eighteen Bends in Mount Tai in Mount Tai",
+        "Eighteen Bends in Mount Tai tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "Eighteen Bends in Mount Tai",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Eighteen Bends Mount Tai site:pexels.com",
+          "description": "Eighteen Bends in Mount Tai"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Eighteen%20Bends%20Mount%20Tai/",
+          "title": "Search \"Eighteen Bends in Mount Tai\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Eighteen Bends in Mount Tai in Mount Tai, China",
+        "Travel photography of Eighteen Bends in Mount Tai in Mount Tai",
+        "Eighteen Bends in Mount Tai tourist attraction in Mount Tai"
+      ]
+    },
+    {
+      "activity": "十八盘 in 泰山",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "十八盘 泰山 site:unsplash.com",
+          "description": "十八盘 in 泰山"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%8D%81%E5%85%AB%E7%9B%98%20%E6%B3%B0%E5%B1%B1",
+          "title": "Search \"十八盘 in 泰山\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "十八盘 in 泰山 in Mount Tai, China",
+        "Travel photography of 十八盘 in 泰山 in Mount Tai",
+        "十八盘 in 泰山 tourist attraction in Mount Tai"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Hotel near Mount Tai",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Hotel near Mount Tai Mount Tai site:tripadvisor.com",
+          "description": "Hotel near Mount Tai in Mount Tai on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Hotel%20near%20Mount%20Tai%20Mount%20Tai",
+          "title": "Find \"Hotel near Mount Tai in Mount Tai on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Hotel near Mount Tai",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Hotel near Mount Tai Mount Tai site:booking.com",
+          "description": "Hotel near Mount Tai in Mount Tai on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Hotel near Mount Tai",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Hotel near Mount Tai Mount Tai hotel reviews",
+          "description": "Reviews for Hotel near Mount Tai in Mount Tai"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Mount Tai China tourism site:unsplash.com",
+      "description": "General Mount Tai tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Mount Tai China landscape site:pexels.com",
+      "description": "Mount Tai landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Mount Tai Climb China travel site:unsplash.com",
+      "description": "Mount Tai Climb travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Jade Emperor Peak China travel site:unsplash.com",
+      "description": "Jade Emperor Peak travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Mount Tai Climb",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?mount%20tai%20shandong%20climbing&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/mount%20tai%20shandong%20climbing",
+          "sourceUrl": "https://unsplash.com/s/photos/mount%20tai%20shandong%20climbing",
+          "query": "Mount Tai Climb",
+          "alt": "mount tai shandong climbing",
+          "downloadUrl": "https://source.unsplash.com/featured/?mount%20tai%20shandong%20climbing&w=1200",
+          "description": "Real photo of mount tai shandong climbing",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Jade Emperor Peak",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Jade%20Emperor%20Peak%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Jade%20Emperor%20Peak%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Jade%20Emperor%20Peak%20china%20tourism",
+          "query": "Jade Emperor Peak",
+          "alt": "Jade Emperor Peak china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Jade%20Emperor%20Peak%20china%20tourism&w=1200",
+          "description": "Real photo of Jade Emperor Peak china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Eighteen Bends",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Eighteen%20Bends%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Eighteen%20Bends%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Eighteen%20Bends%20china%20tourism",
+          "query": "Eighteen Bends",
+          "alt": "Eighteen Bends china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Eighteen%20Bends%20china%20tourism&w=1200",
+          "description": "Real photo of Eighteen Bends china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:56:52.649Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

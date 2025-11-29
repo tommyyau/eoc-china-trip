@@ -1,0 +1,109 @@
+{
+  "day": 10,
+  "title": {
+    "en": "Wuyuan Rural Landscapes",
+    "cn": "婺源田园风光"
+  },
+  "location": {
+    "en": "Wuyuan",
+    "cn": "婺源"
+  },
+  "activities": [
+    {
+      "activity": "Rural Hiking",
+      "imageLinks": {
+        "highlight": "Rural Hiking",
+        "searchTerm": "rural hiking",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/rural%20hiking?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?rural%20hiking&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/rural%20hiking/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "rural hiking professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Rural Hiking in Wuyuan, China",
+        "Travel photography of Rural Hiking in Wuyuan",
+        "Rural Hiking tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "Hui-style Architecture",
+      "imageLinks": {
+        "highlight": "Hui-style Architecture",
+        "searchTerm": "hui-style architecture",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/hui-style%20architecture?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?hui-style%20architecture&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/hui-style%20architecture/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "hui-style architecture professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Hui-style Architecture in Wuyuan, China",
+        "Travel photography of Hui-style Architecture in Wuyuan",
+        "Hui-style Architecture tourist attraction in Wuyuan"
+      ]
+    },
+    {
+      "activity": "Moon Bay",
+      "imageLinks": {
+        "highlight": "Moon Bay",
+        "searchTerm": "moon bay",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/moon%20bay?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?moon%20bay&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/moon%20bay/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "moon bay professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Moon Bay in Wuyuan, China",
+        "Travel photography of Moon Bay in Wuyuan",
+        "Moon Bay tourist attraction in Wuyuan"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Homestay in Wuyuan",
+    "location": "Wuyuan",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Homestay%20in%20Wuyuan%20Wuyuan",
+      "https://www.booking.com/searchresults.html?ss=Homestay%20in%20Wuyuan%20Wuyuan",
+      "https://www.google.com/search?q=Homestay%20in%20Wuyuan%20Wuyuan%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:36.447Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

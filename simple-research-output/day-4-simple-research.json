@@ -1,0 +1,109 @@
+{
+  "day": 4,
+  "title": {
+    "en": "Beilin Museum & Travel to Beijing",
+    "cn": "碑林博物馆与前往北京"
+  },
+  "location": {
+    "en": "Xi'an -> Beijing",
+    "cn": "西安 -> 北京"
+  },
+  "activities": [
+    {
+      "activity": "Beilin Museum",
+      "imageLinks": {
+        "highlight": "Beilin Museum",
+        "searchTerm": "beilin museum",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/beilin%20museum?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?beilin%20museum&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/beilin%20museum/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "beilin museum professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Beilin Museum in Xi'an -> Beijing, China",
+        "Travel photography of Beilin Museum in Xi'an -> Beijing",
+        "Beilin Museum tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "High-speed Train/Flight to Beijing",
+      "imageLinks": {
+        "highlight": "High-speed Train/Flight to Beijing",
+        "searchTerm": "high-speed train/flight to beijing",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/high-speed%20train%2Fflight%20to%20beijing?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?high-speed%20train%2Fflight%20to%20beijing&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/high-speed%20train%2Fflight%20to%20beijing/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "high-speed train/flight to beijing professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "High-speed Train/Flight to Beijing in Xi'an -> Beijing, China",
+        "Travel photography of High-speed Train/Flight to Beijing in Xi'an -> Beijing",
+        "High-speed Train/Flight to Beijing tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "Welcome Meeting",
+      "imageLinks": {
+        "highlight": "Welcome Meeting",
+        "searchTerm": "welcome meeting",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/welcome%20meeting?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?welcome%20meeting&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/welcome%20meeting/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "welcome meeting professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Welcome Meeting in Xi'an -> Beijing, China",
+        "Travel photography of Welcome Meeting in Xi'an -> Beijing",
+        "Welcome Meeting tourist attraction in Xi'an -> Beijing"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Centrally located 4-star hotel in Beijing",
+    "location": "Xi'an -> Beijing",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Centrally%20located%204-star%20hotel%20in%20Beijing%20Xi'an%20-%3E%20Beijing",
+      "https://www.booking.com/searchresults.html?ss=Centrally%20located%204-star%20hotel%20in%20Beijing%20Xi'an%20-%3E%20Beijing",
+      "https://www.google.com/search?q=Centrally%20located%204-star%20hotel%20in%20Beijing%20Xi'an%20-%3E%20Beijing%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:30.001Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "day": 2,
+  "title": {
+    "en": "Xi'an City Walk & Ancient Wall",
+    "cn": "西安城市漫步与古城墙"
+  },
+  "location": {
+    "en": "Xi'an",
+    "cn": "西安"
+  },
+  "activities": [
+    {
+      "activity": "Bell & Drum Towers in Xi'an",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Bell & Drum Towers Xi'an site:unsplash.com",
+          "description": "Bell & Drum Towers in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Bell%20%26%20Drum%20Towers%20Xi'an",
+          "title": "Search \"Bell & Drum Towers in Xi'an\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Bell & Drum Towers in Xi'an in Xi'an, China",
+        "Travel photography of Bell & Drum Towers in Xi'an in Xi'an",
+        "Bell & Drum Towers in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Bell & Drum Towers in Xi'an",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Bell & Drum Towers Xi'an site:pexels.com",
+          "description": "Bell & Drum Towers in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Bell%20%26%20Drum%20Towers%20Xi'an/",
+          "title": "Search \"Bell & Drum Towers in Xi'an\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Bell & Drum Towers in Xi'an in Xi'an, China",
+        "Travel photography of Bell & Drum Towers in Xi'an in Xi'an",
+        "Bell & Drum Towers in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "钟鼓楼 in 西安",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "钟鼓楼 西安 site:unsplash.com",
+          "description": "钟鼓楼 in 西安"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E9%92%9F%E9%BC%93%E6%A5%BC%20%E8%A5%BF%E5%AE%89",
+          "title": "Search \"钟鼓楼 in 西安\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "钟鼓楼 in 西安 in Xi'an, China",
+        "Travel photography of 钟鼓楼 in 西安 in Xi'an",
+        "钟鼓楼 in 西安 tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Muslim Quarter in Xi'an",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Muslim Quarter Xi'an site:unsplash.com",
+          "description": "Muslim Quarter in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Muslim%20Quarter%20Xi'an",
+          "title": "Search \"Muslim Quarter in Xi'an\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Muslim Quarter in Xi'an in Xi'an, China",
+        "Travel photography of Muslim Quarter in Xi'an in Xi'an",
+        "Muslim Quarter in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Muslim Quarter in Xi'an",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Muslim Quarter Xi'an site:pexels.com",
+          "description": "Muslim Quarter in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Muslim%20Quarter%20Xi'an/",
+          "title": "Search \"Muslim Quarter in Xi'an\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Muslim Quarter in Xi'an in Xi'an, China",
+        "Travel photography of Muslim Quarter in Xi'an in Xi'an",
+        "Muslim Quarter in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "回民街 in 西安",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "回民街 西安 site:unsplash.com",
+          "description": "回民街 in 西安"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%9B%9E%E6%B0%91%E8%A1%97%20%E8%A5%BF%E5%AE%89",
+          "title": "Search \"回民街 in 西安\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "回民街 in 西安 in Xi'an, China",
+        "Travel photography of 回民街 in 西安 in Xi'an",
+        "回民街 in 西安 tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "City Wall Hiking in Xi'an",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "City Wall Hiking Xi'an site:unsplash.com",
+          "description": "City Wall Hiking in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/City%20Wall%20Hiking%20Xi'an",
+          "title": "Search \"City Wall Hiking in Xi'an\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "City Wall Hiking in Xi'an in Xi'an, China",
+        "Travel photography of City Wall Hiking in Xi'an in Xi'an",
+        "City Wall Hiking in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "City Wall Hiking in Xi'an",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "City Wall Hiking Xi'an site:pexels.com",
+          "description": "City Wall Hiking in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/City%20Wall%20Hiking%20Xi'an/",
+          "title": "Search \"City Wall Hiking in Xi'an\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "City Wall Hiking in Xi'an in Xi'an, China",
+        "Travel photography of City Wall Hiking in Xi'an in Xi'an",
+        "City Wall Hiking in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "古城墙徒步（13.7公里） in 西安",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "古城墙徒步（13.7公里） 西安 site:unsplash.com",
+          "description": "古城墙徒步（13.7公里） in 西安"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%8F%A4%E5%9F%8E%E5%A2%99%E5%BE%92%E6%AD%A5%EF%BC%8813.7%E5%85%AC%E9%87%8C%EF%BC%89%20%E8%A5%BF%E5%AE%89",
+          "title": "Search \"古城墙徒步（13.7公里） in 西安\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "古城墙徒步（13.7公里） in 西安 in Xi'an, China",
+        "Travel photography of 古城墙徒步（13.7公里） in 西安 in Xi'an",
+        "古城墙徒步（13.7公里） in 西安 tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Dumpling Banquet in Xi'an",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Dumpling Banquet Xi'an site:unsplash.com",
+          "description": "Dumpling Banquet in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Dumpling%20Banquet%20Xi'an",
+          "title": "Search \"Dumpling Banquet in Xi'an\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Dumpling Banquet in Xi'an in Xi'an, China",
+        "Travel photography of Dumpling Banquet in Xi'an in Xi'an",
+        "Dumpling Banquet in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Dumpling Banquet in Xi'an",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Dumpling Banquet Xi'an site:pexels.com",
+          "description": "Dumpling Banquet in Xi'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Dumpling%20Banquet%20Xi'an/",
+          "title": "Search \"Dumpling Banquet in Xi'an\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Dumpling Banquet in Xi'an in Xi'an, China",
+        "Travel photography of Dumpling Banquet in Xi'an in Xi'an",
+        "Dumpling Banquet in Xi'an tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "饺子宴 in 西安",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "饺子宴 西安 site:unsplash.com",
+          "description": "饺子宴 in 西安"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E9%A5%BA%E5%AD%90%E5%AE%B4%20%E8%A5%BF%E5%AE%89",
+          "title": "Search \"饺子宴 in 西安\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "饺子宴 in 西安 in Xi'an, China",
+        "Travel photography of 饺子宴 in 西安 in Xi'an",
+        "饺子宴 in 西安 tourist attraction in Xi'an"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Eastern House Xi'an",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Eastern House Xi'an site:tripadvisor.com",
+          "description": "Eastern House in Xi'an on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Eastern%20House%20Xi'an",
+          "title": "Find \"Eastern House in Xi'an on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Eastern House Xi'an",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Eastern House Xi'an site:booking.com",
+          "description": "Eastern House in Xi'an on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Eastern House Xi'an",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Eastern House Xi'an hotel reviews",
+          "description": "Reviews for Eastern House in Xi'an"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Xi'an China tourism site:unsplash.com",
+      "description": "General Xi'an tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Xi'an China landscape site:pexels.com",
+      "description": "Xi'an landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Bell & Drum Towers China travel site:unsplash.com",
+      "description": "Bell & Drum Towers travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Muslim Quarter China travel site:unsplash.com",
+      "description": "Muslim Quarter travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Bell & Drum Towers",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Bell%20%26%20Drum%20Towers%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Bell%20%26%20Drum%20Towers%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Bell%20%26%20Drum%20Towers%20china%20tourism",
+          "query": "Bell & Drum Towers",
+          "alt": "Bell & Drum Towers china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Bell%20%26%20Drum%20Towers%20china%20tourism&w=1200",
+          "description": "Real photo of Bell & Drum Towers china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Muslim Quarter",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Muslim%20Quarter%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Muslim%20Quarter%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Muslim%20Quarter%20china%20tourism",
+          "query": "Muslim Quarter",
+          "alt": "Muslim Quarter china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Muslim%20Quarter%20china%20tourism&w=1200",
+          "description": "Real photo of Muslim Quarter china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "City Wall Hiking (13.7km)",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?ancient%20city%20wall%20xian&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/ancient%20city%20wall%20xian",
+          "sourceUrl": "https://unsplash.com/s/photos/ancient%20city%20wall%20xian",
+          "query": "City Wall Hiking (13.7km)",
+          "alt": "ancient city wall xian",
+          "downloadUrl": "https://source.unsplash.com/featured/?ancient%20city%20wall%20xian&w=1200",
+          "description": "Real photo of ancient city wall xian",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:22.073Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "day": 15,
+  "title": {
+    "en": "Departure",
+    "cn": "返程"
+  },
+  "location": {
+    "en": "Qingdao -> London",
+    "cn": "青岛 -> 伦敦"
+  },
+  "activities": [
+    {
+      "activity": "Airport Transfer in Qingdao -> London",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Airport Transfer Qingdao -> London site:unsplash.com",
+          "description": "Airport Transfer in Qingdao -> London"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Airport%20Transfer%20Qingdao%20-%3E%20London",
+          "title": "Search \"Airport Transfer in Qingdao -> London\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Airport Transfer in Qingdao -> London in Qingdao -> London, China",
+        "Travel photography of Airport Transfer in Qingdao -> London in Qingdao -> London",
+        "Airport Transfer in Qingdao -> London tourist attraction in Qingdao -> London"
+      ]
+    },
+    {
+      "activity": "Airport Transfer in Qingdao -> London",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Airport Transfer Qingdao -> London site:pexels.com",
+          "description": "Airport Transfer in Qingdao -> London"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Airport%20Transfer%20Qingdao%20-%3E%20London/",
+          "title": "Search \"Airport Transfer in Qingdao -> London\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Airport Transfer in Qingdao -> London in Qingdao -> London, China",
+        "Travel photography of Airport Transfer in Qingdao -> London in Qingdao -> London",
+        "Airport Transfer in Qingdao -> London tourist attraction in Qingdao -> London"
+      ]
+    },
+    {
+      "activity": "机场送机 in 青岛 -> 伦敦",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "机场送机 青岛 -> 伦敦 site:unsplash.com",
+          "description": "机场送机 in 青岛 -> 伦敦"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E6%9C%BA%E5%9C%BA%E9%80%81%E6%9C%BA%20%E9%9D%92%E5%B2%9B%20-%3E%20%E4%BC%A6%E6%95%A6",
+          "title": "Search \"机场送机 in 青岛 -> 伦敦\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "机场送机 in 青岛 -> 伦敦 in Qingdao -> London, China",
+        "Travel photography of 机场送机 in 青岛 -> 伦敦 in Qingdao -> London",
+        "机场送机 in 青岛 -> 伦敦 tourist attraction in Qingdao -> London"
+      ]
+    },
+    {
+      "activity": "Departure in Qingdao -> London",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Departure Qingdao -> London site:unsplash.com",
+          "description": "Departure in Qingdao -> London"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Departure%20Qingdao%20-%3E%20London",
+          "title": "Search \"Departure in Qingdao -> London\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Departure in Qingdao -> London in Qingdao -> London, China",
+        "Travel photography of Departure in Qingdao -> London in Qingdao -> London",
+        "Departure in Qingdao -> London tourist attraction in Qingdao -> London"
+      ]
+    },
+    {
+      "activity": "Departure in Qingdao -> London",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Departure Qingdao -> London site:pexels.com",
+          "description": "Departure in Qingdao -> London"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Departure%20Qingdao%20-%3E%20London/",
+          "title": "Search \"Departure in Qingdao -> London\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Departure in Qingdao -> London in Qingdao -> London, China",
+        "Travel photography of Departure in Qingdao -> London in Qingdao -> London",
+        "Departure in Qingdao -> London tourist attraction in Qingdao -> London"
+      ]
+    },
+    {
+      "activity": "返程 in 青岛 -> 伦敦",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "返程 青岛 -> 伦敦 site:unsplash.com",
+          "description": "返程 in 青岛 -> 伦敦"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E8%BF%94%E7%A8%8B%20%E9%9D%92%E5%B2%9B%20-%3E%20%E4%BC%A6%E6%95%A6",
+          "title": "Search \"返程 in 青岛 -> 伦敦\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "返程 in 青岛 -> 伦敦 in Qingdao -> London, China",
+        "Travel photography of 返程 in 青岛 -> 伦敦 in Qingdao -> London",
+        "返程 in 青岛 -> 伦敦 tourist attraction in Qingdao -> London"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "N/A",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "N/A Qingdao -> London site:tripadvisor.com",
+          "description": "N/A in Qingdao -> London on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=N%2FA%20Qingdao%20-%3E%20London",
+          "title": "Find \"N/A in Qingdao -> London on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "N/A",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "N/A Qingdao -> London site:booking.com",
+          "description": "N/A in Qingdao -> London on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "N/A",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "N/A Qingdao -> London hotel reviews",
+          "description": "Reviews for N/A in Qingdao -> London"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Qingdao -> London China tourism site:unsplash.com",
+      "description": "General Qingdao -> London tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Qingdao -> London China landscape site:pexels.com",
+      "description": "Qingdao -> London landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Airport Transfer China travel site:unsplash.com",
+      "description": "Airport Transfer travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Departure China travel site:unsplash.com",
+      "description": "Departure travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Airport Transfer",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Airport%20Transfer%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Airport%20Transfer%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Airport%20Transfer%20china%20tourism",
+          "query": "Airport Transfer",
+          "alt": "Airport Transfer china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Airport%20Transfer%20china%20tourism&w=1200",
+          "description": "Real photo of Airport Transfer china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Departure",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Departure%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Departure%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Departure%20china%20tourism",
+          "query": "Departure",
+          "alt": "Departure china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Departure%20china%20tourism&w=1200",
+          "description": "Real photo of Departure china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:53.223Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

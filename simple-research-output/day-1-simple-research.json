@@ -1,0 +1,109 @@
+{
+  "day": 1,
+  "title": {
+    "en": "Arrival in Xi'an",
+    "cn": "抵达西安"
+  },
+  "location": {
+    "en": "Xi'an",
+    "cn": "西安"
+  },
+  "activities": [
+    {
+      "activity": "Airport Transfer",
+      "imageLinks": {
+        "highlight": "Airport Transfer",
+        "searchTerm": "airport transfer",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/airport%20transfer?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?airport%20transfer&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/airport%20transfer/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "airport transfer professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Airport Transfer in Xi'an, China",
+        "Travel photography of Airport Transfer in Xi'an",
+        "Airport Transfer tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Big Wild Goose Pagoda (optional)",
+      "imageLinks": {
+        "highlight": "Big Wild Goose Pagoda",
+        "searchTerm": "big wild goose pagoda",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/big%20wild%20goose%20pagoda?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?big%20wild%20goose%20pagoda&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/big%20wild%20goose%20pagoda/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "big wild goose pagoda professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Big Wild Goose Pagoda (optional) in Xi'an, China",
+        "Travel photography of Big Wild Goose Pagoda (optional) in Xi'an",
+        "Big Wild Goose Pagoda (optional) tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Welcome Dinner",
+      "imageLinks": {
+        "highlight": "Welcome Dinner",
+        "searchTerm": "welcome dinner",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/welcome%20dinner?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?welcome%20dinner&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/welcome%20dinner/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "welcome dinner professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Welcome Dinner in Xi'an, China",
+        "Travel photography of Welcome Dinner in Xi'an",
+        "Welcome Dinner tourist attraction in Xi'an"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Eastern House",
+    "location": "Xi'an",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Eastern%20House%20Xi'an",
+      "https://www.booking.com/searchresults.html?ss=Eastern%20House%20Xi'an",
+      "https://www.google.com/search?q=Eastern%20House%20Xi'an%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:26.768Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "day": 12,
+  "title": {
+    "en": "Journey to Mount Tai",
+    "cn": "前往泰山"
+  },
+  "location": {
+    "en": "Shangrao -> Tai'an",
+    "cn": "上饶 -> 泰安"
+  },
+  "activities": [
+    {
+      "activity": "High-speed Rail in Shangrao -> Tai'an",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "High-speed Rail Shangrao -> Tai'an site:unsplash.com",
+          "description": "High-speed Rail in Shangrao -> Tai'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/High-speed%20Rail%20Shangrao%20-%3E%20Tai'an",
+          "title": "Search \"High-speed Rail in Shangrao -> Tai'an\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
+        "Travel photography of High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an",
+        "High-speed Rail in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
+      ]
+    },
+    {
+      "activity": "High-speed Rail in Shangrao -> Tai'an",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "High-speed Rail Shangrao -> Tai'an site:pexels.com",
+          "description": "High-speed Rail in Shangrao -> Tai'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/High-speed%20Rail%20Shangrao%20-%3E%20Tai'an/",
+          "title": "Search \"High-speed Rail in Shangrao -> Tai'an\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
+        "Travel photography of High-speed Rail in Shangrao -> Tai'an in Shangrao -> Tai'an",
+        "High-speed Rail in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
+      ]
+    },
+    {
+      "activity": "高铁体验 in 上饶 -> 泰安",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "高铁体验 上饶 -> 泰安 site:unsplash.com",
+          "description": "高铁体验 in 上饶 -> 泰安"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E9%AB%98%E9%93%81%E4%BD%93%E9%AA%8C%20%E4%B8%8A%E9%A5%B6%20-%3E%20%E6%B3%B0%E5%AE%89",
+          "title": "Search \"高铁体验 in 上饶 -> 泰安\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "高铁体验 in 上饶 -> 泰安 in Shangrao -> Tai'an, China",
+        "Travel photography of 高铁体验 in 上饶 -> 泰安 in Shangrao -> Tai'an",
+        "高铁体验 in 上饶 -> 泰安 tourist attraction in Shangrao -> Tai'an"
+      ]
+    },
+    {
+      "activity": "Dai Temple in Shangrao -> Tai'an",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Dai Temple Shangrao -> Tai'an site:unsplash.com",
+          "description": "Dai Temple in Shangrao -> Tai'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Dai%20Temple%20Shangrao%20-%3E%20Tai'an",
+          "title": "Search \"Dai Temple in Shangrao -> Tai'an\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
+        "Travel photography of Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an",
+        "Dai Temple in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
+      ]
+    },
+    {
+      "activity": "Dai Temple in Shangrao -> Tai'an",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Dai Temple Shangrao -> Tai'an site:pexels.com",
+          "description": "Dai Temple in Shangrao -> Tai'an"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Dai%20Temple%20Shangrao%20-%3E%20Tai'an/",
+          "title": "Search \"Dai Temple in Shangrao -> Tai'an\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an, China",
+        "Travel photography of Dai Temple in Shangrao -> Tai'an in Shangrao -> Tai'an",
+        "Dai Temple in Shangrao -> Tai'an tourist attraction in Shangrao -> Tai'an"
+      ]
+    },
+    {
+      "activity": "岱庙 in 上饶 -> 泰安",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "岱庙 上饶 -> 泰安 site:unsplash.com",
+          "description": "岱庙 in 上饶 -> 泰安"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%B2%B1%E5%BA%99%20%E4%B8%8A%E9%A5%B6%20-%3E%20%E6%B3%B0%E5%AE%89",
+          "title": "Search \"岱庙 in 上饶 -> 泰安\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "岱庙 in 上饶 -> 泰安 in Shangrao -> Tai'an, China",
+        "Travel photography of 岱庙 in 上饶 -> 泰安 in Shangrao -> Tai'an",
+        "岱庙 in 上饶 -> 泰安 tourist attraction in Shangrao -> Tai'an"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Hotel in Tai'an",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Hotel in Tai'an Shangrao -> Tai'an site:tripadvisor.com",
+          "description": "Hotel in Tai'an in Shangrao -> Tai'an on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Hotel%20in%20Tai'an%20Shangrao%20-%3E%20Tai'an",
+          "title": "Find \"Hotel in Tai'an in Shangrao -> Tai'an on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Hotel in Tai'an",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Hotel in Tai'an Shangrao -> Tai'an site:booking.com",
+          "description": "Hotel in Tai'an in Shangrao -> Tai'an on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Hotel in Tai'an",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Hotel in Tai'an Shangrao -> Tai'an hotel reviews",
+          "description": "Reviews for Hotel in Tai'an in Shangrao -> Tai'an"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Shangrao -> Tai'an China tourism site:unsplash.com",
+      "description": "General Shangrao -> Tai'an tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Shangrao -> Tai'an China landscape site:pexels.com",
+      "description": "Shangrao -> Tai'an landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "High-speed Rail China travel site:unsplash.com",
+      "description": "High-speed Rail travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Dai Temple China travel site:unsplash.com",
+      "description": "Dai Temple travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "High-speed Rail",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?High-speed%20Rail%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/High-speed%20Rail%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/High-speed%20Rail%20china%20tourism",
+          "query": "High-speed Rail",
+          "alt": "High-speed Rail china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?High-speed%20Rail%20china%20tourism&w=1200",
+          "description": "Real photo of High-speed Rail china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Dai Temple",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Dai%20Temple%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Dai%20Temple%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Dai%20Temple%20china%20tourism",
+          "query": "Dai Temple",
+          "alt": "Dai Temple china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Dai%20Temple%20china%20tourism&w=1200",
+          "description": "Real photo of Dai Temple china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:45.848Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

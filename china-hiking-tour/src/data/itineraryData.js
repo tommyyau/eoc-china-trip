@@ -8,19 +8,19 @@ export const itineraryData = [
         coordinates: [34.3416, 108.9398],
         images: [
             {
+                src: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=2070&auto=format&fit=crop",
+                alt: { en: "Hotel Lobby", cn: "酒店大堂" },
+                caption: { en: "Relax in comfortable 4-star accommodation after your arrival", cn: "抵达后在舒适的4星级酒店放松" }
+            },
+            {
                 src: "https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Big Wild Goose Pagoda", cn: "大雁塔" },
-                caption: { en: "The iconic Big Wild Goose Pagoda at sunset", cn: "日落时分的标志性大雁塔" }
+                caption: { en: "The iconic Big Wild Goose Pagoda - optional visit if time permits", cn: "标志性的大雁塔 - 如果时间允许可选参观" }
             },
             {
-                src: "https://images.unsplash.com/photo-1589650196603-0d87e4d8c1b9?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Xi'an City Lights", cn: "西安城市灯光" },
-                caption: { en: "Xi'an's vibrant night illumination", cn: "西安璀璨的夜景" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1591094626676-5aa32b9f8fb7?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Traditional Architecture", cn: "传统建筑" },
-                caption: { en: "Traditional Chinese architecture in Xi'an", cn: "西安的传统中式建筑" }
+                src: "https://images.unsplash.com/photo-1580837119756-563d608dd119?q=80&w=2070&auto=format&fit=crop",
+                alt: { en: "Xi'an Ancient City Wall", cn: "西安古城墙" },
+                caption: { en: "Preview of Xi'an's magnificent ancient landmarks", cn: "西安宏伟古迹的预览" }
             }
         ],
         description: {
@@ -46,11 +46,6 @@ export const itineraryData = [
                 src: "https://images.unsplash.com/photo-1580837119756-563d608dd119?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Xi'an Ancient City Wall", cn: "西安古城墙" },
                 caption: { en: "The magnificent 600-year-old City Wall", cn: "雄伟的600年古城墙" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1583167617313-4530f667f7e4?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Bell Tower", cn: "钟楼" },
-                caption: { en: "The historic Bell Tower at the heart of Xi'an", cn: "西安市中心的历史钟楼" }
             },
             {
                 src: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=2070&auto=format&fit=crop",
@@ -91,11 +86,6 @@ export const itineraryData = [
                 src: "https://images.unsplash.com/photo-1599561046251-bfb9465b4c44?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Terracotta Warrior Close-up", cn: "兵马俑特写" },
                 caption: { en: "Each warrior has unique facial features", cn: "每个陶俑都有独特的面部特征" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1590403594522-ab465fcfc2a3?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Daming Palace", cn: "大明宫" },
-                caption: { en: "Daming Palace National Heritage Park", cn: "大明宫国家遗址公园" }
             }
         ],
         description: {
@@ -117,11 +107,6 @@ export const itineraryData = [
         region: "xian",
         coordinates: [34.2417, 108.9631],
         images: [
-            {
-                src: "https://images.unsplash.com/photo-1563166423-882bc8be1d95?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Chinese Calligraphy", cn: "中国书法" },
-                caption: { en: "Ancient calligraphy at Beilin Museum", cn: "碑林博物馆的古代书法" }
-            },
             {
                 src: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "High-speed Train", cn: "高铁" },
@@ -196,16 +181,6 @@ export const itineraryData = [
                 src: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Great Wall of China", cn: "中国长城" },
                 caption: { en: "The magnificent Great Wall stretching across mountains", cn: "横跨群山的雄伟长城" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1597621272971-f5e8e8c0e9a6?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Great Wall Steps", cn: "长城台阶" },
-                caption: { en: "Climbing the ancient steps of the Great Wall", cn: "攀登长城的古老台阶" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1529921879218-f99546d47a79?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Great Wall Sunset", cn: "长城日落" },
-                caption: { en: "Sunset over the Great Wall", cn: "长城日落美景" }
             },
             {
                 src: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=2070&auto=format&fit=crop",
@@ -383,11 +358,6 @@ export const itineraryData = [
                 caption: { en: "Magical night illumination at Wangxian Valley", cn: "望仙谷梦幻的夜间灯光" }
             },
             {
-                src: "https://images.unsplash.com/photo-1580889272760-3cfb6acf4622?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Terraced Fields", cn: "梯田" },
-                caption: { en: "Fan-shaped terraces of Huangling", cn: "篁岭扇形梯田" }
-            },
-            {
                 src: "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Cliff Homestay", cn: "悬崖民宿" },
                 caption: { en: "Unique cliff-side accommodation", cn: "独特的悬崖民宿" }
@@ -413,7 +383,7 @@ export const itineraryData = [
         coordinates: [36.1955, 117.1209],
         images: [
             {
-                src: "/images/dai-temple.png",
+                src: "https://images.unsplash.com/photo-1545893835-abaa50cbe628?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Dai Temple", cn: "岱庙" },
                 caption: { en: "The ancient Dai Temple at the foot of Mount Tai", cn: "泰山脚下的古老岱庙" }
             },
@@ -421,11 +391,6 @@ export const itineraryData = [
                 src: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "High-speed Rail", cn: "高铁" },
                 caption: { en: "Modern high-speed rail journey", cn: "现代高铁之旅" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1567449303078-57ad995bd329?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Traditional Temple", cn: "传统寺庙" },
-                caption: { en: "Ancient imperial architecture", cn: "古代皇家建筑" }
             }
         ],
         description: {
@@ -448,7 +413,7 @@ export const itineraryData = [
         coordinates: [36.2565, 117.1009],
         images: [
             {
-                src: "/images/mount-tai.png",
+                src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Mount Tai Steps", cn: "泰山石阶" },
                 caption: { en: "The legendary stone steps of Mount Tai", cn: "泰山传奇的石阶" }
             },
@@ -488,11 +453,6 @@ export const itineraryData = [
                 caption: { en: "The grand Confucius Temple in Qufu", cn: "曲阜宏伟的孔庙" }
             },
             {
-                src: "https://images.unsplash.com/photo-1567449303078-57ad995bd329?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Ancient Architecture", cn: "古代建筑" },
-                caption: { en: "Confucius Mansion complex", cn: "孔府建筑群" }
-            },
-            {
                 src: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?q=80&w=2070&auto=format&fit=crop",
                 alt: { en: "Ancient Trees", cn: "古树" },
                 caption: { en: "Centuries-old trees in Confucius Forest", cn: "孔林中的百年古树" }
@@ -517,11 +477,6 @@ export const itineraryData = [
         region: "qingdao",
         coordinates: [36.0671, 120.3826],
         images: [
-            {
-                src: "/images/qingdao.png",
-                alt: { en: "Qingdao Coast", cn: "青岛海岸" },
-                caption: { en: "Beautiful coastal city of Qingdao", cn: "美丽的海滨城市青岛" }
-            },
             {
                 src: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2074&auto=format&fit=crop",
                 alt: { en: "Airport Departure", cn: "机场出发" },

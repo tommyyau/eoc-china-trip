@@ -1,0 +1,227 @@
+{
+  "day": 3,
+  "date": "May 10",
+  "title": {
+    "en": "Terracotta Warriors & Daming Palace",
+    "cn": "兵马俑与大明宫"
+  },
+  "location": {
+    "en": "Xi'an",
+    "cn": "西安"
+  },
+  "description": {
+    "en": "Morning tour of the world-famous Terracotta Warriors Museum, witnessing the thousands of life-sized soldiers protecting the First Emperor. Afternoon hiking at Daming Palace National Heritage Park, the site of the grandest imperial palace of the Tang Dynasty.",
+    "cn": "上午参观世界闻名的兵马俑博物馆，见证守护始皇帝的数千尊真人大小的陶俑。下午在大明宫国家遗址公园徒步，这是唐代最宏伟的皇宫遗址。"
+  },
+  "highlights": {
+    "en": [
+      "Terracotta Warriors Museum",
+      "Daming Palace Heritage Park"
+    ],
+    "cn": [
+      "兵马俑博物馆",
+      "大明宫国家遗址公园"
+    ]
+  },
+  "meals": {
+    "en": "Breakfast, Lunch, Dinner",
+    "cn": "早、中、晚餐"
+  },
+  "accommodation": {
+    "en": "Eastern House Xi'an",
+    "cn": "西安东方大酒店"
+  },
+  "activities": [
+    {
+      "name": "Terracotta Warriors Museum",
+      "searchTerm": "terracotta warriors xian china",
+      "images": [
+        {
+          "id": "zj_o9jdYk_4",
+          "url": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "a group of people wearing white hats with Terracotta Army in the background",
+          "photographer": "Kevin Engelke",
+          "photographerUrl": "https://unsplash.com/@twopixelsdesign",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/a-group-of-people-wearing-white-hats-with-terracotta-army-in-the-background-zj_o9jdYk_4",
+          "downloadUrl": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "4qbZm7Tq9ak",
+          "url": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "Two ancient stone warrior statues in display case.",
+          "photographer": "vista pan",
+          "photographerUrl": "https://unsplash.com/@zhanwangpan",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/two-ancient-stone-warrior-statues-in-display-case-4qbZm7Tq9ak",
+          "downloadUrl": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "width": 7728,
+          "height": 5152
+        },
+        {
+          "id": "gsu38ZYHoOE",
+          "url": "https://images.unsplash.com/photo-1577027361896-42593030f617?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1577027361896-42593030f617?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1577027361896-42593030f617?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "shallow focus photo of ceramic figurines",
+          "photographer": "Takeshi Morisato",
+          "photographerUrl": "https://unsplash.com/@takeshi_morisato",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/shallow-focus-photo-of-ceramic-figurines-gsu38ZYHoOE",
+          "downloadUrl": "https://images.unsplash.com/photo-1577027361896-42593030f617?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "width": 6240,
+          "height": 4160
+        },
+        {
+          "id": "BOM5u4_VWlI",
+          "url": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "Terracotta army soldiers standing in formation.",
+          "photographer": "David An",
+          "photographerUrl": "https://unsplash.com/@david_an",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/terracotta-army-soldiers-standing-in-formation-BOM5u4_VWlI",
+          "downloadUrl": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "width": 6960,
+          "height": 3504
+        },
+        {
+          "id": 28844763,
+          "url": "https://images.pexels.com/photos/28844763/pexels-photo-28844763.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/28844763/pexels-photo-28844763.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/28844763/pexels-photo-28844763.jpeg",
+          "alt": "Terracotta army of ancient Chinese warriors, a significant archaeological site.",
+          "photographer": "征宇 郑",
+          "photographerUrl": "https://www.pexels.com/@202387659",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/terracotta-warriors-in-archaeological-excavation-28844763/",
+          "downloadUrl": "https://images.pexels.com/photos/28844763/pexels-photo-28844763.jpeg",
+          "width": 3006,
+          "height": 2000
+        },
+        {
+          "id": 28844767,
+          "url": "https://images.pexels.com/photos/28844767/pexels-photo-28844767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/28844767/pexels-photo-28844767.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/28844767/pexels-photo-28844767.jpeg",
+          "alt": "Close-up of the ancient Terracotta Army in Xi'an, China, showcasing intricate detail and artistry.",
+          "photographer": "征宇 郑",
+          "photographerUrl": "https://www.pexels.com/@202387659",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/terracotta-warriors-of-xi-an-in-close-up-view-28844767/",
+          "downloadUrl": "https://images.pexels.com/photos/28844767/pexels-photo-28844767.jpeg",
+          "width": 3006,
+          "height": 2000
+        },
+        {
+          "id": 30584842,
+          "url": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
+          "alt": "Close-up of terracotta warriors in Xi'an, capturing historical artistry and detail.",
+          "photographer": "Ala J Graczyk",
+          "photographerUrl": "https://www.pexels.com/@alice1",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/terracotta-warriors-in-xi-an-china-30584842/",
+          "downloadUrl": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
+          "width": 5467,
+          "height": 3545
+        },
+        {
+          "id": 18338672,
+          "url": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
+          "alt": "A captivating view of the ancient Terracotta Army in Xi'an, highlighting historical artistry.",
+          "photographer": "TonyNojmanSK",
+          "photographerUrl": "https://www.pexels.com/@tonynojmansk-186688133",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/view-of-the-terracotta-army-18338672/",
+          "downloadUrl": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
+          "width": 4887,
+          "height": 2751
+        }
+      ],
+      "suggestedAlt": [
+        "Terracotta Warriors Museum in Xi'an, China",
+        "Terracotta Warriors Museum - travel photography",
+        "Terracotta Warriors Museum tourist attraction"
+      ]
+    },
+    {
+      "name": "Daming Palace Heritage Park",
+      "searchTerm": "daming palace xian ruins",
+      "images": [
+        {
+          "id": 13997553,
+          "url": "https://images.pexels.com/photos/13997553/pexels-photo-13997553.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/13997553/pexels-photo-13997553.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/13997553/pexels-photo-13997553.jpeg",
+          "alt": "Panoramic view of the historic Daming Palace in Xian, China, under a vibrant blue sky.",
+          "photographer": "TAO WANG",
+          "photographerUrl": "https://www.pexels.com/@tao-wang-335496284",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/exterior-of-the-daming-palace-in-xian-china-13997553/",
+          "downloadUrl": "https://images.pexels.com/photos/13997553/pexels-photo-13997553.jpeg",
+          "width": 4668,
+          "height": 3081
+        },
+        {
+          "id": 15488423,
+          "url": "https://images.pexels.com/photos/15488423/pexels-photo-15488423.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/15488423/pexels-photo-15488423.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/15488423/pexels-photo-15488423.jpeg",
+          "alt": "Stunning view of Hofburg Palace lit up during dusk in Vienna, Austria.",
+          "photographer": "Niklas Jeromin",
+          "photographerUrl": "https://www.pexels.com/@njeromin",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/the-building-is-lit-up-at-night-with-a-dome-15488423/",
+          "downloadUrl": "https://images.pexels.com/photos/15488423/pexels-photo-15488423.jpeg",
+          "width": 5359,
+          "height": 4000
+        },
+        {
+          "id": 19930011,
+          "url": "https://images.pexels.com/photos/19930011/pexels-photo-19930011.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/19930011/pexels-photo-19930011.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/19930011/pexels-photo-19930011.jpeg",
+          "alt": "Explore the vibrant colors of ancient Knossos Palace with iconic Minoan columns and frescoes.",
+          "photographer": "Alain Martin",
+          "photographerUrl": "https://www.pexels.com/@alain-martin-898058741",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/ruins-of-knossos-palace-19930011/",
+          "downloadUrl": "https://images.pexels.com/photos/19930011/pexels-photo-19930011.jpeg",
+          "width": 3648,
+          "height": 2736
+        },
+        {
+          "id": 33700969,
+          "url": "https://images.pexels.com/photos/33700969/pexels-photo-33700969.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/33700969/pexels-photo-33700969.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/33700969/pexels-photo-33700969.jpeg",
+          "alt": "A collapsed building in Tripoli, Libya, with people and machinery amidst the rubble.",
+          "photographer": "Mehdi Khoshnejad",
+          "photographerUrl": "https://www.pexels.com/@khoshnejad",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/rubble-and-ruins-in-tripoli-libya-33700969/",
+          "downloadUrl": "https://images.pexels.com/photos/33700969/pexels-photo-33700969.jpeg",
+          "width": 2824,
+          "height": 2118
+        }
+      ],
+      "suggestedAlt": [
+        "Daming Palace Heritage Park in Xi'an, China",
+        "Daming Palace Heritage Park - travel photography",
+        "Daming Palace Heritage Park tourist attraction"
+      ]
+    }
+  ],
+  "hotelSearch": "https://www.tripadvisor.com/Search?q=Eastern%20House%20Xi'an%20Xi'an"
+}

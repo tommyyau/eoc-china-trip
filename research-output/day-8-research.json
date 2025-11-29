@@ -1,0 +1,257 @@
+{
+  "day": 8,
+  "title": {
+    "en": "Conquering Hero Slope",
+    "cn": "征服好汉坡"
+  },
+  "location": {
+    "en": "Lushan",
+    "cn": "庐山"
+  },
+  "activities": [
+    {
+      "activity": "Hero Slope Hike in Lushan",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Hero Slope Hike Lushan site:unsplash.com",
+          "description": "Hero Slope Hike in Lushan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Hero%20Slope%20Hike%20Lushan",
+          "title": "Search \"Hero Slope Hike in Lushan\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Hero Slope Hike in Lushan in Lushan, China",
+        "Travel photography of Hero Slope Hike in Lushan in Lushan",
+        "Hero Slope Hike in Lushan tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "Hero Slope Hike in Lushan",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Hero Slope Hike Lushan site:pexels.com",
+          "description": "Hero Slope Hike in Lushan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Hero%20Slope%20Hike%20Lushan/",
+          "title": "Search \"Hero Slope Hike in Lushan\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Hero Slope Hike in Lushan in Lushan, China",
+        "Travel photography of Hero Slope Hike in Lushan in Lushan",
+        "Hero Slope Hike in Lushan tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "好汉坡徒步 in 庐山",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "好汉坡徒步 庐山 site:unsplash.com",
+          "description": "好汉坡徒步 in 庐山"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%A5%BD%E6%B1%89%E5%9D%A1%E5%BE%92%E6%AD%A5%20%E5%BA%90%E5%B1%B1",
+          "title": "Search \"好汉坡徒步 in 庐山\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "好汉坡徒步 in 庐山 in Lushan, China",
+        "Travel photography of 好汉坡徒步 in 庐山 in Lushan",
+        "好汉坡徒步 in 庐山 tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "Lushan Summit in Lushan",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Lushan Summit Lushan site:unsplash.com",
+          "description": "Lushan Summit in Lushan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Lushan%20Summit%20Lushan",
+          "title": "Search \"Lushan Summit in Lushan\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Lushan Summit in Lushan in Lushan, China",
+        "Travel photography of Lushan Summit in Lushan in Lushan",
+        "Lushan Summit in Lushan tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "Lushan Summit in Lushan",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Lushan Summit Lushan site:pexels.com",
+          "description": "Lushan Summit in Lushan"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Lushan%20Summit%20Lushan/",
+          "title": "Search \"Lushan Summit in Lushan\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Lushan Summit in Lushan in Lushan, China",
+        "Travel photography of Lushan Summit in Lushan in Lushan",
+        "Lushan Summit in Lushan tourist attraction in Lushan"
+      ]
+    },
+    {
+      "activity": "庐山顶峰 in 庐山",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "庐山顶峰 庐山 site:unsplash.com",
+          "description": "庐山顶峰 in 庐山"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%BA%90%E5%B1%B1%E9%A1%B6%E5%B3%B0%20%E5%BA%90%E5%B1%B1",
+          "title": "Search \"庐山顶峰 in 庐山\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "庐山顶峰 in 庐山 in Lushan, China",
+        "Travel photography of 庐山顶峰 in 庐山 in Lushan",
+        "庐山顶峰 in 庐山 tourist attraction in Lushan"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Lushan Mountain-top Hotel",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "top Hotel Lushan site:tripadvisor.com",
+          "description": "top Hotel in Lushan on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=top%20Hotel%20Lushan",
+          "title": "Find \"top Hotel in Lushan on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Lushan Mountain-top Hotel",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "top Hotel Lushan site:booking.com",
+          "description": "top Hotel in Lushan on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Lushan Mountain-top Hotel",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "top Hotel Lushan hotel reviews",
+          "description": "Reviews for top Hotel in Lushan"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Lushan China tourism site:unsplash.com",
+      "description": "General Lushan tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Lushan China landscape site:pexels.com",
+      "description": "Lushan landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Hero Slope Hike China travel site:unsplash.com",
+      "description": "Hero Slope Hike travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Lushan Summit China travel site:unsplash.com",
+      "description": "Lushan Summit travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Hero Slope Hike",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Hero%20Slope%20Hike%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Hero%20Slope%20Hike%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Hero%20Slope%20Hike%20china%20tourism",
+          "query": "Hero Slope Hike",
+          "alt": "Hero Slope Hike china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Hero%20Slope%20Hike%20china%20tourism&w=1200",
+          "description": "Real photo of Hero Slope Hike china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Lushan Summit",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Lushan%20Summit%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Lushan%20Summit%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Lushan%20Summit%20china%20tourism",
+          "query": "Lushan Summit",
+          "alt": "Lushan Summit china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Lushan%20Summit%20china%20tourism&w=1200",
+          "description": "Real photo of Lushan Summit china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:35.924Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

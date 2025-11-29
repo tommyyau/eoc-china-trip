@@ -1,0 +1,343 @@
+{
+  "day": 4,
+  "title": {
+    "en": "Beilin Museum & Travel to Beijing",
+    "cn": "碑林博物馆与前往北京"
+  },
+  "location": {
+    "en": "Xi'an -> Beijing",
+    "cn": "西安 -> 北京"
+  },
+  "activities": [
+    {
+      "activity": "Beilin Museum in Xi'an -> Beijing",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Beilin Museum Xi'an -> Beijing site:unsplash.com",
+          "description": "Beilin Museum in Xi'an -> Beijing"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Beilin%20Museum%20Xi'an%20-%3E%20Beijing",
+          "title": "Search \"Beilin Museum in Xi'an -> Beijing\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing, China",
+        "Travel photography of Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing",
+        "Beilin Museum in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "Beilin Museum in Xi'an -> Beijing",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Beilin Museum Xi'an -> Beijing site:pexels.com",
+          "description": "Beilin Museum in Xi'an -> Beijing"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Beilin%20Museum%20Xi'an%20-%3E%20Beijing/",
+          "title": "Search \"Beilin Museum in Xi'an -> Beijing\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing, China",
+        "Travel photography of Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing",
+        "Beilin Museum in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "碑林博物馆 in 西安 -> 北京",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "碑林博物馆 西安 -> 北京 site:unsplash.com",
+          "description": "碑林博物馆 in 西安 -> 北京"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E7%A2%91%E6%9E%97%E5%8D%9A%E7%89%A9%E9%A6%86%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC",
+          "title": "Search \"碑林博物馆 in 西安 -> 北京\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "碑林博物馆 in 西安 -> 北京 in Xi'an -> Beijing, China",
+        "Travel photography of 碑林博物馆 in 西安 -> 北京 in Xi'an -> Beijing",
+        "碑林博物馆 in 西安 -> 北京 tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "High-speed Train/Flight to Beijing in Xi'an -> Beijing",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "High-speed Train/Flight to Beijing Xi'an -> Beijing site:unsplash.com",
+          "description": "High-speed Train/Flight to Beijing in Xi'an -> Beijing"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/High-speed%20Train%2FFlight%20to%20Beijing%20Xi'an%20-%3E%20Beijing",
+          "title": "Search \"High-speed Train/Flight to Beijing in Xi'an -> Beijing\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing, China",
+        "Travel photography of High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing",
+        "High-speed Train/Flight to Beijing in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "High-speed Train/Flight to Beijing in Xi'an -> Beijing",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "High-speed Train/Flight to Beijing Xi'an -> Beijing site:pexels.com",
+          "description": "High-speed Train/Flight to Beijing in Xi'an -> Beijing"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/High-speed%20Train%2FFlight%20to%20Beijing%20Xi'an%20-%3E%20Beijing/",
+          "title": "Search \"High-speed Train/Flight to Beijing in Xi'an -> Beijing\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing, China",
+        "Travel photography of High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing",
+        "High-speed Train/Flight to Beijing in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "前往北京的高铁/航班 in 西安 -> 北京",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "前往北京的高铁/航班 西安 -> 北京 site:unsplash.com",
+          "description": "前往北京的高铁/航班 in 西安 -> 北京"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%89%8D%E5%BE%80%E5%8C%97%E4%BA%AC%E7%9A%84%E9%AB%98%E9%93%81%2F%E8%88%AA%E7%8F%AD%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC",
+          "title": "Search \"前往北京的高铁/航班 in 西安 -> 北京\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "前往北京的高铁/航班 in 西安 -> 北京 in Xi'an -> Beijing, China",
+        "Travel photography of 前往北京的高铁/航班 in 西安 -> 北京 in Xi'an -> Beijing",
+        "前往北京的高铁/航班 in 西安 -> 北京 tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "Welcome Meeting in Xi'an -> Beijing",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Welcome Meeting Xi'an -> Beijing site:unsplash.com",
+          "description": "Welcome Meeting in Xi'an -> Beijing"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Welcome%20Meeting%20Xi'an%20-%3E%20Beijing",
+          "title": "Search \"Welcome Meeting in Xi'an -> Beijing\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing, China",
+        "Travel photography of Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing",
+        "Welcome Meeting in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "Welcome Meeting in Xi'an -> Beijing",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Welcome Meeting Xi'an -> Beijing site:pexels.com",
+          "description": "Welcome Meeting in Xi'an -> Beijing"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Welcome%20Meeting%20Xi'an%20-%3E%20Beijing/",
+          "title": "Search \"Welcome Meeting in Xi'an -> Beijing\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing, China",
+        "Travel photography of Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing",
+        "Welcome Meeting in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing"
+      ]
+    },
+    {
+      "activity": "欢迎见面会 in 西安 -> 北京",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "欢迎见面会 西安 -> 北京 site:unsplash.com",
+          "description": "欢迎见面会 in 西安 -> 北京"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E6%AC%A2%E8%BF%8E%E8%A7%81%E9%9D%A2%E4%BC%9A%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC",
+          "title": "Search \"欢迎见面会 in 西安 -> 北京\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "欢迎见面会 in 西安 -> 北京 in Xi'an -> Beijing, China",
+        "Travel photography of 欢迎见面会 in 西安 -> 北京 in Xi'an -> Beijing",
+        "欢迎见面会 in 西安 -> 北京 tourist attraction in Xi'an -> Beijing"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Centrally located 4-star hotel in Beijing",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Centrally located 4-star hotel in Beijing Xi'an -> Beijing site:tripadvisor.com",
+          "description": "Centrally located 4-star hotel in Beijing in Xi'an -> Beijing on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Centrally%20located%204-star%20hotel%20in%20Beijing%20Xi'an%20-%3E%20Beijing",
+          "title": "Find \"Centrally located 4-star hotel in Beijing in Xi'an -> Beijing on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Centrally located 4-star hotel in Beijing",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Centrally located 4-star hotel in Beijing Xi'an -> Beijing site:booking.com",
+          "description": "Centrally located 4-star hotel in Beijing in Xi'an -> Beijing on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Centrally located 4-star hotel in Beijing",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Centrally located 4-star hotel in Beijing Xi'an -> Beijing hotel reviews",
+          "description": "Reviews for Centrally located 4-star hotel in Beijing in Xi'an -> Beijing"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Xi'an -> Beijing China tourism site:unsplash.com",
+      "description": "General Xi'an -> Beijing tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Xi'an -> Beijing China landscape site:pexels.com",
+      "description": "Xi'an -> Beijing landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Beilin Museum China travel site:unsplash.com",
+      "description": "Beilin Museum travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "High-speed Train/Flight to Beijing China travel site:unsplash.com",
+      "description": "High-speed Train/Flight to Beijing travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Beilin Museum",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Beilin%20Museum%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Beilin%20Museum%20china%20tourism",
+          "query": "Beilin Museum",
+          "alt": "Beilin Museum china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=1200",
+          "description": "Real photo of Beilin Museum china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "High-speed Train/Flight to Beijing",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism",
+          "query": "High-speed Train/Flight to Beijing",
+          "alt": "High-speed Train/Flight to Beijing china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=1200",
+          "description": "Real photo of High-speed Train/Flight to Beijing china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Welcome Meeting",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Welcome%20Meeting%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Welcome%20Meeting%20china%20tourism",
+          "query": "Welcome Meeting",
+          "alt": "Welcome Meeting china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=1200",
+          "description": "Real photo of Welcome Meeting china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:26.706Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}

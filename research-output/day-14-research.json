@@ -1,0 +1,343 @@
+{
+  "day": 14,
+  "title": {
+    "en": "Confucian Culture in Qufu",
+    "cn": "曲阜儒家文化"
+  },
+  "location": {
+    "en": "Tai'an -> Qufu",
+    "cn": "泰安 -> 曲阜"
+  },
+  "activities": [
+    {
+      "activity": "Confucius Temple in Tai'an -> Qufu",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Confucius Temple Tai'an -> Qufu site:unsplash.com",
+          "description": "Confucius Temple in Tai'an -> Qufu"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Confucius%20Temple%20Tai'an%20-%3E%20Qufu",
+          "title": "Search \"Confucius Temple in Tai'an -> Qufu\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu",
+        "Confucius Temple in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "Confucius Temple in Tai'an -> Qufu",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Confucius Temple Tai'an -> Qufu site:pexels.com",
+          "description": "Confucius Temple in Tai'an -> Qufu"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Confucius%20Temple%20Tai'an%20-%3E%20Qufu/",
+          "title": "Search \"Confucius Temple in Tai'an -> Qufu\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Temple in Tai'an -> Qufu in Tai'an -> Qufu",
+        "Confucius Temple in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "孔庙 in 泰安 -> 曲阜",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "孔庙 泰安 -> 曲阜 site:unsplash.com",
+          "description": "孔庙 in 泰安 -> 曲阜"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%AD%94%E5%BA%99%20%E6%B3%B0%E5%AE%89%20-%3E%20%E6%9B%B2%E9%98%9C",
+          "title": "Search \"孔庙 in 泰安 -> 曲阜\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "孔庙 in 泰安 -> 曲阜 in Tai'an -> Qufu, China",
+        "Travel photography of 孔庙 in 泰安 -> 曲阜 in Tai'an -> Qufu",
+        "孔庙 in 泰安 -> 曲阜 tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "Confucius Mansion in Tai'an -> Qufu",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Confucius Mansion Tai'an -> Qufu site:unsplash.com",
+          "description": "Confucius Mansion in Tai'an -> Qufu"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Confucius%20Mansion%20Tai'an%20-%3E%20Qufu",
+          "title": "Search \"Confucius Mansion in Tai'an -> Qufu\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu",
+        "Confucius Mansion in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "Confucius Mansion in Tai'an -> Qufu",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Confucius Mansion Tai'an -> Qufu site:pexels.com",
+          "description": "Confucius Mansion in Tai'an -> Qufu"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Confucius%20Mansion%20Tai'an%20-%3E%20Qufu/",
+          "title": "Search \"Confucius Mansion in Tai'an -> Qufu\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Mansion in Tai'an -> Qufu in Tai'an -> Qufu",
+        "Confucius Mansion in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "孔府 in 泰安 -> 曲阜",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "孔府 泰安 -> 曲阜 site:unsplash.com",
+          "description": "孔府 in 泰安 -> 曲阜"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%AD%94%E5%BA%9C%20%E6%B3%B0%E5%AE%89%20-%3E%20%E6%9B%B2%E9%98%9C",
+          "title": "Search \"孔府 in 泰安 -> 曲阜\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "孔府 in 泰安 -> 曲阜 in Tai'an -> Qufu, China",
+        "Travel photography of 孔府 in 泰安 -> 曲阜 in Tai'an -> Qufu",
+        "孔府 in 泰安 -> 曲阜 tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "Confucius Forest in Tai'an -> Qufu",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "Confucius Forest Tai'an -> Qufu site:unsplash.com",
+          "description": "Confucius Forest in Tai'an -> Qufu"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/Confucius%20Forest%20Tai'an%20-%3E%20Qufu",
+          "title": "Search \"Confucius Forest in Tai'an -> Qufu\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu",
+        "Confucius Forest in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "Confucius Forest in Tai'an -> Qufu",
+      "searchQueries": [
+        {
+          "type": "pexels",
+          "query": "Confucius Forest Tai'an -> Qufu site:pexels.com",
+          "description": "Confucius Forest in Tai'an -> Qufu"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.pexels.com/search/Confucius%20Forest%20Tai'an%20-%3E%20Qufu/",
+          "title": "Search \"Confucius Forest in Tai'an -> Qufu\" on Pexels",
+          "description": "Free stock photos for travel and activities",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu, China",
+        "Travel photography of Confucius Forest in Tai'an -> Qufu in Tai'an -> Qufu",
+        "Confucius Forest in Tai'an -> Qufu tourist attraction in Tai'an -> Qufu"
+      ]
+    },
+    {
+      "activity": "孔林 in 泰安 -> 曲阜",
+      "searchQueries": [
+        {
+          "type": "unsplash",
+          "query": "孔林 泰安 -> 曲阜 site:unsplash.com",
+          "description": "孔林 in 泰安 -> 曲阜"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://unsplash.com/s/photos/%E5%AD%94%E6%9E%97%20%E6%B3%B0%E5%AE%89%20-%3E%20%E6%9B%B2%E9%98%9C",
+          "title": "Search \"孔林 in 泰安 -> 曲阜\" on Unsplash",
+          "description": "High-quality travel and landscape photography",
+          "type": "search-link"
+        }
+      ],
+      "suggestedAltText": [
+        "孔林 in 泰安 -> 曲阜 in Tai'an -> Qufu, China",
+        "Travel photography of 孔林 in 泰安 -> 曲阜 in Tai'an -> Qufu",
+        "孔林 in 泰安 -> 曲阜 tourist attraction in Tai'an -> Qufu"
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "accommodation": "Hotel in Qufu",
+      "searchQueries": [
+        {
+          "type": "tripadvisor",
+          "query": "Hotel in Qufu Tai'an -> Qufu site:tripadvisor.com",
+          "description": "Hotel in Qufu in Tai'an -> Qufu on TripAdvisor"
+        }
+      ],
+      "searchResults": [
+        {
+          "url": "https://www.tripadvisor.com/Search?q=Hotel%20in%20Qufu%20Tai'an%20-%3E%20Qufu",
+          "title": "Find \"Hotel in Qufu in Tai'an -> Qufu on TripAdvisor\" on TripAdvisor",
+          "description": "Hotel reviews, ratings, and booking information",
+          "type": "search-link"
+        }
+      ]
+    },
+    {
+      "accommodation": "Hotel in Qufu",
+      "searchQueries": [
+        {
+          "type": "booking",
+          "query": "Hotel in Qufu Tai'an -> Qufu site:booking.com",
+          "description": "Hotel in Qufu in Tai'an -> Qufu on Booking.com"
+        }
+      ],
+      "searchResults": []
+    },
+    {
+      "accommodation": "Hotel in Qufu",
+      "searchQueries": [
+        {
+          "type": "general",
+          "query": "Hotel in Qufu Tai'an -> Qufu hotel reviews",
+          "description": "Reviews for Hotel in Qufu in Tai'an -> Qufu"
+        }
+      ],
+      "searchResults": []
+    }
+  ],
+  "recommendedSearches": [
+    {
+      "query": "Tai'an -> Qufu China tourism site:unsplash.com",
+      "description": "General Tai'an -> Qufu tourism photos",
+      "reason": "Good for establishing shots and context"
+    },
+    {
+      "query": "Tai'an -> Qufu China landscape site:pexels.com",
+      "description": "Tai'an -> Qufu landscapes and scenery",
+      "reason": "Perfect for background and establishing scenes"
+    },
+    {
+      "query": "Confucius Temple China travel site:unsplash.com",
+      "description": "Confucius Temple travel photography",
+      "reason": "Specific activity focus"
+    },
+    {
+      "query": "Confucius Mansion China travel site:unsplash.com",
+      "description": "Confucius Mansion travel photography",
+      "reason": "Specific activity focus"
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Confucius Temple",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?confucius%20temple%20qufu%20china&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/confucius%20temple%20qufu%20china",
+          "sourceUrl": "https://unsplash.com/s/photos/confucius%20temple%20qufu%20china",
+          "query": "Confucius Temple",
+          "alt": "confucius temple qufu china",
+          "downloadUrl": "https://source.unsplash.com/featured/?confucius%20temple%20qufu%20china&w=1200",
+          "description": "Real photo of confucius temple qufu china",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Confucius Mansion",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Confucius%20Mansion%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Confucius%20Mansion%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Confucius%20Mansion%20china%20tourism",
+          "query": "Confucius Mansion",
+          "alt": "Confucius Mansion china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Confucius%20Mansion%20china%20tourism&w=1200",
+          "description": "Real photo of Confucius Mansion china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    },
+    {
+      "activity": "Confucius Forest",
+      "images": [
+        {
+          "url": "https://source.unsplash.com/featured/?Confucius%20Forest%20china%20tourism&w=800&h=600&fit=crop",
+          "source": "unsplash",
+          "photographer": "Unsplash Photographer",
+          "photographerUrl": "https://unsplash.com/s/photos/Confucius%20Forest%20china%20tourism",
+          "sourceUrl": "https://unsplash.com/s/photos/Confucius%20Forest%20china%20tourism",
+          "query": "Confucius Forest",
+          "alt": "Confucius Forest china tourism",
+          "downloadUrl": "https://source.unsplash.com/featured/?Confucius%20Forest%20china%20tourism&w=1200",
+          "description": "Real photo of Confucius Forest china tourism",
+          "isUnsplashFeatured": true
+        }
+      ]
+    }
+  ],
+  "researchDate": "2025-11-29T00:47:50.992Z",
+  "instructions": {
+    "howToUse": "Open the HTML file to preview and select images",
+    "altText": "Use the suggested alt text for accessibility",
+    "hotels": "Check hotel links for reviews and booking information"
+  }
+}
