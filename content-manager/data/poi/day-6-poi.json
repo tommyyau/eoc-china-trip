@@ -1,0 +1,19 @@
+{
+  "day": 6,
+  "lastModified": "2025-11-29T22:04:22.825Z",
+  "pois": [
+    {
+      "id": "badaling-great-wall-hiking",
+      "name": "Badaling Great Wall Hiking",
+      "day": 6,
+      "location": "Beijing -> Lushan",
+      "status": "pending",
+      "summary": "Embark on an unforgettable adventure at the Badaling Great Wall, one of the most iconic sections of this ancient wonder. Nestled just a short drive from Beijing, this breathtaking hike offers a perfect blend of stunning natural beauty and rich history. As you traverse the winding paths, you'll be surrounded by lush mountains and panoramic views that stretch as far as the eye can see. Each step reveals centuries of stories etched into the weathered stones, making it a captivating journey for both seasoned trekkers and casual walkers alike. Whether you're seeking a challenging hike or a leisurely stroll, Badaling promises an exhilarating experience that will leave you in awe of China's remarkable heritage.\n\nDon’t miss the chance to capture stunning photos at the watchtowers, where you can imagine the brave soldiers who once stood guard over this magnificent structure. With well-maintained paths and plenty of amenities, Badaling is accessible for all ages, ensuring a memorable outing for families, friends, and solo adventurers alike.",
+      "historicalContext": "The Badaling section of the Great Wall of China was built during the Ming dynasty in the 16th century and is one of the most well-preserved and visited parts of the Wall. It served as a military defense line against invasions and symbolized the strength and ingenuity of Chinese architecture and engineering.",
+      "practicalTips": "Wear sturdy hiking shoes for better grip. Bring plenty of water to stay hydrated during your hike. Arrive early in the morning to avoid crowds and enjoy a peaceful experience. Consider hiring a local guide for deeper insights into the history of the Great Wall. Don't forget your camera to capture the breathtaking views.",
+      "confidence": 0.7,
+      "links": [],
+      "researchedAt": "2025-11-29T22:04:22.325Z"
+    }
+  ]
+}

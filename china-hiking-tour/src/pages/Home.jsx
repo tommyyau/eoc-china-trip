@@ -108,7 +108,7 @@ const Home = () => {
                     style={{
                         position: 'absolute',
                         inset: 0,
-                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.7) 100%)',
+                        background: 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.75) 100%)',
                         zIndex: 1
                     }}
                 />
@@ -338,7 +338,7 @@ const Home = () => {
                                             style={{
                                                 position: 'absolute',
                                                 inset: 0,
-                                                background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%, transparent 100%)'
+                                                background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.3) 70%, transparent 100%)'
                                             }}
                                         />
                                         <div
@@ -368,7 +368,8 @@ const Home = () => {
                                                 style={{
                                                     fontSize: '1.5rem',
                                                     marginBottom: '0.5rem',
-                                                    color: 'white'
+                                                    color: 'white',
+                                                    textShadow: '0 2px 8px rgba(0,0,0,0.8)'
                                                 }}
                                             >
                                                 {destination.name[language]}
@@ -376,9 +377,11 @@ const Home = () => {
                                             <p
                                                 style={{
                                                     fontSize: '0.9rem',
-                                                    opacity: 0.9,
+                                                    opacity: 1,
                                                     margin: 0,
-                                                    lineHeight: 1.4
+                                                    lineHeight: 1.4,
+                                                    color: 'white',
+                                                    textShadow: '0 1px 4px rgba(0,0,0,0.8)'
                                                 }}
                                             >
                                                 {destination.description[language]}

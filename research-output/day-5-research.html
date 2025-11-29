@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5: Forbidden City & Fragrant Hills Warm-up - Image Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; padding-bottom: 100px; }
+
+        .header { background: linear-gradient(135deg, #1a5f7a 0%, #159895 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 30px; }
+        .header h1 { font-size: 2rem; margin-bottom: 10px; }
+        .header .meta { opacity: 0.9; font-size: 1.1rem; }
+        .header .meta span { margin-right: 20px; }
+
+        .stats { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; display: flex; gap: 30px; flex-wrap: wrap; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .stat { text-align: center; }
+        .stat-value { font-size: 2rem; font-weight: bold; color: #1a5f7a; }
+        .stat-label { color: #666; font-size: 0.9rem; }
+
+        .description { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .description h3 { margin-bottom: 10px; color: #1a5f7a; }
+
+        .activity { background: white; margin-bottom: 30px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .activity-header { background: #1a5f7a; color: white; padding: 15px 20px; }
+        .activity-header h2 { font-size: 1.3rem; }
+        .activity-header .search-term { opacity: 0.8; font-size: 0.9rem; margin-top: 5px; }
+
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; padding: 20px; }
+
+        .image-card { border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden; transition: all 0.2s; position: relative; }
+        .image-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .image-card.selected { border-color: #27ae60; background: #e8f5e9; }
+        .image-card.selected::after { content: '✓ Selected'; position: absolute; top: 10px; right: 10px; background: #27ae60; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+
+        .image-container { position: relative; padding-bottom: 66.67%; background: #f5f5f5; }
+        .image-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer; }
+
+        .image-info { padding: 12px; }
+        .image-source { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .image-source .badge { background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+        .image-source .badge.pexels { background: #fff3e0; color: #e65100; }
+        .photographer { font-size: 0.85rem; color: #666; }
+        .photographer a { color: #1a5f7a; text-decoration: none; }
+        .photographer a:hover { text-decoration: underline; }
+
+        .image-alt { font-size: 0.8rem; color: #888; margin-top: 8px; font-style: italic; }
+
+        .select-btn { width: 100%; padding: 10px; border: none; background: #1a5f7a; color: white; cursor: pointer; font-size: 0.9rem; transition: background 0.2s; }
+        .select-btn:hover { background: #13475a; }
+        .image-card.selected .select-btn { background: #27ae60; }
+        .image-card.selected .select-btn:hover { background: #219a52; }
+
+        .hotel-section { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .hotel-section h3 { color: #1a5f7a; margin-bottom: 15px; }
+        .hotel-link { display: inline-block; background: #ff5722; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin-right: 10px; margin-bottom: 10px; }
+        .hotel-link:hover { background: #e64a19; }
+
+        .selection-panel { position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 15px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+        .selection-count { font-size: 1.1rem; }
+        .selection-count strong { color: #27ae60; }
+        .export-btn { background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold; }
+        .export-btn:hover { background: #219a52; }
+        .export-btn:disabled { background: #ccc; cursor: not-allowed; }
+
+        .lightbox { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.9); z-index: 200; justify-content: center; align-items: center; }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 2rem; cursor: pointer; }
+
+        .alt-suggestions { margin-top: 15px; padding: 15px; background: #f5f5f5; border-radius: 8px; }
+        .alt-suggestions h4 { margin-bottom: 10px; color: #666; font-size: 0.9rem; }
+        .alt-suggestions ul { list-style: none; }
+        .alt-suggestions li { padding: 5px 0; font-size: 0.85rem; color: #555; }
+        .alt-suggestions li::before { content: '→ '; color: #1a5f7a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Day 5: Forbidden City & Fragrant Hills Warm-up</h1>
+            <div class="meta">
+                <span>📅 May 12</span>
+                <span>📍 Beijing</span>
+                <span>🏨 Beijing Hotel</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Activities</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">16</div>
+                <div class="stat-label">Images Found</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="selected-count">0</div>
+                <div class="stat-label">Selected</div>
+            </div>
+        </div>
+
+        <div class="description">
+            <h3>📝 Day Description</h3>
+            <p>Morning visit to the Forbidden City, exploring the imperial history of the Ming and Qing dynasties. Afternoon warm-up hike from the National Botanical Garden to Happy Forest in Fragrant Hills (12km, 670m elevation). Local outdoor experts will accompany the group.</p>
+        </div>
+
+        
+        <div class="activity">
+            <div class="activity-header">
+                <h2>🎯 Forbidden City</h2>
+                <div class="search-term">Search: "forbidden city beijing china palace" • 8 images found</div>
+            </div>
+            <div class="image-grid">
+                
+                <div class="image-card" data-activity="0" data-image="0" data-url="https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85" data-alt="two metal knobs on a red surface" data-photographer="Bernd 📷 Dittrich" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="two metal knobs on a red surface" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1643693473555-d27d15817db8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@hdbernd" target="_blank">Bernd 📷 Dittrich</a></span>
+                        </div>
+                        <div class="image-alt">two metal knobs on a red surface</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="1" data-url="https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85" data-alt="brown temple building taken under clear sky" data-photographer="Vincent Guth" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="brown temple building taken under clear sky" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1509265094654-19e56e3b01bd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@vingtcent" target="_blank">Vincent Guth</a></span>
+                        </div>
+                        <div class="image-alt">brown temple building taken under clear sky</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="2" data-url="https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85" data-alt="a red and green building with a red door" data-photographer="Stephen Wiggins" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="a red and green building with a red door" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1681495388843-42440711c89d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@swiggz" target="_blank">Stephen Wiggins</a></span>
+                        </div>
+                        <div class="image-alt">a red and green building with a red door</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="3" data-url="https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85" data-alt="yellow and black sedan running on the road" data-photographer="csqxiv" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="yellow and black sedan running on the road" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1578218636643-33427ca8af43?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmb3JiaWRkZW4lMjBjaXR5JTIwYmVpamluZyUyMGNoaW5hJTIwcGFsYWNlfGVufDB8MHx8fDE3NjQ0MDk4MTB8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@csqxiv" target="_blank">csqxiv</a></span>
+                        </div>
+                        <div class="image-alt">yellow and black sedan running on the road</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="4" data-url="https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg" data-alt="Stunning view of a traditional Chinese temple facade in Beijing, capturing architectural beauty." data-photographer="Lin Amd" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Stunning view of a traditional Chinese temple facade in Beijing, capturing architectural beauty." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/9373300/pexels-photo-9373300.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@lin-amd-100705057" target="_blank">Lin Amd</a></span>
+                        </div>
+                        <div class="image-alt">Stunning view of a traditional Chinese temple facade in Beijing, capturing architectural beauty.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="5" data-url="https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg" data-alt="Classic architectural detail of a traditional building in Beijing's Forbidden City." data-photographer="Markus Winkler" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Classic architectural detail of a traditional building in Beijing's Forbidden City." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/5102101/pexels-photo-5102101.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@markus-winkler-1430818" target="_blank">Markus Winkler</a></span>
+                        </div>
+                        <div class="image-alt">Classic architectural detail of a traditional building in Beijing's Forbidden City.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="6" data-url="https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg" data-alt="Traditional architecture and vibrant colors of the Forbidden City in Beijing, showcasing historical Chinese design." data-photographer="zhang kaiyv" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Traditional architecture and vibrant colors of the Forbidden City in Beijing, showcasing historical Chinese design." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/6820064/pexels-photo-6820064.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@zhangkaiyv" target="_blank">zhang kaiyv</a></span>
+                        </div>
+                        <div class="image-alt">Traditional architecture and vibrant colors of the Forbidden City in Beijing, showcasing historical Chinese design.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="7" data-url="https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg" data-alt="View of the Forbidden City in Beijing showcasing classic ancient Chinese architecture and historical significance." data-photographer="Yan Zhang" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="View of the Forbidden City in Beijing showcasing classic ancient Chinese architecture and historical significance." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/18549556/pexels-photo-18549556.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@yan-zhang-210144339" target="_blank">Yan Zhang</a></span>
+                        </div>
+                        <div class="image-alt">View of the Forbidden City in Beijing showcasing classic ancient Chinese architecture and historical significance.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+            </div>
+            <div class="alt-suggestions">
+                <h4>Suggested Alt Text for Forbidden City:</h4>
+                <ul>
+                    <li>Forbidden City in Beijing, China</li><li>Forbidden City - travel photography</li><li>Forbidden City tourist attraction</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="activity">
+            <div class="activity-header">
+                <h2>🎯 Fragrant Hills Hiking (12km)</h2>
+                <div class="search-term">Search: "fragrant hills beijing autumn" • 8 images found</div>
+            </div>
+            <div class="image-grid">
+                
+                <div class="image-card" data-activity="1" data-image="0" data-url="https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85" data-alt="a group of trees" data-photographer="Young Tian" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="a group of trees" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1665845674414-e71614f9fd60?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@young_tian" target="_blank">Young Tian</a></span>
+                        </div>
+                        <div class="image-alt">a group of trees</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="1" data-url="https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85" data-alt="cabin in forest on hill" data-photographer="zhenzhong liu" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="cabin in forest on hill" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1563170490-d4994d52994c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@lzzbest" target="_blank">zhenzhong liu</a></span>
+                        </div>
+                        <div class="image-alt">cabin in forest on hill</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="2" data-url="https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85" data-alt="An aerial view of a wooded area in autumn" data-photographer="Wolfgang Hasselmann" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="An aerial view of a wooded area in autumn" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1727089428156-dad298e70c94?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@wolfgang_hasselmann" target="_blank">Wolfgang Hasselmann</a></span>
+                        </div>
+                        <div class="image-alt">An aerial view of a wooded area in autumn</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="3" data-url="https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85" data-alt="green and yellow trees on mountain" data-photographer="Robert Seidel" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=80&w=1080" alt="green and yellow trees on mountain" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1607422573530-5e1931d9ac84?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxmcmFncmFudCUyMGhpbGxzJTIwYmVpamluZyUyMGF1dHVtbnxlbnwwfDB8fHwxNzY0NDA5ODExfDA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@kaffetasse" target="_blank">Robert Seidel</a></span>
+                        </div>
+                        <div class="image-alt">green and yellow trees on mountain</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="4" data-url="https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg" data-alt="A breathtaking view of the Great Wall of China at sunset, showcasing its ancient architecture and historic significance." data-photographer="Eclipse Chasers" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A breathtaking view of the Great Wall of China at sunset, showcasing its ancient architecture and historic significance." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/31477803/pexels-photo-31477803.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@eclipse-chasers-716719984" target="_blank">Eclipse Chasers</a></span>
+                        </div>
+                        <div class="image-alt">A breathtaking view of the Great Wall of China at sunset, showcasing its ancient architecture and historic significance.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="5" data-url="https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg" data-alt="Majestic view of the Great Wall of China winding through verdant hills under a bright blue sky." data-photographer="Mehmet Yasin Kabaklı" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Majestic view of the Great Wall of China winding through verdant hills under a bright blue sky." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/17615498/pexels-photo-17615498.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@mykon" target="_blank">Mehmet Yasin Kabaklı</a></span>
+                        </div>
+                        <div class="image-alt">Majestic view of the Great Wall of China winding through verdant hills under a bright blue sky.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="6" data-url="https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg" data-alt="Picturesque landscape of Great Wall of China on hill with green trees and mountains on background on sunny day" data-photographer="Diana" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Picturesque landscape of Great Wall of China on hill with green trees and mountains on background on sunny day" loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@diana-2910042" target="_blank">Diana</a></span>
+                        </div>
+                        <div class="image-alt">Picturesque landscape of Great Wall of China on hill with green trees and mountains on background on sunny day</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="7" data-url="https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg" data-alt="Captivating view of a tower on a hill with scenic mountains in Beijing, China." data-photographer="zhang kaiyv" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Captivating view of a tower on a hill with scenic mountains in Beijing, China." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/14554767/pexels-photo-14554767.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@zhangkaiyv" target="_blank">zhang kaiyv</a></span>
+                        </div>
+                        <div class="image-alt">Captivating view of a tower on a hill with scenic mountains in Beijing, China.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+            </div>
+            <div class="alt-suggestions">
+                <h4>Suggested Alt Text for Fragrant Hills Hiking (12km):</h4>
+                <ul>
+                    <li>Fragrant Hills Hiking (12km) in Beijing, China</li><li>Fragrant Hills Hiking (12km) - travel photography</li><li>Fragrant Hills Hiking (12km) tourist attraction</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="hotel-section">
+            <h3>🏨 Hotel Research: Beijing Hotel</h3>
+            <p style="margin-bottom: 15px;">Click below to research this accommodation:</p>
+            <a href="https://www.tripadvisor.com/Search?q=Beijing%20Hotel%20Beijing" target="_blank" class="hotel-link">🔍 Search on TripAdvisor</a>
+            <a href="https://www.booking.com/searchresults.html?ss=Beijing%20Hotel%20Beijing" target="_blank" class="hotel-link">🏨 Search on Booking.com</a>
+            <a href="https://www.google.com/search?q=Beijing%20Hotel%20Beijing%20reviews" target="_blank" class="hotel-link">🔎 Google Reviews</a>
+        </div>
+    </div>
+
+    <div class="selection-panel">
+        <div class="selection-count">
+            <strong id="panel-count">0</strong> images selected
+        </div>
+        <div>
+            <button class="export-btn" onclick="exportSelections()" id="export-btn" disabled>Export Selected Images</button>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+
+    <script>
+        const selectedImages = new Set();
+
+        function toggleSelect(btn) {
+            const card = btn.closest('.image-card');
+            const key = card.dataset.activity + '-' + card.dataset.image;
+
+            if (selectedImages.has(key)) {
+                selectedImages.delete(key);
+                card.classList.remove('selected');
+                btn.textContent = 'Select This Image';
+            } else {
+                selectedImages.add(key);
+                card.classList.add('selected');
+                btn.textContent = 'Selected ✓';
+            }
+
+            updateCount();
+        }
+
+        function updateCount() {
+            const count = selectedImages.size;
+            document.getElementById('selected-count').textContent = count;
+            document.getElementById('panel-count').textContent = count;
+            document.getElementById('export-btn').disabled = count === 0;
+        }
+
+        function openLightbox(url) {
+            document.getElementById('lightbox-img').src = url;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function exportSelections() {
+            const selected = [];
+            document.querySelectorAll('.image-card.selected').forEach(card => {
+                selected.push({
+                    src: card.dataset.url,
+                    full: card.dataset.full,
+                    alt: {
+                        en: card.dataset.alt,
+                        cn: card.dataset.alt
+                    },
+                    caption: {
+                        en: card.dataset.alt,
+                        cn: card.dataset.alt
+                    },
+                    photographer: card.dataset.photographer,
+                    source: card.dataset.source
+                });
+            });
+
+            const json = JSON.stringify(selected, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'day-5-selected-images.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

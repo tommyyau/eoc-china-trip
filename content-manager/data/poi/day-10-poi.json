@@ -1,0 +1,63 @@
+{
+  "day": 10,
+  "lastModified": "2025-11-29T22:05:36.958Z",
+  "pois": [
+    {
+      "id": "rural-hiking",
+      "name": "Rural Hiking",
+      "day": 10,
+      "location": "Wuyuan",
+      "status": "pending",
+      "summary": "Embark on an unforgettable journey through the breathtaking landscapes of Wuyuan, China, where rural hiking offers a unique blend of stunning natural beauty and rich cultural heritage. Picture yourself traversing picturesque trails that meander through rolling hills, vibrant fields, and ancient villages, all while soaking in the serene ambiance of the countryside. With every step, you'll be captivated by the idyllic scenery, from lush green tea plantations to quaint local farms, making this a perfect getaway for nature lovers and adventure seekers alike. Experience the warmth of local hospitality, savor traditional delicacies, and immerse yourself in the tranquil rhythm of rural life as you explore this hidden gem in Inner Mongolia. Your adventure awaits in Wuyuan, where every hike offers new vistas and memorable encounters!",
+      "historicalContext": "Wuyuan has a rich history that dates back to ancient times, serving as a crucial agricultural center in the region. The area has been shaped by various dynasties and cultures, which is reflected in its well-preserved architecture and traditional practices.",
+      "practicalTips": "Wear sturdy hiking boots for uneven terrain. Bring plenty of water and snacks to stay energized. Check the weather forecast before your hike to dress appropriately. Consider hiring a local guide for an enriched experience. Respect the local culture and environment during your visit.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Wuhai",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:05:22.975Z"
+    },
+    {
+      "id": "hui-style-architecture",
+      "name": "Hui-style Architecture",
+      "day": 10,
+      "location": "Wuyuan",
+      "status": "pending",
+      "summary": "Nestled in the picturesque landscape of Wuyuan, China, Huangling village captivates visitors with its stunning Hui-style architecture and vibrant fields of rapeseed flowers that blanket the area in a sea of yellow each spring. Experience the charm of this traditional village, where ancient customs blend seamlessly with breathtaking scenery. As you wander through the narrow alleyways, you'll witness local farmers practicing the unique art of shaiqiu, showcasing their crops drying in bamboo baskets on sunlit window sills. This enchanting destination, recognized as one of the Best Tourism Villages by the United Nations World Tourism Organization in 2023, offers a perfect escape for nature lovers and cultural enthusiasts alike, making it a must-visit on your hiking tour itinerary.",
+      "historicalContext": "Huangling has a rich history that dates back centuries, characterized by its distinctive Hui-style architecture, which reflects the cultural heritage of the region. The village transformed into a tourist hotspot in 2009, drawing visitors from around the globe to experience its unique traditions and stunning natural beauty.",
+      "practicalTips": "Visit during spring to witness the breathtaking rapeseed flower bloom. Bring a camera to capture the picturesque landscapes and traditional architecture. Try to participate in the local shaiqiu practice for a unique cultural experience. Wear comfortable walking shoes for exploring the village's narrow paths. Respect the local customs and traditions while interacting with residents.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Huangling%2C_Wuyuan_County",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:05:30.085Z"
+    },
+    {
+      "id": "moon-bay",
+      "name": "Moon Bay",
+      "day": 10,
+      "location": "Wuyuan",
+      "status": "pending",
+      "summary": "Nestled in the picturesque Wuyuan region of China, Moon Bay beckons adventurers and nature lovers alike with its stunning landscapes and serene ambiance. Known for its mesmerizing views and lush surroundings, this 5A-rated tourist attraction offers a unique blend of tranquility and exploration, making it a must-visit destination for hikers. Whether you're wandering along its scenic trails or capturing the breathtaking vistas, Moon Bay promises an unforgettable experience that will leave you rejuvenated and inspired.",
+      "historicalContext": "Moon Bay is recognized as a national 5A-level tourist attraction, a designation awarded to only the finest and most well-preserved sites in China. Its natural beauty and cultural significance have made it a popular destination for both domestic and international travelers seeking to immerse themselves in the rich heritage and scenic splendor of Wuyuan.",
+      "practicalTips": "Wear sturdy hiking boots for the trails. Bring plenty of water to stay hydrated. Visit during early morning or late afternoon for the best light and fewer crowds. Don't forget your camera to capture the stunning views. Check local weather conditions before your hike to ensure a safe and enjoyable experience.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/AAAAA_Tourist_Attractions_of_China",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:05:36.457Z"
+    }
+  ]
+}

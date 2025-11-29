@@ -1,0 +1,414 @@
+{
+  "day": 3,
+  "title": {
+    "en": "Terracotta Warriors and Daming Palace",
+    "cn": "Terracotta Warriors and Daming Palace"
+  },
+  "location": {
+    "en": "Xi'an",
+    "cn": "Xi'an"
+  },
+  "generatedAt": "2025-11-29T22:02:01.344Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
+  "activities": [
+    {
+      "name": "Visit Terracotta Warrior Museum",
+      "activity": "Visit Terracotta Warrior Museum",
+      "searchTerm": "Visit Terracotta Warrior Museum Terracotta Warrior Museum China",
+      "images": [
+        {
+          "id": "unsplash-5MSUAMfvRds",
+          "url": "https://images.unsplash.com/photo-1763136241763-0801a85b3b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1763136241763-0801a85b3b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1763136241763-0801a85b3b35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Ancient clay figures displayed on a patterned surface.",
+          "photographer": "Eric Prouzet",
+          "photographerUrl": "https://unsplash.com/@eprouzet",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/5MSUAMfvRds",
+          "width": 6240,
+          "height": 4160
+        },
+        {
+          "id": "unsplash-4qbZm7Tq9ak",
+          "url": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Two ancient stone warrior statues in display case.",
+          "photographer": "vista pan",
+          "photographerUrl": "https://unsplash.com/@zhanwangpan",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/4qbZm7Tq9ak",
+          "width": 7728,
+          "height": 5152
+        },
+        {
+          "id": "pexels-7961881",
+          "url": "https://images.pexels.com/photos/7961881/pexels-photo-7961881.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7961881/pexels-photo-7961881.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7961881/pexels-photo-7961881.jpeg",
+          "alt": "Two terracotta warrior statues displayed on a white backdrop.",
+          "photographer": "Abdul Zreika",
+          "photographerUrl": "https://www.pexels.com/@abdul-zreika-233770",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/asian-men-figures-on-white-background-7961881/",
+          "width": 4000,
+          "height": 2667
+        },
+        {
+          "id": "pexels-11105685",
+          "url": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg",
+          "alt": "Close-up view of the ancient Terracotta Army statues in Xi'an, showcasing historical artistry.",
+          "photographer": "Maciej Cisowski",
+          "photographerUrl": "https://www.pexels.com/@maciej-cisowski-174297128",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/terracotta-army-statues-11105685/",
+          "width": 6720,
+          "height": 4480
+        },
+        {
+          "id": "pixabay-1028100",
+          "url": "https://pixabay.com/get/g44871fa7ee267b9f60087a90d336ee79a723889f574d46e95e1f676d62ed60f5548eb8bf7e82307dc877c8413fc113071c43f785183ff7ed07393c247e45fcaa_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/11/06/14/00/terracotta-1028100_150.jpg",
+          "full": "https://pixabay.com/get/gd86e897db0456f5b889bc4e04a0e0bb6d29c16c0847650863bbe51650affe54319c70df5aa2b5fae6f0249d3633f00855740fa2383aaefd35c5ddfe1b3f67baf_1280.jpg",
+          "alt": "terracotta, warrior, china, xian, sculpture, mythology, terracotta, xian, xian, xian, xian, xian",
+          "photographer": "Peggy_Marco",
+          "photographerUrl": "https://pixabay.com/users/Peggy_Marco-1553824/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/terracotta-warrior-china-xian-1028100/",
+          "width": 3072,
+          "height": 2048
+        },
+        {
+          "id": "pixabay-805184",
+          "url": "https://pixabay.com/get/g75412256b04f0c028c626ce3e8c03152346a67d336d38c6e935f0f819415410c03f73587ce05da0a217dae07f67e3ee5_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/06/10/20/35/china-805184_150.jpg",
+          "full": "https://pixabay.com/get/ge70df0240f2fedd1c95cd44bb06cbd7c9710b4a4d41828b77f4daea4673bdb0d714d6d8e4fc1f26076bcd3e7863f916798d53ffcc81b087c87ec3590f0587f39_1280.jpg",
+          "alt": "china, soldiers, terracotta, sculpture, asia, warrior, china, china, china, terracotta, terracotta, terracotta, terracotta, terracotta",
+          "photographer": "mkarasch0",
+          "photographerUrl": "https://pixabay.com/users/mkarasch0-1107795/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/china-soldiers-terracotta-sculpture-805184/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-177475",
+          "url": "https://pixabay.com/get/g0f610ebbd3aa8243555636cad70a68d9dbfe83314891bbaa043c3039849ef88436e1fd187da62f5eb24d90f3121877c2_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2013/08/30/16/00/terracotta-177475_150.jpg",
+          "full": "https://pixabay.com/get/g9eb88944b4dae48d83545aef3f13ff1af4adfe753d3bf46359a6bb8c7f3e4d3b3c95bcccc2d9c660446c7f48c859e93f2fc778ce6d58466b1b6cd4dbe3162c99_1280.jpg",
+          "alt": "terracotta, army, warrior, volume, characters, terracotta, terracotta, terracotta, terracotta, terracotta",
+          "photographer": "artemtation",
+          "photographerUrl": "https://pixabay.com/users/artemtation-45390/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/terracotta-army-warrior-volume-177475/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "wikimedia-101654464",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Qin_Terracotta_Warrior_08.jpg/800px-Qin Terracotta Warrior 08.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Qin_Terracotta_Warrior_08.jpg/300px-Qin Terracotta Warrior 08.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Qin_Terracotta_Warrior_08.jpg",
+          "alt": "2011 visit. Complete indexed photo collection at www.WorldHistoryPics.com.",
+          "photographer": "Gary Lee Todd, Ph.D.",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2008.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2008.jpg",
+          "width": 3168,
+          "height": 4752,
+          "license": "CC0"
+        },
+        {
+          "id": "wikimedia-101654462",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Qin_Terracotta_Warrior_06.jpg/800px-Qin Terracotta Warrior 06.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Qin_Terracotta_Warrior_06.jpg/300px-Qin Terracotta Warrior 06.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Qin_Terracotta_Warrior_06.jpg",
+          "alt": "2011 visit. Complete indexed photo collection at www.WorldHistoryPics.com.",
+          "photographer": "Gary Lee Todd, Ph.D.",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2006.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2006.jpg",
+          "width": 3168,
+          "height": 4752,
+          "license": "CC0"
+        }
+      ]
+    },
+    {
+      "name": "Hiking at Daming Palace Heritage Park",
+      "activity": "Hiking at Daming Palace Heritage Park",
+      "searchTerm": "Hiking at Daming Palace Heritage Park Daming Palace Heritage Park China",
+      "images": [
+        {
+          "id": "pexels-2846015",
+          "url": "https://images.pexels.com/photos/2846015/pexels-photo-2846015.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2846015/pexels-photo-2846015.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2846015/pexels-photo-2846015.jpeg",
+          "alt": "Tourists explore the historic architecture of Summer Palace in Beijing under a vibrant summer sky.",
+          "photographer": "Magda Ehlers",
+          "photographerUrl": "https://www.pexels.com/@magda-ehlers-pexels",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/people-walking-on-stairs-towards-temple-2846015/",
+          "width": 5945,
+          "height": 3346
+        },
+        {
+          "id": "pexels-2846070",
+          "url": "https://images.pexels.com/photos/2846070/pexels-photo-2846070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2846070/pexels-photo-2846070.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2846070/pexels-photo-2846070.jpeg",
+          "alt": "A stunning aerial view showing traditional Chinese architecture by a serene lake in Beijing.",
+          "photographer": "Magda Ehlers",
+          "photographerUrl": "https://www.pexels.com/@magda-ehlers-pexels",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/multicolored-pagodas-near-body-of-water-2846070/",
+          "width": 6229,
+          "height": 3506
+        },
+        {
+          "id": "pixabay-3643820",
+          "url": "https://pixabay.com/get/g2b961f8a9e71bfb0c2e31ad7f0be57847c0dce46840aca91480d88ebd654e0171916ae05210d080a4d2712f1f68d1a7a1bb289e396dcb0656a517dc545db1be5_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/08/31/04/40/daming-palace-3643820_150.jpg",
+          "full": "https://pixabay.com/get/g55b3a1d1dbaeb854141455cf907caac1ede2c5250d1a26866d768996ea7c6ecf3e5396a9cb97a2a2d6a336bb05364dfbd42a002db749a71786eada4a9b435a66_1280.jpg",
+          "alt": "daming palace, china, heritage park, tang palace, daming palace, daming palace, daming palace, daming palace, daming palace, china, china, china, china, china, tang palace",
+          "photographer": "mzh632829588",
+          "photographerUrl": "https://pixabay.com/users/mzh632829588-9975665/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/daming-palace-china-heritage-park-3643820/",
+          "width": 3851,
+          "height": 2391
+        },
+        {
+          "id": "pixabay-8268910",
+          "url": "https://pixabay.com/get/g5c663ccdb4051a449ac602b3c89215edb6381eb85e4da6e957ba50d9346b5ad313f9b06dd1926008ea15066e0c18fc8f346c40001c368a5ab1ab01f2f63a2fd7_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/09/22/12/00/daming-palace-8268910_150.jpg",
+          "full": "https://pixabay.com/get/gc95eb7d6559ae636f8fbbf8f3458f4b02d5ec1ecf17fb8c9ab1738ace63e015a0efd18ee3585fb7ca128b7161393f55a2f5519324b3bc624c0826ef5fac38305_1280.jpg",
+          "alt": "daming palace, xi'an, xi'an daming palace, palace, vacation destination, danfengmen, architecture, historical site, shaanxi xi'an scenery, xi'an danfengmen, daming palace, xi'an, xi'an, xi'an, xi'an, xi'an, palace",
+          "photographer": "周游中国",
+          "photographerUrl": "https://pixabay.com/users/周游中国-33467154/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/daming-palace-xian-8268910/",
+          "width": 6494,
+          "height": 4329
+        },
+        {
+          "id": "pixabay-2506525",
+          "url": "https://pixabay.com/get/g07157429a5ff4ad90721bd5aa3ccd24a277292e95f83bf1af07398c299645a1e2bd41e1cfb0de078dd771a3ddd5803d7753475acd780fb417deca24df9cd2718_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/07/15/13/54/daming-palace-2506525_150.jpg",
+          "full": "https://pixabay.com/get/gb961394a04727a31c4181ff76c48b7adaf4d4f6b2414d809f9e563153e3d689211a195ce951cb219f8700ac012aa5093dc8425c116cf6c2f3d319cbe0813678d_1280.jpg",
+          "alt": "daming palace, xi'an, travel, xi'an, xi'an, xi'an, xi'an, xi'an",
+          "photographer": "XNHZ_681008",
+          "photographerUrl": "https://pixabay.com/users/XNHZ_681008-5905853/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/daming-palace-xian-travel-2506525/",
+          "width": 5616,
+          "height": 3744
+        }
+      ]
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Visit Terracotta Warrior Museum",
+      "images": [
+        {
+          "id": "unsplash-5MSUAMfvRds",
+          "url": "https://images.unsplash.com/photo-1763136241763-0801a85b3b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1763136241763-0801a85b3b35?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1763136241763-0801a85b3b35?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Ancient clay figures displayed on a patterned surface.",
+          "photographer": "Eric Prouzet",
+          "photographerUrl": "https://unsplash.com/@eprouzet",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/5MSUAMfvRds",
+          "width": 6240,
+          "height": 4160
+        },
+        {
+          "id": "unsplash-4qbZm7Tq9ak",
+          "url": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1758092320415-bdadb93e57e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxWaXNpdCUyMFRlcnJhY290dGElMjBXYXJyaW9yJTIwTXVzZXVtJTIwVGVycmFjb3R0YSUyMFdhcnJpb3IlMjBNdXNldW0lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzE3fDA&ixlib=rb-4.1.0&q=85",
+          "alt": "Two ancient stone warrior statues in display case.",
+          "photographer": "vista pan",
+          "photographerUrl": "https://unsplash.com/@zhanwangpan",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/4qbZm7Tq9ak",
+          "width": 7728,
+          "height": 5152
+        },
+        {
+          "id": "pexels-7961881",
+          "url": "https://images.pexels.com/photos/7961881/pexels-photo-7961881.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/7961881/pexels-photo-7961881.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/7961881/pexels-photo-7961881.jpeg",
+          "alt": "Two terracotta warrior statues displayed on a white backdrop.",
+          "photographer": "Abdul Zreika",
+          "photographerUrl": "https://www.pexels.com/@abdul-zreika-233770",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/asian-men-figures-on-white-background-7961881/",
+          "width": 4000,
+          "height": 2667
+        },
+        {
+          "id": "pexels-11105685",
+          "url": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg",
+          "alt": "Close-up view of the ancient Terracotta Army statues in Xi'an, showcasing historical artistry.",
+          "photographer": "Maciej Cisowski",
+          "photographerUrl": "https://www.pexels.com/@maciej-cisowski-174297128",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/terracotta-army-statues-11105685/",
+          "width": 6720,
+          "height": 4480
+        },
+        {
+          "id": "pixabay-1028100",
+          "url": "https://pixabay.com/get/g44871fa7ee267b9f60087a90d336ee79a723889f574d46e95e1f676d62ed60f5548eb8bf7e82307dc877c8413fc113071c43f785183ff7ed07393c247e45fcaa_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/11/06/14/00/terracotta-1028100_150.jpg",
+          "full": "https://pixabay.com/get/gd86e897db0456f5b889bc4e04a0e0bb6d29c16c0847650863bbe51650affe54319c70df5aa2b5fae6f0249d3633f00855740fa2383aaefd35c5ddfe1b3f67baf_1280.jpg",
+          "alt": "terracotta, warrior, china, xian, sculpture, mythology, terracotta, xian, xian, xian, xian, xian",
+          "photographer": "Peggy_Marco",
+          "photographerUrl": "https://pixabay.com/users/Peggy_Marco-1553824/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/terracotta-warrior-china-xian-1028100/",
+          "width": 3072,
+          "height": 2048
+        },
+        {
+          "id": "pixabay-805184",
+          "url": "https://pixabay.com/get/g75412256b04f0c028c626ce3e8c03152346a67d336d38c6e935f0f819415410c03f73587ce05da0a217dae07f67e3ee5_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2015/06/10/20/35/china-805184_150.jpg",
+          "full": "https://pixabay.com/get/ge70df0240f2fedd1c95cd44bb06cbd7c9710b4a4d41828b77f4daea4673bdb0d714d6d8e4fc1f26076bcd3e7863f916798d53ffcc81b087c87ec3590f0587f39_1280.jpg",
+          "alt": "china, soldiers, terracotta, sculpture, asia, warrior, china, china, china, terracotta, terracotta, terracotta, terracotta, terracotta",
+          "photographer": "mkarasch0",
+          "photographerUrl": "https://pixabay.com/users/mkarasch0-1107795/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/china-soldiers-terracotta-sculpture-805184/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-177475",
+          "url": "https://pixabay.com/get/g0f610ebbd3aa8243555636cad70a68d9dbfe83314891bbaa043c3039849ef88436e1fd187da62f5eb24d90f3121877c2_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2013/08/30/16/00/terracotta-177475_150.jpg",
+          "full": "https://pixabay.com/get/g9eb88944b4dae48d83545aef3f13ff1af4adfe753d3bf46359a6bb8c7f3e4d3b3c95bcccc2d9c660446c7f48c859e93f2fc778ce6d58466b1b6cd4dbe3162c99_1280.jpg",
+          "alt": "terracotta, army, warrior, volume, characters, terracotta, terracotta, terracotta, terracotta, terracotta",
+          "photographer": "artemtation",
+          "photographerUrl": "https://pixabay.com/users/artemtation-45390/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/terracotta-army-warrior-volume-177475/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "wikimedia-101654464",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Qin_Terracotta_Warrior_08.jpg/800px-Qin Terracotta Warrior 08.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Qin_Terracotta_Warrior_08.jpg/300px-Qin Terracotta Warrior 08.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Qin_Terracotta_Warrior_08.jpg",
+          "alt": "2011 visit. Complete indexed photo collection at www.WorldHistoryPics.com.",
+          "photographer": "Gary Lee Todd, Ph.D.",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2008.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2008.jpg",
+          "width": 3168,
+          "height": 4752,
+          "license": "CC0"
+        },
+        {
+          "id": "wikimedia-101654462",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Qin_Terracotta_Warrior_06.jpg/800px-Qin Terracotta Warrior 06.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Qin_Terracotta_Warrior_06.jpg/300px-Qin Terracotta Warrior 06.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Qin_Terracotta_Warrior_06.jpg",
+          "alt": "2011 visit. Complete indexed photo collection at www.WorldHistoryPics.com.",
+          "photographer": "Gary Lee Todd, Ph.D.",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2006.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AQin%20Terracotta%20Warrior%2006.jpg",
+          "width": 3168,
+          "height": 4752,
+          "license": "CC0"
+        }
+      ]
+    },
+    {
+      "activity": "Hiking at Daming Palace Heritage Park",
+      "images": [
+        {
+          "id": "pexels-2846015",
+          "url": "https://images.pexels.com/photos/2846015/pexels-photo-2846015.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2846015/pexels-photo-2846015.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2846015/pexels-photo-2846015.jpeg",
+          "alt": "Tourists explore the historic architecture of Summer Palace in Beijing under a vibrant summer sky.",
+          "photographer": "Magda Ehlers",
+          "photographerUrl": "https://www.pexels.com/@magda-ehlers-pexels",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/people-walking-on-stairs-towards-temple-2846015/",
+          "width": 5945,
+          "height": 3346
+        },
+        {
+          "id": "pexels-2846070",
+          "url": "https://images.pexels.com/photos/2846070/pexels-photo-2846070.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/2846070/pexels-photo-2846070.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/2846070/pexels-photo-2846070.jpeg",
+          "alt": "A stunning aerial view showing traditional Chinese architecture by a serene lake in Beijing.",
+          "photographer": "Magda Ehlers",
+          "photographerUrl": "https://www.pexels.com/@magda-ehlers-pexels",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/multicolored-pagodas-near-body-of-water-2846070/",
+          "width": 6229,
+          "height": 3506
+        },
+        {
+          "id": "pixabay-3643820",
+          "url": "https://pixabay.com/get/g2b961f8a9e71bfb0c2e31ad7f0be57847c0dce46840aca91480d88ebd654e0171916ae05210d080a4d2712f1f68d1a7a1bb289e396dcb0656a517dc545db1be5_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/08/31/04/40/daming-palace-3643820_150.jpg",
+          "full": "https://pixabay.com/get/g55b3a1d1dbaeb854141455cf907caac1ede2c5250d1a26866d768996ea7c6ecf3e5396a9cb97a2a2d6a336bb05364dfbd42a002db749a71786eada4a9b435a66_1280.jpg",
+          "alt": "daming palace, china, heritage park, tang palace, daming palace, daming palace, daming palace, daming palace, daming palace, china, china, china, china, china, tang palace",
+          "photographer": "mzh632829588",
+          "photographerUrl": "https://pixabay.com/users/mzh632829588-9975665/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/daming-palace-china-heritage-park-3643820/",
+          "width": 3851,
+          "height": 2391
+        },
+        {
+          "id": "pixabay-8268910",
+          "url": "https://pixabay.com/get/g5c663ccdb4051a449ac602b3c89215edb6381eb85e4da6e957ba50d9346b5ad313f9b06dd1926008ea15066e0c18fc8f346c40001c368a5ab1ab01f2f63a2fd7_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/09/22/12/00/daming-palace-8268910_150.jpg",
+          "full": "https://pixabay.com/get/gc95eb7d6559ae636f8fbbf8f3458f4b02d5ec1ecf17fb8c9ab1738ace63e015a0efd18ee3585fb7ca128b7161393f55a2f5519324b3bc624c0826ef5fac38305_1280.jpg",
+          "alt": "daming palace, xi'an, xi'an daming palace, palace, vacation destination, danfengmen, architecture, historical site, shaanxi xi'an scenery, xi'an danfengmen, daming palace, xi'an, xi'an, xi'an, xi'an, xi'an, palace",
+          "photographer": "周游中国",
+          "photographerUrl": "https://pixabay.com/users/周游中国-33467154/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/daming-palace-xian-8268910/",
+          "width": 6494,
+          "height": 4329
+        },
+        {
+          "id": "pixabay-2506525",
+          "url": "https://pixabay.com/get/g07157429a5ff4ad90721bd5aa3ccd24a277292e95f83bf1af07398c299645a1e2bd41e1cfb0de078dd771a3ddd5803d7753475acd780fb417deca24df9cd2718_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/07/15/13/54/daming-palace-2506525_150.jpg",
+          "full": "https://pixabay.com/get/gb961394a04727a31c4181ff76c48b7adaf4d4f6b2414d809f9e563153e3d689211a195ce951cb219f8700ac012aa5093dc8425c116cf6c2f3d319cbe0813678d_1280.jpg",
+          "alt": "daming palace, xi'an, travel, xi'an, xi'an, xi'an, xi'an, xi'an",
+          "photographer": "XNHZ_681008",
+          "photographerUrl": "https://pixabay.com/users/XNHZ_681008-5905853/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/daming-palace-xian-travel-2506525/",
+          "width": 5616,
+          "height": 3744
+        }
+      ]
+    }
+  ]
+}

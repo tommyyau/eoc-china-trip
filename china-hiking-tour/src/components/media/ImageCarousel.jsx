@@ -93,8 +93,8 @@ const ImageCarousel = ({
                                         bottom: 0,
                                         left: 0,
                                         right: 0,
-                                        height: '40%',
-                                        background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%)',
+                                        height: '50%',
+                                        background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%)',
                                         pointerEvents: 'none'
                                     }}
                                 />
@@ -184,8 +184,8 @@ const ImageCarousel = ({
                         right: '1rem',
                         color: 'white',
                         fontSize: '0.9rem',
-                        fontWeight: 500,
-                        textShadow: '0 1px 3px rgba(0,0,0,0.5)',
+                        fontWeight: 600,
+                        textShadow: '0 2px 6px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8)',
                         zIndex: 2
                     }}
                 >

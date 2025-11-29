@@ -1,0 +1,109 @@
+{
+  "day": 9,
+  "title": {
+    "en": "Mount Shizhong & Jingdezhen",
+    "cn": "石钟山与景德镇"
+  },
+  "location": {
+    "en": "Lushan -> Jingdezhen",
+    "cn": "庐山 -> 景德镇"
+  },
+  "activities": [
+    {
+      "activity": "Mount Shizhong Hike",
+      "imageLinks": {
+        "highlight": "Mount Shizhong Hike",
+        "searchTerm": "mount shizhong hike",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/mount%20shizhong%20hike?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?mount%20shizhong%20hike&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/mount%20shizhong%20hike/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "mount shizhong hike professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Mount Shizhong Hike in Lushan -> Jingdezhen, China",
+        "Travel photography of Mount Shizhong Hike in Lushan -> Jingdezhen",
+        "Mount Shizhong Hike tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "Yangtze & Poyang Lake View",
+      "imageLinks": {
+        "highlight": "Yangtze & Poyang Lake View",
+        "searchTerm": "yangtze & poyang lake view",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/yangtze%20%26%20poyang%20lake%20view?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?yangtze%20%26%20poyang%20lake%20view&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/yangtze%20%26%20poyang%20lake%20view/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "yangtze & poyang lake view professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Yangtze & Poyang Lake View in Lushan -> Jingdezhen, China",
+        "Travel photography of Yangtze & Poyang Lake View in Lushan -> Jingdezhen",
+        "Yangtze & Poyang Lake View tourist attraction in Lushan -> Jingdezhen"
+      ]
+    },
+    {
+      "activity": "Jingdezhen Ceramics",
+      "imageLinks": {
+        "highlight": "Jingdezhen Ceramics",
+        "searchTerm": "jingdezhen ceramics",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/jingdezhen%20ceramics?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?jingdezhen%20ceramics&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/jingdezhen%20ceramics/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "jingdezhen ceramics professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Jingdezhen Ceramics in Lushan -> Jingdezhen, China",
+        "Travel photography of Jingdezhen Ceramics in Lushan -> Jingdezhen",
+        "Jingdezhen Ceramics tourist attraction in Lushan -> Jingdezhen"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Hotel in Jingdezhen or Wuyuan",
+    "location": "Lushan -> Jingdezhen",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Hotel%20in%20Jingdezhen%20or%20Wuyuan%20Lushan%20-%3E%20Jingdezhen",
+      "https://www.booking.com/searchresults.html?ss=Hotel%20in%20Jingdezhen%20or%20Wuyuan%20Lushan%20-%3E%20Jingdezhen",
+      "https://www.google.com/search?q=Hotel%20in%20Jingdezhen%20or%20Wuyuan%20Lushan%20-%3E%20Jingdezhen%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:35.372Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

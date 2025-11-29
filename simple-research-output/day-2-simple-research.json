@@ -1,0 +1,136 @@
+{
+  "day": 2,
+  "title": {
+    "en": "Xi'an City Walk & Ancient Wall",
+    "cn": "西安城市漫步与古城墙"
+  },
+  "location": {
+    "en": "Xi'an",
+    "cn": "西安"
+  },
+  "activities": [
+    {
+      "activity": "Bell & Drum Towers",
+      "imageLinks": {
+        "highlight": "Bell & Drum Towers",
+        "searchTerm": "bell & drum towers",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/bell%20%26%20drum%20towers?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?bell%20%26%20drum%20towers&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/bell%20%26%20drum%20towers/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "bell & drum towers professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Bell & Drum Towers in Xi'an, China",
+        "Travel photography of Bell & Drum Towers in Xi'an",
+        "Bell & Drum Towers tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Muslim Quarter",
+      "imageLinks": {
+        "highlight": "Muslim Quarter",
+        "searchTerm": "muslim quarter xian street food",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/muslim%20quarter%20xian%20street%20food?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?muslim%20quarter%20xian%20street%20food&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/muslim%20quarter%20xian%20street%20food/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "muslim quarter xian street food professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Muslim Quarter in Xi'an, China",
+        "Travel photography of Muslim Quarter in Xi'an",
+        "Muslim Quarter tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "City Wall Hiking (13.7km)",
+      "imageLinks": {
+        "highlight": "City Wall Hiking",
+        "searchTerm": "city wall hiking",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/city%20wall%20hiking?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?city%20wall%20hiking&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/city%20wall%20hiking/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "city wall hiking professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "City Wall Hiking (13.7km) in Xi'an, China",
+        "Travel photography of City Wall Hiking (13.7km) in Xi'an",
+        "City Wall Hiking (13.7km) tourist attraction in Xi'an"
+      ]
+    },
+    {
+      "activity": "Dumpling Banquet",
+      "imageLinks": {
+        "highlight": "Dumpling Banquet",
+        "searchTerm": "dumpling banquet",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/dumpling%20banquet?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?dumpling%20banquet&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/dumpling%20banquet/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "dumpling banquet professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Dumpling Banquet in Xi'an, China",
+        "Travel photography of Dumpling Banquet in Xi'an",
+        "Dumpling Banquet tourist attraction in Xi'an"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Eastern House",
+    "location": "Xi'an",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Eastern%20House%20Xi'an",
+      "https://www.booking.com/searchresults.html?ss=Eastern%20House%20Xi'an",
+      "https://www.google.com/search?q=Eastern%20House%20Xi'an%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:27.851Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

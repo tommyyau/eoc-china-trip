@@ -1,0 +1,109 @@
+{
+  "day": 11,
+  "title": {
+    "en": "Huangling & Wangxian Valley",
+    "cn": "篁岭与望仙谷"
+  },
+  "location": {
+    "en": "Wuyuan -> Shangrao",
+    "cn": "婺源 -> 上饶"
+  },
+  "activities": [
+    {
+      "activity": "Huangling Terraces",
+      "imageLinks": {
+        "highlight": "Huangling Terraces",
+        "searchTerm": "huangling terraces",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/huangling%20terraces?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?huangling%20terraces&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/huangling%20terraces/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "huangling terraces professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Huangling Terraces in Wuyuan -> Shangrao, China",
+        "Travel photography of Huangling Terraces in Wuyuan -> Shangrao",
+        "Huangling Terraces tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "Wangxian Valley Hike",
+      "imageLinks": {
+        "highlight": "Wangxian Valley Hike",
+        "searchTerm": "wangxian valley hike",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/wangxian%20valley%20hike?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?wangxian%20valley%20hike&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/wangxian%20valley%20hike/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "wangxian valley hike professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Wangxian Valley Hike in Wuyuan -> Shangrao, China",
+        "Travel photography of Wangxian Valley Hike in Wuyuan -> Shangrao",
+        "Wangxian Valley Hike tourist attraction in Wuyuan -> Shangrao"
+      ]
+    },
+    {
+      "activity": "Night Views",
+      "imageLinks": {
+        "highlight": "Night Views",
+        "searchTerm": "night views",
+        "unsplashLinks": [
+          "https://unsplash.com/s/photos/night%20views?orientation=landscape&color=any",
+          "https://source.unsplash.com/featured/?night%20views&orientation=landscape",
+          "https://unsplash.com/@jplenio"
+        ],
+        "pexelsLinks": [
+          "https://www.pexels.com/search/night%20views/?orientation=landscape&color=any",
+          "https://www.pexels.com/@artem-podrez"
+        ],
+        "chinaSearches": [
+          "china travel photography",
+          "china tourism professional",
+          "china landscape photography",
+          "night views professional photography"
+        ]
+      },
+      "suggestedAltText": [
+        "Night Views in Wuyuan -> Shangrao, China",
+        "Travel photography of Night Views in Wuyuan -> Shangrao",
+        "Night Views tourist attraction in Wuyuan -> Shangrao"
+      ]
+    }
+  ],
+  "hotelInfo": {
+    "hotelName": "Homestay in Wangxian Valley",
+    "location": "Wuyuan -> Shangrao",
+    "searchLinks": [
+      "https://www.tripadvisor.com/Search?q=Homestay%20in%20Wangxian%20Valley%20Wuyuan%20-%3E%20Shangrao",
+      "https://www.booking.com/searchresults.html?ss=Homestay%20in%20Wangxian%20Valley%20Wuyuan%20-%3E%20Shangrao",
+      "https://www.google.com/search?q=Homestay%20in%20Wangxian%20Valley%20Wuyuan%20-%3E%20Shangrao%20reviews"
+    ]
+  },
+  "researchDate": "2025-11-29T09:06:37.513Z",
+  "instructions": {
+    "howToUse": "Click on the provided links to find actual images",
+    "altText": "Use the suggested alt text for accessibility",
+    "workflow": "Click links → Find images → Download → Use alt text"
+  }
+}

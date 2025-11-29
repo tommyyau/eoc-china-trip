@@ -1,0 +1,216 @@
+{
+  "day": 10,
+  "title": {
+    "en": "Hiking Through Wuyuan’s Rural Landscapes",
+    "cn": "Hiking Through Wuyuan’s Rural Landscapes"
+  },
+  "location": {
+    "en": "Wuyuan",
+    "cn": "Wuyuan"
+  },
+  "generatedAt": "2025-11-29T22:02:32.424Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
+  "activities": [
+    {
+      "name": "Hike in Wuyuan",
+      "activity": "Hike in Wuyuan",
+      "searchTerm": "Hike in Wuyuan China",
+      "images": [
+        {
+          "id": "unsplash-ih4OoDisqVE",
+          "url": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "photography of green plant on mountain at foggy time",
+          "photographer": "Reed Xia",
+          "photographerUrl": "https://unsplash.com/@python012",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/ih4OoDisqVE",
+          "width": 3264,
+          "height": 2448
+        },
+        {
+          "id": "unsplash-vQ6RpiBUpuw",
+          "url": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a view of the mountains from a trail",
+          "photographer": "vincent huang",
+          "photographerUrl": "https://unsplash.com/@qingchen191",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/vQ6RpiBUpuw",
+          "width": 4000,
+          "height": 2250
+        },
+        {
+          "id": "pexels-34925285",
+          "url": "https://images.pexels.com/photos/34925285/pexels-photo-34925285.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/34925285/pexels-photo-34925285.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/34925285/pexels-photo-34925285.jpeg",
+          "alt": "Free stock photo of bends, branch, destruction",
+          "photographer": "Acres of Film",
+          "photographerUrl": "https://www.pexels.com/@acres-of-film-698445032",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/serene-summer-forest-in-hangzhou-34925285/",
+          "width": 7008,
+          "height": 4672
+        },
+        {
+          "id": "pexels-19872",
+          "url": "https://images.pexels.com/photos/19872/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/19872/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/19872/pexels-photo.jpg",
+          "alt": "Majestic aerial shot of the Great Wall of China surrounded by mist and mountains.",
+          "photographer": "Manuel Joseph",
+          "photographerUrl": "https://www.pexels.com/@manjose",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-photography-of-great-wall-of-china-19872/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-6486093",
+          "url": "https://pixabay.com/get/ge107a25e67cd9ef23a02dca9df64edecbb1a5b230b3f72b599ef194a98b3ccd93a07ab7015255a0264079ac55ed9a5770ebe1545f80afadf74011c4cadc1f5c0_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/07/22/21/55/mountains-6486093_150.jpg",
+          "full": "https://pixabay.com/get/g2ae3dc1dad38184e2006a8dc7c6dec4c557084bf28b25ededefe703cde792cc9fa1c7185083f5c11954a26a63b4b9d98549c471d03a64572090d12b6ebb8ef30_1280.jpg",
+          "alt": "mountains, nature, tourism, hike, alpine, in the free, goal, switzerland, gantric, summer, alps, mountains, goal, goal, goal, goal, switzerland, switzerland, switzerland, switzerland, switzerland, alps, alps, alps, alps",
+          "photographer": "Arsinoe63",
+          "photographerUrl": "https://pixabay.com/users/Arsinoe63-12474343/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountains-nature-tourism-hike-6486093/",
+          "width": 7360,
+          "height": 4912
+        },
+        {
+          "id": "pixabay-6603320",
+          "url": "https://pixabay.com/get/g12087a8bc05630bfdc3176f197ca4668152b69b404713da18203cacf97a0b870453519a10a90281ec2679475a0232c354265aea100c30fbd5697449f2b380bd0_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/38/building-6603320_150.jpg",
+          "full": "https://pixabay.com/get/gad2d239ddd7180499e9786d7867ec0908337ea39161e2074ca387f31adff12cd002abf88ece819124c8266c2a799eedf3698f56ac414c0e66ec0b47517da860d_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603320/",
+          "width": 6240,
+          "height": 4160
+        },
+        {
+          "id": "pixabay-6603307",
+          "url": "https://pixabay.com/get/g24c14f5ced639ccda834991737f56ae306eb0d50a05e1caa012c7e2a85e7c419d37957d0fc53b75a7e9f4f05af95baa6f3acebccb0e1670bd208066b4b9606d7_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/37/building-6603307_150.jpg",
+          "full": "https://pixabay.com/get/g3371cebe1ccaef76e7772ba7be46cd7466fb646c7310cb77361820a503a56b04854beb496fc4a0192a002b9ccb4a69a139f264a0dfb549137c10ef9f4bf76dd0_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, huizhou architecture, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603307/",
+          "width": 5739,
+          "height": 3826
+        }
+      ]
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Hike in Wuyuan",
+      "images": [
+        {
+          "id": "unsplash-ih4OoDisqVE",
+          "url": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1535013096267-e5d0c1ede51b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "photography of green plant on mountain at foggy time",
+          "photographer": "Reed Xia",
+          "photographerUrl": "https://unsplash.com/@python012",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/ih4OoDisqVE",
+          "width": 3264,
+          "height": 2448
+        },
+        {
+          "id": "unsplash-vQ6RpiBUpuw",
+          "url": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1681262427279-aadba8d9ca31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxIaWtlJTIwaW4lMjBXdXl1YW4lMjBDaGluYXxlbnwwfDB8fHwxNzY0NDUzNzUxfDA&ixlib=rb-4.1.0&q=85",
+          "alt": "a view of the mountains from a trail",
+          "photographer": "vincent huang",
+          "photographerUrl": "https://unsplash.com/@qingchen191",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/vQ6RpiBUpuw",
+          "width": 4000,
+          "height": 2250
+        },
+        {
+          "id": "pexels-34925285",
+          "url": "https://images.pexels.com/photos/34925285/pexels-photo-34925285.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/34925285/pexels-photo-34925285.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/34925285/pexels-photo-34925285.jpeg",
+          "alt": "Free stock photo of bends, branch, destruction",
+          "photographer": "Acres of Film",
+          "photographerUrl": "https://www.pexels.com/@acres-of-film-698445032",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/serene-summer-forest-in-hangzhou-34925285/",
+          "width": 7008,
+          "height": 4672
+        },
+        {
+          "id": "pexels-19872",
+          "url": "https://images.pexels.com/photos/19872/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/19872/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/19872/pexels-photo.jpg",
+          "alt": "Majestic aerial shot of the Great Wall of China surrounded by mist and mountains.",
+          "photographer": "Manuel Joseph",
+          "photographerUrl": "https://www.pexels.com/@manjose",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/aerial-photography-of-great-wall-of-china-19872/",
+          "width": 5184,
+          "height": 3456
+        },
+        {
+          "id": "pixabay-6486093",
+          "url": "https://pixabay.com/get/ge107a25e67cd9ef23a02dca9df64edecbb1a5b230b3f72b599ef194a98b3ccd93a07ab7015255a0264079ac55ed9a5770ebe1545f80afadf74011c4cadc1f5c0_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/07/22/21/55/mountains-6486093_150.jpg",
+          "full": "https://pixabay.com/get/g2ae3dc1dad38184e2006a8dc7c6dec4c557084bf28b25ededefe703cde792cc9fa1c7185083f5c11954a26a63b4b9d98549c471d03a64572090d12b6ebb8ef30_1280.jpg",
+          "alt": "mountains, nature, tourism, hike, alpine, in the free, goal, switzerland, gantric, summer, alps, mountains, goal, goal, goal, goal, switzerland, switzerland, switzerland, switzerland, switzerland, alps, alps, alps, alps",
+          "photographer": "Arsinoe63",
+          "photographerUrl": "https://pixabay.com/users/Arsinoe63-12474343/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mountains-nature-tourism-hike-6486093/",
+          "width": 7360,
+          "height": 4912
+        },
+        {
+          "id": "pixabay-6603320",
+          "url": "https://pixabay.com/get/g12087a8bc05630bfdc3176f197ca4668152b69b404713da18203cacf97a0b870453519a10a90281ec2679475a0232c354265aea100c30fbd5697449f2b380bd0_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/38/building-6603320_150.jpg",
+          "full": "https://pixabay.com/get/gad2d239ddd7180499e9786d7867ec0908337ea39161e2074ca387f31adff12cd002abf88ece819124c8266c2a799eedf3698f56ac414c0e66ec0b47517da860d_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603320/",
+          "width": 6240,
+          "height": 4160
+        },
+        {
+          "id": "pixabay-6603307",
+          "url": "https://pixabay.com/get/g24c14f5ced639ccda834991737f56ae306eb0d50a05e1caa012c7e2a85e7c419d37957d0fc53b75a7e9f4f05af95baa6f3acebccb0e1670bd208066b4b9606d7_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2021/09/07/08/37/building-6603307_150.jpg",
+          "full": "https://pixabay.com/get/g3371cebe1ccaef76e7772ba7be46cd7466fb646c7310cb77361820a503a56b04854beb496fc4a0192a002b9ccb4a69a139f264a0dfb549137c10ef9f4bf76dd0_1280.jpg",
+          "alt": "building, huizhou architecture, huangling, wuyuan, huizhou architecture, wuyuan, wuyuan, wuyuan, wuyuan, wuyuan",
+          "photographer": "TheKov",
+          "photographerUrl": "https://pixabay.com/users/TheKov-22227486/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/building-huizhou-architecture-6603307/",
+          "width": 5739,
+          "height": 3826
+        }
+      ]
+    }
+  ]
+}

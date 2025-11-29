@@ -1,0 +1,63 @@
+{
+  "day": 14,
+  "lastModified": "2025-11-29T22:06:51.658Z",
+  "pois": [
+    {
+      "id": "confucius-temple",
+      "name": "Confucius Temple",
+      "day": 14,
+      "location": "Tai'an -> Qufu",
+      "status": "pending",
+      "summary": "Step into the ancient world of Confucius Temple in Qufu, China, where philosophy meets stunning architecture and vibrant culture. Nestled in the heart of Qufu, the birthplace of the revered philosopher Confucius, this UNESCO World Heritage Site invites you to explore its majestic halls and serene courtyards. Wander through the intricate carvings and inscriptions that echo centuries of wisdom, and immerse yourself in the tranquil ambiance that has inspired countless generations. Whether you're a history buff, a culture enthusiast, or simply seeking a unique adventure, the Temple of Confucius promises an unforgettable experience that blends legacy with beauty.",
+      "historicalContext": "Confucius Temple, built in 478 BC, is a tribute to one of the most influential thinkers in Chinese history. It stands as a testament to Confucian values and teachings, which have shaped Chinese society for over two millennia. The temple complex, along with the nearby Cemetery of Confucius and Kong Family Mansion, collectively represents the rich cultural heritage of Qufu.",
+      "practicalTips": "Visit early in the morning to avoid crowds. Wear comfortable shoes as you'll be walking on varied terrain. Don't miss the beautiful surrounding gardens for a peaceful retreat. Consider hiring a local guide for deeper insights into the site's history. Bring a camera to capture the stunning architecture and serene landscapes.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Qufu",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:06:37.696Z"
+    },
+    {
+      "id": "confucius-mansion",
+      "name": "Confucius Mansion",
+      "day": 14,
+      "location": "Tai'an -> Qufu",
+      "status": "pending",
+      "summary": "Nestled in the heart of Qufu, the Confucius Mansion stands as a testament to the rich philosophical heritage of China. This grand estate, once the residence of Confucius's descendants, offers visitors a glimpse into the life and legacy of the revered philosopher. Wander through its ornate halls, lush gardens, and intricate architecture that reflect the deep respect for Confucian ideals. With its historical significance and tranquil atmosphere, the Confucius Mansion invites you to immerse yourself in the wisdom of ancient teachings while enjoying the serene beauty of its surroundings.",
+      "historicalContext": "The Confucius Mansion, known as Kong Fu (孔府), dates back to the Ming Dynasty and has served as the ancestral home of Confucius's family for over 2,500 years. It is not only a symbol of Confucianism but also a reflection of the socio-political structure of ancient China, showcasing the influence of Confucius on Chinese culture and governance throughout history.",
+      "practicalTips": "Visit early in the morning to avoid crowds. Wear comfortable shoes for exploring the vast grounds. Consider hiring a local guide for deeper insights into the history. Don’t miss the exquisite details in the architecture. Bring a camera to capture the stunning landscapes.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Qufu",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:06:44.657Z"
+    },
+    {
+      "id": "confucius-forest",
+      "name": "Confucius Forest",
+      "day": 14,
+      "location": "Tai'an -> Qufu",
+      "status": "pending",
+      "summary": "Discover the serene beauty of Confucius Forest, a tranquil oasis nestled in the heart of Qufu, China. Known as the birthplace of Confucius, this enchanting site offers not only a chance to connect with nature but also to immerse yourself in the rich cultural heritage that defined East Asian philosophy. As you wander through the towering ancient trees, each step invites reflection and a deeper understanding of Confucian teachings, making this experience as enlightening as it is picturesque. With its lush surroundings and historical significance, Confucius Forest is a must-visit for those seeking both adventure and tranquility on their journey through China.",
+      "historicalContext": "Confucius Forest is part of the UNESCO World Heritage Site in Qufu, which honors the legacy of Confucius, one of history's most influential philosophers. This site is a testament to the deep reverence for Confucius in Chinese culture, with the forest serving as a serene backdrop to the nearby Temple of Confucius and the Cemetery of Confucius, where many of his descendants are buried.",
+      "practicalTips": "Wear comfortable hiking shoes for the trails. Bring water and snacks for your journey. Consider visiting early in the morning to avoid crowds. Don’t forget your camera to capture the stunning landscapes. Check local weather forecasts to plan your visit accordingly.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Qufu",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:06:51.156Z"
+    }
+  ]
+}

@@ -1,0 +1,668 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Research - Beilin Museum & Travel to Beijing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .title { font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2em; opacity: 0.9; }
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .activity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .activity-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fafafa;
+        }
+        .activity-title { font-size: 1.2em; font-weight: bold; margin-bottom: 15px; color: #34495e; }
+        .image-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
+        .image-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            transition: transform 0.2s;
+        }
+        .image-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+        .image-container { position: relative; padding-bottom: 66.67%; }
+        .image-container img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+        }
+        .image-info { padding: 10px; font-size: 0.9em; }
+        .alt-text {
+            background: #ecf0f1;
+            padding: 8px;
+            border-radius: 4px;
+            margin: 5px 0;
+            font-family: monospace;
+            font-size: 0.85em;
+        }
+        .search-link {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            font-size: 0.9em;
+        }
+        .search-link:hover { background: #2980b9; }
+        .hotel-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .hotel-name { font-size: 1.3em; font-weight: bold; margin-bottom: 10px; }
+        .recommended-searches {
+            background: #e8f5e8;
+            border: 1px solid #4caf50;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .recommended-title { font-weight: bold; margin-bottom: 10px; color: #2e7d32; }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .checkbox-label input { margin-right: 10px; }
+        .selected-info {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .download-btn {
+            background: #27ae60;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .download-btn:hover { background: #229954; }
+        .instructions {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .placeholder-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 10;
+        }
+        .placeholder {
+            border: 2px dashed #e67e22 !important;
+            opacity: 0.8;
+        }
+        .real-image {
+            border: 1px solid #ddd;
+        }
+        .image-source {
+            font-size: 0.8em;
+            margin: 5px 0;
+            color: #666;
+        }
+        .image-description {
+            font-size: 0.85em;
+            font-style: italic;
+            color: #555;
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .activity-grid { grid-template-columns: 1fr; }
+            .image-preview { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Day 4: Beilin Museum & Travel to Beijing</h1>
+            <p class="subtitle">📍 Xi'an -> Beijing | 🏨 Beilin Museum in Xi'an -> Beijing</p>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Instructions:</h3>
+            <ul>
+                <li>✅ Check the box next to images you want to use</li>
+                <li>🖼️  Click "Download Selected" to get your chosen images</li>
+                <li>🔗 Use the search links to find more images</li>
+                <li>📝 Copy the alt text for accessibility</li>
+                <li>🏨 Check hotel links for reviews and booking info</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎯 Activity Images</h2>
+            <div class="activity-grid">
+                
+                    <div class="activity-card">
+                        <div class="activity-title">Beilin Museum in Xi'an -> Beijing</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card real-image">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=800&h=600&fit=crop" alt="Beilin Museum china tourism" loading="lazy">
+                                        
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=800&h=600&fit=crop" data-activity="Beilin Museum in Xi'an -> Beijing" data-alt="Beilin Museum china tourism" >
+                                            ✅ Select this image
+                                        </label>
+                                        <div class="alt-text">Alt: Beilin Museum china tourism</div>
+                                        <div class="image-source">
+                                            <small>📸 <a href="https://unsplash.com/s/photos/Beilin%20Museum%20china%20tourism" target="_blank">Unsplash Photographer</a> (UNSPLASH)</small><br>
+                                                <a href="https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=1200" class="search-link" target="_blank">View Original</a>
+                                        </div>
+                                        <div class="image-description">Real photo of Beilin Museum china tourism</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing, China<br>• Travel photography of Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing<br>• Beilin Museum in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://unsplash.com/s/photos/Beilin%20Museum%20Xi'an%20-%3E%20Beijing" class="search-link" target="_blank">Search "Beilin Museum in Xi'an -> Beijing" on Unsplash</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">Beilin Museum in Xi'an -> Beijing</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card real-image">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=800&h=600&fit=crop" alt="Beilin Museum china tourism" loading="lazy">
+                                        
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=800&h=600&fit=crop" data-activity="Beilin Museum in Xi'an -> Beijing" data-alt="Beilin Museum china tourism" >
+                                            ✅ Select this image
+                                        </label>
+                                        <div class="alt-text">Alt: Beilin Museum china tourism</div>
+                                        <div class="image-source">
+                                            <small>📸 <a href="https://unsplash.com/s/photos/Beilin%20Museum%20china%20tourism" target="_blank">Unsplash Photographer</a> (UNSPLASH)</small><br>
+                                                <a href="https://source.unsplash.com/featured/?Beilin%20Museum%20china%20tourism&w=1200" class="search-link" target="_blank">View Original</a>
+                                        </div>
+                                        <div class="image-description">Real photo of Beilin Museum china tourism</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing, China<br>• Travel photography of Beilin Museum in Xi'an -> Beijing in Xi'an -> Beijing<br>• Beilin Museum in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://www.pexels.com/search/Beilin%20Museum%20Xi'an%20-%3E%20Beijing/" class="search-link" target="_blank">Search "Beilin Museum in Xi'an -> Beijing" on Pexels</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">碑林博物馆 in 西安 -> 北京</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card placeholder">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?%E7%A2%91%E6%9E%97%E5%8D%9A%E7%89%A9%E9%A6%86%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC&w=800&h=600&fit=crop" alt="碑林博物馆 in 西安 -> 北京 - search for real images" loading="lazy">
+                                        <div class="placeholder-overlay">🔍 Click to Search</div>
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?%E7%A2%91%E6%9E%97%E5%8D%9A%E7%89%A9%E9%A6%86%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC&w=800&h=600&fit=crop" data-activity="碑林博物馆 in 西安 -> 北京" data-alt="碑林博物馆 in 西安 -> 北京 - search for real images" disabled title="This is a search placeholder - click to find real images">
+                                            Search for images
+                                        </label>
+                                        <div class="alt-text">Alt: 碑林博物馆 in 西安 -> 北京 - search for real images</div>
+                                        <div class="image-source">
+                                            <span style="color: #e67e22;">🔍 Search Required</span><br>
+                                                <a href="https://unsplash.com/s/photos/%E7%A2%91%E6%9E%97%E5%8D%9A%E7%89%A9%E9%A6%86%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC" class="search-link" target="_blank">Find Real Images</a>
+                                        </div>
+                                        <div class="image-description">Click to search for: 碑林博物馆 in 西安 -> 北京</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • 碑林博物馆 in 西安 -> 北京 in Xi'an -> Beijing, China<br>• Travel photography of 碑林博物馆 in 西安 -> 北京 in Xi'an -> Beijing<br>• 碑林博物馆 in 西安 -> 北京 tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://unsplash.com/s/photos/%E7%A2%91%E6%9E%97%E5%8D%9A%E7%89%A9%E9%A6%86%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC" class="search-link" target="_blank">Search "碑林博物馆 in 西安 -> 北京" on Unsplash</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">High-speed Train/Flight to Beijing in Xi'an -> Beijing</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card real-image">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=800&h=600&fit=crop" alt="High-speed Train/Flight to Beijing china tourism" loading="lazy">
+                                        
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=800&h=600&fit=crop" data-activity="High-speed Train/Flight to Beijing in Xi'an -> Beijing" data-alt="High-speed Train/Flight to Beijing china tourism" >
+                                            ✅ Select this image
+                                        </label>
+                                        <div class="alt-text">Alt: High-speed Train/Flight to Beijing china tourism</div>
+                                        <div class="image-source">
+                                            <small>📸 <a href="https://unsplash.com/s/photos/High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism" target="_blank">Unsplash Photographer</a> (UNSPLASH)</small><br>
+                                                <a href="https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=1200" class="search-link" target="_blank">View Original</a>
+                                        </div>
+                                        <div class="image-description">Real photo of High-speed Train/Flight to Beijing china tourism</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing, China<br>• Travel photography of High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing<br>• High-speed Train/Flight to Beijing in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://unsplash.com/s/photos/High-speed%20Train%2FFlight%20to%20Beijing%20Xi'an%20-%3E%20Beijing" class="search-link" target="_blank">Search "High-speed Train/Flight to Beijing in Xi'an -> Beijing" on Unsplash</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">High-speed Train/Flight to Beijing in Xi'an -> Beijing</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card real-image">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=800&h=600&fit=crop" alt="High-speed Train/Flight to Beijing china tourism" loading="lazy">
+                                        
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=800&h=600&fit=crop" data-activity="High-speed Train/Flight to Beijing in Xi'an -> Beijing" data-alt="High-speed Train/Flight to Beijing china tourism" >
+                                            ✅ Select this image
+                                        </label>
+                                        <div class="alt-text">Alt: High-speed Train/Flight to Beijing china tourism</div>
+                                        <div class="image-source">
+                                            <small>📸 <a href="https://unsplash.com/s/photos/High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism" target="_blank">Unsplash Photographer</a> (UNSPLASH)</small><br>
+                                                <a href="https://source.unsplash.com/featured/?High-speed%20Train%2FFlight%20to%20Beijing%20china%20tourism&w=1200" class="search-link" target="_blank">View Original</a>
+                                        </div>
+                                        <div class="image-description">Real photo of High-speed Train/Flight to Beijing china tourism</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing, China<br>• Travel photography of High-speed Train/Flight to Beijing in Xi'an -> Beijing in Xi'an -> Beijing<br>• High-speed Train/Flight to Beijing in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://www.pexels.com/search/High-speed%20Train%2FFlight%20to%20Beijing%20Xi'an%20-%3E%20Beijing/" class="search-link" target="_blank">Search "High-speed Train/Flight to Beijing in Xi'an -> Beijing" on Pexels</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">前往北京的高铁/航班 in 西安 -> 北京</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card placeholder">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?%E5%89%8D%E5%BE%80%E5%8C%97%E4%BA%AC%E7%9A%84%E9%AB%98%E9%93%81%2F%E8%88%AA%E7%8F%AD%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC&w=800&h=600&fit=crop" alt="前往北京的高铁/航班 in 西安 -> 北京 - search for real images" loading="lazy">
+                                        <div class="placeholder-overlay">🔍 Click to Search</div>
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?%E5%89%8D%E5%BE%80%E5%8C%97%E4%BA%AC%E7%9A%84%E9%AB%98%E9%93%81%2F%E8%88%AA%E7%8F%AD%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC&w=800&h=600&fit=crop" data-activity="前往北京的高铁/航班 in 西安 -> 北京" data-alt="前往北京的高铁/航班 in 西安 -> 北京 - search for real images" disabled title="This is a search placeholder - click to find real images">
+                                            Search for images
+                                        </label>
+                                        <div class="alt-text">Alt: 前往北京的高铁/航班 in 西安 -> 北京 - search for real images</div>
+                                        <div class="image-source">
+                                            <span style="color: #e67e22;">🔍 Search Required</span><br>
+                                                <a href="https://unsplash.com/s/photos/%E5%89%8D%E5%BE%80%E5%8C%97%E4%BA%AC%E7%9A%84%E9%AB%98%E9%93%81%2F%E8%88%AA%E7%8F%AD%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC" class="search-link" target="_blank">Find Real Images</a>
+                                        </div>
+                                        <div class="image-description">Click to search for: 前往北京的高铁/航班 in 西安 -> 北京</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • 前往北京的高铁/航班 in 西安 -> 北京 in Xi'an -> Beijing, China<br>• Travel photography of 前往北京的高铁/航班 in 西安 -> 北京 in Xi'an -> Beijing<br>• 前往北京的高铁/航班 in 西安 -> 北京 tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://unsplash.com/s/photos/%E5%89%8D%E5%BE%80%E5%8C%97%E4%BA%AC%E7%9A%84%E9%AB%98%E9%93%81%2F%E8%88%AA%E7%8F%AD%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC" class="search-link" target="_blank">Search "前往北京的高铁/航班 in 西安 -> 北京" on Unsplash</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">Welcome Meeting in Xi'an -> Beijing</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card real-image">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=800&h=600&fit=crop" alt="Welcome Meeting china tourism" loading="lazy">
+                                        
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=800&h=600&fit=crop" data-activity="Welcome Meeting in Xi'an -> Beijing" data-alt="Welcome Meeting china tourism" >
+                                            ✅ Select this image
+                                        </label>
+                                        <div class="alt-text">Alt: Welcome Meeting china tourism</div>
+                                        <div class="image-source">
+                                            <small>📸 <a href="https://unsplash.com/s/photos/Welcome%20Meeting%20china%20tourism" target="_blank">Unsplash Photographer</a> (UNSPLASH)</small><br>
+                                                <a href="https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=1200" class="search-link" target="_blank">View Original</a>
+                                        </div>
+                                        <div class="image-description">Real photo of Welcome Meeting china tourism</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing, China<br>• Travel photography of Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing<br>• Welcome Meeting in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://unsplash.com/s/photos/Welcome%20Meeting%20Xi'an%20-%3E%20Beijing" class="search-link" target="_blank">Search "Welcome Meeting in Xi'an -> Beijing" on Unsplash</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">Welcome Meeting in Xi'an -> Beijing</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card real-image">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=800&h=600&fit=crop" alt="Welcome Meeting china tourism" loading="lazy">
+                                        
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=800&h=600&fit=crop" data-activity="Welcome Meeting in Xi'an -> Beijing" data-alt="Welcome Meeting china tourism" >
+                                            ✅ Select this image
+                                        </label>
+                                        <div class="alt-text">Alt: Welcome Meeting china tourism</div>
+                                        <div class="image-source">
+                                            <small>📸 <a href="https://unsplash.com/s/photos/Welcome%20Meeting%20china%20tourism" target="_blank">Unsplash Photographer</a> (UNSPLASH)</small><br>
+                                                <a href="https://source.unsplash.com/featured/?Welcome%20Meeting%20china%20tourism&w=1200" class="search-link" target="_blank">View Original</a>
+                                        </div>
+                                        <div class="image-description">Real photo of Welcome Meeting china tourism</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing, China<br>• Travel photography of Welcome Meeting in Xi'an -> Beijing in Xi'an -> Beijing<br>• Welcome Meeting in Xi'an -> Beijing tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://www.pexels.com/search/Welcome%20Meeting%20Xi'an%20-%3E%20Beijing/" class="search-link" target="_blank">Search "Welcome Meeting in Xi'an -> Beijing" on Pexels</a>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="activity-card">
+                        <div class="activity-title">欢迎见面会 in 西安 -> 北京</div>
+
+                        <div class="image-preview">
+                            
+                                <div class="image-card placeholder">
+                                    <div class="image-container">
+                                        <img src="https://source.unsplash.com/featured/?%E6%AC%A2%E8%BF%8E%E8%A7%81%E9%9D%A2%E4%BC%9A%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC&w=800&h=600&fit=crop" alt="欢迎见面会 in 西安 -> 北京 - search for real images" loading="lazy">
+                                        <div class="placeholder-overlay">🔍 Click to Search</div>
+                                    </div>
+                                    <div class="image-info">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="selected-images" value="https://source.unsplash.com/featured/?%E6%AC%A2%E8%BF%8E%E8%A7%81%E9%9D%A2%E4%BC%9A%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC&w=800&h=600&fit=crop" data-activity="欢迎见面会 in 西安 -> 北京" data-alt="欢迎见面会 in 西安 -> 北京 - search for real images" disabled title="This is a search placeholder - click to find real images">
+                                            Search for images
+                                        </label>
+                                        <div class="alt-text">Alt: 欢迎见面会 in 西安 -> 北京 - search for real images</div>
+                                        <div class="image-source">
+                                            <span style="color: #e67e22;">🔍 Search Required</span><br>
+                                                <a href="https://unsplash.com/s/photos/%E6%AC%A2%E8%BF%8E%E8%A7%81%E9%9D%A2%E4%BC%9A%20in%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC" class="search-link" target="_blank">Find Real Images</a>
+                                        </div>
+                                        <div class="image-description">Click to search for: 欢迎见面会 in 西安 -> 北京</div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="alt-text">
+                            <strong>Suggested Alt Text:</strong><br>
+                            • 欢迎见面会 in 西安 -> 北京 in Xi'an -> Beijing, China<br>• Travel photography of 欢迎见面会 in 西安 -> 北京 in Xi'an -> Beijing<br>• 欢迎见面会 in 西安 -> 北京 tourist attraction in Xi'an -> Beijing
+                        </div>
+
+                        <div>
+                            
+                                <a href="https://unsplash.com/s/photos/%E6%AC%A2%E8%BF%8E%E8%A7%81%E9%9D%A2%E4%BC%9A%20%E8%A5%BF%E5%AE%89%20-%3E%20%E5%8C%97%E4%BA%AC" class="search-link" target="_blank">Search "欢迎见面会 in 西安 -> 北京" on Unsplash</a>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🏨 Hotel Research</h2>
+            
+                <div class="hotel-card">
+                    <div class="hotel-name">Centrally located 4-star hotel in Beijing</div>
+                    
+                        <a href="https://www.tripadvisor.com/Search?q=Centrally%20located%204-star%20hotel%20in%20Beijing%20Xi'an%20-%3E%20Beijing" class="search-link" target="_blank">Find "Centrally located 4-star hotel in Beijing in Xi'an -> Beijing on TripAdvisor" on TripAdvisor</a>
+                        <span style="margin-left: 10px; color: #666;">Hotel reviews, ratings, and booking information</span>
+                        <br>
+                    
+                </div>
+            
+                <div class="hotel-card">
+                    <div class="hotel-name">Centrally located 4-star hotel in Beijing</div>
+                    
+                </div>
+            
+                <div class="hotel-card">
+                    <div class="hotel-name">Centrally located 4-star hotel in Beijing</div>
+                    
+                </div>
+            
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💡 Additional Searches</h2>
+            <div class="recommended-searches">
+                
+                    <div class="recommended-title">1. General Xi'an -> Beijing tourism photos</div>
+                    <div style="color: #666; margin: 5px 0;">Good for establishing shots and context</div>
+                    <a href="https://www.google.com/search?q=Xi'an%20-%3E%20Beijing%20China%20tourism%20site%3Aunsplash.com" class="search-link" target="_blank">Search on Google</a>
+                
+                    <div class="recommended-title">2. Xi'an -> Beijing landscapes and scenery</div>
+                    <div style="color: #666; margin: 5px 0;">Perfect for background and establishing scenes</div>
+                    <a href="https://www.google.com/search?q=Xi'an%20-%3E%20Beijing%20China%20landscape%20site%3Apexels.com" class="search-link" target="_blank">Search on Google</a>
+                
+                    <div class="recommended-title">3. Beilin Museum travel photography</div>
+                    <div style="color: #666; margin: 5px 0;">Specific activity focus</div>
+                    <a href="https://www.google.com/search?q=Beilin%20Museum%20China%20travel%20site%3Aunsplash.com" class="search-link" target="_blank">Search on Google</a>
+                
+                    <div class="recommended-title">4. High-speed Train/Flight to Beijing travel photography</div>
+                    <div style="color: #666; margin: 5px 0;">Specific activity focus</div>
+                    <a href="https://www.google.com/search?q=High-speed%20Train%2FFlight%20to%20Beijing%20China%20travel%20site%3Aunsplash.com" class="search-link" target="_blank">Search on Google</a>
+                
+            </div>
+        </div>
+
+        <div class="selected-info">
+            <h3>🎯 Your Selections:</h3>
+            <div id="selected-count">No images selected</div>
+            <button class="download-btn" onclick="downloadSelected()">Download Selected Images</button>
+            <button class="download-btn" onclick="generateJSON()">Generate JSON for Itinerary</button>
+        </div>
+    </div>
+
+    <script>
+        function updateSelectionCount() {
+            const checkboxes = document.querySelectorAll('input[name="selected-images"]:checked');
+            const count = checkboxes.length;
+            const countDiv = document.getElementById('selected-count');
+
+            if (count === 0) {
+                countDiv.textContent = 'No images selected';
+            } else {
+                countDiv.innerHTML = '<strong>' + count + ' images selected</strong><br>' +
+                    Array.from(checkboxes).map(cb => '• ' + cb.dataset.activity).join('<br>');
+            }
+        }
+
+        function downloadSelected() {
+            const checkboxes = document.querySelectorAll('input[name="selected-images"]:checked');
+            if (checkboxes.length === 0) {
+                alert('Please select at least one image first!');
+                return;
+            }
+
+            checkboxes.forEach(checkbox => {
+                const url = checkbox.value;
+                const alt = checkbox.dataset.alt;
+                const link = document.createElement('a');
+                link.href = url;
+                link.download = alt.replace(/[^a-z0-9]/gi, '_').toLowerCase() + '.jpg';
+                link.target = '_blank';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        }
+
+        function generateJSON() {
+            const checkboxes = document.querySelectorAll('input[name="selected-images"]:checked');
+            if (checkboxes.length === 0) {
+                alert('Please select at least one image first!');
+                return;
+            }
+
+            const images = Array.from(checkboxes).map(checkbox => ({
+                src: checkbox.value,
+                alt: {
+                    en: checkbox.dataset.alt,
+                    cn: checkbox.dataset.alt
+                },
+                caption: {
+                    en: checkbox.dataset.alt,
+                    cn: checkbox.dataset.alt
+                }
+            }));
+
+            const json = JSON.stringify(images, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'day-4-selected-images.json';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+
+        // Add event listeners
+        document.querySelectorAll('input[name="selected-images"]').forEach(checkbox => {
+            checkbox.addEventListener('change', updateSelectionCount);
+        });
+
+        // Initial count update
+        updateSelectionCount();
+    </script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6: Great Wall Challenge - Image Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f2f5; color: #333; line-height: 1.6; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; padding-bottom: 100px; }
+
+        .header { background: linear-gradient(135deg, #1a5f7a 0%, #159895 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 30px; }
+        .header h1 { font-size: 2rem; margin-bottom: 10px; }
+        .header .meta { opacity: 0.9; font-size: 1.1rem; }
+        .header .meta span { margin-right: 20px; }
+
+        .stats { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; display: flex; gap: 30px; flex-wrap: wrap; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .stat { text-align: center; }
+        .stat-value { font-size: 2rem; font-weight: bold; color: #1a5f7a; }
+        .stat-label { color: #666; font-size: 0.9rem; }
+
+        .description { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .description h3 { margin-bottom: 10px; color: #1a5f7a; }
+
+        .activity { background: white; margin-bottom: 30px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .activity-header { background: #1a5f7a; color: white; padding: 15px 20px; }
+        .activity-header h2 { font-size: 1.3rem; }
+        .activity-header .search-term { opacity: 0.8; font-size: 0.9rem; margin-top: 5px; }
+
+        .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; padding: 20px; }
+
+        .image-card { border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden; transition: all 0.2s; position: relative; }
+        .image-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .image-card.selected { border-color: #27ae60; background: #e8f5e9; }
+        .image-card.selected::after { content: '✓ Selected'; position: absolute; top: 10px; right: 10px; background: #27ae60; color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+
+        .image-container { position: relative; padding-bottom: 66.67%; background: #f5f5f5; }
+        .image-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer; }
+
+        .image-info { padding: 12px; }
+        .image-source { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .image-source .badge { background: #e3f2fd; color: #1565c0; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+        .image-source .badge.pexels { background: #fff3e0; color: #e65100; }
+        .photographer { font-size: 0.85rem; color: #666; }
+        .photographer a { color: #1a5f7a; text-decoration: none; }
+        .photographer a:hover { text-decoration: underline; }
+
+        .image-alt { font-size: 0.8rem; color: #888; margin-top: 8px; font-style: italic; }
+
+        .select-btn { width: 100%; padding: 10px; border: none; background: #1a5f7a; color: white; cursor: pointer; font-size: 0.9rem; transition: background 0.2s; }
+        .select-btn:hover { background: #13475a; }
+        .image-card.selected .select-btn { background: #27ae60; }
+        .image-card.selected .select-btn:hover { background: #219a52; }
+
+        .hotel-section { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .hotel-section h3 { color: #1a5f7a; margin-bottom: 15px; }
+        .hotel-link { display: inline-block; background: #ff5722; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; margin-right: 10px; margin-bottom: 10px; }
+        .hotel-link:hover { background: #e64a19; }
+
+        .selection-panel { position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 15px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+        .selection-count { font-size: 1.1rem; }
+        .selection-count strong { color: #27ae60; }
+        .export-btn { background: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: bold; }
+        .export-btn:hover { background: #219a52; }
+        .export-btn:disabled { background: #ccc; cursor: not-allowed; }
+
+        .lightbox { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.9); z-index: 200; justify-content: center; align-items: center; }
+        .lightbox.active { display: flex; }
+        .lightbox img { max-width: 90%; max-height: 90%; object-fit: contain; }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; color: white; font-size: 2rem; cursor: pointer; }
+
+        .alt-suggestions { margin-top: 15px; padding: 15px; background: #f5f5f5; border-radius: 8px; }
+        .alt-suggestions h4 { margin-bottom: 10px; color: #666; font-size: 0.9rem; }
+        .alt-suggestions ul { list-style: none; }
+        .alt-suggestions li { padding: 5px 0; font-size: 0.85rem; color: #555; }
+        .alt-suggestions li::before { content: '→ '; color: #1a5f7a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Day 6: Great Wall Challenge</h1>
+            <div class="meta">
+                <span>📅 May 13</span>
+                <span>📍 Beijing -> Lushan</span>
+                <span>🏨 Overnight Train (Soft Sleeper)</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">2</div>
+                <div class="stat-label">Activities</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">16</div>
+                <div class="stat-label">Images Found</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="selected-count">0</div>
+                <div class="stat-label">Selected</div>
+            </div>
+        </div>
+
+        <div class="description">
+            <h3>📝 Day Description</h3>
+            <p>Full day hike along the Badaling Great Wall (8-10km, ~500m elevation). Experience the magnificence of this ancient wonder. Evening overnight sleeper train to Lushan, a comfortable and efficient way to travel.</p>
+        </div>
+
+        
+        <div class="activity">
+            <div class="activity-header">
+                <h2>🎯 Badaling Great Wall Hiking</h2>
+                <div class="search-term">Search: "great wall of china badaling" • 8 images found</div>
+            </div>
+            <div class="image-grid">
+                
+                <div class="image-card" data-activity="0" data-image="0" data-url="https://images.unsplash.com/photo-1715905601923-e84750c8d01d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1715905601923-e84750c8d01d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85" data-alt="the great wall of china on a foggy day" data-photographer="Alicja Ziajowska" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1715905601923-e84750c8d01d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="the great wall of china on a foggy day" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1715905601923-e84750c8d01d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@alicja_photos" target="_blank">Alicja Ziajowska</a></span>
+                        </div>
+                        <div class="image-alt">the great wall of china on a foggy day</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="1" data-url="https://images.unsplash.com/photo-1586785521387-df575a5ead05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1586785521387-df575a5ead05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85" data-alt="brown and green mountain under white sky during daytime" data-photographer="Nick Fewings" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1586785521387-df575a5ead05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="brown and green mountain under white sky during daytime" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1586785521387-df575a5ead05?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@jannerboy62" target="_blank">Nick Fewings</a></span>
+                        </div>
+                        <div class="image-alt">brown and green mountain under white sky during daytime</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="2" data-url="https://images.unsplash.com/photo-1646232814274-d0761d65c240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1646232814274-d0761d65c240?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85" data-alt="a black and white photo of a mountain range" data-photographer="LNDR 734N932" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1646232814274-d0761d65c240?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="a black and white photo of a mountain range" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1646232814274-d0761d65c240?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@lndr343" target="_blank">LNDR 734N932</a></span>
+                        </div>
+                        <div class="image-alt">a black and white photo of a mountain range</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="3" data-url="https://images.unsplash.com/photo-1504462619346-af9ae08b1075?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1504462619346-af9ae08b1075?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85" data-alt="Great wall of China, China" data-photographer="Christian Weinberg" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1504462619346-af9ae08b1075?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Great wall of China, China" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1504462619346-af9ae08b1075?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxncmVhdCUyMHdhbGwlMjBvZiUyMGNoaW5hJTIwYmFkYWxpbmd8ZW58MHwwfHx8MTc2NDQwOTgyNHww&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@cweinberg" target="_blank">Christian Weinberg</a></span>
+                        </div>
+                        <div class="image-alt">Great wall of China, China</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="4" data-url="https://images.pexels.com/photos/6294688/pexels-photo-6294688.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/6294688/pexels-photo-6294688.jpeg" data-alt="A scenic view of the Great Wall of China stretching over lush green hills in Beijing." data-photographer="Ella Wei" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/6294688/pexels-photo-6294688.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A scenic view of the Great Wall of China stretching over lush green hills in Beijing." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/6294688/pexels-photo-6294688.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@ewei2805" target="_blank">Ella Wei</a></span>
+                        </div>
+                        <div class="image-alt">A scenic view of the Great Wall of China stretching over lush green hills in Beijing.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="5" data-url="https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg" data-alt="Tourists exploring the Great Wall of China under clear blue skies in winter." data-photographer="Mario Johnson" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Tourists exploring the Great Wall of China under clear blue skies in winter." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@mario-johnson-949299287" target="_blank">Mario Johnson</a></span>
+                        </div>
+                        <div class="image-alt">Tourists exploring the Great Wall of China under clear blue skies in winter.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="6" data-url="https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg" data-alt="Picturesque landscape of Great Wall of China on hill with green trees and mountains on background on sunny day" data-photographer="Diana" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Picturesque landscape of Great Wall of China on hill with green trees and mountains on background on sunny day" loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/4445240/pexels-photo-4445240.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@diana-2910042" target="_blank">Diana</a></span>
+                        </div>
+                        <div class="image-alt">Picturesque landscape of Great Wall of China on hill with green trees and mountains on background on sunny day</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="0" data-image="7" data-url="https://images.pexels.com/photos/29466142/pexels-photo-29466142.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/29466142/pexels-photo-29466142.jpeg" data-alt="Breathtaking sunrise view of the Great Wall of China winding through lush mountains." data-photographer="Eclipse Chasers" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/29466142/pexels-photo-29466142.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Breathtaking sunrise view of the Great Wall of China winding through lush mountains." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/29466142/pexels-photo-29466142.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@eclipse-chasers-716719984" target="_blank">Eclipse Chasers</a></span>
+                        </div>
+                        <div class="image-alt">Breathtaking sunrise view of the Great Wall of China winding through lush mountains.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+            </div>
+            <div class="alt-suggestions">
+                <h4>Suggested Alt Text for Badaling Great Wall Hiking:</h4>
+                <ul>
+                    <li>Badaling Great Wall Hiking in Beijing -> Lushan, China</li><li>Badaling Great Wall Hiking - travel photography</li><li>Badaling Great Wall Hiking tourist attraction</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="activity">
+            <div class="activity-header">
+                <h2>🎯 Overnight Sleeper Train</h2>
+                <div class="search-term">Search: "china sleeper train soft sleeper" • 8 images found</div>
+            </div>
+            <div class="image-grid">
+                
+                <div class="image-card" data-activity="1" data-image="0" data-url="https://images.unsplash.com/photo-1702362913605-ebf93660ca94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1702362913605-ebf93660ca94?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85" data-alt="a group of people on a subway train" data-photographer="cal gao" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1702362913605-ebf93660ca94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="a group of people on a subway train" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1702362913605-ebf93660ca94?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@ginnta" target="_blank">cal gao</a></span>
+                        </div>
+                        <div class="image-alt">a group of people on a subway train</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="1" data-url="https://images.unsplash.com/photo-1715084644959-66de3b424d03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1715084644959-66de3b424d03?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85" data-alt="a green and white train traveling down train tracks" data-photographer="KUA YUE" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1715084644959-66de3b424d03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="a green and white train traveling down train tracks" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1715084644959-66de3b424d03?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@df11g" target="_blank">KUA YUE</a></span>
+                        </div>
+                        <div class="image-alt">a green and white train traveling down train tracks</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="2" data-url="https://images.unsplash.com/photo-1693051512355-c821f266fd78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1693051512355-c821f266fd78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85" data-alt="a white train traveling down train tracks next to a forest" data-photographer="KUA YUE" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1693051512355-c821f266fd78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="a white train traveling down train tracks next to a forest" loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1693051512355-c821f266fd78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@df11g" target="_blank">KUA YUE</a></span>
+                        </div>
+                        <div class="image-alt">a white train traveling down train tracks next to a forest</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="3" data-url="https://images.unsplash.com/photo-1753698407954-c6c6cf27b40d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" data-full="https://images.unsplash.com/photo-1753698407954-c6c6cf27b40d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85" data-alt="People wait for a train at a railway station." data-photographer="Terence Zheng" data-source="unsplash">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1753698407954-c6c6cf27b40d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="People wait for a train at a railway station." loading="lazy" onclick="openLightbox('https://images.unsplash.com/photo-1753698407954-c6c6cf27b40d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxjaGluYSUyMHNsZWVwZXIlMjB0cmFpbiUyMHNvZnQlMjBzbGVlcGVyfGVufDB8MHx8fDE3NjQ0MDk4MjV8MA&ixlib=rb-4.1.0&q=85')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge unsplash">unsplash</span>
+                            <span class="photographer">📸 <a href="https://unsplash.com/@terrycarnivoroua" target="_blank">Terence Zheng</a></span>
+                        </div>
+                        <div class="image-alt">People wait for a train at a railway station.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="4" data-url="https://images.pexels.com/photos/8910155/pexels-photo-8910155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/8910155/pexels-photo-8910155.jpeg" data-alt="A serene image of a baby in a yellow polka dot dress sleeping peacefully indoors." data-photographer="Karola G" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/8910155/pexels-photo-8910155.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="A serene image of a baby in a yellow polka dot dress sleeping peacefully indoors." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/8910155/pexels-photo-8910155.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@karola-g" target="_blank">Karola G</a></span>
+                        </div>
+                        <div class="image-alt">A serene image of a baby in a yellow polka dot dress sleeping peacefully indoors.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="5" data-url="https://images.pexels.com/photos/235126/pexels-photo-235126.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/235126/pexels-photo-235126.jpeg" data-alt="Cute baby girl wearing a dress lies on a pink blanket, exuding innocence and charm." data-photographer="Maierean Andrei" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/235126/pexels-photo-235126.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Cute baby girl wearing a dress lies on a pink blanket, exuding innocence and charm." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/235126/pexels-photo-235126.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@maierean-andrei-63873" target="_blank">Maierean Andrei</a></span>
+                        </div>
+                        <div class="image-alt">Cute baby girl wearing a dress lies on a pink blanket, exuding innocence and charm.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="6" data-url="https://images.pexels.com/photos/15484566/pexels-photo-15484566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/15484566/pexels-photo-15484566.jpeg" data-alt="Aerial view of multiple railroad tracks in Bangkok, showcasing the urban transportation infrastructure." data-photographer="Markus Winkler" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/15484566/pexels-photo-15484566.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Aerial view of multiple railroad tracks in Bangkok, showcasing the urban transportation infrastructure." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/15484566/pexels-photo-15484566.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@markus-winkler-1430818" target="_blank">Markus Winkler</a></span>
+                        </div>
+                        <div class="image-alt">Aerial view of multiple railroad tracks in Bangkok, showcasing the urban transportation infrastructure.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+                <div class="image-card" data-activity="1" data-image="7" data-url="https://images.pexels.com/photos/7573674/pexels-photo-7573674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" data-full="https://images.pexels.com/photos/7573674/pexels-photo-7573674.jpeg" data-alt="Two men resting on a train, gazing out the windows during their journey." data-photographer="Shahadat  Hossain" data-source="pexels">
+                    <div class="image-container">
+                        <img src="https://images.pexels.com/photos/7573674/pexels-photo-7573674.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Two men resting on a train, gazing out the windows during their journey." loading="lazy" onclick="openLightbox('https://images.pexels.com/photos/7573674/pexels-photo-7573674.jpeg')">
+                    </div>
+                    <div class="image-info">
+                        <div class="image-source">
+                            <span class="badge pexels">pexels</span>
+                            <span class="photographer">📸 <a href="https://www.pexels.com/@shahadat-hossain-1853045" target="_blank">Shahadat  Hossain</a></span>
+                        </div>
+                        <div class="image-alt">Two men resting on a train, gazing out the windows during their journey.</div>
+                    </div>
+                    <button class="select-btn" onclick="toggleSelect(this)">Select This Image</button>
+                </div>
+                
+            </div>
+            <div class="alt-suggestions">
+                <h4>Suggested Alt Text for Overnight Sleeper Train:</h4>
+                <ul>
+                    <li>Overnight Sleeper Train in Beijing -> Lushan, China</li><li>Overnight Sleeper Train - travel photography</li><li>Overnight Sleeper Train tourist attraction</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="hotel-section">
+            <h3>🏨 Hotel Research: Overnight Train (Soft Sleeper)</h3>
+            <p style="margin-bottom: 15px;">Click below to research this accommodation:</p>
+            <a href="https://www.tripadvisor.com/Search?q=Overnight%20Train%20(Soft%20Sleeper)%20Beijing%20-%3E%20Lushan" target="_blank" class="hotel-link">🔍 Search on TripAdvisor</a>
+            <a href="https://www.booking.com/searchresults.html?ss=Overnight%20Train%20(Soft%20Sleeper)%20Beijing%20-%3E%20Lushan" target="_blank" class="hotel-link">🏨 Search on Booking.com</a>
+            <a href="https://www.google.com/search?q=Overnight%20Train%20(Soft%20Sleeper)%20Beijing%20-%3E%20Lushan%20reviews" target="_blank" class="hotel-link">🔎 Google Reviews</a>
+        </div>
+    </div>
+
+    <div class="selection-panel">
+        <div class="selection-count">
+            <strong id="panel-count">0</strong> images selected
+        </div>
+        <div>
+            <button class="export-btn" onclick="exportSelections()" id="export-btn" disabled>Export Selected Images</button>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+
+    <script>
+        const selectedImages = new Set();
+
+        function toggleSelect(btn) {
+            const card = btn.closest('.image-card');
+            const key = card.dataset.activity + '-' + card.dataset.image;
+
+            if (selectedImages.has(key)) {
+                selectedImages.delete(key);
+                card.classList.remove('selected');
+                btn.textContent = 'Select This Image';
+            } else {
+                selectedImages.add(key);
+                card.classList.add('selected');
+                btn.textContent = 'Selected ✓';
+            }
+
+            updateCount();
+        }
+
+        function updateCount() {
+            const count = selectedImages.size;
+            document.getElementById('selected-count').textContent = count;
+            document.getElementById('panel-count').textContent = count;
+            document.getElementById('export-btn').disabled = count === 0;
+        }
+
+        function openLightbox(url) {
+            document.getElementById('lightbox-img').src = url;
+            document.getElementById('lightbox').classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function exportSelections() {
+            const selected = [];
+            document.querySelectorAll('.image-card.selected').forEach(card => {
+                selected.push({
+                    src: card.dataset.url,
+                    full: card.dataset.full,
+                    alt: {
+                        en: card.dataset.alt,
+                        cn: card.dataset.alt
+                    },
+                    caption: {
+                        en: card.dataset.alt,
+                        cn: card.dataset.alt
+                    },
+                    photographer: card.dataset.photographer,
+                    source: card.dataset.source
+                });
+            });
+
+            const json = JSON.stringify(selected, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'day-6-selected-images.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+</body>
+</html>

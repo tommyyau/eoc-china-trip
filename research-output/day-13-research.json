@@ -1,0 +1,216 @@
+{
+  "day": 13,
+  "title": {
+    "en": "Ascending Mount Tai",
+    "cn": "Ascending Mount Tai"
+  },
+  "location": {
+    "en": "Mount Tai",
+    "cn": "Mount Tai"
+  },
+  "generatedAt": "2025-11-29T22:02:45.596Z",
+  "providers": [
+    "unsplash",
+    "pexels",
+    "pixabay",
+    "wikimedia"
+  ],
+  "activities": [
+    {
+      "name": "Climb Mount Tai",
+      "activity": "Climb Mount Tai",
+      "searchTerm": "Climb Mount Tai China",
+      "images": [
+        {
+          "id": "unsplash-zW0aN8hN1bI",
+          "url": "https://images.unsplash.com/photo-1548141277-e97b248e0760?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1548141277-e97b248e0760?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1548141277-e97b248e0760?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "brown mountain under blue sky",
+          "photographer": "Gigi",
+          "photographerUrl": "https://unsplash.com/@ling_gigi",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/zW0aN8hN1bI",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "unsplash-AyUH7XHZUBQ",
+          "url": "https://images.unsplash.com/photo-1585802089321-ac893166794b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1585802089321-ac893166794b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1585802089321-ac893166794b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "brown brick wall near river during daytime",
+          "photographer": "Ashley Ross",
+          "photographerUrl": "https://unsplash.com/@bigarnative",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/AyUH7XHZUBQ",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "id": "pexels-31506012",
+          "url": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg",
+          "alt": "Golden temple atop Mount Tai with scenic views and crowds walking uphill.",
+          "photographer": "zhiqiang pan",
+          "photographerUrl": "https://www.pexels.com/@zhiqiang-pan-2151104065",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/majestic-view-of-golden-temple-on-mount-tai-31506012/",
+          "width": 4096,
+          "height": 2304
+        },
+        {
+          "id": "pexels-27974629",
+          "url": "https://images.pexels.com/photos/27974629/pexels-photo-27974629.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/27974629/pexels-photo-27974629.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/27974629/pexels-photo-27974629.jpeg",
+          "alt": "Vibrant Tibetan prayer flags fluttering on a rocky hillside in Garzê, China.",
+          "photographer": "Alan W",
+          "photographerUrl": "https://www.pexels.com/@alanw",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/prayer-flags-on-top-of-a-mountain-27974629/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-3779159",
+          "url": "https://pixabay.com/get/g29a408f3fc49349957972f24066dd5090bfe7fe22c83ff7393be34e3bb985a7ffe6b8f7012a471ef635f05170ba8e582bb61f8e094bd4c12a1ce96054e170653_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/10/28/16/11/volcano-3779159_150.jpg",
+          "full": "https://pixabay.com/get/ga07026e57f4bf2efd3f35de3ff97709e1050e31c92891a6d87c7b650ee695b41f3d5af51ff909470772da6bdf02f6095c1a9f18ad7533214582348542aafe8fe_1280.jpg",
+          "alt": "volcano, natural, cloud, landscape, sightseeing, mount sindro, mount sumbing, java island, indonesia, volcano, volcano, cloud, indonesia, indonesia, indonesia, indonesia, indonesia",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/volcano-natural-cloud-landscape-3779159/",
+          "width": 4500,
+          "height": 3000
+        },
+        {
+          "id": "pixabay-4025999",
+          "url": "https://pixabay.com/get/g54b48aab1f5b2010ffc4d60324dd83d782132260e60dbd3abe5dd825507979aa7487efa3eef85da002492091c7613cab19398edd5de7cf26ada8e4231535d4af_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2019/02/28/14/00/tibet-4025999_150.jpg",
+          "full": "https://pixabay.com/get/g1645fd1a0422fed5f9a3f4836b8d5b70933190580a75d9f0a38d96fe48901ad05fd5f2eab75227e15a32fc246b60a9d197b7b5397a71aefa74fd82f0ea3c35de_1280.jpg",
+          "alt": "tibet, china, mountains, landscape, mount everest, north side, nature, highest mountain, mountain peak, summit, snow, mount everest, mount everest, mount everest, mount everest, mount everest",
+          "photographer": "Eknbg",
+          "photographerUrl": "https://pixabay.com/users/Eknbg-10500861/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/tibet-china-mountains-landscape-4025999/",
+          "width": 5669,
+          "height": 3780
+        },
+        {
+          "id": "pixabay-2297961",
+          "url": "https://pixabay.com/get/g7bca2be2fc9d400c3ad46ca5ad717658b4c4c9b87385b80a4906411f3673d288f4db8a222bcc73e9d1d1c6ae264ac342ad1f4088a36c6e8d390436f32dcd1a17_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/05/09/10/59/mount-fuji-2297961_150.jpg",
+          "full": "https://pixabay.com/get/g4bf33e5d426fb65470fb4635f716e1adf5df589b1a34308cf59276ae91aa177481272cf240ac6c62fa7ba48a996ea2455b1917be915874e22fd70de9b7c3e89c_1280.jpg",
+          "alt": "mount fuji, japan, volcano, mountain, mountains, mystery, nature, sunrise, sunlight, landscape, natural",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mount-fuji-japan-volcano-mountain-2297961/",
+          "width": 7360,
+          "height": 4912
+        }
+      ]
+    }
+  ],
+  "sampleImages": [
+    {
+      "activity": "Climb Mount Tai",
+      "images": [
+        {
+          "id": "unsplash-zW0aN8hN1bI",
+          "url": "https://images.unsplash.com/photo-1548141277-e97b248e0760?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1548141277-e97b248e0760?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1548141277-e97b248e0760?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "brown mountain under blue sky",
+          "photographer": "Gigi",
+          "photographerUrl": "https://unsplash.com/@ling_gigi",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/zW0aN8hN1bI",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "unsplash-AyUH7XHZUBQ",
+          "url": "https://images.unsplash.com/photo-1585802089321-ac893166794b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1585802089321-ac893166794b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1585802089321-ac893166794b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxDbGltYiUyME1vdW50JTIwVGFpJTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDQ1Mzc2M3ww&ixlib=rb-4.1.0&q=85",
+          "alt": "brown brick wall near river during daytime",
+          "photographer": "Ashley Ross",
+          "photographerUrl": "https://unsplash.com/@bigarnative",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/AyUH7XHZUBQ",
+          "width": 4032,
+          "height": 3024
+        },
+        {
+          "id": "pexels-31506012",
+          "url": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg",
+          "alt": "Golden temple atop Mount Tai with scenic views and crowds walking uphill.",
+          "photographer": "zhiqiang pan",
+          "photographerUrl": "https://www.pexels.com/@zhiqiang-pan-2151104065",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/majestic-view-of-golden-temple-on-mount-tai-31506012/",
+          "width": 4096,
+          "height": 2304
+        },
+        {
+          "id": "pexels-27974629",
+          "url": "https://images.pexels.com/photos/27974629/pexels-photo-27974629.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/27974629/pexels-photo-27974629.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/27974629/pexels-photo-27974629.jpeg",
+          "alt": "Vibrant Tibetan prayer flags fluttering on a rocky hillside in Garzê, China.",
+          "photographer": "Alan W",
+          "photographerUrl": "https://www.pexels.com/@alanw",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/prayer-flags-on-top-of-a-mountain-27974629/",
+          "width": 6000,
+          "height": 4000
+        },
+        {
+          "id": "pixabay-3779159",
+          "url": "https://pixabay.com/get/g29a408f3fc49349957972f24066dd5090bfe7fe22c83ff7393be34e3bb985a7ffe6b8f7012a471ef635f05170ba8e582bb61f8e094bd4c12a1ce96054e170653_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2018/10/28/16/11/volcano-3779159_150.jpg",
+          "full": "https://pixabay.com/get/ga07026e57f4bf2efd3f35de3ff97709e1050e31c92891a6d87c7b650ee695b41f3d5af51ff909470772da6bdf02f6095c1a9f18ad7533214582348542aafe8fe_1280.jpg",
+          "alt": "volcano, natural, cloud, landscape, sightseeing, mount sindro, mount sumbing, java island, indonesia, volcano, volcano, cloud, indonesia, indonesia, indonesia, indonesia, indonesia",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/volcano-natural-cloud-landscape-3779159/",
+          "width": 4500,
+          "height": 3000
+        },
+        {
+          "id": "pixabay-4025999",
+          "url": "https://pixabay.com/get/g54b48aab1f5b2010ffc4d60324dd83d782132260e60dbd3abe5dd825507979aa7487efa3eef85da002492091c7613cab19398edd5de7cf26ada8e4231535d4af_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2019/02/28/14/00/tibet-4025999_150.jpg",
+          "full": "https://pixabay.com/get/g1645fd1a0422fed5f9a3f4836b8d5b70933190580a75d9f0a38d96fe48901ad05fd5f2eab75227e15a32fc246b60a9d197b7b5397a71aefa74fd82f0ea3c35de_1280.jpg",
+          "alt": "tibet, china, mountains, landscape, mount everest, north side, nature, highest mountain, mountain peak, summit, snow, mount everest, mount everest, mount everest, mount everest, mount everest",
+          "photographer": "Eknbg",
+          "photographerUrl": "https://pixabay.com/users/Eknbg-10500861/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/tibet-china-mountains-landscape-4025999/",
+          "width": 5669,
+          "height": 3780
+        },
+        {
+          "id": "pixabay-2297961",
+          "url": "https://pixabay.com/get/g7bca2be2fc9d400c3ad46ca5ad717658b4c4c9b87385b80a4906411f3673d288f4db8a222bcc73e9d1d1c6ae264ac342ad1f4088a36c6e8d390436f32dcd1a17_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/05/09/10/59/mount-fuji-2297961_150.jpg",
+          "full": "https://pixabay.com/get/g4bf33e5d426fb65470fb4635f716e1adf5df589b1a34308cf59276ae91aa177481272cf240ac6c62fa7ba48a996ea2455b1917be915874e22fd70de9b7c3e89c_1280.jpg",
+          "alt": "mount fuji, japan, volcano, mountain, mountains, mystery, nature, sunrise, sunlight, landscape, natural",
+          "photographer": "Kanenori",
+          "photographerUrl": "https://pixabay.com/users/Kanenori-4749850/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/mount-fuji-japan-volcano-mountain-2297961/",
+          "width": 7360,
+          "height": 4912
+        }
+      ]
+    }
+  ]
+}

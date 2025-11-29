@@ -1,0 +1,57 @@
+{
+  "day": 11,
+  "lastModified": "2025-11-29T22:05:57.433Z",
+  "pois": [
+    {
+      "id": "huangling-terraces",
+      "name": "Huangling Terraces",
+      "day": 11,
+      "location": "Wuyuan -> Shangrao",
+      "status": "pending",
+      "summary": "Discover the breathtaking beauty of the Huangling Terraces, a mesmerizing landscape that showcases the harmonious relationship between nature and agriculture in Wuyuan, Shangrao, China. As you hike through the undulating rice terraces, you’ll be treated to sweeping views of lush green fields cascading down the mountainside, especially stunning during the spring when the rice paddies are flooded and reflect the sky like a mirror. This idyllic setting not only provides an escape into nature but also offers a glimpse into the rich culture of the local communities who have cultivated these lands for generations. Get ready for an unforgettable experience filled with stunning vistas, vibrant local culture, and the serenity of the great outdoors.",
+      "historicalContext": "The Huangling Terraces have been cultivated for over 1,000 years, showcasing the agricultural ingenuity of the region's inhabitants. These terraces are not just a beautiful sight; they are a testament to the traditional farming techniques passed down through generations, which have helped sustain the local economy and culture.",
+      "practicalTips": "Visit during the spring for the most vibrant views. Wear comfortable hiking shoes as the terrain can be uneven. Bring a camera to capture the stunning landscapes. Try local dishes at nearby eateries to experience authentic flavors. Respect the local customs and traditions while exploring.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Race_Across_the_World_series_5",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:05:43.894Z"
+    },
+    {
+      "id": "wangxian-valley-hike",
+      "name": "Wangxian Valley Hike",
+      "day": 11,
+      "location": "Wuyuan -> Shangrao",
+      "status": "pending",
+      "summary": "Embark on an unforgettable journey through the stunning Wangxian Valley, nestled in the picturesque region of Wuyuan, Shangrao, China. This captivating hike offers a perfect blend of breathtaking landscapes and serene natural beauty, making it a must-visit for outdoor enthusiasts and nature lovers alike. As you traverse the winding trails, you will be greeted by lush greenery, cascading waterfalls, and vibrant wildflowers that paint the valley in a riot of colors. Whether you're an experienced hiker or a casual walker, the enchanting surroundings promise an immersive experience that will leave you rejuvenated and inspired. Capture the moment as you soak in the panoramic views and connect with the tranquil spirit of the great outdoors.",
+      "historicalContext": "Wangxian Valley has been a cherished destination for centuries, known for its rich biodiversity and stunning scenery. The area has historical significance in local folklore, believed to be a place where celestial beings descended, adding a mystical charm to the landscape.",
+      "practicalTips": "Wear sturdy hiking boots for optimal comfort and support. Bring plenty of water to stay hydrated throughout your hike. Don't forget your camera to capture the breathtaking views. Visit during the spring or autumn for the best weather and vibrant scenery. Respect the natural environment by sticking to marked trails and carrying out all trash.",
+      "confidence": 0.7,
+      "links": [],
+      "researchedAt": "2025-11-29T22:05:50.675Z"
+    },
+    {
+      "id": "night-views",
+      "name": "Night Views",
+      "day": 11,
+      "location": "Wuyuan -> Shangrao",
+      "status": "pending",
+      "summary": "Experience the breathtaking Night Views in Wuyuan, Shangrao, where nature and serenity converge to create a magical atmosphere. As dusk falls, the landscape transforms into a tapestry of twinkling lights and vibrant colors, providing an unforgettable backdrop for photographers and adventurers alike. Hike through the lush hills and immerse yourself in the tranquility of the countryside, where the gentle glow of lanterns guides your path. Whether you're an avid hiker or a casual wanderer, the stunning vistas and fresh mountain air will rejuvenate your spirit and leave you longing for more.",
+      "historicalContext": "Wuyuan is known for its rich cultural heritage, often referred to as the 'most beautiful countryside in China.' The area has a long history dating back to the Tang Dynasty, and is renowned for its ancient architecture and unique Huizhou-style buildings, showcasing the region's significance in Chinese history.",
+      "practicalTips": "Wear comfortable hiking shoes for uneven terrain. Bring a camera to capture the stunning views. Visit during the early evening for the best sunset experience. Consider hiring a local guide to learn about the region's history. Pack a light jacket, as temperatures can drop after sunset.",
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Race_Across_the_World_series_5",
+          "title": "Wikipedia"
+        }
+      ],
+      "researchedAt": "2025-11-29T22:05:56.933Z"
+    }
+  ]
+}
