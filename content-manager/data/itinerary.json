@@ -3,7 +3,7 @@
     {
       "day": 0,
       "date": "May 17",
-      "title": "Departure from Heathrow T4 111",
+      "title": "Departure from Heathrow",
       "location": "Heathrow",
       "segments": [
         {
@@ -12,7 +12,7 @@
           "type": "transfer",
           "title": "Flight to Xi'an",
           "location": "Heathrow to Xi'an",
-          "description": "Flight from Heathrow to Xi'an.",
+          "description": "Flight from Heathrow, Direct flights on this route are generally operated by Tianjin Airlines or Hainan Airlines.\n \nDeparture Time: The flight typically departs in the evening/night, around 21:50 (9:50 PM) local London time. Arrival Time: The flight arrives in Xi'an the next afternoon, around 16:15 (4:15 PM) local time. Duration: The flight time is about 10 hours and 25 minutes.",
           "duration": "10 hours 25 minutes",
           "from": "Heathrow",
           "to": "Xi'an",
@@ -60,8 +60,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T21:28:06.428Z"
+      "status": "complete",
+      "lastModified": "2025-11-30T10:10:01.363Z"
     },
     {
       "day": 1,
@@ -73,9 +73,9 @@
           "id": "1-0-1764440953795",
           "time": "Afternoon",
           "type": "transfer",
-          "title": "Transfer to Xi'an City",
+          "title": "Meet the Guide & Transfer to Xi'an City",
           "location": "Xi'an Airport to Xi'an City",
-          "description": "Transfer from Xi'an Airport to the city.",
+          "description": "Meet the professional English-speaking guide and transferred to the city center.\n\nThe expected arrival time is 16:00 + Time Through Customs and Luggage Collection ",
           "duration": "1 hour",
           "from": "Xi'an Airport",
           "to": "Xi'an City",
@@ -108,9 +108,9 @@
           "id": "1-2-1764440953795",
           "time": "Evening",
           "type": "check-in",
-          "title": "Check-in at Hotel",
-          "location": "Easter House Xi’an",
-          "description": "Check in at Easter House Xi’an.",
+          "title": "Check-in at Eastern House Xi’an",
+          "location": "Eastern House Xi’an",
+          "description": "Eastern House Xi’an is a boutique-style hotel in the heart of Xi’an.\n\nIt is very centrally located — within walking distance of major historic and cultural sites such as the Xi’an Bell Tower / Xi’an Drum Tower, and near the Muslim Quarter, Xi’an.\n",
           "duration": "30 minutes",
           "from": "",
           "to": "",
@@ -161,8 +161,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.641Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T10:23:27.637Z",
       "pointsOfInterest": [
         {
           "name": "Big Wild Goose Pagoda (optional)",
@@ -170,7 +170,7 @@
           "history": "The Big Wild Goose Pagoda was constructed in 652 AD during the Tang Dynasty under the reign of Emperor Gaozong. It was built to store Buddhist texts collected by the monk Xuanzang, who famously journeyed to India to obtain these sacred scriptures. The pagoda has since become a symbol of Chinese Buddhism and a vital part of Xi'an’s cultural heritage.",
           "tips": "Visit early in the morning to avoid crowds. Wear comfortable shoes for exploring the extensive grounds. Don’t forget your camera for stunning photos, especially at sunset. Check the schedule for cultural performances happening nearby. Respect the local customs and maintain a quiet atmosphere while inside.",
           "links": [],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.7,
           "images": []
         }
@@ -302,8 +302,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.646Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T10:23:52.054Z",
       "pointsOfInterest": [
         {
           "name": "Bell & Drum Towers",
@@ -317,7 +317,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -333,7 +333,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -349,7 +349,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -358,7 +358,7 @@
     {
       "day": 3,
       "date": "May 20",
-      "title": "Terracotta Warriors & Daming Palace",
+      "title": "Terracotta Warriors & Daming Palace National Heritage Park",
       "location": "Xi'an",
       "segments": [
         {
@@ -400,9 +400,9 @@
           "id": "3-2-1764440953795",
           "time": "Afternoon",
           "type": "activity",
-          "title": "Hiking at Daming Palace Heritage Park",
+          "title": "Daming Palace Heritage Park",
           "location": "Daming Palace Heritage Park, Xi'an",
-          "description": "Afternoon hiking at Daming Palace Heritage Park.",
+          "description": "Afternoon walk at Daming Palace Heritage Park.",
           "duration": "2-3 hours",
           "from": "",
           "to": "",
@@ -459,8 +459,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.647Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T10:30:04.186Z",
       "pointsOfInterest": [
         {
           "name": "Terracotta Warriors Museum",
@@ -474,7 +474,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -490,7 +490,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -541,10 +541,10 @@
           "id": "4-2-1764440953795",
           "time": "Afternoon",
           "type": "transfer",
-          "title": "Transfer to Train Station",
+          "title": "Transfer to the train station for departure to Beijing.",
           "location": "Xi'an to Beijing",
-          "description": "Transfer to the train station for departure to Beijing.",
-          "duration": "1 hour",
+          "description": "High-speed trains (G-series): The fastest option, taking approximately 4 hours and 10 minutes to 6 hours. Most high-speed trains depart from Xi'an North Railway Station and arrive at Beijing West Railway Station.\n\nThe distance between the cities between the 1,216 km (756 miles) .",
+          "duration": "5 hour",
           "from": "Xi'an",
           "to": "Beijing",
           "mode": "train",
@@ -560,7 +560,7 @@
           "type": "check-in",
           "title": "Check-in at Hotel in Beijing",
           "location": "Beijing",
-          "description": "Check in at a centrally located 4-star hotel.",
+          "description": "Check in at a centrally located 4-star hotel - Hotel TBC.",
           "duration": "30 minutes",
           "from": "",
           "to": "",
@@ -577,7 +577,7 @@
           "type": "meal",
           "title": "Welcome Dinner",
           "location": "Local Restaurant, Beijing",
-          "description": "Welcome dinner featuring meetings and exchanges with representatives from China’s hiking and mountaineering communities.",
+          "description": "Welcome dinner. Potentially meeting with representatives from China’s hiking and mountaineering communities.",
           "duration": "2 hours",
           "from": "",
           "to": "",
@@ -632,8 +632,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.647Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T11:18:03.546Z",
       "pointsOfInterest": [
         {
           "name": "Beilin Museum",
@@ -647,7 +647,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -656,7 +656,7 @@
     {
       "day": 5,
       "date": "May 22",
-      "title": "Forbidden City & Fragrant Hills Warm-up",
+      "title": "Forbidden City, National Botanical Garden & Happy Forest Hike",
       "location": "Beijing",
       "segments": [
         {
@@ -681,19 +681,19 @@
           "id": "5-1-1764440953795",
           "time": "Afternoon",
           "type": "activity",
-          "title": "Warm-up Hike",
-          "location": "National Botanical Garden to Happy Forest, Fragrant Hills",
-          "description": "Hiking from the National Botanical Garden to Happy Forest.",
-          "duration": "3-4 hours",
+          "title": "National Botanical Garden to Fragrant Hills Hike",
+          "location": "National Botanical Garden to Fragrant Hills",
+          "description": "A hike from Beijing's National Botanical Garden to Happy Forest is possible through the Western Hills Forest Park (also referred to as Happy Forest). This 5-6 hour hike, approximately 14-16 km long, involves forest paths, firebreak roads, and steep descents, passing scenic spots like a peak with great views and the Nanmachang Reservoir. It is a level 4 difficulty hike, so good balance and sturdy footwear are recommended, as the route includes many steps. ",
+          "duration": "5-6 hours",
           "from": "",
           "to": "",
           "mode": "",
           "highlights": [
-            "12 km hike",
+            "15 km hike",
             "670 m elevation"
           ],
           "walkDetails": {
-            "distance": "12 km",
+            "distance": "14 km",
             "elevation": "670 m gain",
             "difficulty": "moderate"
           },
@@ -728,7 +728,7 @@
       "enhanced": {
         "title": "Cultural Exploration and Warm-up Hike in Beijing",
         "location": "Beijing",
-        "description": "Morning visit to the Forbidden City, exploring the imperial history of the Ming and Qing dynasties. Afternoon warm-up hike from the National Botanical Garden to Happy Forest in Fragrant Hills (12km, 670m elevation). Local outdoor experts will accompany the group.",
+        "description": "Morning visit to the Forbidden City, exploring the imperial history of the Ming and Qing dynasties. Afternoon exploration at the National Botanical Garden, and possibly a nice hike to Happy Forest in Fragrant Hills (15km, 670m elevation). ",
         "highlights": [
           "Ming and Qing dynasties",
           "Imperial architecture",
@@ -757,8 +757,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.647Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T11:20:32.710Z",
       "pointsOfInterest": [
         {
           "name": "Forbidden City",
@@ -791,7 +791,7 @@
     {
       "day": 6,
       "date": "May 23",
-      "title": "Great Wall Challenge",
+      "title": "Hike along the Badaling Great Wall",
       "location": "Great Wall, Beijing",
       "segments": [
         {
@@ -822,8 +822,8 @@
           "type": "transfer",
           "title": "Overnight Sleeper Train to Lushan",
           "location": "Beijing to Lushan",
-          "description": "Take an overnight sleeper train to Lushan.",
-          "duration": "8 hours",
+          "description": "The primary direct overnight sleeper train, K473, departs from the main Beijing Railway Station at 4:16 PM (16:16). \nIt arrives at Lushan Station (Henan, China) the following morning at approximately 6:21 AM (06:21), for a total journey time of just over 14 hours. Note: There have been arrangements to have access to hotel shower and freshen up facilities before the start of the day.",
+          "duration": "14 hours",
           "from": "Beijing",
           "to": "Lushan",
           "mode": "train",
@@ -845,7 +845,7 @@
       "enhanced": {
         "title": "Great Wall Hiking Challenge",
         "location": "Great Wall, Beijing",
-        "description": "Full day hike along the Badaling Great Wall (8-10km, ~500m elevation). Experience the magnificence of this ancient wonder. Evening overnight sleeper train to Lushan, a comfortable and efficient way to travel.",
+        "description": "Full day hike along the Badaling Great Wall (8-10km, ~500m elevation). Experience the magnificence of this ancient wonder. Afternoon overnight sleeper train to Lushan, a comfortable and efficient way to travel.",
         "highlights": [
           "8–10 km hike",
           "500 m elevation",
@@ -872,8 +872,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.648Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T11:24:20.586Z",
       "pointsOfInterest": [
         {
           "name": "Badaling Great Wall Hiking",
@@ -881,7 +881,7 @@
           "history": "The Badaling section of the Great Wall of China was built during the Ming dynasty in the 16th century and is one of the most well-preserved and visited parts of the Wall. It served as a military defense line against invasions and symbolized the strength and ingenuity of Chinese architecture and engineering.",
           "tips": "Wear sturdy hiking shoes for better grip. Bring plenty of water to stay hydrated during your hike. Arrive early in the morning to avoid crowds and enjoy a peaceful experience. Consider hiring a local guide for deeper insights into the history of the Great Wall. Don't forget your camera to capture the breathtaking views.",
           "links": [],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.7,
           "images": []
         }
@@ -1007,8 +1007,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.648Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:06:51.350Z",
       "pointsOfInterest": [
         {
           "name": "Lushan Cable Car",
@@ -1022,7 +1022,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -1038,7 +1038,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -1047,17 +1047,17 @@
     {
       "day": 8,
       "date": "May 25",
-      "title": "Conquering Hero Slope",
+      "title": "Summit Hike on Lushan - Exact Hike TBC",
       "location": "Lushan",
       "segments": [
         {
           "id": "8-0-1764440953795",
           "time": "Full Day",
           "type": "activity",
-          "title": "Summit Hike on Lushan",
+          "title": "Summit Hike on Lushan - Potentially Five Old Men Peaks (五老峰, Wǔlǎo Fēng)",
           "location": "Lushan",
-          "description": "Summit hike on Lushan, challenging the classic Hero Slope route.",
-          "duration": "6-8 hours",
+          "description": "Five Old Men Peaks (五老峰, Wǔlǎo Fēng)\n\nTrail Profile:\n\nElevation: 1,436 meters at the highest peak (4th peak)\n\nDistance: Approximately 8-10km round trip depending on route\n\nElevation Gain: Roughly 900m from base to summit\n\nDifficulty: Challenging with continuous steep stone steps\n\nRoute Details:\nThe trail consists of five distinct peaks that resemble five elderly men sitting side by side. The hike typically takes 2.5-3 hours round trip and involves relentless climbing on stone steps with minimal flat sections. The most difficult section comes at the beginning, so pace yourself accordingly.",
+          "duration": "4 hours",
           "from": "",
           "to": "",
           "mode": "",
@@ -1101,7 +1101,7 @@
       "enhanced": {
         "title": "Conquering Lushan’s Hero Slope",
         "location": "Lushan",
-        "description": "Full day summit hike on Lushan (~8km, 900m elevation). Challenge the classic Hero Slope route and enjoy breathtaking views from the summit. Evening rest at the mountain-top hotel.",
+        "description": "Full day summit hike on Lushan (~8km, 900m elevation). Challenge the classic route and enjoy breathtaking views from the summit. Evening rest at the mountain-top hotel.",
         "highlights": [
           "Breathtaking views from the summit",
           "Physical challenge",
@@ -1128,8 +1128,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.648Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:10:23.360Z",
       "pointsOfInterest": [
         {
           "name": "Hero Slope Hike",
@@ -1186,9 +1186,9 @@
           "id": "9-1-1764440953795",
           "time": "Morning",
           "type": "activity",
-          "title": "Hike on Mount Shizhong",
+          "title": "Hike up Shizhong Mountain",
           "location": "Mount Shizhong",
-          "description": "Hike on Mount Shizhong, admiring the confluence of the Yangtze River and Poyang Lake.",
+          "description": "Hike on Shizhong Mountain, admiring the confluence of the Yangtze River and Poyang Lake.",
           "duration": "3-4 hours",
           "from": "",
           "to": "",
@@ -1208,7 +1208,7 @@
           "id": "9-2-1764440953795",
           "time": "Afternoon",
           "type": "activity",
-          "title": "Visit Jingdezhen",
+          "title": "Visit Jingdezhen - Porcelain Capital",
           "location": "Jingdezhen",
           "description": "Visit the Porcelain Capital of Jingdezhen and try hands-on ceramic activities.",
           "duration": "2-3 hours",
@@ -1281,8 +1281,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "in-progress",
-      "lastModified": "2025-11-29T22:07:16.648Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:22:05.312Z",
       "pointsOfInterest": [
         {
           "name": "Mount Shizhong Hike",
@@ -1290,7 +1290,7 @@
           "history": "Mount Shizhong holds cultural significance in Chinese history as it has been a source of inspiration for poets and artists for centuries. The area is also known for its rich biodiversity, which has played an essential role in traditional medicine and local folklore. The mountain's trails have been traversed by travelers seeking both spiritual enlightenment and adventure, making it a cherished destination in the region.",
           "tips": "Wear sturdy hiking boots for optimal traction. Bring plenty of water and snacks to stay energized. Check the weather forecast before your hike to prepare accordingly. Start early in the morning to enjoy cooler temperatures and fewer crowds. Don’t forget your camera to capture the stunning landscapes.",
           "links": [],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.7,
           "images": []
         },
@@ -1306,7 +1306,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -1322,7 +1322,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -1412,8 +1412,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "draft",
-      "lastModified": "2025-11-29T22:07:16.642Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:33:20.888Z",
       "pointsOfInterest": [
         {
           "name": "Rural Hiking",
@@ -1427,7 +1427,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -1459,7 +1459,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -1495,8 +1495,8 @@
           "type": "transfer",
           "title": "Transfer to Wangxian Valley",
           "location": "Wuyuan to Wangxian Valley",
-          "description": "Transfer to Wangxian Valley.",
-          "duration": "1 hour",
+          "description": "The transfer time from Wuyuan to Wangxian Valley is approximately 2 hours by coach.",
+          "duration": "2 hour",
           "from": "Wuyuan",
           "to": "Wangxian Valley",
           "mode": "coach",
@@ -1587,8 +1587,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "draft",
-      "lastModified": "2025-11-29T22:07:16.643Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:43:06.944Z",
       "pointsOfInterest": [
         {
           "name": "Huangling Terraces",
@@ -1602,7 +1602,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -1612,7 +1612,7 @@
           "history": "Wangxian Valley has been a cherished destination for centuries, known for its rich biodiversity and stunning scenery. The area has historical significance in local folklore, believed to be a place where celestial beings descended, adding a mystical charm to the landscape.",
           "tips": "Wear sturdy hiking boots for optimal comfort and support. Bring plenty of water to stay hydrated throughout your hike. Don't forget your camera to capture the breathtaking views. Visit during the spring or autumn for the best weather and vibrant scenery. Respect the natural environment by sticking to marked trails and carrying out all trash.",
           "links": [],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.7,
           "images": []
         },
@@ -1628,7 +1628,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -1646,8 +1646,8 @@
           "type": "transfer",
           "title": "High-Speed Rail to Tai'An",
           "location": "Shangrao to Tai'An",
-          "description": "Take high-speed rail from Shangrao to Tai'An.",
-          "duration": "4-5 hours",
+          "description": "Take high-speed rail from Shangrao to Tai'An.\n",
+          "duration": "5 hours",
           "from": "Shangrao",
           "to": "Tai'An",
           "mode": "high-speed rail",
@@ -1732,8 +1732,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "draft",
-      "lastModified": "2025-11-29T22:07:16.643Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:48:25.595Z",
       "pointsOfInterest": [
         {
           "name": "Dai Temple",
@@ -1853,8 +1853,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "draft",
-      "lastModified": "2025-11-29T22:07:16.646Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:50:41.981Z",
       "pointsOfInterest": [
         {
           "name": "Mount Tai Climb",
@@ -1933,9 +1933,9 @@
           "id": "14-1-1764440953795",
           "time": "Full Day",
           "type": "activity",
-          "title": "Visit Confucian Cultural Sites",
+          "title": "Visit Confucius Cultural Sites",
           "location": "Qufu",
-          "description": "In-depth visit to the “Three Confucian Sites” UNESCO World Heritage sites.",
+          "description": "In-depth visit to the “Three Confucius Sites” UNESCO World Heritage sites.",
           "duration": "6-8 hours",
           "from": "",
           "to": "",
@@ -2024,8 +2024,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "draft",
-      "lastModified": "2025-11-29T22:07:16.646Z",
+      "status": "complete",
+      "lastModified": "2025-11-30T12:59:01.200Z",
       "pointsOfInterest": [
         {
           "name": "Confucius Temple",
@@ -2039,7 +2039,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -2055,7 +2055,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         },
@@ -2071,7 +2071,7 @@
               "title": "Wikipedia"
             }
           ],
-          "status": "pending",
+          "status": "approved",
           "confidence": 0.9,
           "images": []
         }
@@ -2173,8 +2173,8 @@
         "notes": ""
       },
       "images": [],
-      "status": "draft",
-      "lastModified": "2025-11-29T18:29:13.795Z"
+      "status": "complete",
+      "lastModified": "2025-11-30T12:59:21.816Z"
     }
   ],
   "tripInfo": {
@@ -2241,7 +2241,7 @@
     "lastModified": "2025-11-29T23:03:18.279Z"
   },
   "metadata": {
-    "lastModified": "2025-11-29T23:03:18.287Z",
+    "lastModified": "2025-11-30T12:59:21.841Z",
     "version": 2,
     "savedToFile": true
   },

@@ -1,0 +1,52 @@
+{
+  "day": 13,
+  "lastModified": "2025-11-30T12:50:01.595Z",
+  "segments": {
+    "13-0-1764440953795": {
+      "name": "Climb Mount Tai",
+      "images": [
+        {
+          "id": "pexels-31506012",
+          "url": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg",
+          "alt": "Golden temple atop Mount Tai with scenic views and crowds walking uphill.",
+          "photographer": "zhiqiang pan",
+          "photographerUrl": "https://www.pexels.com/@zhiqiang-pan-2151104065",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/majestic-view-of-golden-temple-on-mount-tai-31506012/",
+          "width": 4096,
+          "height": 2304
+        },
+        {
+          "id": "wikimedia-5327850",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/%E6%B3%B0%E5%B1%B1_%E5%8D%97%E5%A4%A9%E9%97%A8.jpg/800px-泰山 南天门.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/%E6%B3%B0%E5%B1%B1_%E5%8D%97%E5%A4%A9%E9%97%A8.jpg/300px-泰山 南天门.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E6%B3%B0%E5%B1%B1_%E5%8D%97%E5%A4%A9%E9%97%A8.jpg",
+          "alt": "Stone staircase up Tai'shan—Mount Tai, in Shandong Province, eastern China.\nWith stone gate at the top.",
+          "photographer": "Charlie fong",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%B3%B0%E5%B1%B1%20%E5%8D%97%E5%A4%A9%E9%97%A8.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%B3%B0%E5%B1%B1%20%E5%8D%97%E5%A4%A9%E9%97%A8.jpg",
+          "width": 763,
+          "height": 1018,
+          "license": "Public domain"
+        },
+        {
+          "id": "wikimedia-98954162",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/50362_Mount_Tai_UNESCO_mark.jpg/800px-50362 Mount Tai UNESCO mark.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/50362_Mount_Tai_UNESCO_mark.jpg/300px-50362 Mount Tai UNESCO mark.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/1/13/50362_Mount_Tai_UNESCO_mark.jpg",
+          "alt": "UNESCO World Heritage Convention\nFor more info see http://whc.unesco.org/en/list/437/gallery/",
+          "photographer": "xiquinhosilva",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3A50362%20Mount%20Tai%20UNESCO%20mark.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A50362%20Mount%20Tai%20UNESCO%20mark.jpg",
+          "width": 3000,
+          "height": 1672,
+          "license": "CC BY 2.0"
+        }
+      ]
+    }
+  }
+}

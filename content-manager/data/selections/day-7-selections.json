@@ -1,0 +1,20 @@
+{
+  "day": 7,
+  "lastModified": "2025-11-30T11:42:27.592Z",
+  "segments": {
+    "7-1-1764440953795": {
+      "name": "Check-in at Mountain-top Hotel",
+      "images": [
+        {
+          "id": "custom-1764502946311",
+          "url": "https://www.dorsetthotels.com/images/lushan-resort/gallery/banners/hotel_facade_1-original-S360-desktop.webp",
+          "thumb": "https://www.dorsetthotels.com/images/lushan-resort/gallery/banners/hotel_facade_1-original-S360-desktop.webp",
+          "full": "https://www.dorsetthotels.com/images/lushan-resort/gallery/banners/hotel_facade_1-original-S360-desktop.webp",
+          "alt": "Mountaintop Resorts",
+          "photographer": "Custom",
+          "source": "custom"
+        }
+      ]
+    }
+  }
+}

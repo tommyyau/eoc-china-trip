@@ -1,0 +1,29 @@
+{
+  "day": 14,
+  "lastModified": "2025-11-30T12:55:34.429Z",
+  "segments": {
+    "14-1-1764440953795": {
+      "name": "Visit Confucian Cultural Sites",
+      "images": [
+        {
+          "id": "custom-1764507150876",
+          "url": "https://www.chinadiscovery.com/assets/images/qufu/confucius-temple/Confucius-temple-788.jpg",
+          "thumb": "https://www.chinadiscovery.com/assets/images/qufu/confucius-temple/Confucius-temple-788.jpg",
+          "full": "https://www.chinadiscovery.com/assets/images/qufu/confucius-temple/Confucius-temple-788.jpg",
+          "alt": "Confucius Temple",
+          "photographer": "Custom",
+          "source": "custom"
+        },
+        {
+          "id": "custom-1764507333556",
+          "url": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOEeX-bf0EFdwy7fQdOIEPvF0SPc_kCYWq2SMHr4S7LbXwZbG6YKMmhcWosoDH0RSssnvmr_CCg0M3dg8hMgZPRPa_cOY2HhgtasWH8-qlIjs3A9Vm2DtNZk-S6ir1xjzA4STS=s1360-w1360-h1020-rw",
+          "thumb": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOEeX-bf0EFdwy7fQdOIEPvF0SPc_kCYWq2SMHr4S7LbXwZbG6YKMmhcWosoDH0RSssnvmr_CCg0M3dg8hMgZPRPa_cOY2HhgtasWH8-qlIjs3A9Vm2DtNZk-S6ir1xjzA4STS=s1360-w1360-h1020-rw",
+          "full": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOEeX-bf0EFdwy7fQdOIEPvF0SPc_kCYWq2SMHr4S7LbXwZbG6YKMmhcWosoDH0RSssnvmr_CCg0M3dg8hMgZPRPa_cOY2HhgtasWH8-qlIjs3A9Vm2DtNZk-S6ir1xjzA4STS=s1360-w1360-h1020-rw",
+          "alt": "Confucian Mansion",
+          "photographer": "Custom",
+          "source": "custom"
+        }
+      ]
+    }
+  }
+}

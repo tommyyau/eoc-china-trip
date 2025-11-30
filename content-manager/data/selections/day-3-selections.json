@@ -1,6 +1,6 @@
 {
   "day": 3,
-  "lastModified": "2025-11-29T20:48:56.103Z",
+  "lastModified": "2025-11-30T10:27:57.762Z",
   "segments": {
     "3-0-1764446850029": {
       "name": "Visit Terracotta Warrior Museum",
@@ -60,6 +60,69 @@
           "downloadUrl": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
           "width": 5467,
           "height": 3545
+        }
+      ]
+    },
+    "3-0-1764440953795": {
+      "name": "Visit Terracotta Warrior Museum",
+      "images": [
+        {
+          "id": "pexels-11105685",
+          "url": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg",
+          "alt": "Close-up view of the ancient Terracotta Army statues in Xi'an, showcasing historical artistry.",
+          "photographer": "Maciej Cisowski",
+          "photographerUrl": "https://www.pexels.com/@maciej-cisowski-174297128",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/terracotta-army-statues-11105685/",
+          "width": 6720,
+          "height": 4480
+        },
+        {
+          "id": "unsplash-x1ediC9D42Y",
+          "url": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+          "thumb": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=400",
+          "full": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=85",
+          "alt": "Terracotta warriors arranged in formation",
+          "photographer": "1AmFcS",
+          "photographerUrl": "https://unsplash.com/@1amfcs",
+          "source": "unsplash",
+          "sourceUrl": "https://unsplash.com/photos/x1ediC9D42Y",
+          "width": 4793,
+          "height": 3025
+        }
+      ]
+    },
+    "3-2-1764440953795": {
+      "name": "Hiking at Daming Palace Heritage Park",
+      "images": [
+        {
+          "id": "wikimedia-158595985",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg/800px-Daming Palace National Heritage Park - Palace Model 02.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg/300px-Daming Palace National Heritage Park - Palace Model 02.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg",
+          "alt": "The Daming Palace, once the grand imperial palace of the Tang Dynasty, stands as a testament to China's rich history and architectural grandeur. Located in Xi'an, Shaanxi, this palace was the political heart of the dynasty, where emperors conducted state affairs and celebrated grand ceremonies. \nAlthough ravaged by time and war, the site has been partially reconstructed and opened to the public, allowing visitors to walk through the echoes of its past glory. It is also recognized as a UNESCO World Heritage Site, further highlighting its historical and cultural significance.",
+          "photographer": "xiquinhosilva",
+          "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg",
+          "source": "wikimedia",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg",
+          "width": 2560,
+          "height": 1707,
+          "license": "CC BY 2.0"
+        },
+        {
+          "id": "pixabay-8268910",
+          "url": "https://pixabay.com/get/ga04cdfa377db0b16bdf4852047a5f1640fa373484d8d4024481ec30b32e3b7e9e582712696dc31e3f4f267fc724f8575388e1331dcb852f977001ca4c83a2412_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2023/09/22/12/00/daming-palace-8268910_150.jpg",
+          "full": "https://pixabay.com/get/gd0cbbc1580601c4cc62020d4a0cf7e8c9f94407b1c842f18f7d32d8721b68852b1f8fef5f2d4462ca289ad3a1db9acfeeff75656c95c089c380e11421d41d129_1280.jpg",
+          "alt": "daming palace, xi'an, xi'an daming palace, palace, vacation destination, danfengmen, architecture, historical site, shaanxi xi'an scenery, xi'an danfengmen, daming palace, xi'an, xi'an, xi'an, xi'an, xi'an, palace",
+          "photographer": "周游中国",
+          "photographerUrl": "https://pixabay.com/users/周游中国-33467154/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/daming-palace-xian-8268910/",
+          "width": 6494,
+          "height": 4329
         }
       ]
     }

@@ -1,0 +1,20 @@
+{
+  "day": 12,
+  "lastModified": "2025-11-30T12:45:38.906Z",
+  "segments": {
+    "12-1-1764440953795": {
+      "name": "Visit Dai Temple",
+      "images": [
+        {
+          "id": "custom-1764506737601",
+          "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e8/72/85/temple-compund.jpg",
+          "thumb": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e8/72/85/temple-compund.jpg",
+          "full": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e8/72/85/temple-compund.jpg",
+          "alt": "Dai Temple",
+          "photographer": "Custom",
+          "source": "custom"
+        }
+      ]
+    }
+  }
+}

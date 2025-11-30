@@ -1,0 +1,66 @@
+{
+  "day": 3,
+  "date": "May 10",
+  "title": {
+    "en": "Terracotta Warriors & Daming Palace",
+    "cn": "兵马俑与大明宫"
+  },
+  "location": {
+    "en": "Xi'an",
+    "cn": "西安"
+  },
+  "pois": [
+    {
+      "id": "terracotta-warriors-museum",
+      "name": "Terracotta Warriors Museum",
+      "day": 3,
+      "location": "Xi'an",
+      "searchQuery": "Terracotta Warriors Museum Xi'an China",
+      "summary": "Step into a world of ancient wonders at the Terracotta Warriors Museum in Xi'an, China, where history comes alive through the eyes of over 8,000 life-sized terracotta soldiers. Discovered in 1974 by local farmers, this exceptional archaeological site showcases the remarkable artistry and craftsmanship of the Qin Dynasty. Each figure, uniquely detailed and varying in height according to rank, stands guard over the mausoleum of Qin Shi Huang, the first emperor of China. As you wander through the expansive pits, marvel at the impressive array of warriors, chariots, and horses, all intricately positioned as if ready for battle. This breathtaking journey into China's past is not just a display of military might; it’s a testament to the emperor's quest for immortality and an invitation to connect with a pivotal moment in history that shaped the nation.",
+      "historicalContext": "The Terracotta Army was created in the late 200s BCE to accompany Qin Shi Huang in his afterlife, reflecting the emperor's belief in the afterlife and his desire for protection in the next world. Discovered in 1974, the site has since revealed thousands of figures, providing invaluable insights into ancient Chinese art, military practices, and burial customs, making it one of the most significant archaeological finds in history.",
+      "practicalTips": [
+        "Visit early in the morning or late afternoon to avoid crowds and enjoy a more intimate experience with the warriors.",
+        "Allocate at least two to three hours to explore the museum thoroughly, including the three main pits and the exhibition halls.",
+        "Wear comfortable walking shoes, as the museum covers a large area and involves a fair amount of walking.",
+        "Consider hiring a local guide for deeper insights into the history and significance of the Terracotta Army.",
+        "Don't forget your camera! The magnificent sight of thousands of warriors is a photographer's dream, but be mindful of any photography restrictions."
+      ],
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Terracotta_Army",
+          "title": "Wikipedia"
+        }
+      ],
+      "wikiTitle": "Terracotta Army",
+      "researchedAt": "2025-11-29T19:54:57.739Z"
+    },
+    {
+      "id": "daming-palace-heritage-park",
+      "name": "Daming Palace Heritage Park",
+      "day": 3,
+      "location": "Xi'an",
+      "searchQuery": "Daming Palace Heritage Park Xi'an China",
+      "summary": "Step into the grandeur of the Tang dynasty at Daming Palace Heritage Park, where history whispers through the ancient ruins of one of China's most significant imperial palaces. Nestled in the heart of Xi'an, this sprawling park invites you to explore the magnificent remnants of a cultural epicenter that thrived for over 220 years. As you wander through its lush gardens and striking architecture, feel the echoes of emperors and empresses who once roamed these grounds. With interactive exhibits and stunning reconstructions, Daming Palace offers a unique glimpse into the opulent lifestyle of the Tang dynasty, making it an unforgettable destination for history enthusiasts and casual travelers alike.",
+      "historicalContext": "Daming Palace was established during the early Tang dynasty in the 7th century and served as the imperial residence until the dynasty's fall in the 10th century. This palace complex is significant as it symbolizes the wealth and cultural flourishing of the Tang era, often regarded as a golden age in Chinese history. The site is also part of the UNESCO World Heritage Site 'Silk Roads: the Routes Network of Chang'an-Tianshan Corridor,' highlighting its importance in global trade and cultural exchange during its peak.",
+      "practicalTips": [
+        "Visit in spring or autumn for the most comfortable weather and to enjoy the vibrant seasonal colors of the gardens.",
+        "Allocate at least 2-3 hours to fully explore the park and its various exhibits, ensuring you don't miss any hidden gems.",
+        "Wear comfortable walking shoes, as the park is expansive and involves a fair amount of walking.",
+        "Look out for the guided tours available, as they provide insightful context and stories about the historical significance of the site.",
+        "Don't forget to bring a camera; the picturesque landscapes and historical ruins make for stunning photos."
+      ],
+      "confidence": 0.9,
+      "links": [
+        {
+          "type": "wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Daming_Palace",
+          "title": "Wikipedia"
+        }
+      ],
+      "wikiTitle": "Daming Palace",
+      "researchedAt": "2025-11-29T19:55:06.999Z"
+    }
+  ]
+}

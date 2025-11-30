@@ -1,0 +1,20 @@
+{
+  "day": 4,
+  "lastModified": "2025-11-30T10:35:08.164Z",
+  "segments": {
+    "4-0-1764440953795": {
+      "name": "Visit Beilin Museum",
+      "images": [
+        {
+          "id": "custom-1764498906210",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xi%27anviewpic9.jpg/2560px-Xi%27anviewpic9.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xi%27anviewpic9.jpg/2560px-Xi%27anviewpic9.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xi%27anviewpic9.jpg/2560px-Xi%27anviewpic9.jpg",
+          "alt": "Stele Forest or Beilin Museum ",
+          "photographer": "Custom",
+          "source": "custom"
+        }
+      ]
+    }
+  }
+}

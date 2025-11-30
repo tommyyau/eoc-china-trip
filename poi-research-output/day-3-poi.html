@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3: Terracotta Warriors & Daming Palace - POI Research</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; padding-bottom: 100px; }
+
+        .header { background: linear-gradient(135deg, #2c5282 0%, #4299e1 100%); color: white; padding: 30px; border-radius: 12px; margin-bottom: 30px; }
+        .header h1 { font-size: 1.8rem; margin-bottom: 10px; }
+        .header .meta { opacity: 0.9; font-size: 1rem; }
+        .header .meta span { margin-right: 20px; }
+
+        .stats { background: white; padding: 20px; border-radius: 12px; margin-bottom: 30px; display: flex; gap: 30px; flex-wrap: wrap; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .stat { text-align: center; }
+        .stat-value { font-size: 2rem; font-weight: bold; color: #2c5282; }
+        .stat-label { color: #666; font-size: 0.9rem; }
+
+        .poi-card { background: white; margin-bottom: 25px; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .poi-header { background: #2c5282; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .poi-header h2 { font-size: 1.2rem; }
+        .poi-status { display: flex; gap: 10px; align-items: center; }
+        .status-badge { padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .status-badge.approved { background: #48bb78; }
+        .status-badge.pending { background: #ed8936; }
+        .status-badge.rejected { background: #e53e3e; }
+
+        .poi-content { padding: 20px; }
+        .poi-section { margin-bottom: 20px; }
+        .poi-section h3 { color: #2c5282; font-size: 0.95rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .poi-section h3::before { content: ''; width: 4px; height: 16px; background: #4299e1; border-radius: 2px; }
+
+        .editable { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; resize: vertical; font-family: inherit; transition: border-color 0.2s; }
+        .editable:focus { border-color: #4299e1; outline: none; }
+        .editable.summary { min-height: 150px; }
+        .editable.history { min-height: 80px; }
+        .editable.tips { min-height: 100px; }
+
+        .links-section { background: #f7fafc; padding: 15px; border-radius: 8px; margin-top: 15px; }
+        .links-section h4 { font-size: 0.85rem; color: #666; margin-bottom: 10px; }
+        .link-item { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; padding: 8px 12px; background: white; border-radius: 6px; }
+        .link-item a { color: #2c5282; text-decoration: none; flex: 1; word-break: break-all; }
+        .link-item a:hover { text-decoration: underline; }
+        .link-badge { background: #e2e8f0; color: #4a5568; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: bold; text-transform: uppercase; }
+        .link-remove { background: #e53e3e; color: white; border: none; padding: 4px 8px; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+        .link-remove:hover { background: #c53030; }
+        .add-link { display: flex; gap: 8px; margin-top: 10px; }
+        .add-link input { flex: 1; padding: 8px; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem; }
+        .add-link input:focus { border-color: #4299e1; outline: none; }
+        .add-link button { background: #4299e1; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+        .add-link button:hover { background: #3182ce; }
+
+        .poi-actions { display: flex; gap: 10px; padding: 15px 20px; background: #f7fafc; border-top: 1px solid #e2e8f0; }
+        .action-btn { flex: 1; padding: 10px; border: none; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: bold; transition: all 0.2s; }
+        .approve-btn { background: #48bb78; color: white; }
+        .approve-btn:hover { background: #38a169; }
+        .reject-btn { background: #e53e3e; color: white; }
+        .reject-btn:hover { background: #c53030; }
+        .reset-btn { background: #e2e8f0; color: #4a5568; }
+        .reset-btn:hover { background: #cbd5e0; }
+
+        .confidence { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #666; margin-top: 10px; }
+        .confidence-bar { width: 100px; height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+        .confidence-fill { height: 100%; border-radius: 4px; }
+        .confidence-high { background: #48bb78; }
+        .confidence-medium { background: #ed8936; }
+        .confidence-low { background: #e53e3e; }
+
+        .bottom-panel { position: fixed; bottom: 0; left: 0; right: 0; background: white; padding: 15px 20px; box-shadow: 0 -4px 20px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; z-index: 100; }
+        .panel-stats { font-size: 1rem; }
+        .panel-stats strong { color: #48bb78; }
+        .panel-actions { display: flex; align-items: center; gap: 10px; }
+        .save-status { font-size: 0.9rem; padding: 6px 12px; border-radius: 6px; }
+        .save-status.success { background: #c6f6d5; color: #276749; }
+        .save-status.error { background: #fed7d7; color: #c53030; }
+        .save-status.loading { background: #bee3f8; color: #2b6cb0; }
+        .export-btn { background: #48bb78; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-size: 0.95rem; font-weight: bold; }
+        .export-btn:hover { background: #38a169; }
+        .export-btn:disabled { background: #a0aec0; cursor: not-allowed; }
+        .export-btn.secondary { background: #718096; }
+        .export-btn.secondary:hover { background: #4a5568; }
+
+        .empty-state { text-align: center; padding: 60px 20px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .empty-state h2 { color: #4a5568; margin-bottom: 10px; }
+        .empty-state p { color: #718096; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Day 3: Terracotta Warriors & Daming Palace</h1>
+            <div class="meta">
+                <span>📅 May 10</span>
+                <span>📍 Xi'an</span>
+                <span>🎯 2 POIs</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value">2</div>
+                <div class="stat-label">POIs Researched</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="approved-count">0</div>
+                <div class="stat-label">Approved</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="rejected-count">0</div>
+                <div class="stat-label">Rejected</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="pending-count">2</div>
+                <div class="stat-label">Pending Review</div>
+            </div>
+        </div>
+
+        
+        <div class="poi-card" data-poi-id="terracotta-warriors-museum" data-poi-idx="0">
+            <div class="poi-header">
+                <h2>🏛️ Terracotta Warriors Museum</h2>
+                <div class="poi-status">
+                    <span class="status-badge pending" id="status-0">Pending</span>
+                </div>
+            </div>
+            <div class="poi-content">
+                <div class="poi-section">
+                    <h3>Summary</h3>
+                    <textarea class="editable summary" id="summary-0" placeholder="Marketing-style description...">Step into a world of ancient wonders at the Terracotta Warriors Museum in Xi'an, China, where history comes alive through the eyes of over 8,000 life-sized terracotta soldiers. Discovered in 1974 by local farmers, this exceptional archaeological site showcases the remarkable artistry and craftsmanship of the Qin Dynasty. Each figure, uniquely detailed and varying in height according to rank, stands guard over the mausoleum of Qin Shi Huang, the first emperor of China. As you wander through the expansive pits, marvel at the impressive array of warriors, chariots, and horses, all intricately positioned as if ready for battle. This breathtaking journey into China's past is not just a display of military might; it’s a testament to the emperor's quest for immortality and an invitation to connect with a pivotal moment in history that shaped the nation.</textarea>
+                </div>
+                <div class="poi-section">
+                    <h3>Historical Context</h3>
+                    <textarea class="editable history" id="history-0" placeholder="Historical background...">The Terracotta Army was created in the late 200s BCE to accompany Qin Shi Huang in his afterlife, reflecting the emperor's belief in the afterlife and his desire for protection in the next world. Discovered in 1974, the site has since revealed thousands of figures, providing invaluable insights into ancient Chinese art, military practices, and burial customs, making it one of the most significant archaeological finds in history.</textarea>
+                </div>
+                <div class="poi-section">
+                    <h3>Practical Tips</h3>
+                    <textarea class="editable tips" id="tips-0" placeholder="Visitor tips...">Visit early in the morning or late afternoon to avoid crowds and enjoy a more intimate experience with the warriors.,Allocate at least two to three hours to explore the museum thoroughly, including the three main pits and the exhibition halls.,Wear comfortable walking shoes, as the museum covers a large area and involves a fair amount of walking.,Consider hiring a local guide for deeper insights into the history and significance of the Terracotta Army.,Don't forget your camera! The magnificent sight of thousands of warriors is a photographer's dream, but be mindful of any photography restrictions.</textarea>
+                </div>
+
+                <div class="links-section">
+                    <h4>🔗 External Links</h4>
+                    <div id="links-0">
+                        
+                        <div class="link-item" data-link-idx="0">
+                            <span class="link-badge">wikipedia</span>
+                            <a href="https://en.wikipedia.org/wiki/Terracotta_Army" target="_blank">https://en.wikipedia.org/wiki/Terracotta_Army</a>
+                            <button class="link-remove" onclick="removeLink(0, 0)">×</button>
+                        </div>
+                        
+                    </div>
+                    <div class="add-link">
+                        <input type="url" id="new-link-0" placeholder="https://...">
+                        <button onclick="addLink(0)">Add Link</button>
+                    </div>
+                </div>
+
+                <div class="confidence">
+                    <span>Confidence:</span>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill confidence-high" style="width: 90%"></div>
+                    </div>
+                    <span>90%</span>
+                    <span style="margin-left: 10px; color: #48bb78;">✓ Wikipedia verified</span>
+                </div>
+            </div>
+            <div class="poi-actions">
+                <button class="action-btn approve-btn" onclick="setStatus(0, 'approved')">✓ Approve</button>
+                <button class="action-btn reject-btn" onclick="setStatus(0, 'rejected')">✗ Reject</button>
+                <button class="action-btn reset-btn" onclick="setStatus(0, 'pending')">↺ Reset</button>
+            </div>
+        </div>
+        
+        <div class="poi-card" data-poi-id="daming-palace-heritage-park" data-poi-idx="1">
+            <div class="poi-header">
+                <h2>🏛️ Daming Palace Heritage Park</h2>
+                <div class="poi-status">
+                    <span class="status-badge pending" id="status-1">Pending</span>
+                </div>
+            </div>
+            <div class="poi-content">
+                <div class="poi-section">
+                    <h3>Summary</h3>
+                    <textarea class="editable summary" id="summary-1" placeholder="Marketing-style description...">Step into the grandeur of the Tang dynasty at Daming Palace Heritage Park, where history whispers through the ancient ruins of one of China's most significant imperial palaces. Nestled in the heart of Xi'an, this sprawling park invites you to explore the magnificent remnants of a cultural epicenter that thrived for over 220 years. As you wander through its lush gardens and striking architecture, feel the echoes of emperors and empresses who once roamed these grounds. With interactive exhibits and stunning reconstructions, Daming Palace offers a unique glimpse into the opulent lifestyle of the Tang dynasty, making it an unforgettable destination for history enthusiasts and casual travelers alike.</textarea>
+                </div>
+                <div class="poi-section">
+                    <h3>Historical Context</h3>
+                    <textarea class="editable history" id="history-1" placeholder="Historical background...">Daming Palace was established during the early Tang dynasty in the 7th century and served as the imperial residence until the dynasty's fall in the 10th century. This palace complex is significant as it symbolizes the wealth and cultural flourishing of the Tang era, often regarded as a golden age in Chinese history. The site is also part of the UNESCO World Heritage Site 'Silk Roads: the Routes Network of Chang'an-Tianshan Corridor,' highlighting its importance in global trade and cultural exchange during its peak.</textarea>
+                </div>
+                <div class="poi-section">
+                    <h3>Practical Tips</h3>
+                    <textarea class="editable tips" id="tips-1" placeholder="Visitor tips...">Visit in spring or autumn for the most comfortable weather and to enjoy the vibrant seasonal colors of the gardens.,Allocate at least 2-3 hours to fully explore the park and its various exhibits, ensuring you don't miss any hidden gems.,Wear comfortable walking shoes, as the park is expansive and involves a fair amount of walking.,Look out for the guided tours available, as they provide insightful context and stories about the historical significance of the site.,Don't forget to bring a camera; the picturesque landscapes and historical ruins make for stunning photos.</textarea>
+                </div>
+
+                <div class="links-section">
+                    <h4>🔗 External Links</h4>
+                    <div id="links-1">
+                        
+                        <div class="link-item" data-link-idx="0">
+                            <span class="link-badge">wikipedia</span>
+                            <a href="https://en.wikipedia.org/wiki/Daming_Palace" target="_blank">https://en.wikipedia.org/wiki/Daming_Palace</a>
+                            <button class="link-remove" onclick="removeLink(1, 0)">×</button>
+                        </div>
+                        
+                    </div>
+                    <div class="add-link">
+                        <input type="url" id="new-link-1" placeholder="https://...">
+                        <button onclick="addLink(1)">Add Link</button>
+                    </div>
+                </div>
+
+                <div class="confidence">
+                    <span>Confidence:</span>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill confidence-high" style="width: 90%"></div>
+                    </div>
+                    <span>90%</span>
+                    <span style="margin-left: 10px; color: #48bb78;">✓ Wikipedia verified</span>
+                </div>
+            </div>
+            <div class="poi-actions">
+                <button class="action-btn approve-btn" onclick="setStatus(1, 'approved')">✓ Approve</button>
+                <button class="action-btn reject-btn" onclick="setStatus(1, 'rejected')">✗ Reject</button>
+                <button class="action-btn reset-btn" onclick="setStatus(1, 'pending')">↺ Reset</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="bottom-panel">
+        <div class="panel-stats">
+            <strong id="panel-approved">0</strong> approved • <span id="panel-pending">2</span> pending
+        </div>
+        <div class="panel-actions">
+            <span id="save-status" class="save-status"></span>
+            <button class="export-btn secondary" onclick="downloadJSON()" id="download-btn">Download JSON</button>
+            <button class="export-btn" onclick="saveToContentManager()" id="save-btn">Save to Content Manager</button>
+        </div>
+    </div>
+
+    <script>
+        const DAY_NUMBER = 3;
+        const STORAGE_KEY = 'poi-day-' + DAY_NUMBER;
+        const originalData = [{"id":"terracotta-warriors-museum","name":"Terracotta Warriors Museum","day":3,"location":"Xi'an","searchQuery":"Terracotta Warriors Museum Xi'an China","summary":"Step into a world of ancient wonders at the Terracotta Warriors Museum in Xi'an, China, where history comes alive through the eyes of over 8,000 life-sized terracotta soldiers. Discovered in 1974 by local farmers, this exceptional archaeological site showcases the remarkable artistry and craftsmanship of the Qin Dynasty. Each figure, uniquely detailed and varying in height according to rank, stands guard over the mausoleum of Qin Shi Huang, the first emperor of China. As you wander through the expansive pits, marvel at the impressive array of warriors, chariots, and horses, all intricately positioned as if ready for battle. This breathtaking journey into China's past is not just a display of military might; it’s a testament to the emperor's quest for immortality and an invitation to connect with a pivotal moment in history that shaped the nation.","historicalContext":"The Terracotta Army was created in the late 200s BCE to accompany Qin Shi Huang in his afterlife, reflecting the emperor's belief in the afterlife and his desire for protection in the next world. Discovered in 1974, the site has since revealed thousands of figures, providing invaluable insights into ancient Chinese art, military practices, and burial customs, making it one of the most significant archaeological finds in history.","practicalTips":["Visit early in the morning or late afternoon to avoid crowds and enjoy a more intimate experience with the warriors.","Allocate at least two to three hours to explore the museum thoroughly, including the three main pits and the exhibition halls.","Wear comfortable walking shoes, as the museum covers a large area and involves a fair amount of walking.","Consider hiring a local guide for deeper insights into the history and significance of the Terracotta Army.","Don't forget your camera! The magnificent sight of thousands of warriors is a photographer's dream, but be mindful of any photography restrictions."],"confidence":0.9,"links":[{"type":"wikipedia","url":"https://en.wikipedia.org/wiki/Terracotta_Army","title":"Wikipedia"}],"wikiTitle":"Terracotta Army","researchedAt":"2025-11-29T19:54:57.739Z"},{"id":"daming-palace-heritage-park","name":"Daming Palace Heritage Park","day":3,"location":"Xi'an","searchQuery":"Daming Palace Heritage Park Xi'an China","summary":"Step into the grandeur of the Tang dynasty at Daming Palace Heritage Park, where history whispers through the ancient ruins of one of China's most significant imperial palaces. Nestled in the heart of Xi'an, this sprawling park invites you to explore the magnificent remnants of a cultural epicenter that thrived for over 220 years. As you wander through its lush gardens and striking architecture, feel the echoes of emperors and empresses who once roamed these grounds. With interactive exhibits and stunning reconstructions, Daming Palace offers a unique glimpse into the opulent lifestyle of the Tang dynasty, making it an unforgettable destination for history enthusiasts and casual travelers alike.","historicalContext":"Daming Palace was established during the early Tang dynasty in the 7th century and served as the imperial residence until the dynasty's fall in the 10th century. This palace complex is significant as it symbolizes the wealth and cultural flourishing of the Tang era, often regarded as a golden age in Chinese history. The site is also part of the UNESCO World Heritage Site 'Silk Roads: the Routes Network of Chang'an-Tianshan Corridor,' highlighting its importance in global trade and cultural exchange during its peak.","practicalTips":["Visit in spring or autumn for the most comfortable weather and to enjoy the vibrant seasonal colors of the gardens.","Allocate at least 2-3 hours to fully explore the park and its various exhibits, ensuring you don't miss any hidden gems.","Wear comfortable walking shoes, as the park is expansive and involves a fair amount of walking.","Look out for the guided tours available, as they provide insightful context and stories about the historical significance of the site.","Don't forget to bring a camera; the picturesque landscapes and historical ruins make for stunning photos."],"confidence":0.9,"links":[{"type":"wikipedia","url":"https://en.wikipedia.org/wiki/Daming_Palace","title":"Wikipedia"}],"wikiTitle":"Daming Palace","researchedAt":"2025-11-29T19:55:06.999Z"}];
+
+        // State
+        let poiStatus = {};
+        let poiLinks = {};
+
+        // Initialize from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            loadState();
+            updateCounts();
+        });
+
+        function loadState() {
+            try {
+                const saved = localStorage.getItem(STORAGE_KEY);
+                if (saved) {
+                    const data = JSON.parse(saved);
+                    poiStatus = data.status || {};
+                    poiLinks = data.links || {};
+
+                    // Restore text content
+                    if (data.content) {
+                        Object.keys(data.content).forEach(idx => {
+                            const c = data.content[idx];
+                            if (c.summary) document.getElementById('summary-' + idx).value = c.summary;
+                            if (c.history) document.getElementById('history-' + idx).value = c.history;
+                            if (c.tips) document.getElementById('tips-' + idx).value = c.tips;
+                        });
+                    }
+
+                    // Restore status badges
+                    Object.keys(poiStatus).forEach(idx => {
+                        updateStatusBadge(parseInt(idx), poiStatus[idx]);
+                    });
+
+                    // Restore links
+                    Object.keys(poiLinks).forEach(idx => {
+                        renderLinks(parseInt(idx));
+                    });
+                }
+            } catch (e) {
+                console.error('Failed to load state:', e);
+            }
+        }
+
+        function saveState() {
+            try {
+                const content = {};
+                originalData.forEach((poi, idx) => {
+                    content[idx] = {
+                        summary: document.getElementById('summary-' + idx)?.value,
+                        history: document.getElementById('history-' + idx)?.value,
+                        tips: document.getElementById('tips-' + idx)?.value
+                    };
+                });
+
+                localStorage.setItem(STORAGE_KEY, JSON.stringify({
+                    status: poiStatus,
+                    links: poiLinks,
+                    content: content
+                }));
+            } catch (e) {
+                console.error('Failed to save state:', e);
+            }
+        }
+
+        function setStatus(idx, status) {
+            poiStatus[idx] = status;
+            updateStatusBadge(idx, status);
+            updateCounts();
+            saveState();
+        }
+
+        function updateStatusBadge(idx, status) {
+            const badge = document.getElementById('status-' + idx);
+            if (!badge) return;
+            badge.className = 'status-badge ' + status;
+            badge.textContent = status.charAt(0).toUpperCase() + status.slice(1);
+        }
+
+        function updateCounts() {
+            const total = originalData.length;
+            let approved = 0, rejected = 0;
+            Object.values(poiStatus).forEach(s => {
+                if (s === 'approved') approved++;
+                if (s === 'rejected') rejected++;
+            });
+            const pending = total - approved - rejected;
+
+            document.getElementById('approved-count').textContent = approved;
+            document.getElementById('rejected-count').textContent = rejected;
+            document.getElementById('pending-count').textContent = pending;
+            document.getElementById('panel-approved').textContent = approved;
+            document.getElementById('panel-pending').textContent = pending;
+        }
+
+        function removeLink(poiIdx, linkIdx) {
+            if (!poiLinks[poiIdx]) {
+                poiLinks[poiIdx] = [...originalData[poiIdx].links];
+            }
+            poiLinks[poiIdx].splice(linkIdx, 1);
+            renderLinks(poiIdx);
+            saveState();
+        }
+
+        function addLink(poiIdx) {
+            const input = document.getElementById('new-link-' + poiIdx);
+            const url = input.value.trim();
+            if (!url) return alert('Please enter a URL');
+
+            if (!poiLinks[poiIdx]) {
+                poiLinks[poiIdx] = [...originalData[poiIdx].links];
+            }
+
+            // Detect link type
+            let type = 'other';
+            if (url.includes('wikipedia.org')) type = 'wikipedia';
+            else if (url.includes('tripadvisor.com')) type = 'tripadvisor';
+            else if (url.includes('lonelyplanet.com')) type = 'lonelyplanet';
+            else if (url.includes('.gov.cn') || url.includes('.gov')) type = 'official';
+
+            poiLinks[poiIdx].push({ type, url, title: type });
+            renderLinks(poiIdx);
+            input.value = '';
+            saveState();
+        }
+
+        function renderLinks(poiIdx) {
+            const container = document.getElementById('links-' + poiIdx);
+            const links = poiLinks[poiIdx] || originalData[poiIdx].links;
+
+            container.innerHTML = links.map((link, linkIdx) =>
+                '<div class="link-item" data-link-idx="' + linkIdx + '">' +
+                    '<span class="link-badge">' + link.type + '</span>' +
+                    '<a href="' + link.url + '" target="_blank">' + link.url + '</a>' +
+                    '<button class="link-remove" onclick="removeLink(' + poiIdx + ', ' + linkIdx + ')">×</button>' +
+                '</div>'
+            ).join('');
+        }
+
+        function gatherPOIData() {
+            const pois = [];
+
+            originalData.forEach((poi, idx) => {
+                const status = poiStatus[idx] || 'pending';
+                const links = poiLinks[idx] || poi.links;
+
+                pois.push({
+                    id: poi.id,
+                    name: poi.name,
+                    day: poi.day,
+                    location: poi.location,
+                    status: status,
+                    summary: document.getElementById('summary-' + idx)?.value || poi.summary,
+                    historicalContext: document.getElementById('history-' + idx)?.value || poi.historicalContext,
+                    practicalTips: document.getElementById('tips-' + idx)?.value || poi.practicalTips,
+                    links: links,
+                    lastModified: new Date().toISOString()
+                });
+            });
+
+            return pois;
+        }
+
+        function downloadJSON() {
+            const pois = gatherPOIData().filter(p => p.status === 'approved');
+
+            if (pois.length === 0) {
+                return alert('No approved POIs to download. Please approve at least one POI.');
+            }
+
+            const exportData = {
+                day: DAY_NUMBER,
+                exportedAt: new Date().toISOString(),
+                pois: pois
+            };
+
+            const json = JSON.stringify(exportData, null, 2);
+            const blob = new Blob([json], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'day-' + DAY_NUMBER + '-poi-export.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        async function saveToContentManager() {
+            const statusEl = document.getElementById('save-status');
+            const saveBtn = document.getElementById('save-btn');
+
+            statusEl.textContent = 'Saving...';
+            statusEl.className = 'save-status loading';
+            saveBtn.disabled = true;
+
+            try {
+                const pois = gatherPOIData();
+
+                const response = await fetch('http://localhost:3001/api/poi/' + DAY_NUMBER, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ pois })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Server returned ' + response.status);
+                }
+
+                const result = await response.json();
+                statusEl.textContent = '✓ Saved!';
+                statusEl.className = 'save-status success';
+
+                setTimeout(() => {
+                    statusEl.textContent = '';
+                    statusEl.className = 'save-status';
+                }, 3000);
+
+            } catch (error) {
+                console.error('Save error:', error);
+                statusEl.textContent = '✗ Failed - is content-manager running?';
+                statusEl.className = 'save-status error';
+            }
+
+            saveBtn.disabled = false;
+        }
+
+        // Auto-save on text changes
+        document.querySelectorAll('.editable').forEach(el => {
+            el.addEventListener('change', saveState);
+            el.addEventListener('blur', saveState);
+        });
+    </script>
+</body>
+</html>

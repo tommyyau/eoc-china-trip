@@ -1,0 +1,43 @@
+{
+  "day": 9,
+  "lastModified": "2025-11-30T12:20:57.869Z",
+  "segments": {
+    "9-1-1764440953795": {
+      "name": "Hike up Shizhong Mountain",
+      "images": [
+        {
+          "id": "custom-1764504869049",
+          "url": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
+          "thumb": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
+          "full": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
+          "alt": "Shizhong Mountain",
+          "photographer": "Custom",
+          "source": "custom"
+        },
+        {
+          "id": "custom-1764505256488",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
+          "alt": "Yangtze River",
+          "photographer": "Custom",
+          "source": "custom"
+        }
+      ]
+    },
+    "9-2-1764440953795": {
+      "name": "Visit Jingdezhen",
+      "images": [
+        {
+          "id": "custom-1764505093569",
+          "url": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
+          "thumb": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
+          "full": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
+          "alt": "Jingdezhen Imperial Kiln Museum",
+          "photographer": "Custom",
+          "source": "custom"
+        }
+      ]
+    }
+  }
+}

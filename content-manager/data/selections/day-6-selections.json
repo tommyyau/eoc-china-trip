@@ -1,0 +1,37 @@
+{
+  "day": 6,
+  "lastModified": "2025-11-30T11:03:35.614Z",
+  "segments": {
+    "6-0-1764440953795": {
+      "name": "Hike along the Badaling Great Wall",
+      "images": [
+        {
+          "id": "pixabay-2190047",
+          "url": "https://pixabay.com/get/g6fcdb4c32ac2686b00a970ef9b7fea9a00cb92170a5908e3fccd86bebd6bd9a9a7b395c0d7527703a3e6df1dda3cc636b8581203312e3a129b51a4cff1d3850f_640.jpg",
+          "thumb": "https://cdn.pixabay.com/photo/2017/03/30/23/36/the-great-wall-2190047_150.jpg",
+          "full": "https://pixabay.com/get/g5a008f08c7729061a85e6871cdcf621846dc3aba495d9814492fb419c5f9a043ba5164b863c8bb5f7c495fc23e2040f4365b12e94febfb9b30dc4df8a2f6fd5f_1280.jpg",
+          "alt": "the great wall, china, badaling, china, china, china, china, china",
+          "photographer": "panayota",
+          "photographerUrl": "https://pixabay.com/users/panayota-4969527/",
+          "source": "pixabay",
+          "sourceUrl": "https://pixabay.com/photos/the-great-wall-china-badaling-2190047/",
+          "width": 6016,
+          "height": 4000
+        },
+        {
+          "id": "pexels-30962084",
+          "url": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+          "thumb": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=350",
+          "full": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg",
+          "alt": "Tourists exploring the Great Wall of China under clear blue skies in winter.",
+          "photographer": "Mario Johnson",
+          "photographerUrl": "https://www.pexels.com/@mario-johnson-949299287",
+          "source": "pexels",
+          "sourceUrl": "https://www.pexels.com/photo/great-wall-of-china-with-tourists-in-winter-sunlight-30962084/",
+          "width": 4032,
+          "height": 3024
+        }
+      ]
+    }
+  }
+}

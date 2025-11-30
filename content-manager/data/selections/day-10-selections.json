@@ -1,0 +1,47 @@
+{
+  "day": 10,
+  "lastModified": "2025-11-30T12:32:26.475Z",
+  "segments": {
+    "10-0-1764440953795": {
+      "name": "Hike in Wuyuan",
+      "images": [
+        {
+          "id": "custom-1764505465447",
+          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
+          "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
+          "full": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
+          "alt": "Wuyuan Jiangling",
+          "photographer": "Custom",
+          "source": "custom"
+        },
+        {
+          "id": "custom-1764505572177",
+          "url": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
+          "thumb": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
+          "full": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
+          "alt": "Jujing Village",
+          "photographer": "Custom",
+          "source": "custom"
+        },
+        {
+          "id": "custom-1764505880832",
+          "url": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
+          "thumb": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
+          "full": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
+          "alt": "Wolong Valley",
+          "photographer": "Custom",
+          "source": "custom"
+        },
+        {
+          "id": "custom-1764505945371",
+          "url": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
+          "thumb": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
+          "full": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
+          "alt": "Moon Bay",
+          "photographer": "Custom",
+          "source": "custom"
+        }
+      ]
+    }
+  }
+}
