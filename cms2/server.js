@@ -11,6 +11,7 @@ const __dirname = path.dirname(__filename)
 // Path to website data files
 const DATA_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'itinerary-v2.json')
 const INFO_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'info-page.json')
+const HOME_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'home-page.json')
 
 // API keys for image search (from .env file)
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY
@@ -100,6 +101,41 @@ app.post('/api/info', (req, res) => {
     res.json({ success: true })
   } catch (error) {
     console.error('Error saving info:', error)
+    res.status(500).json({ error: error.message })
+  }
+})
+
+// ============================================
+// HOME PAGE LOAD/SAVE
+// ============================================
+
+// GET /api/home - Load home page data
+app.get('/api/home', (req, res) => {
+  try {
+    if (!fs.existsSync(HOME_FILE)) {
+      return res.json({ data: null })
+    }
+    const data = JSON.parse(fs.readFileSync(HOME_FILE, 'utf8'))
+    res.json({ data })
+  } catch (error) {
+    console.error('Error loading home:', error)
+    res.status(500).json({ error: error.message })
+  }
+})
+
+// POST /api/home - Save home page data
+app.post('/api/home', (req, res) => {
+  try {
+    const { data } = req.body
+    if (!data) {
+      return res.status(400).json({ error: 'Data is required' })
+    }
+
+    fs.writeFileSync(HOME_FILE, JSON.stringify(data, null, 2))
+    console.log('Saved home to', HOME_FILE)
+    res.json({ success: true })
+  } catch (error) {
+    console.error('Error saving home:', error)
     res.status(500).json({ error: error.message })
   }
 })

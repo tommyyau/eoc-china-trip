@@ -1,9 +1,10 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Save, RefreshCw, Calendar, Info } from 'lucide-react'
+import { Save, RefreshCw, Calendar, Info, Home } from 'lucide-react'
 import DayList from './components/DayList'
 import DayEditor from './components/DayEditor'
 import InfoEditor from './components/InfoEditor'
-import { loadItinerary, saveItinerary, loadInfo, saveInfo, getFromLocalStorage, saveToLocalStorage } from './utils/storage'
+import HomeEditor from './components/HomeEditor'
+import { loadItinerary, saveItinerary, loadInfo, saveInfo, loadHome, saveHome, getFromLocalStorage, saveToLocalStorage } from './utils/storage'
 
 function App() {
   const [activeTab, setActiveTab] = useState('itinerary')
@@ -14,6 +15,8 @@ function App() {
   const [saving, setSaving] = useState(false)
   const [hasChanges, setHasChanges] = useState(false)
   const [hasInfoChanges, setHasInfoChanges] = useState(false)
+  const [homeData, setHomeData] = useState(null)
+  const [hasHomeChanges, setHasHomeChanges] = useState(false)
   const [lastSaved, setLastSaved] = useState(null)
 
   // Load data on mount
@@ -38,6 +41,11 @@ function App() {
         const serverInfoData = await loadInfo()
         if (serverInfoData) {
           setInfoData(serverInfoData)
+        }
+        // Load home page data
+        const serverHomeData = await loadHome()
+        if (serverHomeData) {
+          setHomeData(serverHomeData)
         }
       } catch (err) {
         console.error('Failed to load:', err)
@@ -74,6 +82,9 @@ function App() {
       } else if (activeTab === 'info' && infoData) {
         await saveInfo(infoData)
         setHasInfoChanges(false)
+      } else if (activeTab === 'home' && homeData) {
+        await saveHome(homeData)
+        setHasHomeChanges(false)
       }
       setLastSaved(new Date().toISOString())
     } catch (err) {
@@ -85,7 +96,7 @@ function App() {
 
   // Reload from server (discard local changes)
   const handleReload = async () => {
-    const currentHasChanges = activeTab === 'itinerary' ? hasChanges : hasInfoChanges
+    const currentHasChanges = activeTab === 'itinerary' ? hasChanges : activeTab === 'info' ? hasInfoChanges : hasHomeChanges
     if (currentHasChanges && !confirm('Discard unsaved changes and reload from server?')) {
       return
     }
@@ -99,11 +110,17 @@ function App() {
           setLastSaved(serverData.metadata?.lastModified)
           setHasChanges(false)
         }
-      } else {
+      } else if (activeTab === 'info') {
         const serverInfoData = await loadInfo()
         if (serverInfoData) {
           setInfoData(serverInfoData)
           setHasInfoChanges(false)
+        }
+      } else if (activeTab === 'home') {
+        const serverHomeData = await loadHome()
+        if (serverHomeData) {
+          setHomeData(serverHomeData)
+          setHasHomeChanges(false)
         }
       }
     } catch (err) {
@@ -118,6 +135,12 @@ function App() {
     setHasInfoChanges(true)
   }, [])
 
+  // Update home data
+  const updateHomeData = useCallback((newData) => {
+    setHomeData(newData)
+    setHasHomeChanges(true)
+  }, [])
+
   if (loading) {
     return (
       <div className="loading">
@@ -128,7 +151,7 @@ function App() {
   }
 
   const currentDay = data?.days?.[selectedDay]
-  const currentHasChanges = activeTab === 'itinerary' ? hasChanges : hasInfoChanges
+  const currentHasChanges = activeTab === 'itinerary' ? hasChanges : activeTab === 'info' ? hasInfoChanges : hasHomeChanges
 
   return (
     <div className="app">
@@ -150,6 +173,13 @@ function App() {
               <Info size={16} />
               Info Page
             </button>
+            <button
+              className={`tab ${activeTab === 'home' ? 'active' : ''}`}
+              onClick={() => setActiveTab('home')}
+            >
+              <Home size={16} />
+              Home Page
+            </button>
           </nav>
         </div>
         <div className="header-actions">
@@ -170,7 +200,7 @@ function App() {
         </div>
       </header>
 
-      {activeTab === 'itinerary' ? (
+      {activeTab === 'itinerary' && (
         <div className="main">
           <aside className="sidebar">
             {data && (
@@ -202,7 +232,9 @@ function App() {
             )}
           </main>
         </div>
-      ) : (
+      )}
+
+      {activeTab === 'info' && (
         <div className="main info-main">
           <main className="content full-width">
             {infoData ? (
@@ -210,6 +242,20 @@ function App() {
             ) : (
               <div className="empty-state">
                 <p>No info page data found</p>
+              </div>
+            )}
+          </main>
+        </div>
+      )}
+
+      {activeTab === 'home' && (
+        <div className="main info-main">
+          <main className="content full-width">
+            {homeData ? (
+              <HomeEditor data={homeData} onUpdate={updateHomeData} />
+            ) : (
+              <div className="empty-state">
+                <p>No home page data found</p>
               </div>
             )}
           </main>

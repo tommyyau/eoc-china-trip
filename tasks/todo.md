@@ -137,3 +137,48 @@ Rewrote `china-hiking-tour/src/components/PDFDownload.jsx` with:
 
 ## Review
 The PDF generates successfully with all 16 days, images, and info section. File size is reasonable due to JPEG compression.
+
+---
+
+# Task: Add Home Page to CMS2
+
+## Goal
+Extend CMS2 to manage the Home page content (images, text, stats, destinations).
+
+## Plan
+
+- [x] Create `home-page.json` with editable content extracted from Home.jsx
+- [x] Add API endpoints to server.js for home page (GET/POST /api/home)
+- [x] Add storage functions for home page in storage.js
+- [x] Create `HomeEditor.jsx` component in CMS2
+- [x] Add Home tab to CMS2 App.jsx
+- [x] Update Home.jsx to load content from CMS data file
+
+## Files Created
+- `china-hiking-tour/src/data/home-page.json` - Home page content (hero, intro, stats, map, destinations, CTA)
+- `cms2/src/components/HomeEditor.jsx` - Editor with collapsible sections for all home page content
+
+## Files Modified
+- `cms2/server.js` - Added GET/POST `/api/home` endpoints
+- `cms2/src/utils/storage.js` - Added `loadHome()` and `saveHome()` functions
+- `cms2/src/App.jsx` - Added Home tab and state management for home data
+- `china-hiking-tour/src/pages/Home.jsx` - Now loads all content from `home-page.json`
+
+## Review
+
+**Summary:**
+Extended the CMS2 system to support editing the Home page. All three website pages (Home, Itinerary, Info) are now editable through CMS2.
+
+**Home Page Editor Features:**
+- Collapsible sections for: Hero, Introduction, Stats, Map, Destinations, CTA
+- Image search integration for hero and CTA background images
+- Editable destination cards with image, color picker, and day range
+- All content is bilingual (English/Chinese)
+
+**How to Use:**
+```bash
+cd cms2
+npm run dev
+# Opens at http://localhost:5177
+# Click "Home Page" tab to edit home content
+```

@@ -16,55 +16,17 @@ import ScrollReveal from '../components/effects/ScrollReveal';
 import InteractiveMap from '../components/map/InteractiveMap';
 import StatCounter from '../components/ui/StatCounter';
 import SectionDivider from '../components/ui/SectionDivider';
-import { destinationRegions, routeCoordinates, tripStats } from '../data/destinationRegions';
+import { routeCoordinates } from '../data/destinationRegions';
+import homeData from '../data/home-page.json';
 
 const Home = () => {
     const { language } = useLanguage();
 
-    const content = {
-        en: {
-            heroTitle: "China Hiking Tour 2026",
-            heroSubtitle: "15 days of adventure through ancient wonders and majestic mountains",
-            heroDate: "May 8-22, 2026",
-            heroCta: "View Itinerary",
-            heroCtaSecondary: "Learn More",
-            introTitle: "A Journey Like No Other",
-            introText: "Join us on an unforgettable hiking adventure through China's most spectacular landscapes. From the ancient Terracotta Warriors to the sacred peaks of Mount Tai, experience the perfect blend of culture, nature, and adventure.",
-            mapTitle: "Your Journey",
-            mapSubtitle: "Explore the route through five incredible destinations",
-            destinationsTitle: "Destinations",
-            statsTitle: "Trip Highlights",
-            statDays: "Days",
-            statDestinations: "Destinations",
-            statHikingKm: "km Hiking",
-            statElevation: "m Elevation",
-            ctaTitle: "Ready for Adventure?",
-            ctaText: "Join fellow hiking enthusiasts on this once-in-a-lifetime journey through China.",
-            ctaButton: "View Full Itinerary"
-        },
-        cn: {
-            heroTitle: "2026中国徒步之旅",
-            heroSubtitle: "15天穿越古老奇迹与雄伟山脉的冒险之旅",
-            heroDate: "2026年5月8日-22日",
-            heroCta: "查看行程",
-            heroCtaSecondary: "了解更多",
-            introTitle: "独一无二的旅程",
-            introText: "开启一段穿越中国最壮观景观的难忘徒步冒险。从古老的兵马俑到神圣的泰山之巅，体验文化、自然与冒险的完美融合。",
-            mapTitle: "您的旅程",
-            mapSubtitle: "探索穿越五个精彩目的地的路线",
-            destinationsTitle: "目的地",
-            statsTitle: "行程亮点",
-            statDays: "天",
-            statDestinations: "个目的地",
-            statHikingKm: "公里徒步",
-            statElevation: "米海拔",
-            ctaTitle: "准备好冒险了吗？",
-            ctaText: "与徒步爱好者们一起，开启这段一生一次的中国之旅。",
-            ctaButton: "查看完整行程"
-        }
-    };
+    // Helper to get text from CMS data
+    const t = (field) => field?.[language] || field?.en || '';
 
-    const t = content[language];
+    // Get destinations for the map
+    const destinations = homeData.destinations?.items || [];
 
     return (
         <div style={{ marginTop: '-80px' }}>
@@ -96,7 +58,7 @@ const Home = () => {
                         style={{
                             width: '100%',
                             height: '140%',
-                            backgroundImage: 'url(https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop)',
+                            backgroundImage: `url(${homeData.hero?.backgroundImage || 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop'})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
                         }}
@@ -144,7 +106,7 @@ const Home = () => {
                         }}
                     >
                         <Calendar size={16} />
-                        {t.heroDate}
+                        {t(homeData.hero?.date)}
                     </motion.div>
 
                     <h1
@@ -156,7 +118,7 @@ const Home = () => {
                             lineHeight: 1.1
                         }}
                     >
-                        {t.heroTitle}
+                        {t(homeData.hero?.title)}
                     </h1>
 
                     <p
@@ -169,7 +131,7 @@ const Home = () => {
                             lineHeight: 1.5
                         }}
                     >
-                        {t.heroSubtitle}
+                        {t(homeData.hero?.subtitle)}
                     </p>
 
                     <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
@@ -178,7 +140,7 @@ const Home = () => {
                             className="btn btn-primary"
                             style={{ fontSize: '1.1rem', padding: '1rem 2rem' }}
                         >
-                            {t.heroCta}
+                            {t(homeData.hero?.ctaPrimary)}
                             <ArrowRight size={20} />
                         </Link>
                         <Link
@@ -186,7 +148,7 @@ const Home = () => {
                             className="btn btn-outline-light"
                             style={{ fontSize: '1.1rem', padding: '1rem 2rem' }}
                         >
-                            {t.heroCtaSecondary}
+                            {t(homeData.hero?.ctaSecondary)}
                         </Link>
                     </div>
                 </motion.div>
@@ -218,11 +180,11 @@ const Home = () => {
             <section style={{ padding: 'var(--spacing-2xl) 0', backgroundColor: 'var(--warm-white)' }}>
                 <div className="container" style={{ textAlign: 'center', maxWidth: '800px' }}>
                     <ScrollReveal>
-                        <h2 style={{ marginBottom: '1.5rem' }}>{t.introTitle}</h2>
+                        <h2 style={{ marginBottom: '1.5rem' }}>{t(homeData.intro?.title)}</h2>
                     </ScrollReveal>
                     <ScrollReveal delay={0.2}>
                         <p style={{ fontSize: '1.15rem', lineHeight: 1.8 }}>
-                            {t.introText}
+                            {t(homeData.intro?.text)}
                         </p>
                     </ScrollReveal>
                 </div>
@@ -239,30 +201,30 @@ const Home = () => {
                         }}
                     >
                         <StatCounter
-                            end={tripStats.days}
+                            end={homeData.stats?.days || 15}
                             suffix=""
-                            label={t.statDays}
+                            label={t(homeData.stats?.labels?.days)}
                             icon={Calendar}
                             color="white"
                         />
                         <StatCounter
-                            end={tripStats.destinations}
+                            end={homeData.stats?.destinations || 5}
                             suffix=""
-                            label={t.statDestinations}
+                            label={t(homeData.stats?.labels?.destinations)}
                             icon={MapPin}
                             color="white"
                         />
                         <StatCounter
-                            end={tripStats.hikingKm}
+                            end={homeData.stats?.hikingKm || 100}
                             suffix="+"
-                            label={t.statHikingKm}
+                            label={t(homeData.stats?.labels?.hikingKm)}
                             icon={Footprints}
                             color="white"
                         />
                         <StatCounter
-                            end={tripStats.elevation}
+                            end={homeData.stats?.elevation || 4500}
                             suffix="+"
-                            label={t.statElevation}
+                            label={t(homeData.stats?.labels?.elevation)}
                             icon={TrendingUp}
                             color="white"
                         />
@@ -275,14 +237,14 @@ const Home = () => {
                 <div className="container">
                     <ScrollReveal>
                         <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                            <h2>{t.mapTitle}</h2>
-                            <p style={{ maxWidth: '600px', margin: '0 auto' }}>{t.mapSubtitle}</p>
+                            <h2>{t(homeData.map?.title)}</h2>
+                            <p style={{ maxWidth: '600px', margin: '0 auto' }}>{t(homeData.map?.subtitle)}</p>
                         </div>
                     </ScrollReveal>
 
                     <ScrollReveal delay={0.2}>
                         <InteractiveMap
-                            destinations={destinationRegions}
+                            destinations={destinations}
                             routeCoordinates={routeCoordinates}
                             height="500px"
                             animateRoute={false}
@@ -299,7 +261,7 @@ const Home = () => {
                 <div className="container">
                     <ScrollReveal>
                         <h2 style={{ textAlign: 'center', marginBottom: 'var(--spacing-lg)' }}>
-                            {t.destinationsTitle}
+                            {t(homeData.destinations?.title)}
                         </h2>
                     </ScrollReveal>
 
@@ -310,7 +272,7 @@ const Home = () => {
                             gap: '1.5rem'
                         }}
                     >
-                        {destinationRegions.map((destination, index) => (
+                        {destinations.map((destination, index) => (
                             <ScrollReveal key={destination.id} delay={index * 0.1}>
                                 <Link to="/itinerary" style={{ textDecoration: 'none' }}>
                                     <div
@@ -326,7 +288,7 @@ const Home = () => {
                                     >
                                         <img
                                             src={destination.heroImage}
-                                            alt={destination.name[language]}
+                                            alt={t(destination.name)}
                                             loading="lazy"
                                             style={{
                                                 width: '100%',
@@ -372,7 +334,7 @@ const Home = () => {
                                                     textShadow: '0 2px 8px rgba(0,0,0,0.8)'
                                                 }}
                                             >
-                                                {destination.name[language]}
+                                                {t(destination.name)}
                                             </h3>
                                             <p
                                                 style={{
@@ -384,7 +346,7 @@ const Home = () => {
                                                     textShadow: '0 1px 4px rgba(0,0,0,0.8)'
                                                 }}
                                             >
-                                                {destination.description[language]}
+                                                {t(destination.description)}
                                             </p>
                                         </div>
                                     </div>
@@ -418,7 +380,7 @@ const Home = () => {
                         style={{
                             width: '100%',
                             height: '140%',
-                            backgroundImage: 'url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop)',
+                            backgroundImage: `url(${homeData.cta?.backgroundImage || 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop'})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
                         }}
@@ -444,7 +406,7 @@ const Home = () => {
                     <ScrollReveal>
                         <Compass size={48} style={{ marginBottom: '1rem', opacity: 0.9 }} />
                         <h2 style={{ color: 'white', fontSize: 'clamp(2rem, 4vw, 2.75rem)' }}>
-                            {t.ctaTitle}
+                            {t(homeData.cta?.title)}
                         </h2>
                     </ScrollReveal>
                     <ScrollReveal delay={0.2}>
@@ -457,7 +419,7 @@ const Home = () => {
                                 color: 'white'
                             }}
                         >
-                            {t.ctaText}
+                            {t(homeData.cta?.text)}
                         </p>
                     </ScrollReveal>
                     <ScrollReveal delay={0.4}>
@@ -466,7 +428,7 @@ const Home = () => {
                             className="btn btn-light"
                             style={{ fontSize: '1.1rem', padding: '1rem 2.5rem' }}
                         >
-                            {t.ctaButton}
+                            {t(homeData.cta?.button)}
                             <ArrowRight size={20} />
                         </Link>
                     </ScrollReveal>

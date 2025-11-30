@@ -7,7 +7,7 @@ import { destinationRegions } from '../data/destinationRegions';
 import ItineraryCard from '../components/ItineraryCard';
 import { useLanguage } from '../context/LanguageContext';
 import PDFDownload from '../components/PDFDownload';
-import InterestForm from '../components/InterestForm';
+// import InterestForm from '../components/InterestForm'; // TODO: Re-enable when form backend is connected
 import ScrollReveal from '../components/effects/ScrollReveal';
 import SectionDivider from '../components/ui/SectionDivider';
 
@@ -249,7 +249,7 @@ const Itinerary = () => {
                 );
             })}
 
-            {/* ===== INTEREST FORM SECTION ===== */}
+            {/* ===== INTEREST FORM SECTION (HIDDEN - TODO: Re-enable when form backend is connected) =====
             <section
                 style={{
                     padding: 'var(--spacing-2xl) 0',
@@ -271,6 +271,7 @@ const Itinerary = () => {
                     </ScrollReveal>
                 </div>
             </section>
+            ===== */}
         </div>
     );
 };
