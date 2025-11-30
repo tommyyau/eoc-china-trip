@@ -2,13 +2,12 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Parallax } from 'react-scroll-parallax';
 import { ChevronDown, Download } from 'lucide-react';
-import { itineraryData } from '../data/itineraryData';
+import { itineraryData } from '../data/cmsData';
 import { destinationRegions } from '../data/destinationRegions';
 import ItineraryCard from '../components/ItineraryCard';
 import { useLanguage } from '../context/LanguageContext';
 import PDFDownload from '../components/PDFDownload';
 import InterestForm from '../components/InterestForm';
-import FloatingNav from '../components/ui/FloatingNav';
 import ScrollReveal from '../components/effects/ScrollReveal';
 import SectionDivider from '../components/ui/SectionDivider';
 
@@ -41,9 +40,6 @@ const Itinerary = () => {
 
     return (
         <div style={{ marginTop: '-80px' }}>
-            {/* Floating Navigation */}
-            <FloatingNav days={itineraryData.map(d => d.day)} />
-
             {/* ===== HERO SECTION ===== */}
             <section
                 style={{

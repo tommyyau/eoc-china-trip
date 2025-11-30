@@ -271,7 +271,7 @@ const Layout = ({ children }) => {
                                 margin: 0,
                                 fontWeight: 800
                             }}>
-                                {language === 'en' ? 'Ealing Outdoor Club' : '伊灵户外俱乐部'}
+                                {language === 'en' ? 'China Hiking Tour' : '中国徒步之旅'}
                             </h3>
                         </div>
                         <p style={{
@@ -315,7 +315,7 @@ const Layout = ({ children }) => {
                         fontSize: '0.875rem'
                     }}>
                         <p style={{ marginBottom: 0 }}>
-                            © 2025 Ealing Outdoor Club. {language === 'en' ? 'All rights reserved.' : '版权所有。'}
+                            © 2025 China Hiking Tour. {language === 'en' ? 'All rights reserved.' : '版权所有。'}
                         </p>
                     </div>
                 </div>

@@ -28,7 +28,7 @@ export const destinationRegions = [
     {
         id: "lushan",
         name: { en: "Lushan Region", cn: "庐山地区" },
-        days: [7, 8, 9, 10, 11],
+        days: [7, 8, 9, 10],
         coordinates: [29.5628, 115.9928],
         heroImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
         description: {
@@ -37,6 +37,19 @@ export const destinationRegions = [
         },
         color: "#388E3C",
         highlights: { en: ["Lushan Summit", "Jingdezhen Ceramics", "Wuyuan Villages"], cn: ["庐山顶峰", "景德镇陶瓷", "婺源村落"] }
+    },
+    {
+        id: "shangrao",
+        name: { en: "Shangrao", cn: "上饶" },
+        days: [11],
+        coordinates: [28.4549, 117.9432],
+        heroImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+        description: {
+            en: "Gateway to Mount Sanqing, featuring stunning natural scenery and ancient Taoist heritage",
+            cn: "三清山门户，拥有壮丽的自然风光和古老的道教文化"
+        },
+        color: "#FF7043",
+        highlights: { en: ["Mount Sanqing", "Natural Scenery"], cn: ["三清山", "自然风光"] }
     },
     {
         id: "taishan",

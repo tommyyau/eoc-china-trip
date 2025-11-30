@@ -2,7 +2,7 @@
   "days": [
     {
       "day": 0,
-      "date": "May 17",
+      "date": "May 8",
       "title": "Departure from Heathrow",
       "location": "Heathrow",
       "segments": [
@@ -65,7 +65,7 @@
     },
     {
       "day": 1,
-      "date": "May 18",
+      "date": "May 9",
       "title": "Arrival in Xi'an",
       "location": "Xi'an",
       "segments": [
@@ -178,7 +178,7 @@
     },
     {
       "day": 2,
-      "date": "May 19",
+      "date": "May 10",
       "title": "Xi'an City Walk & Ancient Wall",
       "location": "Xi'an",
       "segments": [
@@ -357,7 +357,7 @@
     },
     {
       "day": 3,
-      "date": "May 20",
+      "date": "May 11",
       "title": "Terracotta Warriors & Daming Palace National Heritage Park",
       "location": "Xi'an",
       "segments": [
@@ -498,7 +498,7 @@
     },
     {
       "day": 4,
-      "date": "May 21",
+      "date": "May 12",
       "title": "Beilin Museum & Travel to Beijing",
       "location": "Xi'an to Beijing",
       "segments": [
@@ -655,7 +655,7 @@
     },
     {
       "day": 5,
-      "date": "May 22",
+      "date": "May 13",
       "title": "Forbidden City, National Botanical Garden & Happy Forest Hike",
       "location": "Beijing",
       "segments": [
@@ -790,7 +790,7 @@
     },
     {
       "day": 6,
-      "date": "May 23",
+      "date": "May 14",
       "title": "Hike along the Badaling Great Wall",
       "location": "Great Wall, Beijing",
       "segments": [
@@ -889,7 +889,7 @@
     },
     {
       "day": 7,
-      "date": "May 24",
+      "date": "May 15",
       "title": "Arrival in Lushan",
       "location": "Lushan",
       "segments": [
@@ -1046,7 +1046,7 @@
     },
     {
       "day": 8,
-      "date": "May 25",
+      "date": "May 16",
       "title": "Summit Hike on Lushan - Exact Hike TBC",
       "location": "Lushan",
       "segments": [
@@ -1161,7 +1161,7 @@
     },
     {
       "day": 9,
-      "date": "May 26",
+      "date": "May 17",
       "title": "Mount Shizhong & Jingdezhen",
       "location": "Jingdezhen",
       "segments": [
@@ -1330,7 +1330,7 @@
     },
     {
       "day": 10,
-      "date": "May 27",
+      "date": "May 18",
       "title": "Wuyuan Rural Landscapes",
       "location": "Wuyuan",
       "segments": [
@@ -1467,7 +1467,7 @@
     },
     {
       "day": 11,
-      "date": "May 28",
+      "date": "May 19",
       "title": "Huangling & Wangxian Valley",
       "location": "Wuyuan to Wangxian Valley",
       "segments": [
@@ -1636,7 +1636,7 @@
     },
     {
       "day": 12,
-      "date": "May 29",
+      "date": "May 20",
       "title": "Journey to Mount Tai",
       "location": "Tai'An",
       "segments": [
@@ -1755,7 +1755,7 @@
     },
     {
       "day": 13,
-      "date": "May 30",
+      "date": "May 21",
       "title": "Ascending Mount Tai",
       "location": "Mount Tai",
       "segments": [
@@ -1908,7 +1908,7 @@
     },
     {
       "day": 14,
-      "date": "May 31",
+      "date": "May 22",
       "title": "Confucian Culture in Qufu",
       "location": "Qufu",
       "segments": [
@@ -2079,7 +2079,7 @@
     },
     {
       "day": 15,
-      "date": "June 1",
+      "date": "May 23",
       "title": "Departure",
       "location": "Qingdao",
       "segments": [

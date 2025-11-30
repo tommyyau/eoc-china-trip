@@ -29,7 +29,7 @@ const Home = () => {
             heroCta: "View Itinerary",
             heroCtaSecondary: "Learn More",
             introTitle: "A Journey Like No Other",
-            introText: "Join the Ealing Outdoor Club on an unforgettable hiking adventure through China's most spectacular landscapes. From the ancient Terracotta Warriors to the sacred peaks of Mount Tai, experience the perfect blend of culture, nature, and adventure.",
+            introText: "Join us on an unforgettable hiking adventure through China's most spectacular landscapes. From the ancient Terracotta Warriors to the sacred peaks of Mount Tai, experience the perfect blend of culture, nature, and adventure.",
             mapTitle: "Your Journey",
             mapSubtitle: "Explore the route through five incredible destinations",
             destinationsTitle: "Destinations",
@@ -39,7 +39,7 @@ const Home = () => {
             statHikingKm: "km Hiking",
             statElevation: "m Elevation",
             ctaTitle: "Ready for Adventure?",
-            ctaText: "Join fellow hiking enthusiasts from the Ealing Outdoor Club on this once-in-a-lifetime journey through China.",
+            ctaText: "Join fellow hiking enthusiasts on this once-in-a-lifetime journey through China.",
             ctaButton: "View Full Itinerary"
         },
         cn: {
@@ -49,7 +49,7 @@ const Home = () => {
             heroCta: "查看行程",
             heroCtaSecondary: "了解更多",
             introTitle: "独一无二的旅程",
-            introText: "加入伊灵户外俱乐部，开启一段穿越中国最壮观景观的难忘徒步冒险。从古老的兵马俑到神圣的泰山之巅，体验文化、自然与冒险的完美融合。",
+            introText: "开启一段穿越中国最壮观景观的难忘徒步冒险。从古老的兵马俑到神圣的泰山之巅，体验文化、自然与冒险的完美融合。",
             mapTitle: "您的旅程",
             mapSubtitle: "探索穿越五个精彩目的地的路线",
             destinationsTitle: "目的地",
@@ -59,7 +59,7 @@ const Home = () => {
             statHikingKm: "公里徒步",
             statElevation: "米海拔",
             ctaTitle: "准备好冒险了吗？",
-            ctaText: "与伊灵户外俱乐部的徒步爱好者们一起，开启这段一生一次的中国之旅。",
+            ctaText: "与徒步爱好者们一起，开启这段一生一次的中国之旅。",
             ctaButton: "查看完整行程"
         }
     };

@@ -4,74 +4,27 @@ import { Parallax } from 'react-scroll-parallax';
 import { FileText, CreditCard, CheckCircle, XCircle, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import ScrollReveal from '../components/effects/ScrollReveal';
+import infoData from '../data/info-page.json';
 
 const Info = () => {
     const { language } = useLanguage();
 
-    const t = {
-        en: {
-            title: "Essential Information",
-            subtitle: "Everything you need to know about visas, costs, and trip inclusions",
-            visaTitle: "Group Visa Information",
-            visaItems: [
-                "Visa Type: Group visa (all members must enter and exit together)",
-                "Validity: 30 days",
-                "Document Submission: 40 days before departure",
-                "Visa Fee: USD $130 (approx. £100)",
-                "Note: Original passports are NOT required, only photocopies."
-            ],
-            costTitle: "Cost & Inclusions",
-            costPrice: "Reference Price: Approx. £1,600 per person (double occupancy)",
-            includesTitle: "Includes",
-            excludesTitle: "Excludes",
-            costIncludes: [
-                "Accommodation: 13 nights (mainly 4-star)",
-                "Meals: 3 meals per day",
-                "Transportation: Dedicated bus + High-speed rail",
-                "Services: English/Chinese guides, mountain guide",
-                "Tickets: All entry tickets listed",
-                "Insurance: Travel agency liability + outdoor accident insurance"
-            ],
-            costExcludes: [
-                "International round-trip airfare",
-                "Single room supplement (£455-£585)",
-                "Personal expenses",
-                "Visa fees"
-            ]
-        },
-        cn: {
-            title: "重要信息",
-            subtitle: "关于签证、费用和行程包含内容的所有信息",
-            visaTitle: "团体签证信息",
-            visaItems: [
-                "签证类型：团体签证（所有成员必须同进同出）",
-                "有效期：30天",
-                "文件提交：出发前40天",
-                "签证费：130美元（约100英镑）",
-                "注意：不需要护照原件，只需复印件。"
-            ],
-            costTitle: "费用与包含",
-            costPrice: "参考价格：约 £1,600 每人（双人入住）",
-            includesTitle: "包含",
-            excludesTitle: "不包含",
-            costIncludes: [
-                "住宿：13晚（主要是4星级）",
-                "餐饮：每日3餐",
-                "交通：专用巴士 + 高铁",
-                "服务：中英文导游，登山向导",
-                "门票：行程所列所有门票",
-                "保险：旅行社责任险 + 户外意外险"
-            ],
-            costExcludes: [
-                "国际往返机票",
-                "单房差 (£455-£585)",
-                "个人消费",
-                "签证费"
-            ]
-        }
-    };
+    // Helper to get localized text from bilingual object
+    const getText = (obj) => obj?.[language] || obj?.en || '';
 
-    const content = t[language];
+    // Build content from JSON data
+    const content = {
+        title: getText(infoData.hero?.title),
+        subtitle: getText(infoData.hero?.subtitle),
+        visaTitle: getText(infoData.visa?.title),
+        visaItems: infoData.visa?.items?.map(item => getText(item)) || [],
+        costTitle: getText(infoData.cost?.title),
+        costPrice: getText(infoData.cost?.price),
+        includesTitle: getText(infoData.cost?.includesTitle),
+        excludesTitle: getText(infoData.cost?.excludesTitle),
+        costIncludes: infoData.cost?.includes?.map(item => getText(item)) || [],
+        costExcludes: infoData.cost?.excludes?.map(item => getText(item)) || []
+    };
 
     return (
         <div style={{ marginTop: '-80px' }}>

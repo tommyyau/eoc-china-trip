@@ -3,12 +3,55 @@ import { MapPin, Calendar, Utensils, Home } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import ImageCarousel from './media/ImageCarousel';
 import ScrollReveal from './effects/ScrollReveal';
+import DayTimeline from './timeline/DayTimeline';
 
 const ItineraryCard = ({ day, index = 0 }) => {
     const { language } = useLanguage();
 
+    // Support both CMS format (strings) and old format (language objects)
+    const getLocalizedValue = (value) => {
+        if (!value) return '';
+        if (typeof value === 'string') return value;
+        if (typeof value === 'object' && value[language]) return value[language];
+        if (typeof value === 'object' && value.en) return value.en;
+        return '';
+    };
+
+    const title = getLocalizedValue(day.title);
+    const location = getLocalizedValue(day.location);
+    const description = getLocalizedValue(day.description);
+
+    // Get highlights - support both array and language object
+    const getHighlights = () => {
+        if (!day.highlights) return [];
+        if (Array.isArray(day.highlights)) return day.highlights;
+        if (day.highlights[language]) return day.highlights[language];
+        return [];
+    };
+    const highlights = getHighlights();
+
+    // Get meals - support both string and language object
+    const meals = getLocalizedValue(day.meals);
+
+    // Get accommodation display - support both CMS object and old string format
+    const getAccommodationDisplay = () => {
+        if (!day.accommodation) return '';
+        if (typeof day.accommodation === 'string') return day.accommodation;
+        if (day.accommodation.name) {
+            return day.accommodation.rating
+                ? `${day.accommodation.name} (${day.accommodation.rating})`
+                : day.accommodation.name;
+        }
+        if (day.accommodation[language]) return day.accommodation[language];
+        return '';
+    };
+    const accommodationDisplay = getAccommodationDisplay();
+
     // Support both old single image and new images array format
-    const images = day.images || (day.image ? [{ src: day.image, alt: day.location }] : []);
+    const images = day.images || (day.image ? [{ src: day.image, alt: location }] : []);
+
+    // Check if we have segments (CMS data) for timeline view
+    const hasSegments = day.segments && day.segments.length > 0;
 
     return (
         <ScrollReveal delay={index * 0.05} variant="fadeUp">
@@ -24,8 +67,8 @@ const ItineraryCard = ({ day, index = 0 }) => {
                     transition: 'all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
                 }}
             >
-                {/* Image Carousel Section */}
-                {images.length > 0 && (
+                {/* Featured Image - only show if no segments (fallback) or has images */}
+                {!hasSegments && images.length > 0 && (
                     <div style={{ position: 'relative' }}>
                         <ImageCarousel
                             images={images}
@@ -58,6 +101,22 @@ const ItineraryCard = ({ day, index = 0 }) => {
 
                 {/* Content Section */}
                 <div style={{ padding: '2rem' }}>
+                    {/* Day Badge (inline when using timeline view) */}
+                    {hasSegments && (
+                        <div style={{
+                            display: 'inline-block',
+                            background: 'var(--primary-red)',
+                            color: 'white',
+                            padding: '0.5rem 1rem',
+                            borderRadius: 'var(--radius-md)',
+                            fontWeight: 700,
+                            fontSize: '0.9rem',
+                            marginBottom: '1rem',
+                        }}>
+                            {language === 'en' ? `Day ${day.day}` : `第${day.day}天`}
+                        </div>
+                    )}
+
                     {/* Date & Title Row */}
                     <div style={{ marginBottom: '1rem' }}>
                         <div style={{
@@ -71,11 +130,11 @@ const ItineraryCard = ({ day, index = 0 }) => {
                         }}>
                             <Calendar size={16} strokeWidth={2.5} />
                             <span>{day.date}</span>
-                            {day.location && (
+                            {location && (
                                 <>
                                     <span style={{ color: 'var(--border-color)' }}>•</span>
                                     <MapPin size={16} strokeWidth={2.5} />
-                                    <span>{day.location[language]}</span>
+                                    <span>{location}</span>
                                 </>
                             )}
                         </div>
@@ -87,48 +146,60 @@ const ItineraryCard = ({ day, index = 0 }) => {
                             fontWeight: 700,
                             lineHeight: 1.3
                         }}>
-                            {day.title[language]}
+                            {title}
                         </h3>
                     </div>
 
-                    {/* Description */}
-                    <p style={{
-                        color: 'var(--text-medium)',
-                        lineHeight: '1.8',
-                        marginBottom: '1.5rem',
-                        fontSize: '1rem'
-                    }}>
-                        {day.description[language]}
-                    </p>
+                    {/* Timeline View (if segments available) */}
+                    {hasSegments ? (
+                        <DayTimeline
+                            segments={day.segments}
+                            pointsOfInterest={day.pointsOfInterest}
+                        />
+                    ) : (
+                        <>
+                            {/* Legacy Description */}
+                            {description && (
+                                <p style={{
+                                    color: 'var(--text-medium)',
+                                    lineHeight: '1.8',
+                                    marginBottom: '1.5rem',
+                                    fontSize: '1rem'
+                                }}>
+                                    {description}
+                                </p>
+                            )}
 
-                    {/* Highlights */}
-                    {day.highlights && day.highlights[language] && day.highlights[language].length > 0 && (
-                        <div style={{ marginBottom: '1.5rem' }}>
-                            <div style={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                gap: '0.5rem'
-                            }}>
-                                {day.highlights[language].map((highlight, idx) => (
-                                    <span
-                                        key={idx}
-                                        style={{
-                                            display: 'inline-flex',
-                                            alignItems: 'center',
-                                            padding: '0.375rem 0.875rem',
-                                            backgroundColor: 'var(--off-white)',
-                                            borderRadius: 'var(--radius-md)',
-                                            fontSize: '0.875rem',
-                                            fontWeight: 500,
-                                            color: 'var(--text-dark)',
-                                            border: '1px solid var(--border-color)'
-                                        }}
-                                    >
-                                        {highlight}
-                                    </span>
-                                ))}
-                            </div>
-                        </div>
+                            {/* Legacy Highlights */}
+                            {highlights.length > 0 && (
+                                <div style={{ marginBottom: '1.5rem' }}>
+                                    <div style={{
+                                        display: 'flex',
+                                        flexWrap: 'wrap',
+                                        gap: '0.5rem'
+                                    }}>
+                                        {highlights.map((highlight, idx) => (
+                                            <span
+                                                key={idx}
+                                                style={{
+                                                    display: 'inline-flex',
+                                                    alignItems: 'center',
+                                                    padding: '0.375rem 0.875rem',
+                                                    backgroundColor: 'var(--off-white)',
+                                                    borderRadius: 'var(--radius-md)',
+                                                    fontSize: '0.875rem',
+                                                    fontWeight: 500,
+                                                    color: 'var(--text-dark)',
+                                                    border: '1px solid var(--border-color)'
+                                                }}
+                                            >
+                                                {highlight}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+                        </>
                     )}
 
                     {/* Bottom Info - Meals & Accommodation */}
@@ -140,7 +211,7 @@ const ItineraryCard = ({ day, index = 0 }) => {
                         borderTop: '1px solid var(--border-color)'
                     }}>
                         {/* Meals */}
-                        {day.meals && day.meals[language] && (
+                        {meals && (
                             <div style={{
                                 display: 'flex',
                                 alignItems: 'center',
@@ -161,24 +232,24 @@ const ItineraryCard = ({ day, index = 0 }) => {
                                         {language === 'en' ? 'Meals' : '餐食'}
                                     </div>
                                     <div style={{ fontSize: '0.9rem', color: 'var(--text-dark)', fontWeight: 500 }}>
-                                        {day.meals[language]}
+                                        {meals}
                                     </div>
                                 </div>
                             </div>
                         )}
 
                         {/* Accommodation */}
-                        {day.accommodation && day.accommodation[language] && day.accommodation[language] !== 'N/A' && day.accommodation[language] !== '无' && (
+                        {accommodationDisplay && accommodationDisplay !== 'N/A' && accommodationDisplay !== '无' && (
                             <div style={{
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: '0.75rem',
                                 padding: '0.75rem 1rem',
                                 backgroundColor: 'rgba(56, 142, 60, 0.08)',
-                                borderRadius: 'var(--radius-md)'
+                                borderRadius: 'var(--radius-md)',
                             }}>
                                 <Home size={18} style={{ color: 'var(--success-green)', flexShrink: 0 }} />
-                                <div>
+                                <div style={{ flex: 1 }}>
                                     <div style={{
                                         fontSize: '0.75rem',
                                         fontWeight: 600,
@@ -189,7 +260,7 @@ const ItineraryCard = ({ day, index = 0 }) => {
                                         {language === 'en' ? 'Stay' : '住宿'}
                                     </div>
                                     <div style={{ fontSize: '0.9rem', color: 'var(--text-dark)', fontWeight: 500 }}>
-                                        {day.accommodation[language]}
+                                        {accommodationDisplay}
                                     </div>
                                 </div>
                             </div>

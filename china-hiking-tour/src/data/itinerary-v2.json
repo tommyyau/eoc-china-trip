@@ -1,0 +1,1733 @@
+{
+  "metadata": {
+    "version": 2,
+    "exportedFrom": "CMS1",
+    "exportedAt": "2025-11-30T15:25:23.048Z",
+    "lastModified": "2025-11-30T20:02:41.838Z"
+  },
+  "days": [
+    {
+      "day": 0,
+      "date": "May 8",
+      "title": "Departure from London Heathrow",
+      "location": "Heathrow",
+      "region": "xian",
+      "description": "Flight from Heathrow to Xi'an.",
+      "segments": [
+        {
+          "id": "0-0-1764440953795",
+          "time": "Night",
+          "type": "transfer",
+          "title": "Flight to Xi'an",
+          "description": "Flight from Heathrow, Direct flights on this route are generally operated by Tianjin Airlines or Hainan Airlines.\n \nDeparture Time: The flight typically departs in the evening/night, around 21:50 (9:50 PM) local London time. Arrival Time: The flight arrives in Xi'an the next afternoon, around 16:15 (4:15 PM) local time. Duration: The flight time is about 10 hours and 25 minutes.",
+          "duration": "10 hours 25 minutes",
+          "location": "Heathrow to Xi'an",
+          "mode": "flight",
+          "from": "Heathrow",
+          "to": "Xi'an",
+          "walkDetails": null,
+          "highlights": [
+            "Direct flight operated by Tianjin Airlines or Hainan Airlines"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "",
+      "accommodation": {
+        "name": "",
+        "rating": ""
+      }
+    },
+    {
+      "day": 1,
+      "date": "May 9",
+      "title": "Arrival in Xi'an",
+      "location": "Xi'an",
+      "region": "xian",
+      "description": "Arrive at Xi'an Xianyang International Airport. You will be met by our professional English-speaking guide and transferred to the city center. If time permits, we will visit the Big Wild Goose Pagoda, a masterpiece of Buddhist architecture. Check in at the Eastern House Xi'an.",
+      "segments": [
+        {
+          "id": "1-0-1764440953795",
+          "time": "Afternoon",
+          "type": "transfer",
+          "title": "Meet the Guide & Transfer to Xi'an City",
+          "description": "Meet our English-speaking guide at the airport, and we will transfer onto a coach to the city center, where we will stay at the Eastern House Boutique Hotel.\n\nThe expected arrival time is 16:15 + Time Through Customs and Luggage Collection. Assume that we will leave the airport around 17:15.",
+          "duration": "1 Hour",
+          "location": "Xi'an Airport to Xi'an City",
+          "mode": "coach",
+          "from": "Xi'an Airport",
+          "to": "Xi'an City",
+          "walkDetails": null,
+          "highlights": [
+            "Met by professional English speaking guide"
+          ],
+          "images": [
+            {
+              "id": 2555390,
+              "src": "https://images.pexels.com/photos/2555390/pexels-photo-2555390.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/2555390/pexels-photo-2555390.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/2555390/pexels-photo-2555390.jpeg",
+              "alt": "Airplane tailfin and control tower in view at a busy airport terminal.",
+              "photographer": "MELANIO SALOME JR. PECH",
+              "photographerUrl": "https://www.pexels.com/@melanio-salome-jr-pech-836506",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/green-and-gray-airport-2555390/"
+            }
+          ]
+        },
+        {
+          "id": "1-2-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Eastern House Boutique / Dinner",
+          "description": "Eastern House Xi’an is a boutique-style hotel in the heart of Xi’an.\n\nIt is very centrally located — within walking distance of major historic and cultural sites such as the Xi’an Bell Tower / Xi’an Drum Tower, and near the Muslim Quarter, Xi’an.\n\nFreshen up, Relax, and Dinner at the hotel or somewhere close.\n",
+          "duration": "2 - 3hr",
+          "location": "Eastern House Xi’an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "4-star accommodation"
+          ],
+          "images": [
+            {
+              "id": "Yg8S0pACCoU",
+              "src": "https://images.unsplash.com/photo-1755742319537-449f661a3190?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmFucXVldCUyMGRpbm5lcnxlbnwwfDB8fHwxNzY0NDEwMTk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+              "thumb": "https://images.unsplash.com/photo-1755742319537-449f661a3190?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmFucXVldCUyMGRpbm5lcnxlbnwwfDB8fHwxNzY0NDEwMTk0fDA&ixlib=rb-4.1.0&q=80&w=400",
+              "full": "https://images.unsplash.com/photo-1755742319537-449f661a3190?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHxjaGluZXNlJTIwYmFucXVldCUyMGRpbm5lcnxlbnwwfDB8fHwxNzY0NDEwMTk0fDA&ixlib=rb-4.1.0&q=85",
+              "alt": "Table laden with diverse asian dishes and roasted pig.",
+              "photographer": "Junliang Deng",
+              "photographerUrl": "https://unsplash.com/@billycat",
+              "source": "unsplash",
+              "sourceUrl": "https://unsplash.com/photos/table-laden-with-diverse-asian-dishes-and-roasted-pig-Yg8S0pACCoU"
+            },
+            {
+              "id": 32860307,
+              "src": "https://images.pexels.com/photos/32860307/pexels-photo-32860307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/32860307/pexels-photo-32860307.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/32860307/pexels-photo-32860307.jpeg",
+              "alt": "Luxurious Asian seafood banquet with a variety of dishes elegantly presented on a dining table.",
+              "photographer": "Change C.C",
+              "photographerUrl": "https://www.pexels.com/@change-c-c-974768353",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/elegant-asian-seafood-banquet-with-various-dishes-32860307/"
+            },
+            {
+              "id": "manual-1764517495776",
+              "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d6/93/5e/caption.jpg",
+              "thumb": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d6/93/5e/caption.jpg",
+              "full": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d6/93/5e/caption.jpg",
+              "alt": "Eastern House Boutique Hotel",
+              "photographer": "",
+              "photographerUrl": "",
+              "source": "manual",
+              "sourceUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d6/93/5e/caption.jpg"
+            },
+            {
+              "id": "manual-1764517364407",
+              "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d4/57/65/caption.jpg",
+              "thumb": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d4/57/65/caption.jpg",
+              "full": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d4/57/65/caption.jpg",
+              "alt": "Eastern House Room",
+              "photographer": "",
+              "photographerUrl": "",
+              "source": "manual",
+              "sourceUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d4/57/65/caption.jpg"
+            }
+          ]
+        },
+        {
+          "id": "1-1-1764440953795",
+          "time": "Night",
+          "type": "activity",
+          "title": "Visit Big Wild Goose Pagoda & Nightlife",
+          "description": "Visit to the Big Wild Goose Pagoda if time permits.\n\nThe Big Wild Goose Pagoda, located in the heart of Xi’an, is one of China’s most iconic landmarks. Built in 652 AD during the Tang Dynasty, the seven-storey pagoda was originally constructed to store the Buddhist scriptures brought back from India by the monk Xuanzang. Its elegant silhouette, intricate brickwork, and tranquil temple grounds offer a peaceful window into ancient Chinese architecture and spirituality.\n\nThe pagoda sits within the Da Ci’en Temple Scenic Area, surrounded by serene gardens, cultural exhibits, and one of Asia’s largest musical fountains. Just steps away is Grand Tang Dynasty Everbright City, a lively pedestrian district filled with lights, performances, dining, and shops. Visit in the evening to enjoy the illuminated pagoda, fountain shows, and vibrant night atmosphere—one of Xi’an’s most beautiful modern-meets-ancient experiences.",
+          "duration": "1-2 hours",
+          "location": "Big Wild Goose Pagoda, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Historical significance",
+            "Cultural heritage"
+          ],
+          "images": [
+            {
+              "id": 13998387,
+              "src": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg",
+              "alt": "Serene view of the Giant Wild Goose Pagoda in Xi'an with lush greenery and a clear evening sky.",
+              "photographer": "TAO WANG",
+              "photographerUrl": "https://www.pexels.com/@tao-wang-335496284",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/ancient-gazebo-near-the-pagoda-tower-13998387/"
+            },
+            {
+              "id": 13998391,
+              "src": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg",
+              "alt": "A stunning sunset over the Giant Wild Goose Pagoda, showcasing the ancient architectural beauty in Xi'an, China.",
+              "photographer": "TAO WANG",
+              "photographerUrl": "https://www.pexels.com/@tao-wang-335496284",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/the-giant-wild-goose-pagoda-in-xian-china-13998391/"
+            },
+            {
+              "id": "manual-1764523302728",
+              "src": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg",
+              "thumb": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg",
+              "full": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg",
+              "alt": "Musical Fountain",
+              "photographer": "",
+              "photographerUrl": "",
+              "source": "manual",
+              "sourceUrl": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg"
+            },
+            {
+              "id": "manual-1764523416371",
+              "src": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg",
+              "thumb": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg",
+              "full": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg",
+              "alt": "Grand Tang Dynasty Everbright City",
+              "photographer": "",
+              "photographerUrl": "",
+              "source": "manual",
+              "sourceUrl": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg"
+            }
+          ]
+        }
+      ],
+      "meals": "Dinner",
+      "accommodation": {
+        "name": "Eastern House Boutique Hotel",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 2,
+      "date": "May 10",
+      "title": "Xi'an City Walk & Ancient Wall",
+      "location": "Xi'an",
+      "region": "xian",
+      "description": "Start with a city walk in the old town center, visiting the Bell Tower and Drum Tower. Explore the vibrant Muslim Quarter and the Great Mosque. In the afternoon, hike on the 600-year-old City Wall (13.7km), one of the best-preserved ancient city walls in China. Enjoy a traditional Dumpling Banquet for dinner.",
+      "segments": [
+        {
+          "id": "2-0-1764440953795",
+          "time": "Morning",
+          "type": "activity",
+          "title": "City Walk in Old Town Center - Visit The Bell and Drum Towers",
+          "description": "Walk through the old town center, visiting the Bell Tower and Drum Tower.\n\nThe Bell and Drum Towers of Xi'an stand as majestic guardians of history, inviting travelers to step back in time. As you gaze upon the stunning architecture of the Bell Tower, built in 1384 during the Ming Dynasty, you'll be mesmerized by its intricate brick and timber structure that rises nearly 40 meters into the sky. This iconic landmark, adorned with ancient bronze bells from the Tang Dynasty, not only offers a glimpse into China's rich cultural heritage but also serves as a vibrant hub at the heart of Xi'an, where the four main streets converge. Experience the enchanting atmosphere as the bells toll, marking the passage of time in this ancient city, and don't miss the breathtaking views from the top, where the sprawling cityscape unfolds before your eyes. A visit to the Bell and Drum Towers is a must for any traveler seeking to explore the essence of Xi'an.",
+          "duration": "1 hour",
+          "location": "Xi'an Old Town",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Bell Tower",
+            "Drum Tower",
+            "Cultural heritage"
+          ],
+          "images": [
+            {
+              "id": "pexels-20438290",
+              "src": "https://images.pexels.com/photos/20438290/pexels-photo-20438290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/20438290/pexels-photo-20438290.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/20438290/pexels-photo-20438290.jpeg",
+              "alt": "Majestic view of the illuminated Bell Tower in Xi'an, China against a twilight sky.",
+              "photographer": "molin liu",
+              "photographerUrl": "https://www.pexels.com/@molin-liu-1391737",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/illuminated-facade-of-the-bell-tower-of-xian-in-china-20438290/"
+            },
+            {
+              "id": "wikimedia-61014361",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Bell_Tower_and_Drum_Tower%2C_Xi%27an%2C_China_-_panoramio.jpg/800px-Bell Tower and Drum Tower, Xi'an, China - panoramio.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Bell_Tower_and_Drum_Tower%2C_Xi%27an%2C_China_-_panoramio.jpg/300px-Bell Tower and Drum Tower, Xi'an, China - panoramio.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bell_Tower_and_Drum_Tower%2C_Xi%27an%2C_China_-_panoramio.jpg",
+              "alt": "Bell Tower and Drum Tower, Xi'an, China",
+              "photographer": "Aaron Zhu",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ABell%20Tower%20and%20Drum%20Tower%2C%20Xi'an%2C%20China%20-%20panoramio.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABell%20Tower%20and%20Drum%20Tower%2C%20Xi'an%2C%20China%20-%20panoramio.jpg"
+            }
+          ]
+        },
+        {
+          "id": "2-1-1764440953795",
+          "time": "Midday",
+          "type": "activity",
+          "title": "Visit Muslim Quarter and Great Mosque",
+          "description": "Explore the Muslim Quarter and visit the Great Mosque.\n\nWelcome to the vibrant heart of Xi'an, the Muslim Quarter, where ancient history intertwines with mouthwatering flavors. As you wander through its bustling streets, you’ll be captivated by the aroma of sizzling street food, the vibrant colors of traditional textiles, and the warm smiles of local vendors. This cultural gem, nestled near the iconic Bell and Drum Towers, offers a unique glimpse into the rich heritage of the Hui people, combining the best of Chinese and Islamic influences. Don’t miss the chance to explore the majestic Great Mosque, a masterpiece of architectural elegance, and savor the delicious snacks that make this area a paradise for food lovers. Join the throngs of travelers who flock here to experience the enchanting blend of history, culture, and culinary delights that define the Muslim Quarter of Xi'an.",
+          "duration": "2 hours",
+          "location": "Muslim Quarter, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Cultural experience",
+            "Historical significance"
+          ],
+          "images": [
+            {
+              "id": "wikimedia-15673796",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/1_xian_muslim_quarter_china_2011.JPG/800px-1 xian muslim quarter china 2011.JPG",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/1_xian_muslim_quarter_china_2011.JPG/300px-1 xian muslim quarter china 2011.JPG",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/0/09/1_xian_muslim_quarter_china_2011.JPG",
+              "alt": "xi'an china shanxi muslim quarter night 2011",
+              "photographer": "chensiyuan",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3A1%20xian%20muslim%20quarter%20china%202011.JPG",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1%20xian%20muslim%20quarter%20china%202011.JPG"
+            },
+            {
+              "id": "wikimedia-151466894",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Great_Mosque_of_Xi%27an_20240808_022.jpg/800px-Great Mosque of Xi'an 20240808 022.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Great_Mosque_of_Xi%27an_20240808_022.jpg/300px-Great Mosque of Xi'an 20240808 022.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/2/20/Great_Mosque_of_Xi%27an_20240808_022.jpg",
+              "alt": "Great Mosque of Xi'an",
+              "photographer": "沈澄心",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20022.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20022.jpg"
+            },
+            {
+              "id": "wikimedia-151466889",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg/800px-Great Mosque of Xi'an 20240808 018.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg/300px-Great Mosque of Xi'an 20240808 018.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg",
+              "alt": "Great Mosque of Xi'an",
+              "photographer": "沈澄心",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20018.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20018.jpg"
+            }
+          ]
+        },
+        {
+          "id": "2-2-1764440953795",
+          "time": "Afternoon",
+          "type": "activity",
+          "title": "Hiking on City Wall",
+          "description": "Hike on the 600 year-old City Wall which runs 13.7km around the old city center.\n\nEmbark on an unforgettable adventure along the City Wall of Xi'an, where history and breathtaking views collide over a scenic 13.7 km hike. As you stroll atop one of the best-preserved ancient city walls in the world, immerse yourself in the rich heritage of this ancient capital, once the starting point of the Silk Road. Marvel at the stunning panoramas of the city and its surrounding landscapes, while catching glimpses of the vibrant life below. This hike is not just a physical journey but a walk through time, offering countless photo opportunities and the chance to explore various watchtowers and gates along the way. Whether you're a seasoned hiker or a casual walker, the City Wall promises an exhilarating experience that captures the essence of Xi'an's storied past.",
+          "duration": "4 hours",
+          "location": "City Wall, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "13.7km",
+            "elevation": "minimal",
+            "difficulty": "moderate"
+          },
+          "highlights": [
+            "Largest ancient city wall",
+            "Historical relic"
+          ],
+          "images": [
+            {
+              "id": "pixabay-3732269",
+              "src": "https://pixabay.com/get/g1146f1a8d3b80a40f89de33f44e47a2c4aa7b03559670124dd1a68e214a29343359e585589aaea084bf98bb6c4af61fdf4f2bfbe965c581f08ca1dbf437c0a65_640.jpg",
+              "thumb": "https://cdn.pixabay.com/photo/2018/10/08/08/46/china-3732269_150.jpg",
+              "full": "https://pixabay.com/get/g17eada972eeac3badfc74d1e66b74fc7cd1c29a096ac5b0f9fc167d8d5c3e48da839ecb3bb9288879a2040959b1e7dee443133013de0db9f00ad7958e2a705e9_1280.jpg",
+              "alt": "china, xian, xi'an, nature, sunset, wall, city wall, bicycle, ruins, historic site, ancient",
+              "photographer": "hyungname",
+              "photographerUrl": "https://pixabay.com/users/hyungname-9864966/",
+              "source": "pixabay",
+              "sourceUrl": "https://pixabay.com/photos/china-xian-xian-sunset-wall-3732269/"
+            },
+            {
+              "id": "pixabay-7866223",
+              "src": "https://pixabay.com/get/gecfd3ec8e090c37ef30fce4b27ae431eef20655114fca24cde89c1cc3d8c46b81945716fb2d72241c6be623660fb6e88ce2e3c7aad5939059591782e92f0b743_640.jpg",
+              "thumb": "https://cdn.pixabay.com/photo/2023/03/21/01/57/building-7866223_150.jpg",
+              "full": "https://pixabay.com/get/ge5d1972c840cf6dfb3e70b657ea0cc4526bb58b1efd375a0e4b31df3736cfee31fac536e8e0208b4d42ea7e7db2e56cf05f6ebee6bc8e21056e4484d2e0e21fc_1280.jpg",
+              "alt": "building, city wall, history, xi'an, tourism city, moat, xi'an city moat",
+              "photographer": "周游中国",
+              "photographerUrl": "https://pixabay.com/users/周游中国-33467154/",
+              "source": "pixabay",
+              "sourceUrl": "https://pixabay.com/photos/building-city-wall-history-xian-7866223/"
+            },
+            {
+              "id": "wikimedia-2705921",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Xi%27an_-_City_wall_-_013.jpg/800px-Xi'an - City wall - 013.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Xi%27an_-_City_wall_-_013.jpg/300px-Xi'an - City wall - 013.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Xi%27an_-_City_wall_-_013.jpg",
+              "alt": "City Wall in Xi'an, China",
+              "photographer": "Maros M r a z (Maros)",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AXi'an%20-%20City%20wall%20-%20013.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AXi'an%20-%20City%20wall%20-%20013.jpg"
+            }
+          ]
+        },
+        {
+          "id": "2-3-1764440953795",
+          "time": "Evening",
+          "type": "meal",
+          "title": "Dumpling Banquet Dinner",
+          "description": "Enjoy a traditional Dumpling Banquet dinner.",
+          "duration": "2 hours",
+          "location": "Local Restaurant, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local specialty"
+          ],
+          "images": [
+            {
+              "id": "unsplash-ptUBOI5QouA",
+              "src": "https://images.unsplash.com/photo-1748248078354-5b085351714f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxEdW1wbGluZyUyMEJhbnF1ZXQlMjBEaW5uZXIlMjBYaSUyN2FuJTIwfGVufDB8MHx8fDE3NjQ0ODI5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+              "thumb": "https://images.unsplash.com/photo-1748248078354-5b085351714f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxEdW1wbGluZyUyMEJhbnF1ZXQlMjBEaW5uZXIlMjBYaSUyN2FuJTIwfGVufDB8MHx8fDE3NjQ0ODI5NjN8MA&ixlib=rb-4.1.0&q=80&w=400",
+              "full": "https://images.unsplash.com/photo-1748248078354-5b085351714f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxEdW1wbGluZyUyMEJhbnF1ZXQlMjBEaW5uZXIlMjBYaSUyN2FuJTIwfGVufDB8MHx8fDE3NjQ0ODI5NjN8MA&ixlib=rb-4.1.0&q=85",
+              "alt": "Steaming dumplings are being served with tongs.",
+              "photographer": "Boris Izmaylov",
+              "photographerUrl": "https://unsplash.com/@borisizmaylov",
+              "source": "unsplash",
+              "sourceUrl": "https://unsplash.com/photos/ptUBOI5QouA"
+            }
+          ]
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "Eastern House Boutique Hotel",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 3,
+      "date": "May 11",
+      "title": "Terracotta Warriors & Daming Palace National Heritage Park",
+      "location": "Xi'an",
+      "region": "xian",
+      "description": "Morning tour of the world-famous Terracotta Warriors Museum, witnessing the thousands of life-sized soldiers protecting the First Emperor. Afternoon hiking at Daming Palace National Heritage Park, the site of the grandest imperial palace of the Tang Dynasty.",
+      "segments": [
+        {
+          "id": "3-0-1764440953795",
+          "time": "Morning",
+          "type": "activity",
+          "title": "Visit Terracotta Warrior Museum",
+          "description": "Morning tour at the Terracotta Warrior Museum.\n\nStep into the ancient world of China at the Terracotta Warriors Museum in Xi'an, where history comes alive through the remarkable artistry of the Terracotta Army. Discovered in 1974 by local farmers, this breathtaking collection showcases over 8,000 life-sized sculptures, each intricately crafted to depict the soldiers, chariots, and horses of China's first emperor, Qin Shi Huang. As you wander through the expansive pits, marvel at the varied heights and unique features of these warriors, designed to protect the emperor in the afterlife. A visit here is not just a journey into the past; it's an unforgettable adventure that connects you with the rich tapestry of Chinese heritage and artistry.",
+          "duration": "3 hours",
+          "location": "Terracotta Warrior Museum, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Significant archaeological discovery",
+            "Life-sized sculptures"
+          ],
+          "images": [
+            {
+              "id": "zj_o9jdYk_4",
+              "src": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+              "thumb": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+              "full": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+              "alt": "a group of people wearing white hats with Terracotta Army in the background",
+              "photographer": "Kevin Engelke",
+              "photographerUrl": "https://unsplash.com/@twopixelsdesign",
+              "source": "unsplash",
+              "sourceUrl": "https://unsplash.com/photos/a-group-of-people-wearing-white-hats-with-terracotta-army-in-the-background-zj_o9jdYk_4"
+            },
+            {
+              "id": "BOM5u4_VWlI",
+              "src": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+              "thumb": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
+              "full": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+              "alt": "Terracotta army soldiers standing in formation.",
+              "photographer": "David An",
+              "photographerUrl": "https://unsplash.com/@david_an",
+              "source": "unsplash",
+              "sourceUrl": "https://unsplash.com/photos/terracotta-army-soldiers-standing-in-formation-BOM5u4_VWlI"
+            },
+            {
+              "id": 18338672,
+              "src": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
+              "alt": "A captivating view of the ancient Terracotta Army in Xi'an, highlighting historical artistry.",
+              "photographer": "TonyNojmanSK",
+              "photographerUrl": "https://www.pexels.com/@tonynojmansk-186688133",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/view-of-the-terracotta-army-18338672/"
+            },
+            {
+              "id": 30584842,
+              "src": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
+              "alt": "Close-up of terracotta warriors in Xi'an, capturing historical artistry and detail.",
+              "photographer": "Ala J Graczyk",
+              "photographerUrl": "https://www.pexels.com/@alice1",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/terracotta-warriors-in-xi-an-china-30584842/"
+            },
+            {
+              "id": "pexels-11105685",
+              "src": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg",
+              "alt": "Close-up view of the ancient Terracotta Army statues in Xi'an, showcasing historical artistry.",
+              "photographer": "Maciej Cisowski",
+              "photographerUrl": "https://www.pexels.com/@maciej-cisowski-174297128",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/terracotta-army-statues-11105685/"
+            },
+            {
+              "id": "unsplash-x1ediC9D42Y",
+              "src": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+              "thumb": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=400",
+              "full": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=85",
+              "alt": "Terracotta warriors arranged in formation",
+              "photographer": "1AmFcS",
+              "photographerUrl": "https://unsplash.com/@1amfcs",
+              "source": "unsplash",
+              "sourceUrl": "https://unsplash.com/photos/x1ediC9D42Y"
+            }
+          ]
+        },
+        {
+          "id": "3-1-1764440953795",
+          "time": "Midday",
+          "type": "meal",
+          "title": "Lunch at Local Restaurant",
+          "description": "Lunch at a local Chinese restaurant.",
+          "duration": "1 hour",
+          "location": "Local Restaurant, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local cuisine"
+          ],
+          "images": []
+        },
+        {
+          "id": "3-2-1764440953795",
+          "time": "Afternoon",
+          "type": "activity",
+          "title": "Daming Palace Heritage Park",
+          "description": "Afternoon walk at Daming Palace Heritage Park.\n\nStep into the grandeur of the Tang dynasty at Daming Palace Heritage Park, where history whispers through the ancient stones and sprawling gardens. This once-great imperial palace, which served as the residence for over 220 years, beckons travelers to explore its majestic ruins and lush landscapes. As part of the UNESCO World Heritage Site that celebrates the Silk Roads, Daming Palace offers a unique glimpse into China's rich imperial past, making it a must-visit destination for history enthusiasts and nature lovers alike. Wander the pathways, breathe in the serene atmosphere, and imagine the opulence of a bygone era as you marvel at the remnants of this royal complex nestled in the heart of Xi'an.",
+          "duration": "2-3 hours",
+          "location": "Daming Palace Heritage Park, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "5km",
+            "elevation": "minimal",
+            "difficulty": "easy"
+          },
+          "highlights": [
+            "Historical site",
+            "Cultural significance"
+          ],
+          "images": [
+            {
+              "id": "wikimedia-158595985",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg/800px-Daming Palace National Heritage Park - Palace Model 02.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg/300px-Daming Palace National Heritage Park - Palace Model 02.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg",
+              "alt": "The Daming Palace, once the grand imperial palace of the Tang Dynasty, stands as a testament to China's rich history and architectural grandeur. Located in Xi'an, Shaanxi, this palace was the political heart of the dynasty, where emperors conducted state affairs and celebrated grand ceremonies. \nAlthough ravaged by time and war, the site has been partially reconstructed and opened to the public, allowing visitors to walk through the echoes of its past glory. It is also recognized as a UNESCO World Heritage Site, further highlighting its historical and cultural significance.",
+              "photographer": "xiquinhosilva",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg"
+            },
+            {
+              "id": "pixabay-8268910",
+              "src": "https://pixabay.com/get/ga04cdfa377db0b16bdf4852047a5f1640fa373484d8d4024481ec30b32e3b7e9e582712696dc31e3f4f267fc724f8575388e1331dcb852f977001ca4c83a2412_640.jpg",
+              "thumb": "https://cdn.pixabay.com/photo/2023/09/22/12/00/daming-palace-8268910_150.jpg",
+              "full": "https://pixabay.com/get/gd0cbbc1580601c4cc62020d4a0cf7e8c9f94407b1c842f18f7d32d8721b68852b1f8fef5f2d4462ca289ad3a1db9acfeeff75656c95c089c380e11421d41d129_1280.jpg",
+              "alt": "daming palace, xi'an, xi'an daming palace, palace, vacation destination, danfengmen, architecture, historical site, shaanxi xi'an scenery, xi'an danfengmen, daming palace, xi'an, xi'an, xi'an, xi'an, xi'an, palace",
+              "photographer": "周游中国",
+              "photographerUrl": "https://pixabay.com/users/周游中国-33467154/",
+              "source": "pixabay",
+              "sourceUrl": "https://pixabay.com/photos/daming-palace-xian-8268910/"
+            }
+          ]
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "Eastern House Boutique Hotel",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 4,
+      "date": "May 12",
+      "title": "Beilin Museum & Travel to Beijing",
+      "location": "Xi'an to Beijing",
+      "region": "beijing",
+      "description": "Visit the Beilin Museum (Forest of Stone Steles), a treasure trove of ancient Chinese calligraphy. Transfer to the train station/airport for departure to Beijing. Upon arrival, transfer to a centrally located 4-star hotel. Evening welcome dinner with representatives from China's hiking community.",
+      "segments": [
+        {
+          "id": "4-0-1764440953795",
+          "time": "Morning",
+          "type": "activity",
+          "title": "Visit Beilin Museum",
+          "description": "Morning tour to the Beilin Museum.\n\nEmbark on a journey through time at the Beilin Museum in Xi'an, home to the remarkable Xi'an Stele, or Nestorian Stele. This captivating site reveals the extraordinary tale of early Christianity in China, dating back to the Tang dynasty. As you stroll through the serene Stele Forest, marvel at the intricate carvings and inscriptions that speak of a rich spiritual heritage and the remarkable interactions between cultures. The museum not only offers a glimpse into the past but also invites you to reflect on the enduring legacy of faith and exploration. Don't miss the chance to connect with history in one of China's most significant cultural landmarks.",
+          "duration": "2 hours",
+          "location": "Beilin Museum, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Cultural heritage",
+            "Historical artifacts"
+          ],
+          "images": [
+            {
+              "id": "custom-1764498906210",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xi%27anviewpic9.jpg/2560px-Xi%27anviewpic9.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xi%27anviewpic9.jpg/2560px-Xi%27anviewpic9.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Xi%27anviewpic9.jpg/2560px-Xi%27anviewpic9.jpg",
+              "alt": "Stele Forest or Beilin Museum ",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "4-1-1764440953795",
+          "time": "Midday",
+          "type": "meal",
+          "title": "Lunch at Local Restaurant",
+          "description": "Lunch at a local Chinese restaurant.",
+          "duration": "1 hour",
+          "location": "Local Restaurant, Xi'an",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local cuisine"
+          ],
+          "images": []
+        },
+        {
+          "id": "4-2-1764440953795",
+          "time": "Afternoon",
+          "type": "transfer",
+          "title": "Transfer to the train station for departure to Beijing.",
+          "description": "High-speed trains (G-series): The fastest option, taking approximately 4 hours and 10 minutes to 6 hours. Most high-speed trains depart from Xi'an North Railway Station and arrive at Beijing West Railway Station.\n\nThe distance between the cities between the 1,216 km (756 miles) .",
+          "duration": "5 hour",
+          "location": "Xi'an to Beijing",
+          "mode": "train",
+          "from": "Xi'an",
+          "to": "Beijing",
+          "walkDetails": null,
+          "highlights": [
+            "Comfortable travel"
+          ],
+          "images": []
+        },
+        {
+          "id": "4-3-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Hotel in Beijing",
+          "description": "Check in at a centrally located 4-star hotel - Hotel TBC.",
+          "duration": "30 minutes",
+          "location": "Beijing",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Convenient location for activities"
+          ],
+          "images": []
+        },
+        {
+          "id": "4-4-1764440953795",
+          "time": "Evening",
+          "type": "meal",
+          "title": "Welcome Dinner in Beijing",
+          "description": "Welcome dinner. Potentially meeting with representatives from China’s hiking and mountaineering communities.\n\nA brief introduction to Chinese mountaineering culture and safety guidelines will be provided.",
+          "duration": "2 hours",
+          "location": "Local Restaurant, Beijing",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Cultural exchange",
+            "Introduction to mountaineering culture"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "4-star Hotel in Beijing",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 5,
+      "date": "May 13",
+      "title": "Forbidden City, National Botanical Garden & Happy Forest Hike",
+      "location": "Beijing",
+      "region": "beijing",
+      "description": "Morning visit to the Forbidden City, exploring the imperial history of the Ming and Qing dynasties. Afternoon exploration at the National Botanical Garden, and possibly a nice hike to Happy Forest in Fragrant Hills (12km, 670m elevation). ",
+      "segments": [
+        {
+          "id": "5-0-1764440953795",
+          "time": "Morning",
+          "type": "activity",
+          "title": "Visit Forbidden City",
+          "description": "Visit Forbidden City (故宫博物院). Explore along the central axis of Beijing, including the Hall of Supreme Harmony （太和殿）, Hall of Central Harmony （中和殿）, and Hall of Preserving Harmony （保和殿））, immersing in the history and imperial architecture of the Ming and Qing dynasties. \n\nIt is recommended to enter early to avoid crowds, and expert guided commentary will be arranged for deeper understanding.\n\nStep into the enchanting world of the Forbidden City, a majestic palace complex that has stood as a symbol of imperial power in China for over 500 years. Nestled in the heart of Beijing, this UNESCO World Heritage Site invites you to explore its incredible architecture, vibrant history, and fascinating artifacts. With a staggering 8,886 rooms spread over 178 acres, the Forbidden City is not just the largest preserved royal palace in the world; it is a breathtaking testament to the grandeur of Chinese dynasties. Feel the weight of history as you stroll through its ornate halls and tranquil courtyards, where the whispers of emperors and empresses linger in the air, waiting to share their stories with you.",
+          "duration": "3 hours",
+          "location": "Forbidden City, Beijing",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Ming and Qing dynasties",
+            "Imperial architecture"
+          ],
+          "images": [
+            {
+              "id": "wikimedia-32400571",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Beijing_China_Forbidden-City-03.jpg/800px-Beijing China Forbidden-City-03.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Beijing_China_Forbidden-City-03.jpg/300px-Beijing China Forbidden-City-03.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/d/da/Beijing_China_Forbidden-City-03.jpg",
+              "alt": "Beijing, China: Tortoise in the Forbidden City",
+              "photographer": "CEphoto, Uwe Aranas",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ABeijing%20China%20Forbidden-City-03.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABeijing%20China%20Forbidden-City-03.jpg"
+            },
+            {
+              "id": "wikimedia-890912",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sunset_of_the_Forbidden_City_2006.JPG/800px-Sunset of the Forbidden City 2006.JPG",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sunset_of_the_Forbidden_City_2006.JPG/300px-Sunset of the Forbidden City 2006.JPG",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/0/00/Sunset_of_the_Forbidden_City_2006.JPG",
+              "alt": "Sunset of the northwest corner of the Forbidden City.",
+              "photographer": "User:kallgan",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ASunset%20of%20the%20Forbidden%20City%202006.JPG",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASunset%20of%20the%20Forbidden%20City%202006.JPG"
+            },
+            {
+              "id": "unsplash-i9DvQC-PcHM",
+              "src": "https://images.unsplash.com/photo-1729284439997-690df5c178a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxGb3JiaWRkZW4lMjBDaXR5JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDUwMDExMnww&ixlib=rb-4.1.0&q=80&w=1080",
+              "thumb": "https://images.unsplash.com/photo-1729284439997-690df5c178a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxGb3JiaWRkZW4lMjBDaXR5JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDUwMDExMnww&ixlib=rb-4.1.0&q=80&w=400",
+              "full": "https://images.unsplash.com/photo-1729284439997-690df5c178a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxGb3JiaWRkZW4lMjBDaXR5JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDUwMDExMnww&ixlib=rb-4.1.0&q=85",
+              "alt": "An aerial view of a city with a lot of buildings",
+              "photographer": "Rubina Ajdary",
+              "photographerUrl": "https://unsplash.com/@rubinaajdary",
+              "source": "unsplash",
+              "sourceUrl": "https://unsplash.com/photos/i9DvQC-PcHM"
+            }
+          ]
+        },
+        {
+          "id": "5-3-1764526591332",
+          "time": "Midday",
+          "type": "meal",
+          "title": "Lunch at Local Restaurant",
+          "description": "Local Restaurant",
+          "duration": "",
+          "images": []
+        },
+        {
+          "id": "5-1-1764440953795",
+          "time": "Afternoon",
+          "type": "activity",
+          "title": "National Botanical Garden to Fragrant Hills Hike",
+          "description": "A hike from Beijing's National Botanical Garden（国家植物园 to Happy Forest（香山）is possible through the Western Hills Forest Park (also referred to as Happy Forest). This 4 hour hike, approximately 12 km long, involves forest paths, firebreak roads, and steep descents, passing scenic spots like a peak with great views.\n\nChinese mountaineers and members of Beijing outdoor sports clubs may accompany the group, provide safety support and introduce local flora and geography.\n",
+          "duration": "4 hours",
+          "location": "National Botanical Garden to Fragrant Hills",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "12 km",
+            "elevation": "670 m gain",
+            "difficulty": "moderate"
+          },
+          "highlights": [
+            "15 km hike",
+            "670 m elevation"
+          ],
+          "images": [
+            {
+              "id": "custom-1764499794194",
+              "src": "https://ak-d.tripcdn.com/images/0106y1200089a107c7A0F.jpg",
+              "thumb": "https://ak-d.tripcdn.com/images/0106y1200089a107c7A0F.jpg",
+              "full": "https://ak-d.tripcdn.com/images/0106y1200089a107c7A0F.jpg",
+              "alt": "National Botanical Garden ",
+              "photographer": "Custom",
+              "source": "custom"
+            },
+            {
+              "id": "custom-1764499978274",
+              "src": "https://s2.wklcdn.com/image_224/6748776/55526362/37192712Master.jpg",
+              "thumb": "https://s2.wklcdn.com/image_224/6748776/55526362/37192712Master.jpg",
+              "full": "https://s2.wklcdn.com/image_224/6748776/55526362/37192712Master.jpg",
+              "alt": "Happy Forest Trail",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "5-2-1764440953795",
+          "time": "Evening",
+          "type": "meal",
+          "title": "Dinner Featuring Beijing Specialties",
+          "description": "Dinner featuring Beijing specialties such as Peking duck.",
+          "duration": "2 hours",
+          "location": "Local Restaurant, Beijing",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local cuisine"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "4-star Hotel in Beijing",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 6,
+      "date": "May 14",
+      "title": "Hike along the Badaling Great Wall",
+      "location": "Great Wall, Beijing",
+      "region": "lushan",
+      "description": "Full day hike along the Badaling Great Wall (8-10km, ~500m elevation). Experience the magnificence of this ancient wonder. Afternoon overnight sleeper train to Lushan, a comfortable and efficient way to travel.",
+      "segments": [
+        {
+          "id": "6-0-1764440953795",
+          "time": "Full Day",
+          "type": "activity",
+          "title": "Hike along the Badaling Great Wall",
+          "description": "Hike along the Badaling Great Wall.\n\nEmbark on an unforgettable adventure at the Badaling Great Wall, one of the most iconic sections of this ancient wonder. Nestled just a short drive from Beijing, this breathtaking hike offers a perfect blend of stunning natural beauty and rich history. As you traverse the winding paths, you'll be surrounded by lush mountains and panoramic views that stretch as far as the eye can see. Each step reveals centuries of stories etched into the weathered stones, making it a captivating journey for both seasoned trekkers and casual walkers alike. Whether you're seeking a challenging hike or a leisurely stroll, Badaling promises an exhilarating experience that will leave you in awe of China's remarkable heritage.\n\nDon’t miss the chance to capture stunning photos at the watchtowers, where you can imagine the brave soldiers who once stood guard over this magnificent structure. With well-maintained paths and plenty of amenities, Badaling is accessible for all ages, ensuring a memorable outing for families, friends, and solo adventurers alike.\n\nGuides will explain the history and architectural ingenuity of the Great Wall. Remember to apply sun protection cream, bring ample water and energy snacks.",
+          "duration": "6 hours",
+          "location": "Badaling Great Wall, Beijing",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "8-10 km",
+            "elevation": "500 m gain",
+            "difficulty": "challenging"
+          },
+          "highlights": [
+            "8–10 km hike",
+            "500 m elevation"
+          ],
+          "images": [
+            {
+              "id": "pixabay-2190047",
+              "src": "https://pixabay.com/get/g6fcdb4c32ac2686b00a970ef9b7fea9a00cb92170a5908e3fccd86bebd6bd9a9a7b395c0d7527703a3e6df1dda3cc636b8581203312e3a129b51a4cff1d3850f_640.jpg",
+              "thumb": "https://cdn.pixabay.com/photo/2017/03/30/23/36/the-great-wall-2190047_150.jpg",
+              "full": "https://pixabay.com/get/g5a008f08c7729061a85e6871cdcf621846dc3aba495d9814492fb419c5f9a043ba5164b863c8bb5f7c495fc23e2040f4365b12e94febfb9b30dc4df8a2f6fd5f_1280.jpg",
+              "alt": "the great wall, china, badaling, china, china, china, china, china",
+              "photographer": "panayota",
+              "photographerUrl": "https://pixabay.com/users/panayota-4969527/",
+              "source": "pixabay",
+              "sourceUrl": "https://pixabay.com/photos/the-great-wall-china-badaling-2190047/"
+            },
+            {
+              "id": "pexels-30962084",
+              "src": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg",
+              "alt": "Tourists exploring the Great Wall of China under clear blue skies in winter.",
+              "photographer": "Mario Johnson",
+              "photographerUrl": "https://www.pexels.com/@mario-johnson-949299287",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/great-wall-of-china-with-tourists-in-winter-sunlight-30962084/"
+            }
+          ]
+        },
+        {
+          "id": "6-1-1764440953795",
+          "time": "Afternoon",
+          "type": "transfer",
+          "title": "Overnight Sleeper Train to Lushan",
+          "description": "NOTE: THIS SEEMS LIKE A LONG TIME, AND I NEED TO DOUBLE-CHECK THE TRAIN AND DURATION\n\nThe primary direct overnight sleeper train, K473, departs from the main Beijing Railway Station at 4:16 PM (16:16). \nIt arrives at Lushan Station (Henan, China) the following morning at approximately 6:21 AM (06:21), for a total journey time of just over 14 hours. \n\nNote: There have been arrangements to have access to hotel shower and freshen up facilities before the start of the day.\n\n",
+          "duration": "14 hours",
+          "location": "Beijing to Lushan",
+          "mode": "train",
+          "from": "Beijing",
+          "to": "Lushan",
+          "walkDetails": null,
+          "highlights": [
+            "Comfortable and efficient travel"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "Overnight Train",
+        "rating": ""
+      }
+    },
+    {
+      "day": 7,
+      "date": "May 15",
+      "title": "Arrival in Lushan",
+      "location": "Lushan",
+      "region": "lushan",
+      "description": "Arrive at Jiujiang Station and transfer to Lushan. Take a cable car to the mountain-top hotel. Lushan is famous for its European-style villas built by missionaries. Afternoon leisurely 8km hike along Lushan's trails to acclimate.",
+      "segments": [
+        {
+          "id": "7-0-1764440953795",
+          "time": "Morning",
+          "type": "transfer",
+          "title": "Transfer from Jiujiang Station -> Hotel",
+          "description": "Coach transfer from Jiujiang Station to the intermediate hotel to freshen up / shower / and have a relaxing breakfast.\n\nJust what you need, after a long overnight sleeper train.",
+          "duration": "1 hour",
+          "location": "Jiujiang Station to Lushan",
+          "mode": "coach",
+          "from": "Jiujiang Station",
+          "to": "Hotel / Breakfast",
+          "walkDetails": null,
+          "highlights": [
+            "Freshen up and have breakfast at the hotel"
+          ],
+          "images": []
+        },
+        {
+          "id": "7-4-1764527719507",
+          "time": "Morning",
+          "type": "transfer",
+          "title": "Cable Car to Mountain-top",
+          "description": "Take a cable car to the mountain-top hotel on Lushan for check-in. ",
+          "duration": "1 hour",
+          "images": [],
+          "mode": "cable car",
+          "from": "Temporary Hotel",
+          "to": "Main Hotel"
+        },
+        {
+          "id": "7-1-1764440953795",
+          "time": "Morning",
+          "type": "check-in",
+          "title": "Check-in at Mountain-top Hotel",
+          "description": "Take a cable car to the mountain-top hotel for check-in.\n\nThe mountain-top architecture of Lushan was primarily developed by the British missionary Edward Selby Little. In 1895, he discovered Lushan’s pleasant climate and built villas, attracting foreign merchants and missionaries to purchase land and construct summer residences, developing into the early Lushan villa community.",
+          "duration": "30 minutes",
+          "location": "Mountain-top Hotel, Lushan",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Unique mountain-top accommodation"
+          ],
+          "images": [
+            {
+              "id": "custom-1764502946311",
+              "src": "https://www.dorsetthotels.com/images/lushan-resort/gallery/banners/hotel_facade_1-original-S360-desktop.webp",
+              "thumb": "https://www.dorsetthotels.com/images/lushan-resort/gallery/banners/hotel_facade_1-original-S360-desktop.webp",
+              "full": "https://www.dorsetthotels.com/images/lushan-resort/gallery/banners/hotel_facade_1-original-S360-desktop.webp",
+              "alt": "Mountaintop Resorts",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "7-2-1764440953795",
+          "time": "Afternoon",
+          "type": "activity",
+          "title": "Leisurely Hike along Lushan’s Trails",
+          "description": "Leisurely 8 km hike along Lushan’s trails, appreciating cultural landmarks such as Meilu Villa and historical academies.",
+          "duration": "3-4 hours",
+          "location": "Lushan Trails",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "8 km",
+            "elevation": "minimal",
+            "difficulty": "easy"
+          },
+          "highlights": [
+            "Cultural landmarks",
+            "Historical academies"
+          ],
+          "images": []
+        },
+        {
+          "id": "7-3-1764440953795",
+          "time": "Evening",
+          "type": "meal",
+          "title": "Dinner at Mountain-top Hotel",
+          "description": "Dinner at the mountain-top hotel, featuring Lushan’s “Three Stones” and other local specialties.",
+          "duration": "2 hours",
+          "location": "Mountain-top Hotel, Lushan",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local cuisine"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "Mountain-top Hotel, Lushan",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 8,
+      "date": "May 16",
+      "title": "Summit Hike on Lushan - Exact Hike TBC",
+      "location": "Lushan",
+      "region": "lushan",
+      "description": "Full day summit hike on Lushan (~8km, 900m elevation). Challenge the classic route and enjoy breathtaking views from the summit. Evening rest at the mountain-top hotel.",
+      "segments": [
+        {
+          "id": "8-0-1764440953795",
+          "time": "Full Day",
+          "type": "activity",
+          "title": "Summit Hike on Lushan - Potentially Five Old Men Peaks (五老峰, Wǔlǎo Fēng)",
+          "description": "NOTE: I could not get details of classic Hero Slope route, so this may be swapped out when hike is clarified.\n\nFive Old Men Peaks (五老峰, Wǔlǎo Fēng)\n\nTrail Profile:\n\nElevation: 1,436 meters at the highest peak (4th peak)\n\nDistance: Approximately 8-10km round trip depending on route\n\nElevation Gain: Roughly 900m from base to summit\n\nDifficulty: Challenging with continuous steep stone steps\n\nRoute Details:\nThe trail consists of five distinct peaks that resemble five elderly men sitting side by side. The hike typically takes 2.5-3 hours round trip and involves relentless climbing on stone steps with minimal flat sections. The most difficult section comes at the beginning, so pace yourself accordingly.\n\n",
+          "duration": "4 hours",
+          "location": "Lushan",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "8 km",
+            "elevation": "900 m gain",
+            "difficulty": "challenging"
+          },
+          "highlights": [
+            "Breathtaking views from the summit",
+            "Physical challenge"
+          ],
+          "images": [
+            {
+              "id": "custom-1764504175991",
+              "src": "https://ak-d.tripcdn.com/images/1i64012000a7jh72u2A2C_W_640_0_R5_Q80.jpg",
+              "thumb": "https://ak-d.tripcdn.com/images/1i64012000a7jh72u2A2C_W_640_0_R5_Q80.jpg",
+              "full": "https://ak-d.tripcdn.com/images/1i64012000a7jh72u2A2C_W_640_0_R5_Q80.jpg",
+              "alt": "Five Old Men Peaks",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "8-1-1764440953795",
+          "time": "Evening",
+          "type": "free-time",
+          "title": "Rest and Share Experiences",
+          "description": "Rest at the mountain-top hotel and share hiking experiences. Time to chill with a beer or glass of prosecco.",
+          "duration": "Evening",
+          "location": "Mountain-top Hotel, Lushan",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Relaxation after a challenging hike"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Dinner",
+      "accommodation": {
+        "name": "Mountain-top Hotel, Lushan",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 9,
+      "date": "May 17",
+      "title": "Mount Shizhong & Jingdezhen",
+      "location": "Jingdezhen",
+      "region": "lushan",
+      "description": "Morning hike on Mount Shizhong (10km) to see the confluence of the Yangtze River and Poyang Lake. Afternoon visit to Jingdezhen, the 'Porcelain Capital', for hands-on ceramic activities.",
+      "segments": [
+        {
+          "id": "9-0-1764440953795",
+          "time": "Morning",
+          "type": "transfer",
+          "title": "Transfer to Hukou County",
+          "description": "Transfer to Hukou County for a hike.",
+          "duration": "1.5 hours",
+          "location": "Lushan to Hukou County",
+          "mode": "coach",
+          "from": "Lushan",
+          "to": "Hukou County",
+          "walkDetails": null,
+          "highlights": [
+            "Scenic transfer"
+          ],
+          "images": []
+        },
+        {
+          "id": "9-1-1764440953795",
+          "time": "Morning",
+          "type": "activity",
+          "title": "Hike up Shizhong Mountain",
+          "description": "Hike on Shizhong Mountain.\n\nAdmire the spectacular confluence of the Yangtze River and Poyang Lake, experiencing the natural wonder of “Water striking stone, resonating like a bell.”\n\nEmbark on an unforgettable adventure at Mount Shizhong, an enchanting gem nestled between Lushan and Jingdezhen, China. This breathtaking hike offers a stunning panorama of lush landscapes, steep cliffs, and vibrant flora that will leave nature enthusiasts in awe. As you ascend the winding trails, you'll encounter serene streams and ancient rock formations, providing the perfect backdrop for photography and mindfulness. Whether you're an experienced hiker or a casual walker, the diverse terrain and captivating views will invigorate your spirit and connect you with the pristine beauty of the region. Don't miss the chance to witness a mesmerizing sunrise from the summit, a moment that will etch itself in your memory forever.",
+          "duration": "3-4 hours",
+          "location": "Mount Shizhong",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "10 km",
+            "elevation": "minimal",
+            "difficulty": "moderate"
+          },
+          "highlights": [
+            "Natural wonder",
+            "Scenic views"
+          ],
+          "images": [
+            {
+              "id": "custom-1764504869049",
+              "src": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
+              "thumb": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
+              "full": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
+              "alt": "Shizhong Mountain",
+              "photographer": "Custom",
+              "source": "custom"
+            },
+            {
+              "id": "custom-1764505256488",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
+              "alt": "Yangtze River",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "9-2-1764440953795",
+          "time": "Afternoon",
+          "type": "activity",
+          "title": "Visit Jingdezhen - Porcelain Capital",
+          "description": "Visit the Porcelain Capital of Jingdezhen and try hands-on ceramic activities.\n\nDiscover the enchanting world of Jingdezhen, the 'Porcelain Capital' of China, where every corner whispers tales of artistry and tradition. Nestled in the picturesque eastern Jiangxi province, this city invites you to immerse yourself in over a millennium of ceramic craftsmanship. Stroll through vibrant markets and workshops, where skilled artisans continue to create exquisite porcelain pieces, each one a testament to the city’s rich heritage. Whether you're a history buff or a lover of fine art, Jingdezhen promises an unforgettable journey through time, culture, and creativity.",
+          "duration": "2-3 hours",
+          "location": "Jingdezhen",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Ceramic activities",
+            "Cultural experience"
+          ],
+          "images": [
+            {
+              "id": "custom-1764505093569",
+              "src": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
+              "thumb": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
+              "full": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
+              "alt": "Jingdezhen Imperial Kiln Museum",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "9-3-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Hotel in Jingdezhen",
+          "description": "Check into a hotel in Jingdezhen.",
+          "duration": "30 minutes",
+          "location": "Jingdezhen",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Comfortable accommodation"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "Hotel in Jingdezhen",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 10,
+      "date": "May 18",
+      "title": "Wuyuan Rural Landscapes",
+      "location": "Wuyuan",
+      "region": "lushan",
+      "description": "Full day hike in Wuyuan (7-12km). Explore Jujing Village, Wolong Valley, and Moon Bay. Experience the pastoral beauty of China's most beautiful countryside with its Hui-style architecture.\n\n",
+      "segments": [
+        {
+          "id": "10-0-1764440953795",
+          "time": "Full Day",
+          "type": "activity",
+          "title": "Hike in Wuyuan",
+          "description": "Hike in Wuyuan, exploring various villages and landscapes.\n\nExplore Jujing Village, Wolong Valley (waterfall clusters), Zhang Village (bench bridge), and Moon Bay (sunset). Experience the pastoral beauty and poetic landscapes of China’s most beautiful countryside. \n\nMoon Bay beckons adventurers and nature lovers alike with its stunning landscapes and serene ambiance. Known for its mesmerizing views and lush surroundings, this 5A-rated tourist attraction offers a unique blend of tranquility and exploration, making it a must-visit destination for hikers. Whether you're wandering along its scenic trails or capturing the breathtaking vistas, Moon Bay promises an unforgettable experience that will leave you rejuvenated and inspired.\n\nRecommendations: Travel light, carry rain gear, and ensure cameras are fully charged.",
+          "duration": "6-8 hours",
+          "location": "Wuyuan",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "7-12 km",
+            "elevation": "minimal",
+            "difficulty": "moderate"
+          },
+          "highlights": [
+            "Pastoral beauty",
+            "Poetic landscapes"
+          ],
+          "images": [
+            {
+              "id": "custom-1764505465447",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
+              "alt": "Wuyuan Jiangling",
+              "photographer": "Custom",
+              "source": "custom"
+            },
+            {
+              "id": "custom-1764505572177",
+              "src": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
+              "thumb": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
+              "full": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
+              "alt": "Jujing Village",
+              "photographer": "Custom",
+              "source": "custom"
+            },
+            {
+              "id": "custom-1764505880832",
+              "src": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
+              "thumb": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
+              "full": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
+              "alt": "Wolong Valley",
+              "photographer": "Custom",
+              "source": "custom"
+            },
+            {
+              "id": "custom-1764505945371",
+              "src": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
+              "thumb": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
+              "full": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
+              "alt": "Moon Bay",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "10-1-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Homestay or Hotel in Wuyuan",
+          "description": "Stay at a characteristic homestay or hotel in Wuyuan.",
+          "duration": "30 minutes",
+          "location": "Wuyuan",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local experience"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch",
+      "accommodation": {
+        "name": "Homestay or Hotel in Wuyuan",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 11,
+      "date": "May 19",
+      "title": "Huangling & Wangxian Valley",
+      "location": "Wuyuan to Wangxian Valley",
+      "region": "shangrao",
+      "description": "Morning visit to Huangling to see fan-shaped terraces. Transfer to Wangxian Valley in Shangrao for a 10km hike. Enjoy the dreamy, fairy-tale night views of the valley with its illuminated cliffs.",
+      "segments": [
+        {
+          "id": "11-0-1764440953795",
+          "time": "Morning",
+          "type": "activity",
+          "title": "Visit Huangling",
+          "description": "Visit Huangling in Wuyuan to see typical Hui-style mountain villages and fan-shaped terraces.\n\nNestled in the picturesque landscape of Wuyuan, China, Huangling village captivates visitors with its stunning Hui-style architecture and vibrant fields of rapeseed flowers that blanket the area in a sea of yellow each spring. Experience the charm of this traditional village, where ancient customs blend seamlessly with breathtaking scenery. As you wander through the narrow alleyways, you'll witness local farmers practicing the unique art of shaiqiu, showcasing their crops drying in bamboo baskets on sunlit window sills. This enchanting destination, recognized as one of the Best Tourism Villages by the United Nations World Tourism Organization in 2023, offers a perfect escape for nature lovers and cultural enthusiasts alike, making it a must-visit on your hiking tour itinerary.",
+          "duration": "2-3 hours",
+          "location": "Huangling, Wuyuan",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Cultural experience",
+            "Scenic views"
+          ],
+          "images": [
+            {
+              "id": "custom-1764506165222",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Autumn_sun_drying_at_Huangling.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Autumn_sun_drying_at_Huangling.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Autumn_sun_drying_at_Huangling.jpg",
+              "alt": "Huangling",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "11-1-1764440953795",
+          "time": "Afternoon",
+          "type": "transfer",
+          "title": "Transfer to Wangxian Valley (Shangrao)",
+          "description": "The transfer time from Wuyuan to Wangxian Valley is approximately 2 hours by coach.\n",
+          "duration": "2 hour",
+          "location": "Wuyuan to Wangxian Valley",
+          "mode": "coach",
+          "from": "Wuyuan",
+          "to": "Wangxian Valley (Shangrao)",
+          "walkDetails": null,
+          "highlights": [
+            "Scenic transfer"
+          ],
+          "images": []
+        },
+        {
+          "id": "11-2-1764440953795",
+          "time": "Afternoon",
+          "type": "activity",
+          "title": "Hike in Wangxian Valley",
+          "description": "Hike approximately 10 km (300 m total elevation). Follow recommended routes, with a highlight on the dreamy, fairy-tale night views with the surrounding cliffs illuminated. \n\nRecommendations: Stay within or near Wangxian Valley to fully experience the night and morning scenery.",
+          "duration": "3-4 hours",
+          "location": "Wangxian Valley (Shangrao)",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "10 km",
+            "elevation": "300 m gain",
+            "difficulty": "moderate"
+          },
+          "highlights": [
+            "Fairy-tale night views",
+            "Scenic beauty"
+          ],
+          "images": [
+            {
+              "id": "custom-1764506313000",
+              "src": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy41NGFWUdl7_vwzAQSvBAbFPWkx4gF1VSR6FFmvHJiCL_NAP4ka-o71xwLW3p5GmOVPBovYiq3cwNc-1aZdC3Hw2OAed5QHKjTr8hfUpnyRZBx55tVrMA__oT7XYzJGp9kmDL3fmpUvYE=s1360-w1360-h1020-rw",
+              "thumb": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy41NGFWUdl7_vwzAQSvBAbFPWkx4gF1VSR6FFmvHJiCL_NAP4ka-o71xwLW3p5GmOVPBovYiq3cwNc-1aZdC3Hw2OAed5QHKjTr8hfUpnyRZBx55tVrMA__oT7XYzJGp9kmDL3fmpUvYE=s1360-w1360-h1020-rw",
+              "full": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy41NGFWUdl7_vwzAQSvBAbFPWkx4gF1VSR6FFmvHJiCL_NAP4ka-o71xwLW3p5GmOVPBovYiq3cwNc-1aZdC3Hw2OAed5QHKjTr8hfUpnyRZBx55tVrMA__oT7XYzJGp9kmDL3fmpUvYE=s1360-w1360-h1020-rw",
+              "alt": "Wangxian Valley",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "11-3-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Homestay in Wangxian Valley or a hotel in Shangrao.",
+          "description": "Check into a characteristic homestay in Wangxian Valley or a hotel in Shangrao.",
+          "duration": "30 minutes",
+          "location": "Wangxian Valley",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local experience"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch",
+      "accommodation": {
+        "name": "Homestay in Wangxian Valley (Shangrao)",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 12,
+      "date": "May 20",
+      "title": "Journey to Mount Tai",
+      "location": "Tai'An",
+      "region": "taishan",
+      "description": "High-speed rail to Tai'an, Shandong (~4-5 hours). Visit Dai Temple, the spiritual core of Mount Tai worship, to learn about the history of imperial sacrifices. Prepare for tomorrow's climb.",
+      "segments": [
+        {
+          "id": "12-0-1764440953795",
+          "time": "Morning",
+          "type": "transfer",
+          "title": "High-Speed Rail to Tai'An",
+          "description": "Take high-speed rail from Shangrao to Tai’An, Shandong (~4–5 hours). Private transfer from Tai’An Station.",
+          "duration": "5 hours",
+          "location": "Shangrao to Tai'An",
+          "mode": "high-speed rail",
+          "from": "Shangrao",
+          "to": "Tai'An",
+          "walkDetails": null,
+          "highlights": [
+            "Comfortable travel"
+          ],
+          "images": []
+        },
+        {
+          "id": "12-1-1764440953795",
+          "time": "Afternoon",
+          "type": "activity",
+          "title": "Visit Dai Temple",
+          "description": "Visit Dai Temple after lunch (including Tiankuang Hall, Han Cypress Court, East Imperial Lodging, and Stele Forest). This was where ancient emperors worshipped the God of Mount Tai and held Fengshan ceremonies, serving as the spiritual core of Mount Tai worship. \n\nA professional guide will provide in-depth historical and cultural context, setting the stage for the next day’s climb.",
+          "duration": "2-3 hours",
+          "location": "Dai Temple, Tai'An",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Historical significance",
+            "Cultural context"
+          ],
+          "images": [
+            {
+              "id": "custom-1764506737601",
+              "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e8/72/85/temple-compund.jpg",
+              "thumb": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e8/72/85/temple-compund.jpg",
+              "full": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/e8/72/85/temple-compund.jpg",
+              "alt": "Dai Temple",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "12-2-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Hotel in Tai'An",
+          "description": "Check into a hotel in Tai'An.",
+          "duration": "30 minutes",
+          "location": "Tai'An",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Comfortable accommodation"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch",
+      "accommodation": {
+        "name": "Hotel in Tai'An",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 13,
+      "date": "May 21",
+      "title": "Ascending Mount Tai",
+      "location": "Mount Tai",
+      "region": "taishan",
+      "description": "Full day climb of Mount Tai, the foremost of the Five Great Mountains. Choose between the Classic Challenge Route (7.5km, 1300m elevation) or the Leisurely Route. Reach the Jade Emperor Peak and enjoy the majestic views.",
+      "segments": [
+        {
+          "id": "13-0-1764440953795",
+          "time": "Full Day",
+          "type": "activity",
+          "title": "Climb Mount Tai",
+          "description": "Climb Mount Tai, choosing a route based on your preference.\n\nClassic Challenge Route (recommended): Hongmen Entrance to Zhongtian Gate to Nantian Gate and Jade Emperor Peak (~7.5 km, ~1,300 m elevation, 4–6 hours).\n \nLeisurely Experience Route: Transport from Tianwai Village to Zhongtian Gate, then hike or take a cable car to Nantian Gate.\n\nRecommendations: Start early to avoid heat and crowds; use trekking poles and knee supports for the “Eighteen Bends”; bring windproof clothing for temperature changes at the summit. \n\nThe hotel will prepare trail lunches, fruits, and beverages for everyone.",
+          "duration": "4-6 hours",
+          "location": "Mount Tai",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": {
+            "distance": "7.5 km",
+            "elevation": "1,300 m gain",
+            "difficulty": "challenging"
+          },
+          "highlights": [
+            "Classic Challenge Route or Leisurely Experience Route"
+          ],
+          "images": [
+            {
+              "id": "pexels-31506012",
+              "src": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+              "thumb": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg?auto=compress&cs=tinysrgb&h=350",
+              "full": "https://images.pexels.com/photos/31506012/pexels-photo-31506012.jpeg",
+              "alt": "Golden temple atop Mount Tai with scenic views and crowds walking uphill.",
+              "photographer": "zhiqiang pan",
+              "photographerUrl": "https://www.pexels.com/@zhiqiang-pan-2151104065",
+              "source": "pexels",
+              "sourceUrl": "https://www.pexels.com/photo/majestic-view-of-golden-temple-on-mount-tai-31506012/"
+            },
+            {
+              "id": "wikimedia-5327850",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/%E6%B3%B0%E5%B1%B1_%E5%8D%97%E5%A4%A9%E9%97%A8.jpg/800px-泰山 南天门.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/%E6%B3%B0%E5%B1%B1_%E5%8D%97%E5%A4%A9%E9%97%A8.jpg/300px-泰山 南天门.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/7/74/%E6%B3%B0%E5%B1%B1_%E5%8D%97%E5%A4%A9%E9%97%A8.jpg",
+              "alt": "Stone staircase up Tai'shan—Mount Tai, in Shandong Province, eastern China.\nWith stone gate at the top.",
+              "photographer": "Charlie fong",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%B3%B0%E5%B1%B1%20%E5%8D%97%E5%A4%A9%E9%97%A8.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A%E6%B3%B0%E5%B1%B1%20%E5%8D%97%E5%A4%A9%E9%97%A8.jpg"
+            },
+            {
+              "id": "wikimedia-98954162",
+              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/50362_Mount_Tai_UNESCO_mark.jpg/800px-50362 Mount Tai UNESCO mark.jpg",
+              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/50362_Mount_Tai_UNESCO_mark.jpg/300px-50362 Mount Tai UNESCO mark.jpg",
+              "full": "https://upload.wikimedia.org/wikipedia/commons/1/13/50362_Mount_Tai_UNESCO_mark.jpg",
+              "alt": "UNESCO World Heritage Convention\nFor more info see http://whc.unesco.org/en/list/437/gallery/",
+              "photographer": "xiquinhosilva",
+              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3A50362%20Mount%20Tai%20UNESCO%20mark.jpg",
+              "source": "wikimedia",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A50362%20Mount%20Tai%20UNESCO%20mark.jpg"
+            }
+          ]
+        },
+        {
+          "id": "13-1-1764440953795",
+          "time": "Evening",
+          "type": "meal",
+          "title": "Dinner Near Mount Tai",
+          "description": "Enjoy a hearty dinner after the climb.",
+          "duration": "2 hours",
+          "location": "Local Restaurant, Tai'An",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local cuisine"
+          ],
+          "images": []
+        },
+        {
+          "id": "13-2-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Hotel Near Mount Tai",
+          "description": "Stay at a hotel near Mount Tai.",
+          "duration": "30 minutes",
+          "location": "Mount Tai",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Comfortable accommodation"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "Hotel Near Mount Tai",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 14,
+      "date": "May 22",
+      "title": "Confucian Culture in Qufu",
+      "location": "Qufu",
+      "region": "qingdao",
+      "description": "Transfer to Qufu, the hometown of Confucius. Visit the 'Three Confucian Sites' (Temple, Mansion, Forest), a UNESCO World Heritage site. Participate in cultural activities and gain deep insights into Chinese philosophy.",
+      "segments": [
+        {
+          "id": "14-0-1764440953795",
+          "time": "Morning",
+          "type": "transfer",
+          "title": "Descend & Transfer to Qufu",
+          "description": "Descending from mountain-top & transfer to the “Eastern Holy City” of Qufu (~1.5 hours).\n",
+          "duration": "1.5 hours",
+          "location": "Mount Tai to Qufu",
+          "mode": "coach",
+          "from": "Mount Tai",
+          "to": "Qufu",
+          "walkDetails": null,
+          "highlights": [
+            "Scenic transfer"
+          ],
+          "images": []
+        },
+        {
+          "id": "14-1-1764440953795",
+          "time": "Full Day",
+          "type": "activity",
+          "title": "Visit Confucius Cultural Sites",
+          "description": "In-depth visit to the “Three Confucian Sites” UNESCO World Heritage sites:\n\nConfucius Temple: The primary temple for worshipping Confucius, listed among China’s three greatest ancient architectural complexes alongside the Beijing Forbidden City and Chengde Mountain Resort.\n\nConfucius Mansion: The residence of Confucius’s direct descendants, the “Dukes of Yansheng” combining official offices and living quarters.\n\nConfucius Forest: The dedicated cemetery of Confucius and his family, the world’s longest-continuously-used family cemetery.\n \nA knowledgeable cultural guide will provide deep insights. \n\nParticipate in cultural activities such as a “Teacher Worship Ceremony.”",
+          "duration": "6-8 hours",
+          "location": "Qufu",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Confucius Temple",
+            "Confucius Mansion",
+            "Confucius Forest"
+          ],
+          "images": [
+            {
+              "id": "custom-1764507150876",
+              "src": "https://www.chinadiscovery.com/assets/images/qufu/confucius-temple/Confucius-temple-788.jpg",
+              "thumb": "https://www.chinadiscovery.com/assets/images/qufu/confucius-temple/Confucius-temple-788.jpg",
+              "full": "https://www.chinadiscovery.com/assets/images/qufu/confucius-temple/Confucius-temple-788.jpg",
+              "alt": "Confucius Temple",
+              "photographer": "Custom",
+              "source": "custom"
+            },
+            {
+              "id": "custom-1764507333556",
+              "src": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOEeX-bf0EFdwy7fQdOIEPvF0SPc_kCYWq2SMHr4S7LbXwZbG6YKMmhcWosoDH0RSssnvmr_CCg0M3dg8hMgZPRPa_cOY2HhgtasWH8-qlIjs3A9Vm2DtNZk-S6ir1xjzA4STS=s1360-w1360-h1020-rw",
+              "thumb": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOEeX-bf0EFdwy7fQdOIEPvF0SPc_kCYWq2SMHr4S7LbXwZbG6YKMmhcWosoDH0RSssnvmr_CCg0M3dg8hMgZPRPa_cOY2HhgtasWH8-qlIjs3A9Vm2DtNZk-S6ir1xjzA4STS=s1360-w1360-h1020-rw",
+              "full": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzOEeX-bf0EFdwy7fQdOIEPvF0SPc_kCYWq2SMHr4S7LbXwZbG6YKMmhcWosoDH0RSssnvmr_CCg0M3dg8hMgZPRPa_cOY2HhgtasWH8-qlIjs3A9Vm2DtNZk-S6ir1xjzA4STS=s1360-w1360-h1020-rw",
+              "alt": "Confucian Mansion",
+              "photographer": "Custom",
+              "source": "custom"
+            }
+          ]
+        },
+        {
+          "id": "14-2-1764440953795",
+          "time": "Evening",
+          "type": "meal",
+          "title": "Dinner Featuring Local Specialties",
+          "description": "Savor local specialties for dinner.",
+          "duration": "2 hours",
+          "location": "Local Restaurant, Qufu",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Local cuisine"
+          ],
+          "images": []
+        },
+        {
+          "id": "14-3-1764440953795",
+          "time": "Evening",
+          "type": "check-in",
+          "title": "Check-in at Hotel in Qufu",
+          "description": "Stay at a hotel in Qufu.",
+          "duration": "30 minutes",
+          "location": "Qufu",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Comfortable accommodation"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast, Lunch, Dinner",
+      "accommodation": {
+        "name": "Hotel in Qufu",
+        "rating": "4-star"
+      }
+    },
+    {
+      "day": 15,
+      "date": "May 23",
+      "title": "Departure",
+      "location": "Qingdao",
+      "region": "qingdao",
+      "description": "Transfer to Qingdao International Airport. Depart for London Heathrow at 15:00. End of the journey.",
+      "segments": [
+        {
+          "id": "15-0-1764440953795",
+          "time": "Morning",
+          "type": "transfer",
+          "title": "Transfer to Qingdao",
+          "description": "Transfer to Qingdao.",
+          "duration": "2-3 hours",
+          "location": "Qufu to Qingdao",
+          "mode": "coach",
+          "from": "Qufu",
+          "to": "Qingdao",
+          "walkDetails": null,
+          "highlights": [
+            "Scenic transfer"
+          ],
+          "images": []
+        },
+        {
+          "id": "15-1-1764440953795",
+          "time": "Midday",
+          "type": "transfer",
+          "title": "Arrival at Qingdao International Airport",
+          "description": "Arrive Qingdao International Airport around 12:00. \n\nReminder: Arrive at the airport at least 3 hours before international flights for check-in procedures.",
+          "duration": "1 hour",
+          "location": "Qingdao",
+          "mode": "",
+          "from": "",
+          "to": "",
+          "walkDetails": null,
+          "highlights": [
+            "Prepare for departure"
+          ],
+          "images": []
+        },
+        {
+          "id": "15-2-1764440953795",
+          "time": "Afternoon",
+          "type": "transfer",
+          "title": "Departure from Qingdao",
+          "description": "Departing from Qingdao to Heathrow at 15:00 (Tianjin Airline)\n\nDirect Flights: The average non-stop flight time is approximately 11 hours and 55 minutes. Direct services are primarily offered by airlines such as Capital Airlines and Hainan Airlines.",
+          "duration": "12 hour",
+          "location": "Qingdao to Heathrow",
+          "mode": "flight",
+          "from": "Qingdao",
+          "to": "Heathrow",
+          "walkDetails": null,
+          "highlights": [
+            "End of the journey"
+          ],
+          "images": []
+        }
+      ],
+      "meals": "Breakfast",
+      "accommodation": {
+        "name": "",
+        "rating": ""
+      }
+    }
+  ]
+}

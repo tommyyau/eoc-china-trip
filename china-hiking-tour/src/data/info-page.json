@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "title": {
+      "en": "Essential Information",
+      "cn": "重要信息"
+    },
+    "subtitle": {
+      "en": "Everything you need to know about visas, costs, and trip inclusions",
+      "cn": "关于签证、费用和行程包含内容的所有信息"
+    }
+  },
+  "visa": {
+    "title": {
+      "en": "Group Visa Information",
+      "cn": "团体签证信息"
+    },
+    "items": [
+      {
+        "en": "Visa Type: Group Visa (All members must enter and exit together)",
+        "cn": "签证类型：团体签证（所有成员必须同进同出）"
+      },
+      {
+        "en": "Validity: 30 days",
+        "cn": "有效期：30天"
+      },
+      {
+        "en": "Document Submission: 40 days before departure",
+        "cn": "文件提交：出发前40天"
+      },
+      {
+        "en": "Visa Fee: Approx. £100",
+        "cn": "签证费：约100英镑"
+      },
+      {
+        "en": "Note: Original passports are NOT required, only photocopies.",
+        "cn": "注意：不需要护照原件，只需复印件。"
+      }
+    ]
+  },
+  "cost": {
+    "title": {
+      "en": "Cost & Inclusions",
+      "cn": "费用与包含"
+    },
+    "price": {
+      "en": "Reference Price: Approx. £1,600 per person (double occupancy per room)",
+      "cn": "参考价格：约 £1,600 每人（双人入住）"
+    },
+    "includesTitle": {
+      "en": "Includes",
+      "cn": "包含"
+    },
+    "excludesTitle": {
+      "en": "Excludes",
+      "cn": "不包含"
+    },
+    "includes": [
+      {
+        "en": "Accommodation: 14 nights (mainly 4-star)",
+        "cn": "住宿：14晚（主要是4星级）"
+      },
+      {
+        "en": "Meals: 3 meals per day",
+        "cn": "餐饮：每日3餐"
+      },
+      {
+        "en": "Transportation: Dedicated bus + High-speed rail",
+        "cn": "交通：专用巴士 + 高铁"
+      },
+      {
+        "en": "Services: English/Chinese guides, mountain guide",
+        "cn": "服务：中英文导游，登山向导"
+      },
+      {
+        "en": "Tickets: All entry tickets listed",
+        "cn": "门票：行程所列所有门票"
+      },
+      {
+        "en": "Insurance: Travel agency liability + outdoor accident insurance",
+        "cn": "保险：旅行社责任险 + 户外意外险"
+      }
+    ],
+    "excludes": [
+      {
+        "en": "International round-trip airfare (~£600)",
+        "cn": "国际往返机票 (~£600)"
+      },
+      {
+        "en": "Single room supplement (~£450-£600)",
+        "cn": "单房差 (£450-£600)"
+      },
+      {
+        "en": "Personal expenses",
+        "cn": "个人消费"
+      },
+      {
+        "en": "Visa fees (~£100)",
+        "cn": "签证费 (~£100)"
+      },
+      {
+        "en": "Personal Travel Insurance",
+        "cn": ""
+      }
+    ]
+  }
+}
