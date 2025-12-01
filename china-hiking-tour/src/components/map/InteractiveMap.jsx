@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, Polyline, Tooltip, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import { useLanguage } from '../../context/LanguageContext';
 import 'leaflet/dist/leaflet.css';
@@ -12,35 +12,25 @@ L.Icon.Default.mergeOptions({
     shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png'
 });
 
-// Custom marker icon creator
+// Custom marker icon creator - small dots that don't obscure the map
 const createCustomIcon = (color, isActive = false) => {
+    const size = isActive ? 16 : 12;
     return L.divIcon({
         className: 'custom-marker',
         html: `
             <div style="
-                width: ${isActive ? '40px' : '32px'};
-                height: ${isActive ? '40px' : '32px'};
+                width: ${size}px;
+                height: ${size}px;
                 background: ${color};
-                border: 3px solid white;
+                border: 2px solid white;
                 border-radius: 50%;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: all 0.3s ease;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.4);
                 ${isActive ? 'animation: pulse 2s infinite;' : ''}
-            ">
-                <div style="
-                    width: 8px;
-                    height: 8px;
-                    background: white;
-                    border-radius: 50%;
-                "></div>
-            </div>
+            "></div>
         `,
-        iconSize: [isActive ? 40 : 32, isActive ? 40 : 32],
-        iconAnchor: [isActive ? 20 : 16, isActive ? 20 : 16],
-        popupAnchor: [0, -20]
+        iconSize: [size, size],
+        iconAnchor: [size / 2, size / 2],
+        popupAnchor: [0, -10]
     });
 };
 
@@ -163,6 +153,18 @@ const InteractiveMap = ({
                 .leaflet-popup-content {
                     margin: 12px 16px;
                 }
+                .destination-tooltip {
+                    background: white !important;
+                    border: none !important;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+                    padding: 4px 8px !important;
+                    font-weight: 600 !important;
+                    font-size: 12px !important;
+                    border-radius: 4px !important;
+                }
+                .destination-tooltip::before {
+                    display: none !important;
+                }
             `}</style>
 
             <MapContainer
@@ -201,6 +203,14 @@ const InteractiveMap = ({
                                 click: () => onDestinationClick(destination)
                             }}
                         >
+                            <Tooltip
+                                permanent
+                                direction="right"
+                                offset={[8, 0]}
+                                className="destination-tooltip"
+                            >
+                                {destination.name?.[language] || destination.name}
+                            </Tooltip>
                             <Popup>
                                 <div style={{ minWidth: '150px' }}>
                                     <h4 style={{
