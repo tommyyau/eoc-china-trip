@@ -135,6 +135,15 @@ const InteractiveMap = ({
         qingdao: '#00796B'
     };
 
+    // Smart label positioning to avoid overlaps
+    const labelPositions = {
+        xian: { direction: 'left', offset: [-8, 0] },
+        beijing: { direction: 'right', offset: [8, 0] },
+        lushan: { direction: 'left', offset: [-8, 0] },
+        taishan: { direction: 'top', offset: [0, -8] },
+        qingdao: { direction: 'right', offset: [8, 0] }
+    };
+
     return (
         <div style={{ height, width: '100%', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
             <style>{`
@@ -205,8 +214,8 @@ const InteractiveMap = ({
                         >
                             <Tooltip
                                 permanent
-                                direction="right"
-                                offset={[8, 0]}
+                                direction={labelPositions[destination.id]?.direction || 'right'}
+                                offset={labelPositions[destination.id]?.offset || [8, 0]}
                                 className="destination-tooltip"
                             >
                                 {destination.name?.[language] || destination.name}
