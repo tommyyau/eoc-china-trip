@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Parallax } from 'react-scroll-parallax';
 import { ChevronDown, Download } from 'lucide-react';
 import { itineraryData } from '../data/cmsData';
-import { destinationRegions } from '../data/destinationRegions';
+import itineraryPageData from '../data/itinerary-page.json';
 import ItineraryCard from '../components/ItineraryCard';
 import { useLanguage } from '../context/LanguageContext';
 import PDFDownload from '../components/PDFDownload';
@@ -14,24 +14,12 @@ import SectionDivider from '../components/ui/SectionDivider';
 const Itinerary = () => {
     const { language } = useLanguage();
 
-    const t = {
-        en: {
-            title: "15 Days of Adventure",
-            subtitle: "Your complete day-by-day journey through China's wonders",
-            download: "Download PDF",
-            interestTitle: "Ready to Join?",
-            interestSubtitle: "Leave your details and we'll be in touch with next steps."
-        },
-        cn: {
-            title: "15天冒险之旅",
-            subtitle: "您的中国奇迹之旅完整日程",
-            download: "下载PDF",
-            interestTitle: "准备加入？",
-            interestSubtitle: "留下您的联系方式，我们会与您联系下一步。"
-        }
-    };
+    // Helper to get bilingual text
+    const t = (field) => field?.[language] || field?.en || '';
 
-    const content = t[language];
+    // Get data from CMS
+    const hero = itineraryPageData.hero || {};
+    const destinationRegions = itineraryPageData.regions || [];
 
     // Group days by region
     const getDaysByRegion = (regionId) => {
@@ -67,7 +55,7 @@ const Itinerary = () => {
                         style={{
                             width: '100%',
                             height: '120%',
-                            backgroundImage: 'url(https://images.unsplash.com/photo-1584646098378-0874589d76b1?q=80&w=2070&auto=format&fit=crop)',
+                            backgroundImage: `url(${hero.backgroundImage || 'https://images.unsplash.com/photo-1584646098378-0874589d76b1?q=80&w=2070&auto=format&fit=crop'})`,
                             backgroundSize: 'cover',
                             backgroundPosition: 'center'
                         }}
@@ -101,10 +89,11 @@ const Itinerary = () => {
                             fontSize: 'clamp(2.5rem, 5vw, 4rem)',
                             fontWeight: 800,
                             marginBottom: '1rem',
-                            textShadow: '0 4px 12px rgba(0,0,0,0.4)'
+                            textShadow: '0 4px 12px rgba(0,0,0,0.4)',
+                            color: 'white'
                         }}
                     >
-                        {content.title}
+                        {t(hero.title)}
                     </h1>
                     <p
                         style={{
@@ -112,13 +101,14 @@ const Itinerary = () => {
                             opacity: 0.9,
                             marginBottom: '2rem',
                             maxWidth: '600px',
-                            margin: '0 auto 2rem'
+                            margin: '0 auto 2rem',
+                            color: 'white'
                         }}
                     >
-                        {content.subtitle}
+                        {t(hero.subtitle)}
                     </p>
                     <PDFDownload
-                        label={content.download}
+                        label={t(hero.downloadButton)}
                         variant="light"
                     />
                 </motion.div>
@@ -208,7 +198,7 @@ const Itinerary = () => {
                                         fontSize: 'clamp(2rem, 4vw, 3rem)',
                                         marginBottom: '0.75rem'
                                     }}>
-                                        {region.name[language]}
+                                        {t(region.name)}
                                     </h2>
                                     <p style={{
                                         color: 'rgba(255,255,255,0.9)',
@@ -216,7 +206,7 @@ const Itinerary = () => {
                                         margin: '0 auto',
                                         fontSize: '1.1rem'
                                     }}>
-                                        {region.description[language]}
+                                        {t(region.description)}
                                     </p>
                                 </ScrollReveal>
                             </div>

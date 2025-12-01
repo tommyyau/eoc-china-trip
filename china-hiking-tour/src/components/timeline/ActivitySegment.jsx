@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MapPin, Clock, Mountain, Route, ChevronDown, ChevronUp, Utensils, Coffee } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 import SegmentImageGallery from './SegmentImageGallery';
 
 const typeConfig = {
@@ -11,8 +12,22 @@ const typeConfig = {
 
 export default function ActivitySegment({ segment, poiContent, showTime = true }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const { language } = useLanguage();
 
-  const { type, title, description, duration, time, walkDetails, highlights, images } = segment;
+  // Helper to get localized value from string or {en, cn} object
+  const getText = (value) => {
+    if (!value) return '';
+    if (typeof value === 'string') return value;
+    if (typeof value === 'object' && value[language]) return value[language];
+    if (typeof value === 'object' && value.en) return value.en;
+    return '';
+  };
+
+  const { type, walkDetails, highlights, images } = segment;
+  const title = getText(segment.title);
+  const description = getText(segment.description);
+  const duration = segment.duration;
+  const time = getText(segment.time);
 
   const config = typeConfig[type] || typeConfig.activity;
   const IconComponent = config.icon;
@@ -141,7 +156,9 @@ export default function ActivitySegment({ segment, poiContent, showTime = true }
             <>
               {poiContent.summary && (
                 <div style={{ marginBottom: '0.75rem' }}>
-                  <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '0.9rem', color: '#1976d2' }}>About</h5>
+                  <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '0.9rem', color: '#1976d2' }}>
+                    {language === 'en' ? 'About' : '简介'}
+                  </h5>
                   <p style={{ margin: 0, fontSize: '0.85rem', color: '#555', lineHeight: '1.6' }}>
                     {poiContent.summary}
                   </p>
@@ -149,7 +166,9 @@ export default function ActivitySegment({ segment, poiContent, showTime = true }
               )}
               {poiContent.tips && (
                 <div>
-                  <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '0.9rem', color: '#2e7d32' }}>Tips</h5>
+                  <h5 style={{ margin: '0 0 0.5rem 0', fontSize: '0.9rem', color: '#2e7d32' }}>
+                    {language === 'en' ? 'Tips' : '小贴士'}
+                  </h5>
                   <p style={{ margin: 0, fontSize: '0.85rem', color: '#555', lineHeight: '1.6' }}>
                     {poiContent.tips}
                   </p>
@@ -179,9 +198,9 @@ export default function ActivitySegment({ segment, poiContent, showTime = true }
           }}
         >
           {isExpanded ? (
-            <>Show less <ChevronUp size={16} /></>
+            <>{language === 'en' ? 'Show less' : '收起'} <ChevronUp size={16} /></>
           ) : (
-            <>Read more <ChevronDown size={16} /></>
+            <>{language === 'en' ? 'Read more' : '展开更多'} <ChevronDown size={16} /></>
           )}
         </button>
       )}

@@ -38,10 +38,22 @@
     "hikingKm": 100,
     "elevation": 4500,
     "labels": {
-      "days": { "en": "Days", "cn": "天" },
-      "destinations": { "en": "Destinations", "cn": "个目的地" },
-      "hikingKm": { "en": "km Hiking", "cn": "公里徒步" },
-      "elevation": { "en": "m Elevation", "cn": "米海拔" }
+      "days": {
+        "en": "Days",
+        "cn": "天"
+      },
+      "destinations": {
+        "en": "Destinations",
+        "cn": "个目的地"
+      },
+      "hikingKm": {
+        "en": "km Hiking",
+        "cn": "公里徒步"
+      },
+      "elevation": {
+        "en": "m Elevation",
+        "cn": "米海拔"
+      }
     }
   },
   "map": {
@@ -62,10 +74,21 @@
     "items": [
       {
         "id": "xian",
-        "name": { "en": "Xi'an", "cn": "西安" },
-        "days": [1, 2, 3, 4],
-        "coordinates": [34.3416, 108.9398],
-        "heroImage": "https://images.unsplash.com/photo-1584646098378-0874589d76b1?q=80&w=2070&auto=format&fit=crop",
+        "name": {
+          "en": "Xi'an",
+          "cn": "西安"
+        },
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "coordinates": [
+          34.3416,
+          108.9398
+        ],
+        "heroImage": "https://oneplanetjourney.com/wp-content/uploads/2024/11/Terracotta-Warriors-OPJ.jpg",
         "description": {
           "en": "Ancient capital of China, home to the legendary Terracotta Warriors and 3,000 years of history",
           "cn": "中国古都，拥有传奇的兵马俑和3000年历史"
@@ -74,10 +97,19 @@
       },
       {
         "id": "beijing",
-        "name": { "en": "Beijing", "cn": "北京" },
-        "days": [5, 6],
-        "coordinates": [39.9042, 116.4074],
-        "heroImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop",
+        "name": {
+          "en": "Beijing",
+          "cn": "北京"
+        },
+        "days": [
+          5,
+          6
+        ],
+        "coordinates": [
+          39.9042,
+          116.4074
+        ],
+        "heroImage": "https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892506/EducationHub/photos/the-great-wall-of-china.jpg",
         "description": {
           "en": "China's capital city, featuring the iconic Great Wall and imperial Forbidden City",
           "cn": "中国首都，拥有标志性的长城和皇家故宫"
@@ -86,10 +118,21 @@
       },
       {
         "id": "lushan",
-        "name": { "en": "Lushan Region", "cn": "庐山地区" },
-        "days": [7, 8, 9, 10],
-        "coordinates": [29.5628, 115.9928],
-        "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+        "name": {
+          "en": "Lushan Region",
+          "cn": "庐山地区"
+        },
+        "days": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "coordinates": [
+          29.5628,
+          115.9928
+        ],
+        "heroImage": "http://www.xinhuanet.com/english/2018-10/20/137547031_15400418501041n.jpg",
         "description": {
           "en": "Mystical mountain landscapes, traditional villages, and the beautiful countryside of Wuyuan",
           "cn": "神秘的山景、传统村落和婺源美丽的乡村"
@@ -98,10 +141,18 @@
       },
       {
         "id": "shangrao",
-        "name": { "en": "Shangrao", "cn": "上饶" },
-        "days": [11],
-        "coordinates": [28.4549, 117.9432],
-        "heroImage": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
+        "name": {
+          "en": "Shangrao",
+          "cn": "上饶"
+        },
+        "days": [
+          11
+        ],
+        "coordinates": [
+          28.4549,
+          117.9432
+        ],
+        "heroImage": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Shangrao_Kuiwenta.jpg",
         "description": {
           "en": "Gateway to Mount Sanqing, featuring stunning natural scenery and ancient Taoist heritage",
           "cn": "三清山门户，拥有壮丽的自然风光和古老的道教文化"
@@ -110,10 +161,20 @@
       },
       {
         "id": "taishan",
-        "name": { "en": "Mount Tai Region", "cn": "泰山地区" },
-        "days": [12, 13, 14],
-        "coordinates": [36.2565, 117.1009],
-        "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
+        "name": {
+          "en": "Mount Tai Region",
+          "cn": "泰山地区"
+        },
+        "days": [
+          12,
+          13,
+          14
+        ],
+        "coordinates": [
+          36.2565,
+          117.1009
+        ],
+        "heroImage": "https://www.thechinajourney.com/wp-content/uploads/2025/04/Ancient-temple-pavilion-perched-on-Mount-Tai-with-distant-cityscape-shrouded-in-morning-haze-1024x576.webp",
         "description": {
           "en": "The sacred Mount Tai, foremost of China's Five Great Mountains, and birthplace of Confucius",
           "cn": "神圣的泰山，五岳之首，孔子故里"
@@ -122,10 +183,18 @@
       },
       {
         "id": "qingdao",
-        "name": { "en": "Qingdao", "cn": "青岛" },
-        "days": [15],
-        "coordinates": [36.0671, 120.3826],
-        "heroImage": "https://images.unsplash.com/photo-1589800950114-e0d80663c2d1?q=80&w=2070&auto=format&fit=crop",
+        "name": {
+          "en": "Qingdao",
+          "cn": "青岛"
+        },
+        "days": [
+          15
+        ],
+        "coordinates": [
+          36.0671,
+          120.3826
+        ],
+        "heroImage": "https://www.china-briefing.com/news/wp-content/uploads/2021/07/Investing-in-Qingdao-Shandong-Province.jpg",
         "description": {
           "en": "Beautiful coastal city, departure point for your journey home",
           "cn": "美丽的海滨城市，返程起点"

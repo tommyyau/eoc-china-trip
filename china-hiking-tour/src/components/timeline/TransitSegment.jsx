@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Plane, Train, Bus, Car, CableCar, Clock, MapPin, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const modeIcons = {
   Plane: Plane,
@@ -19,19 +20,46 @@ const modeColors = {
 };
 
 export default function TransitSegment({ segment, showTime = true }) {
-  const { mode, modeIcon, from, to, duration, description, time } = segment;
+  const { language } = useLanguage();
   const [expanded, setExpanded] = useState(false);
+
+  // Helper to get localized value from string or {en, cn} object
+  const getText = (value) => {
+    if (!value) return '';
+    if (typeof value === 'string') return value;
+    if (typeof value === 'object' && value[language]) return value[language];
+    if (typeof value === 'object' && value.en) return value.en;
+    return '';
+  };
+
+  const { mode, modeIcon, from, to, duration } = segment;
+  const description = getText(segment.description);
+  const time = getText(segment.time);
 
   const IconComponent = modeIcons[modeIcon] || Car;
   const colors = modeColors[mode?.toLowerCase()] || modeColors.default;
 
-  const modeLabel = {
-    flight: 'Flight',
-    train: 'Train',
-    coach: 'Coach',
-    'high-speed rail': 'High-Speed Rail',
-    'cable car': 'Cable Car',
-  }[mode?.toLowerCase()] || 'Transfer';
+  const modeLabels = {
+    en: {
+      flight: 'Flight',
+      train: 'Train',
+      coach: 'Coach',
+      'high-speed rail': 'High-Speed Rail',
+      'cable car': 'Cable Car',
+    },
+    cn: {
+      flight: '航班',
+      train: '火车',
+      coach: '大巴',
+      'high-speed rail': '高铁',
+      'cable car': '缆车',
+    }
+  };
+  const modeLabel = modeLabels[language]?.[mode?.toLowerCase()] ||
+                    modeLabels.en[mode?.toLowerCase()] ||
+                    (language === 'en' ? 'Transfer' : '交通');
+
+  const travelTimeLabel = language === 'en' ? 'travel time' : '行程时间';
 
   return (
     <div
@@ -89,10 +117,14 @@ export default function TransitSegment({ segment, showTime = true }) {
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
             <MapPin size={16} color={colors.icon} />
-            <span style={{ fontWeight: '600', fontSize: '1rem', color: '#333' }}>{from || 'Departure'}</span>
+            <span style={{ fontWeight: '600', fontSize: '1rem', color: '#333' }}>
+              {from || (language === 'en' ? 'Departure' : '出发')}
+            </span>
           </div>
           <ArrowRight size={20} color={colors.border} />
-          <span style={{ fontWeight: '600', fontSize: '1rem', color: '#333' }}>{to || 'Arrival'}</span>
+          <span style={{ fontWeight: '600', fontSize: '1rem', color: '#333' }}>
+            {to || (language === 'en' ? 'Arrival' : '抵达')}
+          </span>
         </div>
       )}
 
@@ -111,7 +143,7 @@ export default function TransitSegment({ segment, showTime = true }) {
         >
           <Clock size={18} color={colors.icon} />
           <span style={{ fontWeight: '700', fontSize: '1.1rem', color: '#333' }}>{duration}</span>
-          <span style={{ fontSize: '0.85rem', color: '#666' }}>travel time</span>
+          <span style={{ fontSize: '0.85rem', color: '#666' }}>{travelTimeLabel}</span>
         </div>
       )}
 
@@ -143,9 +175,9 @@ export default function TransitSegment({ segment, showTime = true }) {
                 }}
               >
                 {expanded ? (
-                  <>Show less <ChevronUp size={14} /></>
+                  <>{language === 'en' ? 'Show less' : '收起'} <ChevronUp size={14} /></>
                 ) : (
-                  <>Read more <ChevronDown size={14} /></>
+                  <>{language === 'en' ? 'Read more' : '展开更多'} <ChevronDown size={14} /></>
                 )}
               </button>
             )}

@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Save, RefreshCw, Calendar, Info, Home } from 'lucide-react'
+import { Save, RefreshCw, Calendar, Info, Home, Map } from 'lucide-react'
 import DayList from './components/DayList'
 import DayEditor from './components/DayEditor'
 import InfoEditor from './components/InfoEditor'
 import HomeEditor from './components/HomeEditor'
-import { loadItinerary, saveItinerary, loadInfo, saveInfo, loadHome, saveHome, getFromLocalStorage, saveToLocalStorage } from './utils/storage'
+import ItineraryPageEditor from './components/ItineraryPageEditor'
+import { loadItinerary, saveItinerary, loadInfo, saveInfo, loadHome, saveHome, loadItineraryPage, saveItineraryPage, getFromLocalStorage, saveToLocalStorage } from './utils/storage'
 
 function App() {
   const [activeTab, setActiveTab] = useState('itinerary')
@@ -17,6 +18,8 @@ function App() {
   const [hasInfoChanges, setHasInfoChanges] = useState(false)
   const [homeData, setHomeData] = useState(null)
   const [hasHomeChanges, setHasHomeChanges] = useState(false)
+  const [itineraryPageData, setItineraryPageData] = useState(null)
+  const [hasItineraryPageChanges, setHasItineraryPageChanges] = useState(false)
   const [lastSaved, setLastSaved] = useState(null)
 
   // Load data on mount
@@ -46,6 +49,11 @@ function App() {
         const serverHomeData = await loadHome()
         if (serverHomeData) {
           setHomeData(serverHomeData)
+        }
+        // Load itinerary page data
+        const serverItineraryPageData = await loadItineraryPage()
+        if (serverItineraryPageData) {
+          setItineraryPageData(serverItineraryPageData)
         }
       } catch (err) {
         console.error('Failed to load:', err)
@@ -85,6 +93,9 @@ function App() {
       } else if (activeTab === 'home' && homeData) {
         await saveHome(homeData)
         setHasHomeChanges(false)
+      } else if (activeTab === 'itinerary-page' && itineraryPageData) {
+        await saveItineraryPage(itineraryPageData)
+        setHasItineraryPageChanges(false)
       }
       setLastSaved(new Date().toISOString())
     } catch (err) {
@@ -96,7 +107,7 @@ function App() {
 
   // Reload from server (discard local changes)
   const handleReload = async () => {
-    const currentHasChanges = activeTab === 'itinerary' ? hasChanges : activeTab === 'info' ? hasInfoChanges : hasHomeChanges
+    const currentHasChanges = activeTab === 'itinerary' ? hasChanges : activeTab === 'info' ? hasInfoChanges : activeTab === 'home' ? hasHomeChanges : hasItineraryPageChanges
     if (currentHasChanges && !confirm('Discard unsaved changes and reload from server?')) {
       return
     }
@@ -122,6 +133,12 @@ function App() {
           setHomeData(serverHomeData)
           setHasHomeChanges(false)
         }
+      } else if (activeTab === 'itinerary-page') {
+        const serverItineraryPageData = await loadItineraryPage()
+        if (serverItineraryPageData) {
+          setItineraryPageData(serverItineraryPageData)
+          setHasItineraryPageChanges(false)
+        }
       }
     } catch (err) {
       console.error('Failed to reload:', err)
@@ -141,6 +158,12 @@ function App() {
     setHasHomeChanges(true)
   }, [])
 
+  // Update itinerary page data
+  const updateItineraryPageData = useCallback((newData) => {
+    setItineraryPageData(newData)
+    setHasItineraryPageChanges(true)
+  }, [])
+
   if (loading) {
     return (
       <div className="loading">
@@ -151,7 +174,7 @@ function App() {
   }
 
   const currentDay = data?.days?.[selectedDay]
-  const currentHasChanges = activeTab === 'itinerary' ? hasChanges : activeTab === 'info' ? hasInfoChanges : hasHomeChanges
+  const currentHasChanges = activeTab === 'itinerary' ? hasChanges : activeTab === 'info' ? hasInfoChanges : activeTab === 'home' ? hasHomeChanges : hasItineraryPageChanges
 
   return (
     <div className="app">
@@ -179,6 +202,13 @@ function App() {
             >
               <Home size={16} />
               Home Page
+            </button>
+            <button
+              className={`tab ${activeTab === 'itinerary-page' ? 'active' : ''}`}
+              onClick={() => setActiveTab('itinerary-page')}
+            >
+              <Map size={16} />
+              Itinerary Page
             </button>
           </nav>
         </div>
@@ -256,6 +286,20 @@ function App() {
             ) : (
               <div className="empty-state">
                 <p>No home page data found</p>
+              </div>
+            )}
+          </main>
+        </div>
+      )}
+
+      {activeTab === 'itinerary-page' && (
+        <div className="main info-main">
+          <main className="content full-width">
+            {itineraryPageData ? (
+              <ItineraryPageEditor data={itineraryPageData} onUpdate={updateItineraryPageData} />
+            ) : (
+              <div className="empty-state">
+                <p>No itinerary page data found</p>
               </div>
             )}
           </main>

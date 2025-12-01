@@ -71,8 +71,8 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
         <span className={`segment-type-badge ${segment.type}`}>
           {segment.type}
         </span>
-        <span className="segment-title">{segment.title || 'Untitled'}</span>
-        <span className="segment-time">{segment.time}</span>
+        <span className="segment-title">{segment.title?.en || segment.title || 'Untitled'}</span>
+        <span className="segment-time">{segment.time?.en || segment.time}</span>
         {segment.images?.length > 0 && (
           <span style={{ fontSize: 11, color: '#888' }}>
             {segment.images.length} image{segment.images.length > 1 ? 's' : ''}
@@ -108,7 +108,7 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
             <div className="field">
               <label>Time of Day</label>
               <select
-                value={segment.time || 'Morning'}
+                value={segment.time?.en || (typeof segment.time === 'string' ? segment.time : 'Morning')}
                 onChange={(e) => updateField('time', e.target.value)}
               >
                 {TIME_OPTIONS.map(t => (
@@ -131,7 +131,7 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
             <label>Title</label>
             <input
               type="text"
-              value={segment.title || ''}
+              value={segment.title?.en || (typeof segment.title === 'string' ? segment.title : '')}
               onChange={(e) => updateField('title', e.target.value)}
               placeholder="Segment title..."
             />
@@ -145,7 +145,7 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
                   <label>From</label>
                   <input
                     type="text"
-                    value={segment.from || ''}
+                    value={segment.from?.en || (typeof segment.from === 'string' ? segment.from : '')}
                     onChange={(e) => updateField('from', e.target.value)}
                     placeholder="Departure..."
                   />
@@ -154,7 +154,7 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
                   <label>To</label>
                   <input
                     type="text"
-                    value={segment.to || ''}
+                    value={segment.to?.en || (typeof segment.to === 'string' ? segment.to : '')}
                     onChange={(e) => updateField('to', e.target.value)}
                     placeholder="Arrival..."
                   />
@@ -181,7 +181,7 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
                 <label>Location</label>
                 <input
                   type="text"
-                  value={segment.location || ''}
+                  value={segment.location?.en || (typeof segment.location === 'string' ? segment.location : '')}
                   onChange={(e) => updateField('location', e.target.value)}
                   placeholder="Activity location..."
                 />
@@ -225,7 +225,7 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
           <div className="field">
             <label>Description</label>
             <textarea
-              value={segment.description || ''}
+              value={segment.description?.en || (typeof segment.description === 'string' ? segment.description : '')}
               onChange={(e) => updateField('description', e.target.value)}
               placeholder="Segment description..."
             />

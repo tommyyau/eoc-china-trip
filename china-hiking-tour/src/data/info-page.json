@@ -43,8 +43,8 @@
       "cn": "费用与包含"
     },
     "price": {
-      "en": "Reference Price: Approx. £1,600 per person (double occupancy per room)",
-      "cn": "参考价格：约 £1,600 每人（双人入住）"
+      "en": "Reference Price: Approx. £1,600 per person (double occupancy per room) AND we have a minimum of 20 people on the tour",
+      "cn": "参考价格：约 £1,600 每人（双人入住），最低成团人数20人"
     },
     "includesTitle": {
       "en": "Includes",
@@ -99,7 +99,7 @@
       },
       {
         "en": "Personal Travel Insurance",
-        "cn": ""
+        "cn": "个人旅行保险"
       }
     ]
   }

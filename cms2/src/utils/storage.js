@@ -64,6 +64,27 @@ export async function saveHome(data) {
   return response.json()
 }
 
+// Load itinerary page from server
+export async function loadItineraryPage() {
+  const response = await fetch(`${API_BASE}/itinerary-page`)
+  const { data } = await response.json()
+  return data
+}
+
+// Save itinerary page to server
+export async function saveItineraryPage(data) {
+  const response = await fetch(`${API_BASE}/itinerary-page`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ data })
+  })
+  if (!response.ok) {
+    const error = await response.json()
+    throw new Error(error.error || 'Failed to save')
+  }
+  return response.json()
+}
+
 // Search images
 export async function searchImages(query, provider = 'both', count = 12) {
   const response = await fetch(`${API_BASE}/images/search`, {

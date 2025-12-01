@@ -67,7 +67,7 @@ function DayEditor({ day, dayIndex, onUpdate }) {
     <div className="day-editor">
       <div className="day-editor-header">
         <div className="day-editor-title">
-          <h2>Day {day.day} - {day.title || 'Untitled'}</h2>
+          <h2>Day {day.day} - {day.title?.en || day.title || 'Untitled'}</h2>
           <div className="date">{day.date}</div>
         </div>
       </div>
@@ -77,11 +77,11 @@ function DayEditor({ day, dayIndex, onUpdate }) {
         <h3>Day Information</h3>
         <div className="field-row">
           <div className="field">
-            <label>Title</label>
+            <label>Title (English)</label>
             <input
               type="text"
-              value={day.title || ''}
-              onChange={(e) => updateField('title', e.target.value)}
+              value={day.title?.en || (typeof day.title === 'string' ? day.title : '')}
+              onChange={(e) => updateField('title', { ...day.title, en: e.target.value })}
               placeholder="Day title..."
             />
           </div>
@@ -97,11 +97,11 @@ function DayEditor({ day, dayIndex, onUpdate }) {
         </div>
         <div className="field-row">
           <div className="field">
-            <label>Location</label>
+            <label>Location (English)</label>
             <input
               type="text"
-              value={day.location || ''}
-              onChange={(e) => updateField('location', e.target.value)}
+              value={day.location?.en || (typeof day.location === 'string' ? day.location : '')}
+              onChange={(e) => updateField('location', { ...day.location, en: e.target.value })}
               placeholder="Primary location..."
             />
           </div>
@@ -118,10 +118,10 @@ function DayEditor({ day, dayIndex, onUpdate }) {
           </div>
         </div>
         <div className="field">
-          <label>Description</label>
+          <label>Description (English)</label>
           <textarea
-            value={day.description || ''}
-            onChange={(e) => updateField('description', e.target.value)}
+            value={day.description?.en || (typeof day.description === 'string' ? day.description : '')}
+            onChange={(e) => updateField('description', { ...day.description, en: e.target.value })}
             placeholder="Day overview..."
           />
         </div>

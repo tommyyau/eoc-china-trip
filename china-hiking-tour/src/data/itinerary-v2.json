@@ -3,23 +3,42 @@
     "version": 2,
     "exportedFrom": "CMS1",
     "exportedAt": "2025-11-30T15:25:23.048Z",
-    "lastModified": "2025-11-30T20:02:41.838Z"
+    "lastModified": "2025-11-30T21:17:44.423Z",
+    "bilingual": true
   },
   "days": [
     {
       "day": 0,
       "date": "May 8",
-      "title": "Departure from London Heathrow",
-      "location": "Heathrow",
+      "title": {
+        "en": "Departure from London Heathrow",
+        "cn": "从伦敦希思罗出发"
+      },
+      "location": {
+        "en": "Heathrow",
+        "cn": "希思罗"
+      },
       "region": "xian",
-      "description": "Flight from Heathrow to Xi'an.",
+      "description": {
+        "en": "Flight from Heathrow to Xi'an.",
+        "cn": "从希思罗飞往西安。"
+      },
       "segments": [
         {
           "id": "0-0-1764440953795",
-          "time": "Night",
+          "time": {
+            "en": "Night",
+            "cn": "夜间"
+          },
           "type": "transfer",
-          "title": "Flight to Xi'an",
-          "description": "Flight from Heathrow, Direct flights on this route are generally operated by Tianjin Airlines or Hainan Airlines.\n \nDeparture Time: The flight typically departs in the evening/night, around 21:50 (9:50 PM) local London time. Arrival Time: The flight arrives in Xi'an the next afternoon, around 16:15 (4:15 PM) local time. Duration: The flight time is about 10 hours and 25 minutes.",
+          "title": {
+            "en": "Flight to Xi'an",
+            "cn": "飞往西安"
+          },
+          "description": {
+            "en": "Flight from Heathrow, Direct flights on this route are generally operated by Tianjin Airlines or Hainan Airlines.\n \nDeparture Time: The flight typically departs in the evening/night, around 21:50 (9:50 PM) local London time. Arrival Time: The flight arrives in Xi'an the next afternoon, around 16:15 (4:15 PM) local time. Duration: The flight time is about 10 hours and 25 minutes.",
+            "cn": "从希思罗出发的航班，该航线的直飞航班通常由天津航空或海南航空运营。\n\n起飞时间：航班通常在傍晚/夜间起飞，伦敦当地时间约21:50（晚上9:50）。抵达时间：航班于次日下午约16:15（下午4:15）抵达西安。飞行时间约10小时25分钟。"
+          },
           "duration": "10 hours 25 minutes",
           "location": "Heathrow to Xi'an",
           "mode": "flight",
@@ -27,12 +46,18 @@
           "to": "Xi'an",
           "walkDetails": null,
           "highlights": [
-            "Direct flight operated by Tianjin Airlines or Hainan Airlines"
+            {
+              "en": "Direct flight operated by Tianjin Airlines or Hainan Airlines",
+              "cn": "天津航空或海南航空直飞航班"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "",
+      "meals": {
+        "en": "",
+        "cn": ""
+      },
       "accommodation": {
         "name": "",
         "rating": ""
@@ -41,17 +66,35 @@
     {
       "day": 1,
       "date": "May 9",
-      "title": "Arrival in Xi'an",
-      "location": "Xi'an",
+      "title": {
+        "en": "Arrival in Xi'an",
+        "cn": "抵达西安"
+      },
+      "location": {
+        "en": "Xi'an",
+        "cn": "西安"
+      },
       "region": "xian",
-      "description": "Arrive at Xi'an Xianyang International Airport. You will be met by our professional English-speaking guide and transferred to the city center. If time permits, we will visit the Big Wild Goose Pagoda, a masterpiece of Buddhist architecture. Check in at the Eastern House Xi'an.",
+      "description": {
+        "en": "Arrive at Xi'an Xianyang International Airport. You will be met by our professional English-speaking guide and transferred to the city center. If time permits, we will visit the Big Wild Goose Pagoda, a masterpiece of Buddhist architecture. Check in at the Eastern House Xi'an.",
+        "cn": "抵达西安咸阳国际机场。我们专业的英语导游将在机场迎接您，并送您前往市中心。如果时间允许，我们将参观大雁塔——佛教建筑的杰作。入住西安东舍精品酒店。"
+      },
       "segments": [
         {
           "id": "1-0-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "transfer",
-          "title": "Meet the Guide & Transfer to Xi'an City",
-          "description": "Meet our English-speaking guide at the airport, and we will transfer onto a coach to the city center, where we will stay at the Eastern House Boutique Hotel.\n\nThe expected arrival time is 16:15 + Time Through Customs and Luggage Collection. Assume that we will leave the airport around 17:15.",
+          "title": {
+            "en": "Meet the Guide & Transfer to Xi'an City",
+            "cn": "导游接机与前往西安市区"
+          },
+          "description": {
+            "en": "Meet our English-speaking guide at the airport, and we will transfer onto a coach to the city center, where we will stay at the Eastern House Boutique Hotel.\n\nThe expected arrival time is 16:15 + Time Through Customs and Luggage Collection. Assume that we will leave the airport around 17:15.",
+            "cn": "在机场与我们的英语导游会合，乘坐大巴前往市中心，入住东舍精品酒店。\n\n预计抵达时间为16:15加上过关和取行李的时间。预计约17:15离开机场。"
+          },
           "duration": "1 Hour",
           "location": "Xi'an Airport to Xi'an City",
           "mode": "coach",
@@ -59,7 +102,10 @@
           "to": "Xi'an City",
           "walkDetails": null,
           "highlights": [
-            "Met by professional English speaking guide"
+            {
+              "en": "Met by professional English speaking guide",
+              "cn": "专业英语导游接机"
+            }
           ],
           "images": [
             {
@@ -77,10 +123,19 @@
         },
         {
           "id": "1-2-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Eastern House Boutique / Dinner",
-          "description": "Eastern House Xi’an is a boutique-style hotel in the heart of Xi’an.\n\nIt is very centrally located — within walking distance of major historic and cultural sites such as the Xi’an Bell Tower / Xi’an Drum Tower, and near the Muslim Quarter, Xi’an.\n\nFreshen up, Relax, and Dinner at the hotel or somewhere close.\n",
+          "title": {
+            "en": "Check-in at Eastern House Boutique / Dinner",
+            "cn": "入住东舍精品酒店 / 晚餐"
+          },
+          "description": {
+            "en": "Eastern House Xi’an is a boutique-style hotel in the heart of Xi’an.\n\nIt is very centrally located — within walking distance of major historic and cultural sites such as the Xi’an Bell Tower / Xi’an Drum Tower, and near the Muslim Quarter, Xi’an.\n\nFreshen up, Relax, and Dinner at the hotel or somewhere close.\n",
+            "cn": "西安东舍是一家位于西安市中心的精品酒店。\n\n地理位置优越，步行即可到达钟楼、鼓楼等主要历史文化景点，毗邻回民街。\n\n整理行装、休息放松，在酒店或附近享用晚餐。"
+          },
           "duration": "2 - 3hr",
           "location": "Eastern House Xi’an",
           "mode": "",
@@ -88,7 +143,10 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "4-star accommodation"
+            {
+              "en": "4-star accommodation",
+              "cn": "四星级住宿"
+            }
           ],
           "images": [
             {
@@ -139,10 +197,19 @@
         },
         {
           "id": "1-1-1764440953795",
-          "time": "Night",
+          "time": {
+            "en": "Night",
+            "cn": "夜间"
+          },
           "type": "activity",
-          "title": "Visit Big Wild Goose Pagoda & Nightlife",
-          "description": "Visit to the Big Wild Goose Pagoda if time permits.\n\nThe Big Wild Goose Pagoda, located in the heart of Xi’an, is one of China’s most iconic landmarks. Built in 652 AD during the Tang Dynasty, the seven-storey pagoda was originally constructed to store the Buddhist scriptures brought back from India by the monk Xuanzang. Its elegant silhouette, intricate brickwork, and tranquil temple grounds offer a peaceful window into ancient Chinese architecture and spirituality.\n\nThe pagoda sits within the Da Ci’en Temple Scenic Area, surrounded by serene gardens, cultural exhibits, and one of Asia’s largest musical fountains. Just steps away is Grand Tang Dynasty Everbright City, a lively pedestrian district filled with lights, performances, dining, and shops. Visit in the evening to enjoy the illuminated pagoda, fountain shows, and vibrant night atmosphere—one of Xi’an’s most beautiful modern-meets-ancient experiences.",
+          "title": {
+            "en": "Visit Big Wild Goose Pagoda & Nightlife",
+            "cn": "参观大雁塔与夜游"
+          },
+          "description": {
+            "en": "Visit to the Big Wild Goose Pagoda if time permits.\n\nThe Big Wild Goose Pagoda, located in the heart of Xi’an, is one of China’s most iconic landmarks. Built in 652 AD during the Tang Dynasty, the seven-storey pagoda was originally constructed to store the Buddhist scriptures brought back from India by the monk Xuanzang. Its elegant silhouette, intricate brickwork, and tranquil temple grounds offer a peaceful window into ancient Chinese architecture and spirituality.\n\nThe pagoda sits within the Da Ci’en Temple Scenic Area, surrounded by serene gardens, cultural exhibits, and one of Asia’s largest musical fountains. Just steps away is Grand Tang Dynasty Everbright City, a lively pedestrian district filled with lights, performances, dining, and shops. Visit in the evening to enjoy the illuminated pagoda, fountain shows, and vibrant night atmosphere—one of Xi’an’s most beautiful modern-meets-ancient experiences.",
+            "cn": "如时间允许，参观大雁塔。\n\n大雁塔位于西安市中心，是中国最具标志性的地标之一。建于公元652年唐朝时期，这座七层宝塔最初是为存放高僧玄奘从印度带回的佛经而建。其优雅的轮廓、精美的砖雕和宁静的寺院庭园，为人们打开了一扇了解中国古代建筑与佛教文化的窗口。\n\n宝塔坐落在大慈恩寺景区内，四周环绕着宁静的园林、文化展览和亚洲最大的音乐喷泉之一。几步之遥便是大唐不夜城，这是一条充满灯光、表演、美食和商铺的热闹步行街。傍晚时分来访，可以欣赏灯火辉煌的宝塔、喷泉表演和充满活力的夜间氛围——这是西安最美的古今交融体验之一。"
+          },
           "duration": "1-2 hours",
           "location": "Big Wild Goose Pagoda, Xi'an",
           "mode": "",
@@ -150,8 +217,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Historical significance",
-            "Cultural heritage"
+            {
+              "en": "Historical significance",
+              "cn": "历史意义"
+            },
+            {
+              "en": "Cultural heritage",
+              "cn": "文化遗产"
+            }
           ],
           "images": [
             {
@@ -201,7 +274,10 @@
           ]
         }
       ],
-      "meals": "Dinner",
+      "meals": {
+        "en": "Dinner",
+        "cn": "晚餐"
+      },
       "accommodation": {
         "name": "Eastern House Boutique Hotel",
         "rating": "4-star"
@@ -210,17 +286,35 @@
     {
       "day": 2,
       "date": "May 10",
-      "title": "Xi'an City Walk & Ancient Wall",
-      "location": "Xi'an",
+      "title": {
+        "en": "Xi'an City Walk & Ancient Wall",
+        "cn": "西安城市漫步与古城墙"
+      },
+      "location": {
+        "en": "Xi'an",
+        "cn": "西安"
+      },
       "region": "xian",
-      "description": "Start with a city walk in the old town center, visiting the Bell Tower and Drum Tower. Explore the vibrant Muslim Quarter and the Great Mosque. In the afternoon, hike on the 600-year-old City Wall (13.7km), one of the best-preserved ancient city walls in China. Enjoy a traditional Dumpling Banquet for dinner.",
+      "description": {
+        "en": "Start with a city walk in the old town center, visiting the Bell Tower and Drum Tower. Explore the vibrant Muslim Quarter and the Great Mosque. In the afternoon, hike on the 600-year-old City Wall (13.7km), one of the best-preserved ancient city walls in China. Enjoy a traditional Dumpling Banquet for dinner.",
+        "cn": "从老城中心开始城市漫步，参观钟楼和鼓楼。探索热闹的回民街和清真大寺。下午在拥有600年历史的古城墙上徒步（13.7公里），这是中国保存最完好的古城墙之一。晚餐享用传统饺子宴。"
+      },
       "segments": [
         {
           "id": "2-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "activity",
-          "title": "City Walk in Old Town Center - Visit The Bell and Drum Towers",
-          "description": "Walk through the old town center, visiting the Bell Tower and Drum Tower.\n\nThe Bell and Drum Towers of Xi'an stand as majestic guardians of history, inviting travelers to step back in time. As you gaze upon the stunning architecture of the Bell Tower, built in 1384 during the Ming Dynasty, you'll be mesmerized by its intricate brick and timber structure that rises nearly 40 meters into the sky. This iconic landmark, adorned with ancient bronze bells from the Tang Dynasty, not only offers a glimpse into China's rich cultural heritage but also serves as a vibrant hub at the heart of Xi'an, where the four main streets converge. Experience the enchanting atmosphere as the bells toll, marking the passage of time in this ancient city, and don't miss the breathtaking views from the top, where the sprawling cityscape unfolds before your eyes. A visit to the Bell and Drum Towers is a must for any traveler seeking to explore the essence of Xi'an.",
+          "title": {
+            "en": "City Walk in Old Town Center - Visit The Bell and Drum Towers",
+            "cn": "钟鼓楼广场漫步"
+          },
+          "description": {
+            "en": "Walk through the old town center, visiting the Bell Tower and Drum Tower.\n\nThe Bell and Drum Towers of Xi'an stand as majestic guardians of history, inviting travelers to step back in time. As you gaze upon the stunning architecture of the Bell Tower, built in 1384 during the Ming Dynasty, you'll be mesmerized by its intricate brick and timber structure that rises nearly 40 meters into the sky. This iconic landmark, adorned with ancient bronze bells from the Tang Dynasty, not only offers a glimpse into China's rich cultural heritage but also serves as a vibrant hub at the heart of Xi'an, where the four main streets converge. Experience the enchanting atmosphere as the bells toll, marking the passage of time in this ancient city, and don't miss the breathtaking views from the top, where the sprawling cityscape unfolds before your eyes. A visit to the Bell and Drum Towers is a must for any traveler seeking to explore the essence of Xi'an.",
+            "cn": "从钟鼓楼广场开始西安老城区的漫步之旅。\n\n西安钟楼和鼓楼是中国现存规模最大、保存最完整的明代钟鼓楼建筑群。钟楼建于1384年明洪武年间，最初位于西大街，1582年迁至现址——西安城的正中心。\n\n鼓楼建于1380年，与钟楼遥相呼应。古时钟楼晨钟报晓，鼓楼暮鼓定昏，共同承担着报时的重任。两座建筑巍峨壮观，雕梁画栋，是西安城市的标志性景观。"
+          },
           "duration": "1 hour",
           "location": "Xi'an Old Town",
           "mode": "",
@@ -228,9 +322,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Bell Tower",
-            "Drum Tower",
-            "Cultural heritage"
+            {
+              "en": "Bell Tower",
+              "cn": "中国现存最大的明代钟鼓楼"
+            },
+            {
+              "en": "Drum Tower",
+              "cn": "西安城市地标"
+            },
+            {
+              "en": "Cultural heritage",
+              "cn": "文化遗产"
+            }
           ],
           "images": [
             {
@@ -259,10 +362,19 @@
         },
         {
           "id": "2-1-1764440953795",
-          "time": "Midday",
+          "time": {
+            "en": "Midday",
+            "cn": "中午"
+          },
           "type": "activity",
-          "title": "Visit Muslim Quarter and Great Mosque",
-          "description": "Explore the Muslim Quarter and visit the Great Mosque.\n\nWelcome to the vibrant heart of Xi'an, the Muslim Quarter, where ancient history intertwines with mouthwatering flavors. As you wander through its bustling streets, you’ll be captivated by the aroma of sizzling street food, the vibrant colors of traditional textiles, and the warm smiles of local vendors. This cultural gem, nestled near the iconic Bell and Drum Towers, offers a unique glimpse into the rich heritage of the Hui people, combining the best of Chinese and Islamic influences. Don’t miss the chance to explore the majestic Great Mosque, a masterpiece of architectural elegance, and savor the delicious snacks that make this area a paradise for food lovers. Join the throngs of travelers who flock here to experience the enchanting blend of history, culture, and culinary delights that define the Muslim Quarter of Xi'an.",
+          "title": {
+            "en": "Visit Muslim Quarter and Great Mosque",
+            "cn": "探索回民街"
+          },
+          "description": {
+            "en": "Explore the Muslim Quarter and visit the Great Mosque.\n\nWelcome to the vibrant heart of Xi'an, the Muslim Quarter, where ancient history intertwines with mouthwatering flavors. As you wander through its bustling streets, you’ll be captivated by the aroma of sizzling street food, the vibrant colors of traditional textiles, and the warm smiles of local vendors. This cultural gem, nestled near the iconic Bell and Drum Towers, offers a unique glimpse into the rich heritage of the Hui people, combining the best of Chinese and Islamic influences. Don’t miss the chance to explore the majestic Great Mosque, a masterpiece of architectural elegance, and savor the delicious snacks that make this area a paradise for food lovers. Join the throngs of travelers who flock here to experience the enchanting blend of history, culture, and culinary delights that define the Muslim Quarter of Xi'an.",
+            "cn": "漫步回民街，西安最具活力的美食街区之一。\n\n回民街是西安穆斯林聚居区的核心地带，拥有超过一千年的历史。这里汇集了各种传统清真美食，从著名的羊肉泡馍、肉夹馍到各式烤肉串，香气四溢。狭窄的街巷两旁店铺林立，既有百年老字号，也有新潮小店。\n\n街区内的化觉巷清真大寺是中国四大清真寺之一，融合了中国传统建筑风格与伊斯兰文化，独具特色。"
+          },
           "duration": "2 hours",
           "location": "Muslim Quarter, Xi'an",
           "mode": "",
@@ -270,8 +382,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Cultural experience",
-            "Historical significance"
+            {
+              "en": "Cultural experience",
+              "cn": "传统清真美食"
+            },
+            {
+              "en": "Historical significance",
+              "cn": "千年历史街区"
+            }
           ],
           "images": [
             {
@@ -311,10 +429,19 @@
         },
         {
           "id": "2-2-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "activity",
-          "title": "Hiking on City Wall",
-          "description": "Hike on the 600 year-old City Wall which runs 13.7km around the old city center.\n\nEmbark on an unforgettable adventure along the City Wall of Xi'an, where history and breathtaking views collide over a scenic 13.7 km hike. As you stroll atop one of the best-preserved ancient city walls in the world, immerse yourself in the rich heritage of this ancient capital, once the starting point of the Silk Road. Marvel at the stunning panoramas of the city and its surrounding landscapes, while catching glimpses of the vibrant life below. This hike is not just a physical journey but a walk through time, offering countless photo opportunities and the chance to explore various watchtowers and gates along the way. Whether you're a seasoned hiker or a casual walker, the City Wall promises an exhilarating experience that captures the essence of Xi'an's storied past.",
+          "title": {
+            "en": "Hiking on City Wall",
+            "cn": "古城墙徒步"
+          },
+          "description": {
+            "en": "Hike on the 600 year-old City Wall which runs 13.7km around the old city center.\n\nEmbark on an unforgettable adventure along the City Wall of Xi'an, where history and breathtaking views collide over a scenic 13.7 km hike. As you stroll atop one of the best-preserved ancient city walls in the world, immerse yourself in the rich heritage of this ancient capital, once the starting point of the Silk Road. Marvel at the stunning panoramas of the city and its surrounding landscapes, while catching glimpses of the vibrant life below. This hike is not just a physical journey but a walk through time, offering countless photo opportunities and the chance to explore various watchtowers and gates along the way. Whether you're a seasoned hiker or a casual walker, the City Wall promises an exhilarating experience that captures the essence of Xi'an's storied past.",
+            "cn": "下午在西安古城墙上徒步。\n\n西安城墙是中国现存最完整、规模最大的古城墙，始建于明洪武年间（1370-1378年），距今已有600多年历史。城墙全长约13.7公里，高12米，顶宽12-14米，底宽15-18米。\n\n城墙上可以步行或骑自行车环绕一周，沿途设有98座敌楼、18座城门。从城墙上俯瞰，可以欣赏古城的壮丽景色和现代都市的繁华，是了解西安历史和城市布局的绝佳视角。\n\n徒步距离约13.7公里，建议准备充足的水和防晒措施。"
+          },
           "duration": "4 hours",
           "location": "City Wall, Xi'an",
           "mode": "",
@@ -326,8 +453,14 @@
             "difficulty": "moderate"
           },
           "highlights": [
-            "Largest ancient city wall",
-            "Historical relic"
+            {
+              "en": "Largest ancient city wall",
+              "cn": "中国保存最完整的古城墙"
+            },
+            {
+              "en": "Historical relic",
+              "cn": "13.7公里城墙徒步"
+            }
           ],
           "images": [
             {
@@ -367,10 +500,19 @@
         },
         {
           "id": "2-3-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "meal",
-          "title": "Dumpling Banquet Dinner",
-          "description": "Enjoy a traditional Dumpling Banquet dinner.",
+          "title": {
+            "en": "Dumpling Banquet Dinner",
+            "cn": "饺子宴晚餐"
+          },
+          "description": {
+            "en": "Enjoy a traditional Dumpling Banquet dinner.",
+            "cn": "晚餐享用西安特色饺子宴。\n\n饺子宴是西安独创的风味名宴，被誉为「饺子之冠」。一席饺子宴可品尝数十种不同馅料、形状各异的饺子，有蒸饺、煎饺、汤饺等多种烹饪方式。每款饺子造型精美，或如花朵、或如小动物、或如吉祥图案，既是美食也是艺术品。\n\n饺子宴的创意源于唐代宫廷御膳，如今已成为西安餐饮文化的一张名片。"
+          },
           "duration": "2 hours",
           "location": "Local Restaurant, Xi'an",
           "mode": "",
@@ -378,7 +520,10 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local specialty"
+            {
+              "en": "Local specialty",
+              "cn": "西安特色名宴"
+            }
           ],
           "images": [
             {
@@ -395,7 +540,10 @@
           ]
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "Eastern House Boutique Hotel",
         "rating": "4-star"
@@ -404,17 +552,35 @@
     {
       "day": 3,
       "date": "May 11",
-      "title": "Terracotta Warriors & Daming Palace National Heritage Park",
-      "location": "Xi'an",
+      "title": {
+        "en": "Terracotta Warriors & Daming Palace National Heritage Park",
+        "cn": "兵马俑与大明宫"
+      },
+      "location": {
+        "en": "Xi'an",
+        "cn": "西安"
+      },
       "region": "xian",
-      "description": "Morning tour of the world-famous Terracotta Warriors Museum, witnessing the thousands of life-sized soldiers protecting the First Emperor. Afternoon hiking at Daming Palace National Heritage Park, the site of the grandest imperial palace of the Tang Dynasty.",
+      "description": {
+        "en": "Morning tour of the world-famous Terracotta Warriors Museum, witnessing the thousands of life-sized soldiers protecting the First Emperor. Afternoon hiking at Daming Palace National Heritage Park, the site of the grandest imperial palace of the Tang Dynasty.",
+        "cn": "上午参观举世闻名的兵马俑博物馆，亲眼目睹数千尊守护秦始皇的真人大小陶俑。下午在大明宫国家遗址公园徒步，这里是唐代最宏伟的皇宫遗址。"
+      },
       "segments": [
         {
           "id": "3-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "activity",
-          "title": "Visit Terracotta Warrior Museum",
-          "description": "Morning tour at the Terracotta Warrior Museum.\n\nStep into the ancient world of China at the Terracotta Warriors Museum in Xi'an, where history comes alive through the remarkable artistry of the Terracotta Army. Discovered in 1974 by local farmers, this breathtaking collection showcases over 8,000 life-sized sculptures, each intricately crafted to depict the soldiers, chariots, and horses of China's first emperor, Qin Shi Huang. As you wander through the expansive pits, marvel at the varied heights and unique features of these warriors, designed to protect the emperor in the afterlife. A visit here is not just a journey into the past; it's an unforgettable adventure that connects you with the rich tapestry of Chinese heritage and artistry.",
+          "title": {
+            "en": "Visit Terracotta Warrior Museum",
+            "cn": "兵马俑博物馆参观"
+          },
+          "description": {
+            "en": "Morning tour at the Terracotta Warrior Museum.\n\nStep into the ancient world of China at the Terracotta Warriors Museum in Xi'an, where history comes alive through the remarkable artistry of the Terracotta Army. Discovered in 1974 by local farmers, this breathtaking collection showcases over 8,000 life-sized sculptures, each intricately crafted to depict the soldiers, chariots, and horses of China's first emperor, Qin Shi Huang. As you wander through the expansive pits, marvel at the varied heights and unique features of these warriors, designed to protect the emperor in the afterlife. A visit here is not just a journey into the past; it's an unforgettable adventure that connects you with the rich tapestry of Chinese heritage and artistry.",
+            "cn": "上午参观举世闻名的秦始皇兵马俑博物馆。\n\n兵马俑是世界第八大奇迹，1974年被当地农民偶然发现。这支庞大的地下军团由8000多件兵俑、马俑组成，旨在守护秦始皇的陵墓。每个陶俑都有独特的面部特征，神态各异，栩栩如生。\n\n博物馆分为三个俑坑：一号坑最为壮观，是主力步兵军阵；二号坑展示骑兵、战车和弓弩手的混合编队；三号坑被认为是军队的指挥部。此外还有铜车马展厅，展出两乘精美的青铜车马。\n\n建议游览时间3-4小时，配合专业讲解可以更深入地了解这一古代奇迹。"
+          },
           "duration": "3 hours",
           "location": "Terracotta Warrior Museum, Xi'an",
           "mode": "",
@@ -422,8 +588,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Significant archaeological discovery",
-            "Life-sized sculptures"
+            {
+              "en": "Significant archaeological discovery",
+              "cn": "世界第八大奇迹"
+            },
+            {
+              "en": "Life-sized sculptures",
+              "cn": "8000多件陶俑"
+            }
           ],
           "images": [
             {
@@ -496,10 +668,19 @@
         },
         {
           "id": "3-1-1764440953795",
-          "time": "Midday",
+          "time": {
+            "en": "Midday",
+            "cn": "中午"
+          },
           "type": "meal",
-          "title": "Lunch at Local Restaurant",
-          "description": "Lunch at a local Chinese restaurant.",
+          "title": {
+            "en": "Lunch at Local Restaurant",
+            "cn": "大明宫国家遗址公园徒步"
+          },
+          "description": {
+            "en": "Lunch at a local Chinese restaurant.",
+            "cn": "下午前往大明宫国家遗址公园徒步。\n\n大明宫是唐代长安城的皇宫，始建于公元634年，是当时世界上规模最大的宫殿建筑群，面积约3.2平方公里，是明清北京故宫的4.5倍。\n\n这里曾是唐朝17位皇帝处理朝政的地方，见证了盛唐200余年的辉煌历史。如今的遗址公园保留了含元殿、麟德殿等宫殿遗址，通过现代化的展示手段还原了昔日的恢宏气势。\n\n公园内绿树成荫，是徒步散步的好去处，可以一边漫步一边感受盛唐文化的魅力。"
+          },
           "duration": "1 hour",
           "location": "Local Restaurant, Xi'an",
           "mode": "",
@@ -507,16 +688,28 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local cuisine"
+            {
+              "en": "Local cuisine",
+              "cn": "唐代最大皇宫"
+            }
           ],
           "images": []
         },
         {
           "id": "3-2-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "activity",
-          "title": "Daming Palace Heritage Park",
-          "description": "Afternoon walk at Daming Palace Heritage Park.\n\nStep into the grandeur of the Tang dynasty at Daming Palace Heritage Park, where history whispers through the ancient stones and sprawling gardens. This once-great imperial palace, which served as the residence for over 220 years, beckons travelers to explore its majestic ruins and lush landscapes. As part of the UNESCO World Heritage Site that celebrates the Silk Roads, Daming Palace offers a unique glimpse into China's rich imperial past, making it a must-visit destination for history enthusiasts and nature lovers alike. Wander the pathways, breathe in the serene atmosphere, and imagine the opulence of a bygone era as you marvel at the remnants of this royal complex nestled in the heart of Xi'an.",
+          "title": {
+            "en": "Daming Palace Heritage Park",
+            "cn": "大明宫国家遗址公园"
+          },
+          "description": {
+            "en": "Afternoon walk at Daming Palace Heritage Park.\n\nStep into the grandeur of the Tang dynasty at Daming Palace Heritage Park, where history whispers through the ancient stones and sprawling gardens. This once-great imperial palace, which served as the residence for over 220 years, beckons travelers to explore its majestic ruins and lush landscapes. As part of the UNESCO World Heritage Site that celebrates the Silk Roads, Daming Palace offers a unique glimpse into China's rich imperial past, making it a must-visit destination for history enthusiasts and nature lovers alike. Wander the pathways, breathe in the serene atmosphere, and imagine the opulence of a bygone era as you marvel at the remnants of this royal complex nestled in the heart of Xi'an.",
+            "cn": "下午在大明宫国家遗址公园漫步。\n\n走进大明宫国家遗址公园，感受唐朝的恢弘气势。这座曾经雄伟的皇家宫殿，作为帝王居所长达220多年，如今诉说着历史的沧桑。漫步在宏伟的遗址和优美的园林中，这里是联合国教科文组织丝绸之路世界遗产的一部分。大明宫让游客得以一窥中国丰富的帝王历史，是历史爱好者和自然爱好者的必游之地。在林间小道上漫步，感受宁静的氛围，想象昔日皇家的奢华与辉煌。"
+          },
           "duration": "2-3 hours",
           "location": "Daming Palace Heritage Park, Xi'an",
           "mode": "",
@@ -528,8 +721,14 @@
             "difficulty": "easy"
           },
           "highlights": [
-            "Historical site",
-            "Cultural significance"
+            {
+              "en": "Historical site",
+              "cn": "历史遗址"
+            },
+            {
+              "en": "Cultural significance",
+              "cn": "文化意义"
+            }
           ],
           "images": [
             {
@@ -557,7 +756,10 @@
           ]
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "Eastern House Boutique Hotel",
         "rating": "4-star"
@@ -566,17 +768,35 @@
     {
       "day": 4,
       "date": "May 12",
-      "title": "Beilin Museum & Travel to Beijing",
-      "location": "Xi'an to Beijing",
+      "title": {
+        "en": "Beilin Museum & Travel to Beijing",
+        "cn": "碑林博物馆与前往北京"
+      },
+      "location": {
+        "en": "Xi'an to Beijing",
+        "cn": "西安 → 北京"
+      },
       "region": "beijing",
-      "description": "Visit the Beilin Museum (Forest of Stone Steles), a treasure trove of ancient Chinese calligraphy. Transfer to the train station/airport for departure to Beijing. Upon arrival, transfer to a centrally located 4-star hotel. Evening welcome dinner with representatives from China's hiking community.",
+      "description": {
+        "en": "Visit the Beilin Museum (Forest of Stone Steles), a treasure trove of ancient Chinese calligraphy. Transfer to the train station/airport for departure to Beijing. Upon arrival, transfer to a centrally located 4-star hotel. Evening welcome dinner with representatives from China's hiking community.",
+        "cn": "参观碑林博物馆，这是中国古代书法艺术的宝库。之后前往火车站/机场，启程前往北京。抵达后入住市中心四星级酒店。晚上与中国徒步界代表共进欢迎晚宴。"
+      },
       "segments": [
         {
           "id": "4-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "activity",
-          "title": "Visit Beilin Museum",
-          "description": "Morning tour to the Beilin Museum.\n\nEmbark on a journey through time at the Beilin Museum in Xi'an, home to the remarkable Xi'an Stele, or Nestorian Stele. This captivating site reveals the extraordinary tale of early Christianity in China, dating back to the Tang dynasty. As you stroll through the serene Stele Forest, marvel at the intricate carvings and inscriptions that speak of a rich spiritual heritage and the remarkable interactions between cultures. The museum not only offers a glimpse into the past but also invites you to reflect on the enduring legacy of faith and exploration. Don't miss the chance to connect with history in one of China's most significant cultural landmarks.",
+          "title": {
+            "en": "Visit Beilin Museum",
+            "cn": "碑林博物馆参观"
+          },
+          "description": {
+            "en": "Morning tour to the Beilin Museum.\n\nEmbark on a journey through time at the Beilin Museum in Xi'an, home to the remarkable Xi'an Stele, or Nestorian Stele. This captivating site reveals the extraordinary tale of early Christianity in China, dating back to the Tang dynasty. As you stroll through the serene Stele Forest, marvel at the intricate carvings and inscriptions that speak of a rich spiritual heritage and the remarkable interactions between cultures. The museum not only offers a glimpse into the past but also invites you to reflect on the enduring legacy of faith and exploration. Don't miss the chance to connect with history in one of China's most significant cultural landmarks.",
+            "cn": "上午参观西安碑林博物馆。\n\n碑林博物馆是中国收藏古代碑石最多的艺术宝库，创建于公元1087年北宋时期。馆内收藏从汉代到清代的各种碑石、墓志共一万余件，其中包括许多书法名家的真迹碑刻。\n\n最著名的藏品包括：《开成石经》——刻有十二部儒家经典的114块石碑；颜真卿、柳公权、欧阳询等书法大家的传世名作；以及大量珍贵的历史文献碑刻。\n\n碑林是研究中国书法艺术和历史文化的重要殿堂，被誉为「书法艺术的宝库」。"
+          },
           "duration": "2 hours",
           "location": "Beilin Museum, Xi'an",
           "mode": "",
@@ -584,8 +804,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Cultural heritage",
-            "Historical artifacts"
+            {
+              "en": "Cultural heritage",
+              "cn": "中国最大碑石博物馆"
+            },
+            {
+              "en": "Historical artifacts",
+              "cn": "千年书法艺术"
+            }
           ],
           "images": [
             {
@@ -601,10 +827,19 @@
         },
         {
           "id": "4-1-1764440953795",
-          "time": "Midday",
+          "time": {
+            "en": "Midday",
+            "cn": "中午"
+          },
           "type": "meal",
-          "title": "Lunch at Local Restaurant",
-          "description": "Lunch at a local Chinese restaurant.",
+          "title": {
+            "en": "Lunch at Local Restaurant",
+            "cn": "高铁/航班前往北京"
+          },
+          "description": {
+            "en": "Lunch at a local Chinese restaurant.",
+            "cn": "告别古都西安，乘坐高铁或航班前往首都北京。\n\n如选择高铁，从西安北站出发，约4.5-5小时抵达北京西站；如选择航班，飞行时间约2小时。\n\n北京是中国的首都，有着3000多年的建城史和800多年的建都史。作为六朝古都，这里汇聚了众多世界级的历史文化遗产。"
+          },
           "duration": "1 hour",
           "location": "Local Restaurant, Xi'an",
           "mode": "",
@@ -612,16 +847,28 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local cuisine"
+            {
+              "en": "Local cuisine",
+              "cn": "现代化交通体验"
+            }
           ],
           "images": []
         },
         {
           "id": "4-2-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "transfer",
-          "title": "Transfer to the train station for departure to Beijing.",
-          "description": "High-speed trains (G-series): The fastest option, taking approximately 4 hours and 10 minutes to 6 hours. Most high-speed trains depart from Xi'an North Railway Station and arrive at Beijing West Railway Station.\n\nThe distance between the cities between the 1,216 km (756 miles) .",
+          "title": {
+            "en": "Transfer to the train station for departure to Beijing.",
+            "cn": "入住北京酒店与欢迎晚宴"
+          },
+          "description": {
+            "en": "High-speed trains (G-series): The fastest option, taking approximately 4 hours and 10 minutes to 6 hours. Most high-speed trains depart from Xi'an North Railway Station and arrive at Beijing West Railway Station.\n\nThe distance between the cities between the 1,216 km (756 miles) .",
+            "cn": "抵达北京后，入住市中心四星级酒店。\n\n晚上与中国户外运动界的代表们共进欢迎晚宴。这是一个交流徒步经验、了解中国户外运动发展的好机会。"
+          },
           "duration": "5 hour",
           "location": "Xi'an to Beijing",
           "mode": "train",
@@ -629,16 +876,28 @@
           "to": "Beijing",
           "walkDetails": null,
           "highlights": [
-            "Comfortable travel"
+            {
+              "en": "Comfortable travel",
+              "cn": "四星级住宿"
+            }
           ],
           "images": []
         },
         {
           "id": "4-3-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Hotel in Beijing",
-          "description": "Check in at a centrally located 4-star hotel - Hotel TBC.",
+          "title": {
+            "en": "Check-in at Hotel in Beijing",
+            "cn": "入住北京酒店"
+          },
+          "description": {
+            "en": "Check in at a centrally located 4-star hotel - Hotel TBC.",
+            "cn": "入住市中心四星级酒店（酒店待定）。"
+          },
           "duration": "30 minutes",
           "location": "Beijing",
           "mode": "",
@@ -646,16 +905,28 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Convenient location for activities"
+            {
+              "en": "Convenient location for activities",
+              "cn": "地理位置便利"
+            }
           ],
           "images": []
         },
         {
           "id": "4-4-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "meal",
-          "title": "Welcome Dinner in Beijing",
-          "description": "Welcome dinner. Potentially meeting with representatives from China’s hiking and mountaineering communities.\n\nA brief introduction to Chinese mountaineering culture and safety guidelines will be provided.",
+          "title": {
+            "en": "Welcome Dinner in Beijing",
+            "cn": "北京欢迎晚宴"
+          },
+          "description": {
+            "en": "Welcome dinner. Potentially meeting with representatives from China’s hiking and mountaineering communities.\n\nA brief introduction to Chinese mountaineering culture and safety guidelines will be provided.",
+            "cn": "欢迎晚宴。可能与中国徒步登山界的代表会面。\n\n届时将简要介绍中国登山文化和安全须知。"
+          },
           "duration": "2 hours",
           "location": "Local Restaurant, Beijing",
           "mode": "",
@@ -663,13 +934,22 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Cultural exchange",
-            "Introduction to mountaineering culture"
+            {
+              "en": "Cultural exchange",
+              "cn": "文化交流"
+            },
+            {
+              "en": "Introduction to mountaineering culture",
+              "cn": "登山文化介绍"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "4-star Hotel in Beijing",
         "rating": "4-star"
@@ -678,17 +958,35 @@
     {
       "day": 5,
       "date": "May 13",
-      "title": "Forbidden City, National Botanical Garden & Happy Forest Hike",
-      "location": "Beijing",
+      "title": {
+        "en": "Forbidden City, National Botanical Garden & Happy Forest Hike",
+        "cn": "故宫与香山热身徒步"
+      },
+      "location": {
+        "en": "Beijing",
+        "cn": "北京"
+      },
       "region": "beijing",
-      "description": "Morning visit to the Forbidden City, exploring the imperial history of the Ming and Qing dynasties. Afternoon exploration at the National Botanical Garden, and possibly a nice hike to Happy Forest in Fragrant Hills (12km, 670m elevation). ",
+      "description": {
+        "en": "Morning visit to the Forbidden City, exploring the imperial history of the Ming and Qing dynasties. Afternoon exploration at the National Botanical Garden, and possibly a nice hike to Happy Forest in Fragrant Hills (12km, 670m elevation). ",
+        "cn": "上午参观故宫，探索明清两代的皇家历史。下午从国家植物园徒步至香山快活林进行热身（12公里，海拔670米）。当地户外专家将全程陪同。"
+      },
       "segments": [
         {
           "id": "5-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "activity",
-          "title": "Visit Forbidden City",
-          "description": "Visit Forbidden City (故宫博物院). Explore along the central axis of Beijing, including the Hall of Supreme Harmony （太和殿）, Hall of Central Harmony （中和殿）, and Hall of Preserving Harmony （保和殿））, immersing in the history and imperial architecture of the Ming and Qing dynasties. \n\nIt is recommended to enter early to avoid crowds, and expert guided commentary will be arranged for deeper understanding.\n\nStep into the enchanting world of the Forbidden City, a majestic palace complex that has stood as a symbol of imperial power in China for over 500 years. Nestled in the heart of Beijing, this UNESCO World Heritage Site invites you to explore its incredible architecture, vibrant history, and fascinating artifacts. With a staggering 8,886 rooms spread over 178 acres, the Forbidden City is not just the largest preserved royal palace in the world; it is a breathtaking testament to the grandeur of Chinese dynasties. Feel the weight of history as you stroll through its ornate halls and tranquil courtyards, where the whispers of emperors and empresses linger in the air, waiting to share their stories with you.",
+          "title": {
+            "en": "Visit Forbidden City",
+            "cn": "参观故宫"
+          },
+          "description": {
+            "en": "Visit Forbidden City (故宫博物院). Explore along the central axis of Beijing, including the Hall of Supreme Harmony （太和殿）, Hall of Central Harmony （中和殿）, and Hall of Preserving Harmony （保和殿））, immersing in the history and imperial architecture of the Ming and Qing dynasties. \n\nIt is recommended to enter early to avoid crowds, and expert guided commentary will be arranged for deeper understanding.\n\nStep into the enchanting world of the Forbidden City, a majestic palace complex that has stood as a symbol of imperial power in China for over 500 years. Nestled in the heart of Beijing, this UNESCO World Heritage Site invites you to explore its incredible architecture, vibrant history, and fascinating artifacts. With a staggering 8,886 rooms spread over 178 acres, the Forbidden City is not just the largest preserved royal palace in the world; it is a breathtaking testament to the grandeur of Chinese dynasties. Feel the weight of history as you stroll through its ornate halls and tranquil courtyards, where the whispers of emperors and empresses linger in the air, waiting to share their stories with you.",
+            "cn": "上午参观故宫博物院。\n\n故宫，又称紫禁城，是中国明清两代的皇家宫殿，位于北京中轴线的中心。建于1420年永乐年间，占地72万平方米，有大小宫殿七十多座，房屋九千余间，是世界上现存规模最大、保存最完整的木质结构古建筑群。\n\n故宫见证了24位皇帝的统治，珍藏着无数国宝文物。沿中轴线依次参观太和殿、中和殿、保和殿等主要建筑，感受皇家气派；两侧的东西六宫则展示了后妃的生活场景。\n\n建议早起入园，避开人流高峰，配合专业讲解可以更好地理解这座宫殿的历史与艺术价值。"
+          },
           "duration": "3 hours",
           "location": "Forbidden City, Beijing",
           "mode": "",
@@ -696,8 +994,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Ming and Qing dynasties",
-            "Imperial architecture"
+            {
+              "en": "Ming and Qing dynasties",
+              "cn": "世界最大宫殿建筑群"
+            },
+            {
+              "en": "Imperial architecture",
+              "cn": "600年皇家历史"
+            }
           ],
           "images": [
             {
@@ -737,19 +1041,38 @@
         },
         {
           "id": "5-3-1764526591332",
-          "time": "Midday",
+          "time": {
+            "en": "Midday",
+            "cn": "中午"
+          },
           "type": "meal",
-          "title": "Lunch at Local Restaurant",
-          "description": "Local Restaurant",
+          "title": {
+            "en": "Lunch at Local Restaurant",
+            "cn": "香山热身徒步"
+          },
+          "description": {
+            "en": "Local Restaurant",
+            "cn": "下午从国家植物园出发，徒步前往香山快活林。\n\n香山位于北京西郊，是著名的皇家园林和登山胜地。此次徒步路线全长约12公里，累计爬升670米，难度适中，是为后续更具挑战性的徒步行程做准备的热身活动。\n\n沿途可以欣赏北京西山的自然风光，呼吸清新的山林空气。当地户外专家将全程陪同，介绍沿途的植被和地形特点。\n\n香山以秋季红叶闻名，但春夏季节同样风景宜人，绿树成荫，鸟语花香。"
+          },
           "duration": "",
-          "images": []
+          "images": [],
+          "highlights": []
         },
         {
           "id": "5-1-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "activity",
-          "title": "National Botanical Garden to Fragrant Hills Hike",
-          "description": "A hike from Beijing's National Botanical Garden（国家植物园 to Happy Forest（香山）is possible through the Western Hills Forest Park (also referred to as Happy Forest). This 4 hour hike, approximately 12 km long, involves forest paths, firebreak roads, and steep descents, passing scenic spots like a peak with great views.\n\nChinese mountaineers and members of Beijing outdoor sports clubs may accompany the group, provide safety support and introduce local flora and geography.\n",
+          "title": {
+            "en": "National Botanical Garden to Fragrant Hills Hike",
+            "cn": "北京烤鸭晚餐"
+          },
+          "description": {
+            "en": "A hike from Beijing's National Botanical Garden（国家植物园 to Happy Forest（香山）is possible through the Western Hills Forest Park (also referred to as Happy Forest). This 4 hour hike, approximately 12 km long, involves forest paths, firebreak roads, and steep descents, passing scenic spots like a peak with great views.\n\nChinese mountaineers and members of Beijing outdoor sports clubs may accompany the group, provide safety support and introduce local flora and geography.\n",
+            "cn": "晚餐品尝正宗北京烤鸭。\n\n北京烤鸭是中国最著名的美食之一，有着600多年的历史。选用优质北京填鸭，经过独特的挂炉烤制工艺，外皮酥脆金黄，肉质鲜嫩多汁。\n\n传统吃法是将薄如蝉翼的鸭皮蘸白糖食用，鸭肉则配以葱丝、黄瓜条和甜面酱，用荷叶饼包裹。一鸭多吃，鸭架还可以煲汤。\n\n推荐品尝老字号餐厅的出品，体验最地道的北京风味。"
+          },
           "duration": "4 hours",
           "location": "National Botanical Garden to Fragrant Hills",
           "mode": "",
@@ -761,8 +1084,14 @@
             "difficulty": "moderate"
           },
           "highlights": [
-            "15 km hike",
-            "670 m elevation"
+            {
+              "en": "15 km hike",
+              "cn": "600年历史名菜"
+            },
+            {
+              "en": "670 m elevation",
+              "cn": "传统挂炉烤制"
+            }
           ],
           "images": [
             {
@@ -787,10 +1116,19 @@
         },
         {
           "id": "5-2-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "meal",
-          "title": "Dinner Featuring Beijing Specialties",
-          "description": "Dinner featuring Beijing specialties such as Peking duck.",
+          "title": {
+            "en": "Dinner Featuring Beijing Specialties",
+            "cn": "品尝北京特色美食"
+          },
+          "description": {
+            "en": "Dinner featuring Beijing specialties such as Peking duck.",
+            "cn": "品尝北京特色美食，如北京烤鸭。"
+          },
           "duration": "2 hours",
           "location": "Local Restaurant, Beijing",
           "mode": "",
@@ -798,12 +1136,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local cuisine"
+            {
+              "en": "Local cuisine",
+              "cn": "当地美食"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "4-star Hotel in Beijing",
         "rating": "4-star"
@@ -812,17 +1156,35 @@
     {
       "day": 6,
       "date": "May 14",
-      "title": "Hike along the Badaling Great Wall",
-      "location": "Great Wall, Beijing",
+      "title": {
+        "en": "Hike along the Badaling Great Wall",
+        "cn": "长城挑战"
+      },
+      "location": {
+        "en": "Great Wall, Beijing",
+        "cn": "北京 → 庐山"
+      },
       "region": "lushan",
-      "description": "Full day hike along the Badaling Great Wall (8-10km, ~500m elevation). Experience the magnificence of this ancient wonder. Afternoon overnight sleeper train to Lushan, a comfortable and efficient way to travel.",
+      "description": {
+        "en": "Full day hike along the Badaling Great Wall (8-10km, ~500m elevation). Experience the magnificence of this ancient wonder. Afternoon overnight sleeper train to Lushan, a comfortable and efficient way to travel.",
+        "cn": "全天在八达岭长城徒步（8-10公里，海拔约500米）。体验这一古代奇迹的雄伟壮观。傍晚乘坐夜间卧铺火车前往庐山，这是一种舒适高效的旅行方式。"
+      },
       "segments": [
         {
           "id": "6-0-1764440953795",
-          "time": "Full Day",
+          "time": {
+            "en": "Full Day",
+            "cn": "全天"
+          },
           "type": "activity",
-          "title": "Hike along the Badaling Great Wall",
-          "description": "Hike along the Badaling Great Wall.\n\nEmbark on an unforgettable adventure at the Badaling Great Wall, one of the most iconic sections of this ancient wonder. Nestled just a short drive from Beijing, this breathtaking hike offers a perfect blend of stunning natural beauty and rich history. As you traverse the winding paths, you'll be surrounded by lush mountains and panoramic views that stretch as far as the eye can see. Each step reveals centuries of stories etched into the weathered stones, making it a captivating journey for both seasoned trekkers and casual walkers alike. Whether you're seeking a challenging hike or a leisurely stroll, Badaling promises an exhilarating experience that will leave you in awe of China's remarkable heritage.\n\nDon’t miss the chance to capture stunning photos at the watchtowers, where you can imagine the brave soldiers who once stood guard over this magnificent structure. With well-maintained paths and plenty of amenities, Badaling is accessible for all ages, ensuring a memorable outing for families, friends, and solo adventurers alike.\n\nGuides will explain the history and architectural ingenuity of the Great Wall. Remember to apply sun protection cream, bring ample water and energy snacks.",
+          "title": {
+            "en": "Hike along the Badaling Great Wall",
+            "cn": "八达岭长城徒步"
+          },
+          "description": {
+            "en": "Hike along the Badaling Great Wall.\n\nEmbark on an unforgettable adventure at the Badaling Great Wall, one of the most iconic sections of this ancient wonder. Nestled just a short drive from Beijing, this breathtaking hike offers a perfect blend of stunning natural beauty and rich history. As you traverse the winding paths, you'll be surrounded by lush mountains and panoramic views that stretch as far as the eye can see. Each step reveals centuries of stories etched into the weathered stones, making it a captivating journey for both seasoned trekkers and casual walkers alike. Whether you're seeking a challenging hike or a leisurely stroll, Badaling promises an exhilarating experience that will leave you in awe of China's remarkable heritage.\n\nDon’t miss the chance to capture stunning photos at the watchtowers, where you can imagine the brave soldiers who once stood guard over this magnificent structure. With well-maintained paths and plenty of amenities, Badaling is accessible for all ages, ensuring a memorable outing for families, friends, and solo adventurers alike.\n\nGuides will explain the history and architectural ingenuity of the Great Wall. Remember to apply sun protection cream, bring ample water and energy snacks.",
+            "cn": "全天在八达岭长城徒步。\n\n八达岭长城是万里长城最具代表性的一段，位于北京延庆区。这段长城始建于明朝弘治年间（1505年），是目前保存最完好、最具规模的长城段落之一。\n\n徒步路线全长8-10公里，累计爬升约500米。沿着城墙蜿蜒前行，可以深刻体验这一人类工程奇迹的雄伟壮观。烽火台、敌楼、垛口等军事设施依然完整，诉说着古代的边塞风云。\n\n「不到长城非好汉」——今天您将亲自征服这一世界文化遗产，留下难忘的回忆。"
+          },
           "duration": "6 hours",
           "location": "Badaling Great Wall, Beijing",
           "mode": "",
@@ -834,8 +1196,14 @@
             "difficulty": "challenging"
           },
           "highlights": [
-            "8–10 km hike",
-            "500 m elevation"
+            {
+              "en": "8–10 km hike",
+              "cn": "世界文化遗产"
+            },
+            {
+              "en": "500 m elevation",
+              "cn": "8-10公里长城徒步"
+            }
           ],
           "images": [
             {
@@ -864,10 +1232,19 @@
         },
         {
           "id": "6-1-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "transfer",
-          "title": "Overnight Sleeper Train to Lushan",
-          "description": "NOTE: THIS SEEMS LIKE A LONG TIME, AND I NEED TO DOUBLE-CHECK THE TRAIN AND DURATION\n\nThe primary direct overnight sleeper train, K473, departs from the main Beijing Railway Station at 4:16 PM (16:16). \nIt arrives at Lushan Station (Henan, China) the following morning at approximately 6:21 AM (06:21), for a total journey time of just over 14 hours. \n\nNote: There have been arrangements to have access to hotel shower and freshen up facilities before the start of the day.\n\n",
+          "title": {
+            "en": "Overnight Sleeper Train to Lushan",
+            "cn": "夜间卧铺火车前往庐山"
+          },
+          "description": {
+            "en": "NOTE: THIS SEEMS LIKE A LONG TIME, AND I NEED TO DOUBLE-CHECK THE TRAIN AND DURATION\n\nThe primary direct overnight sleeper train, K473, departs from the main Beijing Railway Station at 4:16 PM (16:16). \nIt arrives at Lushan Station (Henan, China) the following morning at approximately 6:21 AM (06:21), for a total journey time of just over 14 hours. \n\nNote: There have been arrangements to have access to hotel shower and freshen up facilities before the start of the day.\n\n",
+            "cn": "傍晚从北京乘坐夜间卧铺火车前往庐山（九江站）。\n\n卧铺火车是体验中国铁路旅行的独特方式。软卧车厢每个包厢4个铺位，配有干净的床铺和被褥，旅途舒适。\n\n夜间行驶可以节省白天的游览时间，在火车的轻晃中进入梦乡，醒来时已经置身于江南水乡。"
+          },
           "duration": "14 hours",
           "location": "Beijing to Lushan",
           "mode": "train",
@@ -875,12 +1252,18 @@
           "to": "Lushan",
           "walkDetails": null,
           "highlights": [
-            "Comfortable and efficient travel"
+            {
+              "en": "Comfortable and efficient travel",
+              "cn": "独特的火车旅行体验"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "Overnight Train",
         "rating": ""
@@ -889,17 +1272,35 @@
     {
       "day": 7,
       "date": "May 15",
-      "title": "Arrival in Lushan",
-      "location": "Lushan",
+      "title": {
+        "en": "Arrival in Lushan",
+        "cn": "抵达庐山"
+      },
+      "location": {
+        "en": "Lushan",
+        "cn": "庐山"
+      },
       "region": "lushan",
-      "description": "Arrive at Jiujiang Station and transfer to Lushan. Take a cable car to the mountain-top hotel. Lushan is famous for its European-style villas built by missionaries. Afternoon leisurely 8km hike along Lushan's trails to acclimate.",
+      "description": {
+        "en": "Arrive at Jiujiang Station and transfer to Lushan. Take a cable car to the mountain-top hotel. Lushan is famous for its European-style villas built by missionaries. Afternoon leisurely 8km hike along Lushan's trails to acclimate.",
+        "cn": "抵达九江站后转乘前往庐山。乘坐缆车上山顶酒店。庐山以传教士建造的欧式别墅而闻名。下午进行8公里休闲徒步，适应山区环境。"
+      },
       "segments": [
         {
           "id": "7-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "transfer",
-          "title": "Transfer from Jiujiang Station -> Hotel",
-          "description": "Coach transfer from Jiujiang Station to the intermediate hotel to freshen up / shower / and have a relaxing breakfast.\n\nJust what you need, after a long overnight sleeper train.",
+          "title": {
+            "en": "Transfer from Jiujiang Station -> Hotel",
+            "cn": "抵达九江与前往庐山"
+          },
+          "description": {
+            "en": "Coach transfer from Jiujiang Station to the intermediate hotel to freshen up / shower / and have a relaxing breakfast.\n\nJust what you need, after a long overnight sleeper train.",
+            "cn": "清晨抵达九江站，转乘前往庐山景区。\n\n九江古称浔阳，是长江沿岸的重要城市。庐山就坐落在九江市南部，自古便是避暑胜地和文人墨客的隐居之地。"
+          },
           "duration": "1 hour",
           "location": "Jiujiang Station to Lushan",
           "mode": "coach",
@@ -907,28 +1308,50 @@
           "to": "Hotel / Breakfast",
           "walkDetails": null,
           "highlights": [
-            "Freshen up and have breakfast at the hotel"
+            {
+              "en": "Freshen up and have breakfast at the hotel",
+              "cn": "长江沿岸历史名城"
+            }
           ],
           "images": []
         },
         {
           "id": "7-4-1764527719507",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "transfer",
-          "title": "Cable Car to Mountain-top",
-          "description": "Take a cable car to the mountain-top hotel on Lushan for check-in. ",
+          "title": {
+            "en": "Cable Car to Mountain-top",
+            "cn": "乘坐缆车上山"
+          },
+          "description": {
+            "en": "Take a cable car to the mountain-top hotel on Lushan for check-in. ",
+            "cn": "乘坐缆车登上庐山山顶。\n\n庐山缆车全长约2公里，从山脚直达牯岭镇。透过缆车窗户，可以俯瞰层峦叠嶂的山景和云海奇观。\n\n牯岭镇是庐山的核心区域，海拔约1100米，夏季凉爽宜人，是著名的避暑胜地。这里保留着大量19世纪末至20世纪初外国传教士和外交官建造的欧式别墅，形成了独特的万国建筑博览会。"
+          },
           "duration": "1 hour",
           "images": [],
           "mode": "cable car",
           "from": "Temporary Hotel",
-          "to": "Main Hotel"
+          "to": "Main Hotel",
+          "highlights": []
         },
         {
           "id": "7-1-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "check-in",
-          "title": "Check-in at Mountain-top Hotel",
-          "description": "Take a cable car to the mountain-top hotel for check-in.\n\nThe mountain-top architecture of Lushan was primarily developed by the British missionary Edward Selby Little. In 1895, he discovered Lushan’s pleasant climate and built villas, attracting foreign merchants and missionaries to purchase land and construct summer residences, developing into the early Lushan villa community.",
+          "title": {
+            "en": "Check-in at Mountain-top Hotel",
+            "cn": "适应性徒步"
+          },
+          "description": {
+            "en": "Take a cable car to the mountain-top hotel for check-in.\n\nThe mountain-top architecture of Lushan was primarily developed by the British missionary Edward Selby Little. In 1895, he discovered Lushan’s pleasant climate and built villas, attracting foreign merchants and missionaries to purchase land and construct summer residences, developing into the early Lushan villa community.",
+            "cn": "下午进行8公里的适应性徒步。\n\n庐山平均海拔约1100米，今天的徒步旨在让身体适应山区环境。沿途经过如琴湖、花径等著名景点，欣赏庐山独特的云雾美景。\n\n白居易《大林寺桃花》诗中「人间四月芳菲尽，山寺桃花始盛开」描述的正是庐山春景。今天的轻松徒步，是为明天更具挑战性的行程做准备。"
+          },
           "duration": "30 minutes",
           "location": "Mountain-top Hotel, Lushan",
           "mode": "",
@@ -936,7 +1359,10 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Unique mountain-top accommodation"
+            {
+              "en": "Unique mountain-top accommodation",
+              "cn": "8公里适应性徒步"
+            }
           ],
           "images": [
             {
@@ -952,10 +1378,19 @@
         },
         {
           "id": "7-2-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "activity",
-          "title": "Leisurely Hike along Lushan’s Trails",
-          "description": "Leisurely 8 km hike along Lushan’s trails, appreciating cultural landmarks such as Meilu Villa and historical academies.",
+          "title": {
+            "en": "Leisurely Hike along Lushan's Trails",
+            "cn": "庐山步道休闲徒步"
+          },
+          "description": {
+            "en": "Leisurely 8 km hike along Lushan’s trails, appreciating cultural landmarks such as Meilu Villa and historical academies.",
+            "cn": "沿庐山步道轻松徒步8公里，欣赏美庐别墅等文化地标和历史书院。"
+          },
           "duration": "3-4 hours",
           "location": "Lushan Trails",
           "mode": "",
@@ -967,17 +1402,32 @@
             "difficulty": "easy"
           },
           "highlights": [
-            "Cultural landmarks",
-            "Historical academies"
+            {
+              "en": "Cultural landmarks",
+              "cn": "文化地标"
+            },
+            {
+              "en": "Historical academies",
+              "cn": "历史书院"
+            }
           ],
           "images": []
         },
         {
           "id": "7-3-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "meal",
-          "title": "Dinner at Mountain-top Hotel",
-          "description": "Dinner at the mountain-top hotel, featuring Lushan’s “Three Stones” and other local specialties.",
+          "title": {
+            "en": "Dinner at Mountain-top Hotel",
+            "cn": "山顶酒店晚餐"
+          },
+          "description": {
+            "en": "Dinner at the mountain-top hotel, featuring Lushan’s “Three Stones” and other local specialties.",
+            "cn": "在山顶酒店享用晚餐，品尝庐山「三石」等当地特色美食。"
+          },
           "duration": "2 hours",
           "location": "Mountain-top Hotel, Lushan",
           "mode": "",
@@ -985,12 +1435,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local cuisine"
+            {
+              "en": "Local cuisine",
+              "cn": "当地美食"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "Mountain-top Hotel, Lushan",
         "rating": "4-star"
@@ -999,17 +1455,35 @@
     {
       "day": 8,
       "date": "May 16",
-      "title": "Summit Hike on Lushan - Exact Hike TBC",
-      "location": "Lushan",
+      "title": {
+        "en": "Summit Hike on Lushan - Exact Hike TBC",
+        "cn": "征服好汉坡"
+      },
+      "location": {
+        "en": "Lushan",
+        "cn": "庐山"
+      },
       "region": "lushan",
-      "description": "Full day summit hike on Lushan (~8km, 900m elevation). Challenge the classic route and enjoy breathtaking views from the summit. Evening rest at the mountain-top hotel.",
+      "description": {
+        "en": "Full day summit hike on Lushan (~8km, 900m elevation). Challenge the classic route and enjoy breathtaking views from the summit. Evening rest at the mountain-top hotel.",
+        "cn": "全天庐山登顶徒步（约8公里，海拔900米）。挑战经典的好汉坡路线，在山顶欣赏令人叹为观止的壮丽景色。晚上在山顶酒店休息。"
+      },
       "segments": [
         {
           "id": "8-0-1764440953795",
-          "time": "Full Day",
+          "time": {
+            "en": "Full Day",
+            "cn": "全天"
+          },
           "type": "activity",
-          "title": "Summit Hike on Lushan - Potentially Five Old Men Peaks (五老峰, Wǔlǎo Fēng)",
-          "description": "NOTE: I could not get details of classic Hero Slope route, so this may be swapped out when hike is clarified.\n\nFive Old Men Peaks (五老峰, Wǔlǎo Fēng)\n\nTrail Profile:\n\nElevation: 1,436 meters at the highest peak (4th peak)\n\nDistance: Approximately 8-10km round trip depending on route\n\nElevation Gain: Roughly 900m from base to summit\n\nDifficulty: Challenging with continuous steep stone steps\n\nRoute Details:\nThe trail consists of five distinct peaks that resemble five elderly men sitting side by side. The hike typically takes 2.5-3 hours round trip and involves relentless climbing on stone steps with minimal flat sections. The most difficult section comes at the beginning, so pace yourself accordingly.\n\n",
+          "title": {
+            "en": "Summit Hike on Lushan - Potentially Five Old Men Peaks (五老峰, Wǔlǎo Fēng)",
+            "cn": "好汉坡挑战"
+          },
+          "description": {
+            "en": "NOTE: I could not get details of classic Hero Slope route, so this may be swapped out when hike is clarified.\n\nFive Old Men Peaks (五老峰, Wǔlǎo Fēng)\n\nTrail Profile:\n\nElevation: 1,436 meters at the highest peak (4th peak)\n\nDistance: Approximately 8-10km round trip depending on route\n\nElevation Gain: Roughly 900m from base to summit\n\nDifficulty: Challenging with continuous steep stone steps\n\nRoute Details:\nThe trail consists of five distinct peaks that resemble five elderly men sitting side by side. The hike typically takes 2.5-3 hours round trip and involves relentless climbing on stone steps with minimal flat sections. The most difficult section comes at the beginning, so pace yourself accordingly.\n\n",
+            "cn": "全天挑战庐山好汉坡。\n\n好汉坡是庐山最经典的登山路线之一，因其陡峭险峻而得名——「不到好汉坡，不算庐山客」。\n\n徒步路线全长约8公里，累计爬升约900米。沿途穿越原始森林，经过多处险峻的石阶路段。山顶视野开阔，可以俯瞰长江和鄱阳湖的壮丽景色。\n\n这条路线考验体力和意志，完成挑战后的成就感将是此行最难忘的回忆之一。"
+          },
           "duration": "4 hours",
           "location": "Lushan",
           "mode": "",
@@ -1021,8 +1495,14 @@
             "difficulty": "challenging"
           },
           "highlights": [
-            "Breathtaking views from the summit",
-            "Physical challenge"
+            {
+              "en": "Breathtaking views from the summit",
+              "cn": "经典登山路线"
+            },
+            {
+              "en": "Physical challenge",
+              "cn": "8公里徒步"
+            }
           ],
           "images": [
             {
@@ -1038,10 +1518,19 @@
         },
         {
           "id": "8-1-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "free-time",
-          "title": "Rest and Share Experiences",
-          "description": "Rest at the mountain-top hotel and share hiking experiences. Time to chill with a beer or glass of prosecco.",
+          "title": {
+            "en": "Rest and Share Experiences",
+            "cn": "休息与分享徒步经历"
+          },
+          "description": {
+            "en": "Rest at the mountain-top hotel and share hiking experiences. Time to chill with a beer or glass of prosecco.",
+            "cn": "在山顶酒店休息，分享徒步心得。来一杯啤酒或起泡酒，放松一下。"
+          },
           "duration": "Evening",
           "location": "Mountain-top Hotel, Lushan",
           "mode": "",
@@ -1049,12 +1538,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Relaxation after a challenging hike"
+            {
+              "en": "Relaxation after a challenging hike",
+              "cn": "徒步挑战后的放松"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Dinner",
+      "meals": {
+        "en": "Breakfast, Dinner",
+        "cn": "早餐、 晚餐"
+      },
       "accommodation": {
         "name": "Mountain-top Hotel, Lushan",
         "rating": "4-star"
@@ -1063,17 +1558,35 @@
     {
       "day": 9,
       "date": "May 17",
-      "title": "Mount Shizhong & Jingdezhen",
-      "location": "Jingdezhen",
+      "title": {
+        "en": "Mount Shizhong & Jingdezhen",
+        "cn": "石钟山与景德镇"
+      },
+      "location": {
+        "en": "Jingdezhen",
+        "cn": "庐山 → 景德镇"
+      },
       "region": "lushan",
-      "description": "Morning hike on Mount Shizhong (10km) to see the confluence of the Yangtze River and Poyang Lake. Afternoon visit to Jingdezhen, the 'Porcelain Capital', for hands-on ceramic activities.",
+      "description": {
+        "en": "Morning hike on Mount Shizhong (10km) to see the confluence of the Yangtze River and Poyang Lake. Afternoon visit to Jingdezhen, the 'Porcelain Capital', for hands-on ceramic activities.",
+        "cn": "上午在石钟山徒步（10公里），观赏长江与鄱阳湖交汇的壮观景象。下午前往「瓷都」景德镇，亲身体验陶瓷制作。"
+      },
       "segments": [
         {
           "id": "9-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "transfer",
-          "title": "Transfer to Hukou County",
-          "description": "Transfer to Hukou County for a hike.",
+          "title": {
+            "en": "Transfer to Hukou County",
+            "cn": "石钟山徒步"
+          },
+          "description": {
+            "en": "Transfer to Hukou County for a hike.",
+            "cn": "上午在石钟山徒步。\n\n石钟山位于鄱阳湖入长江处，因山形似钟而得名。苏轼曾夜游此山，写下著名的《石钟山记》，探讨山名的由来。\n\n徒步路线约10公里，沿途可以欣赏长江与鄱阳湖交汇的壮观景象——江湖两色，泾渭分明。这是中国最著名的水文奇观之一。"
+          },
           "duration": "1.5 hours",
           "location": "Lushan to Hukou County",
           "mode": "coach",
@@ -1081,16 +1594,28 @@
           "to": "Hukou County",
           "walkDetails": null,
           "highlights": [
-            "Scenic transfer"
+            {
+              "en": "Scenic transfer",
+              "cn": "长江鄱阳湖交汇"
+            }
           ],
           "images": []
         },
         {
           "id": "9-1-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "activity",
-          "title": "Hike up Shizhong Mountain",
-          "description": "Hike on Shizhong Mountain.\n\nAdmire the spectacular confluence of the Yangtze River and Poyang Lake, experiencing the natural wonder of “Water striking stone, resonating like a bell.”\n\nEmbark on an unforgettable adventure at Mount Shizhong, an enchanting gem nestled between Lushan and Jingdezhen, China. This breathtaking hike offers a stunning panorama of lush landscapes, steep cliffs, and vibrant flora that will leave nature enthusiasts in awe. As you ascend the winding trails, you'll encounter serene streams and ancient rock formations, providing the perfect backdrop for photography and mindfulness. Whether you're an experienced hiker or a casual walker, the diverse terrain and captivating views will invigorate your spirit and connect you with the pristine beauty of the region. Don't miss the chance to witness a mesmerizing sunrise from the summit, a moment that will etch itself in your memory forever.",
+          "title": {
+            "en": "Hike up Shizhong Mountain",
+            "cn": "前往景德镇"
+          },
+          "description": {
+            "en": "Hike on Shizhong Mountain.\n\nAdmire the spectacular confluence of the Yangtze River and Poyang Lake, experiencing the natural wonder of “Water striking stone, resonating like a bell.”\n\nEmbark on an unforgettable adventure at Mount Shizhong, an enchanting gem nestled between Lushan and Jingdezhen, China. This breathtaking hike offers a stunning panorama of lush landscapes, steep cliffs, and vibrant flora that will leave nature enthusiasts in awe. As you ascend the winding trails, you'll encounter serene streams and ancient rock formations, providing the perfect backdrop for photography and mindfulness. Whether you're an experienced hiker or a casual walker, the diverse terrain and captivating views will invigorate your spirit and connect you with the pristine beauty of the region. Don't miss the chance to witness a mesmerizing sunrise from the summit, a moment that will etch itself in your memory forever.",
+            "cn": "午后前往景德镇。\n\n景德镇素有「瓷都」之称，是中国乃至世界陶瓷文化的发源地。这座城市有着2000多年的制瓷历史，所产瓷器「白如玉、明如镜、薄如纸、声如磬」，享誉海内外。"
+          },
           "duration": "3-4 hours",
           "location": "Mount Shizhong",
           "mode": "",
@@ -1102,8 +1627,14 @@
             "difficulty": "moderate"
           },
           "highlights": [
-            "Natural wonder",
-            "Scenic views"
+            {
+              "en": "Natural wonder",
+              "cn": "千年瓷都"
+            },
+            {
+              "en": "Scenic views",
+              "cn": "世界陶瓷之都"
+            }
           ],
           "images": [
             {
@@ -1128,10 +1659,19 @@
         },
         {
           "id": "9-2-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "activity",
-          "title": "Visit Jingdezhen - Porcelain Capital",
-          "description": "Visit the Porcelain Capital of Jingdezhen and try hands-on ceramic activities.\n\nDiscover the enchanting world of Jingdezhen, the 'Porcelain Capital' of China, where every corner whispers tales of artistry and tradition. Nestled in the picturesque eastern Jiangxi province, this city invites you to immerse yourself in over a millennium of ceramic craftsmanship. Stroll through vibrant markets and workshops, where skilled artisans continue to create exquisite porcelain pieces, each one a testament to the city’s rich heritage. Whether you're a history buff or a lover of fine art, Jingdezhen promises an unforgettable journey through time, culture, and creativity.",
+          "title": {
+            "en": "Visit Jingdezhen - Porcelain Capital",
+            "cn": "陶瓷体验活动"
+          },
+          "description": {
+            "en": "Visit the Porcelain Capital of Jingdezhen and try hands-on ceramic activities.\n\nDiscover the enchanting world of Jingdezhen, the 'Porcelain Capital' of China, where every corner whispers tales of artistry and tradition. Nestled in the picturesque eastern Jiangxi province, this city invites you to immerse yourself in over a millennium of ceramic craftsmanship. Stroll through vibrant markets and workshops, where skilled artisans continue to create exquisite porcelain pieces, each one a testament to the city’s rich heritage. Whether you're a history buff or a lover of fine art, Jingdezhen promises an unforgettable journey through time, culture, and creativity.",
+            "cn": "在景德镇体验陶瓷制作。\n\n参观古窑民俗博览区，了解景德镇瓷器的制作工艺和发展历史。在专业陶艺师的指导下，亲手体验拉坯、彩绘等制瓷工序。\n\n景德镇瓷器分为青花、粉彩、玲珑、颜色釉四大传统名瓷。您可以创作属于自己的陶瓷作品，作为此行的独特纪念。"
+          },
           "duration": "2-3 hours",
           "location": "Jingdezhen",
           "mode": "",
@@ -1139,8 +1679,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Ceramic activities",
-            "Cultural experience"
+            {
+              "en": "Ceramic activities",
+              "cn": "亲手制作陶瓷"
+            },
+            {
+              "en": "Cultural experience",
+              "cn": "了解制瓷工艺"
+            }
           ],
           "images": [
             {
@@ -1156,10 +1702,19 @@
         },
         {
           "id": "9-3-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Hotel in Jingdezhen",
-          "description": "Check into a hotel in Jingdezhen.",
+          "title": {
+            "en": "Check-in at Hotel in Jingdezhen",
+            "cn": "入住景德镇酒店"
+          },
+          "description": {
+            "en": "Check into a hotel in Jingdezhen.",
+            "cn": "入住景德镇酒店。"
+          },
           "duration": "30 minutes",
           "location": "Jingdezhen",
           "mode": "",
@@ -1167,12 +1722,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Comfortable accommodation"
+            {
+              "en": "Comfortable accommodation",
+              "cn": "舒适住宿"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "Hotel in Jingdezhen",
         "rating": "4-star"
@@ -1181,17 +1742,35 @@
     {
       "day": 10,
       "date": "May 18",
-      "title": "Wuyuan Rural Landscapes",
-      "location": "Wuyuan",
+      "title": {
+        "en": "Wuyuan Rural Landscapes",
+        "cn": "婺源田园风光"
+      },
+      "location": {
+        "en": "Wuyuan",
+        "cn": "婺源"
+      },
       "region": "lushan",
-      "description": "Full day hike in Wuyuan (7-12km). Explore Jujing Village, Wolong Valley, and Moon Bay. Experience the pastoral beauty of China's most beautiful countryside with its Hui-style architecture.\n\n",
+      "description": {
+        "en": "Full day hike in Wuyuan (7-12km). Explore Jujing Village, Wolong Valley, and Moon Bay. Experience the pastoral beauty of China's most beautiful countryside with its Hui-style architecture.\n\n",
+        "cn": "全天婺源徒步（7-12公里）。探索菊径村、卧龙谷和月亮湾。体验「中国最美乡村」的田园之美和徽派建筑。"
+      },
       "segments": [
         {
           "id": "10-0-1764440953795",
-          "time": "Full Day",
+          "time": {
+            "en": "Full Day",
+            "cn": "全天"
+          },
           "type": "activity",
-          "title": "Hike in Wuyuan",
-          "description": "Hike in Wuyuan, exploring various villages and landscapes.\n\nExplore Jujing Village, Wolong Valley (waterfall clusters), Zhang Village (bench bridge), and Moon Bay (sunset). Experience the pastoral beauty and poetic landscapes of China’s most beautiful countryside. \n\nMoon Bay beckons adventurers and nature lovers alike with its stunning landscapes and serene ambiance. Known for its mesmerizing views and lush surroundings, this 5A-rated tourist attraction offers a unique blend of tranquility and exploration, making it a must-visit destination for hikers. Whether you're wandering along its scenic trails or capturing the breathtaking vistas, Moon Bay promises an unforgettable experience that will leave you rejuvenated and inspired.\n\nRecommendations: Travel light, carry rain gear, and ensure cameras are fully charged.",
+          "title": {
+            "en": "Hike in Wuyuan",
+            "cn": "婺源田园徒步"
+          },
+          "description": {
+            "en": "Hike in Wuyuan, exploring various villages and landscapes.\n\nExplore Jujing Village, Wolong Valley (waterfall clusters), Zhang Village (bench bridge), and Moon Bay (sunset). Experience the pastoral beauty and poetic landscapes of China’s most beautiful countryside. \n\nMoon Bay beckons adventurers and nature lovers alike with its stunning landscapes and serene ambiance. Known for its mesmerizing views and lush surroundings, this 5A-rated tourist attraction offers a unique blend of tranquility and exploration, making it a must-visit destination for hikers. Whether you're wandering along its scenic trails or capturing the breathtaking vistas, Moon Bay promises an unforgettable experience that will leave you rejuvenated and inspired.\n\nRecommendations: Travel light, carry rain gear, and ensure cameras are fully charged.",
+            "cn": "全天在婺源徒步，探索中国最美乡村。\n\n婺源位于江西省东北部，被誉为「中国最美乡村」。这里保存着完整的徽派建筑群落，白墙黛瓦、马头墙在青山绿水间错落有致，宛如一幅水墨画卷。\n\n徒步路线7-12公里，途经多个古村落。春天油菜花盛开时，金黄色的花海与古老村落相映成趣，是摄影爱好者的天堂。"
+          },
           "duration": "6-8 hours",
           "location": "Wuyuan",
           "mode": "",
@@ -1203,8 +1782,14 @@
             "difficulty": "moderate"
           },
           "highlights": [
-            "Pastoral beauty",
-            "Poetic landscapes"
+            {
+              "en": "Pastoral beauty",
+              "cn": "中国最美乡村"
+            },
+            {
+              "en": "Poetic landscapes",
+              "cn": "徽派建筑"
+            }
           ],
           "images": [
             {
@@ -1247,10 +1832,19 @@
         },
         {
           "id": "10-1-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Homestay or Hotel in Wuyuan",
-          "description": "Stay at a characteristic homestay or hotel in Wuyuan.",
+          "title": {
+            "en": "Check-in at Homestay or Hotel in Wuyuan",
+            "cn": "菊径村"
+          },
+          "description": {
+            "en": "Stay at a characteristic homestay or hotel in Wuyuan.",
+            "cn": "参观「中国最圆的村庄」菊径村。\n\n菊径村被小溪环绕，形成了独特的圆形布局。从对面山上俯瞰，整个村庄呈现出一个完美的圆形，非常壮观。村内保存着众多明清时期的古建筑，青石板路、古井古桥，处处透着岁月的沧桑。"
+          },
           "duration": "30 minutes",
           "location": "Wuyuan",
           "mode": "",
@@ -1258,12 +1852,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local experience"
+            {
+              "en": "Local experience",
+              "cn": "中国最圆的村庄"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch",
+      "meals": {
+        "en": "Breakfast, Lunch",
+        "cn": "早餐、 午餐"
+      },
       "accommodation": {
         "name": "Homestay or Hotel in Wuyuan",
         "rating": "4-star"
@@ -1272,17 +1872,35 @@
     {
       "day": 11,
       "date": "May 19",
-      "title": "Huangling & Wangxian Valley",
-      "location": "Wuyuan to Wangxian Valley",
+      "title": {
+        "en": "Huangling & Wangxian Valley",
+        "cn": "篁岭与望仙谷"
+      },
+      "location": {
+        "en": "Wuyuan to Wangxian Valley",
+        "cn": "婺源 → 上饶"
+      },
       "region": "shangrao",
-      "description": "Morning visit to Huangling to see fan-shaped terraces. Transfer to Wangxian Valley in Shangrao for a 10km hike. Enjoy the dreamy, fairy-tale night views of the valley with its illuminated cliffs.",
+      "description": {
+        "en": "Morning visit to Huangling to see fan-shaped terraces. Transfer to Wangxian Valley in Shangrao for a 10km hike. Enjoy the dreamy, fairy-tale night views of the valley with its illuminated cliffs.",
+        "cn": "上午参观篁岭，欣赏独特的扇形梯田。之后前往上饶望仙谷进行10公里徒步。傍晚欣赏山谷中如梦如幻的童话夜景和悬崖灯光。"
+      },
       "segments": [
         {
           "id": "11-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "activity",
-          "title": "Visit Huangling",
-          "description": "Visit Huangling in Wuyuan to see typical Hui-style mountain villages and fan-shaped terraces.\n\nNestled in the picturesque landscape of Wuyuan, China, Huangling village captivates visitors with its stunning Hui-style architecture and vibrant fields of rapeseed flowers that blanket the area in a sea of yellow each spring. Experience the charm of this traditional village, where ancient customs blend seamlessly with breathtaking scenery. As you wander through the narrow alleyways, you'll witness local farmers practicing the unique art of shaiqiu, showcasing their crops drying in bamboo baskets on sunlit window sills. This enchanting destination, recognized as one of the Best Tourism Villages by the United Nations World Tourism Organization in 2023, offers a perfect escape for nature lovers and cultural enthusiasts alike, making it a must-visit on your hiking tour itinerary.",
+          "title": {
+            "en": "Visit Huangling",
+            "cn": "篁岭梯田"
+          },
+          "description": {
+            "en": "Visit Huangling in Wuyuan to see typical Hui-style mountain villages and fan-shaped terraces.\n\nNestled in the picturesque landscape of Wuyuan, China, Huangling village captivates visitors with its stunning Hui-style architecture and vibrant fields of rapeseed flowers that blanket the area in a sea of yellow each spring. Experience the charm of this traditional village, where ancient customs blend seamlessly with breathtaking scenery. As you wander through the narrow alleyways, you'll witness local farmers practicing the unique art of shaiqiu, showcasing their crops drying in bamboo baskets on sunlit window sills. This enchanting destination, recognized as one of the Best Tourism Villages by the United Nations World Tourism Organization in 2023, offers a perfect escape for nature lovers and cultural enthusiasts alike, making it a must-visit on your hiking tour itinerary.",
+            "cn": "上午参观篁岭。\n\n篁岭是婺源最具特色的古村落之一，建于海拔500米的山坡上。独特的地形造就了壮观的扇形梯田景观。\n\n篁岭最著名的是「晒秋」景观——由于地势原因，村民习惯将农作物晾晒在自家屋顶和窗台上，形成了独特的民俗风情。五颜六色的辣椒、玉米、菊花等在阳光下晾晒，与白墙黛瓦的徽派建筑形成绚丽的色彩对比。"
+          },
           "duration": "2-3 hours",
           "location": "Huangling, Wuyuan",
           "mode": "",
@@ -1290,8 +1908,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Cultural experience",
-            "Scenic views"
+            {
+              "en": "Cultural experience",
+              "cn": "扇形梯田"
+            },
+            {
+              "en": "Scenic views",
+              "cn": "晒秋民俗"
+            }
           ],
           "images": [
             {
@@ -1307,10 +1931,19 @@
         },
         {
           "id": "11-1-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "transfer",
-          "title": "Transfer to Wangxian Valley (Shangrao)",
-          "description": "The transfer time from Wuyuan to Wangxian Valley is approximately 2 hours by coach.\n",
+          "title": {
+            "en": "Transfer to Wangxian Valley (Shangrao)",
+            "cn": "前往望仙谷"
+          },
+          "description": {
+            "en": "The transfer time from Wuyuan to Wangxian Valley is approximately 2 hours by coach.\n",
+            "cn": "午后前往上饶望仙谷景区。\n\n望仙谷位于上饶市，是近年来新开发的网红景区。峡谷内悬崖峭壁，山泉飞瀑，融合了自然风光和创意设计。"
+          },
           "duration": "2 hour",
           "location": "Wuyuan to Wangxian Valley",
           "mode": "coach",
@@ -1318,16 +1951,28 @@
           "to": "Wangxian Valley (Shangrao)",
           "walkDetails": null,
           "highlights": [
-            "Scenic transfer"
+            {
+              "en": "Scenic transfer",
+              "cn": "峡谷风光"
+            }
           ],
           "images": []
         },
         {
           "id": "11-2-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "activity",
-          "title": "Hike in Wangxian Valley",
-          "description": "Hike approximately 10 km (300 m total elevation). Follow recommended routes, with a highlight on the dreamy, fairy-tale night views with the surrounding cliffs illuminated. \n\nRecommendations: Stay within or near Wangxian Valley to fully experience the night and morning scenery.",
+          "title": {
+            "en": "Hike in Wangxian Valley",
+            "cn": "望仙谷徒步与夜景"
+          },
+          "description": {
+            "en": "Hike approximately 10 km (300 m total elevation). Follow recommended routes, with a highlight on the dreamy, fairy-tale night views with the surrounding cliffs illuminated. \n\nRecommendations: Stay within or near Wangxian Valley to fully experience the night and morning scenery.",
+            "cn": "在望仙谷进行10公里徒步，并欣赏梦幻夜景。\n\n望仙谷的夜景是其最大的特色——悬崖上点缀着星星点点的灯光，峡谷中的民宿和步道在灯光装点下如梦如幻，仿佛置身童话世界。\n\n入住悬崖边的特色民宿，体验独特的山居生活。夜晚可以聆听山泉流水声，仰望满天繁星。"
+          },
           "duration": "3-4 hours",
           "location": "Wangxian Valley (Shangrao)",
           "mode": "",
@@ -1339,8 +1984,14 @@
             "difficulty": "moderate"
           },
           "highlights": [
-            "Fairy-tale night views",
-            "Scenic beauty"
+            {
+              "en": "Fairy-tale night views",
+              "cn": "10公里徒步"
+            },
+            {
+              "en": "Scenic beauty",
+              "cn": "梦幻夜景"
+            }
           ],
           "images": [
             {
@@ -1356,10 +2007,19 @@
         },
         {
           "id": "11-3-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Homestay in Wangxian Valley or a hotel in Shangrao.",
-          "description": "Check into a characteristic homestay in Wangxian Valley or a hotel in Shangrao.",
+          "title": {
+            "en": "Check-in at Homestay in Wangxian Valley or a hotel in Shangrao.",
+            "cn": "入住望仙谷特色民宿或上饶酒店"
+          },
+          "description": {
+            "en": "Check into a characteristic homestay in Wangxian Valley or a hotel in Shangrao.",
+            "cn": "入住望仙谷特色民宿或上饶酒店。"
+          },
           "duration": "30 minutes",
           "location": "Wangxian Valley",
           "mode": "",
@@ -1367,12 +2027,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local experience"
+            {
+              "en": "Local experience",
+              "cn": "当地体验"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch",
+      "meals": {
+        "en": "Breakfast, Lunch",
+        "cn": "早餐、 午餐"
+      },
       "accommodation": {
         "name": "Homestay in Wangxian Valley (Shangrao)",
         "rating": "4-star"
@@ -1381,17 +2047,35 @@
     {
       "day": 12,
       "date": "May 20",
-      "title": "Journey to Mount Tai",
-      "location": "Tai'An",
+      "title": {
+        "en": "Journey to Mount Tai",
+        "cn": "前往泰山"
+      },
+      "location": {
+        "en": "Tai'An",
+        "cn": "上饶 → 泰安"
+      },
       "region": "taishan",
-      "description": "High-speed rail to Tai'an, Shandong (~4-5 hours). Visit Dai Temple, the spiritual core of Mount Tai worship, to learn about the history of imperial sacrifices. Prepare for tomorrow's climb.",
+      "description": {
+        "en": "High-speed rail to Tai'an, Shandong (~4-5 hours). Visit Dai Temple, the spiritual core of Mount Tai worship, to learn about the history of imperial sacrifices. Prepare for tomorrow's climb.",
+        "cn": "乘坐高铁前往山东泰安（约4-5小时）。参观岱庙，这是泰山崇拜的精神核心，了解皇家祭祀的历史。为明天的登山做好准备。"
+      },
       "segments": [
         {
           "id": "12-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "transfer",
-          "title": "High-Speed Rail to Tai'An",
-          "description": "Take high-speed rail from Shangrao to Tai’An, Shandong (~4–5 hours). Private transfer from Tai’An Station.",
+          "title": {
+            "en": "High-Speed Rail to Tai'An",
+            "cn": "高铁前往泰安"
+          },
+          "description": {
+            "en": "Take high-speed rail from Shangrao to Tai’An, Shandong (~4–5 hours). Private transfer from Tai’An Station.",
+            "cn": "乘坐高铁从上饶前往山东泰安。\n\n行程约4-5小时，穿越江南水乡，进入齐鲁大地。沿途风景从江南的秀丽逐渐过渡到北方的雄浑。\n\n泰安因泰山而得名，「泰山安则四海皆安」，自古就是帝王封禅、文人朝圣的圣地。"
+          },
           "duration": "5 hours",
           "location": "Shangrao to Tai'An",
           "mode": "high-speed rail",
@@ -1399,16 +2083,28 @@
           "to": "Tai'An",
           "walkDetails": null,
           "highlights": [
-            "Comfortable travel"
+            {
+              "en": "Comfortable travel",
+              "cn": "高铁体验"
+            }
           ],
           "images": []
         },
         {
           "id": "12-1-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "activity",
-          "title": "Visit Dai Temple",
-          "description": "Visit Dai Temple after lunch (including Tiankuang Hall, Han Cypress Court, East Imperial Lodging, and Stele Forest). This was where ancient emperors worshipped the God of Mount Tai and held Fengshan ceremonies, serving as the spiritual core of Mount Tai worship. \n\nA professional guide will provide in-depth historical and cultural context, setting the stage for the next day’s climb.",
+          "title": {
+            "en": "Visit Dai Temple",
+            "cn": "岱庙参观"
+          },
+          "description": {
+            "en": "Visit Dai Temple after lunch (including Tiankuang Hall, Han Cypress Court, East Imperial Lodging, and Stele Forest). This was where ancient emperors worshipped the God of Mount Tai and held Fengshan ceremonies, serving as the spiritual core of Mount Tai worship. \n\nA professional guide will provide in-depth historical and cultural context, setting the stage for the next day’s climb.",
+            "cn": "抵达泰安后参观岱庙。\n\n岱庙是泰山最大、最完整的古建筑群，也是历代帝王举行封禅大典和祭祀泰山神的地方。始建于汉代，现存建筑主要为宋代所建，与北京故宫、曲阜孔庙并称中国三大宫殿建筑群。\n\n庙内的天贶殿壁画《泰山神启跸回銮图》是中国道教壁画的杰作。岱庙还珍藏着大量历代碑刻，是研究泰山文化的重要宝库。\n\n参观岱庙可以深入了解泰山在中国文化中的特殊地位，为明天的登山做好精神准备。"
+          },
           "duration": "2-3 hours",
           "location": "Dai Temple, Tai'An",
           "mode": "",
@@ -1416,8 +2112,14 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Historical significance",
-            "Cultural context"
+            {
+              "en": "Historical significance",
+              "cn": "中国三大宫殿建筑群之一"
+            },
+            {
+              "en": "Cultural context",
+              "cn": "封禅圣地"
+            }
           ],
           "images": [
             {
@@ -1433,10 +2135,19 @@
         },
         {
           "id": "12-2-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Hotel in Tai'An",
-          "description": "Check into a hotel in Tai'An.",
+          "title": {
+            "en": "Check-in at Hotel in Tai'An",
+            "cn": "入住泰安酒店"
+          },
+          "description": {
+            "en": "Check into a hotel in Tai'An.",
+            "cn": "入住泰安酒店。"
+          },
           "duration": "30 minutes",
           "location": "Tai'An",
           "mode": "",
@@ -1444,12 +2155,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Comfortable accommodation"
+            {
+              "en": "Comfortable accommodation",
+              "cn": "舒适住宿"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch",
+      "meals": {
+        "en": "Breakfast, Lunch",
+        "cn": "早餐、 午餐"
+      },
       "accommodation": {
         "name": "Hotel in Tai'An",
         "rating": "4-star"
@@ -1458,17 +2175,35 @@
     {
       "day": 13,
       "date": "May 21",
-      "title": "Ascending Mount Tai",
-      "location": "Mount Tai",
+      "title": {
+        "en": "Ascending Mount Tai",
+        "cn": "登顶泰山"
+      },
+      "location": {
+        "en": "Mount Tai",
+        "cn": "泰山"
+      },
       "region": "taishan",
-      "description": "Full day climb of Mount Tai, the foremost of the Five Great Mountains. Choose between the Classic Challenge Route (7.5km, 1300m elevation) or the Leisurely Route. Reach the Jade Emperor Peak and enjoy the majestic views.",
+      "description": {
+        "en": "Full day climb of Mount Tai, the foremost of the Five Great Mountains. Choose between the Classic Challenge Route (7.5km, 1300m elevation) or the Leisurely Route. Reach the Jade Emperor Peak and enjoy the majestic views.",
+        "cn": "全天攀登五岳之首泰山。可选择经典挑战路线（7.5公里，海拔1300米）或休闲路线。登上玉皇顶，尽享雄伟壮丽的山景。"
+      },
       "segments": [
         {
           "id": "13-0-1764440953795",
-          "time": "Full Day",
+          "time": {
+            "en": "Full Day",
+            "cn": "全天"
+          },
           "type": "activity",
-          "title": "Climb Mount Tai",
-          "description": "Climb Mount Tai, choosing a route based on your preference.\n\nClassic Challenge Route (recommended): Hongmen Entrance to Zhongtian Gate to Nantian Gate and Jade Emperor Peak (~7.5 km, ~1,300 m elevation, 4–6 hours).\n \nLeisurely Experience Route: Transport from Tianwai Village to Zhongtian Gate, then hike or take a cable car to Nantian Gate.\n\nRecommendations: Start early to avoid heat and crowds; use trekking poles and knee supports for the “Eighteen Bends”; bring windproof clothing for temperature changes at the summit. \n\nThe hotel will prepare trail lunches, fruits, and beverages for everyone.",
+          "title": {
+            "en": "Climb Mount Tai",
+            "cn": "泰山登顶"
+          },
+          "description": {
+            "en": "Climb Mount Tai, choosing a route based on your preference.\n\nClassic Challenge Route (recommended): Hongmen Entrance to Zhongtian Gate to Nantian Gate and Jade Emperor Peak (~7.5 km, ~1,300 m elevation, 4–6 hours).\n \nLeisurely Experience Route: Transport from Tianwai Village to Zhongtian Gate, then hike or take a cable car to Nantian Gate.\n\nRecommendations: Start early to avoid heat and crowds; use trekking poles and knee supports for the “Eighteen Bends”; bring windproof clothing for temperature changes at the summit. \n\nThe hotel will prepare trail lunches, fruits, and beverages for everyone.",
+            "cn": "全天攀登五岳之首泰山。\n\n泰山是中国五岳之首，海拔1545米，自古就有「登泰山而小天下」的美誉。历史上共有72位帝王亲临泰山封禅祭祀，使其成为中华民族精神的象征。\n\n经典挑战路线从红门出发，经中天门、十八盘，最终登顶南天门、玉皇顶。全程约7.5公里，累计爬升约1300米。其中十八盘是最艰险的一段，共1633级石阶，坡度陡峭，考验毅力。\n\n或选择相对轻松的路线，乘坐索道到中天门，再徒步登顶。无论选择哪条路线，登顶后俯瞰群山的感觉都将无比震撼。"
+          },
           "duration": "4-6 hours",
           "location": "Mount Tai",
           "mode": "",
@@ -1480,7 +2215,10 @@
             "difficulty": "challenging"
           },
           "highlights": [
-            "Classic Challenge Route or Leisurely Experience Route"
+            {
+              "en": "Classic Challenge Route or Leisurely Experience Route",
+              "cn": "五岳之首"
+            }
           ],
           "images": [
             {
@@ -1520,10 +2258,19 @@
         },
         {
           "id": "13-1-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "meal",
-          "title": "Dinner Near Mount Tai",
-          "description": "Enjoy a hearty dinner after the climb.",
+          "title": {
+            "en": "Dinner Near Mount Tai",
+            "cn": "日出观赏（可选）"
+          },
+          "description": {
+            "en": "Enjoy a hearty dinner after the climb.",
+            "cn": "泰山日出是最著名的自然奇观之一。\n\n如有兴趣，可在山顶住宿一晚，次日清晨观看泰山日出。当第一缕阳光穿透云海，照耀在山巅，那种壮观景象令人终生难忘。\n\n泰山日出最佳观赏地点是日观峰和玉皇顶。"
+          },
           "duration": "2 hours",
           "location": "Local Restaurant, Tai'An",
           "mode": "",
@@ -1531,16 +2278,28 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local cuisine"
+            {
+              "en": "Local cuisine",
+              "cn": "泰山日出"
+            }
           ],
           "images": []
         },
         {
           "id": "13-2-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Hotel Near Mount Tai",
-          "description": "Stay at a hotel near Mount Tai.",
+          "title": {
+            "en": "Check-in at Hotel Near Mount Tai",
+            "cn": "入住泰山附近酒店"
+          },
+          "description": {
+            "en": "Stay at a hotel near Mount Tai.",
+            "cn": "入住泰山附近酒店。"
+          },
           "duration": "30 minutes",
           "location": "Mount Tai",
           "mode": "",
@@ -1548,12 +2307,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Comfortable accommodation"
+            {
+              "en": "Comfortable accommodation",
+              "cn": "舒适住宿"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "Hotel Near Mount Tai",
         "rating": "4-star"
@@ -1562,17 +2327,35 @@
     {
       "day": 14,
       "date": "May 22",
-      "title": "Confucian Culture in Qufu",
-      "location": "Qufu",
+      "title": {
+        "en": "Confucian Culture in Qufu",
+        "cn": "曲阜儒家文化"
+      },
+      "location": {
+        "en": "Qufu",
+        "cn": "泰安 → 曲阜"
+      },
       "region": "qingdao",
-      "description": "Transfer to Qufu, the hometown of Confucius. Visit the 'Three Confucian Sites' (Temple, Mansion, Forest), a UNESCO World Heritage site. Participate in cultural activities and gain deep insights into Chinese philosophy.",
+      "description": {
+        "en": "Transfer to Qufu, the hometown of Confucius. Visit the 'Three Confucian Sites' (Temple, Mansion, Forest), a UNESCO World Heritage site. Participate in cultural activities and gain deep insights into Chinese philosophy.",
+        "cn": "前往孔子故里曲阜。参观世界文化遗产「三孔」——孔庙、孔府、孔林。参与文化活动，深入了解中国哲学思想。"
+      },
       "segments": [
         {
           "id": "14-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "transfer",
-          "title": "Descend & Transfer to Qufu",
-          "description": "Descending from mountain-top & transfer to the “Eastern Holy City” of Qufu (~1.5 hours).\n",
+          "title": {
+            "en": "Descend & Transfer to Qufu",
+            "cn": "前往曲阜"
+          },
+          "description": {
+            "en": "Descending from mountain-top & transfer to the “Eastern Holy City” of Qufu (~1.5 hours).\n",
+            "cn": "上午从泰安前往曲阜。\n\n曲阜距泰安约80公里，车程约1.5小时。曲阜是孔子的故乡，儒家文化的发源地，被誉为「东方圣城」。\n\n2500多年前，孔子在这里创立了儒家学说，深刻影响了中国乃至东亚文化的发展。"
+          },
           "duration": "1.5 hours",
           "location": "Mount Tai to Qufu",
           "mode": "coach",
@@ -1580,16 +2363,28 @@
           "to": "Qufu",
           "walkDetails": null,
           "highlights": [
-            "Scenic transfer"
+            {
+              "en": "Scenic transfer",
+              "cn": "孔子故里"
+            }
           ],
           "images": []
         },
         {
           "id": "14-1-1764440953795",
-          "time": "Full Day",
+          "time": {
+            "en": "Full Day",
+            "cn": "全天"
+          },
           "type": "activity",
-          "title": "Visit Confucius Cultural Sites",
-          "description": "In-depth visit to the “Three Confucian Sites” UNESCO World Heritage sites:\n\nConfucius Temple: The primary temple for worshipping Confucius, listed among China’s three greatest ancient architectural complexes alongside the Beijing Forbidden City and Chengde Mountain Resort.\n\nConfucius Mansion: The residence of Confucius’s direct descendants, the “Dukes of Yansheng” combining official offices and living quarters.\n\nConfucius Forest: The dedicated cemetery of Confucius and his family, the world’s longest-continuously-used family cemetery.\n \nA knowledgeable cultural guide will provide deep insights. \n\nParticipate in cultural activities such as a “Teacher Worship Ceremony.”",
+          "title": {
+            "en": "Visit Confucius Cultural Sites",
+            "cn": "三孔参观"
+          },
+          "description": {
+            "en": "In-depth visit to the “Three Confucian Sites” UNESCO World Heritage sites:\n\nConfucius Temple: The primary temple for worshipping Confucius, listed among China’s three greatest ancient architectural complexes alongside the Beijing Forbidden City and Chengde Mountain Resort.\n\nConfucius Mansion: The residence of Confucius’s direct descendants, the “Dukes of Yansheng” combining official offices and living quarters.\n\nConfucius Forest: The dedicated cemetery of Confucius and his family, the world’s longest-continuously-used family cemetery.\n \nA knowledgeable cultural guide will provide deep insights. \n\nParticipate in cultural activities such as a “Teacher Worship Ceremony.”",
+            "cn": "参观世界文化遗产「三孔」——孔庙、孔府、孔林。\n\n孔庙是祭祀孔子的庙宇，始建于公元前478年孔子去世后第二年，历代不断扩建，现有建筑100余座，是中国最大的孔庙，与北京故宫、承德避暑山庄并称中国三大古建筑群。\n\n孔府是孔子嫡系后裔居住的府第，俗称「衍圣公府」，是中国现存规模最大、保存最完好的封建贵族庄园。\n\n孔林是孔子及其后裔的家族墓地，占地约2平方公里，墓葬达10万余座，是世界上延续时间最长、规模最大的家族墓地。\n\n漫步三孔，可以深入了解儒家文化的精髓，感受中国传统文化的博大精深。"
+          },
           "duration": "6-8 hours",
           "location": "Qufu",
           "mode": "",
@@ -1597,9 +2392,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Confucius Temple",
-            "Confucius Mansion",
-            "Confucius Forest"
+            {
+              "en": "Confucius Temple",
+              "cn": "世界文化遗产"
+            },
+            {
+              "en": "Confucius Mansion",
+              "cn": "2500年历史"
+            },
+            {
+              "en": "Confucius Forest",
+              "cn": "儒家文化圣地"
+            }
           ],
           "images": [
             {
@@ -1624,10 +2428,19 @@
         },
         {
           "id": "14-2-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "meal",
-          "title": "Dinner Featuring Local Specialties",
-          "description": "Savor local specialties for dinner.",
+          "title": {
+            "en": "Dinner Featuring Local Specialties",
+            "cn": "儒家文化体验"
+          },
+          "description": {
+            "en": "Savor local specialties for dinner.",
+            "cn": "参与儒家文化体验活动。\n\n在专业老师的指导下，体验传统礼仪、书法或其他儒家文化活动。了解「仁、义、礼、智、信」等儒家核心思想，感受中国传统文化的魅力。\n\n晚餐品尝曲阜特色的孔府菜，这是中国著名的官府菜系之一，讲究「食不厌精，脍不厌细」。"
+          },
           "duration": "2 hours",
           "location": "Local Restaurant, Qufu",
           "mode": "",
@@ -1635,16 +2448,28 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Local cuisine"
+            {
+              "en": "Local cuisine",
+              "cn": "传统文化体验"
+            }
           ],
           "images": []
         },
         {
           "id": "14-3-1764440953795",
-          "time": "Evening",
+          "time": {
+            "en": "Evening",
+            "cn": "傍晚"
+          },
           "type": "check-in",
-          "title": "Check-in at Hotel in Qufu",
-          "description": "Stay at a hotel in Qufu.",
+          "title": {
+            "en": "Check-in at Hotel in Qufu",
+            "cn": "入住曲阜酒店"
+          },
+          "description": {
+            "en": "Stay at a hotel in Qufu.",
+            "cn": "入住曲阜酒店。"
+          },
           "duration": "30 minutes",
           "location": "Qufu",
           "mode": "",
@@ -1652,12 +2477,18 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Comfortable accommodation"
+            {
+              "en": "Comfortable accommodation",
+              "cn": "舒适住宿"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast, Lunch, Dinner",
+      "meals": {
+        "en": "Breakfast, Lunch, Dinner",
+        "cn": "早餐、 午餐、 晚餐"
+      },
       "accommodation": {
         "name": "Hotel in Qufu",
         "rating": "4-star"
@@ -1666,17 +2497,35 @@
     {
       "day": 15,
       "date": "May 23",
-      "title": "Departure",
-      "location": "Qingdao",
+      "title": {
+        "en": "Departure",
+        "cn": "返程"
+      },
+      "location": {
+        "en": "Qingdao",
+        "cn": "青岛 → 伦敦"
+      },
       "region": "qingdao",
-      "description": "Transfer to Qingdao International Airport. Depart for London Heathrow at 15:00. End of the journey.",
+      "description": {
+        "en": "Transfer to Qingdao International Airport. Depart for London Heathrow at 15:00. End of the journey.",
+        "cn": "前往青岛流亭国际机场。下午15:00航班飞往伦敦希思罗机场。旅程圆满结束。"
+      },
       "segments": [
         {
           "id": "15-0-1764440953795",
-          "time": "Morning",
+          "time": {
+            "en": "Morning",
+            "cn": "上午"
+          },
           "type": "transfer",
-          "title": "Transfer to Qingdao",
-          "description": "Transfer to Qingdao.",
+          "title": {
+            "en": "Transfer to Qingdao",
+            "cn": "前往青岛机场"
+          },
+          "description": {
+            "en": "Transfer to Qingdao.",
+            "cn": "上午从曲阜出发，前往青岛流亭国际机场。\n\n青岛是中国著名的海滨城市，以红瓦绿树、碧海蓝天著称。如时间充裕，可以车览青岛市区风光。"
+          },
           "duration": "2-3 hours",
           "location": "Qufu to Qingdao",
           "mode": "coach",
@@ -1684,16 +2533,28 @@
           "to": "Qingdao",
           "walkDetails": null,
           "highlights": [
-            "Scenic transfer"
+            {
+              "en": "Scenic transfer",
+              "cn": "海滨城市风光"
+            }
           ],
           "images": []
         },
         {
           "id": "15-1-1764440953795",
-          "time": "Midday",
+          "time": {
+            "en": "Midday",
+            "cn": "中午"
+          },
           "type": "transfer",
-          "title": "Arrival at Qingdao International Airport",
-          "description": "Arrive Qingdao International Airport around 12:00. \n\nReminder: Arrive at the airport at least 3 hours before international flights for check-in procedures.",
+          "title": {
+            "en": "Arrival at Qingdao International Airport",
+            "cn": "返程航班"
+          },
+          "description": {
+            "en": "Arrive Qingdao International Airport around 12:00. \n\nReminder: Arrive at the airport at least 3 hours before international flights for check-in procedures.",
+            "cn": "下午15:00从青岛起飞，返回伦敦希思罗机场。\n\n15天的中国徒步之旅圆满结束。这段旅程我们一起走过了古都西安、首都北京、云雾庐山、田园婺源和五岳之首泰山，体验了悠久的历史文化和壮美的自然风光。\n\n期待与您再次相聚，共同探索更多精彩旅程！"
+          },
           "duration": "1 hour",
           "location": "Qingdao",
           "mode": "",
@@ -1701,16 +2562,28 @@
           "to": "",
           "walkDetails": null,
           "highlights": [
-            "Prepare for departure"
+            {
+              "en": "Prepare for departure",
+              "cn": "返回伦敦"
+            }
           ],
           "images": []
         },
         {
           "id": "15-2-1764440953795",
-          "time": "Afternoon",
+          "time": {
+            "en": "Afternoon",
+            "cn": "下午"
+          },
           "type": "transfer",
-          "title": "Departure from Qingdao",
-          "description": "Departing from Qingdao to Heathrow at 15:00 (Tianjin Airline)\n\nDirect Flights: The average non-stop flight time is approximately 11 hours and 55 minutes. Direct services are primarily offered by airlines such as Capital Airlines and Hainan Airlines.",
+          "title": {
+            "en": "Departure from Qingdao",
+            "cn": "从青岛返程"
+          },
+          "description": {
+            "en": "Departing from Qingdao to Heathrow at 15:00 (Tianjin Airline)\n\nDirect Flights: The average non-stop flight time is approximately 11 hours and 55 minutes. Direct services are primarily offered by airlines such as Capital Airlines and Hainan Airlines.",
+            "cn": "15:00从青岛出发飞往希思罗（天津航空）\n\n直飞航班：平均飞行时间约11小时55分钟。直飞航班主要由首都航空和海南航空运营。"
+          },
           "duration": "12 hour",
           "location": "Qingdao to Heathrow",
           "mode": "flight",
@@ -1718,12 +2591,18 @@
           "to": "Heathrow",
           "walkDetails": null,
           "highlights": [
-            "End of the journey"
+            {
+              "en": "End of the journey",
+              "cn": "旅程结束"
+            }
           ],
           "images": []
         }
       ],
-      "meals": "Breakfast",
+      "meals": {
+        "en": "Breakfast",
+        "cn": "早餐"
+      },
       "accommodation": {
         "name": "",
         "rating": ""

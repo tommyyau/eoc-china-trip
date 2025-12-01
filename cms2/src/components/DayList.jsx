@@ -47,8 +47,8 @@ function DayList({ days, selectedDay, onSelectDay, onUpdateDays }) {
         >
           <div className="day-number">{day.day}</div>
           <div className="day-info">
-            <div className="day-title">{day.title || 'Untitled'}</div>
-            <div className="day-location">{day.location || day.date || ''}</div>
+            <div className="day-title">{day.title?.en || day.title || 'Untitled'}</div>
+            <div className="day-location">{day.location?.en || day.location || day.date || ''}</div>
           </div>
           <div className="day-actions">
             <button

@@ -12,6 +12,7 @@ const __dirname = path.dirname(__filename)
 const DATA_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'itinerary-v2.json')
 const INFO_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'info-page.json')
 const HOME_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'home-page.json')
+const ITINERARY_PAGE_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'itinerary-page.json')
 
 // API keys for image search (from .env file)
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY
@@ -136,6 +137,41 @@ app.post('/api/home', (req, res) => {
     res.json({ success: true })
   } catch (error) {
     console.error('Error saving home:', error)
+    res.status(500).json({ error: error.message })
+  }
+})
+
+// ============================================
+// ITINERARY PAGE LOAD/SAVE
+// ============================================
+
+// GET /api/itinerary-page - Load itinerary page data
+app.get('/api/itinerary-page', (req, res) => {
+  try {
+    if (!fs.existsSync(ITINERARY_PAGE_FILE)) {
+      return res.json({ data: null })
+    }
+    const data = JSON.parse(fs.readFileSync(ITINERARY_PAGE_FILE, 'utf8'))
+    res.json({ data })
+  } catch (error) {
+    console.error('Error loading itinerary page:', error)
+    res.status(500).json({ error: error.message })
+  }
+})
+
+// POST /api/itinerary-page - Save itinerary page data
+app.post('/api/itinerary-page', (req, res) => {
+  try {
+    const { data } = req.body
+    if (!data) {
+      return res.status(400).json({ error: 'Data is required' })
+    }
+
+    fs.writeFileSync(ITINERARY_PAGE_FILE, JSON.stringify(data, null, 2))
+    console.log('Saved itinerary page to', ITINERARY_PAGE_FILE)
+    res.json({ success: true })
+  } catch (error) {
+    console.error('Error saving itinerary page:', error)
     res.status(500).json({ error: error.message })
   }
 })

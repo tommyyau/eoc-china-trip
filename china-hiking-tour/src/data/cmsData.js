@@ -1,5 +1,15 @@
 // CMS Data Loader - Reads from CMS2 format (itinerary-v2.json)
+// Supports bilingual content with {en: "...", cn: "..."} format
 import data from './itinerary-v2.json';
+
+// Helper to get text value (handles both string and bilingual object)
+function getText(value, lang = 'en') {
+  if (!value) return '';
+  if (typeof value === 'string') return value;
+  if (typeof value === 'object' && value[lang]) return value[lang];
+  if (typeof value === 'object' && value.en) return value.en;
+  return '';
+}
 
 // Get coordinates for a location (used for map display)
 function getCoordinates(location) {
@@ -7,20 +17,31 @@ function getCoordinates(location) {
     'heathrow': [-0.4543, 51.4700],
     "xi'an": [108.9398, 34.3416],
     'xian': [108.9398, 34.3416],
+    '西安': [108.9398, 34.3416],
     'beijing': [116.4074, 39.9042],
+    '北京': [116.4074, 39.9042],
     'lushan': [115.9927, 29.5627],
+    '庐山': [115.9927, 29.5627],
     'jiujiang': [115.9930, 29.7051],
     'jingdezhen': [117.1784, 29.2686],
+    '景德镇': [117.1784, 29.2686],
     'wuyuan': [117.8613, 29.2486],
+    '婺源': [117.8613, 29.2486],
     'wangxian': [117.9, 29.4],
     'shangrao': [117.9432, 28.4549],
+    '上饶': [117.9432, 28.4549],
     "tai'an": [117.1290, 36.1949],
+    '泰安': [117.1290, 36.1949],
     'mount tai': [117.1070, 36.2561],
+    '泰山': [117.1070, 36.2561],
     'qufu': [116.9914, 35.5963],
+    '曲阜': [116.9914, 35.5963],
     'qingdao': [120.3826, 36.0671],
+    '青岛': [120.3826, 36.0671],
   };
 
-  const loc = (location || '').toLowerCase();
+  // Handle bilingual location object
+  const loc = getText(location, 'en').toLowerCase();
   for (const [key, value] of Object.entries(coords)) {
     if (loc.includes(key)) return value;
   }
@@ -50,11 +71,17 @@ function getModeIcon(mode) {
 }
 
 // Transform CMS2 day to website format
+// Preserves bilingual objects for components to handle
 function transformDay(day, previousAccommodation) {
-  // Add modeIcon to each segment
+  // Add modeIcon to each segment, preserve bilingual fields
   const segments = (day.segments || []).map(seg => ({
     ...seg,
     modeIcon: getModeIcon(seg.mode),
+    // Ensure bilingual fields are passed through
+    title: seg.title,
+    description: seg.description,
+    time: seg.time,
+    highlights: seg.highlights || [],
   }));
 
   // Get all images for the day (flattened for carousel)
@@ -69,16 +96,19 @@ function transformDay(day, previousAccommodation) {
   return {
     day: day.day,
     date: day.date,
+    // Pass through bilingual objects
     title: day.title,
     location: day.location,
     region: getRegion(day.day),
     coordinates: getCoordinates(day.location),
 
-    // Core content
-    description: day.description || '',
-    highlights: day.segments?.flatMap(s => s.highlights || []) || [],
+    // Core content (bilingual)
+    description: day.description || { en: '', cn: '' },
 
-    // Segments for timeline
+    // Collect highlights from segments (bilingual arrays)
+    highlights: segments.flatMap(s => s.highlights || []),
+
+    // Segments for timeline (with bilingual fields)
     segments,
 
     // Featured transit (if any significant travel)
@@ -97,8 +127,8 @@ function transformDay(day, previousAccommodation) {
       isNewStay,
     },
 
-    // Meals
-    meals: day.meals || '',
+    // Meals (bilingual)
+    meals: day.meals || { en: '', cn: '' },
 
     // POI research content (empty for now)
     pointsOfInterest: [],

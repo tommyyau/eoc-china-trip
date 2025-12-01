@@ -115,7 +115,8 @@ const Home = () => {
                             fontWeight: 800,
                             marginBottom: '1rem',
                             textShadow: '0 4px 12px rgba(0,0,0,0.4)',
-                            lineHeight: 1.1
+                            lineHeight: 1.1,
+                            color: 'white'
                         }}
                     >
                         {t(homeData.hero?.title)}
@@ -128,7 +129,8 @@ const Home = () => {
                             marginBottom: '2.5rem',
                             maxWidth: '700px',
                             margin: '0 auto 2.5rem',
-                            lineHeight: 1.5
+                            lineHeight: 1.5,
+                            color: 'white'
                         }}
                     >
                         {t(homeData.hero?.subtitle)}
