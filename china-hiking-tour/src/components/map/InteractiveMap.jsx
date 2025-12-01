@@ -131,6 +131,7 @@ const InteractiveMap = ({
         xian: '#D84315',
         beijing: '#1976D2',
         lushan: '#388E3C',
+        shangrao: '#FF7043',
         taishan: '#7B1FA2',
         qingdao: '#00796B'
     };
@@ -140,6 +141,7 @@ const InteractiveMap = ({
         xian: { direction: 'left', offset: [-8, 0] },
         beijing: { direction: 'right', offset: [8, 0] },
         lushan: { direction: 'left', offset: [-8, 0] },
+        shangrao: { direction: 'right', offset: [8, 0] },
         taishan: { direction: 'top', offset: [0, -8] },
         qingdao: { direction: 'right', offset: [8, 0] }
     };
