@@ -89,7 +89,8 @@ const Info = () => {
                             fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
                             fontWeight: 800,
                             marginBottom: '1rem',
-                            textShadow: '0 4px 12px rgba(0,0,0,0.3)'
+                            textShadow: '0 4px 12px rgba(0,0,0,0.3)',
+                            color: 'white'
                         }}
                     >
                         {content.title}
@@ -99,7 +100,8 @@ const Info = () => {
                             fontSize: 'clamp(1rem, 2vw, 1.25rem)',
                             opacity: 0.95,
                             maxWidth: '600px',
-                            margin: '0 auto'
+                            margin: '0 auto',
+                            color: 'white'
                         }}
                     >
                         {content.subtitle}
