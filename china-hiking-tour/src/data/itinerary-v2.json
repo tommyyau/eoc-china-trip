@@ -3,7 +3,7 @@
     "version": 2,
     "exportedFrom": "CMS1",
     "exportedAt": "2025-11-30T15:25:23.048Z",
-    "lastModified": "2025-12-07T21:16:37.563Z",
+    "lastModified": "2025-12-07T21:39:10.197Z",
     "bilingual": true
   },
   "days": [
@@ -1136,10 +1136,10 @@
             "cn": "夜间卧铺火车前往庐山"
           },
           "description": {
-            "en": "NOTE: THIS SEEMS LIKE A LONG TIME, AND I NEED TO DOUBLE-CHECK THE TRAIN AND DURATION\n\nThe primary direct overnight sleeper train, K473, departs from the main Beijing Railway Station at 4:16 PM (16:16). \nIt arrives at Lushan Station (Henan, China) the following morning at approximately 6:21 AM (06:21), for a total journey time of just over 14 hours. \n\nNote: There have been arrangements to have access to hotel shower and freshen up facilities before the start of the day.\n\n",
-            "cn": "傍晚从北京乘坐夜间卧铺火车前往庐山（九江站）。\n\n卧铺火车是体验中国铁路旅行的独特方式。软卧车厢每个包厢4个铺位，配有干净的床铺和被褥，旅途舒适。\n\n夜间行驶可以节省白天的游览时间，在火车的轻晃中进入梦乡，醒来时已经置身于江南水乡。"
+            "en": "There should be a high-speed train to take you from Beijing to Lushan, and it will be overnight. I don't have the details of the train and await to hear from the travel agent for exact time and duration.\n\nNote: There have been arrangements to have access to hotel shower and freshen up facilities before the start of the day.",
+            "cn": "将乘坐高铁从北京前往庐山，行程为过夜。目前尚未确定具体的列车班次和时间，等待旅行社提供详细信息。\n\n注：已安排抵达后使用酒店淋浴设施，让您在开始新一天行程前梳洗休整。"
           },
-          "duration": "14 hours",
+          "duration": "8 hours",
           "location": "Beijing to Lushan",
           "mode": "train",
           "from": "Beijing",
@@ -1375,8 +1375,8 @@
             "cn": "好汉坡挑战"
           },
           "description": {
-            "en": "NOTE: I could not get details of classic Hero Slope route, so this may be swapped out when hike is clarified.\n\nFive Old Men Peaks (五老峰, Wǔlǎo Fēng)\n\nTrail Profile:\n\nElevation: 1,436 meters at the highest peak (4th peak)\n\nDistance: Approximately 8-10km round trip depending on route\n\nElevation Gain: Roughly 900m from base to summit\n\nDifficulty: Challenging with continuous steep stone steps\n\nRoute Details:\nThe trail consists of five distinct peaks that resemble five elderly men sitting side by side. The hike typically takes 2.5-3 hours round trip and involves relentless climbing on stone steps with minimal flat sections. The most difficult section comes at the beginning, so pace yourself accordingly.\n\n",
-            "cn": "全天挑战庐山好汉坡。\n\n好汉坡是庐山最经典的登山路线之一，因其陡峭险峻而得名——「不到好汉坡，不算庐山客」。\n\n徒步路线全长约8公里，累计爬升约900米。沿途穿越原始森林，经过多处险峻的石阶路段。山顶视野开阔，可以俯瞰长江和鄱阳湖的壮丽景色。\n\n这条路线考验体力和意志，完成挑战后的成就感将是此行最难忘的回忆之一。"
+            "en": "AWAITING CONFIRMATION FROM TRAVEL AGENT.\n\nFive Old Men Peaks (五老峰, Wǔlǎo Fēng)\n\nTrail Profile:\n\nElevation: 1,436 meters at the highest peak (4th peak)\n\nDistance: Approximately 8-10km round trip depending on route\n\nElevation Gain: Roughly 900m from base to summit\n\nDifficulty: Challenging with continuous steep stone steps\n\nRoute Details:\nThe trail consists of five distinct peaks that resemble five elderly men sitting side by side. The hike typically takes 2.5-3 hours round trip and involves relentless climbing on stone steps with minimal flat sections. The most difficult section comes at the beginning, so pace yourself accordingly.",
+            "cn": "等待旅行社确认。\n\n五老峰（Wǔlǎo Fēng）\n\n路线概况：\n\n海拔：最高峰（第四峰）1,436米\n\n距离：往返约8-10公里（视路线而定）\n\n累计爬升：约900米\n\n难度：高难度，连续陡峭石阶\n\n路线详情：\n五老峰因五座山峰并列如五位老人端坐而得名。往返徒步约需2.5-3小时，全程在石阶上攀登，几乎没有平坦路段。最困难的路段在起点附近，请合理分配体力。"
           },
           "duration": "4 hours",
           "location": "Lushan",
