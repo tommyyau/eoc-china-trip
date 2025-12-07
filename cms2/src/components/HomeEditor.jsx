@@ -430,11 +430,13 @@ function HomeEditor({ data, onUpdate }) {
                       <label>Days (comma-separated)</label>
                       <input
                         type="text"
-                        value={dest.days?.join(', ') || ''}
-                        onChange={(e) => {
+                        defaultValue={dest.days?.join(', ') || ''}
+                        key={`days-${dest.id}-${dest.days?.join('-')}`}
+                        onBlur={(e) => {
                           const days = e.target.value.split(',').map(d => parseInt(d.trim())).filter(d => !isNaN(d))
                           updateDestination(index, 'days', null, days)
                         }}
+                        placeholder="7, 8, 9"
                       />
                     </div>
                     <div className="field">

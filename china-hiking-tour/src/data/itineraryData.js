@@ -272,41 +272,6 @@ export const itineraryData = [
     {
         day: 9,
         date: "May 16",
-        title: { en: "Mount Shizhong & Jingdezhen", cn: "石钟山与景德镇" },
-        location: { en: "Lushan -> Jingdezhen", cn: "庐山 -> 景德镇" },
-        region: "lushan",
-        coordinates: [29.7031, 116.2189],
-        images: [
-            {
-                src: "https://images.unsplash.com/photo-1616843413587-9e3a37f7bbd8?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Ceramics Workshop", cn: "陶瓷工坊" },
-                caption: { en: "Traditional ceramics craftsmanship", cn: "传统陶瓷工艺" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "River Confluence", cn: "江河交汇" },
-                caption: { en: "Yangtze River meeting Poyang Lake", cn: "长江与鄱阳湖交汇处" }
-            },
-            {
-                src: "https://images.unsplash.com/photo-1493106641515-6b5631de4bb9?q=80&w=2070&auto=format&fit=crop",
-                alt: { en: "Porcelain Art", cn: "瓷器艺术" },
-                caption: { en: "Exquisite Jingdezhen porcelain", cn: "精美的景德镇瓷器" }
-            }
-        ],
-        description: {
-            en: "Morning hike on Mount Shizhong (10km) to see the confluence of the Yangtze River and Poyang Lake. Afternoon visit to Jingdezhen, the 'Porcelain Capital', for hands-on ceramic activities.",
-            cn: "上午在石钟山徒步（10公里），观赏长江与鄱阳湖交汇的壮观景象。下午参观「瓷都」景德镇，体验陶瓷制作。"
-        },
-        highlights: {
-            en: ["Mount Shizhong Hike", "Yangtze & Poyang Lake View", "Jingdezhen Ceramics"],
-            cn: ["石钟山徒步", "长江鄱阳湖景观", "景德镇陶瓷"]
-        },
-        meals: { en: "Breakfast, Lunch, Dinner", cn: "早、中、晚餐" },
-        accommodation: { en: "Hotel in Jingdezhen or Wuyuan", cn: "景德镇或婺源酒店" }
-    },
-    {
-        day: 10,
-        date: "May 17",
         title: { en: "Wuyuan Rural Landscapes", cn: "婺源田园风光" },
         location: { en: "Wuyuan", cn: "婺源" },
         region: "lushan",
@@ -345,8 +310,8 @@ export const itineraryData = [
         accommodation: { en: "Homestay in Wuyuan", cn: "婺源民宿" }
     },
     {
-        day: 11,
-        date: "May 18",
+        day: 10,
+        date: "May 17",
         title: { en: "Huangling & Wangxian Valley", cn: "篁岭与望仙谷" },
         location: { en: "Wuyuan -> Shangrao", cn: "婺源 -> 上饶" },
         region: "lushan",
@@ -375,8 +340,8 @@ export const itineraryData = [
         accommodation: { en: "Homestay in Wangxian Valley", cn: "望仙谷民宿" }
     },
     {
-        day: 12,
-        date: "May 19",
+        day: 11,
+        date: "May 18",
         title: { en: "Journey to Mount Tai", cn: "前往泰山" },
         location: { en: "Shangrao -> Tai'an", cn: "上饶 -> 泰安" },
         region: "taishan",
@@ -405,8 +370,8 @@ export const itineraryData = [
         accommodation: { en: "Hotel in Tai'an", cn: "泰安酒店" }
     },
     {
-        day: 13,
-        date: "May 20",
+        day: 12,
+        date: "May 19",
         title: { en: "Ascending Mount Tai", cn: "登顶泰山" },
         location: { en: "Mount Tai", cn: "泰山" },
         region: "taishan",
@@ -440,8 +405,8 @@ export const itineraryData = [
         accommodation: { en: "Hotel near Mount Tai", cn: "泰山附近酒店" }
     },
     {
-        day: 14,
-        date: "May 21",
+        day: 13,
+        date: "May 20",
         title: { en: "Confucian Culture in Qufu", cn: "曲阜儒家文化" },
         location: { en: "Tai'an -> Qufu", cn: "泰安 -> 曲阜" },
         region: "taishan",
@@ -470,8 +435,8 @@ export const itineraryData = [
         accommodation: { en: "Hotel in Qufu", cn: "曲阜酒店" }
     },
     {
-        day: 15,
-        date: "May 22",
+        day: 14,
+        date: "May 21",
         title: { en: "Departure", cn: "返程" },
         location: { en: "Qingdao -> London", cn: "青岛 -> 伦敦" },
         region: "qingdao",

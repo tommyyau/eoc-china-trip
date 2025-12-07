@@ -97,7 +97,7 @@ const PDFDownload = ({ label, variant = 'default' }) => {
             of: 'of',
             title: 'China 2026',
             subtitle: 'Hiking Trip',
-            adventure: '15 Days of Adventure',
+            adventure: '14 Days of Adventure',
             dates: 'May 8 - May 22, 2026',
             filename: 'China_2026_Hiking_Trip_Itinerary.pdf',
         },
@@ -112,7 +112,7 @@ const PDFDownload = ({ label, variant = 'default' }) => {
             of: '页，共',
             title: '2026中国',
             subtitle: '徒步之旅',
-            adventure: '15天探险之旅',
+            adventure: '14天探险之旅',
             dates: '2026年5月8日 - 5月22日',
             filename: '2026中国徒步之旅行程.pdf',
         }

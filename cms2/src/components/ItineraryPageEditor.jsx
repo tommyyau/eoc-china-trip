@@ -8,6 +8,7 @@ function ItineraryPageEditor({ data, onUpdate }) {
   const [searchingFor, setSearchingFor] = useState(null)
   const [searchResults, setSearchResults] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
+  const [daysInputs, setDaysInputs] = useState({})
 
   const toggleSection = (section) => {
     setExpandedSections(prev => ({ ...prev, [section]: !prev[section] }))
@@ -248,15 +249,17 @@ function ItineraryPageEditor({ data, onUpdate }) {
 
                 <div className="field-row">
                   <div className="field">
-                    <label>Days (comma separated)</label>
+                    <label>Days (comma-separated)</label>
                     <input
                       type="text"
-                      value={region.days?.join(', ') || ''}
-                      onChange={(e) => {
+                      inputMode="text"
+                      defaultValue={region.days?.join(', ') || ''}
+                      key={`days-${region.id}-${region.days?.join('-')}`}
+                      onBlur={(e) => {
                         const days = e.target.value.split(',').map(d => parseInt(d.trim())).filter(d => !isNaN(d))
                         updateRegion(index, 'days', days)
                       }}
-                      placeholder="1, 2, 3, 4"
+                      placeholder="7, 8, 9"
                     />
                   </div>
                   <div className="field">

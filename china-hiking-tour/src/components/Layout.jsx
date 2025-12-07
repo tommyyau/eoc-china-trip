@@ -274,13 +274,6 @@ const Layout = ({ children }) => {
                                 {language === 'en' ? 'China Hiking Tour' : '中国徒步之旅'}
                             </h3>
                         </div>
-                        <p style={{
-                            color: 'rgba(255,255,255,0.7)',
-                            fontSize: '1.1rem',
-                            marginBottom: 0
-                        }}>
-                            {language === 'en' ? 'China Hiking Adventure 2026' : '2026中国徒步探险之旅'}
-                        </p>
                     </div>
 
                     <div style={{

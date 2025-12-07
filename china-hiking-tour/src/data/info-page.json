@@ -1,105 +1,239 @@
 {
   "hero": {
     "title": {
-      "en": "Essential Information",
-      "cn": "重要信息"
+      "en": "Tour Overview",
+      "cn": "行程概览"
     },
     "subtitle": {
-      "en": "Everything you need to know about visas, costs, and trip inclusions",
-      "cn": "关于签证、费用和行程包含内容的所有信息"
+      "en": "An unforgettable journey through China, combining iconic historical landmarks with rewarding mountain hikes across five distinct regions.",
+      "cn": "穿越中国五大地区的难忘之旅，将标志性历史地标与令人心旷神怡的山地徒步完美结合。"
+    },
+    "visaIncluded": {
+      "en": "Price includes visa.",
+      "cn": "价格包含签证。"
     }
   },
-  "visa": {
+  "price": {
+    "amount": "£2,400",
+    "perPerson": {
+      "en": "per person",
+      "cn": "每人"
+    },
+    "dates": {
+      "en": "8th – 22nd May 2026",
+      "cn": "2026年5月8日至22日"
+    },
+    "basis": {
+      "en": "Based on 20 participants, double occupancy / twin room sharing",
+      "cn": "基于20人成团，双人间/标准间"
+    },
+    "singleSupplement": {
+      "en": "Single room supplement: £450–600",
+      "cn": "单房差：£450–600"
+    },
+    "visaNote": {
+      "en": "If you hold an existing valid Chinese visa, deduct £100 from the price",
+      "cn": "如您已持有有效中国签证，可减免£100"
+    }
+  },
+  "included": {
     "title": {
-      "en": "Group Visa Information",
-      "cn": "团体签证信息"
+      "en": "What's Included",
+      "cn": "费用包含"
     },
     "items": [
       {
-        "en": "Visa Type: Group Visa (All members must enter and exit together)",
-        "cn": "签证类型：团体签证（所有成员必须同进同出）"
+        "icon": "plane",
+        "text": {
+          "en": "Return flights: London Heathrow → Xi'an / Qingdao → London Heathrow",
+          "cn": "往返机票：伦敦希思罗 → 西安 / 青岛 → 伦敦希思罗"
+        }
       },
       {
-        "en": "Validity: 30 days",
-        "cn": "有效期：30天"
+        "icon": "building",
+        "text": {
+          "en": "13 nights' accommodation in 4-star hotels and traditional homestays",
+          "cn": "13晚住宿（四星级酒店及传统民宿）"
+        }
       },
       {
-        "en": "Document Submission: 40 days before departure",
-        "cn": "文件提交：出发前40天"
+        "icon": "utensils",
+        "text": {
+          "en": "All meals: breakfast, lunch, and dinner daily",
+          "cn": "全程餐饮：每日早、午、晚餐"
+        }
       },
       {
-        "en": "Visa Fee: Approx. £100",
-        "cn": "签证费：约100英镑"
+        "icon": "train",
+        "text": {
+          "en": "All internal travel: high-speed trains, overnight sleeper train, and coach transfers",
+          "cn": "全程内部交通：高铁、卧铺火车及大巴接驳"
+        }
       },
       {
-        "en": "Note: Original passports are NOT required, only photocopies.",
-        "cn": "注意：不需要护照原件，只需复印件。"
+        "icon": "users",
+        "text": {
+          "en": "English-speaking guide throughout",
+          "cn": "全程英文导游服务"
+        }
+      },
+      {
+        "icon": "ticket",
+        "text": {
+          "en": "Entrance fees to all attractions",
+          "cn": "全部景点门票"
+        }
       }
     ]
   },
-  "cost": {
+  "notIncluded": {
     "title": {
-      "en": "Cost & Inclusions",
-      "cn": "费用与包含"
+      "en": "What's NOT Included",
+      "cn": "费用不含"
     },
-    "price": {
-      "en": "Reference Price: Approx. £1,600 per person (double occupancy per room) AND we have a minimum of 20 people on the tour",
-      "cn": "参考价格：约 £1,600 每人（双人入住），最低成团人数20人"
-    },
-    "includesTitle": {
-      "en": "Includes",
-      "cn": "包含"
-    },
-    "excludesTitle": {
-      "en": "Excludes",
-      "cn": "不包含"
-    },
-    "includes": [
+    "items": [
       {
-        "en": "Accommodation: 14 nights (mainly 4-star)",
-        "cn": "住宿：14晚（主要是4星级）"
+        "icon": "shield",
+        "text": {
+          "en": "Personal travel insurance (mandatory)",
+          "cn": "个人旅行保险（必须购买）"
+        }
       },
       {
-        "en": "Meals: 3 meals per day",
-        "cn": "餐饮：每日3餐"
+        "icon": "wine",
+        "text": {
+          "en": "Alcoholic beverages with meals",
+          "cn": "餐时酒水"
+        }
       },
       {
-        "en": "Transportation: Dedicated bus + High-speed rail",
-        "cn": "交通：专用巴士 + 高铁"
-      },
-      {
-        "en": "Services: English/Chinese guides, mountain guide",
-        "cn": "服务：中英文导游，登山向导"
-      },
-      {
-        "en": "Tickets: All entry tickets listed",
-        "cn": "门票：行程所列所有门票"
-      },
-      {
-        "en": "Insurance: Travel agency liability + outdoor accident insurance",
-        "cn": "保险：旅行社责任险 + 户外意外险"
+        "icon": "coins",
+        "text": {
+          "en": "Tips for guides and drivers",
+          "cn": "导游及司机小费"
+        }
       }
-    ],
-    "excludes": [
+    ]
+  },
+  "highlights": {
+    "title": {
+      "en": "Trip Highlights",
+      "cn": "行程亮点"
+    },
+    "landmarks": {
+      "title": {
+        "en": "World-Famous Landmarks",
+        "cn": "世界著名地标"
+      },
+      "items": [
+        {
+          "en": "Terracotta Warriors Museum",
+          "cn": "兵马俑博物馆"
+        },
+        {
+          "en": "Forbidden City",
+          "cn": "故宫"
+        },
+        {
+          "en": "Great Wall of China (Badaling section)",
+          "cn": "长城（八达岭段）"
+        },
+        {
+          "en": "Confucius Temple, Mansion & Forest (UNESCO)",
+          "cn": "孔庙、孔府、孔林（联合国教科文组织遗产）"
+        }
+      ]
+    },
+    "historic": {
+      "title": {
+        "en": "Historic Sites",
+        "cn": "历史古迹"
+      },
+      "items": [
+        {
+          "en": "Xi'an Ancient City Wall (600 years old)",
+          "cn": "西安古城墙（600年历史）"
+        },
+        {
+          "en": "Daming Palace Heritage Park",
+          "cn": "大明宫遗址公园"
+        },
+        {
+          "en": "Beilin Museum (Forest of Stone Steles)",
+          "cn": "碑林博物馆"
+        },
+        {
+          "en": "Dai Temple",
+          "cn": "岱庙"
+        }
+      ]
+    },
+    "nature": {
+      "title": {
+        "en": "Mountains & Nature",
+        "cn": "山川自然"
+      },
+      "items": [
+        {
+          "en": "Mount Tai – One of China's Five Sacred Mountains",
+          "cn": "泰山 – 中国五岳之首"
+        },
+        {
+          "en": "Lushan Mountain – UNESCO site, famous for mist-covered peaks",
+          "cn": "庐山 – 联合国教科文组织遗产，以云雾缭绕的山峰闻名"
+        },
+        {
+          "en": "Wuyuan – \"China's Most Beautiful Countryside\"",
+          "cn": "婺源 – 「中国最美乡村」"
+        }
+      ]
+    }
+  },
+  "travel": {
+    "title": {
+      "en": "Travel Details",
+      "cn": "航班信息"
+    },
+    "outbound": {
+      "label": {
+        "en": "Outbound",
+        "cn": "去程"
+      },
+      "text": {
+        "en": "8th May, 22:00 – London Heathrow → Xi'an",
+        "cn": "5月8日 22:00 – 伦敦希思罗 → 西安"
+      }
+    },
+    "return": {
+      "label": {
+        "en": "Return",
+        "cn": "返程"
+      },
+      "text": {
+        "en": "22nd May – Qingdao → London Heathrow (departs 15:00)",
+        "cn": "5月22日 – 青岛 → 伦敦希思罗（15:00起飞）"
+      }
+    }
+  },
+  "requirements": {
+    "title": {
+      "en": "Requirements",
+      "cn": "参团要求"
+    },
+    "items": [
       {
-        "en": "International round-trip airfare (~£600)",
-        "cn": "国际往返机票 (~£600)"
+        "icon": "passport",
+        "text": {
+          "en": "Passport valid for at least 6 months from departure date (8th May 2026)",
+          "cn": "护照有效期需从出发日期（2026年5月8日）起至少6个月"
+        }
       },
       {
-        "en": "Single room supplement (~£450-£600)",
-        "cn": "单房差 (£450-£600)"
-      },
-      {
-        "en": "Personal expenses",
-        "cn": "个人消费"
-      },
-      {
-        "en": "Visa fees (~£100)",
-        "cn": "签证费 (~£100)"
-      },
-      {
-        "en": "Personal Travel Insurance",
-        "cn": "个人旅行保险"
+        "icon": "heart",
+        "text": {
+          "en": "Moderate fitness level and good health – expect to walk 80–100km over the course of the trip across varied terrain",
+          "cn": "中等体力水平及良好健康状况 – 全程徒步约80-100公里，地形多样"
+        }
       }
     ]
   }

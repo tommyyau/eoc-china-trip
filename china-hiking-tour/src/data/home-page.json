@@ -5,12 +5,12 @@
       "cn": "2026中国徒步之旅"
     },
     "subtitle": {
-      "en": "15 days of adventure through ancient wonders and majestic mountains",
-      "cn": "15天穿越古老奇迹与雄伟山脉的冒险之旅"
+      "en": "14 days of adventure through ancient wonders and majestic mountains",
+      "cn": "14天穿越古老奇迹与雄伟山脉的冒险之旅"
     },
     "date": {
-      "en": "May 8-23, 2026",
-      "cn": "2026年5月8日-23日"
+      "en": "May 8-22, 2026",
+      "cn": "2026年5月8日-22日"
     },
     "ctaPrimary": {
       "en": "View Itinerary",
@@ -33,7 +33,7 @@
     }
   },
   "stats": {
-    "days": 15,
+    "days": 14,
     "destinations": 5,
     "hikingKm": 100,
     "elevation": 4500,
@@ -125,8 +125,7 @@
         "days": [
           7,
           8,
-          9,
-          10
+          9
         ],
         "coordinates": [
           29.5628,
@@ -146,7 +145,7 @@
           "cn": "上饶"
         },
         "days": [
-          11
+          10
         ],
         "coordinates": [
           28.4549,
@@ -166,9 +165,9 @@
           "cn": "泰山地区"
         },
         "days": [
+          11,
           12,
-          13,
-          14
+          13
         ],
         "coordinates": [
           36.2565,
@@ -188,7 +187,7 @@
           "cn": "青岛"
         },
         "days": [
-          15
+          14
         ],
         "coordinates": [
           36.0671,

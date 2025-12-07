@@ -52,9 +52,9 @@ function getCoordinates(location) {
 function getRegion(dayNum) {
   if (dayNum <= 4) return 'xian';
   if (dayNum <= 6) return 'beijing';
-  if (dayNum <= 10) return 'lushan';
-  if (dayNum === 11) return 'shangrao';
-  if (dayNum <= 14) return 'taishan';
+  if (dayNum <= 9) return 'lushan';
+  if (dayNum === 10) return 'shangrao';
+  if (dayNum <= 13) return 'taishan';
   return 'qingdao';
 }
 

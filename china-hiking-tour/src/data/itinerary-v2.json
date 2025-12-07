@@ -1559,190 +1559,6 @@
       "day": 9,
       "date": "May 17",
       "title": {
-        "en": "Mount Shizhong & Jingdezhen",
-        "cn": "石钟山与景德镇"
-      },
-      "location": {
-        "en": "Jingdezhen",
-        "cn": "庐山 → 景德镇"
-      },
-      "region": "lushan",
-      "description": {
-        "en": "Morning hike on Mount Shizhong (10km) to see the confluence of the Yangtze River and Poyang Lake. Afternoon visit to Jingdezhen, the 'Porcelain Capital', for hands-on ceramic activities.",
-        "cn": "上午在石钟山徒步（10公里），观赏长江与鄱阳湖交汇的壮观景象。下午前往「瓷都」景德镇，亲身体验陶瓷制作。"
-      },
-      "segments": [
-        {
-          "id": "9-0-1764440953795",
-          "time": {
-            "en": "Morning",
-            "cn": "上午"
-          },
-          "type": "transfer",
-          "title": {
-            "en": "Transfer to Hukou County",
-            "cn": "石钟山徒步"
-          },
-          "description": {
-            "en": "Transfer to Hukou County for a hike.",
-            "cn": "上午在石钟山徒步。\n\n石钟山位于鄱阳湖入长江处，因山形似钟而得名。苏轼曾夜游此山，写下著名的《石钟山记》，探讨山名的由来。\n\n徒步路线约10公里，沿途可以欣赏长江与鄱阳湖交汇的壮观景象——江湖两色，泾渭分明。这是中国最著名的水文奇观之一。"
-          },
-          "duration": "1.5 hours",
-          "location": "Lushan to Hukou County",
-          "mode": "coach",
-          "from": "Lushan",
-          "to": "Hukou County",
-          "walkDetails": null,
-          "highlights": [
-            {
-              "en": "Scenic transfer",
-              "cn": "长江鄱阳湖交汇"
-            }
-          ],
-          "images": []
-        },
-        {
-          "id": "9-1-1764440953795",
-          "time": {
-            "en": "Morning",
-            "cn": "上午"
-          },
-          "type": "activity",
-          "title": {
-            "en": "Hike up Shizhong Mountain",
-            "cn": "前往景德镇"
-          },
-          "description": {
-            "en": "Hike on Shizhong Mountain.\n\nAdmire the spectacular confluence of the Yangtze River and Poyang Lake, experiencing the natural wonder of “Water striking stone, resonating like a bell.”\n\nEmbark on an unforgettable adventure at Mount Shizhong, an enchanting gem nestled between Lushan and Jingdezhen, China. This breathtaking hike offers a stunning panorama of lush landscapes, steep cliffs, and vibrant flora that will leave nature enthusiasts in awe. As you ascend the winding trails, you'll encounter serene streams and ancient rock formations, providing the perfect backdrop for photography and mindfulness. Whether you're an experienced hiker or a casual walker, the diverse terrain and captivating views will invigorate your spirit and connect you with the pristine beauty of the region. Don't miss the chance to witness a mesmerizing sunrise from the summit, a moment that will etch itself in your memory forever.",
-            "cn": "午后前往景德镇。\n\n景德镇素有「瓷都」之称，是中国乃至世界陶瓷文化的发源地。这座城市有着2000多年的制瓷历史，所产瓷器「白如玉、明如镜、薄如纸、声如磬」，享誉海内外。"
-          },
-          "duration": "3-4 hours",
-          "location": "Mount Shizhong",
-          "mode": "",
-          "from": "",
-          "to": "",
-          "walkDetails": {
-            "distance": "10 km",
-            "elevation": "minimal",
-            "difficulty": "moderate"
-          },
-          "highlights": [
-            {
-              "en": "Natural wonder",
-              "cn": "千年瓷都"
-            },
-            {
-              "en": "Scenic views",
-              "cn": "世界陶瓷之都"
-            }
-          ],
-          "images": [
-            {
-              "id": "custom-1764504869049",
-              "src": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
-              "thumb": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
-              "full": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
-              "alt": "Shizhong Mountain",
-              "photographer": "Custom",
-              "source": "custom"
-            },
-            {
-              "id": "custom-1764505256488",
-              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
-              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
-              "full": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
-              "alt": "Yangtze River",
-              "photographer": "Custom",
-              "source": "custom"
-            }
-          ]
-        },
-        {
-          "id": "9-2-1764440953795",
-          "time": {
-            "en": "Afternoon",
-            "cn": "下午"
-          },
-          "type": "activity",
-          "title": {
-            "en": "Visit Jingdezhen - Porcelain Capital",
-            "cn": "陶瓷体验活动"
-          },
-          "description": {
-            "en": "Visit the Porcelain Capital of Jingdezhen and try hands-on ceramic activities.\n\nDiscover the enchanting world of Jingdezhen, the 'Porcelain Capital' of China, where every corner whispers tales of artistry and tradition. Nestled in the picturesque eastern Jiangxi province, this city invites you to immerse yourself in over a millennium of ceramic craftsmanship. Stroll through vibrant markets and workshops, where skilled artisans continue to create exquisite porcelain pieces, each one a testament to the city’s rich heritage. Whether you're a history buff or a lover of fine art, Jingdezhen promises an unforgettable journey through time, culture, and creativity.",
-            "cn": "在景德镇体验陶瓷制作。\n\n参观古窑民俗博览区，了解景德镇瓷器的制作工艺和发展历史。在专业陶艺师的指导下，亲手体验拉坯、彩绘等制瓷工序。\n\n景德镇瓷器分为青花、粉彩、玲珑、颜色釉四大传统名瓷。您可以创作属于自己的陶瓷作品，作为此行的独特纪念。"
-          },
-          "duration": "2-3 hours",
-          "location": "Jingdezhen",
-          "mode": "",
-          "from": "",
-          "to": "",
-          "walkDetails": null,
-          "highlights": [
-            {
-              "en": "Ceramic activities",
-              "cn": "亲手制作陶瓷"
-            },
-            {
-              "en": "Cultural experience",
-              "cn": "了解制瓷工艺"
-            }
-          ],
-          "images": [
-            {
-              "id": "custom-1764505093569",
-              "src": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
-              "thumb": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
-              "full": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
-              "alt": "Jingdezhen Imperial Kiln Museum",
-              "photographer": "Custom",
-              "source": "custom"
-            }
-          ]
-        },
-        {
-          "id": "9-3-1764440953795",
-          "time": {
-            "en": "Evening",
-            "cn": "傍晚"
-          },
-          "type": "check-in",
-          "title": {
-            "en": "Check-in at Hotel in Jingdezhen",
-            "cn": "入住景德镇酒店"
-          },
-          "description": {
-            "en": "Check into a hotel in Jingdezhen.",
-            "cn": "入住景德镇酒店。"
-          },
-          "duration": "30 minutes",
-          "location": "Jingdezhen",
-          "mode": "",
-          "from": "",
-          "to": "",
-          "walkDetails": null,
-          "highlights": [
-            {
-              "en": "Comfortable accommodation",
-              "cn": "舒适住宿"
-            }
-          ],
-          "images": []
-        }
-      ],
-      "meals": {
-        "en": "Breakfast, Lunch, Dinner",
-        "cn": "早餐、 午餐、 晚餐"
-      },
-      "accommodation": {
-        "name": "Hotel in Jingdezhen",
-        "rating": "4-star"
-      }
-    },
-    {
-      "day": 10,
-      "date": "May 18",
-      "title": {
         "en": "Wuyuan Rural Landscapes",
         "cn": "婺源田园风光"
       },
@@ -1870,8 +1686,8 @@
       }
     },
     {
-      "day": 11,
-      "date": "May 19",
+      "day": 10,
+      "date": "May 18",
       "title": {
         "en": "Huangling & Wangxian Valley",
         "cn": "篁岭与望仙谷"
@@ -2045,8 +1861,8 @@
       }
     },
     {
-      "day": 12,
-      "date": "May 20",
+      "day": 11,
+      "date": "May 19",
       "title": {
         "en": "Journey to Mount Tai",
         "cn": "前往泰山"
@@ -2173,8 +1989,8 @@
       }
     },
     {
-      "day": 13,
-      "date": "May 21",
+      "day": 12,
+      "date": "May 20",
       "title": {
         "en": "Ascending Mount Tai",
         "cn": "登顶泰山"
@@ -2325,8 +2141,8 @@
       }
     },
     {
-      "day": 14,
-      "date": "May 22",
+      "day": 13,
+      "date": "May 21",
       "title": {
         "en": "Confucian Culture in Qufu",
         "cn": "曲阜儒家文化"
@@ -2495,8 +2311,8 @@
       }
     },
     {
-      "day": 15,
-      "date": "May 23",
+      "day": 14,
+      "date": "May 22",
       "title": {
         "en": "Departure",
         "cn": "返程"

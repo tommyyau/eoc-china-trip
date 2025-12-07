@@ -28,7 +28,7 @@ export const destinationRegions = [
     {
         id: "lushan",
         name: { en: "Lushan Region", cn: "庐山地区" },
-        days: [7, 8, 9, 10],
+        days: [7, 8, 9],
         coordinates: [29.5628, 115.9928],
         heroImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
         description: {
@@ -41,7 +41,7 @@ export const destinationRegions = [
     {
         id: "shangrao",
         name: { en: "Shangrao", cn: "上饶" },
-        days: [11],
+        days: [10],
         coordinates: [28.4549, 117.9432],
         heroImage: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop",
         description: {
@@ -54,7 +54,7 @@ export const destinationRegions = [
     {
         id: "taishan",
         name: { en: "Mount Tai Region", cn: "泰山地区" },
-        days: [12, 13, 14],
+        days: [11, 12, 13],
         coordinates: [36.2565, 117.1009],
         heroImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop",
         description: {
@@ -67,7 +67,7 @@ export const destinationRegions = [
     {
         id: "qingdao",
         name: { en: "Qingdao", cn: "青岛" },
-        days: [15],
+        days: [14],
         coordinates: [36.0671, 120.3826],
         heroImage: "https://images.unsplash.com/photo-1589800950114-e0d80663c2d1?q=80&w=2070&auto=format&fit=crop",
         description: {
@@ -90,7 +90,7 @@ export const routeCoordinates = [
 
 // Trip statistics
 export const tripStats = {
-    days: 15,
+    days: 14,
     destinations: 5,
     hikingKm: 100,
     elevation: 4500
