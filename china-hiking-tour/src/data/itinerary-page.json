@@ -2,8 +2,8 @@
   "hero": {
     "backgroundImage": "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=2070&auto=format&fit=crop",
     "title": {
-      "en": "15 Days of Adventure",
-      "cn": "15天冒险之旅"
+      "en": "14 Days of Adventure",
+      "cn": "14天冒险之旅"
     },
     "subtitle": {
       "en": "Your complete day-by-day journey through China's wonders",
@@ -92,8 +92,7 @@
       "days": [
         7,
         8,
-        9,
-        10
+        9
       ],
       "coordinates": [
         29.5628,
@@ -125,7 +124,7 @@
         "cn": "上饶"
       },
       "days": [
-        11
+        10
       ],
       "coordinates": [
         28.4549,
@@ -155,9 +154,9 @@
         "cn": "泰山地区"
       },
       "days": [
+        11,
         12,
-        13,
-        14
+        13
       ],
       "coordinates": [
         36.2565,
@@ -189,7 +188,7 @@
         "cn": "青岛"
       },
       "days": [
-        15
+        14
       ],
       "coordinates": [
         36.0671,

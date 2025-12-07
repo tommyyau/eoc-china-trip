@@ -3,7 +3,7 @@
     "version": 2,
     "exportedFrom": "CMS1",
     "exportedAt": "2025-11-30T15:25:23.048Z",
-    "lastModified": "2025-11-30T21:17:44.423Z",
+    "lastModified": "2025-12-07T21:16:37.563Z",
     "bilingual": true
   },
   "days": [
@@ -161,17 +161,6 @@
               "sourceUrl": "https://unsplash.com/photos/table-laden-with-diverse-asian-dishes-and-roasted-pig-Yg8S0pACCoU"
             },
             {
-              "id": 32860307,
-              "src": "https://images.pexels.com/photos/32860307/pexels-photo-32860307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "thumb": "https://images.pexels.com/photos/32860307/pexels-photo-32860307.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "full": "https://images.pexels.com/photos/32860307/pexels-photo-32860307.jpeg",
-              "alt": "Luxurious Asian seafood banquet with a variety of dishes elegantly presented on a dining table.",
-              "photographer": "Change C.C",
-              "photographerUrl": "https://www.pexels.com/@change-c-c-974768353",
-              "source": "pexels",
-              "sourceUrl": "https://www.pexels.com/photo/elegant-asian-seafood-banquet-with-various-dishes-32860307/"
-            },
-            {
               "id": "manual-1764517495776",
               "src": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d6/93/5e/caption.jpg",
               "thumb": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/d6/93/5e/caption.jpg",
@@ -228,48 +217,34 @@
           ],
           "images": [
             {
-              "id": 13998387,
-              "src": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "thumb": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "full": "https://images.pexels.com/photos/13998387/pexels-photo-13998387.jpeg",
-              "alt": "Serene view of the Giant Wild Goose Pagoda in Xi'an with lush greenery and a clear evening sky.",
-              "photographer": "TAO WANG",
-              "photographerUrl": "https://www.pexels.com/@tao-wang-335496284",
-              "source": "pexels",
-              "sourceUrl": "https://www.pexels.com/photo/ancient-gazebo-near-the-pagoda-tower-13998387/"
+              "id": "local-1765141668493",
+              "src": "/images/day-1-image-18.png",
+              "thumb": "/images/day-1-image-18.png",
+              "full": "/images/day-1-image-18.png",
+              "alt": "day 1 image 18",
+              "photographer": "Local Upload",
+              "source": "local",
+              "filename": "day-1-image-18.png"
             },
             {
-              "id": 13998391,
-              "src": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "thumb": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "full": "https://images.pexels.com/photos/13998391/pexels-photo-13998391.jpeg",
-              "alt": "A stunning sunset over the Giant Wild Goose Pagoda, showcasing the ancient architectural beauty in Xi'an, China.",
-              "photographer": "TAO WANG",
-              "photographerUrl": "https://www.pexels.com/@tao-wang-335496284",
-              "source": "pexels",
-              "sourceUrl": "https://www.pexels.com/photo/the-giant-wild-goose-pagoda-in-xian-china-13998391/"
+              "id": "local-1765141679588",
+              "src": "/images/day-1-image-19.png",
+              "thumb": "/images/day-1-image-19.png",
+              "full": "/images/day-1-image-19.png",
+              "alt": "day 1 image 19",
+              "photographer": "Local Upload",
+              "source": "local",
+              "filename": "day-1-image-19.png"
             },
             {
-              "id": "manual-1764523302728",
-              "src": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg",
-              "thumb": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg",
-              "full": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg",
-              "alt": "Musical Fountain",
-              "photographer": "",
-              "photographerUrl": "",
-              "source": "manual",
-              "sourceUrl": "https://media.odynovotours.com/article/78000/musical-fountain-show_75260.jpg"
-            },
-            {
-              "id": "manual-1764523416371",
-              "src": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg",
-              "thumb": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg",
-              "full": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg",
-              "alt": "Grand Tang Dynasty Everbright City",
-              "photographer": "",
-              "photographerUrl": "",
-              "source": "manual",
-              "sourceUrl": "https://images.chinahighlights.com/allpicture/2025/02/969c83e52f9c472894231ad7e3a7ec85_cut_2560x799_689_1739370995.jpg"
+              "id": "local-1765141686474",
+              "src": "/images/day-1-image-20.png",
+              "thumb": "/images/day-1-image-20.png",
+              "full": "/images/day-1-image-20.png",
+              "alt": "day 1 image 20",
+              "photographer": "Local Upload",
+              "source": "local",
+              "filename": "day-1-image-20.png"
             }
           ]
         }
@@ -413,17 +388,6 @@
               "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20022.jpg",
               "source": "wikimedia",
               "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20022.jpg"
-            },
-            {
-              "id": "wikimedia-151466889",
-              "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg/800px-Great Mosque of Xi'an 20240808 018.jpg",
-              "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg/300px-Great Mosque of Xi'an 20240808 018.jpg",
-              "full": "https://upload.wikimedia.org/wikipedia/commons/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg",
-              "alt": "Great Mosque of Xi'an",
-              "photographer": "沈澄心",
-              "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20018.jpg",
-              "source": "wikimedia",
-              "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20018.jpg"
             }
           ]
         },
@@ -463,28 +427,6 @@
             }
           ],
           "images": [
-            {
-              "id": "pixabay-3732269",
-              "src": "https://pixabay.com/get/g1146f1a8d3b80a40f89de33f44e47a2c4aa7b03559670124dd1a68e214a29343359e585589aaea084bf98bb6c4af61fdf4f2bfbe965c581f08ca1dbf437c0a65_640.jpg",
-              "thumb": "https://cdn.pixabay.com/photo/2018/10/08/08/46/china-3732269_150.jpg",
-              "full": "https://pixabay.com/get/g17eada972eeac3badfc74d1e66b74fc7cd1c29a096ac5b0f9fc167d8d5c3e48da839ecb3bb9288879a2040959b1e7dee443133013de0db9f00ad7958e2a705e9_1280.jpg",
-              "alt": "china, xian, xi'an, nature, sunset, wall, city wall, bicycle, ruins, historic site, ancient",
-              "photographer": "hyungname",
-              "photographerUrl": "https://pixabay.com/users/hyungname-9864966/",
-              "source": "pixabay",
-              "sourceUrl": "https://pixabay.com/photos/china-xian-xian-sunset-wall-3732269/"
-            },
-            {
-              "id": "pixabay-7866223",
-              "src": "https://pixabay.com/get/gecfd3ec8e090c37ef30fce4b27ae431eef20655114fca24cde89c1cc3d8c46b81945716fb2d72241c6be623660fb6e88ce2e3c7aad5939059591782e92f0b743_640.jpg",
-              "thumb": "https://cdn.pixabay.com/photo/2023/03/21/01/57/building-7866223_150.jpg",
-              "full": "https://pixabay.com/get/ge5d1972c840cf6dfb3e70b657ea0cc4526bb58b1efd375a0e4b31df3736cfee31fac536e8e0208b4d42ea7e7db2e56cf05f6ebee6bc8e21056e4484d2e0e21fc_1280.jpg",
-              "alt": "building, city wall, history, xi'an, tourism city, moat, xi'an city moat",
-              "photographer": "周游中国",
-              "photographerUrl": "https://pixabay.com/users/周游中国-33467154/",
-              "source": "pixabay",
-              "sourceUrl": "https://pixabay.com/photos/building-city-wall-history-xian-7866223/"
-            },
             {
               "id": "wikimedia-2705921",
               "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Xi%27an_-_City_wall_-_013.jpg/800px-Xi'an - City wall - 013.jpg",
@@ -599,70 +541,34 @@
           ],
           "images": [
             {
-              "id": "zj_o9jdYk_4",
-              "src": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-              "thumb": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
-              "full": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
-              "alt": "a group of people wearing white hats with Terracotta Army in the background",
-              "photographer": "Kevin Engelke",
-              "photographerUrl": "https://unsplash.com/@twopixelsdesign",
-              "source": "unsplash",
-              "sourceUrl": "https://unsplash.com/photos/a-group-of-people-wearing-white-hats-with-terracotta-army-in-the-background-zj_o9jdYk_4"
+              "id": "local-1765141883848",
+              "src": "/images/day-3-image-10.png",
+              "thumb": "/images/day-3-image-10.png",
+              "full": "/images/day-3-image-10.png",
+              "alt": "day 3 image 10",
+              "photographer": "Local Upload",
+              "source": "local",
+              "filename": "day-3-image-10.png"
             },
             {
-              "id": "BOM5u4_VWlI",
-              "src": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-              "thumb": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
-              "full": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
-              "alt": "Terracotta army soldiers standing in formation.",
-              "photographer": "David An",
-              "photographerUrl": "https://unsplash.com/@david_an",
-              "source": "unsplash",
-              "sourceUrl": "https://unsplash.com/photos/terracotta-army-soldiers-standing-in-formation-BOM5u4_VWlI"
+              "id": "local-1765141888617",
+              "src": "/images/day-3-image-11.png",
+              "thumb": "/images/day-3-image-11.png",
+              "full": "/images/day-3-image-11.png",
+              "alt": "day 3 image 11",
+              "photographer": "Local Upload",
+              "source": "local",
+              "filename": "day-3-image-11.png"
             },
             {
-              "id": 18338672,
-              "src": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "thumb": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "full": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
-              "alt": "A captivating view of the ancient Terracotta Army in Xi'an, highlighting historical artistry.",
-              "photographer": "TonyNojmanSK",
-              "photographerUrl": "https://www.pexels.com/@tonynojmansk-186688133",
-              "source": "pexels",
-              "sourceUrl": "https://www.pexels.com/photo/view-of-the-terracotta-army-18338672/"
-            },
-            {
-              "id": 30584842,
-              "src": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "thumb": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "full": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
-              "alt": "Close-up of terracotta warriors in Xi'an, capturing historical artistry and detail.",
-              "photographer": "Ala J Graczyk",
-              "photographerUrl": "https://www.pexels.com/@alice1",
-              "source": "pexels",
-              "sourceUrl": "https://www.pexels.com/photo/terracotta-warriors-in-xi-an-china-30584842/"
-            },
-            {
-              "id": "pexels-11105685",
-              "src": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-              "thumb": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=350",
-              "full": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg",
-              "alt": "Close-up view of the ancient Terracotta Army statues in Xi'an, showcasing historical artistry.",
-              "photographer": "Maciej Cisowski",
-              "photographerUrl": "https://www.pexels.com/@maciej-cisowski-174297128",
-              "source": "pexels",
-              "sourceUrl": "https://www.pexels.com/photo/terracotta-army-statues-11105685/"
-            },
-            {
-              "id": "unsplash-x1ediC9D42Y",
-              "src": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-              "thumb": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=400",
-              "full": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=85",
-              "alt": "Terracotta warriors arranged in formation",
-              "photographer": "1AmFcS",
-              "photographerUrl": "https://unsplash.com/@1amfcs",
-              "source": "unsplash",
-              "sourceUrl": "https://unsplash.com/photos/x1ediC9D42Y"
+              "id": "local-1765141893574",
+              "src": "/images/day-3-image-12.png",
+              "thumb": "/images/day-3-image-12.png",
+              "full": "/images/day-3-image-12.png",
+              "alt": "day 3 image 12",
+              "photographer": "Local Upload",
+              "source": "local",
+              "filename": "day-3-image-12.png"
             }
           ]
         },
@@ -741,17 +647,6 @@
               "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg",
               "source": "wikimedia",
               "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg"
-            },
-            {
-              "id": "pixabay-8268910",
-              "src": "https://pixabay.com/get/ga04cdfa377db0b16bdf4852047a5f1640fa373484d8d4024481ec30b32e3b7e9e582712696dc31e3f4f267fc724f8575388e1331dcb852f977001ca4c83a2412_640.jpg",
-              "thumb": "https://cdn.pixabay.com/photo/2023/09/22/12/00/daming-palace-8268910_150.jpg",
-              "full": "https://pixabay.com/get/gd0cbbc1580601c4cc62020d4a0cf7e8c9f94407b1c842f18f7d32d8721b68852b1f8fef5f2d4462ca289ad3a1db9acfeeff75656c95c089c380e11421d41d129_1280.jpg",
-              "alt": "daming palace, xi'an, xi'an daming palace, palace, vacation destination, danfengmen, architecture, historical site, shaanxi xi'an scenery, xi'an danfengmen, daming palace, xi'an, xi'an, xi'an, xi'an, xi'an, palace",
-              "photographer": "周游中国",
-              "photographerUrl": "https://pixabay.com/users/周游中国-33467154/",
-              "source": "pixabay",
-              "sourceUrl": "https://pixabay.com/photos/daming-palace-xian-8268910/"
             }
           ]
         }
@@ -1207,15 +1102,14 @@
           ],
           "images": [
             {
-              "id": "pixabay-2190047",
-              "src": "https://pixabay.com/get/g6fcdb4c32ac2686b00a970ef9b7fea9a00cb92170a5908e3fccd86bebd6bd9a9a7b395c0d7527703a3e6df1dda3cc636b8581203312e3a129b51a4cff1d3850f_640.jpg",
-              "thumb": "https://cdn.pixabay.com/photo/2017/03/30/23/36/the-great-wall-2190047_150.jpg",
-              "full": "https://pixabay.com/get/g5a008f08c7729061a85e6871cdcf621846dc3aba495d9814492fb419c5f9a043ba5164b863c8bb5f7c495fc23e2040f4365b12e94febfb9b30dc4df8a2f6fd5f_1280.jpg",
-              "alt": "the great wall, china, badaling, china, china, china, china, china",
-              "photographer": "panayota",
-              "photographerUrl": "https://pixabay.com/users/panayota-4969527/",
-              "source": "pixabay",
-              "sourceUrl": "https://pixabay.com/photos/the-great-wall-china-badaling-2190047/"
+              "id": "local-1765142185599",
+              "src": "/images/day-6-image-4.png",
+              "thumb": "/images/day-6-image-4.png",
+              "full": "/images/day-6-image-4.png",
+              "alt": "day 6 image 4",
+              "photographer": "Local Upload",
+              "source": "local",
+              "filename": "day-6-image-4.png"
             },
             {
               "id": "pexels-30962084",
