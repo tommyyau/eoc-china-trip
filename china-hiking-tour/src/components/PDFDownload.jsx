@@ -27,8 +27,9 @@ const PAGE = {
     contentWidth: 180,
 };
 
-// Chinese font URL - Noto Sans CJK SC Regular TTF (~16MB) - must be TTF format for jsPDF
-const CHINESE_FONT_URL = 'https://db.onlinewebfonts.com/t/b88b9900c8debafeb1051cf82ec198b6.ttf';
+// Note: jsPDF requires fonts to be processed through their fontconverter tool.
+// Chinese font support is currently disabled - generates English PDF instead.
+// To enable Chinese: use jsPDF fontconverter to convert a Chinese TTF font.
 
 // Get localized text from bilingual object or string
 function getText(value, lang) {
@@ -39,40 +40,6 @@ function getText(value, lang) {
     return '';
 }
 
-// Load Chinese font and add to jsPDF
-async function loadChineseFont(doc, setProgress) {
-    try {
-        setProgress('加载中文字体... (约16MB)');
-
-        const response = await fetch(CHINESE_FONT_URL);
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-        const fontData = await response.arrayBuffer();
-        if (fontData.byteLength < 10000000) {
-            throw new Error('Font file too small, may be corrupted');
-        }
-
-        setProgress('处理字体数据...');
-
-        // Convert to base64 in chunks to avoid call stack issues
-        const bytes = new Uint8Array(fontData);
-        let binary = '';
-        const chunkSize = 32768;
-        for (let i = 0; i < bytes.length; i += chunkSize) {
-            binary += String.fromCharCode.apply(null, bytes.slice(i, i + chunkSize));
-        }
-        const fontBase64 = btoa(binary);
-
-        doc.addFileToVFS('NotoSansCJKsc-Regular.ttf', fontBase64);
-        doc.addFont('NotoSansCJKsc-Regular.ttf', 'NotoSansSC', 'normal');
-
-        console.log('Chinese font loaded successfully, size:', fontData.byteLength);
-        return true;
-    } catch (error) {
-        console.error('Failed to load Chinese font:', error);
-        return false;
-    }
-}
 
 const PDFDownload = ({ label, variant = 'default' }) => {
     const [loading, setLoading] = useState(false);
@@ -81,8 +48,6 @@ const PDFDownload = ({ label, variant = 'default' }) => {
 
     const isChinese = language === 'cn';
 
-    // Get localized content
-    const t = (value) => getText(value, language);
 
     // UI labels
     const labels = {
@@ -117,12 +82,17 @@ const PDFDownload = ({ label, variant = 'default' }) => {
             filename: '2026中国徒步之旅行程.pdf',
         }
     };
-    const ui = labels[language] || labels.en;
 
     const generatePDF = async () => {
         try {
             setLoading(true);
             setProgress('Initializing...');
+
+            // Note: Chinese PDF generation is not currently supported due to font limitations.
+            // Always generate English PDF for now.
+            if (isChinese) {
+                alert('Chinese PDF is not currently available. Generating English PDF instead.\n\n中文PDF暂不可用，将生成英文版本。');
+            }
 
             const doc = new jsPDF({
                 orientation: 'portrait',
@@ -130,22 +100,14 @@ const PDFDownload = ({ label, variant = 'default' }) => {
                 format: 'a4',
             });
 
-            // Load Chinese font if needed
-            let fontLoaded = false;
-            if (isChinese) {
-                fontLoaded = await loadChineseFont(doc, setProgress);
-                if (!fontLoaded) {
-                    alert('Failed to load Chinese font. Generating English PDF instead.');
-                }
-            }
+            // Always use English labels and content for PDF (Chinese fonts not supported)
+            const ui = labels.en;
+            const t = (value) => getText(value, 'en');
+            const isChinese = false; // Force English for PDF generation
 
-            // Set font helper
+            // Set font helper - always use helvetica
             const setFont = (style = 'normal', size = 10) => {
-                if (isChinese && fontLoaded) {
-                    doc.setFont('NotoSansSC', 'normal');
-                } else {
-                    doc.setFont('helvetica', style);
-                }
+                doc.setFont('helvetica', style);
                 doc.setFontSize(size);
             };
 
