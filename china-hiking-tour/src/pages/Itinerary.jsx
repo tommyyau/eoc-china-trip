@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Parallax } from 'react-scroll-parallax';
 import { ChevronDown, Download } from 'lucide-react';
@@ -13,6 +14,19 @@ import SectionDivider from '../components/ui/SectionDivider';
 
 const Itinerary = () => {
     const { language } = useLanguage();
+    const location = useLocation();
+
+    // Scroll to hash section on load, or scroll to top if no hash
+    useEffect(() => {
+        if (location.hash) {
+            const element = document.getElementById(location.hash.slice(1));
+            if (element) {
+                setTimeout(() => element.scrollIntoView({ behavior: 'smooth' }), 100);
+            }
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, [location]);
 
     // Helper to get bilingual text
     const t = (field) => field?.[language] || field?.en || '';
@@ -144,6 +158,7 @@ const Itinerary = () => {
                     <React.Fragment key={region.id}>
                         {/* Region Header */}
                         <section
+                            id={region.id}
                             style={{
                                 position: 'relative',
                                 padding: 'var(--spacing-xl) 0',

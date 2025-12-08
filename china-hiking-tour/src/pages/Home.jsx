@@ -276,7 +276,7 @@ const Home = () => {
                     >
                         {destinations.map((destination, index) => (
                             <ScrollReveal key={destination.id} delay={index * 0.1}>
-                                <Link to="/itinerary" style={{ textDecoration: 'none' }}>
+                                <Link to={`/itinerary#${destination.id}`} style={{ textDecoration: 'none' }}>
                                     <div
                                         className="image-zoom"
                                         style={{
