@@ -182,3 +182,103 @@ npm run dev
 # Opens at http://localhost:5177
 # Click "Home Page" tab to edit home content
 ```
+
+---
+
+# Task: Fix Chinese PDF Generation Error
+
+## Problem
+When generating the PDF in Chinese mode, users encountered:
+- Error: "Cannot read properties of undefined (reading 'title')"
+- Reports that Chinese characters were unreadable/mixed up
+
+## Root Cause Analysis
+1. **Undefined title bug:** Day 0 (departure from Heathrow) was being included in the Xi'an region filter since `getRegion(0)` returns 'xian'. Also, segments may have undefined elements that weren't being filtered out.
+
+2. **Font issues:** The code was using a variable font (`NotoSansSC[wght].ttf`) which may not be fully compatible with jsPDF's font handling. Variable fonts use a different format than static fonts.
+
+## Fixes Applied
+
+### 1. Filter out Day 0 and undefined days
+```javascript
+// Before
+const getDaysByRegion = (regionId) => {
+    return itineraryData.filter(day => day.region === regionId);
+};
+
+// After - Filter out Day 0 and undefined entries
+const getDaysByRegion = (regionId) => {
+    return itineraryData.filter(day => day && day.day > 0 && day.region === regionId);
+};
+```
+
+### 2. Filter out undefined segments
+```javascript
+// Before
+if (day.segments && day.segments.length > 0) {
+    for (const segment of day.segments) {
+
+// After - Filter out undefined segments
+const validSegments = (day.segments || []).filter(seg => seg && seg.title);
+if (validSegments.length > 0) {
+    for (const segment of validSegments) {
+```
+
+### 3. Defensive check for day title
+```javascript
+// Before
+doc.text(t(day.title) || '', PAGE.marginX, currentY);
+
+// After
+const dayTitle = day.title ? t(day.title) : '';
+doc.text(dayTitle, PAGE.marginX, currentY);
+```
+
+### 4. Switch to static font file
+```javascript
+// Before - Variable font (~18MB)
+const CHINESE_FONT_URL = 'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/google-fonts/NotoSansSC%5Bwght%5D.ttf';
+
+// After - Static subset OTF (~8MB)
+const CHINESE_FONT_URL = 'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf';
+```
+
+## Files Modified
+- `china-hiking-tour/src/components/PDFDownload.jsx` - All fixes above
+
+## Review
+- Build passes successfully
+- **Chinese PDF disabled** - jsPDF requires fonts processed through their fontconverter tool
+- Raw TTF/OTF fonts produce garbled characters regardless of source
+- Current solution: Shows alert message and generates English PDF when Chinese is requested
+
+## Root Cause (Updated)
+The jsPDF library requires fonts to be processed through their [fontconverter tool](https://rawgit.com/MrRio/jsPDF/master/fontconverter/fontconverter.html). This tool:
+1. Parses the TTF file to extract glyph information
+2. Creates a JavaScript file with base64-encoded font data
+3. Includes metadata that jsPDF needs for proper rendering
+
+Simply base64-encoding a raw TTF or OTF file does NOT work - the characters render as garbage because jsPDF is missing the glyph mapping information.
+
+## Solution: html2pdf.js
+
+Switched from jsPDF's text() method to html2pdf.js which:
+1. Renders HTML using browser's native font rendering (handles Chinese automatically)
+2. Uses html2canvas to capture the rendered HTML as an image
+3. Embeds the image into a PDF
+
+This bypasses all jsPDF font issues since the browser handles font rendering.
+
+### Changes Made
+- Rewrote `PDFDownload.jsx` to use html2pdf.js instead of jsPDF direct text rendering
+- Creates a styled HTML container with all itinerary content
+- Uses CSS for styling (cover page, region headers, day cards, segments, info page)
+- Font family set to Chinese fonts for CN mode: "Noto Sans SC", "PingFang SC", "Microsoft YaHei"
+- Font family set to Helvetica for EN mode
+
+### How It Works
+1. Creates hidden HTML container with styled content
+2. html2pdf.js renders it using html2canvas (scale: 2 for quality)
+3. Converts canvas to JPEG (quality: 0.92)
+4. Embeds into PDF with automatic page breaks
+5. Removes container and triggers download
