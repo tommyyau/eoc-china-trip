@@ -27,8 +27,8 @@ const PAGE = {
     contentWidth: 180,
 };
 
-// Chinese font URL - Noto Sans SC static OTF from noto-cjk repo (subset for Simplified Chinese only, ~8MB)
-const CHINESE_FONT_URL = 'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf';
+// Chinese font URL - Noto Sans CJK SC Regular TTF (~16MB) - must be TTF format for jsPDF
+const CHINESE_FONT_URL = 'https://db.onlinewebfonts.com/t/b88b9900c8debafeb1051cf82ec198b6.ttf';
 
 // Get localized text from bilingual object or string
 function getText(value, lang) {
@@ -42,13 +42,13 @@ function getText(value, lang) {
 // Load Chinese font and add to jsPDF
 async function loadChineseFont(doc, setProgress) {
     try {
-        setProgress('加载中文字体... (约8MB)');
+        setProgress('加载中文字体... (约16MB)');
 
         const response = await fetch(CHINESE_FONT_URL);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         const fontData = await response.arrayBuffer();
-        if (fontData.byteLength < 5000000) {
+        if (fontData.byteLength < 10000000) {
             throw new Error('Font file too small, may be corrupted');
         }
 
@@ -63,8 +63,8 @@ async function loadChineseFont(doc, setProgress) {
         }
         const fontBase64 = btoa(binary);
 
-        doc.addFileToVFS('NotoSansSC-Regular.otf', fontBase64);
-        doc.addFont('NotoSansSC-Regular.otf', 'NotoSansSC', 'normal');
+        doc.addFileToVFS('NotoSansCJKsc-Regular.ttf', fontBase64);
+        doc.addFont('NotoSansCJKsc-Regular.ttf', 'NotoSansSC', 'normal');
 
         console.log('Chinese font loaded successfully, size:', fontData.byteLength);
         return true;
