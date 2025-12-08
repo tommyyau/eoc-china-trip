@@ -27,8 +27,8 @@ const PAGE = {
     contentWidth: 180,
 };
 
-// Chinese font URL - Noto Sans SC TTF from noto-cjk repo (jsPDF requires TTF format)
-const CHINESE_FONT_URL = 'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/google-fonts/NotoSansSC%5Bwght%5D.ttf';
+// Chinese font URL - Noto Sans SC static OTF from noto-cjk repo (subset for Simplified Chinese only, ~8MB)
+const CHINESE_FONT_URL = 'https://cdn.jsdelivr.net/gh/notofonts/noto-cjk@main/Sans/SubsetOTF/SC/NotoSansSC-Regular.otf';
 
 // Get localized text from bilingual object or string
 function getText(value, lang) {
@@ -42,13 +42,13 @@ function getText(value, lang) {
 // Load Chinese font and add to jsPDF
 async function loadChineseFont(doc, setProgress) {
     try {
-        setProgress('加载中文字体... (约18MB)');
+        setProgress('加载中文字体... (约8MB)');
 
         const response = await fetch(CHINESE_FONT_URL);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
         const fontData = await response.arrayBuffer();
-        if (fontData.byteLength < 1000000) {
+        if (fontData.byteLength < 5000000) {
             throw new Error('Font file too small, may be corrupted');
         }
 
@@ -63,8 +63,8 @@ async function loadChineseFont(doc, setProgress) {
         }
         const fontBase64 = btoa(binary);
 
-        doc.addFileToVFS('NotoSansSC.ttf', fontBase64);
-        doc.addFont('NotoSansSC.ttf', 'NotoSansSC', 'normal');
+        doc.addFileToVFS('NotoSansSC-Regular.otf', fontBase64);
+        doc.addFont('NotoSansSC-Regular.otf', 'NotoSansSC', 'normal');
 
         console.log('Chinese font loaded successfully, size:', fontData.byteLength);
         return true;
@@ -214,9 +214,9 @@ const PDFDownload = ({ label, variant = 'default' }) => {
             doc.addPage();
             currentY = PAGE.marginY;
 
-            // Group days by region
+            // Group days by region (filter out any undefined entries and Day 0)
             const getDaysByRegion = (regionId) => {
-                return itineraryData.filter(day => day.region === regionId);
+                return itineraryData.filter(day => day && day.day > 0 && day.region === regionId);
             };
 
             for (const region of destinationRegions) {
@@ -267,7 +267,8 @@ const PDFDownload = ({ label, variant = 'default' }) => {
                     // Title
                     setFont('bold', 13);
                     doc.setTextColor(...COLORS.dark);
-                    doc.text(t(day.title) || '', PAGE.marginX, currentY);
+                    const dayTitle = day.title ? t(day.title) : '';
+                    doc.text(dayTitle, PAGE.marginX, currentY);
                     currentY += 7;
 
                     // Day description
@@ -287,8 +288,9 @@ const PDFDownload = ({ label, variant = 'default' }) => {
                     }
 
                     // Segments
-                    if (day.segments && day.segments.length > 0) {
-                        for (const segment of day.segments) {
+                    const validSegments = (day.segments || []).filter(seg => seg && seg.title);
+                    if (validSegments.length > 0) {
+                        for (const segment of validSegments) {
                             const segDesc = t(segment.description);
                             const segDescLines = segDesc
                                 ? doc.splitTextToSize(segDesc, PAGE.contentWidth - 15)
@@ -394,31 +396,14 @@ const PDFDownload = ({ label, variant = 'default' }) => {
             doc.text(ui.essentialInfo, PAGE.width / 2, currentY + 6, { align: 'center' });
             currentY += 22;
 
-            // Visa Section
-            setFont('bold', 12);
-            doc.setTextColor(...COLORS.secondary);
-            doc.text(t(infoData.visa.title), PAGE.marginX, currentY);
-            currentY += 7;
-
-            setFont('normal', 9);
-            doc.setTextColor(...COLORS.medium);
-            infoData.visa.items.forEach((item) => {
-                const text = t(item);
-                const lines = doc.splitTextToSize(`• ${text}`, PAGE.contentWidth - 5);
-                doc.text(lines, PAGE.marginX + 3, currentY);
-                currentY += lines.length * 4 + 2;
-            });
-
-            currentY += 8;
-
-            // Cost Section
+            // Price Section
             setFont('bold', 12);
             doc.setTextColor(...COLORS.primary);
-            doc.text(t(infoData.cost.title), PAGE.marginX, currentY);
+            doc.text(isChinese ? '价格信息' : 'Price Information', PAGE.marginX, currentY);
             currentY += 8;
 
-            // Price badge - handle multi-line text
-            const priceText = t(infoData.cost.price);
+            // Price badge
+            const priceText = `${infoData.price.amount} ${t(infoData.price.perPerson)} • ${t(infoData.price.dates)}`;
             setFont('bold', 9);
             const priceLines = doc.splitTextToSize(priceText, PAGE.contentWidth - 10);
             const priceBoxHeight = 8 + (priceLines.length * 5);
@@ -434,31 +419,39 @@ const PDFDownload = ({ label, variant = 'default' }) => {
             });
             currentY += priceBoxHeight + 6;
 
+            // Price details
+            setFont('normal', 8);
+            doc.setTextColor(...COLORS.medium);
+            doc.text(t(infoData.price.basis), PAGE.marginX, currentY);
+            currentY += 4;
+            doc.text(t(infoData.price.singleSupplement), PAGE.marginX, currentY);
+            currentY += 8;
+
             // Includes
             setFont('bold', 10);
             doc.setTextColor(...COLORS.success);
-            doc.text(t(infoData.cost.includesTitle).toUpperCase(), PAGE.marginX, currentY);
+            doc.text(t(infoData.included.title).toUpperCase(), PAGE.marginX, currentY);
             currentY += 5;
 
             setFont('normal', 9);
             doc.setTextColor(...COLORS.medium);
-            infoData.cost.includes.forEach((item) => {
-                doc.text(`+ ${t(item)}`, PAGE.marginX + 3, currentY);
+            infoData.included.items.forEach((item) => {
+                doc.text(`+ ${t(item.text)}`, PAGE.marginX + 3, currentY);
                 currentY += 5;
             });
 
             currentY += 6;
 
-            // Excludes
+            // Not Included
             setFont('bold', 10);
             doc.setTextColor(...COLORS.light);
-            doc.text(t(infoData.cost.excludesTitle).toUpperCase(), PAGE.marginX, currentY);
+            doc.text(t(infoData.notIncluded.title).toUpperCase(), PAGE.marginX, currentY);
             currentY += 5;
 
             setFont('normal', 9);
             doc.setTextColor(...COLORS.light);
-            infoData.cost.excludes.forEach((item) => {
-                const text = t(item);
+            infoData.notIncluded.items.forEach((item) => {
+                const text = t(item.text);
                 if (text) {
                     doc.text(`- ${text}`, PAGE.marginX + 3, currentY);
                     currentY += 5;
