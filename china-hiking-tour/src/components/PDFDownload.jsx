@@ -74,219 +74,275 @@ const PDFDownload = ({ label, variant = 'default' }) => {
             container.style.fontSize = '11pt';
             container.style.lineHeight = '1.4';
 
-            // CSS styles
+            // CSS styles - Clean, compact PDF design
             const styles = `
+                * { box-sizing: border-box; }
+
+                /* ===== COVER PAGE ===== */
                 .cover {
-                    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-                    color: white;
-                    padding: 60px 30px;
-                    min-height: 280mm;
-                    page-break-after: always;
                     text-align: center;
+                    padding: 60px 40px 40px 40px;
                 }
                 .cover h1 {
                     font-size: 42pt;
-                    margin: 80px 0 10px 0;
+                    margin: 0 0 5px 0;
                     font-weight: 700;
+                    color: #1a365d;
                 }
                 .cover h2 {
-                    font-size: 36pt;
-                    margin: 0 0 30px 0;
-                    font-weight: 700;
+                    font-size: 28pt;
+                    margin: 0 0 25px 0;
+                    font-weight: 300;
+                    color: #4a5568;
                 }
                 .cover .subtitle {
-                    font-size: 14pt;
-                    opacity: 0.9;
-                    margin-bottom: 8px;
+                    font-size: 12pt;
+                    color: #718096;
+                    margin-bottom: 4px;
                 }
                 .cover .divider {
-                    width: 80px;
+                    width: 50px;
                     height: 3px;
-                    background: #d84315;
-                    margin: 30px auto;
+                    background: #c53030;
+                    margin: 25px auto;
                 }
                 .journey-box {
-                    background: white;
-                    color: #333;
+                    background: #f8fafc;
+                    border: 1px solid #e2e8f0;
                     border-radius: 8px;
-                    padding: 25px 30px;
-                    margin: 30px auto;
-                    max-width: 400px;
+                    padding: 20px 25px;
+                    margin: 25px auto 0 auto;
+                    max-width: 340px;
                     text-align: left;
                 }
                 .journey-box h3 {
                     text-align: center;
-                    font-size: 14pt;
+                    font-size: 9pt;
                     margin: 0 0 15px 0;
-                    color: #333;
+                    color: #64748b;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: 600;
                 }
                 .journey-row {
                     display: flex;
                     justify-content: space-between;
                     padding: 8px 0;
-                    border-bottom: 1px solid #eee;
-                    font-size: 11pt;
+                    border-bottom: 1px solid #e2e8f0;
+                    font-size: 10pt;
                 }
                 .journey-row:last-child { border-bottom: none; }
+                .journey-row span:first-child { color: #334155; font-weight: 500; }
+                .journey-row span:last-child { color: #64748b; }
 
-                .content { padding: 20px 25px; }
+                /* ===== CONTENT PAGES ===== */
+                .content {
+                    padding: 15px 25px;
+                }
 
+                /* ===== REGION HEADER - Starts new page ===== */
                 .region-header {
-                    background: #d84315;
-                    color: white;
-                    padding: 12px 20px;
-                    margin: 25px -25px 15px -25px;
-                    text-align: center;
+                    page-break-before: always;
+                    margin: 0 0 15px 0;
+                    padding-bottom: 8px;
+                    border-bottom: 2px solid #1a365d;
                 }
                 .region-header h2 {
                     margin: 0;
-                    font-size: 16pt;
-                    font-weight: 600;
+                    font-size: 14pt;
+                    font-weight: 700;
+                    color: #1a365d;
+                    display: inline;
                 }
                 .region-header .days {
                     font-size: 10pt;
-                    opacity: 0.9;
-                    margin-top: 4px;
+                    color: #64748b;
+                    margin-left: 12px;
                 }
 
+                /* ===== DAY CARDS - Continuous flow ===== */
                 .day-card {
                     margin: 20px 0;
-                    padding-bottom: 15px;
-                    border-bottom: 1px solid #e0e0e0;
+                    padding-bottom: 20px;
+                    border-bottom: 1px dashed #cbd5e1;
                 }
-                .day-badge {
-                    display: inline-block;
-                    background: #1976d2;
-                    color: white;
-                    padding: 3px 10px;
-                    border-radius: 4px;
-                    font-size: 9pt;
-                    font-weight: 600;
-                    margin-right: 10px;
+                .day-card:last-child {
+                    border-bottom: none;
                 }
-                .day-meta {
-                    display: inline;
-                    color: #666;
+                .day-header-line {
+                    color: #c53030;
                     font-size: 10pt;
+                    font-weight: 700;
+                    margin-bottom: 6px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+                .day-header-line .day-num {
+                    text-transform: uppercase;
+                }
+                .day-header-line .separator {
+                    color: #94a3b8;
+                }
+                .day-header-line .day-meta {
+                    color: #64748b;
+                    font-weight: 500;
                 }
                 .day-title {
                     font-size: 14pt;
                     font-weight: 600;
-                    margin: 8px 0;
-                    color: #222;
+                    margin: 0 0 8px 0;
+                    color: #1e293b;
+                    line-height: 1.3;
                 }
                 .day-desc {
-                    color: #555;
+                    color: #475569;
                     font-size: 10pt;
-                    margin-bottom: 10px;
-                    line-height: 1.5;
+                    margin-bottom: 15px;
+                    line-height: 1.55;
                 }
 
+                /* ===== SEGMENTS - Compact with time labels ===== */
                 .segment {
-                    margin: 12px 0 12px 10px;
-                    padding-left: 12px;
-                    border-left: 2px solid #e0e0e0;
+                    margin: 12px 0;
+                    padding-left: 15px;
+                }
+                .segment-time-row {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 6px;
                 }
                 .segment-time {
-                    display: inline-block;
-                    background: #f5f5f5;
-                    padding: 2px 8px;
-                    border-radius: 3px;
                     font-size: 8pt;
-                    color: #666;
-                    margin-right: 8px;
+                    font-weight: 700;
+                    color: #1a365d;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    white-space: nowrap;
+                }
+                .segment-time-line {
+                    flex: 1;
+                    height: 1px;
+                    background: #cbd5e1;
+                    margin-left: 10px;
+                }
+                .segment-content {
+                    padding-left: 2px;
+                }
+                .segment-title-row {
+                    margin-bottom: 4px;
+                }
+                .segment-bullet {
+                    color: #c53030;
+                    margin-right: 6px;
                 }
                 .segment-title {
                     font-weight: 600;
                     font-size: 11pt;
-                    color: #333;
-                    display: inline;
+                    color: #1e293b;
                 }
                 .segment-duration {
-                    color: #999;
+                    color: #64748b;
                     font-size: 9pt;
                     margin-left: 8px;
                 }
                 .segment-desc {
-                    color: #666;
+                    color: #475569;
                     font-size: 9pt;
-                    margin: 5px 0;
-                    line-height: 1.4;
+                    margin: 4px 0;
+                    line-height: 1.5;
+                    padding-left: 14px;
                 }
                 .segment-highlights {
-                    color: #1976d2;
-                    font-size: 9pt;
-                    margin-top: 5px;
+                    color: #64748b;
+                    font-size: 8pt;
+                    margin-top: 4px;
+                    padding-left: 14px;
+                    font-style: italic;
                 }
 
+                /* ===== DAY FOOTER ===== */
                 .day-footer {
-                    margin-top: 10px;
-                    padding-top: 8px;
-                    border-top: 1px solid #eee;
+                    margin-top: 12px;
+                    padding-top: 10px;
+                    border-top: 1px solid #e2e8f0;
                     font-size: 9pt;
-                    display: flex;
-                    gap: 30px;
+                    color: #64748b;
                 }
-                .day-footer .meals { color: #1976d2; }
-                .day-footer .stay { color: #388e3c; }
+                .day-footer .label {
+                    font-weight: 600;
+                    color: #475569;
+                }
+                .day-footer .divider {
+                    margin: 0 15px;
+                    color: #cbd5e1;
+                }
 
+                /* ===== INFO PAGE ===== */
                 .info-page {
                     page-break-before: always;
                     padding: 20px 25px;
                 }
                 .info-header {
-                    background: #1976d2;
-                    color: white;
-                    padding: 12px 20px;
-                    margin: 0 -25px 20px -25px;
-                    text-align: center;
+                    margin-bottom: 20px;
+                    padding-bottom: 8px;
+                    border-bottom: 2px solid #1a365d;
                 }
                 .info-header h2 {
                     margin: 0;
                     font-size: 14pt;
+                    font-weight: 700;
+                    color: #1a365d;
+                }
+                .price-section {
+                    margin-bottom: 20px;
                 }
                 .price-section h3 {
-                    color: #d84315;
-                    font-size: 12pt;
+                    color: #1e293b;
+                    font-size: 11pt;
                     margin: 0 0 10px 0;
+                    font-weight: 600;
                 }
                 .price-box {
-                    background: #d84315;
+                    background: #c53030;
                     color: white;
                     padding: 12px 20px;
                     border-radius: 6px;
                     text-align: center;
                     font-weight: 600;
-                    margin-bottom: 10px;
+                    font-size: 12pt;
+                    margin-bottom: 8px;
                 }
                 .price-details {
-                    color: #666;
+                    color: #64748b;
                     font-size: 9pt;
+                    line-height: 1.5;
+                }
+                .includes-section {
                     margin-bottom: 15px;
                 }
                 .includes-section h4 {
-                    color: #388e3c;
+                    color: #166534;
                     font-size: 10pt;
                     margin: 15px 0 8px 0;
-                    text-transform: uppercase;
+                    font-weight: 600;
                 }
                 .includes-section ul {
                     margin: 0;
-                    padding-left: 20px;
-                    font-size: 10pt;
-                    color: #555;
+                    padding-left: 18px;
+                    font-size: 9pt;
+                    color: #475569;
+                    line-height: 1.5;
                 }
-                .includes-section li { margin: 4px 0; }
-                .not-included h4 {
-                    color: #999;
-                }
-                .not-included ul { color: #888; }
+                .includes-section li { margin: 3px 0; }
+                .not-included h4 { color: #64748b; }
+                .not-included ul { color: #64748b; }
             `;
 
             // Build HTML
             let html = `<style>${styles}</style>`;
 
-            // Cover page
+            // Cover page - simple, no forced page break
             html += `
                 <div class="cover">
                     <h1>${ui.title}</h1>
@@ -320,7 +376,7 @@ const PDFDownload = ({ label, variant = 'default' }) => {
                 html += `
                     <div class="region-header">
                         <h2>${t(region.name)}</h2>
-                        <div class="days">${dayRange}</div>
+                        <span class="days">${dayRange}</span>
                     </div>
                 `;
 
@@ -329,40 +385,54 @@ const PDFDownload = ({ label, variant = 'default' }) => {
 
                     html += `
                         <div class="day-card">
-                            <div>
-                                <span class="day-badge">${dayLabel}</span>
-                                <span class="day-meta">${day.date} • ${t(day.location) || ''}</span>
+                            <div class="day-header-line">
+                                <span class="day-num">${dayLabel}</span>
+                                <span class="separator">•</span>
+                                <span class="day-meta">${day.date}</span>
+                                <span class="separator">•</span>
+                                <span class="day-meta">${t(day.location) || ''}</span>
                             </div>
                             <div class="day-title">${day.title ? t(day.title) : ''}</div>
                             ${t(day.description) ? `<div class="day-desc">${t(day.description)}</div>` : ''}
                     `;
 
-                    // Segments
+                    // Segments - compact with time labels
                     const validSegments = (day.segments || []).filter(seg => seg && seg.title);
                     for (const segment of validSegments) {
                         const segTime = t(segment.time);
                         html += `
                             <div class="segment">
-                                ${segTime ? `<span class="segment-time">${segTime}</span>` : ''}
-                                <span class="segment-title">${t(segment.title)}</span>
-                                ${segment.duration ? `<span class="segment-duration">(${segment.duration})</span>` : ''}
-                                ${t(segment.description) ? `<div class="segment-desc">${t(segment.description)}</div>` : ''}
-                                ${segment.highlights && segment.highlights.length > 0
-                                    ? `<div class="segment-highlights">${segment.highlights.map(h => t(h)).join(' • ')}</div>`
-                                    : ''}
+                                ${segTime ? `
+                                    <div class="segment-time-row">
+                                        <span class="segment-time">${segTime}</span>
+                                        <span class="segment-time-line"></span>
+                                    </div>
+                                ` : ''}
+                                <div class="segment-content">
+                                    <div class="segment-title-row">
+                                        <span class="segment-bullet">▸</span>
+                                        <span class="segment-title">${t(segment.title)}</span>
+                                        ${segment.duration ? `<span class="segment-duration">(${segment.duration})</span>` : ''}
+                                    </div>
+                                    ${t(segment.description) ? `<div class="segment-desc">${t(segment.description)}</div>` : ''}
+                                    ${segment.highlights && segment.highlights.length > 0
+                                        ? `<div class="segment-highlights">${segment.highlights.map(h => t(h)).join(' • ')}</div>`
+                                        : ''}
+                                </div>
                             </div>
                         `;
                     }
 
-                    // Footer
+                    // Footer - inline style
                     const meals = t(day.meals);
                     const accom = day.accommodation?.name || '';
                     if (meals || (accom && accom !== 'N/A')) {
                         html += `<div class="day-footer">`;
-                        if (meals) html += `<span class="meals">${ui.meals}: ${meals}</span>`;
+                        if (meals) html += `<span class="label">${ui.meals}:</span> ${meals}`;
+                        if (meals && accom && accom !== 'N/A') html += `<span class="divider">|</span>`;
                         if (accom && accom !== 'N/A') {
                             const rating = day.accommodation?.rating ? ` (${day.accommodation.rating})` : '';
-                            html += `<span class="stay">${ui.stay}: ${accom}${rating}</span>`;
+                            html += `<span class="label">${ui.stay}:</span> ${accom}${rating}`;
                         }
                         html += `</div>`;
                     }
@@ -379,6 +449,7 @@ const PDFDownload = ({ label, variant = 'default' }) => {
                     <div class="info-header">
                         <h2>${ui.essentialInfo}</h2>
                     </div>
+
                     <div class="price-section">
                         <h3>${ui.priceInfo}</h3>
                         <div class="price-box">
@@ -409,13 +480,14 @@ const PDFDownload = ({ label, variant = 'default' }) => {
 
             // Generate PDF
             const opt = {
-                margin: 0,
+                margin: [10, 10, 15, 10], // top, left, bottom, right in mm
                 filename: ui.filename,
-                image: { type: 'jpeg', quality: 0.92 },
+                image: { type: 'jpeg', quality: 0.95 },
                 html2canvas: {
                     scale: 2,
                     useCORS: true,
                     letterRendering: true,
+                    backgroundColor: '#ffffff',
                 },
                 jsPDF: {
                     unit: 'mm',
