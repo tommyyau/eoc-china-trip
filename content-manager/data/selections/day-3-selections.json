@@ -1,65 +1,69 @@
 {
   "day": 3,
-  "lastModified": "2025-11-30T10:27:57.762Z",
+  "lastModified": "2025-12-07T20:49:43.890Z",
   "segments": {
     "3-0-1764446850029": {
       "name": "Visit Terracotta Warrior Museum",
       "images": [
         {
-          "id": "zj_o9jdYk_4",
-          "url": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-          "thumb": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
-          "full": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "id": "local-1765140581096-3",
+          "url": "/images/day-3-image-3.jpg",
+          "thumb": "/images/day-3-image-3.jpg",
+          "full": "/images/day-3-image-3.jpg",
           "alt": "a group of people wearing white hats with Terracotta Army in the background",
           "photographer": "Kevin Engelke",
           "photographerUrl": "https://unsplash.com/@twopixelsdesign",
-          "source": "unsplash",
+          "source": "local",
           "sourceUrl": "https://unsplash.com/photos/a-group-of-people-wearing-white-hats-with-terracotta-army-in-the-background-zj_o9jdYk_4",
           "downloadUrl": "https://images.unsplash.com/photo-1659466248885-8b7a03205661?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
           "width": 5184,
-          "height": 3456
+          "height": 3456,
+          "filename": "day-3-image-3.jpg"
         },
         {
-          "id": "BOM5u4_VWlI",
-          "url": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-          "thumb": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=80&w=400",
-          "full": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
+          "id": "local-1765140581418-4",
+          "url": "/images/day-3-image-4.jpg",
+          "thumb": "/images/day-3-image-4.jpg",
+          "full": "/images/day-3-image-4.jpg",
           "alt": "Terracotta army soldiers standing in formation.",
           "photographer": "David An",
           "photographerUrl": "https://unsplash.com/@david_an",
-          "source": "unsplash",
+          "source": "local",
           "sourceUrl": "https://unsplash.com/photos/terracotta-army-soldiers-standing-in-formation-BOM5u4_VWlI",
           "downloadUrl": "https://images.unsplash.com/photo-1747662737912-9b6af1a91544?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHx0ZXJyYWNvdHRhJTIwd2FycmlvcnMlMjB4aWFuJTIwY2hpbmF8ZW58MHwwfHx8MTc2NDQwOTgxN3ww&ixlib=rb-4.1.0&q=85",
           "width": 6960,
-          "height": 3504
+          "height": 3504,
+          "filename": "day-3-image-4.jpg"
         },
         {
-          "id": 18338672,
-          "url": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "thumb": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "full": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
+          "id": "local-1765140581756-5",
+          "url": "/images/day-3-image-5.jpeg",
+          "thumb": "/images/day-3-image-5.jpeg",
+          "full": "/images/day-3-image-5.jpeg",
           "alt": "A captivating view of the ancient Terracotta Army in Xi'an, highlighting historical artistry.",
           "photographer": "TonyNojmanSK",
           "photographerUrl": "https://www.pexels.com/@tonynojmansk-186688133",
-          "source": "pexels",
+          "source": "local",
           "sourceUrl": "https://www.pexels.com/photo/view-of-the-terracotta-army-18338672/",
           "downloadUrl": "https://images.pexels.com/photos/18338672/pexels-photo-18338672.jpeg",
           "width": 4887,
-          "height": 2751
+          "height": 2751,
+          "filename": "day-3-image-5.jpeg"
         },
         {
-          "id": 30584842,
-          "url": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "thumb": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "full": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
+          "id": "local-1765140582100-6",
+          "url": "/images/day-3-image-6.jpeg",
+          "thumb": "/images/day-3-image-6.jpeg",
+          "full": "/images/day-3-image-6.jpeg",
           "alt": "Close-up of terracotta warriors in Xi'an, capturing historical artistry and detail.",
           "photographer": "Ala J Graczyk",
           "photographerUrl": "https://www.pexels.com/@alice1",
-          "source": "pexels",
+          "source": "local",
           "sourceUrl": "https://www.pexels.com/photo/terracotta-warriors-in-xi-an-china-30584842/",
           "downloadUrl": "https://images.pexels.com/photos/30584842/pexels-photo-30584842.jpeg",
           "width": 5467,
-          "height": 3545
+          "height": 3545,
+          "filename": "day-3-image-6.jpeg"
         }
       ]
     },
@@ -67,30 +71,32 @@
       "name": "Visit Terracotta Warrior Museum",
       "images": [
         {
-          "id": "pexels-11105685",
-          "url": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "thumb": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "full": "https://images.pexels.com/photos/11105685/pexels-photo-11105685.jpeg",
+          "id": "local-1765140582441-7",
+          "url": "/images/day-3-image-7.jpeg",
+          "thumb": "/images/day-3-image-7.jpeg",
+          "full": "/images/day-3-image-7.jpeg",
           "alt": "Close-up view of the ancient Terracotta Army statues in Xi'an, showcasing historical artistry.",
           "photographer": "Maciej Cisowski",
           "photographerUrl": "https://www.pexels.com/@maciej-cisowski-174297128",
-          "source": "pexels",
+          "source": "local",
           "sourceUrl": "https://www.pexels.com/photo/terracotta-army-statues-11105685/",
           "width": 6720,
-          "height": 4480
+          "height": 4480,
+          "filename": "day-3-image-7.jpeg"
         },
         {
-          "id": "unsplash-x1ediC9D42Y",
-          "url": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
-          "thumb": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=80&w=400",
-          "full": "https://images.unsplash.com/photo-1763622480507-4b9be29a172c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwyfHxUZXJyYWNvdHRhJTIwV2FycmlvciUyME11c2V1bSUyMENoaW5hfGVufDB8MHx8fDE3NjQ0OTgzMTV8MA&ixlib=rb-4.1.0&q=85",
+          "id": "local-1765140582768-8",
+          "url": "/images/day-3-image-8.jpg",
+          "thumb": "/images/day-3-image-8.jpg",
+          "full": "/images/day-3-image-8.jpg",
           "alt": "Terracotta warriors arranged in formation",
           "photographer": "1AmFcS",
           "photographerUrl": "https://unsplash.com/@1amfcs",
-          "source": "unsplash",
+          "source": "local",
           "sourceUrl": "https://unsplash.com/photos/x1ediC9D42Y",
           "width": 4793,
-          "height": 3025
+          "height": 3025,
+          "filename": "day-3-image-8.jpg"
         }
       ]
     },
@@ -98,18 +104,19 @@
       "name": "Hiking at Daming Palace Heritage Park",
       "images": [
         {
-          "id": "wikimedia-158595985",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg/800px-Daming Palace National Heritage Park - Palace Model 02.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg/300px-Daming Palace National Heritage Park - Palace Model 02.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/3/35/Daming_Palace_National_Heritage_Park_-_Palace_Model_02.jpg",
+          "id": "local-1765140583097-9",
+          "url": "/images/day-3-image-9.jpg",
+          "thumb": "/images/day-3-image-9.jpg",
+          "full": "/images/day-3-image-9.jpg",
           "alt": "The Daming Palace, once the grand imperial palace of the Tang Dynasty, stands as a testament to China's rich history and architectural grandeur. Located in Xi'an, Shaanxi, this palace was the political heart of the dynasty, where emperors conducted state affairs and celebrated grand ceremonies. \nAlthough ravaged by time and war, the site has been partially reconstructed and opened to the public, allowing visitors to walk through the echoes of its past glory. It is also recognized as a UNESCO World Heritage Site, further highlighting its historical and cultural significance.",
           "photographer": "xiquinhosilva",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ADaming%20Palace%20National%20Heritage%20Park%20-%20Palace%20Model%2002.jpg",
           "width": 2560,
           "height": 1707,
-          "license": "CC BY 2.0"
+          "license": "CC BY 2.0",
+          "filename": "day-3-image-9.jpg"
         },
         {
           "id": "pixabay-8268910",

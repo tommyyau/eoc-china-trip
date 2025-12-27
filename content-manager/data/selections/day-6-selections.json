@@ -1,6 +1,6 @@
 {
   "day": 6,
-  "lastModified": "2025-11-30T11:03:35.614Z",
+  "lastModified": "2025-12-07T20:49:47.344Z",
   "segments": {
     "6-0-1764440953795": {
       "name": "Hike along the Badaling Great Wall",
@@ -19,17 +19,18 @@
           "height": 4000
         },
         {
-          "id": "pexels-30962084",
-          "url": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "thumb": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "full": "https://images.pexels.com/photos/30962084/pexels-photo-30962084.jpeg",
+          "id": "local-1765140587043-3",
+          "url": "/images/day-6-image-3.jpeg",
+          "thumb": "/images/day-6-image-3.jpeg",
+          "full": "/images/day-6-image-3.jpeg",
           "alt": "Tourists exploring the Great Wall of China under clear blue skies in winter.",
           "photographer": "Mario Johnson",
           "photographerUrl": "https://www.pexels.com/@mario-johnson-949299287",
-          "source": "pexels",
+          "source": "local",
           "sourceUrl": "https://www.pexels.com/photo/great-wall-of-china-with-tourists-in-winter-sunlight-30962084/",
           "width": 4032,
-          "height": 3024
+          "height": 3024,
+          "filename": "day-6-image-3.jpeg"
         }
       ]
     }

@@ -31,7 +31,7 @@ const TRANSPORT_MODES = [
   { value: 'boat', label: 'Boat' }
 ]
 
-function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove }) {
+function SegmentCard({ segment, index, totalSegments, dayNumber, onUpdate, onDelete, onMove }) {
   const [expanded, setExpanded] = useState(false)
 
   const updateField = (field, value) => {
@@ -236,6 +236,7 @@ function SegmentCard({ segment, index, totalSegments, onUpdate, onDelete, onMove
             images={segment.images || []}
             onUpdate={(images) => updateField('images', images)}
             segmentTitle={segment.title}
+            dayNumber={dayNumber}
           />
         </div>
       )}

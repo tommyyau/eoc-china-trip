@@ -5,6 +5,7 @@ import OpenAI from 'openai'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import multer from 'multer'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -14,6 +15,52 @@ const RESEARCH_DIR = path.join(__dirname, '..', 'research-output')
 const SELECTIONS_DIR = path.join(__dirname, 'data', 'selections')
 const ITINERARY_FILE = path.join(__dirname, 'data', 'itinerary.json')
 const SAVED_TRIPS_FILE = path.join(__dirname, 'data', 'saved-trips.json')
+const IMAGES_DIR = path.join(__dirname, '..', 'china-hiking-tour', 'public', 'images')
+
+// Ensure images directory exists
+if (!fs.existsSync(IMAGES_DIR)) {
+  fs.mkdirSync(IMAGES_DIR, { recursive: true })
+}
+
+// Configure multer for image uploads
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, IMAGES_DIR)
+  },
+  filename: (req, file, cb) => {
+    const dayNumber = req.body.dayNumber || 0
+    const ext = path.extname(file.originalname).toLowerCase()
+
+    // Find next available image number for this day
+    const existingFiles = fs.readdirSync(IMAGES_DIR)
+    const dayPattern = new RegExp(`^day-${dayNumber}-image-(\\d+)`)
+    let maxNum = 0
+    existingFiles.forEach(f => {
+      const match = f.match(dayPattern)
+      if (match) {
+        maxNum = Math.max(maxNum, parseInt(match[1]))
+      }
+    })
+
+    const filename = `day-${dayNumber}-image-${maxNum + 1}${ext}`
+    cb(null, filename)
+  }
+})
+
+const upload = multer({
+  storage,
+  fileFilter: (req, file, cb) => {
+    const allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
+    if (allowedTypes.includes(file.mimetype)) {
+      cb(null, true)
+    } else {
+      cb(new Error('Invalid file type. Only JPEG, PNG, GIF, and WebP are allowed.'))
+    }
+  },
+  limits: {
+    fileSize: 10 * 1024 * 1024 // 10MB max
+  }
+})
 
 // API keys for image search
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY || '4wGTin267DbXTH31pzcFYbx4FkOoYJflzmauitLlw_c'
@@ -436,6 +483,135 @@ app.post('/api/images/search', async (req, res) => {
     res.json({ images })
   } catch (error) {
     console.error('Image search error:', error)
+    res.status(500).json({ error: error.message })
+  }
+})
+
+// ============================================
+// IMAGE UPLOAD ENDPOINTS
+// ============================================
+
+// POST /api/upload-image - Upload an image from local filesystem
+// Use query param for dayNumber since body isn't available during multer processing
+app.post('/api/upload-image', (req, res) => {
+  // Get dayNumber from query before multer runs
+  const dayNumber = req.query.dayNumber || req.body?.dayNumber || 0
+
+  // Create a custom storage that uses the dayNumber
+  const customStorage = multer.diskStorage({
+    destination: (req, file, cb) => {
+      cb(null, IMAGES_DIR)
+    },
+    filename: (req, file, cb) => {
+      const ext = path.extname(file.originalname).toLowerCase()
+      const existingFiles = fs.readdirSync(IMAGES_DIR)
+      const dayPattern = new RegExp(`^day-${dayNumber}-image-(\\d+)`)
+      let maxNum = 0
+      existingFiles.forEach(f => {
+        const match = f.match(dayPattern)
+        if (match) {
+          maxNum = Math.max(maxNum, parseInt(match[1]))
+        }
+      })
+      const filename = `day-${dayNumber}-image-${maxNum + 1}${ext}`
+      cb(null, filename)
+    }
+  })
+
+  const customUpload = multer({
+    storage: customStorage,
+    fileFilter: (req, file, cb) => {
+      const allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
+      if (allowedTypes.includes(file.mimetype)) {
+        cb(null, true)
+      } else {
+        cb(new Error('Invalid file type. Only JPEG, PNG, GIF, and WebP are allowed.'))
+      }
+    },
+    limits: { fileSize: 10 * 1024 * 1024 }
+  }).single('image')
+
+  customUpload(req, res, (err) => {
+    if (err) {
+      console.error('Upload error:', err)
+      return res.status(400).json({ error: err.message })
+    }
+
+    if (!req.file) {
+      return res.status(400).json({ error: 'No image file provided' })
+    }
+
+    const filename = req.file.filename
+    const url = `/images/${filename}`
+
+    console.log(`Image uploaded: ${filename} -> ${IMAGES_DIR}`)
+
+    res.json({
+      success: true,
+      image: {
+        id: `local-${Date.now()}`,
+        filename,
+        url,
+        thumb: url,
+        full: url,
+        alt: req.body?.alt || filename.replace(/\.[^.]+$/, '').replace(/-/g, ' '),
+        photographer: 'Local Upload',
+        source: 'local'
+      }
+    })
+  })
+})
+
+// DELETE /api/delete-image/:filename - Delete an uploaded image
+app.delete('/api/delete-image/:filename', (req, res) => {
+  try {
+    const filename = req.params.filename
+
+    // Security: only allow deleting files that match our naming pattern
+    if (!filename.match(/^day-\d+-image-\d+\.(jpg|jpeg|png|gif|webp)$/i)) {
+      return res.status(400).json({ error: 'Invalid filename format' })
+    }
+
+    const filePath = path.join(IMAGES_DIR, filename)
+
+    if (!fs.existsSync(filePath)) {
+      return res.status(404).json({ error: 'Image not found' })
+    }
+
+    fs.unlinkSync(filePath)
+    console.log(`Image deleted: ${filename}`)
+
+    res.json({ success: true, deleted: filename })
+  } catch (error) {
+    console.error('Delete error:', error)
+    res.status(500).json({ error: error.message })
+  }
+})
+
+// GET /api/images/list - List all uploaded images
+app.get('/api/images/list', (req, res) => {
+  try {
+    if (!fs.existsSync(IMAGES_DIR)) {
+      return res.json({ images: [] })
+    }
+
+    const files = fs.readdirSync(IMAGES_DIR)
+    const images = files
+      .filter(f => /\.(jpg|jpeg|png|gif|webp)$/i.test(f))
+      .map(filename => ({
+        id: `local-${filename}`,
+        filename,
+        url: `/images/${filename}`,
+        thumb: `/images/${filename}`,
+        full: `/images/${filename}`,
+        alt: filename.replace(/\.[^.]+$/, '').replace(/-/g, ' '),
+        photographer: 'Local Upload',
+        source: 'local'
+      }))
+
+    res.json({ images })
+  } catch (error) {
+    console.error('List images error:', error)
     res.status(500).json({ error: error.message })
   }
 })

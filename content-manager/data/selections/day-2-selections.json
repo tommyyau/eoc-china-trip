@@ -1,51 +1,54 @@
 {
   "day": 2,
-  "lastModified": "2025-11-30T06:09:29.389Z",
+  "lastModified": "2025-12-07T20:49:41.078Z",
   "segments": {
     "2-1-1764440953795": {
       "name": "Visit Muslim Quarter and Great Mosque",
       "images": [
         {
-          "id": "wikimedia-15673796",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/1_xian_muslim_quarter_china_2011.JPG/800px-1 xian muslim quarter china 2011.JPG",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/1_xian_muslim_quarter_china_2011.JPG/300px-1 xian muslim quarter china 2011.JPG",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/0/09/1_xian_muslim_quarter_china_2011.JPG",
+          "id": "local-1765140578008-4",
+          "url": "/images/day-2-image-4.jpg",
+          "thumb": "/images/day-2-image-4.jpg",
+          "full": "/images/day-2-image-4.jpg",
           "alt": "xi'an china shanxi muslim quarter night 2011",
           "photographer": "chensiyuan",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3A1%20xian%20muslim%20quarter%20china%202011.JPG",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3A1%20xian%20muslim%20quarter%20china%202011.JPG",
           "width": 4243,
           "height": 2822,
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 4.0",
+          "filename": "day-2-image-4.jpg"
         },
         {
-          "id": "wikimedia-151466894",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Great_Mosque_of_Xi%27an_20240808_022.jpg/800px-Great Mosque of Xi'an 20240808 022.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Great_Mosque_of_Xi%27an_20240808_022.jpg/300px-Great Mosque of Xi'an 20240808 022.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/2/20/Great_Mosque_of_Xi%27an_20240808_022.jpg",
+          "id": "local-1765140578352-5",
+          "url": "/images/day-2-image-5.jpg",
+          "thumb": "/images/day-2-image-5.jpg",
+          "full": "/images/day-2-image-5.jpg",
           "alt": "Great Mosque of Xi'an",
           "photographer": "沈澄心",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20022.jpg",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20022.jpg",
           "width": 2928,
           "height": 3904,
-          "license": "CC0"
+          "license": "CC0",
+          "filename": "day-2-image-5.jpg"
         },
         {
-          "id": "wikimedia-151466889",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg/800px-Great Mosque of Xi'an 20240808 018.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg/300px-Great Mosque of Xi'an 20240808 018.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/0/05/Great_Mosque_of_Xi%27an_20240808_018.jpg",
+          "id": "local-1765140578683-6",
+          "url": "/images/day-2-image-6.jpg",
+          "thumb": "/images/day-2-image-6.jpg",
+          "full": "/images/day-2-image-6.jpg",
           "alt": "Great Mosque of Xi'an",
           "photographer": "沈澄心",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20018.jpg",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AGreat%20Mosque%20of%20Xi'an%2020240808%20018.jpg",
           "width": 2928,
           "height": 3904,
-          "license": "CC0"
+          "license": "CC0",
+          "filename": "day-2-image-6.jpg"
         }
       ]
     },
@@ -79,18 +82,19 @@
           "height": 4000
         },
         {
-          "id": "wikimedia-2705921",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Xi%27an_-_City_wall_-_013.jpg/800px-Xi'an - City wall - 013.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Xi%27an_-_City_wall_-_013.jpg/300px-Xi'an - City wall - 013.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Xi%27an_-_City_wall_-_013.jpg",
+          "id": "local-1765140579791-7",
+          "url": "/images/day-2-image-7.jpg",
+          "thumb": "/images/day-2-image-7.jpg",
+          "full": "/images/day-2-image-7.jpg",
           "alt": "City Wall in Xi'an, China",
           "photographer": "Maros M r a z (Maros)",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3AXi'an%20-%20City%20wall%20-%20013.jpg",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3AXi'an%20-%20City%20wall%20-%20013.jpg",
           "width": 2336,
           "height": 3504,
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 3.0",
+          "filename": "day-2-image-7.jpg"
         }
       ]
     },
@@ -98,31 +102,33 @@
       "name": "City Walk in Old Town Center",
       "images": [
         {
-          "id": "pexels-20438290",
-          "url": "https://images.pexels.com/photos/20438290/pexels-photo-20438290.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-          "thumb": "https://images.pexels.com/photos/20438290/pexels-photo-20438290.jpeg?auto=compress&cs=tinysrgb&h=350",
-          "full": "https://images.pexels.com/photos/20438290/pexels-photo-20438290.jpeg",
+          "id": "local-1765140580133-8",
+          "url": "/images/day-2-image-8.jpeg",
+          "thumb": "/images/day-2-image-8.jpeg",
+          "full": "/images/day-2-image-8.jpeg",
           "alt": "Majestic view of the illuminated Bell Tower in Xi'an, China against a twilight sky.",
           "photographer": "molin liu",
           "photographerUrl": "https://www.pexels.com/@molin-liu-1391737",
-          "source": "pexels",
+          "source": "local",
           "sourceUrl": "https://www.pexels.com/photo/illuminated-facade-of-the-bell-tower-of-xian-in-china-20438290/",
           "width": 6720,
-          "height": 4480
+          "height": 4480,
+          "filename": "day-2-image-8.jpeg"
         },
         {
-          "id": "wikimedia-61014361",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Bell_Tower_and_Drum_Tower%2C_Xi%27an%2C_China_-_panoramio.jpg/800px-Bell Tower and Drum Tower, Xi'an, China - panoramio.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Bell_Tower_and_Drum_Tower%2C_Xi%27an%2C_China_-_panoramio.jpg/300px-Bell Tower and Drum Tower, Xi'an, China - panoramio.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bell_Tower_and_Drum_Tower%2C_Xi%27an%2C_China_-_panoramio.jpg",
+          "id": "local-1765140580458-9",
+          "url": "/images/day-2-image-9.jpg",
+          "thumb": "/images/day-2-image-9.jpg",
+          "full": "/images/day-2-image-9.jpg",
           "alt": "Bell Tower and Drum Tower, Xi'an, China",
           "photographer": "Aaron Zhu",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ABell%20Tower%20and%20Drum%20Tower%2C%20Xi'an%2C%20China%20-%20panoramio.jpg",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABell%20Tower%20and%20Drum%20Tower%2C%20Xi'an%2C%20China%20-%20panoramio.jpg",
           "width": 3456,
           "height": 1835,
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 3.0",
+          "filename": "day-2-image-9.jpg"
         }
       ]
     },
@@ -130,17 +136,18 @@
       "name": "Dumpling Banquet Dinner",
       "images": [
         {
-          "id": "unsplash-ptUBOI5QouA",
-          "url": "https://images.unsplash.com/photo-1748248078354-5b085351714f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxEdW1wbGluZyUyMEJhbnF1ZXQlMjBEaW5uZXIlMjBYaSUyN2FuJTIwfGVufDB8MHx8fDE3NjQ0ODI5NjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-          "thumb": "https://images.unsplash.com/photo-1748248078354-5b085351714f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxEdW1wbGluZyUyMEJhbnF1ZXQlMjBEaW5uZXIlMjBYaSUyN2FuJTIwfGVufDB8MHx8fDE3NjQ0ODI5NjN8MA&ixlib=rb-4.1.0&q=80&w=400",
-          "full": "https://images.unsplash.com/photo-1748248078354-5b085351714f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHwzfHxEdW1wbGluZyUyMEJhbnF1ZXQlMjBEaW5uZXIlMjBYaSUyN2FuJTIwfGVufDB8MHx8fDE3NjQ0ODI5NjN8MA&ixlib=rb-4.1.0&q=85",
+          "id": "local-1765140580778-10",
+          "url": "/images/day-2-image-10.jpg",
+          "thumb": "/images/day-2-image-10.jpg",
+          "full": "/images/day-2-image-10.jpg",
           "alt": "Steaming dumplings are being served with tongs.",
           "photographer": "Boris Izmaylov",
           "photographerUrl": "https://unsplash.com/@borisizmaylov",
-          "source": "unsplash",
+          "source": "local",
           "sourceUrl": "https://unsplash.com/photos/ptUBOI5QouA",
           "width": 5786,
-          "height": 3857
+          "height": 3857,
+          "filename": "day-2-image-10.jpg"
         }
       ]
     }

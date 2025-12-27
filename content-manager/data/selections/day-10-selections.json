@@ -1,45 +1,49 @@
 {
   "day": 10,
-  "lastModified": "2025-11-30T12:32:26.475Z",
+  "lastModified": "2025-12-07T20:49:58.033Z",
   "segments": {
     "10-0-1764440953795": {
       "name": "Hike in Wuyuan",
       "images": [
         {
-          "id": "custom-1764505465447",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Wuyuan_jiangling.jpg",
+          "id": "local-1765140592847-3",
+          "url": "/images/day-10-image-3.jpg",
+          "thumb": "/images/day-10-image-3.jpg",
+          "full": "/images/day-10-image-3.jpg",
           "alt": "Wuyuan Jiangling",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-10-image-3.jpg"
         },
         {
-          "id": "custom-1764505572177",
-          "url": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
-          "thumb": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
-          "full": "https://www.ourchinastory.com/images/cover/best-of-china/2023/04/horizontal/Ourchinastory-jujing-village_x2.jpg",
+          "id": "local-1765140594720-4",
+          "url": "/images/day-10-image-4.jpg",
+          "thumb": "/images/day-10-image-4.jpg",
+          "full": "/images/day-10-image-4.jpg",
           "alt": "Jujing Village",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-10-image-4.jpg"
         },
         {
-          "id": "custom-1764505880832",
-          "url": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
-          "thumb": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
-          "full": "https://discoverwuyuan.com/wp-content/uploads/2020/07/Wolong_header.jpg",
+          "id": "local-1765140596288-5",
+          "url": "/images/day-10-image-5.jpg",
+          "thumb": "/images/day-10-image-5.jpg",
+          "full": "/images/day-10-image-5.jpg",
           "alt": "Wolong Valley",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-10-image-5.jpg"
         },
         {
-          "id": "custom-1764505945371",
-          "url": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
-          "thumb": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
-          "full": "https://discoverwuyuan.com/wp-content/uploads/2025/01/MoonBay_rafting2-2048x1536.jpg",
+          "id": "local-1765140597732-6",
+          "url": "/images/day-10-image-6.jpg",
+          "thumb": "/images/day-10-image-6.jpg",
+          "full": "/images/day-10-image-6.jpg",
           "alt": "Moon Bay",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-10-image-6.jpg"
         }
       ]
     }

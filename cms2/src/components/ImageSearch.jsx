@@ -1,41 +1,66 @@
-import { useState, useEffect } from 'react'
-import { Search, X, Check, Link, Plus } from 'lucide-react'
-import { searchImages } from '../utils/storage'
+import { useState, useRef } from 'react'
+import { Upload, X, Trash2, Check } from 'lucide-react'
 
-function ImageSearch({ initialQuery, onSelect, onClose }) {
-  const [query, setQuery] = useState(initialQuery || '')
-  const [results, setResults] = useState([])
-  const [loading, setLoading] = useState(false)
+function ImageSearch({ initialQuery, onSelect, onClose, dayNumber = 0 }) {
+  const [uploading, setUploading] = useState(false)
+  const [uploadedImages, setUploadedImages] = useState([])
   const [selected, setSelected] = useState([])
-  const [provider, setProvider] = useState('all')
-  const [showManualAdd, setShowManualAdd] = useState(false)
-  const [manualUrl, setManualUrl] = useState('')
-  const [manualAlt, setManualAlt] = useState('')
+  const [error, setError] = useState(null)
+  const fileInputRef = useRef(null)
 
-  // Search on initial load if query provided
-  useEffect(() => {
-    if (initialQuery) {
-      handleSearch()
-    }
-  }, [])
+  const handleFileSelect = async (e) => {
+    const files = e.target.files
+    if (!files || files.length === 0) return
 
-  const handleSearch = async () => {
-    if (!query.trim()) return
+    setUploading(true)
+    setError(null)
 
-    setLoading(true)
-    setSelected([])
     try {
-      const images = await searchImages(query, provider, 18)
-      setResults(images)
+      for (const file of files) {
+        const formData = new FormData()
+        formData.append('image', file)
+
+        const response = await fetch(`/api/images/upload?dayNumber=${dayNumber}`, {
+          method: 'POST',
+          body: formData
+        })
+
+        if (!response.ok) {
+          const err = await response.json()
+          throw new Error(err.error || 'Upload failed')
+        }
+
+        const result = await response.json()
+        if (result.success && result.image) {
+          setUploadedImages(prev => [...prev, result.image])
+          setSelected(prev => [...prev, result.image])
+        }
+      }
     } catch (err) {
-      console.error('Search failed:', err)
+      console.error('Upload error:', err)
+      setError(err.message)
     }
-    setLoading(false)
+
+    setUploading(false)
+    if (fileInputRef.current) {
+      fileInputRef.current.value = ''
+    }
   }
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSearch()
+  const handleDelete = async (image) => {
+    if (!image.filename) return
+
+    try {
+      const response = await fetch(`/api/images/${image.filename}`, {
+        method: 'DELETE'
+      })
+
+      if (response.ok) {
+        setUploadedImages(prev => prev.filter(img => img.id !== image.id))
+        setSelected(prev => prev.filter(img => img.id !== image.id))
+      }
+    } catch (err) {
+      console.error('Delete error:', err)
     }
   }
 
@@ -55,124 +80,57 @@ function ImageSearch({ initialQuery, onSelect, onClose }) {
     }
   }
 
-  const handleManualAdd = () => {
-    if (!manualUrl.trim()) return
-
-    const manualImage = {
-      id: `manual-${Date.now()}`,
-      src: manualUrl.trim(),
-      thumb: manualUrl.trim(),
-      full: manualUrl.trim(),
-      alt: manualAlt.trim() || 'Image',
-      photographer: '',
-      photographerUrl: '',
-      source: 'manual',
-      sourceUrl: manualUrl.trim(),
-    }
-
-    onSelect([manualImage])
-    setManualUrl('')
-    setManualAlt('')
-    setShowManualAdd(false)
-  }
-
   return (
     <div className="image-search-modal" onClick={onClose}>
       <div className="image-search-content" onClick={(e) => e.stopPropagation()}>
         <div className="image-search-header">
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            onKeyPress={handleKeyPress}
-            placeholder="Search images..."
-            autoFocus
-          />
-          <select
-            value={provider}
-            onChange={(e) => setProvider(e.target.value)}
-            style={{ padding: '10px', borderRadius: 6, border: '1px solid #ddd' }}
-          >
-            <option value="all">All Sources</option>
-            <option value="unsplash">Unsplash</option>
-            <option value="pexels">Pexels</option>
-            <option value="pixabay">Pixabay</option>
-            <option value="wikimedia">Wikimedia</option>
-          </select>
-          <button onClick={handleSearch} className="btn btn-primary" disabled={loading}>
-            <Search size={16} />
-            {loading ? 'Searching...' : 'Search'}
-          </button>
-          <button
-            onClick={() => setShowManualAdd(!showManualAdd)}
-            className={`btn ${showManualAdd ? 'btn-primary' : 'btn-secondary'}`}
-            title="Add image by URL"
-          >
-            <Link size={16} />
-          </button>
+          <h3 style={{ margin: 0, flex: 1 }}>Upload Images</h3>
           <button onClick={onClose} className="btn btn-secondary">
             <X size={16} />
           </button>
         </div>
 
-        {/* Manual URL Input */}
-        {showManualAdd && (
-          <div style={{
-            padding: 16,
-            borderBottom: '1px solid #ddd',
-            background: '#f9f9f9',
-            display: 'flex',
-            gap: 12,
-            alignItems: 'flex-end'
-          }}>
-            <div style={{ flex: 2 }}>
-              <label style={{ display: 'block', fontSize: 12, fontWeight: 600, marginBottom: 4, color: '#666' }}>
-                Image URL
-              </label>
-              <input
-                type="text"
-                value={manualUrl}
-                onChange={(e) => setManualUrl(e.target.value)}
-                placeholder="https://example.com/image.jpg"
-                style={{ width: '100%', padding: '10px 12px', border: '1px solid #ddd', borderRadius: 6 }}
-              />
-            </div>
-            <div style={{ flex: 1 }}>
-              <label style={{ display: 'block', fontSize: 12, fontWeight: 600, marginBottom: 4, color: '#666' }}>
-                Alt Text
-              </label>
-              <input
-                type="text"
-                value={manualAlt}
-                onChange={(e) => setManualAlt(e.target.value)}
-                placeholder="Description..."
-                style={{ width: '100%', padding: '10px 12px', border: '1px solid #ddd', borderRadius: 6 }}
-              />
-            </div>
-            <button
-              onClick={handleManualAdd}
-              className="btn btn-primary"
-              disabled={!manualUrl.trim()}
-            >
-              <Plus size={16} />
-              Add
-            </button>
-          </div>
-        )}
+        {/* Upload Section */}
+        <div style={{
+          padding: 20,
+          borderBottom: '1px solid #ddd',
+          background: '#f9f9f9',
+          textAlign: 'center'
+        }}>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/jpeg,image/png,image/gif,image/webp"
+            multiple
+            onChange={handleFileSelect}
+            style={{ display: 'none' }}
+          />
+          <button
+            onClick={() => fileInputRef.current?.click()}
+            className="btn btn-primary"
+            disabled={uploading}
+            style={{ padding: '12px 24px', fontSize: 16 }}
+          >
+            <Upload size={20} />
+            {uploading ? 'Uploading...' : 'Choose Images from Computer'}
+          </button>
+          <p style={{ margin: '12px 0 0', color: '#666', fontSize: 14 }}>
+            Select JPEG, PNG, GIF, or WebP images (max 10MB each)
+          </p>
+          {error && (
+            <p style={{ color: '#d32f2f', marginTop: 8 }}>{error}</p>
+          )}
+        </div>
 
+        {/* Uploaded Images Grid */}
         <div className="image-search-results">
-          {loading ? (
-            <div style={{ textAlign: 'center', padding: 40 }}>
-              <div className="spinner"></div>
-              <p>Searching...</p>
-            </div>
-          ) : results.length === 0 ? (
+          {uploadedImages.length === 0 ? (
             <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>
-              {query ? 'No images found. Try a different search or add by URL.' : 'Enter a search term to find images, or add by URL.'}
+              No images uploaded yet. Click the button above to select images from your computer.
             </div>
           ) : (
             <div className="search-grid">
-              {results.map(image => {
+              {uploadedImages.map(image => {
                 const isSelected = selected.some(img => img.id === image.id)
                 return (
                   <div key={image.id}>
@@ -180,7 +138,7 @@ function ImageSearch({ initialQuery, onSelect, onClose }) {
                       className={`search-image ${isSelected ? 'selected' : ''}`}
                       onClick={() => toggleSelect(image)}
                     >
-                      <img src={image.thumb} alt={image.alt} />
+                      <img src={image.thumb || image.src} alt={image.alt} />
                       {isSelected && (
                         <div style={{
                           position: 'absolute',
@@ -197,9 +155,32 @@ function ImageSearch({ initialQuery, onSelect, onClose }) {
                           <Check size={14} color="white" />
                         </div>
                       )}
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          handleDelete(image)
+                        }}
+                        style={{
+                          position: 'absolute',
+                          bottom: 4,
+                          right: 4,
+                          width: 28,
+                          height: 28,
+                          background: 'rgba(211, 47, 47, 0.9)',
+                          border: 'none',
+                          borderRadius: '50%',
+                          cursor: 'pointer',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center'
+                        }}
+                        title="Delete image"
+                      >
+                        <Trash2 size={14} color="white" />
+                      </button>
                     </div>
                     <div className="image-source">
-                      {image.source} • {image.photographer}
+                      {image.filename || 'Local Upload'}
                     </div>
                   </div>
                 )
@@ -208,6 +189,7 @@ function ImageSearch({ initialQuery, onSelect, onClose }) {
           )}
         </div>
 
+        {/* Footer with Add button */}
         {selected.length > 0 && (
           <div style={{
             padding: 16,

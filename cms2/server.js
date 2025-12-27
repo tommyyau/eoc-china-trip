@@ -4,6 +4,7 @@ import cors from 'cors'
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
+import multer from 'multer'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -13,6 +14,12 @@ const DATA_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data',
 const INFO_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'info-page.json')
 const HOME_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'home-page.json')
 const ITINERARY_PAGE_FILE = path.join(__dirname, '..', 'china-hiking-tour', 'src', 'data', 'itinerary-page.json')
+const IMAGES_DIR = path.join(__dirname, '..', 'china-hiking-tour', 'public', 'images')
+
+// Ensure images directory exists
+if (!fs.existsSync(IMAGES_DIR)) {
+  fs.mkdirSync(IMAGES_DIR, { recursive: true })
+}
 
 // API keys for image search (from .env file)
 const UNSPLASH_ACCESS_KEY = process.env.UNSPLASH_ACCESS_KEY
@@ -22,6 +29,9 @@ const PIXABAY_API_KEY = process.env.PIXABAY_API_KEY
 const app = express()
 app.use(cors())
 app.use(express.json({ limit: '10mb' }))
+
+// Serve uploaded images
+app.use('/images', express.static(IMAGES_DIR))
 
 // ============================================
 // ITINERARY LOAD/SAVE
@@ -342,6 +352,91 @@ app.post('/api/images/search', async (req, res) => {
     console.error('Image search error:', error)
     res.status(500).json({ error: error.message })
   }
+})
+
+// ============================================
+// IMAGE UPLOAD (Local Storage)
+// ============================================
+
+// POST /api/images/upload - Upload image from local filesystem
+app.post('/api/images/upload', (req, res) => {
+  const dayNumber = req.query.dayNumber || 0
+
+  const storage = multer.diskStorage({
+    destination: (req, file, cb) => cb(null, IMAGES_DIR),
+    filename: (req, file, cb) => {
+      const ext = path.extname(file.originalname).toLowerCase()
+      const existingFiles = fs.readdirSync(IMAGES_DIR)
+      const dayPattern = new RegExp(`^day-${dayNumber}-image-(\\d+)`)
+      let maxNum = 0
+      existingFiles.forEach(f => {
+        const match = f.match(dayPattern)
+        if (match) maxNum = Math.max(maxNum, parseInt(match[1]))
+      })
+      cb(null, `day-${dayNumber}-image-${maxNum + 1}${ext}`)
+    }
+  })
+
+  const upload = multer({
+    storage,
+    fileFilter: (req, file, cb) => {
+      const allowed = ['image/jpeg', 'image/png', 'image/gif', 'image/webp']
+      cb(null, allowed.includes(file.mimetype))
+    },
+    limits: { fileSize: 10 * 1024 * 1024 }
+  }).single('image')
+
+  upload(req, res, (err) => {
+    if (err) return res.status(400).json({ error: err.message })
+    if (!req.file) return res.status(400).json({ error: 'No image provided' })
+
+    const filename = req.file.filename
+    res.json({
+      success: true,
+      image: {
+        id: `local-${Date.now()}`,
+        src: `/images/${filename}`,
+        thumb: `/images/${filename}`,
+        full: `/images/${filename}`,
+        alt: filename.replace(/\.[^.]+$/, '').replace(/-/g, ' '),
+        photographer: 'Local Upload',
+        source: 'local',
+        filename
+      }
+    })
+  })
+})
+
+// DELETE /api/images/:filename - Delete uploaded image
+app.delete('/api/images/:filename', (req, res) => {
+  const { filename } = req.params
+  if (!filename.match(/^day-\d+-image-\d+\.(jpg|jpeg|png|gif|webp)$/i)) {
+    return res.status(400).json({ error: 'Invalid filename' })
+  }
+  const filePath = path.join(IMAGES_DIR, filename)
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).json({ error: 'Not found' })
+  }
+  fs.unlinkSync(filePath)
+  res.json({ success: true })
+})
+
+// GET /api/images/list - List uploaded images
+app.get('/api/images/list', (req, res) => {
+  const files = fs.existsSync(IMAGES_DIR) ? fs.readdirSync(IMAGES_DIR) : []
+  const images = files
+    .filter(f => /\.(jpg|jpeg|png|gif|webp)$/i.test(f))
+    .map(filename => ({
+      id: `local-${filename}`,
+      src: `/images/${filename}`,
+      thumb: `/images/${filename}`,
+      full: `/images/${filename}`,
+      alt: filename.replace(/\.[^.]+$/, '').replace(/-/g, ' '),
+      photographer: 'Local Upload',
+      source: 'local',
+      filename
+    }))
+  res.json({ images })
 })
 
 const PORT = 3002

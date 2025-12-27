@@ -1,18 +1,19 @@
 {
   "day": 11,
-  "lastModified": "2025-11-30T12:38:33.956Z",
+  "lastModified": "2025-12-07T20:49:58.982Z",
   "segments": {
     "11-0-1764440953795": {
       "name": "Visit Huangling",
       "images": [
         {
-          "id": "custom-1764506165222",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Autumn_sun_drying_at_Huangling.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Autumn_sun_drying_at_Huangling.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Autumn_sun_drying_at_Huangling.jpg",
+          "id": "local-1765140598268-3",
+          "url": "/images/day-11-image-3.jpg",
+          "thumb": "/images/day-11-image-3.jpg",
+          "full": "/images/day-11-image-3.jpg",
           "alt": "Huangling",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-11-image-3.jpg"
         }
       ]
     },
@@ -20,13 +21,14 @@
       "name": "Hike in Wangxian Valley",
       "images": [
         {
-          "id": "custom-1764506313000",
-          "url": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy41NGFWUdl7_vwzAQSvBAbFPWkx4gF1VSR6FFmvHJiCL_NAP4ka-o71xwLW3p5GmOVPBovYiq3cwNc-1aZdC3Hw2OAed5QHKjTr8hfUpnyRZBx55tVrMA__oT7XYzJGp9kmDL3fmpUvYE=s1360-w1360-h1020-rw",
-          "thumb": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy41NGFWUdl7_vwzAQSvBAbFPWkx4gF1VSR6FFmvHJiCL_NAP4ka-o71xwLW3p5GmOVPBovYiq3cwNc-1aZdC3Hw2OAed5QHKjTr8hfUpnyRZBx55tVrMA__oT7XYzJGp9kmDL3fmpUvYE=s1360-w1360-h1020-rw",
-          "full": "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSy41NGFWUdl7_vwzAQSvBAbFPWkx4gF1VSR6FFmvHJiCL_NAP4ka-o71xwLW3p5GmOVPBovYiq3cwNc-1aZdC3Hw2OAed5QHKjTr8hfUpnyRZBx55tVrMA__oT7XYzJGp9kmDL3fmpUvYE=s1360-w1360-h1020-rw",
+          "id": "local-1765140598680-4",
+          "url": "/images/day-11-image-4.jpg",
+          "thumb": "/images/day-11-image-4.jpg",
+          "full": "/images/day-11-image-4.jpg",
           "alt": "Wangxian Valley",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-11-image-4.jpg"
         }
       ]
     }

@@ -1,9 +1,8 @@
-// Main image selection modal with 3 tabs: Research, Search, Custom URL
+// Simple image upload selector - upload from local filesystem only
 
-import { useState, useEffect } from 'react'
-import { loadResearch } from '../utils/imageApi'
-import ImageGrid from './ImageGrid'
-import ImageSearch from './ImageSearch'
+import { useState, useEffect, useRef } from 'react'
+
+const API_BASE = 'http://localhost:3001'
 
 // Small component for selected image thumbnails with hover-to-delete
 function SelectedImageThumb({ image, onPreview, onDelete }) {
@@ -24,12 +23,10 @@ function SelectedImageThumb({ image, onPreview, onDelete }) {
         onClick={onPreview}
         style={{
           width: '100%',
-          height: '75px',
+          height: '120px',
           objectFit: 'cover',
-          borderRadius: '6px',
-          border: '2px solid #27ae60',
-          transition: 'opacity 0.2s',
-          opacity: isHovered ? 0.7 : 1
+          borderRadius: '8px',
+          border: '3px solid #27ae60'
         }}
       />
       {/* Trash overlay - only visible on hover */}
@@ -43,13 +40,13 @@ function SelectedImageThumb({ image, onPreview, onDelete }) {
             right: 0,
             bottom: 0,
             background: 'rgba(231, 76, 60, 0.85)',
-            borderRadius: '6px',
+            borderRadius: '8px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center'
           }}
         >
-          <span style={{ fontSize: '1.2rem' }}>🗑️</span>
+          <span style={{ fontSize: '1.5rem' }}>Delete</span>
         </div>
       )}
     </div>
@@ -57,30 +54,11 @@ function SelectedImageThumb({ image, onPreview, onDelete }) {
 }
 
 function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = [], onSave, onClose }) {
-  const [activeTab, setActiveTab] = useState('research')
-  const [research, setResearch] = useState(null)
-  const [loading, setLoading] = useState(true)
   const [selectedImages, setSelectedImages] = useState(existingImages)
-  const [customUrl, setCustomUrl] = useState('')
-  const [customAlt, setCustomAlt] = useState('')
-  const [lightboxImage, setLightboxImage] = useState(null) // For full-screen preview
-  const [deleteConfirm, setDeleteConfirm] = useState(null) // For delete confirmation
-
-  // Load research data on mount
-  useEffect(() => {
-    const fetchResearch = async () => {
-      setLoading(true)
-      try {
-        const data = await loadResearch(dayNumber)
-        setResearch(data)
-      } catch (e) {
-        console.error('Failed to load research:', e)
-      } finally {
-        setLoading(false)
-      }
-    }
-    fetchResearch()
-  }, [dayNumber])
+  const [uploading, setUploading] = useState(false)
+  const [lightboxImage, setLightboxImage] = useState(null)
+  const [deleteConfirm, setDeleteConfirm] = useState(null)
+  const fileInputRef = useRef(null)
 
   // Handle Escape key for lightbox
   useEffect(() => {
@@ -97,169 +75,56 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
     return () => window.removeEventListener('keydown', handleKeyDown)
   }, [lightboxImage, deleteConfirm])
 
-  // Helper to get activity name from different data formats
-  const getActivityName = (a) => a.name || a.activity || ''
+  const handleFileSelect = async (e) => {
+    const files = e.target.files
+    if (!files || files.length === 0) return
 
-  // Find the matching activity from research data
-  const getMatchingActivity = () => {
-    if (!research || !research.activities) return null
+    setUploading(true)
 
-    // For day-overview, return null (will show all activities)
-    if (segmentId === 'day-overview') return null
+    try {
+      for (const file of files) {
+        const formData = new FormData()
+        formData.append('image', file)
 
-    // Try to find matching activity by segment title
-    if (segmentTitle) {
-      const matchingActivity = research.activities.find(a => {
-        const activityName = getActivityName(a).toLowerCase()
-        const title = segmentTitle.toLowerCase()
-        return activityName.includes(title) ||
-               title.includes(activityName) ||
-               // Also check individual words
-               title.split(' ').some(word => word.length > 3 && activityName.includes(word))
-      })
-      if (matchingActivity) return matchingActivity
-    }
+        const response = await fetch(`${API_BASE}/api/upload-image?dayNumber=${dayNumber}`, {
+          method: 'POST',
+          body: formData
+        })
 
-    return null
-  }
-
-  // Get research images for this segment/activity
-  const getResearchImages = () => {
-    if (!research || !research.activities) return []
-
-    const matchingActivity = getMatchingActivity()
-
-    // Filter out deprecated source.unsplash.com URLs (service shut down in 2022)
-    const filterBrokenUrls = (images) => {
-      return images.filter(img => {
-        const url = img.url || ''
-        return !url.includes('source.unsplash.com')
-      })
-    }
-
-    // Ensure all images have IDs
-    const ensureImageIds = (images) => {
-      return filterBrokenUrls(images).map((img, idx) => ({
-        ...img,
-        id: img.id || `img-${idx}-${(img.url || '').slice(-15)}`
-      }))
-    }
-
-    // Helper to get images from activity (handles both formats)
-    const getActivityImages = (activity) => {
-      // Format 1: images directly on activity
-      if (activity.images && activity.images.length > 0) {
-        return ensureImageIds(activity.images)
-      }
-      // Format 2: images in sampleImages array by activity name
-      if (research.sampleImages) {
-        const activityName = getActivityName(activity)
-        const sampleEntry = research.sampleImages.find(s =>
-          activityName.toLowerCase().includes(s.activity?.toLowerCase()) ||
-          s.activity?.toLowerCase().includes(activityName.toLowerCase())
-        )
-        if (sampleEntry && sampleEntry.images) {
-          return ensureImageIds(sampleEntry.images)
+        if (!response.ok) {
+          const error = await response.json()
+          throw new Error(error.error || 'Upload failed')
         }
+
+        const data = await response.json()
+        setSelectedImages(prev => [...prev, data.image])
       }
-      return []
-    }
-
-    // If we found a matching activity, return only its images
-    if (matchingActivity) {
-      return getActivityImages(matchingActivity)
-    }
-
-    // For day-overview or no match, return all images from all activities
-    // First try direct images, then try sampleImages
-    const directImages = research.activities.flatMap(a => a.images || [])
-    if (directImages.length > 0) {
-      return ensureImageIds(directImages)
-    }
-    // Fallback to sampleImages
-    if (research.sampleImages) {
-      return ensureImageIds(research.sampleImages.flatMap(s => s.images || []))
-    }
-    return []
-  }
-
-  // Get the search term used for this activity
-  const getSearchTerm = () => {
-    const matchingActivity = getMatchingActivity()
-    if (matchingActivity) {
-      // Handle both formats: searchTerm or searchQueries[0].query
-      return matchingActivity.searchTerm ||
-             matchingActivity.searchQueries?.[0]?.query ||
-             getActivityName(matchingActivity)
-    }
-    // Default search term based on segment title and day location
-    if (segmentTitle && research?.location?.en) {
-      return `${segmentTitle} ${research.location.en} china`
-    }
-    return segmentTitle || ''
-  }
-
-  // Get all search terms for day overview
-  const getAllSearchTerms = () => {
-    if (!research || !research.activities) return []
-    return research.activities.map(a => ({
-      name: getActivityName(a),
-      searchTerm: a.searchTerm || a.searchQueries?.[0]?.query || getActivityName(a)
-    }))
-  }
-
-  const matchingActivity = getMatchingActivity()
-  const searchTerm = getSearchTerm()
-  const allSearchTerms = getAllSearchTerms()
-
-  const handleToggleImage = (imageId) => {
-    setSelectedImages(prev => {
-      const exists = prev.find(img => img.id === imageId)
-      if (exists) {
-        return prev.filter(img => img.id !== imageId)
-      } else {
-        // Find the image in research
-        const allImages = getResearchImages()
-        const image = allImages.find(img => img.id === imageId)
-        if (image) {
-          return [...prev, image]
-        }
-        return prev
+    } catch (error) {
+      console.error('Upload error:', error)
+      alert(`Upload failed: ${error.message}`)
+    } finally {
+      setUploading(false)
+      // Reset input so same file can be selected again
+      if (fileInputRef.current) {
+        fileInputRef.current.value = ''
       }
-    })
+    }
   }
 
-  const handleAddFromSearch = (image) => {
-    // Check if already selected
-    if (selectedImages.find(img => img.id === image.id)) {
-      alert('Image already selected')
-      return
-    }
-    setSelectedImages(prev => [...prev, image])
-  }
+  const handleRemoveImage = async (imageId) => {
+    const image = selectedImages.find(img => img.id === imageId)
 
-  const handleAddCustomUrl = () => {
-    if (!customUrl.trim()) {
-      alert('Please enter an image URL')
-      return
-    }
-
-    const customImage = {
-      id: `custom-${Date.now()}`,
-      url: customUrl,
-      thumb: customUrl,
-      full: customUrl,
-      alt: customAlt || 'Custom image',
-      photographer: 'Custom',
-      source: 'custom'
+    // If it's a local image, delete the file too
+    if (image && image.source === 'local' && image.filename) {
+      try {
+        await fetch(`${API_BASE}/api/delete-image/${image.filename}`, {
+          method: 'DELETE'
+        })
+      } catch (error) {
+        console.error('Failed to delete file:', error)
+      }
     }
 
-    setSelectedImages(prev => [...prev, customImage])
-    setCustomUrl('')
-    setCustomAlt('')
-  }
-
-  const handleRemoveSelected = (imageId) => {
     setSelectedImages(prev => prev.filter(img => img.id !== imageId))
     setDeleteConfirm(null)
   }
@@ -269,29 +134,9 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
     onClose()
   }
 
-  // Open lightbox with image
   const openLightbox = (image) => {
     setLightboxImage(image)
   }
-
-  // Select image from lightbox
-  const selectFromLightbox = () => {
-    if (lightboxImage) {
-      if (!selectedImages.find(img => img.id === lightboxImage.id)) {
-        setSelectedImages(prev => [...prev, lightboxImage])
-      }
-      setLightboxImage(null)
-    }
-  }
-
-  const selectedIds = new Set(selectedImages.map(img => img.id))
-  const researchImages = getResearchImages()
-
-  const tabs = [
-    { id: 'research', label: `Research (${researchImages.length})` },
-    { id: 'search', label: 'Search New' },
-    { id: 'custom', label: 'Custom URL' }
-  ]
 
   return (
     <div style={{
@@ -311,7 +156,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
         background: 'white',
         borderRadius: '12px',
         width: '100%',
-        maxWidth: '1200px',
+        maxWidth: '800px',
         maxHeight: '90vh',
         display: 'flex',
         flexDirection: 'column',
@@ -326,7 +171,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
           alignItems: 'center'
         }}>
           <div>
-            <h2 style={{ margin: 0 }}>Select Images</h2>
+            <h2 style={{ margin: 0 }}>Upload Images</h2>
             <p style={{ margin: '5px 0 0', color: '#666' }}>
               Day {dayNumber}{segmentTitle ? ` - ${segmentTitle}` : ''}
             </p>
@@ -341,212 +186,80 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
               color: '#666'
             }}
           >
-            ×
+            x
           </button>
         </div>
 
-        {/* Tabs */}
-        <div style={{ display: 'flex', borderBottom: '1px solid #e0e0e0' }}>
-          {tabs.map(tab => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
+        {/* Main Content */}
+        <div style={{ flex: 1, overflow: 'auto', padding: '20px' }}>
+          {/* Upload Area */}
+          <div style={{
+            border: '3px dashed #ccc',
+            borderRadius: '12px',
+            padding: '40px',
+            textAlign: 'center',
+            marginBottom: '20px',
+            background: '#f9f9f9'
+          }}>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/jpeg,image/png,image/gif,image/webp"
+              multiple
+              onChange={handleFileSelect}
+              style={{ display: 'none' }}
+              id="image-upload"
+            />
+            <label
+              htmlFor="image-upload"
               style={{
-                padding: '12px 20px',
-                background: activeTab === tab.id ? '#1a5f7a' : 'transparent',
-                color: activeTab === tab.id ? 'white' : '#666',
-                border: 'none',
-                cursor: 'pointer',
-                fontWeight: activeTab === tab.id ? 'bold' : 'normal'
+                display: 'inline-block',
+                padding: '15px 40px',
+                background: uploading ? '#ccc' : '#1a5f7a',
+                color: 'white',
+                borderRadius: '8px',
+                cursor: uploading ? 'not-allowed' : 'pointer',
+                fontWeight: 'bold',
+                fontSize: '1.1rem'
               }}
             >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Main Content Area with Sidebar */}
-        <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
-          {/* Left: Tab Content */}
-          <div style={{ flex: 1, overflow: 'auto', padding: '20px' }}>
-            {/* Research Tab */}
-            {activeTab === 'research' && (
-              <div>
-                {loading ? (
-                  <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
-                    Loading research data...
-                  </div>
-                ) : researchImages.length === 0 ? (
-                  <div style={{ textAlign: 'center', padding: '40px', color: '#666' }}>
-                    <p>No research images found for this segment.</p>
-                    <p style={{ marginTop: '10px' }}>Try the <strong>Search New</strong> tab with suggested term: <code style={{ background: '#f0f0f0', padding: '4px 8px', borderRadius: '4px' }}>{searchTerm}</code></p>
-                  </div>
-                ) : (
-                  <>
-                    <p style={{ marginBottom: '15px', color: '#666', fontSize: '0.9rem' }}>
-                      Click image to preview full-screen, or use checkbox to select.
-                      <span style={{
-                        display: 'inline-block',
-                        marginLeft: '10px',
-                        padding: '2px 8px',
-                        background: '#1a5f7a',
-                        color: 'white',
-                        borderRadius: '4px',
-                        fontSize: '0.85rem'
-                      }}>
-                        🔍 {searchTerm ? `"${searchTerm.substring(0, 30)}${searchTerm.length > 30 ? '...' : ''}"` : 'all activities'}
-                      </span>
-                    </p>
-                    <ImageGrid
-                      images={researchImages}
-                      selectedIds={selectedIds}
-                      onToggle={handleToggleImage}
-                      onPreview={openLightbox}
-                    />
-                  </>
-                )}
-              </div>
-            )}
-
-            {/* Search Tab */}
-            {activeTab === 'search' && (
-              <div>
-                <ImageSearch
-                  onAddImage={handleAddFromSearch}
-                  onPreview={openLightbox}
-                  initialQuery={searchTerm}
-                />
-              </div>
-            )}
-
-            {/* Custom URL Tab */}
-            {activeTab === 'custom' && (
-              <div>
-                <p style={{ marginBottom: '15px', color: '#666', fontSize: '0.9rem' }}>
-                  Paste any image URL to add it to your selection.
-                </p>
-                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-end', flexWrap: 'wrap' }}>
-                  <div style={{ flex: 1, minWidth: '250px' }}>
-                    <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', fontSize: '0.9rem' }}>
-                      Image URL
-                    </label>
-                    <input
-                      type="url"
-                      value={customUrl}
-                      onChange={(e) => setCustomUrl(e.target.value)}
-                      placeholder="https://example.com/image.jpg"
-                      style={{
-                        width: '100%',
-                        padding: '10px',
-                        border: '2px solid #e0e0e0',
-                        borderRadius: '6px',
-                        fontSize: '1rem'
-                      }}
-                    />
-                  </div>
-                  <div style={{ width: '200px' }}>
-                    <label style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold', fontSize: '0.9rem' }}>
-                      Alt Text <span style={{ fontWeight: 'normal', color: '#999' }}>(optional)</span>
-                    </label>
-                    <input
-                      type="text"
-                      value={customAlt}
-                      onChange={(e) => setCustomAlt(e.target.value)}
-                      placeholder="Description"
-                      style={{
-                        width: '100%',
-                        padding: '10px',
-                        border: '2px solid #e0e0e0',
-                        borderRadius: '6px',
-                        fontSize: '1rem'
-                      }}
-                    />
-                  </div>
-                  <button
-                    onClick={handleAddCustomUrl}
-                    disabled={!customUrl.trim()}
-                    style={{
-                      padding: '10px 20px',
-                      background: customUrl.trim() ? '#27ae60' : '#ccc',
-                      color: 'white',
-                      border: 'none',
-                      borderRadius: '6px',
-                      cursor: customUrl.trim() ? 'pointer' : 'not-allowed',
-                      fontWeight: 'bold',
-                      height: '44px'
-                    }}
-                  >
-                    + Add
-                  </button>
-                </div>
-
-                {/* Preview */}
-                {customUrl && (
-                  <div style={{ marginTop: '20px' }}>
-                    <img
-                      src={customUrl}
-                      alt="Preview"
-                      style={{
-                        maxWidth: '100%',
-                        maxHeight: '300px',
-                        borderRadius: '8px',
-                        border: '2px solid #e0e0e0'
-                      }}
-                      onError={(e) => { e.target.style.display = 'none' }}
-                    />
-                  </div>
-                )}
-              </div>
-            )}
+              {uploading ? 'Uploading...' : 'Choose Images'}
+            </label>
+            <p style={{ marginTop: '15px', color: '#666' }}>
+              Select one or more images from your computer (JPEG, PNG, GIF, WebP)
+            </p>
           </div>
 
-          {/* Right Sidebar: Selected Images */}
-          <div style={{
-            width: '140px',
-            borderLeft: '1px solid #e0e0e0',
-            background: '#f9f9f9',
-            display: 'flex',
-            flexDirection: 'column',
-            flexShrink: 0
-          }}>
-            <div style={{
-              padding: '12px 10px',
-              borderBottom: '1px solid #e0e0e0',
-              fontWeight: 'bold',
-              fontSize: '0.85rem',
-              color: '#333'
-            }}>
-              Selected ({selectedImages.length})
-            </div>
-            <div style={{
-              flex: 1,
-              overflow: 'auto',
-              padding: '10px',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '10px'
-            }}>
-              {selectedImages.length === 0 ? (
-                <div style={{
-                  color: '#999',
-                  fontSize: '0.8rem',
-                  textAlign: 'center',
-                  padding: '20px 5px'
-                }}>
-                  No images selected yet
-                </div>
-              ) : (
-                selectedImages.map(img => (
+          {/* Selected Images Grid */}
+          {selectedImages.length > 0 && (
+            <div>
+              <h3 style={{ marginBottom: '15px' }}>Selected Images ({selectedImages.length})</h3>
+              <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
+                gap: '15px'
+              }}>
+                {selectedImages.map(img => (
                   <SelectedImageThumb
                     key={img.id}
                     image={img}
                     onPreview={() => openLightbox(img)}
                     onDelete={() => setDeleteConfirm(img.id)}
                   />
-                ))
-              )}
+                ))}
+              </div>
             </div>
-          </div>
+          )}
+
+          {selectedImages.length === 0 && (
+            <div style={{
+              textAlign: 'center',
+              padding: '40px',
+              color: '#999'
+            }}>
+              No images selected yet. Click "Choose Images" to upload.
+            </div>
+          )}
         </div>
 
         {/* Footer */}
@@ -582,7 +295,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
               fontWeight: 'bold'
             }}
           >
-            Save Selection ({selectedImages.length} images)
+            Save ({selectedImages.length} images)
           </button>
         </div>
       </div>
@@ -626,7 +339,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
               justifyContent: 'center'
             }}
           >
-            ×
+            x
           </button>
 
           {/* Image */}
@@ -636,7 +349,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
             onClick={(e) => e.stopPropagation()}
             style={{
               maxWidth: '90%',
-              maxHeight: '70vh',
+              maxHeight: '80vh',
               objectFit: 'contain',
               borderRadius: '8px'
             }}
@@ -644,66 +357,9 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
 
           {/* Image info */}
           <div style={{ color: 'white', textAlign: 'center', marginTop: '15px' }}>
-            <div style={{ fontSize: '0.9rem', opacity: 0.8, marginBottom: '5px' }}>
+            <div style={{ fontSize: '0.9rem', opacity: 0.8 }}>
               {lightboxImage.alt}
             </div>
-            <div style={{ fontSize: '0.8rem', opacity: 0.6 }}>
-              📸 {lightboxImage.photographer} • {lightboxImage.source}
-            </div>
-          </div>
-
-          {/* Action buttons */}
-          <div style={{ marginTop: '20px', display: 'flex', gap: '15px' }} onClick={(e) => e.stopPropagation()}>
-            <button
-              onClick={() => setLightboxImage(null)}
-              style={{
-                padding: '12px 25px',
-                background: 'rgba(255,255,255,0.2)',
-                color: 'white',
-                border: '2px solid white',
-                borderRadius: '8px',
-                cursor: 'pointer',
-                fontSize: '1rem'
-              }}
-            >
-              Close (Esc)
-            </button>
-            {selectedIds.has(lightboxImage.id) ? (
-              <button
-                onClick={() => {
-                  handleToggleImage(lightboxImage.id)
-                  setLightboxImage(null)
-                }}
-                style={{
-                  padding: '12px 25px',
-                  background: '#e74c3c',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '8px',
-                  cursor: 'pointer',
-                  fontSize: '1rem',
-                  fontWeight: 'bold'
-                }}
-              >
-                ✓ Selected - Click to Remove
-              </button>
-            ) : (
-              <button
-                onClick={selectFromLightbox}
-                style={{
-                  padding: '12px 25px',
-                  background: '#27ae60',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '8px',
-                  cursor: 'pointer',
-                  fontSize: '1rem',
-                  fontWeight: 'bold'
-                }}
-              >
-                ✓ Select This Image
-              </button>
-            )}
           </div>
         </div>
       )}
@@ -736,10 +392,9 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
               boxShadow: '0 10px 40px rgba(0,0,0,0.3)'
             }}
           >
-            <div style={{ fontSize: '2.5rem', marginBottom: '15px' }}>🗑️</div>
-            <h3 style={{ margin: '0 0 10px' }}>Remove Image?</h3>
+            <h3 style={{ margin: '0 0 10px' }}>Delete Image?</h3>
             <p style={{ color: '#666', marginBottom: '20px' }}>
-              Are you sure you want to remove this image from your selection?
+              This will remove the image from your selection and delete the file.
             </p>
             <div style={{ display: 'flex', gap: '10px', justifyContent: 'center' }}>
               <button
@@ -756,7 +411,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
                 Cancel
               </button>
               <button
-                onClick={() => handleRemoveSelected(deleteConfirm)}
+                onClick={() => handleRemoveImage(deleteConfirm)}
                 style={{
                   padding: '10px 25px',
                   background: '#e74c3c',
@@ -767,7 +422,7 @@ function ImageSelector({ dayNumber, segmentId, segmentTitle, existingImages = []
                   fontWeight: 'bold'
                 }}
               >
-                Yes, Remove
+                Yes, Delete
               </button>
             </div>
           </div>

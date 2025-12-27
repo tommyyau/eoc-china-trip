@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Plus, X, GripVertical } from 'lucide-react'
 import ImageSearch from './ImageSearch'
 
-function ImageManager({ images, onUpdate, segmentTitle }) {
+function ImageManager({ images, onUpdate, segmentTitle, dayNumber = 0 }) {
   const [showSearch, setShowSearch] = useState(false)
   const [draggedIndex, setDraggedIndex] = useState(null)
 
@@ -73,7 +73,7 @@ function ImageManager({ images, onUpdate, segmentTitle }) {
           style={{ marginTop: 12 }}
         >
           <Plus size={14} />
-          Search Images
+          Upload Images
         </button>
       </div>
 
@@ -82,6 +82,7 @@ function ImageManager({ images, onUpdate, segmentTitle }) {
           initialQuery={segmentTitle}
           onSelect={handleAddImages}
           onClose={() => setShowSearch(false)}
+          dayNumber={dayNumber}
         />
       )}
     </div>

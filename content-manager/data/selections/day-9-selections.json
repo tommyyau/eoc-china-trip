@@ -1,27 +1,29 @@
 {
   "day": 9,
-  "lastModified": "2025-11-30T12:20:57.869Z",
+  "lastModified": "2025-12-07T20:49:52.800Z",
   "segments": {
     "9-1-1764440953795": {
       "name": "Hike up Shizhong Mountain",
       "images": [
         {
-          "id": "custom-1764504869049",
-          "url": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
-          "thumb": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
-          "full": "https://www.visitourchina.com/FileUpload/newpicture/cities/jiujiang/shizhongshan1.jpg",
+          "id": "local-1765140590880-5",
+          "url": "/images/day-9-image-5.jpg",
+          "thumb": "/images/day-9-image-5.jpg",
+          "full": "/images/day-9-image-5.jpg",
           "alt": "Shizhong Mountain",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-9-image-5.jpg"
         },
         {
-          "id": "custom-1764505256488",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_on_the_Yangtze_River.jpg/2560px-Dusk_on_the_Yangtze_River.jpg",
+          "id": "local-1765140591330-6",
+          "url": "/images/day-9-image-6.jpg",
+          "thumb": "/images/day-9-image-6.jpg",
+          "full": "/images/day-9-image-6.jpg",
           "alt": "Yangtze River",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-9-image-6.jpg"
         }
       ]
     },
@@ -29,13 +31,14 @@
       "name": "Visit Jingdezhen",
       "images": [
         {
-          "id": "custom-1764505093569",
-          "url": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
-          "thumb": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
-          "full": "https://wildgreatwall.com/wp-content/uploads/2025/02/Jingdezhen-Travel-Guide-3.jpg",
+          "id": "local-1765140592499-7",
+          "url": "/images/day-9-image-7.jpg",
+          "thumb": "/images/day-9-image-7.jpg",
+          "full": "/images/day-9-image-7.jpg",
           "alt": "Jingdezhen Imperial Kiln Museum",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-9-image-7.jpg"
         }
       ]
     }

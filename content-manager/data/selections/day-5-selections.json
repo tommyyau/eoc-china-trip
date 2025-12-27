@@ -1,27 +1,29 @@
 {
   "day": 5,
-  "lastModified": "2025-11-30T10:58:09.176Z",
+  "lastModified": "2025-12-07T20:49:46.635Z",
   "segments": {
     "5-1-1764440953795": {
       "name": "National Botanical Garden to Happy Forest Hike",
       "images": [
         {
-          "id": "custom-1764499794194",
-          "url": "https://ak-d.tripcdn.com/images/0106y1200089a107c7A0F.jpg",
-          "thumb": "https://ak-d.tripcdn.com/images/0106y1200089a107c7A0F.jpg",
-          "full": "https://ak-d.tripcdn.com/images/0106y1200089a107c7A0F.jpg",
+          "id": "local-1765140584752-5",
+          "url": "/images/day-5-image-5.jpg",
+          "thumb": "/images/day-5-image-5.jpg",
+          "full": "/images/day-5-image-5.jpg",
           "alt": "National Botanical Garden ",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-5-image-5.jpg"
         },
         {
-          "id": "custom-1764499978274",
-          "url": "https://s2.wklcdn.com/image_224/6748776/55526362/37192712Master.jpg",
-          "thumb": "https://s2.wklcdn.com/image_224/6748776/55526362/37192712Master.jpg",
-          "full": "https://s2.wklcdn.com/image_224/6748776/55526362/37192712Master.jpg",
+          "id": "local-1765140585168-6",
+          "url": "/images/day-5-image-6.jpg",
+          "thumb": "/images/day-5-image-6.jpg",
+          "full": "/images/day-5-image-6.jpg",
           "alt": "Happy Forest Trail",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-5-image-6.jpg"
         }
       ]
     },
@@ -29,45 +31,48 @@
       "name": "Visit Forbidden City",
       "images": [
         {
-          "id": "wikimedia-32400571",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Beijing_China_Forbidden-City-03.jpg/800px-Beijing China Forbidden-City-03.jpg",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Beijing_China_Forbidden-City-03.jpg/300px-Beijing China Forbidden-City-03.jpg",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/d/da/Beijing_China_Forbidden-City-03.jpg",
+          "id": "local-1765140585496-7",
+          "url": "/images/day-5-image-7.jpg",
+          "thumb": "/images/day-5-image-7.jpg",
+          "full": "/images/day-5-image-7.jpg",
           "alt": "Beijing, China: Tortoise in the Forbidden City",
           "photographer": "CEphoto, Uwe Aranas",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ABeijing%20China%20Forbidden-City-03.jpg",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ABeijing%20China%20Forbidden-City-03.jpg",
           "width": 4272,
           "height": 2848,
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 3.0",
+          "filename": "day-5-image-7.jpg"
         },
         {
-          "id": "wikimedia-890912",
-          "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sunset_of_the_Forbidden_City_2006.JPG/800px-Sunset of the Forbidden City 2006.JPG",
-          "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sunset_of_the_Forbidden_City_2006.JPG/300px-Sunset of the Forbidden City 2006.JPG",
-          "full": "https://upload.wikimedia.org/wikipedia/commons/0/00/Sunset_of_the_Forbidden_City_2006.JPG",
+          "id": "local-1765140585994-8",
+          "url": "/images/day-5-image-8.jpg",
+          "thumb": "/images/day-5-image-8.jpg",
+          "full": "/images/day-5-image-8.jpg",
           "alt": "Sunset of the northwest corner of the Forbidden City.",
           "photographer": "User:kallgan",
           "photographerUrl": "https://commons.wikimedia.org/wiki/File%3ASunset%20of%20the%20Forbidden%20City%202006.JPG",
-          "source": "wikimedia",
+          "source": "local",
           "sourceUrl": "https://commons.wikimedia.org/wiki/File%3ASunset%20of%20the%20Forbidden%20City%202006.JPG",
           "width": 2304,
           "height": 1728,
-          "license": "CC BY-SA 3.0"
+          "license": "CC BY-SA 3.0",
+          "filename": "day-5-image-8.jpg"
         },
         {
-          "id": "unsplash-i9DvQC-PcHM",
-          "url": "https://images.unsplash.com/photo-1729284439997-690df5c178a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxGb3JiaWRkZW4lMjBDaXR5JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDUwMDExMnww&ixlib=rb-4.1.0&q=80&w=1080",
-          "thumb": "https://images.unsplash.com/photo-1729284439997-690df5c178a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxGb3JiaWRkZW4lMjBDaXR5JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDUwMDExMnww&ixlib=rb-4.1.0&q=80&w=400",
-          "full": "https://images.unsplash.com/photo-1729284439997-690df5c178a0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4MzcxOTR8MHwxfHNlYXJjaHw0fHxGb3JiaWRkZW4lMjBDaXR5JTIwQ2hpbmF8ZW58MHwwfHx8MTc2NDUwMDExMnww&ixlib=rb-4.1.0&q=85",
+          "id": "local-1765140586333-9",
+          "url": "/images/day-5-image-9.jpg",
+          "thumb": "/images/day-5-image-9.jpg",
+          "full": "/images/day-5-image-9.jpg",
           "alt": "An aerial view of a city with a lot of buildings",
           "photographer": "Rubina Ajdary",
           "photographerUrl": "https://unsplash.com/@rubinaajdary",
-          "source": "unsplash",
+          "source": "local",
           "sourceUrl": "https://unsplash.com/photos/i9DvQC-PcHM",
           "width": 4898,
-          "height": 3265
+          "height": 3265,
+          "filename": "day-5-image-9.jpg"
         }
       ]
     }

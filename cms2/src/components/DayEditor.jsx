@@ -139,6 +139,7 @@ function DayEditor({ day, dayIndex, onUpdate }) {
             segment={segment}
             index={index}
             totalSegments={day.segments.length}
+            dayNumber={day.day}
             onUpdate={(updated) => handleUpdateSegment(index, updated)}
             onDelete={() => handleDeleteSegment(index)}
             onMove={(dir) => handleMoveSegment(index, dir)}

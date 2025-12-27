@@ -1,18 +1,19 @@
 {
   "day": 8,
-  "lastModified": "2025-11-30T12:02:57.031Z",
+  "lastModified": "2025-12-07T20:49:49.443Z",
   "segments": {
     "8-0-1764440953795": {
       "name": "Summit Hike on Lushan - Potentially Five Old Men Peaks (五老峰, Wǔlǎo Fēng)",
       "images": [
         {
-          "id": "custom-1764504175991",
-          "url": "https://ak-d.tripcdn.com/images/1i64012000a7jh72u2A2C_W_640_0_R5_Q80.jpg",
-          "thumb": "https://ak-d.tripcdn.com/images/1i64012000a7jh72u2A2C_W_640_0_R5_Q80.jpg",
-          "full": "https://ak-d.tripcdn.com/images/1i64012000a7jh72u2A2C_W_640_0_R5_Q80.jpg",
+          "id": "local-1765140589141-4",
+          "url": "/images/day-8-image-4.jpg",
+          "thumb": "/images/day-8-image-4.jpg",
+          "full": "/images/day-8-image-4.jpg",
           "alt": "Five Old Men Peaks",
           "photographer": "Custom",
-          "source": "custom"
+          "source": "local",
+          "filename": "day-8-image-4.jpg"
         }
       ]
     }
