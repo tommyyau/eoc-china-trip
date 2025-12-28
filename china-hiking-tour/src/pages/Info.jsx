@@ -19,7 +19,11 @@ import {
     Heart,
     Shield,
     Wine,
-    Coins
+    Coins,
+    Wallet,
+    CircleDollarSign,
+    BadgePoundSterling,
+    CalendarCheck
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import ScrollReveal from '../components/effects/ScrollReveal';
@@ -572,6 +576,88 @@ const Info = () => {
                                             </div>
                                         );
                                     })}
+                                </div>
+                            </div>
+                        </ScrollReveal>
+                    </div>
+
+                    {/* Deposit & Payments - Full width below */}
+                    <div style={{ maxWidth: '900px', margin: '2rem auto 0' }}>
+                        <ScrollReveal delay={0.2}>
+                            <div
+                                style={{
+                                    background: 'var(--surface-white)',
+                                    borderRadius: 'var(--radius-xl)',
+                                    padding: '2rem',
+                                    boxShadow: 'var(--shadow-lg)'
+                                }}
+                            >
+                                <h3 style={{ marginBottom: '1.5rem', fontSize: '1.25rem' }}>
+                                    {getText(infoData.payments?.title)}
+                                </h3>
+
+                                <div
+                                    style={{
+                                        display: 'grid',
+                                        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                                        gap: '1.5rem',
+                                        marginBottom: '1.5rem'
+                                    }}
+                                >
+                                    {infoData.payments?.items?.map((item, index) => (
+                                        <div
+                                            key={index}
+                                            style={{
+                                                display: 'flex',
+                                                alignItems: 'flex-start',
+                                                gap: '1rem',
+                                                padding: '1rem',
+                                                background: 'var(--off-white)',
+                                                borderRadius: 'var(--radius-lg)'
+                                            }}
+                                        >
+                                            <div
+                                                style={{
+                                                    width: '40px',
+                                                    height: '40px',
+                                                    borderRadius: 'var(--radius-md)',
+                                                    backgroundColor: index === 0 ? 'rgba(76, 175, 80, 0.1)' : index === 1 ? 'rgba(255, 152, 0, 0.1)' : 'rgba(33, 150, 243, 0.1)',
+                                                    display: 'flex',
+                                                    alignItems: 'center',
+                                                    justifyContent: 'center',
+                                                    flexShrink: 0
+                                                }}
+                                            >
+                                                <CalendarCheck size={20} color={index === 0 ? '#4caf50' : index === 1 ? '#ff9800' : '#2196f3'} />
+                                            </div>
+                                            <div>
+                                                <div style={{ fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--text-light)', marginBottom: '0.25rem' }}>
+                                                    {getText(item.label)}
+                                                </div>
+                                                <div style={{ fontSize: '1.1rem', fontWeight: 600, color: 'var(--text-dark)', marginBottom: '0.25rem' }}>
+                                                    {item.amount}
+                                                </div>
+                                                <div style={{ fontSize: '0.85rem', color: 'var(--text-medium)' }}>
+                                                    {getText(item.date)}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+
+                                <div
+                                    style={{
+                                        fontSize: '0.9rem',
+                                        color: 'var(--text-medium)',
+                                        fontStyle: 'italic',
+                                        textAlign: 'center',
+                                        padding: '1rem',
+                                        background: 'rgba(255, 152, 0, 0.08)',
+                                        borderRadius: 'var(--radius-md)',
+                                        borderLeft: '3px solid #ff9800'
+                                    }}
+                                >
+                                    {getText(infoData.payments?.note)}
                                 </div>
                             </div>
                         </ScrollReveal>

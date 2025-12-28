@@ -236,5 +236,53 @@
         }
       }
     ]
+  },
+  "payments": {
+    "title": {
+      "en": "Deposit & Payments",
+      "cn": "订金与付款"
+    },
+    "note": {
+      "en": "If there are insufficient commitments by 1st March 2026, we will return all deposits in full.",
+      "cn": "如果在2026年3月1日前报名人数不足，我们将全额退还所有订金。"
+    },
+    "items": [
+      {
+        "icon": "deposit1",
+        "label": {
+          "en": "First Deposit",
+          "cn": "首付订金"
+        },
+        "amount": "20% (£480)",
+        "date": {
+          "en": "Due 1st February 2026",
+          "cn": "2026年2月1日前支付"
+        }
+      },
+      {
+        "icon": "deposit2",
+        "label": {
+          "en": "Second Deposit",
+          "cn": "第二期付款"
+        },
+        "amount": "40% (£960)",
+        "date": {
+          "en": "Due 1st March 2026",
+          "cn": "2026年3月1日前支付"
+        }
+      },
+      {
+        "icon": "deposit3",
+        "label": {
+          "en": "Final Payment",
+          "cn": "尾款"
+        },
+        "amount": "40% (£960)",
+        "date": {
+          "en": "Due 1st April 2026",
+          "cn": "2026年4月1日前支付"
+        }
+      }
+    ]
   }
 }
