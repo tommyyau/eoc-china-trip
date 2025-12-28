@@ -337,6 +337,102 @@ const PDFDownload = ({ label, variant = 'default' }) => {
                 .includes-section li { margin: 3px 0; }
                 .not-included h4 { color: #64748b; }
                 .not-included ul { color: #64748b; }
+
+                /* Travel & Requirements */
+                .travel-section {
+                    margin: 20px 0;
+                    padding: 15px;
+                    background: #f8fafc;
+                    border-radius: 6px;
+                }
+                .travel-section h4 {
+                    color: #1a365d;
+                    font-size: 10pt;
+                    margin: 0 0 10px 0;
+                    font-weight: 600;
+                }
+                .travel-row {
+                    display: flex;
+                    margin: 6px 0;
+                    font-size: 9pt;
+                }
+                .travel-label {
+                    font-weight: 600;
+                    color: #475569;
+                    min-width: 70px;
+                }
+                .travel-value {
+                    color: #64748b;
+                }
+                .requirements-section {
+                    margin: 15px 0;
+                }
+                .requirements-section h4 {
+                    color: #1a365d;
+                    font-size: 10pt;
+                    margin: 0 0 8px 0;
+                    font-weight: 600;
+                }
+                .requirements-section ul {
+                    margin: 0;
+                    padding-left: 18px;
+                    font-size: 9pt;
+                    color: #475569;
+                    line-height: 1.5;
+                }
+                .requirements-section li { margin: 3px 0; }
+
+                /* Payments Section */
+                .payments-section {
+                    margin: 20px 0;
+                    padding: 15px;
+                    background: #fffbeb;
+                    border: 1px solid #fcd34d;
+                    border-radius: 6px;
+                }
+                .payments-section h4 {
+                    color: #92400e;
+                    font-size: 10pt;
+                    margin: 0 0 12px 0;
+                    font-weight: 600;
+                }
+                .payment-grid {
+                    display: flex;
+                    gap: 15px;
+                    margin-bottom: 12px;
+                }
+                .payment-item {
+                    flex: 1;
+                    background: white;
+                    padding: 10px;
+                    border-radius: 4px;
+                    text-align: center;
+                }
+                .payment-label {
+                    font-size: 8pt;
+                    color: #92400e;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 4px;
+                }
+                .payment-amount {
+                    font-size: 11pt;
+                    font-weight: 600;
+                    color: #1e293b;
+                    margin-bottom: 2px;
+                }
+                .payment-date {
+                    font-size: 8pt;
+                    color: #64748b;
+                }
+                .payment-note {
+                    font-size: 8pt;
+                    color: #92400e;
+                    font-style: italic;
+                    text-align: center;
+                    padding-top: 8px;
+                    border-top: 1px dashed #fcd34d;
+                }
             `;
 
             // Build HTML
@@ -471,6 +567,39 @@ const PDFDownload = ({ label, variant = 'default' }) => {
                         <ul>
                             ${infoData.notIncluded.items.map(item => `<li>${t(item.text)}</li>`).join('')}
                         </ul>
+                    </div>
+
+                    <div class="travel-section">
+                        <h4>${t(infoData.travel.title)}</h4>
+                        <div class="travel-row">
+                            <span class="travel-label">${t(infoData.travel.outbound.label)}:</span>
+                            <span class="travel-value">${t(infoData.travel.outbound.text)}</span>
+                        </div>
+                        <div class="travel-row">
+                            <span class="travel-label">${t(infoData.travel.return.label)}:</span>
+                            <span class="travel-value">${t(infoData.travel.return.text)}</span>
+                        </div>
+                    </div>
+
+                    <div class="requirements-section">
+                        <h4>${t(infoData.requirements.title)}</h4>
+                        <ul>
+                            ${infoData.requirements.items.map(item => `<li>${t(item.text)}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="payments-section">
+                        <h4>${t(infoData.payments.title)}</h4>
+                        <div class="payment-grid">
+                            ${infoData.payments.items.map(item => `
+                                <div class="payment-item">
+                                    <div class="payment-label">${t(item.label)}</div>
+                                    <div class="payment-amount">${item.amount}</div>
+                                    <div class="payment-date">${t(item.date)}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="payment-note">${t(infoData.payments.note)}</div>
                     </div>
                 </div>
             `;
